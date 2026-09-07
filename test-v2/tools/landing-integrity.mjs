@@ -388,6 +388,9 @@ const SECTION_MEASURE = async (arg) => {
     const tag = el.tagName.toUpperCase(), cs = getComputedStyle(el);
     let kind = null;
     if (/^(IMG|VIDEO|CANVAS|PICTURE)$/.test(tag)) kind = tag.toLowerCase();
+    /* 전체화면 캔버스(실시간 렌더 월드)는 그 섹션의 주 미디어다 — 2026-09-07, r9 의 three.js 히어로가
+       "미디어 0" 으로 잡혀 LI-34 가 오탐을 냈다. */
+    if (kind === "canvas" && a / vArea > 0.5) kind = "canvas-stage";
     else if (tag === "SVG" && Math.max(r.width, r.height) >= arg.svgMinPx) kind = "svg";
     else if (cs.backgroundImage && cs.backgroundImage !== "none" && /url\(/.test(cs.backgroundImage)) kind = "bg";
     if (kind) media.push({ n: nameOf(el), kind, area: a, share: +(a / vArea).toFixed(3), wVw: +(r.width / vw).toFixed(2), hVh: +(r.height / vh).toFixed(2), bb: [Math.max(r.left, 0), Math.max(r.top, 0), Math.min(r.right, vw), Math.min(r.bottom, vh)], par: el.parentElement });

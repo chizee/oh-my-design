@@ -88,3 +88,12 @@ aphrodite/replicas/*/*
 !aphrodite/replicas/*/fidelity.json
 !aphrodite/replicas/*/build.mjs
 !aphrodite/replicas/*/template.html
+
+# r9 three.js 월드: 벤더 라이브러리·라이선스·자작 월드 코드·컷아웃은 소스로 추적 (2026-09-07)
+!aphrodite/*/three/
+aphrodite/*/three/*
+!aphrodite/*/three/world.js
+!aphrodite/*/three/LICENSE
+!aphrodite/*/three/three.min.js
+!aphrodite/*/three/cutouts/
+!aphrodite/*/three/cutouts/*.webp
