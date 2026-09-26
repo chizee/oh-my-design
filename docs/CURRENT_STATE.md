@@ -9,7 +9,8 @@
 - 릴리스 준비 커밋 `dbde9965`: README 4개 언어·package·CLI quickstart·MCP README·llms 수치를 "500+"로, 번역 README의 스킬 수(27→28, Cursor 26→27) 보정, llms-full 재생성, capture 스킬 미러 동기화, CHANGELOG 2.0.2, 버전 2.0.2.
 - GitHub description "500+"로 갱신 완료.
 - 검증: CLI build·tsc OK, CLI 테스트는 전체 병렬 실행에서 부하성 타임아웃 2~4건(단독 실행 시 전부 통과), web vitest 1,060 통과, `next build` 성공(521 페이지). web lint 52 errors(배포 경로 아님, main 대비 비교 못 함).
-- **막힘(오너 결정)**: ① main 병합(269커밋, fast-forward 가능, Vercel 자동 배포) ② npm publish — prepublishOnly의 `gate:quality:strict`가 landing 픽스처 3개(generation receipt 없음)로 BLOCKED. 이 브랜치의 4dae1aa0에서 strict로 바뀜. npm 로그인도 오너 필요.
+- **오너 결정 2026-09-27**: main fast-forward 병합(15ff0139→3d5e0d0e) 승인·완료, npm은 보류(strict 게이트 유지, 2.0.0 그대로). 같은 SHA가 이미 Preview로 빌드돼 Production 배포가 생성되지 않아, 새 커밋으로 Production 재트리거.
+- (이전 기록) **막힘(오너 결정)**: ① main 병합(269커밋, fast-forward 가능, Vercel 자동 배포) ② npm publish — prepublishOnly의 `gate:quality:strict`가 landing 픽스처 3개(generation receipt 없음)로 BLOCKED. 이 브랜치의 4dae1aa0에서 strict로 바뀜. npm 로그인도 오너 필요.
 
 ---
 
