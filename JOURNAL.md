@@ -13,6 +13,7 @@
 - **한 일(8)**: oura·satispay·pennylane·klm·ing·booth verified(**499 / 205**). 도구: shadow DOM 관통, 칠해지지 않은 가상 요소 무시. 가상 요소 스윕 정정 2건(base·otto). 다음: coconala, EU 웨이브 4.
 - **한 일(9)**: coconala(JP6 마감) → EU 웨이브 4 스카우팅 16/32 → vinted·vipps·lego·toogoodtogo·fever(US)·bitpanda(**506 / 212**). 도구: 오버레이 제거가 shadow host 인식. 국가 LT·NO·DK·AT·EE. idealista 403 보류.
 - **한 일(10)**: EU4 14/16·EU5 7/16 → **521 / 227**. 오너 지시로 확충 중단, 릴리스 준비(수치 500+, 2.0.2, GH description). 열린 것: main 병합·npm(strict 게이트 BLOCKED) 오너 결정.
+- **한 일(11)**: main fast-forward(→bb0d89ca), Production 배포 확인(새 레퍼런스 200·llms 500+·sitemap 526). npm은 보류(strict 게이트 유지, 2.0.2는 브랜치/main에 준비만). 다음: 오너가 확충 재개 지시 시 EU5 나머지 9 + 보류 4.
 - **한 일(8)**: oura·satispay·pennylane·klm verified(**497 / 203**). ing·contentful·deezer 보류.
 - **다음**: 도구 shadow 관통 → ing 재시도, 가상 요소 스윕 직접, JP6 booth·coconala 직접, EU 웨이브 4 스카우팅.
 
