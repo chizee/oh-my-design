@@ -3,6 +3,16 @@
 갱신: **2026-09-17 저녁** · 오너 지적 2건(라우트·토스) 처리. 우선순위는 2026-09-16 재편분 유지. 분기 `codex/track-foundation`, baseline `15ff0139`
 (main과 동일 커밋). 9/7~9/8 스프린트 산출물은 **전부 미커밋 상태로 보존**되어 있다.
 
+## ⏸ 2026-09-27 · 레퍼런스 확충 중단 → 프로덕션 반영 준비 (521 · 227)
+
+- 오너 지시로 루프 중단. EU5는 deepl·komoot·blinkist·n8n·dailymotion·spendesk·zara 7/16에서 멈춤(mango 측정 중단, withings·idealista·zooplus 보류 — 메모는 scratchpad).
+- 릴리스 준비 커밋 `dbde9965`: README 4개 언어·package·CLI quickstart·MCP README·llms 수치를 "500+"로, 번역 README의 스킬 수(27→28, Cursor 26→27) 보정, llms-full 재생성, capture 스킬 미러 동기화, CHANGELOG 2.0.2, 버전 2.0.2.
+- GitHub description "500+"로 갱신 완료.
+- 검증: CLI build·tsc OK, CLI 테스트는 전체 병렬 실행에서 부하성 타임아웃 2~4건(단독 실행 시 전부 통과), web vitest 1,060 통과, `next build` 성공(521 페이지). web lint 52 errors(배포 경로 아님, main 대비 비교 못 함).
+- **막힘(오너 결정)**: ① main 병합(269커밋, fast-forward 가능, Vercel 자동 배포) ② npm publish — prepublishOnly의 `gate:quality:strict`가 landing 픽스처 3개(generation receipt 없음)로 BLOCKED. 이 브랜치의 4dae1aa0에서 strict로 바뀜. npm 로그인도 오너 필요.
+
+---
+
 ## ✅ 2026-09-27 · 루프 회차 58–63 — **EU 웨이브 4 마감 14/16, EU 웨이브 5 4/16** (518 · 224)
 
 - EU4: avanza · trivago 추가(idealista·zooplus 보류). EU5 스카우팅 16/32: deepl · komoot · blinkist · n8n 등재.
