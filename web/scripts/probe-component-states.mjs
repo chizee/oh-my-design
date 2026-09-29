@@ -25,6 +25,11 @@
  *   node scripts/probe-component-states.mjs <url> --selector ".krds-btn.primary"
  *   node scripts/probe-component-states.mjs <url> --match "#ff6f0f" --vars seed
  *   옵션: --open-tabs (숨은 탭 패널을 모두 연다) · --min-height 20 · --nth 0
+ *
+ * 종료 규율(2026-09-29): 결과를 먼저 출력·flush한 뒤에 브라우저를 닫고, 모든 close()는 시간 제한과 경주시키며,
+ * 끝은 항상 process.exit다. 멈추면 --budget 뒤에 읽은 것만 출력한다.
+ *   --budget 420000 (전체 예산 ms, 소진 시 exit 3) · --close-timeout 5000 (close() 시간 제한 ms)
+ *   멈춘 호출을 보려면: DEBUG=pw:api node scripts/probe-component-states.mjs <url> …
  */
 import { chromium } from "playwright-core";
 
@@ -91,6 +96,33 @@ function rgbPattern(hex) {
 }
 
 const browser = await chromium.launch({ executablePath: CHROME, ...LAUNCH });
+
+/**
+ * 종료 규율 (2026-09-29). 이 스크립트는 모든 상태를 읽은 **뒤에** `await browser.close()`가 끝나야 결과를
+ * 출력했다. close()가 매달리면 측정은 다 끝났는데도 출력이 비었다 — 2026-09-29에 4번 중 4번이 그랬고,
+ * close를 시간 제한과 경주시키고 process.exit를 부른 사본은 15초에 끝났다. 그래서:
+ *   1) 결과를 먼저 출력하고 stdout/stderr를 비운 **다음에** 브라우저를 닫는다 (finish).
+ *   2) 모든 close()는 `--close-timeout`(기본 5000ms)과 경주시킨다 — 페이지 close도 포함.
+ *   3) 끝은 항상 process.exit — 매달린 브라우저가 이벤트 루프를 붙잡지 못하게 한다.
+ *   4) 어디선가 멈추면 `--budget`(기본 420000ms) 뒤에 그때까지 읽은 것만 출력하고 exit 3.
+ */
+const CLOSE_TIMEOUT_MS = Number(opt("close-timeout", "5000"));
+const BUDGET_MS = Number(opt("budget", "420000"));
+const sleepMs = (ms) => new Promise((r) => setTimeout(r, ms));
+const raceClose = (p) => Promise.race([Promise.resolve(p).catch(() => {}), sleepMs(CLOSE_TIMEOUT_MS)]);
+const flushStd = () => Promise.race([Promise.all([process.stdout, process.stderr].map((st) => new Promise((r) => st.write("", r)))), sleepMs(3000)]);
+let reported = false;
+async function finish(code = 0) {
+  clearTimeout(watchdog);
+  await flushStd();
+  await raceClose(browser.close());
+  process.exit(code);
+}
+const watchdog = setTimeout(() => {
+  console.error(`--budget ${BUDGET_MS}ms 소진: 지금까지 읽은 것만 출력한다`);
+  report();
+  finish(3);
+}, BUDGET_MS);
 
 /** 한 번의 방문에서 한 상태만 읽는다. 상태 오염을 막으려면 새로 여는 편이 확실하다. */
 async function visit(act) {
@@ -191,7 +223,7 @@ async function visit(act) {
     }, { match, selector, minHeight, nth, wantHeight, textNeedle, rgbSrc: match ? rgbPattern(match) : "(?!)" }).catch(() => false);
     if (found) return { page, frame };
   }
-  await page.close();
+  await raceClose(page.close());
   return null;
 }
 
@@ -319,12 +351,12 @@ async function capture(name, fn) {
     states[name] = await read(v.frame);
   } catch (err) {
     unmeasured[name] = String(err?.message ?? err).split("\n")[0].slice(0, 96);
-  } finally { await v?.page.close().catch(() => {}); }
+  } finally { if (v) await raceClose(v.page.close()); }
 }
 
 if ((await capture("rest", async () => {})) === null || !states.rest) {
   console.error(states.rest ? "rest를 읽지 못했다" : "대상 요소를 찾지 못했다");
-  await browser.close(); process.exit(1);
+  await finish(1);
 }
 // Playwright hover()의 actionability 검사가 flixbus.de에서 매번 8초 타임아웃했다 — 요소 위에
 // 아무것도 없는데도(elementFromPoint = 대상). 실패하면 중심 좌표로 포인터만 옮긴다. 판정은
@@ -349,7 +381,12 @@ await capture("focus", async (v) => { await clearOverlays(v.frame);
   await v.frame.evaluate(() => (window.__omdOne ? window.__omdOne('[data-omd-probe="1"]') : document.querySelector('[data-omd-probe="1"]')).focus());
   await settle(v.frame, v.page); });
 
-await browser.close();
+function report() {
+  if (reported) return;
+  reported = true;
+  // 끝나지 못한 상태는 "변화 없음"이 아니라 못 쟀음이다 (--budget으로 잘린 실행에서만 해당).
+  for (const k of ["hover", "pressed", "focus"]) if (!states[k] && !unmeasured[k]) unmeasured[k] = "예산(--budget) 소진 전에 끝나지 못했다";
+  if (!states.rest) { console.error("rest를 읽지 못했다(예산 소진)"); return; }
 
 /**
  * 계산된 색을 hex로. 두 형태를 받는다.
@@ -432,3 +469,7 @@ if (varPrefix && Object.keys(states.rest.vars ?? {}).length) {
   console.log(`\nauthored --${varPrefix}* (칠해진 값보다 이쪽을 쓴다):`);
   for (const [k, v] of Object.entries(states.rest.vars)) console.log(`  ${k.padEnd(52)} ${v}`);
 }
+}
+
+report();
+await finish(0);
