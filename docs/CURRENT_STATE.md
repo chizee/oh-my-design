@@ -156,7 +156,7 @@
   3. 웨이브 4(banksalad·yeogiotte·29cm) main 반영 — 오너 GO.
   4. 상위 20 남은 12곳(socar, wanted, tossbank, kakaobank, hyundaicard, likelion, ohouse, channeltalk, zigzag, ably, upstage, remember): 프로브 → 저작.
   5. 번들 심화 남은 19곳(sktelecom, nhn, class101, dabang, brandi, inflearn, kmong, jandi, makinarocks, 11st, classum, kb-kookmin, wooribank, lotteon, cgv, kakaogames, megabox, soop, onestore).
-  6. 후속: builder 딥링크(step=customize), 동의 배너(영어·죽은 GA 고지), staged Core v2 baemin 재이관, check-claims 상태값 grounding, 쇼케이스 배지 셈 규칙.
+  6. 후속: ~~builder 딥링크~~·~~동의 배너~~(9/30 오탐 종료), staged Core v2 baemin 재이관, check-claims 상태값 grounding, 쇼케이스 배지 셈 규칙(도구 재측정 뒤).
   7. 9/30 09:17 KST Quality 스케줄 결과 확인(01:13 기준 main 최근 4회 전부 성공).
 - **결정 (9/30 00:35).** 웨이브 4를 사이트에 반영한다. /hangul 공개는 바이럴 수준의 시각 콘텐츠(모션그래픽·스크린샷)가 준비된 뒤다 → 콘텐츠 레인을 새로 둔다: 같은 페이지 전후, omd-showcase 비교 영상, 실측 67곳 데이터 카드.
 - **완료 — 웨이브 4 사이트 반영 (00:40).** main `79281e16`. 라이브 확인: yeogiotte #243b52, 29cm #375fff 반영, banksalad·/·/builder 200.
@@ -174,7 +174,11 @@
   - 증상: `probe-keyboard-states.mjs`가 (a) 빈 자식 요소, (b) 자손의 outline, (c) tabIndex<0 컨트롤을 비교하지 않는다. (d) 비활성 컨트롤의 hover를 측정으로 읽는다. (e) 포커스에 반응하는 페이지에서 Tab 순회가 일찍 끝난다.
   - 영향: 프로브 기반 "변화 없음"·"포커스 링 없음" 주장이 틀렸을 수 있다. 이미 **사이트에 나간 8곳**(29cm, baemin, banksalad, karrot, kakao, naver, samsung, yeogiotte)이 해당한다. 긍정 판독(변화·링 있음)은 영향이 없다.
   - 조치: 도구 수정 + 라이브 회귀(wanted·tossbank·socar·hyundaicard·kakaobank 음성 대조) → 고친 도구로 8곳 + likelion·kakaobank service-tab의 부재 주장 재측정 → 뒤집힌 것은 정정해 사이트에 다시 반영한다. 남은 상위 20(ohouse, channeltalk, zigzag, ably, upstage, remember)은 고친 도구로 잰다.
-- **진행 중.** /hangul 시각 콘텐츠 v1, 저작 D(kakaobank·hyundaicard·likelion)·C(socar·wanted·tossbank), 프로브 도구 수정.
+- **종료 — 후속 2건은 오탐 (01:40).**
+  - builder 딥링크: `/builder?step=customize&ref=<id>`는 정상으로 Customize에 도착한다. "Intro 1/10"은 Customize 마법사(`design-wizard.tsx` STEP_LABELS 10단계)의 첫 단계다. 다만 IntroStep은 고른 레퍼런스를 보여주지 않는다 — 카탈로그에서 온 방문자 맥락이 끊기는지는 제품 판단(오너)으로 남긴다.
+  - 동의 배너: 로캘을 `/docs/<locale>/` 경로에서만 고르고 그 밖은 영어다(`analytics-consent.tsx:54`). 페이지 자체가 영어(`lang="en"`)이므로 결함이 아니다. 홈 한국어화를 결정할 때 함께 처리한다. GA는 라이브에서 여전히 로드된다(G-5XCHN3NJXC). "죽었다"는 것은 우리 조회 API이고 수집은 살아 있으므로 고지 내용은 정확하다.
+- **진행 중.** /hangul 시각 콘텐츠 v1, 저작 D(kakaobank·hyundaicard·likelion)·C(socar·wanted·tossbank), 프로브 도구 수정, 웨이브 6 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
+  - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
 - **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
 
