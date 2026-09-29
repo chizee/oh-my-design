@@ -5,7 +5,8 @@
 - **한 일**: 성장 전략 리서치(Emil 해부·경쟁 지형·한국 빈자리)와 계획(`docs/GROWTH_PLAN_2026-09-29.md`), Aphrodite 고도화 계획. 오너 결정 17개 기록(`docs/GROWTH_DECISIONS_2026-09-29.md`) — Aphrodite는 컨셉 A(범용 에이전트 캔버스).
 - **열린 것**: D1 전제 정정(번들은 KR verified 67에만 있음) → 재결정 대기. macOS Desktop 읽기 차단으로 반나절 정지, 재부팅으로 복구(스크래치패드 소실).
 - **한 일(2)**: 계측 복구(/api/active 생존, snapshot 스크립트), 2.0.2 릴리스(CI 두 번 수정: js-yaml·타임아웃, Trusted Publishing 전환 대기), Aphrodite P0 PR #2, 배민 글 발행, KR 쇼케이스 11곳(3bbf9e2a), /hangul 초안·평가 착수.
-- **다음**: npm Trusted Publishing 등록(오너) → v2.0.2 재태그; 웨이브 2(번들 다음 배치·상위 20 프로브 B); /hangul Claude 평가·통합.
+- **한 일(3)**: npm 2.0.2 공개(Trusted Publishing, provenance), KR 34곳 심화(31곳 프로덕션 반영, 3곳 브랜치), 쇼케이스 첫 충족(banksalad·yeogiotte), /hangul 평가(스킬 없이 17/18 위반 → 스킬 0/18), 매일 실패하던 Quality 스케줄 원인 수정.
+- **다음**: 전후 스크린샷 → /hangul 통합 → 상위 20 나머지 12곳 → 번들 19곳. 웨이브 4 main 반영과 W1 게시는 오너 GO.
 
 ## 2026-09-26
 

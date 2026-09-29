@@ -130,6 +130,34 @@
   - 쇼케이스 기준을 채운 곳은 아직 0이다: kakao·naver는 focus가 대부분 브라우저 기본이라 기준 해석이 필요하다(오너 결정).
 - **결정 (23:15).** 웨이브 1~3을 main에 반영한다. 쇼케이스 '측정됨'에 브라우저 기본 focus와 확인된 무변화를 포함한다(견본에는 솔직하게 표시).
 - **표적 재측정 B (23:10).** banksalad(focus 표시 없음 6/6, CTA ::after 0→0.04), yeogiotte(작성자 focus 1px #243b52 2개, hover #1d8bff→#006ce0), 29cm(더보기 DESIGN.md 정확 일치, focus 두 방식: 브라우저 기본 3 / #375fff 2). 보고서는 `docs/research/2026-09-29-growth/s2-probe-*.md`. 다음: 3곳 저작.
+- **완료 — 프로덕션 반영 (23:17, 오너 GO).**
+  - main을 origin/main과 병합(`7ee71a49`, 충돌은 llms-full 하나 → 재생성)한 뒤 main을 fast-forward했다.
+  - 사전 검증: CLI lint·build, web tsc·1060 테스트, next build 1,717페이지, check-counts, llms가 통과했다. CLI 테스트 2건은 미커밋 `skills/hangul/` 때문이었고, 빼고 돌리면 84/84 통과했다.
+  - 라이브 확인: coupang 페이지 #4285f4, karrot #e14d00 반영. /·/builder·배민 글·samsung 200.
+  - **후속 확인 필요:** /builder?step=customize&ref=karrot가 Intro(1/10)로 열린다 — 카탈로그 CTA의 딥링크가 customize로 가지 않는 것으로 보인다(오늘 변경과 무관, 기존 동작일 수 있음).
+  - **/hangul 통합 시 함께:** doctor 제품 스킬 목록 테스트, install-skills cursor 27개 핀, 스킬 수 가드(28→29)를 같이 갱신해야 한다.
+- **완료 — 쇼케이스 웨이브 4 (23:58).**
+  - 커밋 `fa7cc640`(feature 브랜치만, main 반영은 오너 GO 필요).
+  - banksalad 4→10: 6개 완전 측정, 키보드 focus 표시 없음.
+  - yeogiotte 5→12: 작성자 focus 1px #243b52. 7월 results 표면이 Cloudflare 차단 페이지였던 것을 정정했다.
+  - 29cm 5→12: 작성자 focus #375fff, 9/17 오독 정정.
+  - **쇼케이스 기준 충족(오너 정의)은 banksalad·yeogiotte, 29cm는 경계**(수량 입력의 pressed를 셀 때 5).
+  - 오늘 KR 심화 누계는 34곳이다.
+  - 주의: 자동 품질 스크립트는 산문으로 적은 '측정된 무변화'를 세지 않아 banksalad를 2로 읽는다. 쇼케이스 배지를 자동화하려면 셈 규칙을 추가해야 한다.
+- **완료 — /hangul 평가 (00:10, 9/30).**
+  - 보고서: `docs/research/2026-09-29-growth/hangul-eval-results.md`, 원자료는 `raw/hangul-eval/`.
+  - **스킬 없이 18회 중 17회가 한글 타이포 규칙을 어겼다(BLOCK 또는 WARN). /hangul 적용 시 18회 모두 BLOCK·WARN 0.**
+  - Codex(gpt-6-astra medium): A는 9/9 BLOCK(HG-7 제목 자간 −0.06em ×16), B는 0/9.
+  - Claude(Sonnet): A는 BLOCK 3/9·WARN 8/9(HG-6 본문 음수 자간 ×14, break-all ×2), B는 0/9.
+  - 주의: 체커는 스킬 규칙을 검사하고, B는 스킬을 명시 지시했다.
+- **다음 큐 (9/30~).**
+  1. README용 전후 스크린샷 한 쌍(Codex p1 A vs B 렌더).
+  2. /hangul 통합: package files, D3 internal 플래그, doctor·install-skills 테스트, 스킬 수 28→29, README 색인. 공개(main)와 W1 런칭 게시는 오너 몫.
+  3. 웨이브 4(banksalad·yeogiotte·29cm) main 반영 — 오너 GO.
+  4. 상위 20 남은 12곳(socar, wanted, tossbank, kakaobank, hyundaicard, likelion, ohouse, channeltalk, zigzag, ably, upstage, remember): 프로브 → 저작.
+  5. 번들 심화 남은 19곳(sktelecom, nhn, class101, dabang, brandi, inflearn, kmong, jandi, makinarocks, 11st, classum, kb-kookmin, wooribank, lotteon, cgv, kakaogames, megabox, soop, onestore).
+  6. 후속: builder 딥링크(step=customize), 동의 배너(영어·죽은 GA 고지), staged Core v2 baemin 재이관, check-claims 상태값 grounding, 쇼케이스 배지 셈 규칙.
+  7. 9/30 09:17 KST Quality 스케줄 결과 확인.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
 - **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
 
