@@ -6007,20 +6007,18 @@ export const REFERENCE_QUALITY = [
     "nextReverifyAt": "2027-03-19",
     "renewedSourceCount": 3,
     "tokenSource": "reconciled",
-    "claimCount": 42,
-    "evidenceClaimCount": 42,
+    "claimCount": 149,
+    "evidenceClaimCount": 149,
     "evidenceCoverage": 1,
     "surfaceCount": 3,
     "sourceCount": 5,
     "conflictCount": 0,
     "tier1SourceCount": 3,
-    "componentCount": 2,
-    "interactiveComponentCount": 1,
-    "statedComponentCount": 0,
+    "componentCount": 13,
+    "interactiveComponentCount": 11,
+    "statedComponentCount": 1,
     "reasonCodes": [],
-    "advisoryCodes": [
-      "component_state_prose_only"
-    ],
+    "advisoryCodes": [],
     "paletteGrounding": null
   },
   {
@@ -11516,20 +11514,18 @@ export const REFERENCE_QUALITY = [
     "nextReverifyAt": "2027-03-19",
     "renewedSourceCount": 2,
     "tokenSource": "reconciled",
-    "claimCount": 57,
-    "evidenceClaimCount": 57,
+    "claimCount": 149,
+    "evidenceClaimCount": 149,
     "evidenceCoverage": 1,
     "surfaceCount": 3,
     "sourceCount": 5,
     "conflictCount": 0,
     "tier1SourceCount": 5,
-    "componentCount": 3,
-    "interactiveComponentCount": 2,
-    "statedComponentCount": 0,
+    "componentCount": 12,
+    "interactiveComponentCount": 9,
+    "statedComponentCount": 3,
     "reasonCodes": [],
-    "advisoryCodes": [
-      "component_state_prose_only"
-    ],
+    "advisoryCodes": [],
     "paletteGrounding": null
   },
   {
