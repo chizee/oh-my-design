@@ -228,7 +228,32 @@
     - 카테고리 URL은 캡처가 오류 페이지였으므로, Tier 1 목록과 레이아웃 문구에서 "제품 카테고리"라는 표현을 정정했다.
   - makinarocks 키 개명(disabled-home-control → carousel-arrow-button)은 파이프라인에서 반영한다.
   - 도구 공백: `apply-edits.mjs`에서 빈 `@@@NEW` 블록이 다음 블록을 삼킨다. 6d가 끝난 뒤 헬퍼 2건(이것과 append focus)을 고친다.
-- **진행 중.** /hangul 시각 콘텐츠 v1, 웨이브 6d(kakaogames·soop·onestore), 재측정 R1·R2·R3 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
+- **완료 — 웨이브 6d + 19곳 브랜치 커밋 (03:05, `cf59d446`).**
+  - 6d 결과: kakaogames 2→10, soop 1→16, onestore 2→10.
+  - onestore 개발자 포털 버튼·입력은 스타일시트 없이 렌더된 페이지의 브라우저 기본값(body Times, #efefef, Arial 13.33px)이었다. 그래서 메인 세션이 토큰과 컴포넌트에서 철회했다(→8).
+  - 파이프라인 통과: 웹 테스트 1060건, check-counts, tsc.
+- **완료 — 부재 재측정 (03:10).** 표기: 확인 / 뒤집힘.
+  - **사이트 8곳: 확인 198 / 뒤집힘 22.**
+    - banksalad 36/0, 29cm 30/0, baemin 27/0, kakao 32/0, samsung 16/0.
+    - yeogiotte 16/3: 도구 문제가 아니라 문구가 자기 데이터와 모순됐다("모든 컨트롤 hover=pressed"인데 검색 필드는 다르다).
+    - karrot 23/5: 가구 카테고리 링크의 라벨 오버레이 `#eeeff1`이 hover 0.32, pressed 0.48.
+    - naver 18/14: AI 검색 버튼의 빈 레이어 7개(글로우·그라데이션·라벨 이미지 교체), 뉴스 바로가기의 스프라이트 위치 이동.
+  - **브랜치 6곳: 128/0.**
+  - 쇼케이스 기준: 전원 유지. socar는 여전히 미달이다.
+  - 새 긍정 판독:
+    - samsung 제품 타일: hover·focus에 구매하기 줄이 나타난다.
+    - samsung GNB: hover에 메가메뉴가 열린다.
+    - 29cm BEST 이미지 링크: 안의 44px 버튼에 `#375fff` 링.
+    - hyundaicard: 헤더 그림자가 사라진다.
+  - **남은 도구 공백:**
+    - 스프라이트 위치(background-position/size), `<img>` src, SVG `<use>`·path는 비교하지 않는다(naver 뉴스는 임시 스크립트로 찾았다).
+    - Tab 순회 중 inert를 다시 확인하지 않는다(socar floating-control).
+  - 정정 반영 상태: yeogiotte·hyundaicard·wanted는 메인이 작업 트리에서 고쳤다(미커밋). karrot·naver·samsung은 정정 레인에서 고친다.
+  - 보고서: `reverify-r1/r2/r3.md`.
+- **다음.**
+  1. 정정 레인: karrot·naver·samsung 정정 + 14곳 `.verification.md`에 재측정 근거 한 줄.
+  2. 도구 공백 수정(스프라이트·img·svg·inert) → 남은 상위 20(ohouse, channeltalk, zigzag, ably, upstage, remember) 프로브.
+  3. 파이프라인 → 커밋 → 오너 GO 한 번에 요청: 웨이브 5 + 오늘 19곳 + 라이브 정정 4곳(yeogiotte, karrot, naver, samsung). 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
   - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
 - **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
