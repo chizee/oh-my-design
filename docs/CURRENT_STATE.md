@@ -343,6 +343,16 @@
   - 사이트 반영 GO(31곳 + 라이브 정정 4곳).
   - /hangul은 보강 후 공개: Windows·Android 렌더, 최종 점검, 타이포그래퍼 검토는 오너 주선.
   - 다음 레인은 KR partial 100 측정.
+- **완료 — 사이트 반영 (08:35).**
+  - main `694b0d74`. 결정 기록 커밋을 main에 먼저 푸시해서, 프리뷰로 빌드된 적 없는 SHA가 프로덕션 배포를 타게 했다. Vercel 프로덕션 배포 6747559933 성공.
+  - 라이브 확인:
+    - 8개 경로 200.
+    - tossbank 새 컴포넌트, ohouse `#ddf3ff` 링, naver 스프라이트 정정, karrot 오버레이 0.32, yeogiotte 문구 정정 모두 보인다.
+    - onestore 개발자 컴포넌트는 0건이다.
+- **KR partial 100 착수 준비.**
+  - 대상 100곳 모두 `verification_v2_missing`이다. 빌더 선택 수 합계 9,587. 상위 10곳: naverpay 468, nexon 317, lemonbase 271, hana 244, hwahae 243, goorm 240, kia 238, wrtn 221, furiosaai 207, imweb 196.
+  - 도구: 7월 파이프라인 `npm --prefix web run capture:reference -- <id> [--routes a,b]`로 번들을 캡처한다. `--max-routes`나 `config/reference-capture-routes.json`로 경로를 정할 수 있다. 7월 사전 조건: 표면 2곳 이상, coverage 60 이상, 컴포넌트 1개 이상.
+  - 파일럿 발견: naverpay 홈(`new.pay.naver.com`)은 비로그인 방문자를 로그인으로 보낸다. 캡처 정책이 로그인 표면을 거부해 표면이 0개였다(빈 번들은 삭제했다). → 레퍼런스마다 로그인 없는 공개 표면을 먼저 찾아야 한다.
 - **다음.**
   1. ~~저작 E1~~ (완료).
   2. 오너 GO 대기: 사이트 반영(웨이브 5 + 19곳 + 라이브 정정 4곳 + E2 3곳, 이어서 E1 3곳), /hangul 공개 판단(v2 뒤).
