@@ -269,8 +269,23 @@
     - 선택형 렌더 검사 `render-check.mjs` 추가.
     - 저장된 eval 산출물 재채점.
     - 이어서 콘텐츠 v2: Claude 예시 추가, 훅 문구, 표지 교체.
+- **완료 — 라이브 정정 + 재측정 근거 (03:35, `7a3a703a`).**
+  - karrot: 가구 링크 오버레이 0.32/0.48. 원자료와 대조했고, 0.24/0.36은 About us 버튼 값으로 이미 기재돼 있다.
+  - naver: AI 검색 레이어 7개, 뉴스 스프라이트 이동.
+  - samsung: 구매하기 줄 나타남, 메가메뉴.
+  - yeogiotte: 문구 3건 정정.
+  - hyundaicard: 헤더 그림자. wanted: 근거 문구 갱신.
+  - 14곳 `.verification.md`에 "고친 도구로 부재 N건 확인, M건 정정" 한 줄을 넣었다.
+  - naver AI 라벨 이미지명 `…highlight.png`는 원자료가 `.pn`에서 잘렸다. `.verification.md`에 명시했다.
+  - 파이프라인 통과: 웹 테스트 1060건.
+  - 기록하지 않은 새 판독 3건(후속): baemin Google Play 무변화, 29cm 내부 버튼 `#375fff` 링, yeogiotte 사진 박스 `rgba(0,0,0,0.16)`.
+- **사이트 반영 패키지 준비됨 (브랜치 `codex/track-foundation`, 오너 GO 대기).**
+  - 웨이브 5: `4dba6b39`, 6곳
+  - 오늘 19곳: `cf59d446`
+  - 라이브 정정 4곳 + 근거 14곳: `7a3a703a`
+  - 프리뷰 배포 확인 중.
 - **다음.**
-  1. 정정 레인 (진행 중): karrot·naver·samsung 정정 + 14곳 `.verification.md`에 재측정 근거 한 줄.
+  1. ~~정정 레인~~ (완료).
   2. 도구 공백 수정(스프라이트·img·svg·inert) → 남은 상위 20(ohouse, channeltalk, zigzag, ably, upstage, remember) 프로브.
   3. 파이프라인 → 커밋 → 오너 GO 한 번에 요청: 웨이브 5 + 오늘 19곳 + 라이브 정정 4곳(yeogiotte, karrot, naver, samsung). 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
   - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
