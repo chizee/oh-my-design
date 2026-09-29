@@ -30,6 +30,22 @@
  * 끝은 항상 process.exit다. 멈추면 --budget 뒤에 읽은 것만 출력한다.
  *   --budget 420000 (전체 예산 ms, 소진 시 exit 3) · --close-timeout 5000 (close() 시간 제한 ms)
  *   멈춘 호출을 보려면: DEBUG=pw:api node scripts/probe-component-states.mjs <url> …
+ *
+ * 비교 범위 (2026-09-30, docs/research/2026-09-29-growth/probe-tool-fix.md). 예전에는 요소 자신과 그 ::before/::after만 봤다.
+ * Wanted는 hover·press를 **빈 자식 div**의 opacity로 칠하고 포커스 링을 라벨 span에 그리며, hyundaicard는 hover에 부모 li를
+ * 들어 올린다 — 셋 다 "변화 없음"으로 읽혔다. 이제 매 읽기마다 다음을 rest와 비교해 상태마다 따로 찍는다:
+ *   - 모든 후손(빈 요소 포함, 열린 shadow root 포함, 너비 우선 --max-kids개까지, 자식 인덱스 경로로 짝지음): 색·배경·opacity·
+ *     transform·filter·밑줄·box-shadow·그려지는 outline·border·background-image·display/visibility·svg fill/stroke·레이아웃 크기·
+ *     backdrop-filter/clip-path/mask·그 후손의 ::before/::after
+ *   - 조상 --up 단계: 배경·border·box-shadow·outline·transform·opacity·filter·background-image·backdrop/clip/mask·::before/::after
+ *   "없음" 줄은 무엇을 비교했는지(후손 몇 개, 빈 요소 몇 개, 조상 몇 단계)를 함께 적는다.
+ * 비활성 컨트롤(disabled/:disabled, aria-disabled="true", pointer-events:none, inert)은 hover·pressed·focus를
+ *   "disabled — not measured"로 적고 그 세 번의 로드를 하지 않는다 (Socar '검색', 2026-09-29).
+ * 전이 대기: 요소·후손·가상 요소·조상의 transition-duration + transition-delay 중 가장 긴 값 + 250ms (최소 450, 최대 6000).
+ * 남은 사각지대: canvas/WebGL/video 픽셀, 계산 스타일로 드러나지 않는 SVG 변화(SMIL, path d, gradient stop), 교차 출처 iframe,
+ *   닫힌 shadow root, 형제·사촌 레이어. 이 스크립트는 상태마다 새로 로드하고 focus를 `.focus()`로 준다 — Tab 순회와 한 번의
+ *   로드로 여러 컨트롤을 재려면 probe-keyboard-states.mjs를 쓴다.
+ *   --max-kids 150 (비교할 후손 수) · --up 3 (비교할 조상 단계)
  */
 import { chromium } from "playwright-core";
 
@@ -60,6 +76,9 @@ const minHeight = Number(opt("min-height", "20"));
 /** 문서화된 높이로 후보를 좁힌다. 흰 배경처럼 흔한 색은 색만으로는 못 고른다. */
 const wantHeight = opt("height") ? Number(opt("height")) : null;
 const nth = Number(opt("nth", "0"));
+/** 비교할 후손 수와 조상 단계 (2026-09-30, 머리말 "비교 범위"). */
+const maxKids = Number(opt("max-kids", "150"));
+const upLevels = Number(opt("up", "3"));
 const CHROME = process.env.OMD_CHROME_PATH ?? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 
 /**
@@ -236,15 +255,22 @@ async function visit(act) {
  * 사실로 기록할 뻔했다.
  */
 async function settle(frame, page) {
-  const ms = await frame.evaluate(() => {
+  // 요소 자신의 duration만 보면 후손·가상 요소·조상의 전이(그리고 delay)를 중간에 읽는다 (2026-09-30).
+  const ms = await frame.evaluate(([maxKids, upLevels]) => {
     const el = (window.__omdOne ? window.__omdOne('[data-omd-probe="1"]') : document.querySelector('[data-omd-probe="1"]'));
-    const durations = [getComputedStyle(el).transitionDuration, getComputedStyle(el).animationDuration]
-      .join(",").split(",")
-      .map((v) => (v.trim().endsWith("ms") ? parseFloat(v) : parseFloat(v) * 1000))
-      .filter((n) => Number.isFinite(n));
-    return Math.max(0, ...durations);
-  }).catch(() => 0);
-  await page.waitForTimeout(Math.min(2500, Math.max(450, ms + 250)));
+    const parentOf = (n) => n.parentElement || (n.getRootNode && n.getRootNode().host) || null;
+    const msList = (v) => String(v).split(",").map((x) => { x = x.trim(); const n = x.endsWith("ms") ? parseFloat(x) : parseFloat(x) * 1000; return Number.isFinite(n) ? n : 0; });
+    const nodes = [el, ...[...el.querySelectorAll("*")].slice(0, maxKids)];
+    for (let l = 1, p = parentOf(el); l <= upLevels && p && p !== document.body; l++, p = parentOf(p)) nodes.push(p);
+    let max = Math.max(0, ...msList(getComputedStyle(el).animationDuration));
+    for (const n of nodes) for (const which of [null, "::before", "::after"]) {
+      const c = getComputedStyle(n, which);
+      const d = msList(c.transitionDuration), dl = msList(c.transitionDelay);
+      d.forEach((x, j) => { if (x > 0) max = Math.max(max, x + (dl[j % dl.length] || 0)); });
+    }
+    return max;
+  }, [maxKids, upLevels]).catch(() => 0);
+  await page.waitForTimeout(Math.min(6000, Math.max(450, ms + 250)));
 }
 
 /**
@@ -272,7 +298,7 @@ async function clearOverlays(frame) {
   }).catch(() => {});
 }
 
-const read = (frame) => frame.evaluate((prefix) => {
+const read = (frame) => frame.evaluate(([prefix, maxKids, upLevels]) => {
   const el = (window.__omdOne ? window.__omdOne('[data-omd-probe="1"]') : document.querySelector('[data-omd-probe="1"]'));
   const s = getComputedStyle(el);
   const rect = el.getBoundingClientRect();
@@ -295,6 +321,50 @@ const read = (frame) => frame.evaluate((prefix) => {
       return paints ? `${ps}{bg:${c.backgroundColor};img:${c.backgroundImage.slice(0, 60)};op:${c.opacity};tf:${c.transform};bs:${c.boxShadow}}` : ""; }).join(""),
     is: { hover: el.matches(":hover"), active: el.matches(":active"), focusVisible: el.matches(":focus-visible") },
   };
+  // 2026-09-30: 후손(빈 요소 포함)·그 ::before/::after·조상까지 읽는다 — 머리말 "비교 범위".
+  const alpha = (c) => { c = String(c); if (c === "transparent") return 0; const m = c.match(/^rgba?\(([^)]*)\)$/); if (m) { const p = m[1].split(/[\s,\/]+/).filter(Boolean); return p.length > 3 ? parseFloat(p[3]) * (p[3].endsWith("%") ? 0.01 : 1) : 1; } const m2 = c.match(/\/\s*([\d.]+%?)\s*\)$/); if (m2) return m2[1].endsWith("%") ? parseFloat(m2[1]) / 100 : parseFloat(m2[1]); return 1; };
+  const bd = (x) => { const sides = ["Top", "Right", "Bottom", "Left"].map((d) => { const w = x["border" + d + "Width"], st = x["border" + d + "Style"], c = x["border" + d + "Color"]; return st === "none" || st === "hidden" || parseFloat(w) === 0 ? "none" : `${w} ${st} ${c}`; }); return sides.every((v) => v === sides[0]) ? sides[0] : sides.join(" | "); };
+  const ol = (x) => (x.outlineStyle !== "none" && parseFloat(x.outlineWidth) > 0 && alpha(x.outlineColor) > 0 ? `${x.outlineColor} ${x.outlineStyle} ${x.outlineWidth} off ${x.outlineOffset}` : "none");
+  const ex = (x) => { const m = x.maskImage && x.maskImage !== "none" ? x.maskImage : x.webkitMaskImage && x.webkitMaskImage !== "none" ? x.webkitMaskImage : ""; return [x.backdropFilter && x.backdropFilter !== "none" ? `backdrop:${x.backdropFilter}` : "", x.clipPath && x.clipPath !== "none" ? `clip:${x.clipPath.slice(0, 60)}` : "", m ? `mask:${m.slice(0, 60)}` : ""].filter(Boolean).join(";"); };
+  const ps = (n, which) => {
+    const c = getComputedStyle(n, which);
+    if (c.content === "none" || c.content === "normal" || c.display === "none") return "";
+    const glyph = c.content !== '""' && c.content !== "''";
+    const sideBorder = ["Top", "Right", "Bottom", "Left"].some((d) => c["border" + d + "Style"] !== "none" && parseFloat(c["border" + d + "Width"]) > 0 && alpha(c["border" + d + "Color"]) > 0);
+    const paints = alpha(c.backgroundColor) > 0 || c.backgroundImage !== "none" || c.boxShadow !== "none" || sideBorder || ol(c) !== "none" || glyph || ex(c) !== "";
+    return paints ? `${which}{content:${c.content.slice(0, 20)};bg:${c.backgroundColor};img:${c.backgroundImage.slice(0, 60)};op:${c.opacity};tf:${c.transform};bs:${c.boxShadow};bd:${bd(c)};ol:${ol(c)};size:${c.width}x${c.height}${ex(c) ? ";" + ex(c) : ""}}` : "";
+  };
+  const parentOf = (n) => n.parentElement || (n.getRootNode && n.getRootNode().host) || null;
+  const clsOf = (n) => (typeof n.className === "string" && n.className.trim() ? "." + n.className.trim().split(/\s+/).slice(0, 2).join(".") : "");
+  const SKIP = /^(script|style|template|noscript|link|meta|slot)$/i;
+  const queue = [];
+  const push = (p0, path) => {
+    [...(p0.children || [])].forEach((k, n) => { if (!SKIP.test(k.tagName)) queue.push([k, path ? `${path}.${n}` : `${n}`]); });
+    if (p0.shadowRoot) [...p0.shadowRoot.children].forEach((k, n) => { if (!SKIP.test(k.tagName)) queue.push([k, path ? `${path}.s${n}` : `s${n}`]); });
+  };
+  push(el, "");
+  const list = [];
+  for (let h = 0; h < queue.length && h < 5000; h++) { const [k, p] = queue[h]; if (list.length < maxKids) list.push([k, p]); push(k, p); }
+  out.kids = list.map(([k, p]) => {
+    const c = getComputedStyle(k), tag = k.tagName.toLowerCase(), svg = k instanceof SVGElement;
+    const lab = (k.getAttribute("aria-label") || k.textContent || "").replace(/\s+/g, " ").trim().slice(0, 20);
+    return { k: `${tag}@${p}`, d: `${tag}${clsOf(k)}[${lab}]`,
+      empty: !k.children.length && ![...k.childNodes].some((x) => x.nodeType === 3 && x.textContent.trim()) && !svg && !/^(img|picture|video|canvas|input|textarea|select|iframe|object|embed)$/.test(tag),
+      v: { fg: c.color, bg: c.backgroundColor, op: c.opacity, tf: c.transform, filter: c.filter, deco: c.textDecorationLine === "none" ? "none" : `${c.textDecorationLine} ${c.textDecorationColor}`,
+        shadow: c.boxShadow, outline: ol(c), border: bd(c), img: c.backgroundImage.slice(0, 80), vis: c.display === "none" ? "display:none" : c.visibility,
+        fill: svg ? `${c.fill}|${c.stroke}` : "", size: k.offsetWidth !== undefined ? `${k.offsetWidth}x${k.offsetHeight}` : `${c.width}x${c.height}`, ex: ex(c), pseudo: ps(k, "::before") + ps(k, "::after") } };
+  });
+  out.kidsTotal = queue.length;
+  out.ups = [];
+  for (let l = 1, p = parentOf(el); l <= upLevels && p && p !== document.body && p !== document.documentElement; l++, p = parentOf(p)) {
+    const c = getComputedStyle(p);
+    out.ups.push({ k: `up${l}:${p.tagName.toLowerCase()}${clsOf(p)}`, v: { bg: c.backgroundColor, border: bd(c), shadow: c.boxShadow, outline: ol(c), tf: c.transform, op: c.opacity, filter: c.filter, img: c.backgroundImage.slice(0, 80), ex: ex(c), pseudo: ps(p, "::before") + ps(p, "::after") } });
+  }
+  out.disabled = [];
+  try { if (el.disabled === true || el.matches(":disabled")) out.disabled.push("disabled"); } catch {}
+  if (el.closest('[aria-disabled="true"]')) out.disabled.push("aria-disabled");
+  if (s.pointerEvents === "none") out.disabled.push("pointer-events:none");
+  if (el.closest("[inert]")) out.disabled.push("inert");
   if (prefix) {
     out.vars = {};
     // `@layer`·`@media` 안까지 내려간다 — Tailwind v4는 테마 변수를 `@layer theme`에 둔다.
@@ -316,7 +386,28 @@ const read = (frame) => frame.evaluate((prefix) => {
     }
   }
   return out;
-}, varPrefix);
+}, [varPrefix, maxKids, upLevels]);
+
+/** 후손·조상 비교 (2026-09-30). 자식 인덱스 경로로 짝짓고, 경로의 태그가 바뀌면 속성 변화가 아니라 DOM 변화 한 건으로 센다. */
+function deepDiff(a, b) {
+  const out = [];
+  const key = (k) => k.k.slice(k.k.indexOf("@") + 1);
+  const am = new Map((a.kids ?? []).map((k) => [key(k), k])), bm = new Map((b.kids ?? []).map((k) => [key(k), k]));
+  let added = 0, removed = 0, retagged = 0;
+  for (const [p, y] of bm) {
+    const x = am.get(p);
+    if (!x) { added++; continue; }
+    if (x.k !== y.k) { retagged++; continue; }
+    for (const q of Object.keys(y.v)) if (x.v[q] !== y.v[q]) out.push(`후손 ${y.k} <${y.d}>${y.empty ? " (빈 요소)" : ""} ${q}: ${x.v[q]} -> ${y.v[q]}`);
+  }
+  for (const p of am.keys()) if (!bm.has(p)) removed++;
+  const capped = (a.kidsTotal ?? 0) > (a.kids?.length ?? 0) || (b.kidsTotal ?? 0) > (b.kids?.length ?? 0);
+  if (retagged || a.kidsTotal !== b.kidsTotal || (!capped && (added || removed))) out.push(`후손 DOM 변화: ${a.kidsTotal} -> ${b.kidsTotal}개 (+${added} -${removed}${retagged ? `, 태그 바뀜 ${retagged}` : ""})`);
+  for (let j = 0; j < Math.min(a.ups?.length ?? 0, b.ups?.length ?? 0); j++) {
+    for (const q of Object.keys(b.ups[j].v)) if (a.ups[j].v[q] !== b.ups[j].v[q]) out.push(`조상 ${a.ups[j].k} ${q}: ${a.ups[j].v[q]} -> ${b.ups[j].v[q]}`);
+  }
+  return out;
+}
 
 const states = {};
 const unmeasured = {};
@@ -369,6 +460,11 @@ async function hoverOrMove(loc, v) {
     await v.page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
   }
 }
+// 비활성 컨트롤에는 hover·pressed·focus 상태가 없다. Socar '검색'(2026-09-29)은 disabled인데 hover가 매칭돼 "변화 없음"으로
+// 측정된 것처럼 읽혔다. 못 쟀음으로 적고, 상태마다 새로 여는 세 번의 로드도 하지 않는다.
+if (states.rest.disabled?.length) {
+  for (const k of ["hover", "pressed", "focus"]) unmeasured[k] = `disabled — not measured (${states.rest.disabled.join(", ")})`;
+} else {
 await capture("hover", async (v) => { await clearOverlays(v.frame);
   const loc = v.frame.locator('[data-omd-probe="1"]');
   await loc.scrollIntoViewIfNeeded(); await hoverOrMove(loc, v); await settle(v.frame, v.page); });
@@ -380,6 +476,7 @@ await capture("focus", async (v) => { await clearOverlays(v.frame);
   await v.page.keyboard.press("Tab");                       // 키보드 모달리티 — toss에서 이게 없으면 focus가 안 뜬다
   await v.frame.evaluate(() => (window.__omdOne ? window.__omdOne('[data-omd-probe="1"]') : document.querySelector('[data-omd-probe="1"]')).focus());
   await settle(v.frame, v.page); });
+}
 
 function report() {
   if (reported) return;
@@ -451,6 +548,7 @@ for (const [name, s] of Object.entries(states)) {
   // "hover에서 #c6c6c6으로 바뀐다"를 읽고도 무엇에서 바뀌는지 알 수 없다 (2026-09-22).
   if (s.border !== states.rest.border || name === "rest") extras.push(`border=${hex(s.border)}`);
   if (extras.length) console.log(`           ${extras.join("  ")}`);
+  if (name !== "rest") { const dd = deepDiff(states.rest, s); for (const x of dd.slice(0, 14)) console.log(`           ${x}`); if (dd.length > 14) console.log(`           … 외 ${dd.length - 14}건`); }
 }
 for (const [name, why] of Object.entries(unmeasured)) {
   console.log(`  ${name.padEnd(8)} ${"못 쟀음".padEnd(20)} ${why}`);
@@ -460,8 +558,14 @@ for (const [name, why] of Object.entries(unmeasured)) {
 // 세면 포커스 표시가 없는 입력칸이 있는 것처럼 보인다 (2026-09-23 citymapper·guardian 검색칸).
 const drawnOutline = (o) => (/\bnone\b/.test(o) || /rgba\([^)]*,\s*0\)/.test(o) || /\b0px\b/.test(o) ? "none" : o);
 const VISUAL = (s) => [hex(s.bg), hex(s.fg), hex(s.border), s.shadow, drawnOutline(s.outline), s.transform, s.opacity, s.bgImage, s.decoration, s.pseudo].join("|");
-const changed = Object.entries(states).filter(([k, s]) => k !== "rest" && VISUAL(s) !== VISUAL(states.rest));
-console.log(`\n눈에 보이는 값이 바뀌는 상태: ${changed.length ? changed.map(([k]) => k).join(", ") : "없음 (bg·fg·border·shadow·outline·transform·opacity 전부 동일 · background-image·text-decoration·::before/::after 포함)"}`);
+// 2026-09-30: 후손·조상의 변화도 "바뀜"이다. "없음"은 무엇을 비교했는지와 함께만 적고, 잰 상태가 하나도 없으면 "없음"이라 하지 않는다.
+const changed = Object.entries(states).filter(([k, s]) => k !== "rest" && (VISUAL(s) !== VISUAL(states.rest) || deepDiff(states.rest, s).length > 0));
+const measuredStates = Object.keys(states).filter((k) => k !== "rest");
+const r0 = states.rest;
+const scope = `요소 자신(bg·fg·border·shadow·outline·transform·opacity·background-image·text-decoration)과 그 ::before/::after · 후손 ${r0.kids?.length ?? 0}개${(r0.kidsTotal ?? 0) > (r0.kids?.length ?? 0) ? `(전체 ${r0.kidsTotal}개 중 너비 우선 앞쪽; --max-kids로 늘림)` : ""}, 그중 빈 요소 ${(r0.kids ?? []).filter((k) => k.empty).length}개, 각 후손의 ::before/::after · 조상 ${r0.ups?.length ?? 0}단계와 그 ::before/::after`;
+if (!measuredStates.length) console.log(`\n눈에 보이는 값이 바뀌는 상태: 판정 없음 — 잰 상태가 하나도 없다 (아래 못 잰 상태)`);
+else if (changed.length) console.log(`\n눈에 보이는 값이 바뀌는 상태: ${changed.map(([k]) => k).join(", ")}\n비교 범위: ${scope}`);
+else console.log(`\n눈에 보이는 값이 바뀌는 상태: 없음 (잰 상태 ${measuredStates.join("·")}) — 비교 범위: ${scope}`);
 if (Object.keys(unmeasured).length) {
   console.log(`못 잰 상태: ${Object.keys(unmeasured).join(", ")} — **부재가 아니다.** 레퍼런스에 "없음"으로 적지 말 것.`);
 }
