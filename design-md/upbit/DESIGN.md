@@ -58,6 +58,94 @@ verification_v2:
     "tokens.components.quick-fill.height": *exchange
     "tokens.components.quick-fill.font": *exchange
     "tokens.components.quick-fill.use": *exchange
+    "tokens.components.quick-fill.states": *exchange
+    "tokens.components.home-header-link.type": { surface_id: marketing-home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.home-header-link.bg": { surface_id: marketing-home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.home-header-link.fg": { surface_id: marketing-home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.home-header-link.radius": { surface_id: marketing-home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.home-header-link.padding": { surface_id: marketing-home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.home-header-link.height": { surface_id: marketing-home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.home-header-link.font": { surface_id: marketing-home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.home-header-link.hover": { surface_id: marketing-home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"1\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.home-header-link.pressed": { surface_id: marketing-home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"1\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.home-header-link.states": { surface_id: marketing-home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.home-header-link.use": { surface_id: marketing-home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.type": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.bg": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.fg": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.radius": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.padding": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.height": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.font": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.hover": { surface_id: exchange, source_id: exchange-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"2\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.pressed": { surface_id: exchange, source_id: exchange-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"2\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.states": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.dark-header-link.use": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.type": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.bg": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.fg": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.border": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.radius": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.padding": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.height": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.font": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.selected": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.states": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.exchange-panel-tab.use": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.type": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"132\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.bg": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"132\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.fg": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"132\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.border": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"132\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.radius": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"132\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.padding": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"132\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.height": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"132\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.font": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"132\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.selected": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.states": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"132\"]", captured: "2026-07-13" }
+    "tokens.components.order-side-tab.use": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"132\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.type": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"49\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.bg": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"49\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.fg": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"49\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.border": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"49\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.radius": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"49\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.padding": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"49\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.size": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"49\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.font": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"49\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.selected": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"48\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.states": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"49\"]", captured: "2026-07-13" }
+    "tokens.components.notice-page-button.use": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"49\"]", captured: "2026-07-13" }
+    "tokens.components.notice-search-input.type": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.notice-search-input.bg": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.notice-search-input.fg": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.notice-search-input.radius": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.notice-search-input.padding": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.notice-search-input.height": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.notice-search-input.font": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.notice-search-input.states": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.notice-search-input.use": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.order-form-input.type": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.order-form-input.bg": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.order-form-input.fg": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.order-form-input.radius": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.order-form-input.padding": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.order-form-input.height": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.order-form-input.font": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.order-form-input.states": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.order-form-input.use": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.notice-panel.type": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::article", captured: "2026-07-13" }
+    "tokens.components.notice-panel.bg": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::article", captured: "2026-07-13" }
+    "tokens.components.notice-panel.radius": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::article", captured: "2026-07-13" }
+    "tokens.components.notice-panel.padding": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::article", captured: "2026-07-13" }
+    "tokens.components.notice-panel.shadow": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::article", captured: "2026-07-13" }
+    "tokens.components.notice-panel.states": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::article", captured: "2026-07-13" }
+    "tokens.components.notice-panel.use": { surface_id: support-notice, source_id: notice-live, method: computed-style, selector: "surface-3::article", captured: "2026-07-13" }
+    "tokens.components.exchange-panel.type": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::article", captured: "2026-07-13" }
+    "tokens.components.exchange-panel.bg": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::article", captured: "2026-07-13" }
+    "tokens.components.exchange-panel.radius": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::article", captured: "2026-07-13" }
+    "tokens.components.exchange-panel.padding": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::article", captured: "2026-07-13" }
+    "tokens.components.exchange-panel.shadow": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::article", captured: "2026-07-13" }
+    "tokens.components.exchange-panel.states": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::article", captured: "2026-07-13" }
+    "tokens.components.exchange-panel.use": { surface_id: exchange, source_id: exchange-live, method: computed-style, selector: "surface-2::article", captured: "2026-07-13" }
   conflicts: []
 tokens:
   source: live-extract
@@ -83,7 +171,16 @@ tokens:
   rounded: { square: 0, control: 4 }
   components_harvested: true
   components:
-    quick-fill: { type: badge, bg: "#ffffff", fg: "#1a2434", border: "1px solid #d6d8db", radius: "4px", padding: "0px 8px 1px", height: "28px", font: "12px / 400", use: "Exchange percentage quick-fill link; surface-2::[data-omd-capture=\"139\"]" }
+    quick-fill: { type: button, bg: "#ffffff", fg: "#1a2434", border: "1px solid #d6d8db", radius: "4px", padding: "0px 8px 1px", height: "28px", font: "12px / 400", states: "default captured; the capture holds no state frame for this element", use: "Exchange percentage quick-fill link; surface-2::[data-omd-capture=\"139\"]" }
+    home-header-link: { type: tab, bg: "transparent", fg: "#1a2434", radius: "0px", padding: "0px", height: "22px", font: "15px / 400 / 22px", hover: "font 15px / 500", pressed: "font 15px / 500", states: "rest, hover, and pressed sampled on the home header links (capture 1-5; 1-4 carry text, 5 is an 84 x 24 link without text). Every hover and pressed frame records weight 500 against rest 400, and weight is the only dumped property that moves; the siblings agree. Focus is not declared from the bundle: the collector presses before it focuses, which suppresses :focus-visible", use: "Public home header navigation link (a.css-h3yhvr) at home::[data-omd-capture=\"1\"]" }
+    dark-header-link: { type: tab, bg: "transparent", fg: "rgba(255, 255, 255, 0.6)", radius: "0px", padding: "0px", height: "22px", font: "15px / 400 / 22px", hover: "font 15px / 500", pressed: "font 15px / 500", states: "same class as the home header link; rest, hover, and pressed sampled on the exchange header (capture 2-5) and the notice header (surface-3 capture 1-5). Every hover and pressed frame records weight 500 against rest 400, the only dumped property that moves; the siblings agree. Focus is not declared from the bundle: the collector presses before it focuses, which suppresses :focus-visible", use: "Exchange and service-centre header navigation link (a.css-h3yhvr) at surface-2::[data-omd-capture=\"2\"]; white at 60% alpha implies a dark header bar, whose fill was not sampled on this element" }
+    exchange-panel-tab: { type: tab, bg: "transparent", fg: "#333333", border: "0px 0px 1px #dddddd", radius: "0px", padding: "0px", height: "45px", font: "16px / 500 / 45px", selected: "fg #0062df, border 0px 0px 3px #0062df, 16px / 700", states: "rest (capture 16) and the active tab (capture 15, class tab__item__link--active) captured; the capture holds no pointer-state frame for either", use: "Exchange panel tab (a.tab__item__link) at surface-2::[data-omd-capture=\"16\"]; the border is bottom-only" }
+    order-side-tab: { type: tab, bg: "transparent", fg: "#333333", border: "0px 0px 1px #d4d6dc", radius: "0px", padding: "0px", height: "45px", font: "16px / 500 / 42px", selected: "fg #dd3c44, border 0px 0px 3px #dd3c44, 16px / 700", states: "rest (capture 132) and the selected buy side (capture 131, inside li.tabB__buy.on) captured; only the buy side was captured selected, so no selected colour is recorded for the other side; no pointer-state frame", use: "Exchange order-form side tab (a.tabB__button) at surface-2::[data-omd-capture=\"132\"]; the border is bottom-only" }
+    notice-page-button: { type: button, bg: "#ffffff", fg: "#1a2434", border: "1px #d6d8db", radius: "0px", padding: "0px", size: "28px x 28px", font: "12px / 400", selected: "bg #0062df, fg #ffffff, border 1px #0062df", states: "rest on the page buttons (button.css-10yd3aw, 11 occurrences) and the current page (capture 48, button.css-1arrn0x) captured; no pointer-state frame", use: "Service-centre notice pagination button at surface-3::[data-omd-capture=\"49\"]" }
+    notice-search-input: { type: input, bg: "transparent", fg: "#1a2434", radius: "0px", padding: "0px", height: "42px", font: "14px / 400 / Arial", states: "default captured; no state frame", use: "Service-centre notice search field (input.css-1sxigs) at surface-3::[data-omd-capture=\"24\"]; transparent and borderless, its wrapper was not sampled, and it resolves to the system family Arial rather than the Roboto stack" }
+    order-form-input: { type: input, bg: "transparent", fg: "#1a2434", radius: "0px", padding: "0px", height: "38px", font: "14px / 400 / Arial", states: "default captured; no state frame", use: "Exchange order-form text field (input[type=text].css-1r6ulzr, three occurrences) at surface-2::[data-omd-capture=\"135\"]; transparent and borderless, its wrapper was not sampled, and it resolves to the system family Arial" }
+    notice-panel: { type: card, bg: "#ffffff", radius: "0px", padding: "60px 45px 45px", shadow: "rgb(222, 225, 231) 2px 2px 4px 0px", states: "non-interactive container", use: "Service-centre notice panel (article.css-mzy1sz) at surface-3::article" }
+    exchange-panel: { type: card, bg: "#ffffff", radius: "0px", padding: "0px", shadow: "none", states: "non-interactive container", use: "Exchange white data panel (article) at surface-2::article; six article panels, 400 to 990px wide, compute the same fill, radius, padding, and shadow" }
 ---
 
 # Upbit — Design Reference
@@ -93,8 +190,8 @@ tokens:
 Upbit is a digital-asset service operated by Dunamu. Its public web surface makes market information the visual priority: the reverified exchange page exposes trading-oriented controls and dense data regions, while the home and service-center notice pages retain the same light, low-radius treatment around them. The current Developer Center describes APIs for prices, order books, trading, balances, deposits, withdrawals, and real-time streaming; that public product framing helps explain why compact numeric controls and restrained surface colors dominate the captured pages. The observable identity is not a universal visual system: it is a disciplined public-web layer in which blue is used for actions and down-market data, red for up-market data, and white panels sit on a pale gray canvas. This record keeps that exchange, marketing, support, documentation, and authenticated-product boundary explicit.
 
 - **Public-source boundary:** the supplied capture contains `https://www.upbit.com/home`, the public exchange URL, and `https://www.upbit.com/service_center/notice`. It contains no authenticated application screen and no Developer Center chrome.
-- **Geometry:** the repeated raw radii are 0px and 4px; the captured quick-fill control is the only retained component pattern.
-- **No state inference:** the bundle has `interactionCount: 0` and no observed interaction kind. Hover, focus, pressed, disabled, validation, menu, modal, toast, and transition claims are omitted.
+- **Geometry:** the repeated raw radii are 0px and 4px. Every retained component except the 4px quick-fill control computes a 0px radius (§4).
+- **State evidence:** the bundle's `interactions[]` record is empty (no dialog, tab, menu, or form-error record), but the bundle does hold pointer-state frames: the header navigation links record weight 500 on hover and on press on all three surfaces (§4). No other element has a state frame. Focus, disabled, validation, menu, modal, toast, and transition claims are omitted. Corrected 2026-09-29: the July text read `interactionCount: 0` as the absence of any state evidence.
 
 ## Primary tasks
 
@@ -153,7 +250,78 @@ The exchange-only red/blue pair is documented as a local market display observat
 - Font: 12px / 400 / resolved Roboto system stack
 - Use: percentage quick-fill link on the public exchange; evidence `surface-2::[data-omd-capture="139"]`, class `percentage-button css-1vvi88j`
 
-The collector reports this as five medium-confidence occurrences on the exchange page. It captures a static default only. No hover, focus, pressed, disabled, validation, or size variant is documented because the top-level interaction record is empty.
+The collector reports this as five medium-confidence occurrences on the exchange page. The capture holds no state frame for this element, so only its default is documented. Corrected 2026-09-29: the July text tied this to the empty interaction record, and the July token typed the control as a badge; the collector classes it as a button.
+
+The components below were transcribed on 2026-09-29 from the same 2026-07-13 bundle; nothing was re-measured.
+
+### Header navigation link — light (home)
+
+**Rest and pointer states**
+- Background: transparent
+- Text: `#1A2434`
+- Radius: 0px · Padding: 0px · Height: 22px
+- Font: 15px / 400 / 22px, resolved Roboto system stack
+- Hover: weight 500 (400 at rest)
+- Pressed: weight 500
+- States: sampled on the home header links, `home::[data-omd-capture="1"]` to `"5"` (1–4 carry text; 5 is an 84 × 24 link without text). Every hover and pressed frame records weight 500, and weight is the only dumped property that moves. All the siblings agree, so the value is read as settled rather than mid-transition. Focus is not declared: the collector presses before it focuses, which suppresses `:focus-visible`.
+- Use: public home header navigation link, class `css-h3yhvr`.
+
+### Header navigation link — dark (exchange, notice)
+
+**Rest and pointer states**
+- Background: transparent
+- Text: `rgba(255, 255, 255, 0.6)`
+- Radius: 0px · Padding: 0px · Height: 22px
+- Font: 15px / 400 / 22px
+- Hover: weight 500
+- Pressed: weight 500
+- States: the same class as the light link, sampled on the exchange header (`surface-2::[data-omd-capture="2"]` to `"5"`) and the notice header (`surface-3::[data-omd-capture="1"]` to `"5"`). Every hover and pressed frame records weight 500, the only dumped property that moves. Focus is not declared.
+- Use: white text at 60% alpha implies a dark header bar; its fill was not sampled on this element.
+
+### Exchange panel tab
+
+- Background: transparent
+- Text: `#333333`
+- Border: bottom only, 1px `#DDDDDD`
+- Radius: 0px · Padding: 0px · Height: 45px
+- Font: 16px / 500 / 45px
+- Selected: text `#0062DF`, bottom border 3px `#0062DF`, weight 700 (`surface-2::[data-omd-capture="15"]`, class `tab__item__link--active`)
+- States: rest and the active variant only; the capture holds no pointer-state frame for either.
+- Use: exchange panel tab, `surface-2::[data-omd-capture="16"]`, class `tab__item__link`.
+
+### Order-form side tab
+
+- Background: transparent
+- Text: `#333333`
+- Border: bottom only, 1px `#D4D6DC`
+- Radius: 0px · Padding: 0px · Height: 45px
+- Font: 16px / 500 / 42px
+- Selected: text `#DD3C44`, bottom border 3px `#DD3C44`, weight 700, on the buy side (`surface-2::[data-omd-capture="131"]`, inside `li.tabB__buy.on`). Only the buy side was captured selected, so no selected colour is recorded for the other side.
+- States: no pointer-state frame.
+- Use: exchange order-form side tab, `surface-2::[data-omd-capture="132"]`, class `tabB__button`.
+
+### Notice pagination button
+
+- Background: `#FFFFFF`
+- Text: `#1A2434`
+- Border: 1px `#D6D8DB`
+- Radius: 0px · Padding: 0px · Size: 28px × 28px
+- Font: 12px / 400
+- Selected (current page): background `#0062DF`, text `#FFFFFF`, border 1px `#0062DF` (`surface-3::[data-omd-capture="48"]`, class `css-1arrn0x`)
+- States: no pointer-state frame.
+- Use: service-centre notice pagination, `surface-3::[data-omd-capture="49"]`, class `css-10yd3aw` (11 occurrences).
+
+### Text fields
+
+- **Notice search field**: `surface-3::[data-omd-capture="24"]`, `input.css-1sxigs`. Transparent, borderless, text `#1A2434`, 42px high, 14px / 400.
+- **Order-form field**: `surface-2::[data-omd-capture="135"]`, `input[type=text].css-1r6ulzr` (three occurrences). Transparent, borderless, text `#1A2434`, 38px high, 14px / 400.
+- Both fields resolve to `Arial`, one of the system families in §3, not to the Roboto stack. Their wrappers were not sampled, so no field border or fill is declared, and neither field has a state frame.
+
+### Panels
+
+- **Notice panel**: `surface-3::article`, class `css-mzy1sz`. Background `#FFFFFF`, 0px radius, padding `60px 45px 45px`, shadow `rgb(222, 225, 231) 2px 2px 4px 0px` (`#DEE1E7`).
+- **Exchange data panel**: `surface-2::article`. Background `#FFFFFF`, 0px radius, no padding, `box-shadow: none`; six article panels, 400–990px wide, compute the same values.
+- Both are non-interactive containers.
 
 ---
 **Verified:** 2026-07-13
@@ -165,7 +333,7 @@ The prior prose-derived token block, 2025 date stamp, broad navigation/hero/tabl
 
 ## 5. Elevation
 
-The retained exchange quick-fill sample has `box-shadow: none`. No general elevation scale is claimed from one control or from unqualified article containers.
+The retained exchange quick-fill sample and the exchange data panels compute `box-shadow: none`; the service-centre notice panel carries `rgb(222, 225, 231) 2px 2px 4px 0px` (`#DEE1E7`, §4). No general elevation scale is claimed from one shadowed container.
 
 ## 6. Imagery & illustration
 
@@ -209,7 +377,7 @@ No first-party user research, audience segmentation, or persona material was col
 
 ## 14. States
 
-No loading, empty, success, error, disabled, focus, validation, menu, dialog, toast, or tab-transition state is documented. The supplied collector has zero interaction records; adding a behavior table would fabricate unobserved variants.
+Pointer states are documented only for the header navigation links: hover and pressed both record weight 500 against 400 at rest, on all three surfaces (§4). The selected exchange tab, the selected buy tab, and the current notice page are DOM variants captured at rest. No loading, empty, success, error, disabled, focus, validation, menu, dialog, toast, or tab-transition state is documented; focus is not declared from the bundle because the collector presses before it focuses. Corrected 2026-09-29: the July text treated the empty `interactions[]` record as the absence of every state sample.
 
 ## 15. Motion & Easing
 
@@ -223,7 +391,7 @@ No motion or easing values were captured. Preserve this absence instead of assig
 - Keep `#DD3C44` and `#1375EC` bounded to their captured exchange-market context.
 - Treat Roboto as an observed system-resolved runtime family, not an Upbit-owned brand font.
 - Keep marketing, exchange, support, Developer Center, and unobserved authenticated-product claims separated.
-- Record only static defaults when the interaction capture is empty.
+- Declare a state only where the bundle holds a settled state frame (the header links' weight 500); record defaults elsewhere.
 
 ### Don't
 

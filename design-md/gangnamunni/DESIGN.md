@@ -74,6 +74,65 @@ verification_v2:
     "tokens.components.filter-chip.focus": *cell_css
     "tokens.components.filter-chip.states": *chip
     "tokens.components.filter-chip.use": *chip
+    "tokens.components.media-card-action.type": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.media-card-action.bg": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.media-card-action.radius": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.media-card-action.padding": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.media-card-action.states": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.media-card-action.use": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.category-shortcut.type": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.category-shortcut.bg": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.category-shortcut.border": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.category-shortcut.radius": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.category-shortcut.padding": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.category-shortcut.height": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.category-shortcut.states": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.category-shortcut.use": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.type": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.bg": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.radius": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.padding": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.size": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.states": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.use": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.type": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.bg": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.fg": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.radius": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.padding": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.height": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.font": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.states": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.use": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.link-button.type": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"180\"]", captured: "2026-07-13" }
+    "tokens.components.link-button.bg": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"180\"]", captured: "2026-07-13" }
+    "tokens.components.link-button.fg": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"180\"]", captured: "2026-07-13" }
+    "tokens.components.link-button.radius": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"180\"]", captured: "2026-07-13" }
+    "tokens.components.link-button.padding": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"180\"]", captured: "2026-07-13" }
+    "tokens.components.link-button.height": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"180\"]", captured: "2026-07-13" }
+    "tokens.components.link-button.font": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"180\"]", captured: "2026-07-13" }
+    "tokens.components.link-button.states": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"180\"]", captured: "2026-07-13" }
+    "tokens.components.link-button.use": { surface_id: home, source_id: live-home, method: computed-style, selector: "home::[data-omd-capture=\"180\"]", captured: "2026-07-13" }
+    "tokens.components.events-tab.type": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.events-tab.bg": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.events-tab.fg": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.events-tab.radius": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.events-tab.padding": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.events-tab.height": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.events-tab.font": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.events-tab.selected": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.events-tab.states": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.events-tab.use": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.outline-filter-chip.type": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.outline-filter-chip.bg": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.outline-filter-chip.fg": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.outline-filter-chip.border": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.outline-filter-chip.radius": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.outline-filter-chip.padding": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.outline-filter-chip.height": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.outline-filter-chip.font": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.outline-filter-chip.states": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.outline-filter-chip.use": { surface_id: events, source_id: live-events, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
   conflicts: []
 tokens:
   source: reconciled
@@ -89,8 +148,15 @@ tokens:
   rounded: { cta: 6, card: 20, full: 9999 }
   components_harvested: true
   components:
-    outline-cta: { type: button, fg: "#131517", border: "1px solid #b5bfc9", radius: "6px", padding: "8px 12px", font: "13px / 600", pressed: "rgba(33, 39, 45, 0.04)", disabled: "#d8dfe6", focus: "#000000", states: "pressed state captured; no changed pressed value retained", use: "Current small outline CTA on home and events" }
-    filter-chip: { type: button, bg: "#eff2f5", fg: "#131517", radius: "9999px", height: "32px", padding: "0px 10px", font: "14px / 500", active: "#131517", pressed: "rgba(33, 39, 45, 0.04)", disabled: "#f7f9fa", focus: "#000000", states: "selected-false and selected-true DOM variants captured; no interaction expansion", use: "Current procedure filter chip on home" }
+    outline-cta: { type: button, fg: "#131517", border: "1px solid #b5bfc9", radius: "6px", padding: "8px 12px", font: "13px / 600", pressed: "rgba(33, 39, 45, 0.04)", disabled: "#d8dfe6", focus: "#000000", states: "pressed frames exist on home and events (capture 3) and hold the rest values in every dumped property. The pressed, disabled, and focus values were added on 2026-09-16 from a live CSS inspection (commit e8857007) without a recorded property; the July bundle neither confirms nor contradicts them. Corrected 2026-09-29: the July text said no pressed value was retained while one is declared", use: "Current small outline CTA on home and events" }
+    filter-chip: { type: button, bg: "#eff2f5", fg: "#131517", radius: "9999px", height: "32px", padding: "0px 10px", font: "14px / 500", active: "#131517", pressed: "rgba(33, 39, 45, 0.04)", disabled: "#f7f9fa", focus: "#000000", states: "selected-false (capture 34) and selected-true (capture 33) variants captured; the bundle holds no pointer-state frame for any chip. The pressed, disabled, and focus values come from the 2026-09-16 live CSS inspection (commit e8857007) without a recorded property and have no bundle counterpart", use: "Current procedure filter chip on home" }
+    media-card-action: { type: button, bg: "#ffffff", radius: "20px", padding: "0px", states: "default captured; no state frame", use: "Home feature-card action (button, rounded-500, eight occurrences) at home::[data-omd-capture=\"20\"]; its 303px rendered height is layout context, and #000000 is the button element's own colour, not a sampled label colour" }
+    category-shortcut: { type: button, bg: "#ffffff", border: "1px #e4e8ec", radius: "16px", padding: "6px 16px 6px 8px", height: "54px", states: "rest captured on fourteen shortcuts (capture 5-18). Each has a pressed frame and capture 9 also a focus frame; those frames hold the rest values in every dumped colour, border, radius, shadow, padding, and type property. Opacity, transform, and overlays are outside the dump, so no pressed or focus value is declared", use: "Home category shortcut link (a.group, text-inherit) at home::[data-omd-capture=\"5\"]; its label colour is inherited and was not sampled" }
+    header-icon-button: { type: button, bg: "transparent", radius: "0px", padding: "0px", size: "44px x 44px", states: "the events copies (surface-2 capture 0 and 2) have pressed frames that hold the rest values in every dumped colour, border, radius, shadow, padding, and type property, so no pressed value is declared; the home copy has no state frame", use: "Header icon button (button.inline-flex, w-[44px]) at home::[data-omd-capture=\"2\"]; icon-only, its glyph colour was not sampled" }
+    search-input: { type: input, bg: "transparent", fg: "#131517", radius: "0px", padding: "0px", height: "24px", font: "16px / 400 / 24px", states: "default captured; no state frame", use: "Home search field (input[type=search].cell-search-input__input, cell-semantic-typography-body-single-lg-subtle) at home::[data-omd-capture=\"4\"]; transparent and borderless inside a wrapper that was not sampled" }
+    link-button: { type: button, bg: "transparent", fg: "#697683", radius: "0px", padding: "0px", height: "20px", font: "13px / 600 / 20px", states: "default captured; no state frame", use: "Cell link button, size sm (a.cell-link-button--size_sm, cell-semantic-typography-label-sm-strong) at home::[data-omd-capture=\"180\"]; events repeats it (surface-2::[data-omd-capture=\"58\"]); the md size (home::[data-omd-capture=\"28\"]) computes 14px / 600 / 22px" }
+    events-tab: { type: tab, bg: "transparent", fg: "#697683", radius: "0px", padding: "12px 0px", height: "48px", font: "16px / 500 / 24px", selected: "fg #131517, 16px / 600", states: "rest (capture 15, typo-label-lg-regular, 14 occurrences) and the emphasised tab (capture 14, typo-label-lg-strong text-fg-neutral-primary) captured; the bundle records no aria-selected, so selected names the class-emphasised tab; no state frame", use: "Events-page tab link at surface-2::[data-omd-capture=\"15\"]" }
+    outline-filter-chip: { type: button, bg: "transparent", fg: "#697683", border: "1px #b5bfc9", radius: "9999px", padding: "0px 10px", height: "32px", font: "14px / 500 / 19.6px", states: "default captured; no state frame", use: "Events-page filter chip, outline appearance (a.cell-filter-chip--appearance_outline) at surface-2::[data-omd-capture=\"4\"]" }
 ---
 
 # Design System Inspiration of Gangnamunni (강남언니)
@@ -148,7 +214,9 @@ The catalog identity color in frontmatter was not retained as a current computed
 - Radius: 6px
 - Padding: 8px 12px
 - Font: 13px / 600 / PretendardVariable
-- Pressed: State captured; no changed pressed value retained.
+- Pressed: `rgba(33, 39, 45, 0.04)`, from the 2026-09-16 live CSS inspection (commit `e8857007`). The July bundle's pressed frames for this CTA (home and events, capture 3) hold the rest values in every dumped property. A value painted by a pseudo-element or by opacity would not appear in that dump, so the bundle neither confirms nor contradicts it.
+- Disabled `#d8dfe6` and focus `#000000`: from the same 2026-09-16 inspection. The property each value belongs to is not recorded in this reference, and the bundle has no disabled or focus frame for this CTA.
+- States: corrected 2026-09-29. The July line said no pressed value was retained, which contradicted the pressed value declared since 2026-09-16.
 - Use: `home::[data-omd-capture="3"]`; same fingerprint on home and events.
 
 ### Procedure filter
@@ -160,17 +228,77 @@ The catalog identity color in frontmatter was not retained as a current computed
 - Height: 32px
 - Padding: 0px 10px
 - Font: 14px / 500 / PretendardVariable
-- Selected: Separate selected-true DOM variant captured with `#131517` background and `#ffffff` text; no interaction expansion.
+- Selected: Separate selected-true DOM variant captured with `#131517` background and `#ffffff` text (`home::[data-omd-capture="33"]`).
+- Pressed `rgba(33, 39, 45, 0.04)`, disabled `#f7f9fa`, focus `#000000`: from the 2026-09-16 live CSS inspection (commit `e8857007`), property not recorded. The July bundle holds no pointer-state frame for any chip, so it cannot corroborate them.
 - Use: `home::[data-omd-capture="34"]`.
 
 ### Media card action
 
 **Home feature-card action**
 - Background: `#ffffff`
-- Text: `#000000`
+- Element colour: `#000000` is the button's own computed colour. The card's label text was not sampled, so no text colour is declared (corrected 2026-09-29: July listed it as the text colour).
 - Radius: 20px
 - Font: 16px / 400 / PretendardVariable
-- Use: `home::[data-omd-capture="20"]`; 303px rendered height is context, not a portable token.
+- Padding: 0px
+- Use: `home::[data-omd-capture="20"]` (eight occurrences); 303px rendered height is context, not a portable token.
+- States: default captured; no state frame.
+
+The components below were transcribed on 2026-09-29 from the same 2026-07-13 bundle; nothing was re-measured.
+
+### Category shortcut
+
+- Background: `#ffffff`
+- Border: 1px `#e4e8ec`
+- Radius: 16px
+- Padding: 6px 16px 6px 8px
+- Height: 54px
+- Use: home category shortcut link (`a.group`, `text-inherit`), fourteen captured (`home::[data-omd-capture="5"]` to `"18"`). Its label colour is inherited and was not sampled, so no text style is declared.
+- States: every shortcut has a pressed frame and capture 9 also a focus frame; those frames hold the rest values in every dumped property. Opacity, transform, and overlays are outside the dump, so no pressed or focus value is declared.
+
+### Header icon button
+
+- Background: transparent
+- Radius: 0px · Padding: 0px · Size: 44px × 44px
+- Use: header icon button (`button.inline-flex`, `w-[44px]`), `home::[data-omd-capture="2"]`; events repeats it. Icon-only; the glyph colour was not sampled.
+- States: the events copies (`surface-2::[data-omd-capture="0"]` and `"2"`) have pressed frames that hold the rest values in every dumped property, so no pressed value is declared. The home copy has no state frame.
+
+### Search field
+
+- Background: transparent, borderless
+- Text: `#131517`
+- Height: 24px
+- Font: 16px / 400 / 24px PretendardVariable (`cell-semantic-typography-body-single-lg-subtle`)
+- Use: home search field, `home::[data-omd-capture="4"]` (`input[type=search].cell-search-input__input`). Its wrapper was not sampled, so no field border or fill is declared.
+- States: default only; no state frame.
+
+### Link button
+
+- Background: transparent
+- Text: `#697683`
+- Padding: 0px · Height: 20px
+- Font: 13px / 600 / 20px (`cell-semantic-typography-label-sm-strong`)
+- Use: Cell link button, size sm, `home::[data-omd-capture="180"]`; events repeats it (`surface-2::[data-omd-capture="58"]`). The md size (`home::[data-omd-capture="28"]`) computes 14px / 600 / 22px.
+- States: default only; no state frame.
+
+### Events tab
+
+- Background: transparent
+- Text: `#697683`
+- Padding: 12px 0px · Height: 48px
+- Font: 16px / 500 / 24px (`typo-label-lg-regular`)
+- Selected: text `#131517`, 16px / 600 (`surface-2::[data-omd-capture="14"]`, `typo-label-lg-strong text-fg-neutral-primary`). The bundle records no `aria-selected`, so "selected" names the class-emphasised tab.
+- Use: events-page tab link, `surface-2::[data-omd-capture="15"]`; 14 occurrences share this style.
+- States: no state frame.
+
+### Outline filter chip
+
+- Background: transparent
+- Text: `#697683`
+- Border: 1px `#b5bfc9`
+- Radius: 9999px · Padding: 0px 10px · Height: 32px
+- Font: 14px / 500 / 19.6px
+- Use: events-page filter chip, outline appearance (`a.cell-filter-chip--appearance_outline`), `surface-2::[data-omd-capture="4"]`.
+- States: default only; no state frame.
 
 ---
 
@@ -246,7 +374,7 @@ Research-backed decision, accessibility, and locale needs are not established he
 
 ## 14. States
 
-The supplied bundle has `interactionCount: 0` and no current first-party contract for loading, empty, error, success, disabled, or selection behavior beyond the captured DOM variants.
+The bundle's `interactions[]` record is empty (`interactionCount: 0`), and there is no current first-party contract for loading, empty, error, success, disabled, or selection behavior beyond the captured DOM variants. The bundle does hold pointer-state frames: pressed frames on the outline CTA, the category shortcuts, and the events header icon buttons, and one focus frame on a shortcut. They hold the rest values in every dumped property, so no bundle-derived state value is declared. The declared pressed, disabled, and focus values on the outline CTA and filter chip come from the 2026-09-16 live CSS inspection (§4). The blog surface's hover and pressed frames record the rest colour re-serialized from `oklch()` to `oklab()`, differing by less than 0.001 in any channel, which reads as a transition artifact rather than a state value; that surface is documentation chrome in any case. Corrected 2026-09-29: the July text did not mention the pressed and focus frames.
 
 ## 15. Motion & Easing
 

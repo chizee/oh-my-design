@@ -56,6 +56,80 @@ verification_v2:
     "tokens.components.relationship-story-card.radius": *home
     "tokens.components.relationship-story-card.padding": *home
     "tokens.components.relationship-story-card.use": *home
+    "tokens.components.nav-action-outline.type": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-outline.bg": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-outline.fg": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-outline.border": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-outline.radius": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-outline.padding": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-outline.height": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-outline.font": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-outline.states": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-outline.use": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-solid.type": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-solid.bg": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-solid.fg": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-solid.radius": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-solid.padding": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-solid.height": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-solid.font": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-solid.states": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.nav-action-solid.use": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-button.type": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-button.bg": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-button.fg": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-button.radius": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-button.padding": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-button.height": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-button.font": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-button.states": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-button.use": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.lime-cta.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.lime-cta.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.lime-cta.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.lime-cta.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.lime-cta.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.lime-cta.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.lime-cta.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.lime-cta.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.lime-cta.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.new-badge.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.new-badge.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.new-badge.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.new-badge.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.new-badge.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.new-badge.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.new-badge.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.new-badge.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.new-badge.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.type": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.bg": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.radius": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.padding": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.size": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.hover": { surface_id: about, source_id: about-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"12\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.pressed": { surface_id: about, source_id: about-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"12\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.states": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.use": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.accordion-item.type": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.accordion-item.bg": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.accordion-item.radius": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.accordion-item.padding": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.accordion-item.states": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.accordion-item.use": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.type": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.feature-card.bg": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.feature-card.radius": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.feature-card.padding": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.feature-card.size": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.feature-card.states": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.feature-card.use": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-card.type": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-card.bg": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-card.radius": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-card.padding": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-card.states": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-card.use": { surface_id: about, source_id: about-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -76,6 +150,15 @@ tokens:
   rounded: { nav: 8, badge: 18, cta: 24 }
   components:
     relationship-story-card: { type: card, bg: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", radius: "16px", padding: "24px", use: "Non-interactive relationship-data story item observed on the public home surface" }
+    nav-action-outline: { type: button, bg: "transparent", fg: "#111111", border: "1px #111111", radius: "8px", padding: "8px 14px", height: "33px", font: "13px / 700", states: "default captured on both surfaces; the capture holds no state frame for this action", use: "About-page global navigation secondary action (a, variant-border) at surface-2::[data-omd-capture=\"8\"]; on the dark home header the same action computes #ffffff text and a 1px #ffffff border (home::[data-omd-capture=\"8\"])" }
+    nav-action-solid: { type: button, bg: "#111111", fg: "#ffffff", radius: "8px", padding: "8px 14px", height: "33px", font: "13px / 700", states: "default captured on both surfaces; the capture holds no state frame for this action", use: "About-page global navigation primary action (a, variant-invert) at surface-2::[data-omd-capture=\"9\"]; on the dark home header it inverts to a #ffffff fill with #111111 text (home::[data-omd-capture=\"9\"])" }
+    gnb-menu-button: { type: button, bg: "transparent", fg: "#111111", radius: "8px", padding: "8px", height: "32px", font: "14px / 700", states: "default captured on six menu buttons per surface; no state frame and no menu-open record", use: "About-page global navigation menu button (button, variant-gnb) at surface-2::[data-omd-capture=\"2\"]; the dark home header computes #ffffff text for the same buttons" }
+    lime-cta: { type: button, bg: "#00ff44", fg: "#111111", radius: "24px", padding: "30px 44px", height: "80px", font: "17px / 700", states: "default captured on both surfaces; no state frame", use: "High-emphasis marketing conversion link (a, variant-color, size-xl) at home::[data-omd-capture=\"13\"]; /about repeats it at surface-2::[data-omd-capture=\"25\"]" }
+    new-badge: { type: badge, bg: "#ff4d00", fg: "#000000", radius: "18px", padding: "0px 8px", height: "20px", font: "12px / 700 / 16.56px", states: "static label; no state frame", use: "Announcement-strip new badge (span, badgeType-new) at home::span; /about carries the same badge (surface-2::span)" }
+    carousel-arrow: { type: button, bg: "rgba(17, 17, 17, 0.08)", radius: "50%", padding: "0px", size: "40px x 40px", hover: "bg rgba(17, 17, 17, 0.12)", pressed: "bg rgba(17, 17, 17, 0.12)", states: "rest, hover, and pressed sampled on the enabled arrow (capture 12); both frames record rgba(17, 17, 17, 0.12). The disabled arrow beside it (capture 11, same class) records the same two frames, which supports a settled value; the disabled arrow is given no state. Focus is not declared from the bundle: there is no focus frame, and the collector presses before it focuses", use: "About-page carousel arrow (button.l2024-c-lnBcZQ) at surface-2::[data-omd-capture=\"12\"]; icon-only, its glyph colour was not sampled" }
+    accordion-item: { type: card, bg: "rgba(255, 255, 255, 0.08)", radius: "24px", padding: "24px", states: "collapsed (capture 15, class open-false) and expanded (capture 13 and 14, class open-true) variants captured at rest; the expanded fill is rgba(255, 255, 255, 0.1); no pointer-state frame", use: "About-page accordion item (li role=button, l2024-c-bloTie) at surface-2::[data-omd-capture=\"15\"]; the white-alpha fill implies a dark section, and the label style was not sampled separately" }
+    feature-card: { type: card, bg: "rgba(17, 17, 17, 0.96)", radius: "24px", padding: "24px", size: "328px x 452px", states: "non-interactive; three colour variants", use: "About-page feature card (li.l2024-c-fMALsr, color-black, two occurrences) at surface-2::li; the color-gray variant fills rgba(17, 17, 17, 0.1) and the color-green variant #00dc3a" }
+    about-card: { type: card, bg: "#ffffff", radius: "24px", padding: "24px", states: "non-interactive; three colour variants", use: "About-page 500px-wide card (li.l2024-c-CFKUv, color-white) at surface-2::li; the color-black variant fills #111111 and the color-trans variant rgba(255, 255, 255, 0.08)" }
 ---
 
 # flex — Design Reference
@@ -122,6 +205,7 @@ What is distinctive in the observed surfaces:
 - `#FFFFFF` — light canvas, on-dark text, and outline navigation action background
 - `#00FF44` — primary marketing conversion action on home and About
 - `#FF4D00` — compact “new” badge in the announcement strip
+- `#00DC3A` — green variant of the About-page feature card (§4); a card fill, not the `#00FF44` action lime
 - `rgba(17,17,17,0.84)` — measured dark-on-light long-form emphasis
 - `rgba(255,255,255,0.84)` and `rgba(255,255,255,0.48)` — measured on-dark supporting copy and label tones
 
@@ -139,13 +223,15 @@ The lime and orange are observed marketing accents with separate purposes; neith
 ### Global navigation action — outline
 
 **Light-surface secondary action**
-- Background: `#FFFFFF`
+- Background: transparent (`rgba(0, 0, 0, 0)` over the white page). Corrected 2026-09-29: the July text listed `#FFFFFF`, which is the page behind the action, not the element's fill.
 - Text: `#111111`
 - Border: `1px solid #111111`
 - Radius: `8px`
 - Padding: `8px 14px`
 - Font: `13px / 700`
+- Height: 33px
 - Use: `/about` light global navigation secondary conversion action; evidence `surface-2::[data-omd-capture="8"]`
+- States: default captured on both surfaces; the capture holds no state frame for this action. On the dark home header the same action computes `#FFFFFF` text and a 1px `#FFFFFF` border (`home::[data-omd-capture="8"]`).
 
 ### Global navigation action — solid
 
@@ -155,7 +241,9 @@ The lime and orange are observed marketing accents with separate purposes; neith
 - Radius: `8px`
 - Padding: `8px 14px`
 - Font: `13px / 700`
+- Height: 33px
 - Use: `/about` light global navigation primary conversion action; evidence `surface-2::[data-omd-capture="9"]`
+- States: default captured on both surfaces; no state frame. On the dark home header it inverts to a `#FFFFFF` fill with `#111111` text (`home::[data-omd-capture="9"]`).
 
 ### Marketing CTA — lime
 
@@ -165,7 +253,9 @@ The lime and orange are observed marketing accents with separate purposes; neith
 - Radius: `24px`
 - Padding: `30px 44px`
 - Font: `17px / 700`
+- Height: 80px
 - Use: high-emphasis marketing conversion link on home and `/about`; evidence `home::[data-omd-capture="13"]`, `surface-2::[data-omd-capture="25"]`
+- States: default captured on both surfaces; no state frame.
 
 ### Announcement badge — new
 
@@ -175,9 +265,50 @@ The lime and orange are observed marketing accents with separate purposes; neith
 - Radius: `18px`
 - Padding: `0px 8px`
 - Font: `12px / 700`
+- Height: 20px (line height 16.56px)
 - Use: compact “new” label in the public announcement strip; evidence `home::span`, `surface-2::span`
+- States: static label; no state frame.
 
-Only the defaults above are documented. The evidence bundle reports no interaction coverage, so hover, pressed, focus, disabled, menu, dialog, and form states are intentionally omitted.
+The components below were transcribed on 2026-09-29 from the same 2026-07-13 bundle; nothing was re-measured.
+
+### Global navigation menu button
+
+- Background: transparent
+- Text: `#111111` on `/about`; the dark home header computes `#FFFFFF`
+- Radius: `8px`
+- Padding: `8px`
+- Height: 32px
+- Font: `14px / 700`
+- Use: global navigation menu button (`variant-gnb`), six per surface; evidence `surface-2::[data-omd-capture="2"]`, `home::[data-omd-capture="2"]`
+- States: default captured; no state frame and no menu-open record.
+
+### Carousel arrow
+
+- Background: `rgba(17, 17, 17, 0.08)`
+- Radius: `50%`
+- Padding: `0px`
+- Size: 40px × 40px
+- Hover: background `rgba(17, 17, 17, 0.12)`
+- Pressed: background `rgba(17, 17, 17, 0.12)`
+- States: sampled on the enabled arrow, `surface-2::[data-omd-capture="12"]`; its hover and pressed frames, taken at different moments, record the same fill. The disabled arrow beside it (`surface-2::[data-omd-capture="11"]`, same class `l2024-c-lnBcZQ`) records the same two frames, which supports reading the value as settled; the disabled arrow itself is given no state value. Focus is not declared: the capture holds no focus frame, and the collector presses before it focuses, which suppresses `:focus-visible`.
+- Use: About-page carousel arrow; icon-only, and its glyph colour was not sampled.
+
+### Accordion item
+
+- Background: `rgba(255, 255, 255, 0.08)` collapsed; `rgba(255, 255, 255, 0.1)` expanded
+- Radius: `24px`
+- Padding: `24px`
+- Use: About-page accordion item (`li[role=button]`, class `l2024-c-bloTie`); collapsed `surface-2::[data-omd-capture="15"]` (`open-false`), expanded `"13"` and `"14"` (`open-true`). The white-alpha fill implies a dark section. The item's own 14px / 500 is the container's computed style, not a sampled label style, so no text style is declared.
+- States: collapsed and expanded DOM variants at rest; no pointer-state frame.
+
+### Cards
+
+- **Relationship story card** (home, `li.l2024-c-cbIXJP`, 325 × 248, nine occurrences): fill `rgba(255, 255, 255, 0.04)`, border 1px `rgba(255, 255, 255, 0.08)`, 16px radius, 24px padding. This is the July frontmatter token, described in prose here for the first time.
+- **Feature card** (`li.l2024-c-fMALsr`, 328 × 452): 24px radius, 24px padding; fills `rgba(17, 17, 17, 0.96)` (`color-black`, two occurrences), `rgba(17, 17, 17, 0.1)` (`color-gray`), and `#00DC3A` (`color-green`).
+- **About card** (`li.l2024-c-CFKUv`, 500px wide): 24px radius, 24px padding; fills `#FFFFFF` (`color-white`), `#111111` (`color-black`), and `rgba(255, 255, 255, 0.08)` (`color-trans`).
+- All three are non-interactive list items. Their own computed text colour is the container's, not a sampled label style, so no text colour is declared.
+
+The carousel arrow is the only component with measured pointer states. The bundle's `interactions[]` record is empty (no dialog, tab, menu, or form record), so menu, dialog, form, disabled, and focus states stay omitted. Corrected 2026-09-29: the July text read the empty interaction record as the absence of every state sample, while the bundle holds hover and pressed frames for the carousel arrows.
 
 ---
 
@@ -250,7 +381,7 @@ Flex’s official copy names organizations, members, leaders, and teams as the s
 
 ## 14. States
 
-No loading, error, empty, disabled, or success state was captured for a Flex product workflow. The supplied evidence also reports zero interaction coverage. The only state-like observations are surface-theme variants (dark versus light navigation) and static component defaults in §4; they are not promoted as behavioral state specifications.
+No loading, error, empty, disabled, or success state was captured for a Flex product workflow. The bundle's `interactions[]` record is empty, but it holds pointer-state frames for the About-page carousel arrows: hover and pressed both record `rgba(17, 17, 17, 0.12)` over the `rgba(17, 17, 17, 0.08)` rest (§4). The other state-like observations are surface-theme variants (dark versus light navigation), the accordion's collapsed and expanded variants, and static defaults in §4. Focus is not declared. Corrected 2026-09-29: the July text said the evidence reported zero interaction coverage and read that as no state sample.
 
 ## 15. Motion & Easing
 
@@ -271,7 +402,7 @@ No motion values were captured. Preserve the absence of a claimed motion system 
 - Reintroduce the legacy graphite manifesto cards, service-filter pills, or inset-ring variants as current Flex components.
 - Treat the orange announcement badge as a general error or warning semantic color.
 - Render static `Pretendard` or a system fallback as though it were the verified `Pretendard Variable` family.
-- Invent hover, disabled, form, dialog, or loading variants from the static collector output.
+- Invent hover, disabled, form, dialog, or loading variants beyond the carousel arrow's measured hover and pressed fill.
 - Turn relationship-data positioning into generic AI copy that omits access, role, and organizational context.
 
 ---

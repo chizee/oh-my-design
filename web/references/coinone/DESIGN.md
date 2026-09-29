@@ -84,6 +84,7 @@ verification_v2:
     "tokens.components.trading-chart-tab.padding": *trading
     "tokens.components.trading-chart-tab.height": *trading
     "tokens.components.trading-chart-tab.font": *trading
+    "tokens.components.trading-chart-tab.selected": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"48\"]", captured: "2026-07-13" }
     "tokens.components.trading-chart-tab.states": *trading
     "tokens.components.trading-chart-tab.use": *trading
     "tokens.components.trading-side-tab.type": *trading
@@ -92,6 +93,130 @@ verification_v2:
     "tokens.components.trading-side-tab.font": *trading
     "tokens.components.trading-side-tab.states": *trading
     "tokens.components.trading-side-tab.use": *trading
+    "tokens.components.home-gnb-link.type": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-gnb-link.bg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-gnb-link.fg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-gnb-link.radius": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-gnb-link.padding": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-gnb-link.height": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-gnb-link.font": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-gnb-link.hover": { surface_id: exchange-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"3\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.home-gnb-link.pressed": { surface_id: exchange-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"3\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.home-gnb-link.states": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-gnb-link.use": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.trading-nav-icon-button.type": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.trading-nav-icon-button.bg": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.trading-nav-icon-button.radius": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.trading-nav-icon-button.padding": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.trading-nav-icon-button.size": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.trading-nav-icon-button.hover": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"13\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.trading-nav-icon-button.pressed": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"13\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.trading-nav-icon-button.states": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.trading-nav-icon-button.use": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-signup-outline.type": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-signup-outline.bg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-signup-outline.fg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-signup-outline.border": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-signup-outline.radius": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-signup-outline.padding": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-signup-outline.height": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-signup-outline.font": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-signup-outline.states": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-signup-outline.use": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-primary-cta.type": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-primary-cta.bg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-primary-cta.fg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-primary-cta.border": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-primary-cta.radius": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-primary-cta.padding": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-primary-cta.height": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-primary-cta.font": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-primary-cta.states": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-primary-cta.use": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-secondary-cta.type": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.home-secondary-cta.bg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.home-secondary-cta.fg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.home-secondary-cta.border": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.home-secondary-cta.radius": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.home-secondary-cta.padding": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.home-secondary-cta.height": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.home-secondary-cta.font": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.home-secondary-cta.states": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.home-secondary-cta.use": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.home-app-download-button.type": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"106\"]", captured: "2026-07-13" }
+    "tokens.components.home-app-download-button.bg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"106\"]", captured: "2026-07-13" }
+    "tokens.components.home-app-download-button.fg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"106\"]", captured: "2026-07-13" }
+    "tokens.components.home-app-download-button.radius": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"106\"]", captured: "2026-07-13" }
+    "tokens.components.home-app-download-button.padding": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"106\"]", captured: "2026-07-13" }
+    "tokens.components.home-app-download-button.height": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"106\"]", captured: "2026-07-13" }
+    "tokens.components.home-app-download-button.font": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"106\"]", captured: "2026-07-13" }
+    "tokens.components.home-app-download-button.states": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"106\"]", captured: "2026-07-13" }
+    "tokens.components.home-app-download-button.use": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"106\"]", captured: "2026-07-13" }
+    "tokens.components.home-card.type": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"77\"]", captured: "2026-07-13" }
+    "tokens.components.home-card.bg": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"77\"]", captured: "2026-07-13" }
+    "tokens.components.home-card.radius": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"77\"]", captured: "2026-07-13" }
+    "tokens.components.home-card.padding": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"77\"]", captured: "2026-07-13" }
+    "tokens.components.home-card.size": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"77\"]", captured: "2026-07-13" }
+    "tokens.components.home-card.states": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"77\"]", captured: "2026-07-13" }
+    "tokens.components.home-card.use": { surface_id: exchange-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"77\"]", captured: "2026-07-13" }
+    "tokens.components.trading-sign-in-button.type": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"44\"]", captured: "2026-07-13" }
+    "tokens.components.trading-sign-in-button.bg": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"44\"]", captured: "2026-07-13" }
+    "tokens.components.trading-sign-in-button.fg": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"44\"]", captured: "2026-07-13" }
+    "tokens.components.trading-sign-in-button.radius": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"44\"]", captured: "2026-07-13" }
+    "tokens.components.trading-sign-in-button.padding": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"44\"]", captured: "2026-07-13" }
+    "tokens.components.trading-sign-in-button.height": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"44\"]", captured: "2026-07-13" }
+    "tokens.components.trading-sign-in-button.font": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"44\"]", captured: "2026-07-13" }
+    "tokens.components.trading-sign-in-button.states": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"44\"]", captured: "2026-07-13" }
+    "tokens.components.trading-sign-in-button.use": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"44\"]", captured: "2026-07-13" }
+    "tokens.components.trading-order-button.type": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"160\"]", captured: "2026-07-13" }
+    "tokens.components.trading-order-button.bg": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"160\"]", captured: "2026-07-13" }
+    "tokens.components.trading-order-button.fg": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"160\"]", captured: "2026-07-13" }
+    "tokens.components.trading-order-button.radius": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"160\"]", captured: "2026-07-13" }
+    "tokens.components.trading-order-button.padding": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"160\"]", captured: "2026-07-13" }
+    "tokens.components.trading-order-button.height": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"160\"]", captured: "2026-07-13" }
+    "tokens.components.trading-order-button.font": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"160\"]", captured: "2026-07-13" }
+    "tokens.components.trading-order-button.states": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"160\"]", captured: "2026-07-13" }
+    "tokens.components.trading-order-button.use": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"160\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-tag.type": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-tag.bg": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-tag.fg": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-tag.border": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-tag.radius": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-tag.padding": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-tag.height": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-tag.font": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-tag.states": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-tag.use": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-search.type": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-search.bg": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-search.fg": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-search.radius": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-search.padding": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-search.size": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-search.font": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-search.states": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.trading-ticker-search.use": { surface_id: exchange-trading, source_id: trading-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.type": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.bg": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.fg": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.radius": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.padding": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.height": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.font": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.hover": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"9\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.pressed": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"9\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.states": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-lnb-link.use": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-ghost-button.type": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-ghost-button.bg": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-ghost-button.fg": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-ghost-button.border": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-ghost-button.radius": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-ghost-button.padding": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-ghost-button.height": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-ghost-button.font": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-ghost-button.states": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.brand-page-ghost-button.use": { surface_id: brand-guideline, source_id: brand-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -114,10 +239,23 @@ tokens:
   rounded: { login: 3, control: 6, badge: 26 }
   components_harvested: true
   components:
-    sign-in-outline: { type: button, fg: "#79818F", border: "1px solid #AEB3BB", radius: "3px", padding: "0px 8px", height: "24px", font: "12px / 400 pretendardCoinone", hover: "rgba(121, 129, 143, 0.05)", states: "default only; static pseudo-state samples are not promoted", use: "Home sign-in control, selector home::[data-omd-capture=14]" }
-    home-compact-control: { type: button, bg: "#FFFFFF", fg: "#040505", border: "1px solid #DDE4EB", radius: "6px", padding: "6px 12px", height: "32px", font: "13px / 500 pretendardCoinone", hover: "rgba(61, 80, 137, 0.1)", pressed: "rgba(61, 80, 137, 0.1)", states: "default only; no interaction record", use: "Home compact product control, selector home::[data-omd-capture=59]" }
-    trading-chart-tab: { type: tab, fg: "#18191C", padding: "0px 16px", height: "37px", font: "13px / 400 Spoqa Han Sans", states: "default only; no interaction record", use: "Trading chart tab, selector surface-2::[data-omd-capture=49]" }
-    trading-side-tab: { type: tab, fg: "#9E9E9E", height: "40px", font: "14px / 400 Spoqa Han Sans", states: "default only; no interaction record", use: "Trading side tab, selector surface-2::[data-omd-capture=156]" }
+    sign-in-outline: { type: button, fg: "#79818F", border: "1px solid #AEB3BB", radius: "3px", padding: "0px 8px", height: "24px", font: "12px / 400 pretendardCoinone", hover: "rgba(121, 129, 143, 0.05)", states: "default measured in the 2026-07-13 bundle; the hover value comes from a 2026-09-16 live CSS inspection (claim method live-css-inspect) and is not in the bundle, which holds no state frame for this element", use: "Home sign-in control, selector home::[data-omd-capture=14]" }
+    home-compact-control: { type: button, bg: "#FFFFFF", fg: "#040505", border: "1px solid #DDE4EB", radius: "6px", padding: "6px 12px", height: "32px", font: "13px / 500 pretendardCoinone", hover: "rgba(61, 80, 137, 0.1)", pressed: "rgba(61, 80, 137, 0.1)", states: "default measured in the 2026-07-13 bundle; the hover and pressed values come from a 2026-09-16 live CSS inspection (claim method live-css-inspect) and are not in the bundle, which holds no state frame for this element; a sibling in the same row (capture 58) records border 1px #040505 and 13px / 700 with no aria-selected, so it is described, not declared", use: "Home compact product control, selector home::[data-omd-capture=59]" }
+    trading-chart-tab: { type: tab, fg: "#18191C", padding: "0px 16px", height: "37px", font: "13px / 400 Spoqa Han Sans", selected: "bg #ffffff, border 1px #e0e0e0 on top and sides, 13px / 700 (class is-active, capture 48)", states: "rest captured on capture 49; the tab with class is-active (capture 48) is recorded as selected; no state frame on either", use: "Trading chart tab, selector surface-2::[data-omd-capture=49]" }
+    trading-side-tab: { type: tab, fg: "#9E9E9E", height: "40px", font: "14px / 400 Spoqa Han Sans", states: "default captured; no state frame for this element", use: "Trading side tab, selector surface-2::[data-omd-capture=156]" }
+    home-gnb-link: { type: tab, bg: "transparent", fg: "#18191c", radius: "6px", padding: "6px 10px", height: "36px", font: "16px / 700 / 24px pretendardCoinone", hover: "bg rgba(23, 114, 248, 0.05)", pressed: "bg rgba(23, 114, 248, 0.05)", states: "rest on seven links (capture 3-9); hover and pressed sampled on all seven, all fourteen frames recording the same value; focus not declared", use: "Exchange-home global navigation link (a.gnb-link, letter-spacing 1px) at home::[data-omd-capture=\"3\"]; the tint hue rgb(23, 114, 248) is #1772f8, the rest fill of the trading sign-in button" }
+    trading-nav-icon-button: { type: button, bg: "transparent", radius: "4px", padding: "0px", size: "24px x 24px", hover: "bg #f5f7f9", pressed: "bg #f5f7f9", states: "single element: hover and pressed frames agree exactly, opaque #f5f7f9 over a transparent rest; no focus frame", use: "Trading-route navigation icon button (button.navigation-icon-wrapper) at surface-2::[data-omd-capture=\"13\"]; it has no text node, so no label colour is claimed; bundle variant 47 uses its hover frame as the representative, which is not a rest value" }
+    home-signup-outline: { type: button, bg: "transparent", fg: "#1772f8", border: "1px #2076f4", radius: "3px", padding: "0px 8px", height: "24px", font: "12px / 700 pretendardCoinone", states: "default captured; no state frame on this element", use: "Exchange-home sign-up control (button.btn-signup) beside the sign-in control at home::[data-omd-capture=\"13\"], 59 x 24" }
+    home-primary-cta: { type: button, bg: "#0b59d5", fg: "#ffffff", border: "1px #0b59d5", radius: "8px", padding: "14px 18px", height: "49px", font: "15px / 700 / 19px pretendardCoinone", states: "default captured; no state frame on this element", use: "Exchange-home primary call to action at home::[data-omd-capture=\"15\"], 90 x 49; capture 104 records the same fill, radius, padding and type with a 0px border at 186 x 47" }
+    home-secondary-cta: { type: button, bg: "#ffffff", fg: "#040505", border: "1px #dde4eb", radius: "8px", padding: "14px 18px", height: "49px", font: "15px / 500 / 19px pretendardCoinone", states: "default captured; no state frame on this element", use: "Exchange-home secondary call to action beside the primary one at home::[data-omd-capture=\"16\"], 103 x 49" }
+    home-app-download-button: { type: button, bg: "#ebf0f5", fg: "#040505", radius: "10px", padding: "13px", height: "48px", font: "13px / 700 / 18px pretendardCoinone", states: "default captured on both buttons; no state frame", use: "Exchange-home app-download button inside the AppDownloadContainer article at home::[data-omd-capture=\"106\"], 194 x 48; its sibling (capture 107) records the dark variant, bg #040505 with fg #ffffff, same geometry and type" }
+    home-card: { type: card, bg: "#f4f7f9", radius: "12px", padding: "20px", size: "250px x 186px", states: "default captured on fifteen cards; no state frame", use: "Exchange-home card (div, generated class ending -Card) at home::[data-omd-capture=\"77\"]; a container, so its inherited 16px / 400 type is not claimed as a label style" }
+    trading-sign-in-button: { type: button, bg: "#1772f8", fg: "#ffffff", radius: "6px", padding: "6px 0px", height: "32px", font: "14px / 400 Spoqa Han Sans", states: "default captured; no state frame on this element", use: "Trading-route sign-in button (a.sign-in-button) at surface-2::[data-omd-capture=\"44\"], 120 x 32" }
+    trading-order-button: { type: button, bg: "#e12343", fg: "#ffffff", radius: "4px", padding: "0px", height: "36px", font: "14px / 700 / 16.8px Spoqa Han Sans", states: "default captured; no state frame on this element", use: "Trading-route order button (button.btn-order) at surface-2::[data-omd-capture=\"160\"], 306 x 36" }
+    trading-ticker-tag: { type: button, bg: "#f8f8f9", fg: "#9e9e9e", border: "1px transparent", radius: "5px", padding: "5px 8px", height: "30px", font: "12px / 400 Spoqa Han Sans", states: "default captured on nine tags (capture 16-24); the first tag (capture 15, extra class trd-tickers-btn-tag) records bg #f5f8ff, fg #1772f8 and border 1px #1772f8, but no aria-selected or active class marks it, so it is described, not declared selected; no state frame", use: "Trading-route ticker filter tag (button.btn-tag) at surface-2::[data-omd-capture=\"16\"], 40 x 30" }
+    trading-ticker-search: { type: input, bg: "transparent", fg: "#424242", radius: "0px", padding: "7px 24px 7px 0px", size: "299px x 30px", font: "14px / 400 Spoqa Han Sans", states: "default captured (classes ng-untouched ng-pristine ng-valid); no focus or error sample", use: "Trading-route ticker search input at surface-2::[data-omd-capture=\"14\"]; its border width is 0px, so no field frame is claimed" }
+    brand-page-lnb-link: { type: tab, bg: "transparent", fg: "#868e96", radius: "0px", padding: "0px", height: "21px", font: "15px / 400", hover: "fg #495057", pressed: "fg #495057", states: "rest on nine links (capture 9-12, 14-16, 18, 19); hover and pressed sampled on all nine, all eighteen frames recording the same value; no focus frame", use: "Corporate brand-guideline page link (a.lnb-link) near the page foot at surface-3::[data-omd-capture=\"9\"] (coinonecorp.com); documentation chrome, not an exchange product control; its stack leads with Roboto, which the bundle classes as a system family, so no family is claimed" }
+    brand-page-ghost-button: { type: button, bg: "transparent", fg: "#868e96", border: "1px #ced4da", radius: "5px", padding: "0px 16px", height: "40px", font: "15px / 400", states: "default captured; the hover and pressed frames record different partial values (bg alpha 0.027 and 0.137, border #cfd5db and #d3d8de), transition frames, so neither is declared; no focus frame", use: "Corporate brand-guideline ghost action (a.btn-coinone-ghost2) at surface-3::[data-omd-capture=\"7\"], 153 x 40; documentation chrome, not an exchange product control; its stack leads with Roboto (system family), so no family is claimed" }
 ---
 
 # Coinone
@@ -151,6 +289,7 @@ Coinone is a Korean virtual-asset exchange whose public company materials frame 
 - `#17181B` — observed product foreground across the home and trading route.
 - `#0B59D5` — observed current-home primary blue. It is distinct from, but compatible with, the official `#006BD6` identity swatch; the two values are recorded by source domain rather than collapsed.
 - `#DDE4EB` — observed home compact-control border.
+- Component-local product colours recorded in §4, not promoted to palette roles: `#1772F8` (trading sign-in fill and home sign-up text; a 5% tint of it is the home navigation hover), `#2076F4` (home sign-up border), `#E12343` (trading order button), `#EBF0F5` and `#F4F7F9` (home app-download button and card fills), `#F8F8F9` (trading ticker tags), and `#424242` (trading ticker search text).
 
 ### Typography evidence classes
 
@@ -172,6 +311,7 @@ Coinone is a Korean virtual-asset exchange whose public company materials frame 
 - Padding: `0px 8px`
 - Height: `24px`
 - Font: `12px / 400 pretendardCoinone`
+- Hover: `rgba(121, 129, 143, 0.05)`, from a 2026-09-16 live CSS inspection (claim method `live-css-inspect`). The 2026-07-13 bundle holds no state frame for this element and the value appears nowhere in it. The trading route's sign-in and sign-up buttons share this geometry and hue and record only transition frames (`rgba(121, 129, 143, 0.008)` on focus, alpha 0 on press), so the bundle neither confirms nor contradicts the value.
 - Use: Public-home sign-in control; `home::[data-omd-capture="14"]`.
 
 ### Home compact control
@@ -184,6 +324,8 @@ Coinone is a Korean virtual-asset exchange whose public company materials frame 
 - Padding: `6px 12px`
 - Height: `32px`
 - Font: `13px / 500 pretendardCoinone`
+- Hover and pressed: `rgba(61, 80, 137, 0.1)`, from the same 2026-09-16 live CSS inspection; the bundle holds no state frame for this element and the value appears nowhere in it.
+- Row sibling: `home::[data-omd-capture="58"]`, in the same row, records a 1px `#040505` border and 13px / 700 at 112px × 32px. No `aria-selected` marks it, so it is described, not declared as a selected state.
 - Use: Public-home compact product control; `home::[data-omd-capture="59"]`.
 
 ### Trading chart tab
@@ -193,6 +335,7 @@ Coinone is a Korean virtual-asset exchange whose public company materials frame 
 - Padding: `0px 16px`
 - Height: `37px`
 - Font: `13px / 400 Spoqa Han Sans`
+- Selected: the tab with class `is-active` (`surface-2::[data-omd-capture="48"]`) records background `#FFFFFF`, a 1px `#E0E0E0` border on top and sides, and 13px / 700.
 - Use: Public BTC/KRW trading chart tab; `surface-2::[data-omd-capture="49"]`.
 
 ### Trading side tab
@@ -203,7 +346,62 @@ Coinone is a Korean virtual-asset exchange whose public company materials frame 
 - Font: `14px / 400 Spoqa Han Sans`
 - Use: Public BTC/KRW trading side tab; `surface-2::[data-omd-capture="156"]`.
 
-The supplied bundle reports `interactionCount: 0` and no interaction records. Its static hover, focus, and pressed selector snapshots are not promoted as reusable states. No disabled, menu, dialog, validation, toast, responsive, or logged-in variants are claimed.
+### Exchange-home navigation link
+
+**Default** (`home-gnb-link`)
+- Background: transparent
+- Text: `#18191C`
+- Radius: `6px`
+- Padding: `6px 10px`
+- Height: `36px`
+- Font: `16px / 700 / 24px pretendardCoinone`, letter-spacing 1px
+- Hover: background `rgba(23, 114, 248, 0.05)`
+- Pressed: background `rgba(23, 114, 248, 0.05)`
+- Use: `home::[data-omd-capture="3"]` (`a.gnb-link`). Seven links (capture 3–9) record the same rest values, and all fourteen of their hover and pressed frames record the same tint. Its hue, `rgb(23, 114, 248)`, is `#1772F8`, the rest fill of the trading sign-in button.
+
+### Exchange-home actions
+
+**Sign-up control** (`home-signup-outline`): transparent, text `#1772F8`, border 1px `#2076F4`, `3px` radius, `0px 8px`, `24px` high, `12px / 700 pretendardCoinone`; `home::[data-omd-capture="13"]`, beside the sign-in control.
+
+**Primary call to action** (`home-primary-cta`): background `#0B59D5`, text `#FFFFFF`, border 1px `#0B59D5`, `8px` radius, `14px 18px`, `49px` high, `15px / 700 / 19px pretendardCoinone`; `home::[data-omd-capture="15"]`. Capture 104 records the same fill, radius, padding and type with a 0px border at 186px × 47px.
+
+**Secondary call to action** (`home-secondary-cta`): background `#FFFFFF`, text `#040505`, border 1px `#DDE4EB`, `8px` radius, `14px 18px`, `49px` high, `15px / 500 / 19px pretendardCoinone`; `home::[data-omd-capture="16"]`, beside the primary one.
+
+**App-download button** (`home-app-download-button`): background `#EBF0F5`, text `#040505`, `10px` radius, `13px` padding, `48px` high, `13px / 700 / 18px pretendardCoinone`; `home::[data-omd-capture="106"]`, inside the app-download article. Its sibling, capture 107, is the dark variant: background `#040505`, text `#FFFFFF`, same geometry and type.
+
+**Card** (`home-card`): background `#F4F7F9`, `12px` radius, `20px` padding, 250px × 186px; `home::[data-omd-capture="77"]`, fifteen occurrences. It is a container, so no label style is claimed.
+
+### Trading navigation icon button
+
+**Default** (`trading-nav-icon-button`)
+- Background: transparent
+- Radius: `4px`
+- Size: `24px × 24px`
+- Hover: background `#F5F7F9`
+- Pressed: background `#F5F7F9`
+- Use: `surface-2::[data-omd-capture="13"]` (`button.navigation-icon-wrapper`). Single element: its hover and pressed frames agree exactly, an opaque fill over a transparent rest. It has no text node, so no label colour is claimed. The bundle's variant 47 uses the hover frame as its representative; that is not a rest value.
+
+### Trading-route controls
+
+**Sign-in button** (`trading-sign-in-button`): background `#1772F8`, text `#FFFFFF`, `6px` radius, `6px 0px`, `32px` high, `14px / 400 Spoqa Han Sans`; `surface-2::[data-omd-capture="44"]`.
+
+**Order button** (`trading-order-button`): background `#E12343`, text `#FFFFFF`, `4px` radius, `36px` high, 306px wide, `14px / 700 / 16.8px Spoqa Han Sans`; `surface-2::[data-omd-capture="160"]`.
+
+**Ticker filter tag** (`trading-ticker-tag`): background `#F8F8F9`, text `#9E9E9E`, border 1px transparent, `5px` radius, `5px 8px`, `30px` high, `12px / 400 Spoqa Han Sans`; `surface-2::[data-omd-capture="16"]` through `"24"`. The first tag (capture 15, extra class `trd-tickers-btn-tag`) records background `#F5F8FF`, text `#1772F8` and border 1px `#1772F8`; no `aria-selected` or active class marks it, so it is described, not declared as selected.
+
+**Ticker search input** (`trading-ticker-search`): transparent, text `#424242`, `7px 24px 7px 0px`, 299px × 30px, `14px / 400 Spoqa Han Sans`, 0px border; `surface-2::[data-omd-capture="14"]`. No focus or error sample.
+
+### Corporate brand-page chrome (separate domain)
+
+Measured on `https://coinonecorp.com/company/brand` (bundle `surface-3`). These are documentation chrome, recorded as corporate components; they do not populate exchange product tokens. Their computed stacks lead with Roboto, which the bundle classes as a system family, so no family is claimed.
+
+**Link list** (`brand-page-lnb-link`): transparent, text `#868E96`, `15px / 400`, `21px` high; hover and pressed text `#495057`. `surface-3::[data-omd-capture="9"]` (`a.lnb-link`) near the page foot; nine links (capture 9–12, 14–16, 18, 19) record the same rest values, and all eighteen of their hover and pressed frames record `#495057`.
+
+**Ghost action** (`brand-page-ghost-button`): transparent, text `#868E96`, border 1px `#CED4DA`, `5px` radius, `0px 16px`, `40px` high, `15px / 400`; `surface-3::[data-omd-capture="7"]` (`a.btn-coinone-ghost2`). Its hover and pressed frames record different partial values (background alpha 0.027 and 0.137; border `#CFD5DB` and `#D3D8DE`). Those are transition frames, so neither is declared.
+
+### How states were read
+
+A state frame is the computed style the collector recorded with the pointer over an element (hover) or pressed on it; `interactionCount: 0` counts dialog, tab, and menu expansions and says nothing about these frames. Three settled pointer states are declared above: the exchange-home navigation links, the trading navigation icon button, and the corporate link list. Frames that disagree with each other or move by a few channel units are transition frames; they are listed, not declared, in `.verification.md`. Focus is never declared from this bundle (§8). No disabled, menu, dialog, validation, toast, responsive, or logged-in variant is claimed. Corrected 2026-09-29: the July text said the static hover, focus, and pressed snapshots were not promoted because the bundle had no interaction record.
 
 ---
 **Verified:** 2026-07-13
@@ -234,13 +432,13 @@ The public exchange home has a loaded `coinone_glyph_ui` asset for one observed 
 ### Don't
 
 - Substitute a declared-only or system family for `pretendardCoinone` or `Spoqa Han Sans` while presenting it as the observed family.
-- Invent hover, error, empty, modal, responsive, or logged-in component variants from static capture samples.
+- Invent hover, error, empty, modal, responsive, or logged-in component variants beyond the frames declared in §4; transition frames and focus frames in the capture are not state values.
 - Generalize the corporate guideline's Roboto documentation chrome into exchange UI typography.
 
 ## 8. Accessibility
 
 - The home compact control records `#040505` text on white with a `#DDE4EB` border; the sign-in control records `#79818F` text with a `#AEB3BB` border.
-- The capture includes static focus/pressed snapshots but no interaction record, so it does not establish a reusable keyboard focus-visible treatment.
+- The capture holds three focus frames (home capture 12, trading captures 3 and 4), but the collector pressed the mouse before focusing each element, which leaves `:focus-visible` false, so none is a keyboard focus measurement and no focus-visible treatment is declared. Corrected 2026-09-29: the July text gave the missing interaction record as the reason.
 - No accessibility conformance score, screen-reader behavior, validation behavior, or mobile target rule is claimed from these public captures.
 
 ## 9. Content & Voice
@@ -280,7 +478,9 @@ The first-party sources identify stakeholder groups rather than publishing user-
 
 ## 14. States
 
-No empty, loading, success, validation-error, network-error, skeleton, disabled, toast, or responsive state was captured with interaction provenance. These states are intentionally not specified for Coinone in this reference.
+Pointer states measured in the 2026-07-13 bundle (§4): the exchange-home navigation links take background `rgba(23, 114, 248, 0.05)` on hover and press (seven links agree); the trading navigation icon button takes background `#F5F7F9` on hover and press (single element); the corporate brand-page link list turns from `#868E96` to `#495057` (nine links agree). The home sign-in and compact controls carry hover values from a 2026-09-16 live CSS inspection that the bundle cannot confirm (§4). Selected: the trading chart tab with class `is-active`. Focus is not declared (§8).
+
+No empty, loading, success, validation-error, network-error, skeleton, disabled, toast, or responsive state was captured. These states are intentionally not specified for Coinone in this reference.
 
 ## 15. Motion & Easing
 
