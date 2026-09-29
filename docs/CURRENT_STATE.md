@@ -177,6 +177,11 @@
 - **종료 — 후속 2건은 오탐 (01:40).**
   - builder 딥링크: `/builder?step=customize&ref=<id>`는 정상으로 Customize에 도착한다. "Intro 1/10"은 Customize 마법사(`design-wizard.tsx` STEP_LABELS 10단계)의 첫 단계다. 다만 IntroStep은 고른 레퍼런스를 보여주지 않는다 — 카탈로그에서 온 방문자 맥락이 끊기는지는 제품 판단(오너)으로 남긴다.
   - 동의 배너: 로캘을 `/docs/<locale>/` 경로에서만 고르고 그 밖은 영어다(`analytics-consent.tsx:54`). 페이지 자체가 영어(`lang="en"`)이므로 결함이 아니다. 홈 한국어화를 결정할 때 함께 처리한다. GA는 라이브에서 여전히 로드된다(G-5XCHN3NJXC). "죽었다"는 것은 우리 조회 API이고 수집은 살아 있으므로 고지 내용은 정확하다.
+- **검토 — /hangul 콘텐츠 1차 이미지 (01:50).**
+  - 깨끗하지만 바이럴 수준은 아니다. 보통 크기에서는 −0.055em→−0.03em과 글꼴 교체 차이가 너무 미세하다.
+  - **After 이미지가 HG-8을 스스로 어긴다.** 390px 푸터에서 "생/활", "예시입니/다"가 단어 중간에서 끊긴다(캡션 크기를 키워 줄바꿈이 생겼다). check.mjs는 통과했다 → **렌더 기준 줄바꿈 검사가 없는 체커 공백이다. /hangul 공개 전에 막아야 한다.**
+  - 번호 마커가 글자를 가린다.
+  - 에이전트에 보낸 지시: 수정, 렌더 단어 절단 검사, A/B 깜빡임 모션, 비디자이너도 보이는 오류(390px 단어 절단, 숫자 혼합 글꼴)를 앞에 배치.
 - **진행 중.** /hangul 시각 콘텐츠 v1, 저작 D(kakaobank·hyundaicard·likelion)·C(socar·wanted·tossbank), 프로브 도구 수정, 웨이브 6 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
   - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
