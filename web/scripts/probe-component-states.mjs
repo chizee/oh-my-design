@@ -35,15 +35,24 @@
  * Wanted는 hover·press를 **빈 자식 div**의 opacity로 칠하고 포커스 링을 라벨 span에 그리며, hyundaicard는 hover에 부모 li를
  * 들어 올린다 — 셋 다 "변화 없음"으로 읽혔다. 이제 매 읽기마다 다음을 rest와 비교해 상태마다 따로 찍는다:
  *   - 모든 후손(빈 요소 포함, 열린 shadow root 포함, 너비 우선 --max-kids개까지, 자식 인덱스 경로로 짝지음): 색·배경·opacity·
- *     transform·filter·밑줄·box-shadow·그려지는 outline·border·background-image·display/visibility·svg fill/stroke·레이아웃 크기·
- *     backdrop-filter/clip-path/mask·그 후손의 ::before/::after
- *   - 조상 --up 단계: 배경·border·box-shadow·outline·transform·opacity·filter·background-image·backdrop/clip/mask·::before/::after
- *   "없음" 줄은 무엇을 비교했는지(후손 몇 개, 빈 요소 몇 개, 조상 몇 단계)를 함께 적는다.
- * 비활성 컨트롤(disabled/:disabled, aria-disabled="true", pointer-events:none, inert)은 hover·pressed·focus를
- *   "disabled — not measured"로 적고 그 세 번의 로드를 하지 않는다 (Socar '검색', 2026-09-29).
+ *     transform·filter·밑줄·box-shadow·그려지는 outline·border·background-image(전체 값)·background-position/size/repeat·
+ *     display/visibility·svg fill/stroke·레이아웃 크기·backdrop-filter/clip-path/mask(이미지·위치·크기)·그 후손의 ::before/::after
+ *     (background-position 포함), <img>/<source>의 currentSrc/src/srcset, SVG 요소의 fill/stroke **속성**·fill/stroke opacity·
+ *     stroke 너비/대시·<path> d(속성과 계산값)·polygon points·bbox·<use>/<image> href(+가리키는 노드의 해시)·<stop> 색·
+ *     url(#id) fill/stroke/filter가 가리키는 gradient의 stop(컨트롤 밖에 정의돼 있어도)
+ *   - 조상 --up 단계: 배경·border·box-shadow·outline·transform·opacity·filter·background-image+position/size/repeat·backdrop/clip/mask·
+ *     ::before/::after
+ *   - 요소 자신: 위 목록의 자기 값 + background-position/size/repeat + (img일 때) src. 긴 값은 앞부분 + 전체 문자열의 FNV-1a 해시.
+ *   "없음" 줄은 무엇을 비교했는지(후손 몇 개, 빈 요소 몇 개, SVG·img 몇 개, 조상 몇 단계, 비교한 속성)를 함께 적는다.
+ *   (2026-09-30 (2), probe-tool-fix-2.md: naver 뉴스 바로가기의 hover는 스프라이트 background-position만 움직인다.)
+ * 비활성 컨트롤: 네이티브 disabled(disabled/:disabled)이면 hover·pressed·focus를 "disabled — not measured"로 적고 그 세 번의
+ *   로드를 하지 않는다 (Socar '검색', 2026-09-29). aria-disabled="true"·pointer-events:none·inert는 rest(페이지 맨 위) 한 번으로
+ *   정하지 않는다 — socar '맨 위로'는 스크롤 전까지 inert지만 Tab이 닿는다. 상태마다 그 로드 안에서, 그 상태의 순간에 다시 읽어
+ *   여전히 비활성이면 그 상태만 "disabled — not measured (… live …)"로 적는다(focus는 disabled·inert일 때만).
  * 전이 대기: 요소·후손·가상 요소·조상의 transition-duration + transition-delay 중 가장 긴 값 + 250ms (최소 450, 최대 6000).
- * 남은 사각지대: canvas/WebGL/video 픽셀, 계산 스타일로 드러나지 않는 SVG 변화(SMIL, path d, gradient stop), 교차 출처 iframe,
- *   닫힌 shadow root, 형제·사촌 레이어. 이 스크립트는 상태마다 새로 로드하고 focus를 `.focus()`로 준다 — Tab 순회와 한 번의
+ * 남은 사각지대: canvas/WebGL/video 픽셀, SMIL, 외부 스프라이트 파일 안(`icons.svg#id`는 문자열로만 비교), 교차 출처 iframe,
+ *   닫힌 shadow root, 형제·사촌 레이어. fixed 컨트롤은 scrollIntoView로 페이지가 스크롤되지 않으므로, 스크롤해야 살아나는 컨트롤은
+ *   이 스크립트에서 여전히 disabled로 읽힐 수 있다(그때는 probe-keyboard-states.mjs의 Tab 순회를 쓴다). 이 스크립트는 상태마다 새로 로드하고 focus를 `.focus()`로 준다 — Tab 순회와 한 번의
  *   로드로 여러 컨트롤을 재려면 probe-keyboard-states.mjs를 쓴다.
  *   --max-kids 150 (비교할 후손 수) · --up 3 (비교할 조상 단계)
  */
@@ -302,6 +311,16 @@ const read = (frame) => frame.evaluate(([prefix, maxKids, upLevels]) => {
   const el = (window.__omdOne ? window.__omdOne('[data-omd-probe="1"]') : document.querySelector('[data-omd-probe="1"]'));
   const s = getComputedStyle(el);
   const rect = el.getBoundingClientRect();
+  // 2026-09-30 (2): 긴 값은 앞부분 + 전체 문자열의 FNV-1a 해시(잘린 뒤에서 달라지는 URL·data: URI도 달라진다). background-position/
+  // -size/-repeat(이미지가 있을 때만)과 <img>/<source>의 currentSrc/src/srcset도 읽는다 — probe-tool-fix-2.md.
+  const hash = (str) => { let h = 0x811c9dc5; for (let n = 0; n < str.length; n++) { h ^= str.charCodeAt(n); h = Math.imul(h, 0x01000193); } return (h >>> 0).toString(16).padStart(8, "0"); };
+  const full = (v, n) => { v = String(v ?? ""); return v.length <= n ? v : `${v.slice(0, n)}…#${hash(v)}/${v.length}`; };
+  const bgLayout = (x) => (x.backgroundImage && x.backgroundImage !== "none" ? `${x.backgroundPosition} / ${x.backgroundSize} / ${x.backgroundRepeat}` : "");
+  const srcOf = (n, tag) => {
+    if (tag === "img" || (tag === "input" && n.type === "image")) { const a = n.getAttribute("src") || "", cur = n.currentSrc || n.src || "", set = n.getAttribute("srcset"); return `cur=${full(cur, 80)}${a && a !== cur ? ` src=${full(a, 80)}` : ""}${set ? ` set=#${hash(set)}` : ""}`; }
+    if (tag === "source") return `set=#${hash(n.getAttribute("srcset") || n.getAttribute("src") || "")}${n.getAttribute("media") ? ` media=${n.getAttribute("media")}` : ""}`;
+    return "";
+  };
   const out = {
     bg: s.backgroundColor, fg: s.color, border: s.borderColor, radius: s.borderRadius,
     height: Math.round(rect.height), padding: s.padding, font: `${s.fontSize} / ${s.fontWeight}`,
@@ -311,6 +330,7 @@ const read = (frame) => frame.evaluate(([prefix, maxKids, upLevels]) => {
     // 레이어로 그린다(`--flix-hover-layer-color`). 배경색만 보던 판정은 이를 "변화 없음"으로
     // 읽었다. 밑줄 hover도 같은 사각지대였다 (2026-09-26).
     bgImage: s.backgroundImage, decoration: `${s.textDecorationLine} ${s.textDecorationColor}`,
+    bgPos: bgLayout(s), src: srcOf(el, el.tagName.toLowerCase()),
     // adyen.com은 hover를 ::before 오버레이(잉크 7.4%)의 opacity 0→1로 그린다. 요소 자신의 값은
     // 하나도 안 바뀐다 — 가상 요소를 안 보면 "변화 없음"이다 (2026-09-26). content가 있는 것만 센다.
     pseudo: ["::before", "::after"].map((ps) => { const c = getComputedStyle(el, ps);
@@ -318,21 +338,21 @@ const read = (frame) => frame.evaluate(([prefix, maxKids, upLevels]) => {
       // 칠해지는 것이 없는 가상 요소(투명 배경·이미지 없음·그림자 없음·테두리 없음)는 보이지 않는다 —
       // booth 캐러셀 화살표의 투명 ::before가 hover에 생기는 것을 "변화"로 셌다 (2026-09-26).
       const paints = !/rgba\([^)]*,\s*0\)|transparent/.test(c.backgroundColor) || c.backgroundImage !== "none" || c.boxShadow !== "none" || parseFloat(c.borderTopWidth) > 0;
-      return paints ? `${ps}{bg:${c.backgroundColor};img:${c.backgroundImage.slice(0, 60)};op:${c.opacity};tf:${c.transform};bs:${c.boxShadow}}` : ""; }).join(""),
+      return paints ? `${ps}{bg:${c.backgroundColor};img:${full(c.backgroundImage, 60)}${bgLayout(c) ? ";pos:" + bgLayout(c) : ""};op:${c.opacity};tf:${c.transform};bs:${c.boxShadow}}` : ""; }).join(""),
     is: { hover: el.matches(":hover"), active: el.matches(":active"), focusVisible: el.matches(":focus-visible") },
   };
   // 2026-09-30: 후손(빈 요소 포함)·그 ::before/::after·조상까지 읽는다 — 머리말 "비교 범위".
   const alpha = (c) => { c = String(c); if (c === "transparent") return 0; const m = c.match(/^rgba?\(([^)]*)\)$/); if (m) { const p = m[1].split(/[\s,\/]+/).filter(Boolean); return p.length > 3 ? parseFloat(p[3]) * (p[3].endsWith("%") ? 0.01 : 1) : 1; } const m2 = c.match(/\/\s*([\d.]+%?)\s*\)$/); if (m2) return m2[1].endsWith("%") ? parseFloat(m2[1]) / 100 : parseFloat(m2[1]); return 1; };
   const bd = (x) => { const sides = ["Top", "Right", "Bottom", "Left"].map((d) => { const w = x["border" + d + "Width"], st = x["border" + d + "Style"], c = x["border" + d + "Color"]; return st === "none" || st === "hidden" || parseFloat(w) === 0 ? "none" : `${w} ${st} ${c}`; }); return sides.every((v) => v === sides[0]) ? sides[0] : sides.join(" | "); };
   const ol = (x) => (x.outlineStyle !== "none" && parseFloat(x.outlineWidth) > 0 && alpha(x.outlineColor) > 0 ? `${x.outlineColor} ${x.outlineStyle} ${x.outlineWidth} off ${x.outlineOffset}` : "none");
-  const ex = (x) => { const m = x.maskImage && x.maskImage !== "none" ? x.maskImage : x.webkitMaskImage && x.webkitMaskImage !== "none" ? x.webkitMaskImage : ""; return [x.backdropFilter && x.backdropFilter !== "none" ? `backdrop:${x.backdropFilter}` : "", x.clipPath && x.clipPath !== "none" ? `clip:${x.clipPath.slice(0, 60)}` : "", m ? `mask:${m.slice(0, 60)}` : ""].filter(Boolean).join(";"); };
+  const ex = (x) => { const std = !!(x.maskImage && x.maskImage !== "none"); const m = std ? x.maskImage : x.webkitMaskImage && x.webkitMaskImage !== "none" ? x.webkitMaskImage : ""; return [x.backdropFilter && x.backdropFilter !== "none" ? `backdrop:${x.backdropFilter}` : "", x.clipPath && x.clipPath !== "none" ? `clip:${full(x.clipPath, 60)}` : "", m ? `mask:${full(m, 60)} @ ${std ? x.maskPosition : x.webkitMaskPosition} / ${std ? x.maskSize : x.webkitMaskSize}` : ""].filter(Boolean).join(";"); };
   const ps = (n, which) => {
     const c = getComputedStyle(n, which);
     if (c.content === "none" || c.content === "normal" || c.display === "none") return "";
     const glyph = c.content !== '""' && c.content !== "''";
     const sideBorder = ["Top", "Right", "Bottom", "Left"].some((d) => c["border" + d + "Style"] !== "none" && parseFloat(c["border" + d + "Width"]) > 0 && alpha(c["border" + d + "Color"]) > 0);
     const paints = alpha(c.backgroundColor) > 0 || c.backgroundImage !== "none" || c.boxShadow !== "none" || sideBorder || ol(c) !== "none" || glyph || ex(c) !== "";
-    return paints ? `${which}{content:${c.content.slice(0, 20)};bg:${c.backgroundColor};img:${c.backgroundImage.slice(0, 60)};op:${c.opacity};tf:${c.transform};bs:${c.boxShadow};bd:${bd(c)};ol:${ol(c)};size:${c.width}x${c.height}${ex(c) ? ";" + ex(c) : ""}}` : "";
+    return paints ? `${which}{content:${full(c.content, 40)};bg:${c.backgroundColor};img:${full(c.backgroundImage, 60)}${bgLayout(c) ? ";pos:" + bgLayout(c) : ""};op:${c.opacity};tf:${c.transform};bs:${c.boxShadow};bd:${bd(c)};ol:${ol(c)};size:${c.width}x${c.height}${ex(c) ? ";" + ex(c) : ""}}` : "";
   };
   const parentOf = (n) => n.parentElement || (n.getRootNode && n.getRootNode().host) || null;
   const clsOf = (n) => (typeof n.className === "string" && n.className.trim() ? "." + n.className.trim().split(/\s+/).slice(0, 2).join(".") : "");
@@ -345,20 +365,40 @@ const read = (frame) => frame.evaluate(([prefix, maxKids, upLevels]) => {
   push(el, "");
   const list = [];
   for (let h = 0; h < queue.length && h < 5000; h++) { const [k, p] = queue[h]; if (list.length < maxKids) list.push([k, p]); push(k, p); }
+  // 2026-09-30 (2) SVG 내부: <use>/<image> href(+이 문서 안에서 풀리면 가리키는 노드의 해시), <path> d, points, bbox, fill/stroke
+  // 속성, <stop> 색, url(#id) fill/stroke/filter가 가리키는 gradient의 stop(컨트롤 밖 <defs>여도; gradient href 한 단계 따라감).
+  const XL = "http://www.w3.org/1999/xlink";
+  const hrefOf = (n) => n.getAttribute("href") ?? n.getAttributeNS(XL, "href") ?? n.getAttribute("xlink:href");
+  const localId = (ref) => { const t = String(ref || ""), i = t.indexOf("#"); if (i < 0) return null; const pre = t.slice(0, i); if (pre && pre !== location.href.split("#")[0]) return null; try { return decodeURIComponent(t.slice(i + 1)); } catch { return t.slice(i + 1); } };
+  const byId = (n, id) => { const r = n.getRootNode && n.getRootNode(); return (r && r !== document && r.getElementById ? r.getElementById(id) : null) || document.getElementById(id); };
+  const stopsOf = (g) => { for (let hop = 0, x = g; x && hop < 3; hop++) { const st = [...x.children].filter((y) => y.tagName.toLowerCase() === "stop"); if (st.length) return st.map((y) => { const cs = getComputedStyle(y); return `${y.getAttribute("offset") ?? "0"}:${cs.stopColor}@${cs.stopOpacity}`; }).join(","); const id = localId(hrefOf(x)); x = id ? byId(x, id) : null; } return ""; };
+  const paintRef = (n, v, which) => { const m = String(v || "").match(/url\(\s*["']?([^"')]*)["']?\s*\)/); if (!m) return ""; const id = localId(m[1]), t = id ? byId(n, id) : null; if (!t) return `${which}→${full(m[1], 40)} (unresolved)`; const tg = t.tagName.toLowerCase(); return `${which}→#${id} ${tg}[${/gradient$/.test(tg) ? stopsOf(t) : "#" + hash(t.outerHTML.slice(0, 4000))}]`; };
+  const r1 = (x) => Math.round(x * 10) / 10;
+  const svgFields = (n, tag, c) => {
+    const f = n.getAttribute("fill"), st = n.getAttribute("stroke"), geo = [];
+    if (tag === "path") { geo.push(`d=${full(n.getAttribute("d") || "", 48)}`); if (c.d && c.d !== "none") geo.push(`css=#${hash(c.d)}`); }
+    if (tag === "polygon" || tag === "polyline") geo.push(`pts=${full(n.getAttribute("points") || "", 48)}`);
+    if (tag !== "svg" && typeof SVGGraphicsElement !== "undefined" && n instanceof SVGGraphicsElement) { try { const b = n.getBBox(); geo.push(`box=${r1(b.x)},${r1(b.y)} ${r1(b.width)}x${r1(b.height)}`); } catch {} }
+    let href = "";
+    if (/^(use|image|feimage|textpath|mpath)$/.test(tag)) { const h = hrefOf(n); if (h != null) { const id = localId(h), t = id ? byId(n, id) : null; href = `${full(h, 80)}${t ? ` →${t.tagName.toLowerCase()}#${hash(t.outerHTML.slice(0, 4000))}` : id ? " →(unresolved)" : ""}`; } }
+    return { fa: f == null && st == null ? "" : `fill=${f ?? "-"} stroke=${st ?? "-"}`, paint: `fo=${c.fillOpacity} so=${c.strokeOpacity} sw=${c.strokeWidth} dash=${c.strokeDasharray} off=${c.strokeDashoffset}`, geo: geo.join(" "), href,
+      grad: [paintRef(n, c.fill, "fill"), paintRef(n, c.stroke, "stroke"), paintRef(n, c.filter, "filter")].filter(Boolean).join("; "), stop: tag === "stop" ? `${c.stopColor}@${c.stopOpacity} off=${n.getAttribute("offset") ?? ""}` : "" };
+  };
   out.kids = list.map(([k, p]) => {
     const c = getComputedStyle(k), tag = k.tagName.toLowerCase(), svg = k instanceof SVGElement;
     const lab = (k.getAttribute("aria-label") || k.textContent || "").replace(/\s+/g, " ").trim().slice(0, 20);
-    return { k: `${tag}@${p}`, d: `${tag}${clsOf(k)}[${lab}]`,
+    return { k: `${tag}@${p}`, d: `${tag}${clsOf(k)}[${lab}]`, ...(svg ? { svg: 1 } : {}),
       empty: !k.children.length && ![...k.childNodes].some((x) => x.nodeType === 3 && x.textContent.trim()) && !svg && !/^(img|picture|video|canvas|input|textarea|select|iframe|object|embed)$/.test(tag),
       v: { fg: c.color, bg: c.backgroundColor, op: c.opacity, tf: c.transform, filter: c.filter, deco: c.textDecorationLine === "none" ? "none" : `${c.textDecorationLine} ${c.textDecorationColor}`,
-        shadow: c.boxShadow, outline: ol(c), border: bd(c), img: c.backgroundImage.slice(0, 80), vis: c.display === "none" ? "display:none" : c.visibility,
-        fill: svg ? `${c.fill}|${c.stroke}` : "", size: k.offsetWidth !== undefined ? `${k.offsetWidth}x${k.offsetHeight}` : `${c.width}x${c.height}`, ex: ex(c), pseudo: ps(k, "::before") + ps(k, "::after") } };
+        shadow: c.boxShadow, outline: ol(c), border: bd(c), img: c.backgroundImage === "none" ? "none" : full(c.backgroundImage, 80), bgpos: bgLayout(c), vis: c.display === "none" ? "display:none" : c.visibility,
+        fill: svg ? `${c.fill}|${c.stroke}` : "", size: k.offsetWidth !== undefined ? `${k.offsetWidth}x${k.offsetHeight}` : `${c.width}x${c.height}`, ex: ex(c), pseudo: ps(k, "::before") + ps(k, "::after"),
+        src: srcOf(k, tag), ...(svg ? svgFields(k, tag, c) : {}) } };
   });
   out.kidsTotal = queue.length;
   out.ups = [];
   for (let l = 1, p = parentOf(el); l <= upLevels && p && p !== document.body && p !== document.documentElement; l++, p = parentOf(p)) {
     const c = getComputedStyle(p);
-    out.ups.push({ k: `up${l}:${p.tagName.toLowerCase()}${clsOf(p)}`, v: { bg: c.backgroundColor, border: bd(c), shadow: c.boxShadow, outline: ol(c), tf: c.transform, op: c.opacity, filter: c.filter, img: c.backgroundImage.slice(0, 80), ex: ex(c), pseudo: ps(p, "::before") + ps(p, "::after") } });
+    out.ups.push({ k: `up${l}:${p.tagName.toLowerCase()}${clsOf(p)}`, v: { bg: c.backgroundColor, border: bd(c), shadow: c.boxShadow, outline: ol(c), tf: c.transform, op: c.opacity, filter: c.filter, img: full(c.backgroundImage, 80), bgpos: bgLayout(c), ex: ex(c), pseudo: ps(p, "::before") + ps(p, "::after") } });
   }
   out.disabled = [];
   try { if (el.disabled === true || el.matches(":disabled")) out.disabled.push("disabled"); } catch {}
@@ -462,8 +502,10 @@ async function hoverOrMove(loc, v) {
 }
 // 비활성 컨트롤에는 hover·pressed·focus 상태가 없다. Socar '검색'(2026-09-29)은 disabled인데 hover가 매칭돼 "변화 없음"으로
 // 측정된 것처럼 읽혔다. 못 쟀음으로 적고, 상태마다 새로 여는 세 번의 로드도 하지 않는다.
-if (states.rest.disabled?.length) {
-  for (const k of ["hover", "pressed", "focus"]) unmeasured[k] = `disabled — not measured (${states.rest.disabled.join(", ")})`;
+// 2026-09-30 (2): 로드를 건너뛰는 것은 네이티브 disabled일 때뿐이다. inert·pointer-events:none·aria-disabled는 rest(페이지 맨 위) 한 번으로
+// 정하지 않는다 — socar '맨 위로'는 스크롤 전까지 inert다. 상태마다 그 로드에서 다시 본다(아래 captures 뒤).
+if (states.rest.disabled?.includes("disabled")) {
+  for (const k of ["hover", "pressed", "focus"]) unmeasured[k] = `disabled — not measured (${states.rest.disabled.join(", ")}; native disabled at rest, so the state loads were skipped)`;
 } else {
 await capture("hover", async (v) => { await clearOverlays(v.frame);
   const loc = v.frame.locator('[data-omd-probe="1"]');
@@ -476,6 +518,12 @@ await capture("focus", async (v) => { await clearOverlays(v.frame);
   await v.page.keyboard.press("Tab");                       // 키보드 모달리티 — toss에서 이게 없으면 focus가 안 뜬다
   await v.frame.evaluate(() => (window.__omdOne ? window.__omdOne('[data-omd-probe="1"]') : document.querySelector('[data-omd-probe="1"]')).focus());
   await settle(v.frame, v.page); });
+// 각 상태의 read()가 그 순간(scrollIntoView·hover/focus 뒤)의 비활성 여부를 담아 온다. hover·pressed는 어떤 종류든, focus는 disabled·inert면 못 쟀음.
+for (const k of ["hover", "pressed", "focus"]) {
+  const live = states[k]?.disabled ?? [];
+  const block = k === "focus" ? live.filter((x) => x === "disabled" || x === "inert") : live;
+  if (states[k] && block.length) { unmeasured[k] = `disabled — not measured (${live.join(", ")}; live re-check in this state's own load${states.rest.disabled?.length ? `; rest: ${states.rest.disabled.join(", ")}` : ""})`; delete states[k]; }
+}
 }
 
 function report() {
@@ -538,6 +586,8 @@ for (const [name, s] of Object.entries(states)) {
   // 그대로라서 "hover·pressed 변화 없음"으로 보고했다 (2026-09-23).
   if (s.opacity !== states.rest.opacity || name === "rest") extras.push(`opacity=${s.opacity}`);
   if (s.bgImage !== states.rest.bgImage) extras.push(`background-image=${s.bgImage.slice(0, 90)}`);
+  if ((s.bgPos ?? "") !== (states.rest.bgPos ?? "")) extras.push(`background-position/size/repeat=${s.bgPos}`);
+  if ((s.src ?? "") !== (states.rest.src ?? "")) extras.push(`src=${s.src}`);
   if (s.decoration !== states.rest.decoration) extras.push(`text-decoration=${s.decoration}`);
   if (s.pseudo !== states.rest.pseudo) extras.push(`pseudo=${s.pseudo.slice(0, 160)}`);
   // border와 같은 이유로 rest에서도 항상 찍는다. 포커스 판정은 색이 아니라
@@ -557,12 +607,13 @@ for (const [name, why] of Object.entries(unmeasured)) {
 // outline-style이 none이면 색·너비가 바뀌어도 아무것도 그려지지 않는다 — 그 변화를 "바뀜"으로
 // 세면 포커스 표시가 없는 입력칸이 있는 것처럼 보인다 (2026-09-23 citymapper·guardian 검색칸).
 const drawnOutline = (o) => (/\bnone\b/.test(o) || /rgba\([^)]*,\s*0\)/.test(o) || /\b0px\b/.test(o) ? "none" : o);
-const VISUAL = (s) => [hex(s.bg), hex(s.fg), hex(s.border), s.shadow, drawnOutline(s.outline), s.transform, s.opacity, s.bgImage, s.decoration, s.pseudo].join("|");
+const VISUAL = (s) => [hex(s.bg), hex(s.fg), hex(s.border), s.shadow, drawnOutline(s.outline), s.transform, s.opacity, s.bgImage, s.bgPos ?? "", s.src ?? "", s.decoration, s.pseudo].join("|");
 // 2026-09-30: 후손·조상의 변화도 "바뀜"이다. "없음"은 무엇을 비교했는지와 함께만 적고, 잰 상태가 하나도 없으면 "없음"이라 하지 않는다.
 const changed = Object.entries(states).filter(([k, s]) => k !== "rest" && (VISUAL(s) !== VISUAL(states.rest) || deepDiff(states.rest, s).length > 0));
 const measuredStates = Object.keys(states).filter((k) => k !== "rest");
 const r0 = states.rest;
-const scope = `요소 자신(bg·fg·border·shadow·outline·transform·opacity·background-image·text-decoration)과 그 ::before/::after · 후손 ${r0.kids?.length ?? 0}개${(r0.kidsTotal ?? 0) > (r0.kids?.length ?? 0) ? `(전체 ${r0.kidsTotal}개 중 너비 우선 앞쪽; --max-kids로 늘림)` : ""}, 그중 빈 요소 ${(r0.kids ?? []).filter((k) => k.empty).length}개, 각 후손의 ::before/::after · 조상 ${r0.ups?.length ?? 0}단계와 그 ::before/::after`;
+const svgKids = (r0.kids ?? []).filter((k) => k.svg).length, imgKids = (r0.kids ?? []).filter((k) => /^(img|source)@/.test(k.k)).length;
+const scope = `요소 자신(bg·fg·border·shadow·outline·transform·opacity·background-image 전체 값·background-position/size/repeat·src·text-decoration)과 그 ::before/::after · 후손 ${r0.kids?.length ?? 0}개${(r0.kidsTotal ?? 0) > (r0.kids?.length ?? 0) ? `(전체 ${r0.kidsTotal}개 중 너비 우선 앞쪽; --max-kids로 늘림)` : ""}, 그중 빈 요소 ${(r0.kids ?? []).filter((k) => k.empty).length}개, SVG 요소 ${svgKids}개, img/source ${imgKids}개, 각 후손의 ::before/::after · 조상 ${r0.ups?.length ?? 0}단계와 그 ::before/::after · 후손 속성: 색·배경·border·outline·shadow·opacity·transform·filter·visibility·크기·background-image(전체)+position/size/repeat·mask 위치·<img>/<source> currentSrc/src/srcset·SVG fill/stroke(계산값과 속성)·<path> d·points·bbox·<use>/<image> href(+대상 해시)·<stop> 색과 url(#id) gradient stop`;
 if (!measuredStates.length) console.log(`\n눈에 보이는 값이 바뀌는 상태: 판정 없음 — 잰 상태가 하나도 없다 (아래 못 잰 상태)`);
 else if (changed.length) console.log(`\n눈에 보이는 값이 바뀌는 상태: ${changed.map(([k]) => k).join(", ")}\n비교 범위: ${scope}`);
 else console.log(`\n눈에 보이는 값이 바뀌는 상태: 없음 (잰 상태 ${measuredStates.join("·")}) — 비교 범위: ${scope}`);

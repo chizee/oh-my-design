@@ -44,11 +44,18 @@
  *     elementFromPoint: control or descendant), read HOVER, mouse-down, read PRESSED, release IN PLACE with click/mouseup/
  *     pointerup/submit swallowed at window capture — nothing is ever clicked, no link is followed, no form is sent.
  *   Every read compares, on the control: bg, fg, border, radius, box-shadow, outline (drawn only), transform, opacity, filter,
- *   background-image, text-decoration, backdrop-filter/clip-path/mask, ::before/::after, size/padding/font and the label child;
- *   on EVERY descendant (empty layers included, open shadow roots pierced, up to --max-kids, keyed by child-index path): colour,
- *   bg, opacity, transform, filter, text-decoration, box-shadow, drawn outline, border, background-image, display/visibility,
- *   svg fill/stroke, layout size, backdrop-filter/clip-path/mask and its own ::before/::after; on --up ancestors: bg, border,
- *   box-shadow, outline, transform, opacity, filter, background-image, backdrop-filter/clip-path/mask, ::before/::after.
+ *   background-image (whole value) + background-position/-size/-repeat, text-decoration, backdrop-filter/clip-path/mask (image,
+ *   position, size), ::before/::after (the same list, incl. background-position and content), size/padding/font, the label child
+ *   and, on an <img>/<input type=image> control, currentSrc/src/srcset; on EVERY descendant (empty layers included, open shadow
+ *   roots pierced, up to --max-kids, keyed by child-index path): colour, bg, opacity, transform, filter, text-decoration,
+ *   box-shadow, drawn outline, border, background-image + position/size/repeat, display/visibility, layout size, backdrop-filter/
+ *   clip-path/mask, its own ::before/::after, <img>/<source> currentSrc/src/srcset, and on SVG elements: computed fill/stroke, the
+ *   fill/stroke ATTRIBUTES, fill/stroke opacity + stroke width/dash, <path> `d` (attribute and computed), polygon/polyline points,
+ *   getBBox, <use>/<image> href/xlink:href (+ a hash of the node it points at when it resolves in this document), <stop> colours,
+ *   and the stops of any gradient (or a hash of the pattern/filter markup) that a url(#id) fill/stroke/filter points at, wherever
+ *   it is defined; on --up ancestors: bg, border, box-shadow, outline, transform, opacity, filter, background-image + position/
+ *   size/repeat, backdrop-filter/clip-path/mask, ::before/::after. Long values are kept as a prefix plus an FNV-1a hash of the
+ *   WHOLE string (`…#1a2b3c4d/523` = hash/length), so a difference past the prefix still counts.
  *   Values that are still moving between two reads are listed in `unstableProps`, not as changes.
  *
  * FIXES 2026-09-30 (docs/research/2026-09-29-growth/probe-tool-fix.md) — each produced a wrong "no change" or "focus absent":
@@ -59,17 +66,35 @@
  *   (c) the walk no longer skips tabIndex < 0 controls (Toss Bank's Radix tab reads tabIndex -1 and Tab reaches it); a landing
  *       inside or around an unreached control is named in its UNMEASURED reason.
  *   (d) `disabled`/`:disabled`, aria-disabled="true" (self or ancestor), pointer-events:none and inert → hover/pressed are
- *       "disabled — not measured (<kind>)", never "no change" (Socar search button). Native disabled and inert are not walked
- *       (they cannot take focus); aria-disabled and pointer-events:none still are, and a focus read on them carries `disabled`.
+ *       "disabled — not measured (<kind>)", never "no change" (Socar search button). A focus read on an aria-disabled or
+ *       pointer-events:none control that Tab reaches carries `disabled`. (The walk filter on native disabled/inert added here
+ *       was removed by (j): every control is walked and its status is re-checked live.)
  *   (e) --tab-settle after every Tab plus one re-read on a body/repeat landing; stop rules above (hyundaicard's walk ended at Tab #2).
  *   (f) every measured state carries `compared` (the element set diffed, with counts) and `verdict`; each change names its `set`
  *       (self, self-pseudo, label, descendant, descendant-pseudo, ancestor, ancestor-pseudo). Nothing changed = "NO CHANGE across
  *       <scope>"; values still moving = "NO SETTLED CHANGE …", never plain "NO CHANGE".
  *
- * BLIND SPOTS THAT REMAIN (the probe reads computed style, not pixels): anything painted inside <canvas>/WebGL/video; SVG changes
- *   that are not a computed colour/fill/stroke/opacity/transform/filter/visibility of an element (SMIL, a swapped <use href>, a
- *   changed path `d`, gradient stops); cross-origin iframes; closed shadow roots; descendants past --max-kids; a layer that is a
- *   sibling or cousin of the control rather than its descendant or one of its --up ancestors.
+ * FIXES 2026-09-30 (2) (docs/research/2026-09-29-growth/probe-tool-fix-2.md) — each was a wrong "no change" or a wrong "disabled":
+ *   (g) background-position/-size/-repeat and the WHOLE background-image value (was cut at 60/80/120 characters) on self,
+ *       descendants, their ::before/::after and ancestors; mask position/size likewise. naver's 뉴스 shortcut hovers only by
+ *       moving its sprite tile (`span.service_icon::before` -156px -144px -> -104px -144px); the first fix read "no change".
+ *   (h) <img>/<source> currentSrc, src and srcset (a src swap by script leaves every computed style unchanged).
+ *   (i) SVG internals: <use>/<image> href, <path> d, polygon points, bbox, fill/stroke attributes, <stop> colours, and the stops of
+ *       a gradient that a url(#id) paint points at even when it is defined outside the control.
+ *   (j) disabled / aria-disabled / pointer-events:none / inert is re-checked LIVE: at the Tab landing (`focus.disabledAtLanding`;
+ *       the page-top value stays in `identity.disabledKinds` and `focus.disabledAtPageTop`), after the walk for controls it never
+ *       reached (`disabledAtWalkEnd`), and in the mouse pass after the control is scrolled into view. Every found control is walked;
+ *       the walk stops early only when every control still pending is natively disabled at that moment. (socar's '맨 위로' is
+ *       inert at page top; Tab #18 reached it on /guide, yet the first fix read its focus "disabled — not measured".)
+ *   A pseudo-element change carries `delta`, a field-level diff (`::before.pos: -156px -144px / … -> -104px -144px / …`). --summary
+ *   prints it, and for long values it prints the differing tail instead of two identical-looking prefixes. Each `compared` scope
+ *   now counts the SVG and <img>/<source> descendants and lists the properties compared.
+ *
+ * BLIND SPOTS THAT REMAIN (the probe reads computed style and DOM attributes, not pixels): anything painted inside <canvas>/WebGL/
+ *   video; SMIL animation (not verified either way); the inside of an external sprite (`sprite.svg#id` is compared as a string);
+ *   a <symbol>/<filter>/<pattern> change reached by any path other than the refs above; cross-origin iframes; closed shadow roots;
+ *   descendants past --max-kids; a layer that is a sibling or cousin of the control rather than its descendant or one of its --up
+ *   ancestors.
  *
  * HONESTY RULES
  *   - hover/pressed/focus is `measured:false` + a reason — UNMEASURED, never "no change" — unless `:hover` / `:active` /
@@ -263,13 +288,20 @@ function inPage(opts) {
   const paintsBorder = (s) => ["Top", "Right", "Bottom", "Left"].some((d) => { const st = s["border" + d + "Style"]; return st !== "none" && st !== "hidden" && parseFloat(s["border" + d + "Width"]) > 0 && alpha(s["border" + d + "Color"]) > 0; });
   const drawnOutline = (s) => (s.outlineStyle !== "none" && parseFloat(s.outlineWidth) > 0 && alpha(s.outlineColor) > 0 ? `${s.outlineColor} ${s.outlineStyle} ${s.outlineWidth} off ${s.outlineOffset}` : "none");
   const behind = (el) => { for (let n = el; n; n = parentOf(n)) { const c = getComputedStyle(n).backgroundColor; if (alpha(c) > 0) return c; } return "none(canvas)"; };
-  // backdrop-filter, clip-path and mask: layers that change what is painted without touching colour or opacity.
+  // (g) A long value is kept as a prefix plus an FNV-1a hash of the WHOLE string (`…#hash/length`), so a URL or data: URI that
+  // differs past the prefix still differs. The first fix cut background-image at 60/80/120 characters.
+  const hash = (str) => { let h = 0x811c9dc5; for (let n = 0; n < str.length; n++) { h ^= str.charCodeAt(n); h = Math.imul(h, 0x01000193); } return (h >>> 0).toString(16).padStart(8, "0"); };
+  const full = (v, n) => { v = String(v ?? ""); return v.length <= n ? v : `${v.slice(0, n)}…#${hash(v)}/${v.length}`; };
+  // background-position / -size / -repeat, only when an image is painted: a sprite hover moves nothing else (naver 뉴스, 2026-09-29).
+  const bgLayout = (s) => (s.backgroundImage && s.backgroundImage !== "none" ? `${s.backgroundPosition} / ${s.backgroundSize} / ${s.backgroundRepeat}` : "");
+  // backdrop-filter, clip-path and mask (image + position + size: an icon drawn through a mask sprite moves by mask-position).
   const extras = (s) => {
     const x = [];
     if (s.backdropFilter && s.backdropFilter !== "none") x.push(`backdrop:${s.backdropFilter}`);
-    if (s.clipPath && s.clipPath !== "none") x.push(`clip:${s.clipPath.slice(0, 60)}`);
-    const m = s.maskImage && s.maskImage !== "none" ? s.maskImage : s.webkitMaskImage && s.webkitMaskImage !== "none" ? s.webkitMaskImage : "";
-    if (m) x.push(`mask:${m.slice(0, 60)}`);
+    if (s.clipPath && s.clipPath !== "none") x.push(`clip:${full(s.clipPath, 60)}`);
+    const std = !!(s.maskImage && s.maskImage !== "none");
+    const m = std ? s.maskImage : s.webkitMaskImage && s.webkitMaskImage !== "none" ? s.webkitMaskImage : "";
+    if (m) x.push(`mask:${full(m, 60)} @ ${std ? s.maskPosition : s.webkitMaskPosition} / ${std ? s.maskSize : s.webkitMaskSize}`);
     return x.join(";");
   };
   // ::before/::after only when something is painted (transparent empty boxes are not a state change). Any border side counts
@@ -281,7 +313,8 @@ function inPage(opts) {
     const bd = paintsBorder(c), ol = drawnOutline(c), ex = extras(c);
     const paints = alpha(c.backgroundColor) > 0 || c.backgroundImage !== "none" || c.boxShadow !== "none" || bd || ol !== "none" || glyph || ex !== "";
     if (!paints) return "";
-    return `${ps}{content:${c.content.slice(0, 20)};bg:${c.backgroundColor};img:${c.backgroundImage.slice(0, 60)};color:${glyph ? c.color : "-"};op:${c.opacity};tf:${c.transform};bs:${c.boxShadow};size:${c.width}x${c.height}${bd ? `;bd:${border(c)}` : ""}${ol !== "none" ? `;ol:${ol}` : ""}${c.visibility !== "visible" ? `;vis:${c.visibility}` : ""}${ex ? `;${ex}` : ""}}`;
+    const lay = bgLayout(c);
+    return `${ps}{content:${full(c.content, 40)};bg:${c.backgroundColor};img:${full(c.backgroundImage, 60)}${lay ? `;pos:${lay}` : ""};color:${glyph ? c.color : "-"};op:${c.opacity};tf:${c.transform};bs:${c.boxShadow};size:${c.width}x${c.height}${bd ? `;bd:${border(c)}` : ""}${ol !== "none" ? `;ol:${ol}` : ""}${c.visibility !== "visible" ? `;vis:${c.visibility}` : ""}${ex ? `;${ex}` : ""}}`;
   };
   const dec = (s) => (s.textDecorationLine === "none" ? "none" : `${s.textDecorationLine} ${s.textDecorationStyle} ${s.textDecorationColor}`);
   const hasOwnText = (n) => [...n.childNodes].some((x) => x.nodeType === 3 && x.textContent.trim());
@@ -299,7 +332,52 @@ function inPage(opts) {
     return { list, total: queue.length };
   };
   // Defaults are omitted from a descendant record (the Node side restores them), which keeps 150-node snapshots small.
-  const KDEF = { bg: "rgba(0, 0, 0, 0)", op: "1", tf: "none", filter: "none", deco: "none", shadow: "none", outline: "none", border: "none", img: "none", vis: "visible", fill: "", pseudo: "", ex: "" };
+  const KDEF = { bg: "rgba(0, 0, 0, 0)", op: "1", tf: "none", filter: "none", deco: "none", shadow: "none", outline: "none", border: "none", img: "none", vis: "visible", fill: "", pseudo: "", ex: "", bgpos: "", src: "", href: "", geo: "", fa: "", paint: "", grad: "", stop: "" };
+  // (h) image sources: currentSrc (what is shown), the src attribute when it differs, and a hash of srcset. <source> by its srcset.
+  const srcOf = (k, tag) => {
+    if (tag === "img" || (tag === "input" && k.type === "image")) {
+      const a = k.getAttribute("src") || "", cur = k.currentSrc || k.src || "", set = k.getAttribute("srcset");
+      return `cur=${full(cur, 80)}${a && a !== cur ? ` src=${full(a, 80)}` : ""}${set ? ` set=#${hash(set)}` : ""}`;
+    }
+    if (tag === "source") return `set=#${hash(k.getAttribute("srcset") || k.getAttribute("src") || "")}${k.getAttribute("media") ? ` media=${k.getAttribute("media")}` : ""}`;
+    return "";
+  };
+  // (i) SVG internals. A reference resolves only when it points into this document (`#id`, or this page's URL + #id); an external
+  // sprite (`icons.svg#x`) is compared as a string. One gradient href hop is followed to find inherited stops.
+  const XL = "http://www.w3.org/1999/xlink";
+  const hrefOf = (k) => k.getAttribute("href") ?? k.getAttributeNS(XL, "href") ?? k.getAttribute("xlink:href");
+  const localId = (ref) => { const s = String(ref || ""), n = s.indexOf("#"); if (n < 0) return null; const pre = s.slice(0, n); if (pre && pre !== location.href.split("#")[0]) return null; try { return decodeURIComponent(s.slice(n + 1)); } catch { return s.slice(n + 1); } };
+  const byId = (k, id) => { const r = k.getRootNode && k.getRootNode(); return (r && r !== document && r.getElementById ? r.getElementById(id) : null) || document.getElementById(id); };
+  const stopsOf = (g) => {
+    for (let hop = 0, x = g; x && hop < 3; hop++) {
+      const st = [...x.children].filter((c) => c.tagName.toLowerCase() === "stop");
+      if (st.length) return st.map((c) => { const cs = getComputedStyle(c); return `${c.getAttribute("offset") ?? "0"}:${cs.stopColor}@${cs.stopOpacity}`; }).join(",");
+      const id = localId(hrefOf(x)); x = id ? byId(x, id) : null;
+    }
+    return "";
+  };
+  const paintRef = (k, v, which) => {
+    const m = String(v || "").match(/url\(\s*["']?([^"')]*)["']?\s*\)/);
+    if (!m) return "";
+    const id = localId(m[1]), t = id ? byId(k, id) : null;
+    if (!t) return `${which}→${full(m[1], 40)} (unresolved)`;
+    const tag = t.tagName.toLowerCase();
+    return `${which}→#${id} ${tag}[${/gradient$/.test(tag) ? stopsOf(t) : "#" + hash(t.outerHTML.slice(0, 4000))}]`;
+  };
+  const svgHref = (k, tag) => {
+    if (!/^(use|image|feimage|textpath|mpath)$/.test(tag)) return "";
+    const h = hrefOf(k);
+    if (h == null) return "";
+    const id = localId(h), t = id ? byId(k, id) : null;
+    return `${full(h, 80)}${t ? ` →${t.tagName.toLowerCase()}#${hash(t.outerHTML.slice(0, 4000))}` : id ? " →(unresolved)" : ""}`;
+  };
+  const svgGeo = (k, tag, s) => {
+    const out = [];
+    if (tag === "path") { out.push(`d=${full(k.getAttribute("d") || "", 48)}`); if (s.d && s.d !== "none") out.push(`css=#${hash(s.d)}`); }
+    if (tag === "polygon" || tag === "polyline") out.push(`pts=${full(k.getAttribute("points") || "", 48)}`);
+    if (tag !== "svg" && typeof SVGGraphicsElement !== "undefined" && k instanceof SVGGraphicsElement) { try { const b = k.getBBox(); out.push(`box=${round1(b.x)},${round1(b.y)} ${round1(b.width)}x${round1(b.height)}`); } catch {} }
+    return out.join(" ");
+  };
   const kidRec = (k, p) => {
     const s = getComputedStyle(k), tag = k.tagName.toLowerCase(), isSvg = typeof SVGElement !== "undefined" && k instanceof SVGElement;
     // layout size, not getBoundingClientRect: a scale on the control would otherwise "change" every descendant
@@ -307,17 +385,28 @@ function inPage(opts) {
     const put = (n, v) => { if (v !== KDEF[n]) o[n] = v; };
     put("bg", s.backgroundColor); put("op", s.opacity); put("tf", s.transform); put("filter", s.filter); put("deco", dec(s));
     put("shadow", s.boxShadow); put("outline", drawnOutline(s)); put("border", border(s));
-    put("img", s.backgroundImage === "none" ? "none" : s.backgroundImage.slice(0, 80));
+    put("img", s.backgroundImage === "none" ? "none" : full(s.backgroundImage, 80));
+    put("bgpos", bgLayout(s));
     put("vis", s.display === "none" ? "display:none" : s.visibility !== "visible" ? `visibility:${s.visibility}` : "visible");
     put("fill", isSvg ? `${s.fill}|${s.stroke}` : "");
     put("pseudo", pseudo(k, "::before") + pseudo(k, "::after"));
     put("ex", extras(s));
+    put("src", srcOf(k, tag));
+    if (isSvg) {
+      const f = k.getAttribute("fill"), st = k.getAttribute("stroke");
+      put("fa", f == null && st == null ? "" : `fill=${f ?? "-"} stroke=${st ?? "-"}`);
+      put("paint", `fo=${s.fillOpacity} so=${s.strokeOpacity} sw=${s.strokeWidth} dash=${s.strokeDasharray} off=${s.strokeDashoffset}`);
+      put("geo", svgGeo(k, tag, s));
+      put("href", svgHref(k, tag));
+      put("grad", [paintRef(k, s.fill, "fill"), paintRef(k, s.stroke, "stroke"), paintRef(k, s.filter, "filter")].filter(Boolean).join("; "));
+      if (tag === "stop") put("stop", `${s.stopColor}@${s.stopOpacity} off=${k.getAttribute("offset") ?? ""}`);
+    }
     if (!k.children.length && !hasOwnText(k) && !isSvg && !/^(img|picture|video|canvas|input|textarea|select|iframe|object|embed)$/.test(tag)) o.empty = 1;
     return o;
   };
   const upRec = (n, lvl) => {
     const s = getComputedStyle(n);
-    return { k: `up${lvl}:${short(n).slice(0, 40)}`, bg: s.backgroundColor, border: border(s), shadow: s.boxShadow, outline: drawnOutline(s), tf: s.transform, op: s.opacity, filter: s.filter, img: s.backgroundImage === "none" ? "" : s.backgroundImage.slice(0, 60), pseudo: pseudo(n, "::before") + pseudo(n, "::after"), ex: extras(s), focusWithin: n.matches(":focus-within") };
+    return { k: `up${lvl}:${short(n).slice(0, 40)}`, bg: s.backgroundColor, border: border(s), shadow: s.boxShadow, outline: drawnOutline(s), tf: s.transform, op: s.opacity, filter: s.filter, img: s.backgroundImage === "none" ? "" : full(s.backgroundImage, 60), bgpos: bgLayout(s), pseudo: pseudo(n, "::before") + pseudo(n, "::after"), ex: extras(s), focusWithin: n.matches(":focus-within") };
   };
   const labelEl = (el) => (hasOwnText(el) ? el : [...el.querySelectorAll("*")].find((k) => hasOwnText(k) && !k.closest("svg")) || el);
   const ancestors = (el, upLevels) => { const out = []; for (let l = 1, p = parentOf(el); l <= upLevels && p && p !== document.body && p !== document.documentElement; l++, p = parentOf(p)) out.push(p); return out; };
@@ -329,10 +418,15 @@ function inPage(opts) {
     const lab = labelEl(el), ls = getComputedStyle(lab);
     const D = descendants(el);
     const kids = D.list.map(([k, p]) => kidRec(k, p));
+    // (f)+(i) what the scope string counts: SVG descendants by tag, and <img>/<source> descendants
+    const svgN = {};
+    let imgN = 0;
+    for (const [k] of D.list) { const t = k.tagName.toLowerCase(); if (typeof SVGElement !== "undefined" && k instanceof SVGElement) svgN[t] = (svgN[t] || 0) + 1; else if (t === "img" || t === "source" || (t === "input" && k.type === "image")) imgN++; }
     return {
       bg: s.backgroundColor, behind: behind(el), fg: s.color,
       border: border(s), radius: s.borderRadius, shadow: s.boxShadow, outline: drawnOutline(s), outlineStyle: s.outlineStyle,
-      transform: s.transform, opacity: s.opacity, filter: s.filter, bgImage: s.backgroundImage === "none" ? "none" : s.backgroundImage.slice(0, 120),
+      transform: s.transform, opacity: s.opacity, filter: s.filter, bgImage: s.backgroundImage === "none" ? "none" : full(s.backgroundImage, 120),
+      bgPos: bgLayout(s), src: srcOf(el, el.tagName.toLowerCase()), kidsSvg: Object.entries(svgN).map(([t, n]) => `${t} ${n}`).join(", "), kidsImg: imgN,
       deco: dec(s), extra: extras(s),
       before: pseudo(el, "::before"), after: pseudo(el, "::after"),
       size: `${round1(r.width)}x${round1(r.height)}`, padding: s.padding, font: `${s.fontSize}/${s.fontWeight}`,
@@ -524,14 +618,42 @@ function consentFn() {
 
 // ───────────────────────────── diffing (Node side) ─────────────────────────────
 // Defaults omitted from descendant records in the page (see kidRec).
-const KDEF = { bg: "rgba(0, 0, 0, 0)", op: "1", tf: "none", filter: "none", deco: "none", shadow: "none", outline: "none", border: "none", img: "none", vis: "visible", fill: "", pseudo: "", ex: "" };
-const SELF_PROPS = ["bg", "fg", "border", "radius", "shadow", "outline", "transform", "opacity", "filter", "bgImage", "deco", "extra", "size", "padding", "font"];
-const KID_PROPS = ["fg", "bg", "op", "tf", "filter", "deco", "shadow", "outline", "border", "img", "vis", "fill", "sz", "ex", "pseudo"];
-const UP_PROPS = ["bg", "border", "shadow", "outline", "tf", "op", "filter", "img", "ex"];
+const KDEF = { bg: "rgba(0, 0, 0, 0)", op: "1", tf: "none", filter: "none", deco: "none", shadow: "none", outline: "none", border: "none", img: "none", vis: "visible", fill: "", pseudo: "", ex: "", bgpos: "", src: "", href: "", geo: "", fa: "", paint: "", grad: "", stop: "" };
+const SELF_PROPS = ["bg", "fg", "border", "radius", "shadow", "outline", "transform", "opacity", "filter", "bgImage", "bgPos", "src", "deco", "extra", "size", "padding", "font"];
+const KID_PROPS = ["fg", "bg", "op", "tf", "filter", "deco", "shadow", "outline", "border", "img", "bgpos", "vis", "fill", "fa", "paint", "geo", "href", "grad", "stop", "src", "sz", "ex", "pseudo"];
+const UP_PROPS = ["bg", "border", "shadow", "outline", "tf", "op", "filter", "img", "bgpos", "ex"];
+// A pseudo record is one string (`::before{content:…;bg:…;img:…;pos:…;…}`); `delta` names the fields that differ, so a sprite shift
+// reads `::before.pos: -156px -144px / … -> -104px -144px / …` instead of two long strings that look alike.
+const PSEUDO_KEYS = "content|bg|img|pos|color|op|tf|bs|size|bd|ol|vis|backdrop|clip|mask";
+function pseudoFields(str) {
+  const out = {};
+  for (const seg of String(str ?? "").split(/(?=::(?:before|after)\{)/)) {
+    const m = seg.match(/^(::(?:before|after))\{([\s\S]*)\}$/);
+    if (!m) continue;
+    out[m[1]] = seg;
+    const re = new RegExp(`(^|;)(${PSEUDO_KEYS}):`, "g"), hits = [];
+    for (let x; (x = re.exec(m[2])); ) hits.push({ k: x[2], start: x.index + x[1].length, v: re.lastIndex });
+    hits.forEach((h, j) => { out[`${m[1]}.${h.k}`] = m[2].slice(h.v, j + 1 < hits.length ? hits[j + 1].start - 1 : m[2].length); });
+  }
+  return out;
+}
+function pseudoDelta(a, b) {
+  const A = pseudoFields(a), B = pseudoFields(b), d = [];
+  for (const ps of ["::before", "::after"]) {
+    if (!A[ps] && !B[ps]) continue;
+    if (!A[ps] || !B[ps]) { d.push(`${ps}: ${A[ps] ? "painted" : "not painted"} -> ${B[ps] ? `painted ${B[ps]}` : "not painted"}`); continue; }
+    for (const k of new Set([...Object.keys(A), ...Object.keys(B)])) if (k.startsWith(`${ps}.`) && A[k] !== B[k]) d.push(`${k}: ${A[k] ?? "-"} -> ${B[k] ?? "-"}`);
+  }
+  return d.join("; ");
+}
 // Each change names the element set it was found in: self, self-pseudo, label, descendant, descendant-pseudo, ancestor, ancestor-pseudo.
 function diffSnap(a, b) {
   const out = [];
-  const cmp = (set, prop, x, y, el) => { if (x !== y) out.push({ set, prop, from: x, to: y, ...(el ? { el } : {}) }); };
+  const cmp = (set, prop, x, y, el) => {
+    if (x === y) return;
+    const delta = /pseudo$/.test(set) ? pseudoDelta(x, y) : "";
+    out.push({ set, prop, from: x, to: y, ...(el ? { el } : {}), ...(delta ? { delta } : {}) });
+  };
   for (const p of SELF_PROPS) cmp("self", p, a[p] ?? "", b[p] ?? "");
   cmp("self-pseudo", "before", a.before ?? "", b.before ?? "");
   cmp("self-pseudo", "after", a.after ?? "", b.after ?? "");
@@ -558,9 +680,12 @@ function diffSnap(a, b) {
   return out;
 }
 // (f) the element set a verdict covers, so a "no change" carries its own scope.
+// (g)(h)(i) the property list, so a "no change" names what was compared (SVG attributes included when SVG is in scope).
+const PROPS_SCOPE = "props: colour, bg, border, drawn outline, shadow, opacity, transform, filter, visibility, size, text-decoration, background-image (whole value) + background-position/-size/-repeat, mask image/position/size, clip-path, backdrop-filter, <img>/<source> currentSrc/src/srcset, SVG fill/stroke (computed and attributes), fill/stroke opacity, stroke width/dash, <path> d, points, bbox, <use>/<image> href (+ target hash), <stop> colours and url(#id) gradient stops";
 const scopeOf = (s) => {
   const n = s.kids?.length ?? 0, tot = s.kidsTotal ?? n, u = s.ups?.length ?? 0;
-  return `self + its ::before/::after · ${n} descendant${n === 1 ? "" : "s"}${tot > n ? ` (first ${n} of ${tot}, breadth-first; raise --max-kids)` : ""}, ${s.kidsEmpty ?? 0} of them empty, each with its ::before/::after · ${u} ancestor level${u === 1 ? "" : "s"} with their ::before/::after`;
+  const svg = s.kidsSvg ? `SVG in scope: ${s.kidsSvg}` : "no SVG";
+  return `self + its ::before/::after · ${n} descendant${n === 1 ? "" : "s"}${tot > n ? ` (first ${n} of ${tot}, breadth-first; raise --max-kids)` : ""}, ${s.kidsEmpty ?? 0} of them empty, ${svg}, ${s.kidsImg ?? 0} <img>/<source>, each with its ::before/::after · ${u} ancestor level${u === 1 ? "" : "s"} with their ::before/::after · ${PROPS_SCOPE}`;
 };
 const stateDiff = (rest, s) => {
   const unstable = s.unstable ?? [];
@@ -684,13 +809,12 @@ function finishFocus(c) {
 
 async function keyboardPhase() {
   const rec = (c) => result.controls[c.key];
-  const walkable = [];
-  for (const c of C.filter((x) => x.found)) {
-    const k = c.identity.disabledKinds ?? [];
-    if (k.includes("disabled") || k.includes("inert")) rec(c).focus = { measured: false, disabled: k, unmeasured: `disabled — not measured (${k.join(", ")}): a natively disabled or inert control cannot take keyboard focus` };
-    else walkable.push(c);   // tabIndex is NOT consulted: whatever Tab lands on is matched by identity (Toss Bank's Radix tab reads -1)
-  }
+  const liveKinds = async (c) => (await page.evaluate((i) => window.__omdKb.disabled(i), c.i).catch(() => null)) ?? c.identity.disabledKinds ?? [];
+  // (j) EVERY found control is walked. tabIndex is NOT consulted (Toss Bank's Radix tab reads -1), and the page-top disabled/inert
+  // status is NOT trusted: socar's '맨 위로' is inert until the page scrolls, and Tab #18 reached it. The status is re-checked live.
+  const walkable = C.filter((x) => x.found);
   if (!walkable.length) return;
+  const byI = new Map(walkable.map((c) => [c.i, c]));
   const init = await page.evaluate(() => window.__omdKb.active(false));
   result.initialActive = init.desc;
   if (!init.isBody) await page.evaluate(() => window.__omdKb.resetFocusToStart());
@@ -708,6 +832,7 @@ async function keyboardPhase() {
     if (TAB_SETTLE && (peek.isBody || (peek.repeat && !peek.isFrame))) { await sleep(TAB_SETTLE); reReads++; }
     const info = await page.evaluate(() => window.__omdKb.active(true));
     const hitC = walkable.find((c) => info.idxs.includes(c.i) && pending.has(c.i)) ?? null;
+    const hitKinds = hitC ? await liveKinds(hitC) : null;   // (j) live, at the moment the landing matched the control
     for (const i of info.inside) if (pending.has(i) && !near[i]) near[i] = `Tab #${presses} focused ${info.desc}, which is INSIDE this control (the control was :focus-within, not focused itself)`;
     for (const i of info.wraps) if (pending.has(i) && !near[i]) near[i] = `Tab #${presses} focused ${info.desc}, which CONTAINS this control`;
     result.walk.push(`${presses}: ${info.desc}${info.repeat ? " (again)" : ""}${hitC ? ` <== ${hitC.key}` : ""}`);
@@ -717,10 +842,11 @@ async function keyboardPhase() {
       if (hitC) {
         const snap = await readStable(hitC);
         pending.delete(hitC.i);
-        const dk = hitC.identity.disabledKinds ?? [];
-        if (!snap) rec(hitC).focus = { measured: false, unmeasured: `reached at Tab #${presses} but the element vanished before it could be read` };
-        else if (!snap.is.focusVisible) rec(hitC).focus = { measured: false, unmeasured: `reached at Tab #${presses} but :focus-visible did not match`, is: snap.is };
-        else { rec(hitC).focus = { measured: true, tabPress: presses, is: snap.is, snap, settle: st, ...(dk.length ? { disabled: dk, note: `the control is ${dk.join(", ")} but keyboard focus still reaches it, so focus is measured` } : {}) }; prevC = hitC; }
+        const dk0 = hitC.identity.disabledKinds ?? [], dk = hitKinds ?? dk0;
+        const live = { disabledAtLanding: dk, ...(dk0.length ? { disabledAtPageTop: dk0 } : {}), ...(dk0.join() !== dk.join() ? { liveRecheck: `page top: ${dk0.join(", ") || "not disabled"}; at this Tab landing (live re-check): ${dk.join(", ") || "not disabled"}` } : {}) };
+        if (!snap) rec(hitC).focus = { measured: false, unmeasured: `reached at Tab #${presses} but the element vanished before it could be read`, ...live };
+        else if (!snap.is.focusVisible) rec(hitC).focus = { measured: false, unmeasured: `reached at Tab #${presses} but :focus-visible did not match`, is: snap.is, ...live };
+        else { rec(hitC).focus = { measured: true, tabPress: presses, is: snap.is, snap, settle: st, ...live, ...(dk.length ? { disabled: dk, note: `the control is ${dk.join(", ")} (live, at the landing) but keyboard focus still reaches it, so focus is measured` } : {}) }; prevC = hitC; }
       }
     }
     repeatRun = info.repeat && !info.isFrame ? repeatRun + 1 : 0;   // the same frame again is only Tab moving inside it
@@ -729,6 +855,13 @@ async function keyboardPhase() {
     if (info.first && info.distinct >= 2) { stop = `cycle: Tab #${presses} wrapped back to the walk's first element ${info.desc}`; break; }
     if (repeatRun >= CYCLE_AFTER) { stop = `cycle: ${repeatRun} Tab presses in a row landed only on elements already visited (a focus loop; --cycle-after ${CYCLE_AFTER})`; break; }
     if (bodyRun >= 3) { stop = "focus left the document (3 presses in a row landed on body)"; break; }
+    // (j) walking on for controls that cannot take focus only costs time: stop when every control still pending is natively
+    // disabled right now. Inert / pointer-events / aria-disabled controls keep the walk going (they can become reachable).
+    if (pending.size && !prevC && [...pending].every((i) => (byI.get(i).identity.disabledKinds ?? []).includes("disabled"))) {
+      let still = 0;
+      for (const i of pending) if ((await liveKinds(byI.get(i))).includes("disabled")) still++;
+      if (still === pending.size) { stop = `every control still pending is natively disabled (live re-check at Tab #${presses}): ${[...pending].map((i) => byI.get(i).key).join(", ")}`; break; }
+    }
   }
   if (!stop) stop = `cap --max-tabs ${MAX_TABS}`;
   if (prevC) {   // the last target: no later Tab moved the focus on, so blur it explicitly
@@ -737,8 +870,13 @@ async function keyboardPhase() {
     rec(prevC).focus.restAfterBlur = await readStable(prevC);
     finishFocus(prevC);
   }
-  for (const c of walkable) {
-    if (!rec(c).focus) rec(c).focus = { measured: false, unmeasured: `not reached by Tab within ${presses} presses (walk stopped: ${stop})${near[c.i] ? `; ${near[c.i]}` : ""}` };
+  for (const c of walkable) {   // (j) never reached: re-check live, on the page as the walk left it (scrolled, layers open)
+    if (rec(c).focus) continue;
+    const dk0 = c.identity.disabledKinds ?? [], dk = await liveKinds(c);
+    const base = `not reached by Tab within ${presses} presses (walk stopped: ${stop})${near[c.i] ? `; ${near[c.i]}` : ""}`;
+    const live = { disabledAtWalkEnd: dk, ...(dk0.length ? { disabledAtPageTop: dk0 } : {}) };
+    if (dk.includes("disabled") || dk.includes("inert")) rec(c).focus = { measured: false, disabled: dk, ...live, unmeasured: `disabled — not measured (${dk.join(", ")}; live re-check after the walk${dk0.length ? `; page top: ${dk0.join(", ")}` : ""}): a natively disabled or inert control cannot take keyboard focus; ${base}` };
+    else rec(c).focus = { measured: false, ...live, unmeasured: `${base}${dk0.length || dk.length ? `; disabled status — page top: ${dk0.join(", ") || "none"}, after the walk: ${dk.join(", ") || "none"}` : ""}` };
   }
   result.tabsPressed = presses;
   result.walkStop = stop;
@@ -756,17 +894,19 @@ async function mousePhase() {
     const fail = (why) => { R.hover ??= { measured: false, unmeasured: why }; R.pressed ??= { measured: false, unmeasured: why }; };
     let isDown = false, hidden = [];
     try {
-      // (d) a disabled control has no hover/pressed state; re-checked live, since a page can enable or disable after load
+      const h0 = await page.evaluate((i) => window.__omdKb.hit(i), c.i);     // also scrolls the control to the middle of the viewport
+      if (!h0) { fail("control vanished from the DOM"); continue; }
+      await sleep(450);
+      // (d)(j) a disabled control has no hover/pressed state. Re-checked live AFTER the scroll above: a page can enable or disable
+      // after load, and a fixed control can stay inert until the page scrolls (socar '맨 위로').
       const kinds = (await page.evaluate((i) => window.__omdKb.disabled(i), c.i).catch(() => null)) ?? c.identity.disabledKinds ?? [];
       if (kinds.length) {
-        const why = `disabled — not measured (${kinds.join(", ")}): a disabled control has no hover or pressed state to read`;
+        const sy = await page.evaluate(() => Math.round(scrollY)).catch(() => "?");
+        const why = `disabled — not measured (${kinds.join(", ")}; live re-check at scrollY=${sy}, after scrolling the control into view): a disabled control has no hover or pressed state to read`;
         R.hover = { measured: false, disabled: kinds, unmeasured: why };
         R.pressed = { measured: false, disabled: kinds, unmeasured: why };
         continue;
       }
-      const h0 = await page.evaluate((i) => window.__omdKb.hit(i), c.i);     // also scrolls the control to the middle of the viewport
-      if (!h0) { fail("control vanished from the DOM"); continue; }
-      await sleep(450);
       await park(c);
       await settleFor([c]);
       const rest = await readStable(c);
@@ -822,6 +962,16 @@ const hexOf = (c) => {
   return m[4] !== undefined && Number(m[4]) < 1 ? `${h}@${m[4]}` : h;
 };
 
+// Two long values that differ only past the first 110 characters would print as twins; show them from just before the difference.
+function pairText(a, b, n = 110) {
+  a = String(a); b = String(b);
+  if (a.length <= n && b.length <= n) return `${a} -> ${b}`;
+  let p = 0;
+  while (p < a.length && p < b.length && a[p] === b[p]) p++;
+  const from = p > 40 ? p - 30 : 0;
+  const cut = (s) => `${from ? "…" : ""}${s.slice(from, from + n)}${s.length > from + n ? "…" : ""}`;
+  return `${cut(a)} -> ${cut(b)}`;
+}
 // --summary: one readable block per control on stderr (stdout stays the JSON contract).
 function summaryText() {
   const b = result.boot;
@@ -836,7 +986,7 @@ function summaryText() {
       if (!S) continue;
       if (!S.measured) { L.push(`  ${s.padEnd(7)} UNMEASURED — ${S.unmeasured}`); continue; }
       L.push(`  ${s.padEnd(7)}${S.tabPress ? ` (Tab #${S.tabPress})` : ""}${S.settle ? ` [waited ${S.settle.waitedMs}ms; longest transition ${S.settle.longestTransitionMs}ms]` : ""} ${S.verdict}`);
-      for (const x of S.changed.slice(0, 12)) L.push(`      [${x.set}] ${x.prop}${x.el ? ` <${x.el}>` : ""}: ${String(x.from).slice(0, 110)} -> ${String(x.to).slice(0, 110)}${x.alsoPersists ? "  (still present after blur)" : ""}`);
+      for (const x of S.changed.slice(0, 12)) L.push(`      [${x.set}] ${x.prop}${x.el ? ` <${x.el}>` : ""}: ${x.delta ? `Δ ${x.delta.slice(0, 300)}` : pairText(x.from, x.to)}${x.alsoPersists ? "  (still present after blur)" : ""}`);
       if (S.changed.length > 12) L.push(`      ... ${S.changed.length - 12} more in the JSON`);
     }
   }
