@@ -360,7 +360,7 @@ Specimen availability is separate from family truth and requires a loadable, lic
 
 ### 라이브 제품 컴포넌트 (2026-07-11 캡처, 상태는 2026-09-29 측정)
 
-YDS 문서 컴포넌트와 별도로 제품 홈에서 측정한 컨트롤입니다. 측정한 모든 컨트롤에서 hover와 pressed는 같은 값입니다.
+YDS 문서 컴포넌트와 별도로 제품 홈에서 측정한 컨트롤입니다. 검색 필드를 뺀 측정 컨트롤은 hover와 pressed가 같은 값입니다. 검색 필드는 hover에 래퍼가 `#e6e6e6`이 되고, 누르면 흰 바탕에 1px `#222222` 테두리가 됩니다. 이 누름 모양은 blur 뒤에도 남아 스크립트 상태일 수 있어 pressed 값으로 선언하지 않습니다.
 
 **Search CTA** — 홈 검색 제출 '검색'
 - `#1d8bff` 배경, `#ffffff` 텍스트, 10px radius, 높이 48px, padding 0 18px, 15px / 700
@@ -428,7 +428,7 @@ YDS 문서 컴포넌트와 별도로 제품 홈에서 측정한 컨트롤입니�
 
 확인된 상태는 버튼·검색바·price marker의 기본/선택/입력 흐름과 product filter interaction입니다. duration이나 easing은 공개 source에서 확인되지 않았으므로 고정 token을 만들지 않습니다. 상태 변화는 색상만이 아니라 label, border, focus affordance로도 구분합니다.
 
-2026-09-29 라이브 측정: 여섯 컨트롤 모두 hover와 pressed가 같은 값입니다(채운 `#1d8bff` 버튼은 `#006ce0`, 흰 outline 컨트롤은 `#f5f5f5`). 키보드 focus는 outline으로 그려지지 않습니다. `gc-*` 컨트롤(Box Button, Filter Chip)은 1px `#243b52` 테두리를 그리고, `yf-*` 버튼(Search CTA, Outline Button)과 홈 숙소 카드는 보이는 변화가 없습니다. '검색' 버튼과 헤더 outline 버튼에만 0.15s 전환이 있고 나머지는 즉시 바뀝니다. 이 값들은 컴포넌트 측정값이며 motion token으로 만들지 않습니다.
+2026-09-29 라이브 측정: 검색 필드를 뺀 다섯 컨트롤은 hover와 pressed가 같은 값입니다(채운 `#1d8bff` 버튼은 `#006ce0`, 흰 outline 컨트롤은 `#f5f5f5`). 검색 필드는 hover(래퍼 `#e6e6e6`)와 누름(흰 바탕, 1px `#222222` 테두리)이 다릅니다. 키보드 focus는 outline으로 그려지지 않습니다. `gc-*` 컨트롤(Box Button, Filter Chip)은 1px `#243b52` 테두리를 그리고, `yf-*` 버튼(Search CTA, Outline Button)과 홈 숙소 카드는 보이는 변화가 없습니다. '검색' 버튼과 헤더 outline 버튼에만 0.15s 전환이 있고 나머지는 즉시 바뀝니다. 이 값들은 컴포넌트 측정값이며 motion token으로 만들지 않습니다.
 
 ## 10. Responsive Behavior
 
@@ -463,7 +463,7 @@ YDS와 live product를 함께 읽으면 여기어때의 차별점은 특정 장�
 
 작은 badge와 caption에서도 의미를 색상 하나에만 의존하지 않습니다. 사진 위 텍스트는 별도 contrast surface를 확보하고, search·filter·button은 visible focus와 명시적 label을 유지합니다. 정확한 contrast ratio나 target size는 별도 검증 전에는 주장하지 않습니다.
 
-측정 결과(2026-09-29): 키보드 focus가 보이는 컨트롤은 `gc-*` 계열의 1px `#243b52` 테두리뿐입니다. '검색' 버튼, 헤더 '비회원 예약조회', 홈 숙소 카드는 focus가 보이지 않고, 브라우저 기본 ring도 그려지지 않습니다.
+측정 결과(2026-09-29): focus 표시로 선언한 것은 `gc-*` 계열의 1px `#243b52` 테두리뿐입니다. 검색 필드도 키보드 focus에서 래퍼가 흰 바탕에 1px `#222222` 테두리로 바뀌지만, blur 뒤에도 남아 스크립트 상태일 수 있어 focus 스타일로 선언하지 않습니다. '검색' 버튼, 헤더 '비회원 예약조회', 홈 숙소 카드는 focus가 보이지 않고, 브라우저 기본 ring도 그려지지 않습니다.
 
 ## 15. Implementation Checklist
 
