@@ -301,8 +301,26 @@
     - B 두 팔: 0.
   - "17/18 → 0/18"은 유지된다. Claude는 WARN 수준 근거다.
   - 남은 가짜 양성 HG-1·HG-6(라틴 요소)을 수정하는 레인이 진행 중이다. 재채점 결과가 공개 문구를 좌우한다.
+- **완료 — 프로브 E1·E2 (05:00~07:00).** 상태 3종 측정 수:
+  - ohouse 6/6: 포커스를 box-shadow로 그린다. #ddf3ff 3px, #69c3fd 4px.
+  - channeltalk 5/7: 선언된 hover `#3a3a3f`는 히어로가 아니라 헤더 링크 값이다. 히어로는 opacity 0.85.
+  - zigzag 6/10: 포커스 표시가 없다.
+  - ably 9/9, upstage 6/7, remember 8/8.
+- **완료 — 저작 E2 (`119895be`).**
+  - ably 6→11: 서피스별 hover 핑크 #db3b57 / #bf3c47. 포커스는 브라우저 기본 또는 없음.
+  - upstage 1→12: 요금 카드 hover 테두리 #525866과 그림자.
+  - remember 2→11: 레이어 opacity 0.1/0.2가 버튼과 같은 색이라 산술상 보이지 않는다. 검정 2px 포커스 링.
+  - 세 곳 모두 쇼케이스 기준을 충족한다. 헤드라인을 원자료와 대조했다(×6, ×22, ×9). 파이프라인 통과.
+- **완료 — 도구 (`43a2fc33`).**
+  - 프로브 동의 거부 목록에 `#reject-all`·"Decline"을 넣었다(upstage 배너).
+  - apply-edits 빈 블록 버그를 고치고 개수 검사를 추가했다.
+  - append-components가 focus를 받는다.
+- **완료 — /hangul (`feat/hangul-skill`).**
+  - `50bee2e4`: HG-1·HG-6도 한글 요소에만 적용한다. 2차 재채점 결과, 경고 이상은 17/18→0/18로 유지된다. **BLOCK만 세면 10/18→0/18.** Claude 8/9는 전부 WARN이고, 그중 3회는 −0.01em 하나뿐이다. 공개 문구에는 "BLOCK 또는 WARN"을 명시한다.
+  - `c6cd774b`: `.claude/skills/hangul` 미러를 재동기화했다. prepublishOnly의 mirror 검사를 통과한다.
 - **다음.**
-  1. ~~정정 레인~~ (완료). 진행 중: 프로브 E1(ohouse·channeltalk·zigzag)·E2(ably·upstage·remember), /hangul HG-1·HG-6.
+  1. 진행 중: 저작 E1(ohouse·channeltalk·zigzag), /hangul 콘텐츠 v2(Claude 예시, 정직한 훅, 표지 HG-10). 이후 파이프라인 → 커밋.
+  2. 오너 GO 대기: 사이트 반영(웨이브 5 + 19곳 + 라이브 정정 4곳 + E2 3곳, 이어서 E1 3곳), /hangul 공개 판단(v2 뒤).
   2. 도구 공백 수정(스프라이트·img·svg·inert) → 남은 상위 20(ohouse, channeltalk, zigzag, ably, upstage, remember) 프로브.
   3. 파이프라인 → 커밋 → 오너 GO 한 번에 요청: 웨이브 5 + 오늘 19곳 + 라이브 정정 4곳(yeogiotte, karrot, naver, samsung). 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
   - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
