@@ -203,8 +203,21 @@
 - **진행 중 — 부재 재측정.**
   - R1: banksalad·29cm·yeogiotte. 기존 cfg로 재실행 → `reverify-r1.md`.
   - R2: baemin·karrot·kakao·naver·samsung. cfg를 새로 만들어 재실행 → `reverify-r2.md`.
-  - R3: 저작 C·D 6곳. 저작 C가 끝나면 시작한다.
-- **진행 중.** /hangul 시각 콘텐츠 v1, 저작 C(socar·wanted·tossbank), 웨이브 6 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
+  - R3: 저작 C·D 6곳, 02:35 시작 → `reverify-r3.md`. 이미 있는 도구 수정 실행분(tool-fix-*.json)을 재사용한다.
+- **완료 — 저작 C (02:30, 미커밋).**
+  - 컴포넌트: socar 4→11, wanted 6→12, tossbank 2→12(서로 다른 유형은 11).
+  - 쇼케이스 기준: wanted·tossbank 충족(6), socar 미달(4 — 비활성 1, 포커스 미측정 2).
+  - 헤드라인 원자료 대조:
+    - socar pressed `matrix(0.92…)`와 `rgba(242,243,248,0.66)` 베일 — 두 번 로드해 각 3회.
+    - tossbank 틴트 `rgba(217,217,255,0.11)` — 두 번 로드해 각 11회.
+    - wanted 레이어 0.0375/0.09/0.075/0.18 — tool-fix 실행분.
+  - 7월 정정:
+    - socar CTA: 12px → 14px, 패딩 16px 22px, `#0078ff`.
+    - wanted: "border inset" → inset shadow. "채운 CTA 없음"은 반증됐다.
+    - tossbank: pill 배경 알파 누락(`#fdfdfe` → `rgba(253,253,254,0.89)`).
+  - 부재 의존 줄 목록은 `reverify-absence-lines.md`에 있다.
+  - 도구 공백: `append-components.mjs`가 focus 필드에서 멈춘다(에이전트는 사본 append2로 우회했다) → 헬퍼에 반영할 후속 작업이다.
+- **진행 중.** /hangul 시각 콘텐츠 v1, 웨이브 6 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
   - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
 - **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
