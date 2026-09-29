@@ -1,5 +1,11 @@
 # JOURNAL
 
+## 2026-09-30
+
+- **한 일**: 상위 20 프로브 C·D → 저작 6곳 + 번들 심화 13곳(웨이브 6) = 19곳 브랜치(`cf59d446`). 프로브 도구 사각지대(빈 자식 레이어·자손 링·tabIndex<0·비활성·Tab 안착) 발견 → 도구 수정(`b6f7370b`) → 라이브 8곳 부재 판독 재측정: 198/220 유지, 22건 정정(karrot·naver·yeogiotte, `7a3a703a`). 도구 2차(스프라이트·img·SVG·inert, `662f5653`). onestore 개발자 포털(브라우저 기본값)·11st 번들 포커스 철회. Evidence 요약 날짜 수정.
+- **열린 것**: 사이트 반영 GO(웨이브 5 + 19곳 + 라이브 정정 4곳) 오너 대기. /hangul 공개는 콘텐츠 v2·HG-1/HG-6 재채점 뒤 오너 판단. builder IntroStep이 고른 레퍼런스를 안 보여주는 것은 제품 판단.
+- **다음**: 프로브 E1·E2 저작(ohouse·channeltalk·zigzag·ably·upstage·remember), 헬퍼 2건(apply-edits 빈 블록, append focus), 프로브 동의 거부 목록(`#reject-all`, "Decline").
+
 ## 2026-09-29
 
 - **한 일**: 성장 전략 리서치(Emil 해부·경쟁 지형·한국 빈자리)와 계획(`docs/GROWTH_PLAN_2026-09-29.md`), Aphrodite 고도화 계획. 오너 결정 17개 기록(`docs/GROWTH_DECISIONS_2026-09-29.md`) — Aphrodite는 컨셉 A(범용 에이전트 캔버스).
