@@ -55,6 +55,80 @@ verification_v2:
     "tokens.components.public-home-shell.radius": { surface_id: home, source_id: product-home, method: computed-style, captured: "2026-07-13" }
     "tokens.components.public-home-shell.shadow": { surface_id: home, source_id: product-home, method: computed-style, captured: "2026-07-13" }
     "tokens.components.public-home-shell.use": { surface_id: home, source_id: product-home, method: selector-provenance, captured: "2026-07-13" }
+    "tokens.components.public-compact-action.type": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.public-compact-action.bg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.public-compact-action.fg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.public-compact-action.radius": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.public-compact-action.padding": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.public-compact-action.height": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.public-compact-action.font": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.public-compact-action.states": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.public-compact-action.use": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.public-primary-action.type": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.public-primary-action.bg": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.public-primary-action.fg": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.public-primary-action.radius": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.public-primary-action.padding": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.public-primary-action.height": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.public-primary-action.font": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.public-primary-action.states": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.public-primary-action.use": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.product-index-tab.type": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-index-tab.bg": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-index-tab.fg": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-index-tab.radius": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-index-tab.padding": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-index-tab.height": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-index-tab.font": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-index-tab.states": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-index-tab.use": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-choice-chip.type": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-choice-chip.bg": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-choice-chip.fg": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-choice-chip.border": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-choice-chip.radius": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-choice-chip.padding": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-choice-chip.height": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-choice-chip.font": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-choice-chip.states": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-choice-chip.use": { surface_id: product-index, source_id: product-index-source, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-text-button.type": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-text-button.bg": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-text-button.fg": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-text-button.radius": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-text-button.padding": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-text-button.height": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-text-button.font": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-text-button.states": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-text-button.use": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.type": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.bg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.padding": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.height": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.states": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.use": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.product-soft-action.type": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.product-soft-action.bg": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.product-soft-action.fg": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.product-soft-action.radius": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.product-soft-action.padding": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.product-soft-action.height": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.product-soft-action.font": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.product-soft-action.states": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.product-soft-action.use": { surface_id: product-curious, source_id: product-curious-source, method: computed-style, selector: "surface-4::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.benefit-slide-card.type": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.benefit-slide-card.bg": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.benefit-slide-card.radius": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.benefit-slide-card.padding": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.benefit-slide-card.size": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.benefit-slide-card.states": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.benefit-slide-card.use": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.slide-pagination-tab.type": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.slide-pagination-tab.bg": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.slide-pagination-tab.padding": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.slide-pagination-tab.size": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.slide-pagination-tab.states": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.slide-pagination-tab.use": { surface_id: product-one-card, source_id: product-one-card-source, method: computed-style, selector: "surface-6::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -80,6 +154,15 @@ tokens:
   components_harvested: true
   components:
     public-home-shell: { type: card, bg: "transparent", radius: "0px", shadow: "none", use: "Observed static home shell at home::div.mainCardWrapper.css-x2jyed; not a general card family." }
+    public-compact-action: { type: button, bg: "#4262ff", fg: "#ffffff", radius: "8px", padding: "0px 14px", height: "40px", font: "16px / 400 / Pretendard K Edition", states: "default captured on all six routes; the bundle holds no state frame for any element", use: "Header compact action (button.css-1ags3br) at home::[data-omd-capture=\"3\"], 96 x 40; computed oklch(0.571 0.235 268.681) on oklch(1 0 0); on the four product routes the same button computes a font stack led by -apple-system" }
+    public-primary-action: { type: button, bg: "#0114a7", fg: "#ffffff", radius: "10px", padding: "0px 28px", height: "48px", font: "16px / 400 / system stack led by -apple-system", states: "default captured; no state frame", use: "Primary action (button.css-1mbo487) at product-curious::[data-omd-capture=\"19\"], 143 x 48; computed oklch(0.343 0.219 264.362); the home copy (home::[data-omd-capture=\"18\"], 202 x 48) computes 14px / 400 Pretendard K Edition" }
+    product-index-tab: { type: tab, bg: "transparent", fg: "#545b69", radius: "0px", padding: "10px 4px 12px", height: "44px", font: "18px / 700 / 24.3px Pretendard K Edition", states: "rest on six tabs; capture 14 carries aria-selected=true and captures 15 to 19 false, yet all six compute the same colour, type and geometry, so no selected value is declared; no state frame", use: "Deposit-index product tab (button role=tab, css-1npe48v) at product-index::[data-omd-capture=\"15\"], 180 x 44; computed oklch(0.47 0.024 264.308)" }
+    product-choice-chip: { type: button, bg: "#ffffff", fg: "#2a2e36", border: "1px #ced4e2", radius: "6px", padding: "0px 12px", height: "32px", font: "16px / 400 / system stack led by -apple-system", states: "default captured on thirteen chips; no state frame", use: "Deposit-index bordered choice (button.css-174ue6) at product-index::[data-omd-capture=\"21\"], 74 x 32; computed oklch(1 0 0), text oklch(0.301 0.016 264.308), border oklch(0.87 0.02 267.27)" }
+    product-detail-text-button: { type: button, bg: "transparent", fg: "#000000", radius: "0px", padding: "16px 20px", height: "60px", font: "18.72px / 700 / system stack led by -apple-system", states: "default captured; no state frame and no expansion record", use: "Product-detail full-width text button (button.css-1kjxfqu) at product-curious::[data-omd-capture=\"14\"], 1080 x 60; five on product-curious, four on product-rolling, three on product-one-card" }
+    gnb-link: { type: tab, bg: "transparent", padding: "0px 24px", height: "56px", states: "default captured, nine per route; no state frame", use: "Global navigation link (a.css-opegi4) at home::[data-omd-capture=\"4\"], 110 x 56; its own 16px / 400 black equals the inherited page default, so no label style is declared" }
+    product-soft-action: { type: button, bg: "#edf3ff", fg: "#0114a7", radius: "8px", padding: "0px 14px", height: "40px", font: "16px / 400 / system stack led by -apple-system", states: "default captured on product-curious (one) and product-one-card (thirteen); no state frame", use: "Product-page tinted action (button.css-162fgkl) at product-curious::[data-omd-capture=\"13\"], 178 x 40; computed oklch(0.963 0.017 264.487) with oklch(0.343 0.219 264.362) text, the primary blue; the copies inside the ONE card benefit slides are 90 x 37" }
+    benefit-slide-card: { type: card, bg: "#f7f8fb", radius: "16px", padding: "32px 0px", size: "316px x 381px", states: "non-interactive carousel panel; eight at 316 x 381 and the fully visible slide at 340 x 410", use: "ONE card benefit slide (div role=tabpanel, swiper-slide benefit-slide) at product-one-card::[data-omd-capture=\"13\"]; computed oklch(0.979 0.004 271.37); 12px right margin" }
+    slide-pagination-tab: { type: tab, bg: "transparent", padding: "3px", size: "18px x 18px", states: "three at rest in a 62 x 18 tablist; no aria-selected recorded, so no current-page style is declared; no state frame", use: "ONE card benefit carousel pagination (div role=tab, css-120l21f) at product-one-card::[data-omd-capture=\"31\"]; the dot is drawn by a child that was not sampled; a 30 x 30 play toggle (capture 34) sits beside it" }
 ---
 
 # K bank — Design Reference
@@ -139,19 +222,19 @@ The resource center additionally lists `#E0E6F1`, `#EDF1F7`, and `#F7F9FD` as br
 ### Public compact action
 
 **Default**
-- Background: `#4262FF`
+- Background: `#4262FF` (computed `oklch(0.571 0.235 268.681)`)
 - Text: `#FFFFFF`
 - Radius: `8px`
 - Padding: `0px 14px`
 - Height: `40px`
-- Font: `16px / 400 / Pretendard K Edition`
+- Font: `16px / 400 / Pretendard K Edition` on home; on the four product routes the same button computes a stack led by `-apple-system` (noted 2026-09-29)
 - States: Default only; no hover, pressed, focus, or disabled state captured.
 - Use: `home::[data-omd-capture="3"]`; the same fingerprint occurs across the supplied public routes.
 
 ### Public primary action
 
 **Default**
-- Background: `#0114A7`
+- Background: `#0114A7` (computed `oklch(0.343 0.219 264.362)`)
 - Text: `#FFFFFF`
 - Radius: `10px`
 - Padding: `0px 28px`
@@ -162,21 +245,22 @@ The resource center additionally lists `#E0E6F1`, `#EDF1F7`, and `#F7F9FD` as br
 
 ### Product index tab
 
-**Selected**
-- Text: `oklch(0.47 0.024 264.308)`
+**Rest (selected and unselected alike)**
+- Background: transparent
+- Text: `#545B69` (computed `oklch(0.47 0.024 264.308)`)
 - Radius: `0px`
 - Padding: `10px 4px 12px`
-- Height: `44px`
-- Font: `18px / 700 / Pretendard K Edition`
-- States: Selected is observed through `aria-selected="true"`; no transition or alternate tab state was captured.
-- Use: `product-index::[data-omd-capture="14"]` on the public deposit index.
+- Height: `44px` (180 × 44)
+- Font: `18px / 700 / 24.3px Pretendard K Edition`
+- States: capture 14 carries `aria-selected="true"` and captures 15 to 19 carry `"false"`, yet all six compute the same text colour, weight, padding, and height. The selected treatment therefore lies outside the dumped properties, and no selected value is declared. Corrected 2026-09-29: the July text presented these values as the selected style and said no alternate tab state was captured; the five unselected tabs were captured with identical values.
+- Use: `product-index::[data-omd-capture="14"]` to `"19"` on the public deposit index (`button[role=tab]`).
 
 ### Product-index bordered choice
 
 **Default**
-- Background: `oklch(1 0 0)`
-- Text: `oklch(0.301 0.016 264.308)`
-- Border: `1px solid oklch(0.87 0.02 267.27)`
+- Background: `#FFFFFF` (computed `oklch(1 0 0)`)
+- Text: `#2A2E36` (computed `oklch(0.301 0.016 264.308)`)
+- Border: 1px `#CED4E2` (computed `oklch(0.87 0.02 267.27)`)
 - Radius: `6px`
 - Padding: `0px 12px`
 - Height: `32px`
@@ -195,7 +279,41 @@ The resource center additionally lists `#E0E6F1`, `#EDF1F7`, and `#F7F9FD` as br
 - States: Default only; no expansion or pressed state captured.
 - Use: `product-curious::[data-omd-capture="14"]`, repeated on the supplied deposit and card product pages.
 
-The collector reports `interactionCount: 0` and no interaction records. The selected tab is an element-state observation, not an observed tab-change interaction. No menu, dialog, validation, toast, responsive, hover, focus, pressed, disabled, or authenticated-product variant is claimed.
+The components below were transcribed on 2026-09-29 from the same 2026-07-13 bundle; nothing was re-measured. Hex values convert the computed `oklch()` strings, which are kept beside them.
+
+### Global navigation link
+
+- Background: transparent
+- Padding: `0px 24px`
+- Height: `56px` (110 × 56 for a four-character label)
+- Use: global navigation, nine links per route (`a.css-opegi4`, `home::[data-omd-capture="4"]` to `"12"`). The link's own `16px / 400` black equals the inherited page default, so no label style is declared.
+- States: default captured; no state frame.
+
+### Product tinted action
+
+- Background: `#EDF3FF` (computed `oklch(0.963 0.017 264.487)`)
+- Text: `#0114A7` (computed `oklch(0.343 0.219 264.362)`, the primary blue)
+- Radius: `8px`
+- Padding: `0px 14px`
+- Height: `40px` (178 × 40); the copies inside the ONE card benefit slides are 90 × 37
+- Font: `16px / 400 / system stack` led by `-apple-system`
+- States: default captured on product-curious (one) and ONE card (thirteen); no state frame.
+- Use: `product-curious::[data-omd-capture="13"]` (`button.css-162fgkl`).
+
+### ONE card benefit slide
+
+- Background: `#F7F8FB` (computed `oklch(0.979 0.004 271.37)`)
+- Radius: `16px`
+- Padding: `32px 0px`
+- Size: 316 × 381 (eight slides); the fully visible slide is 340 × 410
+- Use: benefit carousel panel (`div[role=tabpanel]`, `swiper-slide benefit-slide`) at `product-one-card::[data-omd-capture="13"]`, with a 12px right margin. Non-interactive.
+
+### Carousel pagination
+
+- Size: 18 × 18 with `3px` padding; three tabs in a 62 × 18 tablist (`product-one-card::[data-omd-capture="31"]` to `"33"`), beside a 30 × 30 play toggle (`"34"`). The home hero carries four 18 × 18 controls of the same size (`home::[data-omd-capture="14"]` to `"17"`).
+- The dot is drawn by a child that was not sampled, so no colour is declared. No `aria-selected` was recorded, so no current-page style is declared.
+
+The bundle holds no `::state-*` frame for any element on any of the six captured routes; that, and not `interactionCount: 0`, is why no hover, pressed, or focus value is claimed (the interaction record covers dialog, tab, menu, form-error, and toast expansions only). The selected tab is an element attribute, not an observed tab change, and it computes the same values as its unselected siblings. No menu, dialog, validation, toast, responsive, disabled, or authenticated-product variant is claimed. Corrected 2026-09-29: the July paragraph grounded the absence of pointer states in the interaction count.
 
 ---
 **Verified:** 2026-07-13
@@ -210,7 +328,7 @@ The selector-backed public-home shell and all promoted action/tab samples have `
 ## 6. Spacing & Shape
 
 - The measured compact and primary actions use `0px 14px` / 8px and `0px 28px` / 10px respectively.
-- The selected product tab is square (`0px`) with `10px 4px 12px` padding; the product-index bordered choice is 6px with `0px 12px` padding.
+- The product tabs are square (`0px`) with `10px 4px 12px` padding, selected or not; the product-index bordered choice is 6px with `0px 12px` padding.
 - The bundle also contains 2px, 3px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 28px, 32px, and 100px spacing observations. Their semantics are not promoted into a global scale.
 
 ## 7. Iconography & Imagery
@@ -296,7 +414,7 @@ These are source-grounded service audiences, not fictional user profiles.
 | Focus | No focus-visible state captured |
 | Pressed | No pressed state captured |
 | Hover | No hover state captured |
-| Selected tab | Public deposit-index `aria-selected="true"` only; no selection-change interaction captured. |
+| Selected tab | Public deposit-index `aria-selected="true"` on one of six tabs; all six compute the same dumped values, so no selected style is declared (corrected 2026-09-29). No selection-change interaction captured. |
 
 ## 15. Motion & Easing
 

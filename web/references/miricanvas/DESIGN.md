@@ -68,6 +68,126 @@ verification_v2:
     "tokens.rounded.lg": *home
     "tokens.rounded.xl": *home
     "tokens.shadow.menu-open": *home
+    "tokens.components.primary-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.primary-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.primary-button.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.primary-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.primary-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.primary-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.primary-button.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.primary-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.primary-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.nav-item.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.nav-item.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.nav-item.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.nav-item.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.nav-item.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.nav-item.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.nav-item.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.nav-item.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.nav-item.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.nav-switcher-item.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-switcher-item.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-switcher-item.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-switcher-item.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-switcher-item.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-switcher-item.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-switcher-item.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-switcher-item.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-switcher-item.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.menu-trigger.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.menu-trigger.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.menu-trigger.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.menu-trigger.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.menu-trigger.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.menu-trigger.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.menu-trigger.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.menu-trigger.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.menu-trigger.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.menu-panel.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.menu-panel.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.menu-panel.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.menu-panel.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.menu-panel.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.menu-panel.shadow": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.menu-panel.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.menu-panel.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.hero-primary-cta.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.hero-primary-cta.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.hero-primary-cta.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.hero-primary-cta.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.hero-primary-cta.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.hero-primary-cta.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.hero-primary-cta.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.hero-primary-cta.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.hero-primary-cta.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.hero-secondary-cta.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.hero-secondary-cta.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.hero-secondary-cta.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.hero-secondary-cta.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.hero-secondary-cta.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.hero-secondary-cta.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.hero-secondary-cta.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.hero-secondary-cta.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.hero-secondary-cta.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.white-large-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"59\"]", captured: "2026-07-13" }
+    "tokens.components.white-large-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"59\"]", captured: "2026-07-13" }
+    "tokens.components.white-large-button.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"59\"]", captured: "2026-07-13" }
+    "tokens.components.white-large-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"59\"]", captured: "2026-07-13" }
+    "tokens.components.white-large-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"59\"]", captured: "2026-07-13" }
+    "tokens.components.white-large-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"59\"]", captured: "2026-07-13" }
+    "tokens.components.white-large-button.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"59\"]", captured: "2026-07-13" }
+    "tokens.components.white-large-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"59\"]", captured: "2026-07-13" }
+    "tokens.components.white-large-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"59\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-plan-text-button.type": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-plan-text-button.bg": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-plan-text-button.fg": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-plan-text-button.radius": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-plan-text-button.padding": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-plan-text-button.size": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-plan-text-button.font": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-plan-text-button.states": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-plan-text-button.use": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"24\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-billing-toggle.type": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-billing-toggle.bg": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-billing-toggle.fg": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-billing-toggle.radius": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-billing-toggle.padding": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-billing-toggle.height": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-billing-toggle.font": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-billing-toggle.states": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-billing-toggle.use": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-white-button.type": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-white-button.bg": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-white-button.fg": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-white-button.radius": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-white-button.padding": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-white-button.height": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-white-button.font": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-white-button.states": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.pricing-white-button.use": { surface_id: pricing, source_id: pricing-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.template-search-input.type": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.template-search-input.bg": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.template-search-input.fg": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.template-search-input.size": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.template-search-input.font": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.template-search-input.states": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.template-search-input.use": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.type": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.bg": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.border": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.radius": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.size": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.shadow": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.states": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow.use": { surface_id: templates, source_id: templates-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-link.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -91,8 +211,22 @@ tokens:
   rounded: { sm: 8, md: 10, lg: 12, xl: 16 }
   shadow:
     menu-open: "rgba(11, 60, 65, 0.2) 0px 6px 20px 0px"
-  components: {}
-  components_harvested: false
+  components:
+    primary-button: { type: button, bg: "#21afbf", fg: "#ffffff", radius: "8px", padding: "8px 16px", height: "40px", font: "14px / 500 / 20px Pretendard Variable", states: "default captured on all three routes; the bundle holds no state frame for any element", use: "Header filled action (button.gidKcw) at home::[data-omd-capture=\"21\"], 80 x 40; repeated near the foot of home (capture 58) and as the highlighted pricing-plan button (surface-3::[data-omd-capture=\"25\"], 249 x 40)" }
+    nav-item: { type: button, bg: "transparent", fg: "#23242a", radius: "8px", padding: "8px 16px", height: "40px", font: "14px / 500 / 20px Pretendard Variable", states: "default captured, five per route; no state frame", use: "Global navigation item (button.cuArBU) at home::[data-omd-capture=\"12\"], 68 x 40; the fill computes rgba(35, 36, 42, 0)" }
+    nav-switcher-item: { type: button, bg: "transparent", fg: "#23242a", radius: "8px", padding: "12px", height: "44px", font: "14px / 500 / 20px Pretendard Variable", states: "default captured, four per route; no state frame and no selected attribute", use: "Top service-switcher item (button.cuArBU) at home::[data-omd-capture=\"1\"], 85 x 44; the first switcher link (capture 0) computes a #ffffff fill and the other three are transparent" }
+    menu-trigger: { type: button, bg: "transparent", fg: "#23242a", radius: "8px", padding: "8px 12px 8px 16px", height: "40px", font: "14px / 500 / 20px Pretendard Variable", states: "default captured with aria-haspopup=menu; the open state is the menu-panel component; no pointer-state frame", use: "Global navigation menu trigger at home::[data-omd-capture=\"9\"], 86 x 40 (capture 10 is 102 x 40)" }
+    menu-panel: { type: card, bg: "#ffffff", radius: "16px", padding: "16px", size: "1172px x 321px", shadow: "rgba(11, 60, 65, 0.2) 0px 6px 20px 0px", states: "captured open only: the three interaction records are menu expansions (expanded, menu-open), one per route", use: "Navigation menu panel (div role=menu) at home::[data-omd-interaction-capture=\"menu-0-0\"]; the second home menu and the templates and pricing menus are 696 x 321; its links (156 x 40) and feature tiles (288 x 260) carry their labels in children that were not sampled, so no text colour is declared" }
+    hero-primary-cta: { type: button, bg: "#21afbf", fg: "#ffffff", radius: "12px", padding: "14px 24px", height: "56px", font: "18px / 500 / 26px Pretendard Variable", states: "default captured; no state frame", use: "Home hero filled action (button.hxEAEt) at home::[data-omd-capture=\"22\"], 200 x 56; the same style closes a later home section (capture 49, 197 x 56)" }
+    hero-secondary-cta: { type: button, bg: "#ffffff", fg: "#1c95a2", radius: "12px", padding: "14px 24px", height: "56px", font: "18px / 500 / 26px Pretendard Variable", states: "default captured; no state frame", use: "Home hero white action (a) beside the filled one at home::[data-omd-capture=\"23\"], 200 x 56" }
+    white-large-button: { type: button, bg: "#ffffff", fg: "rgba(0, 0, 0, 0.8)", radius: "12px", padding: "14px 24px", height: "56px", font: "18px / 500 / 26px Pretendard Variable", states: "default captured on four copies; no state frame", use: "Home white large button (button.dFMoUp): labelled 146 x 56 at home::[data-omd-capture=\"59\"]; three icon-only 56 x 56 copies at captures 34 to 36" }
+    pricing-plan-text-button: { type: button, bg: "transparent", fg: "#1c95a2", radius: "8px", padding: "8px 16px", size: "249px x 40px", font: "14px / 500 / 20px Pretendard Variable", states: "default captured on three plan buttons; no state frame", use: "Pricing plan button (button.dnPzbg) at surface-3::[data-omd-capture=\"24\"]; captures 26 and 27 match, beside the filled plan button (capture 25); border width 0px" }
+    pricing-billing-toggle: { type: button, bg: "transparent", fg: "#505462", radius: "0px", padding: "0px 12px", height: "40px", font: "14px / 400 / 19.88px Pretendard Variable", states: "two options at rest: capture 22 computes #505462 and capture 23 #23242a; neither carries an aria state, so no selected value is declared; no state frame", use: "Pricing billing-period toggle option (button.eufCKf) at surface-3::[data-omd-capture=\"22\"], 48 x 40; its partner (capture 23, kiVaiH) has the same geometry" }
+    pricing-white-button: { type: button, bg: "#ffffff", fg: "rgba(0, 0, 0, 0.8)", radius: "10px", padding: "12px 20px", height: "48px", font: "16px / 500 / 24px Pretendard Variable", states: "default captured on two copies; no state frame", use: "Pricing white button (button.cWuGVk) at surface-3::[data-omd-capture=\"29\"], 143 x 48; capture 30 is 113 x 48" }
+    template-search-input: { type: input, bg: "transparent", fg: "#16181d", size: "827px x 46px", font: "16px / 400 / 24.48px Pretendard Variable", states: "default captured; no state frame", use: "Templates search field (input) at surface-2::[data-omd-capture=\"22\"]; the input's own border width is 0px, so any visible frame belongs to a wrapper that was not sampled and no border is declared" }
+    carousel-arrow: { type: button, bg: "#ffffff", border: "1px rgba(88, 98, 118, 0.1)", radius: "50%", size: "40px x 40px", shadow: "rgba(0, 0, 0, 0.1) 0px 2px 8px 0px", states: "default captured on two arrows; no state frame", use: "Templates carousel arrow (button.lkcSVE, icon-only) at surface-2::[data-omd-capture=\"40\"]; capture 61 matches; the glyph colour was not sampled" }
+    footer-social-link: { type: button, bg: "rgba(88, 98, 118, 0.05)", radius: "50%", padding: "8px", size: "40px x 40px", states: "default captured, five per footer; no state frame", use: "Footer social link (a.qpvPW, icon-only) at home::[data-omd-capture=\"61\"]; captures 62 to 65 match, and the pricing footer repeats them (surface-3 captures 32 to 36)" }
+  components_harvested: true
 ---
 
 # Design System Inspiration of MiriCanvas
@@ -157,7 +291,7 @@ No semantic error, success, disabled, hover, focus, or editor color token is ass
 
 ## 4. Component Stylings
 
-Only the following public-surface variants have sufficient selector and computed-style provenance. No hover, pressed, focused, disabled, error, dialog, tab, toast, or authenticated-editor variant is inferred.
+Only the following public-surface variants have sufficient selector and computed-style provenance. No hover, pressed, focused, disabled, error, dialog, tab, toast, or authenticated-editor variant is inferred: the bundle holds no `::state-*` frame for any element on the three routes, and its only interaction records are the three menu expansions.
 
 ### Public buttons
 
@@ -187,6 +321,7 @@ Only the following public-surface variants have sufficient selector and computed
 - Font: 14px / 500 / Pretendard Variable
 - Height: 44px
 - Use: High-confidence public navigation record on all three surfaces; representative selector `home::[data-omd-capture="1"]`.
+- Note (2026-09-29): the first of the four switcher links (`home::[data-omd-capture="0"]`) computes a `#ffffff` fill while the other three are transparent. No selected attribute is recorded, so no selected style is declared.
 
 **Menu trigger**
 - Background: transparent
@@ -201,14 +336,96 @@ Only the following public-surface variants have sufficient selector and computed
 
 **Menu open**
 - Background: `#ffffff`
-- Text: `#000000`
+- Text: `#000000` is the panel container's own computed colour; the menu labels sit in children that were not sampled (noted 2026-09-29)
 - Radius: 16px
 - Padding: 16px
 - Shadow: `rgba(11, 60, 65, 0.2) 0px 6px 20px 0px`
 - Height: 321px
 - Use: Observed only in `expanded` / `menu-open` state on all three surfaces; representative selector `home::[data-omd-interaction-capture="menu-0-0"]`.
 
-Medium- and low-confidence captures (including a 56px white button, a 48px white button, and a 46px input) remain raw observations in `.verification.md`; they are not promoted as canonical component variants because their visible purpose and/or confidence is insufficient.
+Updated 2026-09-29: the medium- and low-confidence captures July held back (the 56px white button, the 48px white button, the 46px input) are promoted below with their measured rest values, together with other variants transcribed from the same 2026-07-13 bundle; nothing was re-measured. The collector's confidence counts occurrences, so a single element such as the hero action reads low without its values being uncertain; each entry names its selector and count. The three navigation variants above compute a fill of `rgba(35, 36, 42, 0)`, which is transparent.
+
+### Hero actions (home)
+
+**Filled**
+- Background: `#21afbf`
+- Text: `#ffffff`
+- Radius: 12px
+- Padding: 14px 24px
+- Font: 18px / 500 / 26px Pretendard Variable
+- Height: 56px (200 × 56)
+- Use: home hero primary action, `home::[data-omd-capture="22"]`; the same style closes a later home section (`home::[data-omd-capture="49"]`, 197 × 56).
+
+**White**
+- Background: `#ffffff`
+- Text: `#1c95a2`
+- Radius, padding, font, and height: as the filled action (200 × 56)
+- Use: the link beside the hero primary action, `home::[data-omd-capture="23"]`.
+
+**White large button**
+- Background: `#ffffff`
+- Text: `rgba(0, 0, 0, 0.8)`
+- Radius: 12px
+- Padding: 14px 24px
+- Font: 18px / 500 / 26px Pretendard Variable
+- Height: 56px
+- Use: one labelled 146 × 56 copy near the foot of home (`home::[data-omd-capture="59"]`) and three icon-only 56 × 56 copies (`"34"` to `"36"`).
+
+### Pricing controls
+
+**Plan text button**
+- Background: transparent
+- Text: `#1c95a2`
+- Radius: 8px
+- Padding: 8px 16px
+- Font: 14px / 500 / 20px Pretendard Variable
+- Size: 249 × 40
+- Use: three plan buttons in one row (`surface-3::[data-omd-capture="24"]`, `"26"`, `"27"`) beside a filled plan button in the filled-primary style (`surface-3::[data-omd-capture="25"]`, 249 × 40). Border width 0px.
+
+**Billing toggle options**
+- Background: transparent
+- Text: `#505462` (`surface-3::[data-omd-capture="22"]`) and `#23242a` (`"23"`)
+- Radius: 0px
+- Padding: 0px 12px
+- Font: 14px / 400 / 19.88px Pretendard Variable
+- Size: 48 × 40 each
+- States: two options at rest in different text colours. Neither carries an aria state, so which one is selected is not recorded and no selected value is declared.
+
+**White plan button**
+- Background: `#ffffff`
+- Text: `rgba(0, 0, 0, 0.8)`
+- Radius: 10px
+- Padding: 12px 20px
+- Font: 16px / 500 / 24px Pretendard Variable
+- Height: 48px (143 × 48; `surface-3::[data-omd-capture="30"]` is 113 × 48)
+- Use: `surface-3::[data-omd-capture="29"]`.
+
+### Templates controls
+
+**Search field**
+- Background: transparent
+- Text: `#16181d`
+- Font: 16px / 400 / 24.48px Pretendard Variable
+- Size: 827 × 46
+- Use: `surface-2::[data-omd-capture="22"]`. The input's own border width is 0px; any visible frame belongs to a wrapper that was not sampled, so no border is declared.
+
+**Carousel arrow**
+- Background: `#ffffff`
+- Border: 1px `rgba(88, 98, 118, 0.1)`
+- Radius: 50%
+- Size: 40 × 40
+- Shadow: `rgba(0, 0, 0, 0.1) 0px 2px 8px 0px`
+- Use: icon-only template carousel arrows, `surface-2::[data-omd-capture="40"]` and `"61"`; the glyph colour was not sampled.
+
+### Footer social link
+
+- Background: `rgba(88, 98, 118, 0.05)`
+- Radius: 50%
+- Padding: 8px
+- Size: 40 × 40
+- Use: five icon-only links per footer, `home::[data-omd-capture="61"]` to `"65"` (pricing: `surface-3::[data-omd-capture="32"]` to `"36"`).
+
+Every component in this section is a rest capture. The bundle holds no state frame for any MiriCanvas element, and the open menu above is its only interaction capture.
 
 ---
 **Verified:** 2026-07-13
@@ -226,7 +443,7 @@ Observed public geometry is a small radius ladder: 8px is common on navigation a
 
 ## 6. Depth & Elevation
 
-The high-confidence filled CTA and navigation records have `box-shadow: none`. One expanded navigation menu state has `rgba(11, 60, 65, 0.2) 0px 6px 20px 0px`. No card, modal, editor, hover-lift, or general elevation policy is established from the new packet.
+The high-confidence filled CTA and navigation records have `box-shadow: none`. One expanded navigation menu state has `rgba(11, 60, 65, 0.2) 0px 6px 20px 0px`. The icon-only templates carousel arrow has `rgba(0, 0, 0, 0.1) 0px 2px 8px 0px` (added 2026-09-29, §4). No card, modal, editor, hover-lift, or general elevation policy is established from the new packet.
 
 ## 7. Do's and Don'ts
 
@@ -292,7 +509,7 @@ The public MiriCanvas ecosystem shows two verified contexts rather than one undi
 
 ## 14. States
 
-No public runtime empty, loading, error, success, validation, disabled, skeleton, or reduced-motion state was captured. This reference deliberately does not prescribe them.
+No public runtime empty, loading, error, success, validation, disabled, skeleton, or reduced-motion state was captured. This reference deliberately does not prescribe them. The bundle also holds no hover, pressed, or focus frame for any element, so no pointer state is declared; the open navigation menu (§4) is the only captured interaction state.
 
 ## 15. Motion & Easing
 

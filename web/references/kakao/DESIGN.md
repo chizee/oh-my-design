@@ -17,7 +17,7 @@ ds:
   description: Official Kakao Login button compliance guidance; corporate-site design is tracked as a separate surface.
 verification_v2:
   schema: 2
-  checked: "2026-07-11"
+  checked: "2026-09-29"
   surfaces:
     - { id: corp-home, kind: marketing, url: "https://www.kakaocorp.com/page/", inspected: "2026-07-11" }
     - { id: corp-culture, kind: marketing, url: "https://www.kakaocorp.com/page/about/culture", inspected: "2026-07-11" }
@@ -28,6 +28,7 @@ verification_v2:
     - { id: corp-culture-live, kind: product-surface, url: "https://www.kakaocorp.com/page/about/culture", captured: "2026-07-11" }
     - { id: corp-milestones-live, kind: product-surface, url: "https://www.kakaocorp.com/page/about/milestones", captured: "2026-07-11" }
     - { id: login-guide-live, kind: official-doc, url: "https://developers.kakao.com/docs/ko/kakaologin/design-guide", captured: "2026-07-11" }
+    - { id: kakao-probe, kind: product-surface, url: "https://www.kakaocorp.com/page/", captured: "2026-09-29" }
   claims:
     "tokens.colors.login": &login_doc { surface_id: login-guide, source_id: login-guide-live, method: official-doc-rendered-text, captured: "2026-07-11" }
     "tokens.colors.login-symbol": *login_doc
@@ -86,7 +87,7 @@ verification_v2:
     "tokens.components.kakao-login.font": *login_doc
     "tokens.components.kakao-login.states": *login_doc
     "tokens.components.kakao-login.use": *login_doc
-    "tokens.components.corporate-nav.focus": *corp_live
+    "tokens.components.corporate-nav.focus": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "button.item_menu 소개 at :focus-visible, Tab stop 4", captured: "2026-09-29" }
     "tokens.components.corporate-nav.type": *corp_live
     "tokens.components.corporate-nav.bg": *corp_live
     "tokens.components.corporate-nav.fg": *corp_live
@@ -94,8 +95,9 @@ verification_v2:
     "tokens.components.corporate-nav.padding": *corp_live
     "tokens.components.corporate-nav.height": *corp_live
     "tokens.components.corporate-nav.font": *corp_live
-    "tokens.components.corporate-nav.hover": { surface_id: corp-home, source_id: corp-home-live, method: live-css-inspect, captured: "2026-09-16" }
-    "tokens.components.corporate-nav.states": *corp_live
+    "tokens.components.corporate-nav.hover": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "button.item_menu 소개 at :hover", captured: "2026-09-29" }
+    "tokens.components.corporate-nav.pressed": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "button.item_menu 소개 at :active", captured: "2026-09-29" }
+    "tokens.components.corporate-nav.states": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "button.item_menu 소개", captured: "2026-09-29" }
     "tokens.components.corporate-nav.use": *corp_live
     "tokens.components.search-control.type": *corp_live
     "tokens.components.search-control.bg": *corp_live
@@ -103,10 +105,12 @@ verification_v2:
     "tokens.components.search-control.radius": *corp_live
     "tokens.components.search-control.height": *corp_live
     "tokens.components.search-control.font": *corp_live
-    "tokens.components.search-control.states": *corp_live
+    "tokens.components.search-control.hover": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "button.btn_search 검색창 열기 at :hover", captured: "2026-09-29" }
+    "tokens.components.search-control.pressed": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "button.btn_search 검색창 열기 at :active", captured: "2026-09-29" }
+    "tokens.components.search-control.states": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "button.btn_search 검색창 열기", captured: "2026-09-29" }
     "tokens.components.search-control.use": *corp_live
-    "tokens.components.dark-marketing-tag.hover": *corp_live
-    "tokens.components.dark-marketing-tag.pressed": *corp_live
+    "tokens.components.dark-marketing-tag.hover": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "a.btn_top.btn_tag at :hover", captured: "2026-09-29" }
+    "tokens.components.dark-marketing-tag.pressed": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "a.btn_top.btn_tag at :active", captured: "2026-09-29" }
     "tokens.components.dark-marketing-tag.type": *corp_live
     "tokens.components.dark-marketing-tag.bg": *corp_live
     "tokens.components.dark-marketing-tag.fg": *corp_live
@@ -115,7 +119,7 @@ verification_v2:
     "tokens.components.dark-marketing-tag.padding": *corp_live
     "tokens.components.dark-marketing-tag.height": *corp_live
     "tokens.components.dark-marketing-tag.font": *corp_live
-    "tokens.components.dark-marketing-tag.states": *corp_live
+    "tokens.components.dark-marketing-tag.states": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "a.btn_top.btn_tag", captured: "2026-09-29" }
     "tokens.components.dark-marketing-tag.use": *corp_live
     "tokens.components.milestone-filter.pressed": *milestones_live
     "tokens.components.milestone-filter.type": *milestones_live
@@ -134,8 +138,46 @@ verification_v2:
     "tokens.components.footer-pill.padding": *milestones_live
     "tokens.components.footer-pill.height": *milestones_live
     "tokens.components.footer-pill.font": *milestones_live
-    "tokens.components.footer-pill.states": *milestones_live
+    "tokens.components.footer-pill.states": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "footer a 관련사이트 at :hover and :active", captured: "2026-09-29" }
     "tokens.components.footer-pill.use": *milestones_live
+    "tokens.components.marketing-download-cta.type": &kDownloadCta { surface_id: corp-home, source_id: corp-home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-11" }
+    "tokens.components.marketing-download-cta.bg": *kDownloadCta
+    "tokens.components.marketing-download-cta.fg": *kDownloadCta
+    "tokens.components.marketing-download-cta.border": *kDownloadCta
+    "tokens.components.marketing-download-cta.radius": *kDownloadCta
+    "tokens.components.marketing-download-cta.padding": *kDownloadCta
+    "tokens.components.marketing-download-cta.height": *kDownloadCta
+    "tokens.components.marketing-download-cta.font": *kDownloadCta
+    "tokens.components.marketing-download-cta.states": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "a.btn_top.btn_down at :hover, :active and :focus-visible (Tab stop 25)", captured: "2026-09-29" }
+    "tokens.components.marketing-download-cta.use": *kDownloadCta
+    "tokens.components.service-card.type": &kServiceCard { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "a.item_service, first of 8 candidates, rest", captured: "2026-09-29" }
+    "tokens.components.service-card.bg": *kServiceCard
+    "tokens.components.service-card.fg": *kServiceCard
+    "tokens.components.service-card.padding": *kServiceCard
+    "tokens.components.service-card.size": *kServiceCard
+    "tokens.components.service-card.font": *kServiceCard
+    "tokens.components.service-card.hover": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "a.item_service at :hover", captured: "2026-09-29" }
+    "tokens.components.service-card.pressed": { surface_id: corp-home, source_id: kakao-probe, method: live-state-probe, selector: "a.item_service at :active", captured: "2026-09-29" }
+    "tokens.components.service-card.states": *kServiceCard
+    "tokens.components.service-card.use": *kServiceCard
+    "tokens.components.milestone-service-link.type": &kMilestoneLink { surface_id: corp-milestones, source_id: corp-milestones-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-11" }
+    "tokens.components.milestone-service-link.bg": *kMilestoneLink
+    "tokens.components.milestone-service-link.fg": *kMilestoneLink
+    "tokens.components.milestone-service-link.height": *kMilestoneLink
+    "tokens.components.milestone-service-link.font": *kMilestoneLink
+    "tokens.components.milestone-service-link.hover": { surface_id: corp-milestones, source_id: corp-milestones-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"21\"]::state-hover", captured: "2026-07-11" }
+    "tokens.components.milestone-service-link.pressed": { surface_id: corp-milestones, source_id: corp-milestones-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"21\"]::state-pressed", captured: "2026-07-11" }
+    "tokens.components.milestone-service-link.states": *kMilestoneLink
+    "tokens.components.milestone-service-link.use": *kMilestoneLink
+    "tokens.components.culture-carousel-control.type": &kCarousel { surface_id: corp-culture, source_id: corp-culture-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"11\"]", captured: "2026-07-11" }
+    "tokens.components.culture-carousel-control.bg": *kCarousel
+    "tokens.components.culture-carousel-control.fg": *kCarousel
+    "tokens.components.culture-carousel-control.border": *kCarousel
+    "tokens.components.culture-carousel-control.radius": *kCarousel
+    "tokens.components.culture-carousel-control.size": *kCarousel
+    "tokens.components.culture-carousel-control.font": *kCarousel
+    "tokens.components.culture-carousel-control.states": *kCarousel
+    "tokens.components.culture-carousel-control.use": *kCarousel
   conflicts: []
 tokens:
   source: reconciled
@@ -168,11 +210,15 @@ tokens:
   components_harvested: true
   components:
     kakao-login: { type: button, bg: "#fee500", fg: "rgba(0, 0, 0, 0.85)", radius: "12px", font: "30Pt / OS system", states: "full label or shortened label; hover, pressed, and disabled visuals are not specified by this guide", use: "Kakao Login only; preserve black speech-bubble symbol and mandated colors" }
-    corporate-nav: { type: button, bg: "#ffffff", fg: "#000000", radius: "999px", padding: "4px 16px 6px", height: "37px", font: "17px / 400 / KakaoBig", hover: "#f3f3f3", states: "light and dark theme variants; focus and hover observed", use: "top-level corporate menu trigger" , focus: "#f3f3f3"}
-    search-control: { type: button, bg: "transparent", fg: "#333333", radius: "18px", height: "36px", font: "14px / 400 / KakaoSmall", states: "default and hover observed", use: "corporate-site circular search control" }
-    dark-marketing-tag: { type: badge, bg: "#111111", fg: "#ffffff", border: "2px solid #ffffff", radius: "16px", padding: "7px 8px 8px", height: "32px", font: "13px / 700 / KakaoSmall", states: "default captured", use: "dark corporate marketing tag/CTA label" , hover: "rgba(17, 17, 17, 0.75)", pressed: "rgba(17, 17, 17, 0.75)"}
-    milestone-filter: { type: button, bg: "#eeeeee", fg: "#000000", radius: "30px", padding: "8px 20px 12px", height: "44px", font: "16px / 700 / KakaoBig", states: "selected filter captured", use: "milestone category filter" , pressed: "#dfdfdf"}
-    footer-pill: { type: button, bg: "#eeeeee", fg: "#000000", radius: "24px", padding: "10px 20px 12px", height: "40px", font: "12px / 400 / KakaoSmall", states: "default captured; hover not retained", use: "corporate footer related-site pill" }
+    corporate-nav: { type: button, bg: "#ffffff", fg: "#000000", radius: "999px", padding: "4px 16px 6px", height: "37px", font: "17px / 400 / KakaoBig", hover: "bg #f3f3f3", pressed: "bg #f3f3f3", focus: "bg #f3f3f3", states: "light and dark theme variants; hover and pressed bg #f3f3f3 in the 2026-07-11 capture on three corporate pages and again on 2026-09-29 with :hover and :active matched; keyboard focus (Tab stop 4, :focus-visible matched) fills bg #f3f3f3 beside the browser default ring (outline auto); the fill stayed after focus moved on, which suggests a script-applied current-item state (a lead, not a finding)", use: "top-level corporate menu trigger" }
+    search-control: { type: button, bg: "transparent", fg: "#333333", radius: "18px", height: "36px", font: "14px / 400 / KakaoSmall", hover: "bg #eeeeee", pressed: "bg #eeeeee", states: "hover and pressed bg #eeeeee, measured 2026-09-29 on the corporate home with :hover and :active matched and sampled 2026-07-11 on the search, language and theme buttons of the corporate pages; keyboard focus draws only the browser default ring (outline auto), so no focus value is declared; the search input opens in a layer behind a click and was not measured", use: "corporate-site circular search control; the language and theme toggles share the same 36px circle" }
+    dark-marketing-tag: { type: badge, bg: "#111111", fg: "#ffffff", border: "2px solid #ffffff", radius: "16px", padding: "7px 8px 8px", height: "32px", font: "13px / 700 / KakaoSmall", hover: "bg rgba(17, 17, 17, 0.75)", pressed: "bg rgba(17, 17, 17, 0.75)", states: "hover and pressed bg rgba(17, 17, 17, 0.75), sampled 2026-07-11 and confirmed 2026-09-29 with :hover and :active matched; border and label stay as at rest; keyboard focus draws only the browser default ring (outline auto), so no focus value is declared", use: "dark corporate marketing tag/CTA label" }
+    milestone-filter: { type: button, bg: "#eeeeee", fg: "#000000", radius: "30px", padding: "8px 20px 12px", height: "44px", font: "16px / 700 / KakaoBig", pressed: "bg #dfdfdf", states: "selected filter captured; pressed bg #dfdfdf from one 2026-07-11 frame on the category combobox (surface-3::[data-omd-capture=\"15\"]); hover and focus not sampled", use: "milestone category filter" }
+    footer-pill: { type: button, bg: "#eeeeee", fg: "#000000", radius: "24px", padding: "10px 20px 12px", height: "40px", font: "12px / 400 / KakaoSmall", states: "default captured 2026-07-11 on the milestones page; on 2026-09-29 the same pill on the corporate home matched :hover and :active and kept bg #eeeeee and fg #000000, so there is no hover or pressed value to declare; keyboard focus draws only the browser default ring (outline auto)", use: "corporate footer related-site pill" }
+    marketing-download-cta: { type: button, bg: "#fae100", fg: "#000000", border: "2px solid #000000", radius: "16px", padding: "7px 13px 8px 30px", height: "32px", font: "13px / 700 / KakaoSmall", states: "default captured 2026-07-11 (home::[data-omd-capture=\"10\"], 142 x 32, tracking -0.5px); on 2026-09-29 hover and pressed matched :hover and :active and left fill, border and label at rest, so no hover or pressed value is declared; keyboard focus draws only the browser default ring (outline auto), so no focus value is declared", use: "Corporate-home marketing download pill (a.btn_top.btn_down, 카카오톡 다운로드) beside the dark marketing tag; the only #fae100 element in the capture" }
+    service-card: { type: card, bg: "transparent", fg: "#111111", padding: "0px 16px 0px 0px", size: "288px x 299px", font: "30px / 700", hover: "icon opacity 1 via title ::after (24 x 24 SVG)", pressed: "icon opacity 1 via title ::after (24 x 24 SVG)", states: "rest, hover and pressed measured 2026-09-29 with :hover and :active matched: the title ::after icon goes from opacity 0 to 1 and nothing recolours, moves or casts a shadow; keyboard focus draws only the browser default ring (outline auto), so no focus value is declared; fg and font are the title label (strong.title_service), not the anchor (#333333, 14px / 400 / KakaoBig); not in the 2026-07-11 capture", use: "Corporate-home service card link (a.item_service) with a 120px service image, title and description" }
+    milestone-service-link: { type: button, bg: "transparent", fg: "#333333", height: "20px", font: "14px / 400 / KakaoSmall", hover: "fg #111111", pressed: "fg #111111", states: "default, hover and pressed sampled 2026-07-11 on three sibling links (surface-3 captures 21, 22 and 23), each fg #333333 to #111111, the dark-marketing colour; focus not sampled (the 2026-09-29 probe covered the corporate home only)", use: "Milestones-page service-name text link (a.link_service in li.item_service, 35 in the list); line height 24.92px, tracking -0.2px" }
+    culture-carousel-control: { type: button, bg: "#ffffff", fg: "#333333", border: "1px solid #dbdbdb", radius: "50%", size: "50px x 50px", font: "14px / 400 / KakaoSmall", states: "default captured 2026-07-11 (surface-2::[data-omd-capture=\"11\"]); no pointer-state sample", use: "Culture-page circular carousel control (button.btn_control); the element behind the #dbdbdb border token" }
 ---
 
 # Design System Inspiration of Kakao (카카오)
@@ -262,7 +308,9 @@ The official guide explicitly says colors outside this regulation must not be ap
 - Padding: 4px 16px 6px
 - Height: 37px
 - Font: 17px / 400 / KakaoBig
-- States: light/dark themes, focus, hover
+- Hover and pressed: bg `#f3f3f3` (2026-07-11 capture on three corporate pages; 2026-09-29 probe with `:hover` and `:active` matched)
+- Focus: keyboard focus fills bg `#f3f3f3` next to the browser's default ring. The fill was still there after focus moved to the next control, which looks like a script-applied "current menu item" state rather than a `:focus` rule; computed styles cannot tell the two apart, so treat it as a lead.
+- States: light/dark themes, hover, pressed, focus
 
 ### Corporate Search Control
 - Background: transparent
@@ -270,7 +318,9 @@ The official guide explicitly says colors outside this regulation must not be ap
 - Radius: 18px
 - Height: 36px
 - Font context: 14px / 400 / KakaoSmall
-- States: default and hover observed
+- Hover and pressed: bg `#eeeeee` (the surface grey), on the corporate home on 2026-09-29 and on the search, language and theme buttons in the 2026-07-11 capture
+- Focus: the browser's default ring only, which is not a Kakao style, so no focus value is declared
+- Use: the language and theme toggles share this 36px circle; the search input opens in a layer behind a click and was not measured
 
 ### Dark Marketing Tag
 - Background: `#111111`
@@ -280,6 +330,19 @@ The official guide explicitly says colors outside this regulation must not be ap
 - Padding: 7px 8px 8px
 - Height: 32px
 - Font: 13px / 700 / KakaoSmall
+- Hover and pressed: bg `rgba(17, 17, 17, 0.75)`; border and label stay (2026-07-11 capture, confirmed 2026-09-29)
+- Focus: the browser's default ring only
+
+### Marketing Download Pill
+- Background: `#fae100` (marketing yellow; the only element in the capture with this fill)
+- Text: `#000000`
+- Border: 2px solid `#000000`
+- Radius: 16px
+- Padding: 7px 13px 8px 30px
+- Height: 32px
+- Font: 13px / 700 / KakaoSmall, tracking -0.5px
+- States: on 2026-09-29 hover and pressed (`:hover` and `:active` matched) left the fill, border and label as at rest, so the pill does not respond to the pointer. Keyboard focus shows only the browser's default ring.
+- Use: `카카오톡 다운로드` on the corporate home, paired with the dark marketing tag
 
 ### Milestone Filter
 - Background: `#eeeeee`
@@ -288,7 +351,8 @@ The official guide explicitly says colors outside this regulation must not be ap
 - Padding: 8px 20px 12px
 - Height: 44px
 - Font: 16px / 700 / KakaoBig
-- States: selected filter captured
+- Pressed: bg `#dfdfdf`, from one 2026-07-11 frame on the category combobox
+- States: selected filter captured; hover and focus not sampled
 
 ### Footer Related-Site Pill
 - Background: `#eeeeee`
@@ -297,11 +361,38 @@ The official guide explicitly says colors outside this regulation must not be ap
 - Padding: 10px 20px 12px
 - Height: 40px
 - Font: 12px / 400 / KakaoSmall
-- States: default captured; hover not retained
+- States: default captured on 2026-07-11. On 2026-09-29 the pill matched `:hover` and `:active` and kept bg `#eeeeee` and fg `#000000`: it has no pointer response. Keyboard focus shows only the browser's default ring. (Corrected 2026-09-29: earlier text said hover was "not retained", which read as a capture gap.)
+
+### Service Card
+- Background: transparent
+- Title: `#111111`, 30px / 700 (`strong.title_service`); the card anchor itself is `#333333`, 14px / 400 / KakaoBig
+- Size: 288 × 299px with 16px right padding and a 120px service image
+- Hover and pressed: a 24 × 24 SVG icon on the title's `::after` goes from opacity 0 to 1; nothing recolours, moves or casts a shadow
+- Focus: the browser's default ring only
+- Source: the 2026-09-29 probe; the July capture holds no home service card
+
+### Milestone Service Link
+- Background: transparent
+- Text: `#333333`
+- Font: 14px / 400 / KakaoSmall, line height 24.92px, tracking -0.2px
+- Height: 20px
+- Hover and pressed: fg `#111111`, on three sibling links in the 2026-07-11 capture
+- Use: service-name links in the milestones-page list (35 items)
+
+### Culture Carousel Control
+- Background: `#ffffff`
+- Icon: `#333333`
+- Border: 1px solid `#dbdbdb`
+- Radius: 50% on a 50 × 50px circle
+- States: default only
+- Use: circular carousel control on the culture page
+
+### Keyboard focus (2026-09-29)
+All six controls probed on the corporate home (navigation pill, search button, download pill, dark tag, service card, footer pill) draw the browser's default focus ring (`outline: auto`, rendered `#005fcc`). That ring is Chrome's, not Kakao's, so no component carries it as a focus value. The navigation pill is the only control that adds an authored change, its `#f3f3f3` fill.
 
 ---
 
-**Verified:** 2026-07-11 (verification v2, current corporate surfaces + rendered official Login guide)
+**Verified:** 2026-07-11 (verification v2, current corporate surfaces + rendered official Login guide); states re-measured 2026-09-29 by a live probe of the corporate home
 **Tier 1 sources:** https://www.kakaocorp.com/page/ https://www.kakaocorp.com/page/about/culture https://www.kakaocorp.com/page/about/milestones https://developers.kakao.com/docs/ko/kakaologin/design-guide
 **Tier 2 sources:** https://getdesign.md/kakao and https://styles.refero.design/?q=Kakao did not provide importable current Kakao records in this run.
 **Surface split:** corporate marketing uses KakaoBig/KakaoSmall; the Login component requires OS system type; Developers docs chrome uses Pretendard.
@@ -342,6 +433,7 @@ The corporate pages are responsive, but this run does not promote universal brea
 - “Build a compliant Kakao Login button with `#fee500`, black speech-bubble symbol, 85% black label, 12px radius, and OS system font at 30Pt.”
 - “Create the current corporate navigation pill with KakaoBig 17px/400, 37px height, 999px radius, and explicit light/dark themes.”
 - “Use KakaoSmall for corporate body/control text; do not substitute Pretendard unless reproducing Developers documentation chrome.”
+- “Create the corporate download pill: `#fae100` fill, 2px black border, 16px radius, 32px height, KakaoSmall 13px/700. It does not change on hover or press.”
 - “Treat any KakaoTalk in-app component as an unverified extension unless native product evidence is supplied.”
 
 ## 10. Voice & Tone
@@ -382,11 +474,20 @@ These are official service and stakeholder contexts, not invented demographic pe
 | Component | Verified state evidence |
 |---|---|
 | Kakao Login | full/short label and resizing constraints; interaction-state styling not specified |
-| Corporate nav | light/dark themes, focus, hover |
-| Search control | default, hover |
-| Milestone filter | selected |
-| Marketing/footer labels | default only |
+| Corporate nav | light/dark themes; hover and pressed bg `#f3f3f3`; keyboard focus bg `#f3f3f3` beside the browser ring (the fill persists after blur: a lead) |
+| Search control | hover and pressed bg `#eeeeee`; focus is the browser ring |
+| Dark marketing tag | hover and pressed bg `rgba(17, 17, 17, 0.75)`; focus is the browser ring |
+| Marketing download pill | no pointer response (measured 2026-09-29); focus is the browser ring |
+| Service card | hover and pressed reveal the title icon; focus is the browser ring |
+| Milestone service link | hover and pressed fg `#111111` |
+| Milestone filter | selected; pressed bg `#dfdfdf` (one frame) |
+| Footer pill | no pointer response (measured 2026-09-29); focus is the browser ring |
+| Culture carousel control | default only |
+
+Keyboard focus was walked with real Tab presses on 2026-09-29. None of the six probed controls has an authored focus ring; the browser default is not a Kakao value and is not tokenized.
 
 ## 15. Motion & Easing
 
 No exact motion duration or easing token is promoted. Preserve focus and hover clarity on the corporate site and platform-standard interaction feedback for the Login button; label custom timing as an extension until first-party evidence is available.
+
+On 2026-09-29 all six probed corporate-home controls computed `transition: all 0s`: their hover, pressed and focus changes are instant, not animated.

@@ -17,7 +17,7 @@ ds:
   description: "Official NAVER logo, color, and usage guidance; it is not a public product design system."
 verification_v2:
   schema: 2
-  checked: "2026-07-11"
+  checked: "2026-09-29"
   surfaces:
     - { id: portal-home, kind: product, url: "https://www.naver.com/", inspected: "2026-07-11" }
     - { id: search-results, kind: product, url: "https://search.naver.com/search.naver?query=%EB%94%94%EC%9E%90%EC%9D%B8", inspected: "2026-07-11" }
@@ -28,6 +28,7 @@ verification_v2:
     - { id: brand-live, kind: product-surface, url: "https://www.navercorp.com/company/brandGuide", captured: "2026-07-11" }
     - { id: brand-guide, kind: official-doc, url: "https://www.navercorp.com/company/brandGuide", captured: "2026-07-11" }
     - { id: company-about, kind: official-doc, url: "https://www.navercorp.com/company/about", captured: "2026-07-11" }
+    - { id: naver-probe, kind: product-surface, url: "https://www.naver.com/", captured: "2026-09-29" }
   claims:
     "tokens.colors.brand": &brand_doc { surface_id: corporate-brand, source_id: brand-guide, method: official-doc, captured: "2026-07-11" }
     "tokens.colors.canvas": &portal_style { surface_id: portal-home, source_id: portal-live, method: computed-style, captured: "2026-07-11" }
@@ -38,6 +39,7 @@ verification_v2:
     "tokens.colors.hairline": *search_style
     "tokens.colors.corporate-ink": &brand_style { surface_id: corporate-brand, source_id: brand-live, method: computed-style, captured: "2026-07-11" }
     "tokens.colors.corporate-muted": *brand_style
+    "tokens.colors.login-fill": { surface_id: portal-home, source_id: portal-live, method: computed-style, selector: "home::[data-omd-capture=\"87\"]", captured: "2026-07-11" }
     "tokens.typography.family.portal": *portal_style
     "tokens.typography.family.corporate": *brand_style
     "tokens.typography.portal-search.size": *portal_style
@@ -76,7 +78,7 @@ verification_v2:
     "tokens.components.search-input.height": *portal_search
     "tokens.components.search-input.padding": *portal_search
     "tokens.components.search-input.font": *portal_search
-    "tokens.components.search-input.states": *portal_search
+    "tokens.components.search-input.states": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "input#query.search_input and six ancestors at :focus-visible, Tab stop 15", captured: "2026-09-29" }
     "tokens.components.search-input.use": *portal_search
     "tokens.components.search-submit.type": *portal_search
     "tokens.components.search-submit.bg": *portal_search
@@ -84,7 +86,7 @@ verification_v2:
     "tokens.components.search-submit.radius": *portal_search
     "tokens.components.search-submit.height": *portal_search
     "tokens.components.search-submit.padding": *portal_search
-    "tokens.components.search-submit.states": *portal_search
+    "tokens.components.search-submit.states": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "button#search-ai-tab-button at :hover, :active and :focus-visible", captured: "2026-09-29" }
     "tokens.components.search-submit.use": *portal_search
     "tokens.components.serp-tab.type": &serp_component { surface_id: search-results, source_id: search-live, method: computed-style, captured: "2026-07-11" }
     "tokens.components.serp-tab.bg": *serp_component
@@ -116,7 +118,9 @@ verification_v2:
     "tokens.components.paging-button.radius": *portal_search
     "tokens.components.paging-button.height": *portal_search
     "tokens.components.paging-button.shadow": *portal_search
-    "tokens.components.paging-button.states": *portal_search
+    "tokens.components.paging-button.hover": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "button.ContentPagingView-module__btn_prev 이전 페이지 at :hover", captured: "2026-09-29" }
+    "tokens.components.paging-button.pressed": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "button.ContentPagingView-module__btn_prev 이전 페이지 at :active", captured: "2026-09-29" }
+    "tokens.components.paging-button.states": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "button.ContentPagingView-module__btn_prev 이전 페이지", captured: "2026-09-29" }
     "tokens.components.paging-button.use": *portal_search
     "tokens.components.corporate-tab.type": &corporate_component { surface_id: corporate-brand, source_id: brand-live, method: computed-style, captured: "2026-07-11" }
     "tokens.components.corporate-tab.bg": *corporate_component
@@ -132,6 +136,72 @@ verification_v2:
     "tokens.components.portal-menu.font": *portal_search
     "tokens.components.portal-menu.states": *portal_search
     "tokens.components.portal-menu.use": *portal_search
+    "tokens.components.login-cta.type": &nLoginCta { surface_id: portal-home, source_id: portal-live, method: computed-style, selector: "home::[data-omd-capture=\"87\"]", captured: "2026-07-11" }
+    "tokens.components.login-cta.bg": *nLoginCta
+    "tokens.components.login-cta.fg": *nLoginCta
+    "tokens.components.login-cta.border": *nLoginCta
+    "tokens.components.login-cta.radius": *nLoginCta
+    "tokens.components.login-cta.padding": *nLoginCta
+    "tokens.components.login-cta.size": *nLoginCta
+    "tokens.components.login-cta.font": *nLoginCta
+    "tokens.components.login-cta.shadow": *nLoginCta
+    "tokens.components.login-cta.hover": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "a.MyView-module__link_login at :hover", captured: "2026-09-29" }
+    "tokens.components.login-cta.pressed": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "a.MyView-module__link_login at :active", captured: "2026-09-29" }
+    "tokens.components.login-cta.states": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "a.MyView-module__link_login NAVER로그인", captured: "2026-09-29" }
+    "tokens.components.login-cta.use": *nLoginCta
+    "tokens.components.search-assembly.type": &nSearchAssembly { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "div#search_area, sixth ancestor of input#query, rest with focus elsewhere", captured: "2026-09-29" }
+    "tokens.components.search-assembly.bg": *nSearchAssembly
+    "tokens.components.search-assembly.border": *nSearchAssembly
+    "tokens.components.search-assembly.hover": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "div#search_area while input#query is at :hover", captured: "2026-09-29" }
+    "tokens.components.search-assembly.pressed": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "div#search_area while input#query is at :active", captured: "2026-09-29" }
+    "tokens.components.search-assembly.states": *nSearchAssembly
+    "tokens.components.search-assembly.use": *nSearchAssembly
+    "tokens.components.portal-content-tab.type": &nContentTab { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "a[role=tab] 엔터 (ContentHeaderView tab), rest", captured: "2026-09-29" }
+    "tokens.components.portal-content-tab.bg": *nContentTab
+    "tokens.components.portal-content-tab.fg": *nContentTab
+    "tokens.components.portal-content-tab.height": *nContentTab
+    "tokens.components.portal-content-tab.font": *nContentTab
+    "tokens.components.portal-content-tab.selected": { surface_id: portal-home, source_id: portal-live, method: computed-style, selector: "home::[data-omd-capture=\"24\"]", captured: "2026-07-11" }
+    "tokens.components.portal-content-tab.hover": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "a[role=tab] 엔터 at :hover", captured: "2026-09-29" }
+    "tokens.components.portal-content-tab.pressed": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "a[role=tab] 엔터 at :active", captured: "2026-09-29" }
+    "tokens.components.portal-content-tab.states": *nContentTab
+    "tokens.components.portal-content-tab.use": *nContentTab
+    "tokens.components.service-shortcut.type": &nServiceShortcut { surface_id: portal-home, source_id: portal-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-11" }
+    "tokens.components.service-shortcut.bg": *nServiceShortcut
+    "tokens.components.service-shortcut.fg": *nServiceShortcut
+    "tokens.components.service-shortcut.size": *nServiceShortcut
+    "tokens.components.service-shortcut.font": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "a.link_service 뉴스, span.service_name label", captured: "2026-09-29" }
+    "tokens.components.service-shortcut.states": { surface_id: portal-home, source_id: naver-probe, method: live-state-probe, selector: "a.link_service 뉴스", captured: "2026-09-29" }
+    "tokens.components.service-shortcut.use": *nServiceShortcut
+    "tokens.components.subscribe-pill.type": &nSubscribePill { surface_id: portal-home, source_id: portal-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"tab-2-5\"]", captured: "2026-07-11" }
+    "tokens.components.subscribe-pill.bg": *nSubscribePill
+    "tokens.components.subscribe-pill.fg": *nSubscribePill
+    "tokens.components.subscribe-pill.border": *nSubscribePill
+    "tokens.components.subscribe-pill.radius": *nSubscribePill
+    "tokens.components.subscribe-pill.padding": *nSubscribePill
+    "tokens.components.subscribe-pill.height": *nSubscribePill
+    "tokens.components.subscribe-pill.font": *nSubscribePill
+    "tokens.components.subscribe-pill.states": *nSubscribePill
+    "tokens.components.subscribe-pill.use": *nSubscribePill
+    "tokens.components.corporate-nav-link.type": &nCorporateNav { surface_id: corporate-brand, source_id: brand-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"1\"]", captured: "2026-07-11" }
+    "tokens.components.corporate-nav-link.bg": *nCorporateNav
+    "tokens.components.corporate-nav-link.fg": *nCorporateNav
+    "tokens.components.corporate-nav-link.height": *nCorporateNav
+    "tokens.components.corporate-nav-link.font": *nCorporateNav
+    "tokens.components.corporate-nav-link.hover": { surface_id: corporate-brand, source_id: brand-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"1\"]::state-hover", captured: "2026-07-11" }
+    "tokens.components.corporate-nav-link.pressed": { surface_id: corporate-brand, source_id: brand-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"1\"]::state-pressed", captured: "2026-07-11" }
+    "tokens.components.corporate-nav-link.states": *nCorporateNav
+    "tokens.components.corporate-nav-link.use": *nCorporateNav
+    "tokens.components.serp-share-button.type": &nSerpShare { surface_id: search-results, source_id: search-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-11" }
+    "tokens.components.serp-share-button.bg": *nSerpShare
+    "tokens.components.serp-share-button.fg": *nSerpShare
+    "tokens.components.serp-share-button.padding": *nSerpShare
+    "tokens.components.serp-share-button.height": *nSerpShare
+    "tokens.components.serp-share-button.font": *nSerpShare
+    "tokens.components.serp-share-button.hover": { surface_id: search-results, source_id: search-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"17\"]::state-hover", captured: "2026-07-11" }
+    "tokens.components.serp-share-button.pressed": { surface_id: search-results, source_id: search-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"17\"]::state-pressed", captured: "2026-07-11" }
+    "tokens.components.serp-share-button.states": *nSerpShare
+    "tokens.components.serp-share-button.use": *nSerpShare
   conflicts: []
 tokens:
   source: reconciled
@@ -147,6 +217,7 @@ tokens:
     hairline: "#e5e5e5"
     corporate-ink: "#1a1d24"
     corporate-muted: "#717680"
+    login-fill: "#03a94d"
   typography:
     family:
       portal: "System"
@@ -160,14 +231,21 @@ tokens:
   rounded: { sm: 4, md: 8, lg: 12, full: 9999 }
   components_harvested: true
   components:
-    search-input: { type: input, bg: "transparent", fg: "#000000", radius: "0px", height: "58px", padding: "17px 0", font: "21px / 700 / System", states: "focus and autocomplete listbox expansion observed", use: "Portal-home search query input inside the branded search assembly" }
-    search-submit: { type: button, bg: "transparent", fg: "#2e2e2e", radius: "0px", height: "58px", padding: "9px 9px 9px 10px", states: "default observed; hover and pressed not retained", use: "Portal AI/search submit control" }
-    serp-tab: { type: tab, bg: "transparent", fg: "#8c8c8c", radius: "0px", padding: "6px 12px 14px", font: "16px / 600 / System", hover: "#595959", pressed: "#595959", states: "default #8c8c8c; hover and pressed #595959", use: "Search-result vertical navigation" }
+    search-input: { type: input, bg: "transparent", fg: "#000000", radius: "0px", height: "58px", padding: "17px 0", font: "21px / 700 / System", states: "autocomplete listbox expansion observed 2026-07-11; keyboard focus measured 2026-09-29 (Tab stop 15, :focus-visible matched) leaves the input and its six ancestors as at rest, with outline none; the 1px #03c75a ring belongs to the search assembly (div#search_area) and is there without focus; hover adds a shadow to that assembly, not to the input; the input is autofocused on load", use: "Portal-home search query input inside the branded search assembly" }
+    search-submit: { type: button, bg: "transparent", fg: "#2e2e2e", radius: "0px", height: "58px", padding: "9px 9px 9px 10px", states: "default observed 2026-07-11; on 2026-09-29 hover and pressed matched :hover and :active and left every compared property at rest, so there is no hover or pressed value to declare; keyboard focus draws only the browser default ring (outline auto)", use: "Portal AI search control (button#search-ai-tab-button) beside the query field" }
+    serp-tab: { type: tab, bg: "transparent", fg: "#8c8c8c", radius: "0px", padding: "6px 12px 14px", font: "16px / 600 / System", hover: "fg #595959", pressed: "fg #595959", states: "default #8c8c8c; hover and pressed fg #595959", use: "Search-result vertical navigation" }
     filter-chip: { type: badge, bg: "#ffffff", fg: "#0c43b7", border: "1px solid #e5e5e5", radius: "18px", padding: "4px 12px 4px 4px", font: "13px / 400 / System", use: "Search-result image/filter chip" }
     result-card: { type: card, bg: "#ffffff", fg: "#1c1c1c", radius: "12px", use: "Search-result grouped content card" }
-    paging-button: { type: button, bg: "#ffffff", fg: "#2e2e2e", border: "1px solid rgba(0,0,0,0.15)", radius: "9999px", height: "36px", shadow: "0 1px 2px rgba(0,0,0,0.06)", states: "default observed; hover and pressed not retained", use: "Portal carousel previous/next control" }
+    paging-button: { type: button, bg: "#ffffff", fg: "#2e2e2e", border: "1px solid rgba(0,0,0,0.15)", radius: "9999px", height: "36px", shadow: "0 1px 2px rgba(0,0,0,0.06)", hover: "bg rgba(0, 0, 0, 0.06), shadow 0 2px 4px rgba(0, 0, 0, 0.12)", pressed: "bg rgba(0, 0, 0, 0.06), shadow 0 2px 4px rgba(0, 0, 0, 0.12)", states: "hover and pressed measured 2026-09-29 on the portal-home previous button with :hover and :active matched (transition: all 0s): bg rgba(0, 0, 0, 0.06) and shadow 0 2px 4px rgba(0, 0, 0, 0.12); keyboard focus draws only the browser default ring (outline auto), so no focus value is declared; corrected 2026-09-29: earlier text said hover and pressed were not retained, and the 2026-09-17 check had measured a search-results control", use: "Portal carousel previous/next control" }
     corporate-tab: { type: tab, bg: "transparent", fg: "#1a1d24", radius: "0px", padding: "17px 0 18px", font: "20px / 600 / InterVariable", states: "selected observed", use: "NAVER Corp brand-resource section switcher" }
     portal-menu: { type: listItem, bg: "transparent", fg: "#2e2e2e", font: "14.7px / 500 / System", states: "expanded listbox and option observed", use: "Portal content-header overflow menu option" }
+    login-cta: { type: button, bg: "#03a94d", fg: "#ffffff", border: "1px solid rgba(0, 0, 0, 0.06)", radius: "4px", padding: "17px 0px", size: "380px x 56px", font: "14.7px / 500 / System", shadow: "0 2px 4px rgba(3, 199, 90, 0.12)", hover: "shadow 0 2px 4px rgba(3, 199, 90, 0.24); overlay rgba(0, 0, 0, 0.06) via ::before", pressed: "shadow 0 2px 4px rgba(3, 199, 90, 0.24); overlay rgba(0, 0, 0, 0.06) via ::before", states: "default captured 2026-07-11 and the same on 2026-09-29; the fill is #03a94d, darker than brand green #03c75a, which tints only the shadow; hover and pressed measured 2026-09-29 with :hover and :active matched: shadow alpha 0.12 to 0.24 plus a rgba(0, 0, 0, 0.06) ::before overlay (transition: all 0s); keyboard focus draws only the browser default ring (outline auto), so no focus value is declared; no sign-in was attempted", use: "Portal-home sign-in CTA (NAVER로그인, a.MyView-module__link_login); tracking -0.4px" }
+    search-assembly: { type: input, bg: "#ffffff", border: "1px solid #03c75a", hover: "shadow 0 2px 4px rgba(0, 0, 0, 0.12)", pressed: "shadow 0 2px 4px rgba(0, 0, 0, 0.12)", states: "measured 2026-09-29: the 1px #03c75a border is present at rest with focus elsewhere and stays through hover, press and keyboard focus; hover and pressed (:hover and :active matched on the input) add shadow 0 2px 4px rgba(0, 0, 0, 0.12) to this container; keyboard focus in the input (Tab stop 15) adds nothing; radius and size were not read, so none is declared", use: "Portal-home search assembly (div#search_area) that frames the query input, AI search and input tools" }
+    portal-content-tab: { type: tab, bg: "transparent", fg: "rgba(0, 0, 0, 0.5)", height: "23px", font: "17px / 800 / System", selected: "fg #000000", hover: "underline rgba(0, 0, 0, 0.5)", pressed: "underline rgba(0, 0, 0, 0.5)", states: "inactive rest, hover and pressed measured 2026-09-29 with :hover and :active matched (tab 엔터): an underline in rgba(0, 0, 0, 0.5) appears and the text colour stays; the selected tab reads fg #000000 in the 2026-07-11 capture (tab-selected); keyboard focus draws only the browser default ring (outline auto), so no focus value is declared", use: "Portal-home content-header tab (role=tab) above the news and content feed; tracking -0.4px" }
+    service-shortcut: { type: button, bg: "transparent", fg: "#2e2e2e", size: "64px x 68px", font: "13.65px / 500 / System", states: "default captured 2026-07-11 (11 shortcuts, each 64 x 68); on 2026-09-29 hover and pressed matched :hover and :active and left the icon and label at rest, so no hover or pressed value is declared; keyboard focus draws only the browser default ring (outline auto); font is the label (span.service_name), not the anchor (14.7px / 500)", use: "Portal-home header service shortcut (a.link_service: icon plus label, e.g. 뉴스)" }
+    subscribe-pill: { type: button, bg: "transparent", fg: "#406cdc", border: "1px solid #e0ecff", radius: "13px", padding: "0px 5px 0px 7px", height: "26px", font: "12.6px / 800 / System", states: "default captured 2026-07-11 on four items of the news tab (tab interaction captures); no pointer-state sample", use: "Portal-home press subscribe button in the news media tab (btn_subscribe, two characters); tracking -0.4px" }
+    corporate-nav-link: { type: tab, bg: "transparent", fg: "#1a1d24", height: "26px", font: "16px / 400 / InterVariable", hover: "font-weight 600", pressed: "font-weight 600", states: "default, hover and pressed sampled 2026-07-11 on eight sibling links of the brand-resource page (surface-3 captures 1 to 8): weight 400 to 600 while the colour stays #1a1d24; focus not sampled (the 2026-09-29 probe covered the portal only)", use: "NAVER Corp site header navigation link (a.nav__link) on the brand-resource page; tracking -0.5px" }
+    serp-share-button: { type: button, bg: "transparent", fg: "#8c8c8c", padding: "6px 6px 14px", height: "41px", font: "13px / 400 / System", hover: "fg #595959", pressed: "fg #595959", states: "default, hover and pressed sampled 2026-07-11 (surface-2::[data-omd-capture=\"17\"]): fg #8c8c8c to #595959, the hover colour of the ten vertical tabs beside it; focus not sampled", use: "Search-results share control at the end of the vertical-tab row (a.bt_share, role=button); tracking -0.3px" }
 ---
 
 # Design System Inspiration of Naver (네이버)
@@ -203,6 +281,7 @@ The official identity constant is NAVER Green (`#03C75A`). Product chrome is oth
 - **Search Link** (`#0C43B7`): current search-result link/chip blue.
 - **Search Muted** (`#8C8C8C`): inactive tabs and secondary labels.
 - **Hairline** (`#E5E5E5`): filter-chip and light container border.
+- **Login fill** (`#03A94D`): the portal-home sign-in button's fill (2026-07-11 capture, the same on 2026-09-29). It is darker than NAVER Green; on that button the brand green `#03C75A` appears only as the shadow tint `rgba(3, 199, 90, 0.12)`.
 
 ### Corporate brand page
 - **Corporate Ink** (`#1A1D24`): brand-page navigation and section labels.
@@ -248,8 +327,15 @@ Specimen availability is evaluated per surface and never substitutes one NAVER-p
 - Padding: 17px 0
 - Height: 58px
 - Font: 21px / 700 / System
-- States: focus and autocomplete listbox expansion observed
-- Use: Query field inside the portal's branded search assembly
+- States: autocomplete listbox expansion observed on 2026-07-11. Keyboard focus (2026-09-29, Tab stop 15, `:focus-visible` matched) leaves the input and all six ancestors as at rest, with `outline: none`: as of 2026-09-29 the field has no focus indicator of its own. Hover and press add a shadow to the surrounding assembly, not to the input.
+- Use: Query field inside the portal's branded search assembly; it is autofocused on load
+
+**Search Assembly**
+- Background: `#FFFFFF`
+- Border: 1px solid `#03C75A`, the same at rest with focus elsewhere, on hover, on press and under keyboard focus
+- Hover and pressed: shadow `0 2px 4px rgba(0, 0, 0, 0.12)`
+- Radius and size: not read, so not declared
+- Use: `div#search_area`, the green-framed box around the query input, AI search and input tools
 
 **Search Submit**
 - Background: transparent
@@ -257,8 +343,8 @@ Specimen availability is evaluated per surface and never substitutes one NAVER-p
 - Radius: 0px
 - Padding: 9px 9px 9px 10px
 - Height: 58px
-- States: default observed; hover and pressed not retained
-- Use: AI/search submission control adjacent to the query field
+- States: default observed. On 2026-09-29 hover and pressed matched (`:hover`, `:active`) and every compared property stayed as at rest, so the control has no pointer response. Keyboard focus shows only the browser's default ring. (Corrected 2026-09-29: "not retained" read as a capture gap.)
+- Use: the `AI 검색` control (`button#search-ai-tab-button`) adjacent to the query field
 
 ### Search Results
 
@@ -268,9 +354,16 @@ Specimen availability is evaluated per surface and never substitutes one NAVER-p
 - Radius: 0px
 - Padding: 6px 12px 14px
 - Font: 16px / 600 / System
-- Hover: `#595959`
-- Pressed: `#595959`
+- Hover: fg `#595959`
+- Pressed: fg `#595959`
 - Use: Search vertical/category navigation
+
+**Share Control**
+- Background: transparent
+- Text: `#8C8C8C`, 13px / 400 / System, tracking -0.3px
+- Padding: 6px 6px 14px; height 41px
+- Hover and pressed: fg `#595959`, the vertical tabs' hover colour
+- Use: share control at the end of the vertical-tab row (`a.bt_share`, `role=button`)
 
 **Filter Chip**
 - Background: `#FFFFFF`
@@ -296,8 +389,10 @@ Specimen availability is evaluated per surface and never substitutes one NAVER-p
 - Radius: 9999px
 - Height: 36px
 - Shadow: 0 1px 2px rgba(0,0,0,0.06)
-- States: default observed; hover and pressed not retained
-- Use: Carousel previous/next action
+- Hover and pressed: bg `rgba(0, 0, 0, 0.06)` and shadow `0 2px 4px rgba(0, 0, 0, 0.12)` (2026-09-29, `:hover` and `:active` matched, `transition: all 0s`)
+- Focus: the browser's default ring only
+- States: corrected 2026-09-29. Earlier text said hover and pressed were not retained, and a 2026-09-17 check found background and text identical across states on a paging control; that check measured a search-results control (`#1C1C1C` text), not this portal-home button.
+- Use: Carousel previous/next action (`이전 페이지` / `다음 페이지`)
 
 **Overflow Menu**
 - Background: transparent
@@ -305,6 +400,37 @@ Specimen availability is evaluated per surface and never substitutes one NAVER-p
 - Font: 14.7px / 500 / System
 - States: expanded listbox and option observed
 - Use: Content-header overflow navigation
+
+**Sign-in CTA**
+- Background: `#03A94D`, darker than NAVER Green; `#03C75A` tints only the shadow
+- Text: `#FFFFFF`, 14.7px / 500 / System, tracking -0.4px
+- Border: 1px solid `rgba(0, 0, 0, 0.06)`
+- Radius: 4px; padding 17px 0; 380 × 56px
+- Shadow: `0 2px 4px rgba(3, 199, 90, 0.12)`
+- Hover and pressed: shadow `0 2px 4px rgba(3, 199, 90, 0.24)` plus a `rgba(0, 0, 0, 0.06)` overlay drawn by `::before`
+- Focus: the browser's default ring only
+- Use: `NAVER로그인` on the portal home (measured without signing in)
+
+**Content Tab**
+- Text: `rgba(0, 0, 0, 0.5)` inactive, `#000000` selected; 17px / 800 / System, tracking -0.4px; height 23px
+- Hover and pressed: underline `rgba(0, 0, 0, 0.5)`; the text colour stays
+- Focus: the browser's default ring only
+- Use: content-header tabs (`role=tab`) above the news and content feed
+
+**Service Shortcut**
+- Background: transparent
+- Label: `#2E2E2E`, 13.65px / 500 / System (the anchor is 14.7px / 500)
+- Size: 64 × 68px, icon plus label
+- States: on 2026-09-29 hover and pressed matched and the icon and label stayed as at rest; focus shows only the browser's default ring
+- Use: header service shortcuts (`a.link_service`, e.g. `뉴스`)
+
+**Subscribe Button**
+- Background: transparent
+- Text: `#406CDC`, 12.6px / 800 / System, tracking -0.4px
+- Border: 1px solid `#E0ECFF`
+- Radius: 13px; padding 0 5px 0 7px; height 26px
+- States: default only
+- Use: press subscribe button in the news media tab
 
 ### Corporate Brand Resource
 
@@ -316,6 +442,15 @@ Specimen availability is evaluated per surface and never substitutes one NAVER-p
 - Font: 20px / 600 / InterVariable
 - States: selected observed
 - Use: Brand guide versus official-photo section switching
+
+**Header Navigation Link**
+- Text: `#1A1D24`, 16px / 400 / InterVariable, tracking -0.5px; height 26px
+- Hover and pressed: font-weight 600 while the colour stays `#1A1D24` (eight sibling links, 2026-07-11)
+- Use: NAVER Corp site header navigation (`a.nav__link`)
+
+### Keyboard focus (2026-09-29)
+
+A real Tab walk on the portal home reached six controls. Five of them (sign-in CTA, AI search, content tab, paging button, service shortcut) draw only the browser's default ring (`outline: auto`, rendered `#005fcc`). That ring is Chrome's, not NAVER's, and no component carries it as a focus value. The query input showed no focus change at all: as of 2026-09-29 the portal's search field has no visible keyboard-focus indicator beyond the permanent green frame of its assembly.
 
 ## 5. Layout Principles
 
@@ -329,6 +464,8 @@ Specimen availability is evaluated per surface and never substitutes one NAVER-p
 
 - Most sampled portal/search controls use no shadow.
 - The portal paging button uses a restrained `0 1px 2px rgba(0,0,0,0.06)` shadow.
+- The portal sign-in CTA casts a green-tinted `0 2px 4px rgba(3, 199, 90, 0.12)`; hover doubles the alpha.
+- Hover lifts the search assembly and the paging buttons with `0 2px 4px rgba(0, 0, 0, 0.12)`.
 - Prefer border, spacing, and type hierarchy before introducing elevation.
 - No universal NAVER shadow scale is claimed.
 
@@ -345,6 +482,7 @@ Specimen availability is evaluated per surface and never substitutes one NAVER-p
 - Do not promote declared-only Nanum/Pretendard faces as current UI fonts.
 - Do not invent a public NAVER product design system from brand-resource guidance.
 - Do not alter the official logo's proportions, color, or style.
+- Do not paint the portal sign-in CTA with NAVER Green: its measured fill is `#03A94D`, and `#03C75A` only tints its shadow.
 
 ## 8. Responsive Behavior
 
@@ -395,7 +533,8 @@ NAVER has not published validated product personas for the inspected portal, sea
 
 ## 14. States
 
-- **Hover / pressed:** captured on search tabs and utility actions.
+- **Hover / pressed:** captured on search tabs and utility actions (2026-07-11). On 2026-09-29, with `:hover` and `:active` matched, the paging button took bg `rgba(0, 0, 0, 0.06)` and shadow `0 2px 4px rgba(0, 0, 0, 0.12)`, the sign-in CTA a shadow alpha of 0.24 plus a `rgba(0, 0, 0, 0.06)` overlay, the content tab an underline and the search assembly a shadow; the AI search control and the service shortcuts do not respond to the pointer.
+- **Focus:** walked with real Tab presses on 2026-09-29. Five controls show only the browser's default ring and the query input shows none. No authored focus style was found.
 - **Selected:** captured on portal/search/corporate tabs.
 - **Expanded:** captured for the portal listbox/menu.
 - **Checked / unchecked:** captured for portal display controls and a search switch.
@@ -405,13 +544,13 @@ Do not fill absent states with generic NAVER-looking values.
 
 ## 15. Motion & Easing
 
-The collector captured state changes but did not establish a canonical duration or easing scale. Use motion only to clarify menu expansion, tab selection, and focus transitions; respect reduced-motion preferences.
+The collector captured state changes but did not establish a canonical duration or easing scale. Use motion only to clarify menu expansion, tab selection, and focus transitions; respect reduced-motion preferences. All six controls probed on 2026-09-29 computed `transition: all 0s`, so their state changes are instant.
 
 Official product motion tokens were not found in the inspected public sources.
 
 ---
 
-**Verified:** 2026-07-11 (omd:migrate)
+**Verified:** 2026-07-11 (omd:migrate) · states re-measured 2026-09-29 (live portal-home probe)
 **Tier 1 sources:** https://www.naver.com/ · https://search.naver.com/search.naver?query=%EB%94%94%EC%9E%90%EC%9D%B8 · https://www.navercorp.com/company/brandGuide · https://www.navercorp.com/company/about
 **Tier 2 sources:** https://getdesign.md/naver (no importable record in available path) · https://styles.refero.design/?q=naver (no importable result in available path)
 **Tier 2 status:** unavailable; no Tier 2 value promoted

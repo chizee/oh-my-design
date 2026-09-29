@@ -3,12 +3,12 @@
   "purpose": "Freeze what each reference claims to have observed, and when, so that relabelling a source kind, deleting an expired source, or rewriting a capture date appears as a reviewable diff.",
   "generator": "web/scripts/build-evidence-ledger.mjs",
   "references_with_verification_v2": 227,
-  "sources": 1274,
+  "sources": 1277,
   "sources_by_kind": {
     "brand-asset": 75,
     "license": 76,
     "official-doc": 543,
-    "product-surface": 580
+    "product-surface": 583
   },
   "references": {
     "104": {
@@ -3390,7 +3390,7 @@
       ]
     },
     "kakao": {
-      "checked": "2026-07-11",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -3409,6 +3409,12 @@
           "id": "corp-milestones-live",
           "kind": "product-surface",
           "captured": "2026-07-11",
+          "host": "www.kakaocorp.com"
+        },
+        {
+          "id": "kakao-probe",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
           "host": "www.kakaocorp.com"
         },
         {
@@ -5106,7 +5112,7 @@
       ]
     },
     "naver": {
-      "checked": "2026-07-11",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -5126,6 +5132,12 @@
           "kind": "official-doc",
           "captured": "2026-07-11",
           "host": "www.navercorp.com"
+        },
+        {
+          "id": "naver-probe",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.naver.com"
         },
         {
           "id": "portal-live",
@@ -6450,7 +6462,7 @@
       ]
     },
     "samsung": {
-      "checked": "2026-09-19",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -6488,6 +6500,12 @@
           "kind": "official-doc",
           "captured": "2026-09-19",
           "host": "developer.samsung.com"
+        },
+        {
+          "id": "samsung-probe",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.samsung.com"
         },
         {
           "id": "samsungone-font",

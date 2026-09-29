@@ -80,6 +80,113 @@ verification_v2:
     "tokens.components.badge-blue.padding": *home
     "tokens.components.badge-blue.font": *home
     "tokens.components.badge-blue.use": *home
+    "tokens.components.primary-action.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.primary-action.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.primary-action.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.primary-action.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.primary-action.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.primary-action.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.primary-action.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.toned-capsule-action.type": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.toned-capsule-action.bg": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.toned-capsule-action.radius": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.toned-capsule-action.padding": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.toned-capsule-action.height": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.toned-capsule-action.states": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.toned-capsule-action.use": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tile.type": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tile.bg": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tile.radius": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tile.padding": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tile.size": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tile.states": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tile.use": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.badge-indigo.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.badge-indigo.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.badge-indigo.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.badge-indigo.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.badge-indigo.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.badge-indigo.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.badge-indigo.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.gnb-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.hover": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"1\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.gnb-link.pressed": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"1\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.gnb-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.login-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.login-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.login-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.login-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.login-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.login-button.shadow": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.login-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.login-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.text-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-13" }
+    "tokens.components.text-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-13" }
+    "tokens.components.text-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-13" }
+    "tokens.components.text-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-13" }
+    "tokens.components.text-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-13" }
+    "tokens.components.text-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-13" }
+    "tokens.components.text-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"102\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"102\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"102\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"102\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"102\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-button.shadow": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"102\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"102\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"102\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-menu.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-menu.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-menu.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-menu.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-menu.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-menu.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-menu.shadow": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-menu.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-menu.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-option.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-option.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-option.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-option.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-3\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-option.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-option.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-option.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-option.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.dropdown-option.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.filter-chip.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.filter-chip.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.filter-chip.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.filter-chip.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.filter-chip.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.filter-chip.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.filter-chip.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"38\"]", captured: "2026-07-13" }
+    "tokens.components.filter-chip.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.filter-chip.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.filter-chip.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.detail-tab.type": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::span", captured: "2026-07-13" }
+    "tokens.components.detail-tab.bg": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::span", captured: "2026-07-13" }
+    "tokens.components.detail-tab.fg": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::span", captured: "2026-07-13" }
+    "tokens.components.detail-tab.padding": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::span", captured: "2026-07-13" }
+    "tokens.components.detail-tab.height": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.detail-tab.font": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::span", captured: "2026-07-13" }
+    "tokens.components.detail-tab.states": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::span", captured: "2026-07-13" }
+    "tokens.components.detail-tab.use": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::span", captured: "2026-07-13" }
+    "tokens.components.important-note-trigger.type": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.important-note-trigger.bg": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.important-note-trigger.fg": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.important-note-trigger.radius": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.important-note-trigger.padding": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.important-note-trigger.height": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.important-note-trigger.font": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.important-note-trigger.states": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
+    "tokens.components.important-note-trigger.use": { surface_id: credit-detail, source_id: credit-detail-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -110,6 +217,19 @@ tokens:
   components:
     badge-danger: { type: badge, bg: "#fff6f5", fg: "#f44f4f", radius: "12px", padding: "2px 8px", font: "11px / 500", use: "Tinted text badge on the public home surface (shc-badge--text type-tint theme-red)" }
     badge-blue: { type: badge, bg: "#ebf0ff", fg: "#005df9", radius: "12px", padding: "2px 8px", font: "11px / 500", use: "Tinted text badge on the public home surface (shc-badge--text type-tint theme-blue)" }
+    primary-action: { type: button, bg: "#005df9", radius: "16px", padding: "2px 12px", height: "56px", states: "default captured on all three surfaces (home anchor 312 px wide; detail-page buttons 580 px wide); the capture holds no state frame for this action", use: "shc-btn theme-primary size-xl at home::[data-omd-capture=\"27\"] (also surface-2 capture 32, surface-3 capture 29). The root computes the inherited body text (#101828, 14px / 400 / 24px) and its label element was not sampled, so no label colour or type is declared" }
+    toned-capsule-action: { type: button, bg: "#f0f4fa", radius: "20px", padding: "8px 12px", height: "40px", states: "default captured on four buttons across both detail pages; no state frame", use: "shc-capsule-btn theme-tonal size-md at surface-2::[data-omd-capture=\"29\"], 104 and 150 px wide. The button computes #101828 / 14px / 400, the inherited body text, and its label was not sampled separately, so no label style is declared" }
+    product-detail-tile: { type: card, bg: "#f8f9fc", radius: "16px", padding: "20px", size: "580px x 181px", states: "default captured on both detail pages; no state frame", use: "Benefit tile: a <button> wrapping one benefit-list item at surface-2::[data-omd-capture=\"20\"]; a second tile (capture 22) measures 580 x 149 with the same fill, radius and padding. Its #101828 / 14px / 400 are container values, so no text style is declared" }
+    badge-indigo: { type: badge, bg: "rgba(173, 173, 255, 0.2)", fg: "#6268ff", radius: "12px", padding: "2px 8px", font: "11px / 500", use: "Tinted text badge on the public home surface (shc-badge--text type-tint theme-indigo), one occurrence, 134 px wide; its fill is translucent" }
+    gnb-link: { type: tab, bg: "transparent", fg: "#101828", radius: "0px", padding: "0px", height: "72px", font: "16px / 500 / Digital One Shinhan", hover: "fg #005df9, 16px / 700", pressed: "fg #005df9, 16px / 700", states: "rest, hover, and pressed sampled on the six header links of each of the three surfaces (captures 1-6, 18 elements); every hover and pressed frame records fg rgb(0, 93, 249) and weight 700, the primary blue. The border-colour delta in those frames sits on a 0px border and is not a border. Focus is not declared from the bundle: the collector presses before it focuses", use: "Global header menu link (a.role_link, line height 72px, tracking -0.32px) at home::[data-omd-capture=\"1\"]" }
+    login-button: { type: button, bg: "transparent", radius: "8px", padding: "2px 4px", height: "24px", shadow: "rgb(228, 231, 236) 0px 0px 0px 1px", states: "default captured on all three surfaces; each surface also records a pressed frame whose dumped properties equal the rest frame. Opacity, outline, and transform are outside the dump, so no pressed value is declared", use: "Header login action (a.shc-btn theme-quaternary size-xs btn-login) at home::[data-omd-capture=\"12\"]; its outline is a 1px box-shadow spread in #e4e7ec, not a border. The root computes the inherited body text (#101828, 14px / 400), so no label style is declared" }
+    text-button: { type: button, bg: "transparent", radius: "8px", padding: "0px", height: "24px", states: "default captured on home (three anchors) and on both detail pages (buttons); the detail-page buttons (surface-2 capture 16, surface-3 captures 16 and 23) record pressed frames whose dumped properties equal the rest frame, so no pressed value is declared", use: "Text button (shc-txt-btn theme-secondary size-xs) at home::[data-omd-capture=\"28\"]; theme-tertiary buttons share the geometry. The root computes the inherited body text, so no label style is declared" }
+    dropdown-button: { type: button, bg: "transparent", radius: "8px", padding: "5px 12px", height: "32px", shadow: "rgb(208, 213, 221) 0px 0px 0px 1px inset", states: "default captured; activating it opens the dropdown-menu (menu interaction with expanded and menu-open recorded on all three surfaces); no pointer-state frame", use: "Dropdown trigger (button.shc-dropdown__btn, two per surface) at home::[data-omd-capture=\"102\"]; its outline is a 1px inset box-shadow in #d0d5dd, not a border. The root computes the inherited body text, so no label style is declared" }
+    dropdown-menu: { type: card, bg: "#ffffff", border: "1px #e4e7ec", radius: "12px", padding: "0px", size: "116px x 125px", shadow: "rgba(12,17,29,0.1) 0px 4px 16px 0px", states: "open list captured after the menu interaction (expanded, menu-open) on all three surfaces", use: "Open dropdown list (ul.shc-dropdown__option, role=menu) at home::[data-omd-interaction-capture=\"menu-0-0\"]; its own #101828 / 14px / 400 are container values, and the option labels are the dropdown-option component" }
+    dropdown-option: { type: listItem, bg: "transparent", fg: "#344054", border: "1px #f0f4fa", padding: "5px 12px", height: "30px", font: "12px / 500 / Digital One Shinhan", states: "rendered only in the open menu; no pointer-state frame", use: "Menu option (li.shc-dropdown__option-item holding an a role=menuitem) at home::[data-omd-interaction-capture=\"menu-0-1\"]; from the second option on, each item carries a 1px #f0f4fa top border only (31 px tall). The label colour and type are the menuitem anchor values (menu-0-2, 12px / 500 / 20px, tracking -0.26px)" }
+    filter-chip: { type: button, bg: "#f8f9fc", fg: "#344054", border: "1px #e4e7ec", radius: "18px", padding: "0px 16px 0px 12px", height: "36px", font: "14px / 300 / Digital One Shinhan", states: "five chips captured at rest on home; the chip whose button carries class is-active (capture 37) computes a #344054 label fill, #ffffff text, a 1px #344054 border, and 14px / 500. No aria-selected is recorded, so that pairing rests on the class name; no pointer-state frame", use: "Home chip row (button.shc-chip, captures 37-41); the visible style sits on its span.shc-chip__label (home::span), while the button root computes the inherited body text" }
+    detail-tab: { type: tab, bg: "transparent", fg: "#667085", padding: "0px 4px", height: "51px", font: "16px / 500 / Digital One Shinhan", states: "two tabs captured at rest on each detail page; the label inside the tab carrying class is-active computes fg #101828, 16px / 700. No aria-selected is recorded, so that pairing rests on the class name; no pointer-state frame", use: "Card-detail tab bar (div.shc-tab type-btn card-detail-tab, #ffffff, 580 x 51) with two a.shc-tab__btn tabs 290 px wide; the label style sits on span.shc-tab__btn-text (surface-2::span, line height 27px), while the anchor root computes the inherited body text" }
+    important-note-trigger: { type: button, bg: "transparent", fg: "#344054", radius: "0px", padding: "20px 0px", height: "66px", font: "16px / 500 / Digital One Shinhan", states: "captured expanded on both detail pages (class is-active), with its region (#section1) open at 580 x 496 and padding 8px 0px 24px; no pointer-state frame", use: "Important-notes accordion trigger (button.shc-accordion__trigger shc-important-note__title) at surface-2::[data-omd-capture=\"31\"]; line height 26px" }
 ---
 
 # Shinhan Card — Design Reference
@@ -136,6 +256,8 @@ The public system is more varied than the prior snapshot suggested. Product-deta
 - **Ink** (`#101828`), **body** (`#475467`), **slate** (`#344054`), and **muted** (`#667085`): observed text families across the three product surfaces.
 - **Border** (`#e4e7ec`): observed on the open navigation menu and home chip.
 - **Danger tint** (`#fff6f5`) and **danger text** (`#f44f4f`): observed on `shc-badge--text type-tint theme-red` on home.
+- **Indigo tint** (`rgba(173, 173, 255, 0.2)` fill, `#6268ff` text): observed on one `shc-badge--text type-tint theme-indigo` badge on home (§4). It is a badge colour, not the retired indigo CTA.
+- **Control rings** (`#e4e7ec`, `#d0d5dd`): the header login action draws a 1px ring in `#e4e7ec` (`rgb(228, 231, 236)`) and the dropdown trigger a 1px inset ring in `#d0d5dd` (`rgb(208, 213, 221)`), both with `box-shadow`, not borders (§4).
 
 ## 3. Typography Rules
 
@@ -162,31 +284,34 @@ The public system is more varied than the prior snapshot suggested. Product-deta
 
 **Default**
 - Background: `#005df9`
-- Text: `#101828`
 - Radius: `16px`
 - Padding: `2px 12px`
-- Font: `14px / 400 / Digital One Shinhan`
+- Height: 56px (312px wide on home; 580px on the detail pages, `surface-2::[data-omd-capture="32"]` and `surface-3::[data-omd-capture="29"]`)
+- Label: not sampled. The root computes `#101828`, 14px / 400 / 24px, -0.28px, which is the inherited body text on the same page; the `shc-*` components set their visible label style on a child element (see the filter chip and card-detail tab below), so no label colour or type is declared. Corrected 2026-09-29: the July text listed `#101828` and 14px / 400 as this action's text style.
 - Use: `shc-btn theme-primary size-xl` on home, credit-detail, and premium-detail public product surfaces; evidence `home::[data-omd-capture="27"]`.
+- States: default only; the capture holds no state frame for this action.
 
 ### Toned capsule action
 
 **Default**
 - Background: `#f0f4fa`
-- Text: `#101828`
 - Radius: `20px`
 - Padding: `8px 12px`
-- Font: `14px / 400 / Digital One Shinhan`
-- Use: `shc-capsule-btn theme-tonal size-md` on both captured product-detail surfaces; evidence `surface-2::[data-omd-capture="29"]`.
+- Height: 40px (104px and 150px wide)
+- Label: not sampled separately. The button computes `#101828` / 14px / 400, the inherited body text, so no label style is declared. Corrected 2026-09-29: the July text listed those container values as the text style.
+- Use: `shc-capsule-btn theme-tonal size-md` on both captured product-detail surfaces; evidence `surface-2::[data-omd-capture="29"]` and `"30"`, `surface-3::[data-omd-capture="26"]` and `"27"`.
+- States: default only; no state frame.
 
 ### Product-detail tile
 
 **Default**
 - Background: `#f8f9fc`
-- Text: `#101828`
 - Radius: `16px`
 - Padding: `20px`
-- Font: `14px / 400 / Digital One Shinhan`
+- Size: 580px × 181px; a second tile (`surface-2::[data-omd-capture="22"]`) measures 580px × 149px with the same fill, radius, and padding
+- Text: not declared. The tile is a `<button>` wrapping a benefit-list item, so its computed `#101828` / 14px / 400 are container values. Corrected 2026-09-29: the July text listed them as the tile's text style.
 - Use: captured product-detail tile on both credit and premium pages; evidence `surface-2::[data-omd-capture="20"]`.
+- States: default only; no state frame.
 
 ### Tinted text badge
 
@@ -206,19 +331,101 @@ The public system is more varied than the prior snapshot suggested. Product-deta
 - Font: `11px / 500 / Digital One Shinhan`
 - Use: `shc-badge--text type-tint theme-blue` on the public home surface; evidence `home::span`.
 
+**Indigo**
+- Background: `rgba(173, 173, 255, 0.2)` (translucent)
+- Text: `#6268ff`
+- Radius: `12px`
+- Padding: `2px 8px`
+- Font: `11px / 500 / Digital One Shinhan` (line height 18px, tracking -0.22px, shared by all three badges)
+- Use: `shc-badge--text type-tint theme-indigo`, one occurrence on home, 134px wide; evidence `home::span`.
+
 ### Navigation menu
+
+**Trigger**
+- Background: transparent
+- Ring: a 1px inset `box-shadow` in `#d0d5dd` (`rgb(208, 213, 221) 0px 0px 0px 1px inset`), not a border
+- Radius: `8px`
+- Padding: `5px 12px`
+- Height: 32px (116px wide)
+- Use: `button.shc-dropdown__btn`, two per surface; evidence `home::[data-omd-capture="102"]`. The root computes the inherited body text, so no label style is declared.
 
 **Observed open menu**
 - Background: `#ffffff`
-- Text: `#101828`
 - Border: `1px solid #e4e7ec`
 - Radius: `12px`
 - Shadow: `rgba(12,17,29,0.1) 0px 4px 16px 0px`
-- Font: `14px / 400 / Digital One Shinhan`
+- Size: 116px × 125px, no padding
 - State: `expanded`, `menu-open`
-- Use: `shc-dropdown__option` after the captured menu interaction on all three product surfaces; evidence `home::[data-omd-interaction-capture="menu-0-0"]`.
+- Use: `shc-dropdown__option` (role=menu) after the captured menu interaction on all three product surfaces; evidence `home::[data-omd-interaction-capture="menu-0-0"]`.
 
-Only the defaults and the one expanded menu state above are documented. The supplied evidence records menu expansion only; it does not establish hover, focus, disabled, error, pressed, dialog, toast, input, or tab-state variants for these components.
+**Menu option**
+- Text: `#344054`
+- Font: `12px / 500 / Digital One Shinhan` (line height 20px, tracking -0.26px)
+- Padding: `5px 12px`; 30px tall, 31px from the second option on
+- Divider: from the second option on, a 1px `#f0f4fa` top border; the other three sides are 0px
+- Use: `li.shc-dropdown__option-item` holding an `a` (role=menuitem); evidence `home::[data-omd-interaction-capture="menu-0-1"]` (item), `"menu-0-2"` (label), `"menu-0-3"` (divider).
+
+Corrected 2026-09-29: the July text gave the open menu `#101828` text and 14px / 400. Those are the list container's own values; the visible option labels compute `#344054` and 12px / 500.
+
+The components below were transcribed on 2026-09-29 from the same 2026-07-13 bundle; nothing was re-measured.
+
+### Header menu link
+
+- Background: transparent
+- Text: `#101828`
+- Font: `16px / 500 / Digital One Shinhan`, line height 72px, tracking -0.32px
+- Radius: `0px`; padding `0px`; height 72px
+- Hover: text `#005df9`, weight 700
+- Pressed: text `#005df9`, weight 700
+- States: sampled on the six header links (`a.role_link`) of each captured surface, 18 elements in all (`home::[data-omd-capture="1"]` to `"6"`, and the same captures on `surface-2` and `surface-3`). Every hover frame and every pressed frame records `rgb(0, 93, 249)` text and weight 700; that is the primary blue `#005df9`, and all 18 links agree, so the value is settled. The frames also move the border colour to the same blue, but the border is 0px wide and is not a border. Focus is not declared: the collector presses before it focuses, so a focus frame cannot be separated from the pressed one.
+- Use: global header menu link; evidence `home::[data-omd-capture="1"]`.
+
+### Header login action
+
+- Background: transparent
+- Ring: 1px `box-shadow` spread in `#e4e7ec` (`rgb(228, 231, 236) 0px 0px 0px 1px`), not a border
+- Radius: `8px`; padding `2px 4px`; height 24px (45px wide)
+- Label: not declared; the root computes the inherited body text.
+- States: default captured on all three surfaces. Each surface also records a pressed frame whose dumped properties equal the rest frame; opacity, outline, and transform are outside the dump, so no pressed value is declared.
+- Use: `a.shc-btn theme-quaternary size-xs btn-login`; evidence `home::[data-omd-capture="12"]`.
+
+### Text button
+
+- Background: transparent
+- Radius: `8px`; padding `0px`; height 24px
+- Label: not declared; the root computes the inherited body text.
+- States: default captured on home (anchors, captures 28 to 30) and on both detail pages (buttons). The detail-page buttons (`surface-2::[data-omd-capture="16"]`, `surface-3::[data-omd-capture="16"]` and `"23"`) record pressed frames whose dumped properties equal the rest frame, so no pressed value is declared.
+- Use: `shc-txt-btn theme-secondary size-xs` (and `theme-tertiary`, same geometry); evidence `home::[data-omd-capture="28"]`.
+
+### Filter chip
+
+- Background: `#f8f9fc`
+- Text: `#344054`
+- Border: 1px `#e4e7ec`
+- Radius: `18px`; padding `0px 16px 0px 12px`; height 36px
+- Font: `14px / 300 / Digital One Shinhan`
+- Active variant: the chip whose button carries class `is-active` (`home::[data-omd-capture="37"]`) computes a `#344054` fill, `#ffffff` text, a 1px `#344054` border, and 14px / 500. The capture records no `aria-selected`, so this pairing rests on the class name.
+- Use: home chip row, `button.shc-chip` (captures 37 to 41). The visible style sits on the child `span.shc-chip__label` (`home::span`); the button root computes the inherited body text.
+- States: rest variants only; no pointer-state frame.
+
+### Card-detail tab
+
+- Label: `#667085`, `16px / 500 / Digital One Shinhan`, line height 27px, tracking -0.32px, padding `0px 4px`
+- Active variant: the label inside the tab carrying class `is-active` computes `#101828`, 16px / 700. No `aria-selected` is recorded, so this pairing rests on the class name.
+- Tab: `a.shc-tab__btn`, 290px × 51px, two per bar; the bar (`div.shc-tab type-btn card-detail-tab`) is `#ffffff`, 580px × 51px.
+- Use: both detail pages; label evidence `surface-2::span` (`span.shc-tab__btn-text`), tabs `surface-2::[data-omd-capture="18"]` and `"19"`. The anchor roots compute the inherited body text, so the label style is taken from the child span.
+- States: rest variants only; no pointer-state frame.
+
+### Important-notes accordion trigger
+
+- Background: transparent
+- Text: `#344054`
+- Font: `16px / 500 / Digital One Shinhan`, line height 26px, tracking -0.32px
+- Radius: `0px`; padding `20px 0px`; height 66px (580px wide)
+- States: captured expanded on both detail pages (class `is-active`); its region (`#section1`, role=region) is open at 580px × 496px with `8px 0px 24px` padding. No pointer-state frame.
+- Use: `button.shc-accordion__trigger shc-important-note__title`; evidence `surface-2::[data-omd-capture="31"]`, `surface-3::[data-omd-capture="28"]`.
+
+The header menu link is the only component with a declared pointer state, and focus is never declared from this bundle. Corrected 2026-09-29: the July text said the evidence recorded menu expansion only and did not establish hover or pressed variants; the bundle holds hover, pressed, and focus frames for the 18 header links and pressed frames for the login action and the detail-page text buttons.
 
 ---
 
@@ -255,9 +462,9 @@ The expanded `shc-dropdown__option` menu is the only directly measured elevated 
 ### Don't
 
 - Don't promote the declared `swiper-icons` face or the system fallback chain to Shinhan Card’s UI family.
-- Don't infer a white primary-button label, focus ring, hover style, disabled state, input spec, or tab treatment from the unobserved component states.
+- Don't infer a white primary-button label, focus ring, disabled state, or input spec from the unobserved component states. The only measured hover is the header menu link's (§4); do not extend it to other controls.
 - Don't extend public product-web measurements into signed-in app, checkout, or documentation UI.
-- Don't represent the prior indigo button, full-pill toggle, or universal 24px card as current canonical components without new evidence.
+- Don't represent the prior indigo button, full-pill toggle, or universal 24px card as current canonical components without new evidence. The indigo tint badge in §4 is a badge, not that button.
 
 ## 8. Responsive Behavior
 
@@ -265,7 +472,7 @@ No viewport comparison is present in the supplied evidence bundle. The reference
 
 ## 9. Agent Prompt Guide
 
-Use this reference as a constrained public-product-web sample, not a complete Shinhan Card application kit. A faithful observed action is `#005df9` background, `#101828` text, 16px radius, 2px 12px padding, and 14px/400 `Digital One Shinhan`; a toned detail-page action is `#f0f4fa`, `#101828`, 20px radius, and 8px 12px padding. For product-detail tiles, use `#f8f9fc`, 16px radius, and 20px padding only in that detail-page context. Do not invent a primary-button contrast color or interaction state.
+Use this reference as a constrained public-product-web sample, not a complete Shinhan Card application kit. A faithful observed action is a `#005df9` background, 16px radius, 2px 12px padding, and 56px height; its label style was not sampled (the root's `#101828` / 14px / 400 are inherited container values; corrected 2026-09-29). A toned detail-page action is `#f0f4fa`, 20px radius, 8px 12px padding, and 40px high. Header menu links are `#101828` at 16px / 500 and turn `#005df9` / 700 on hover and press. For product-detail tiles, use `#f8f9fc`, 16px radius, and 20px padding only in that detail-page context. Do not invent a primary-button contrast color or interaction state.
 
 ## 10. Voice & Tone
 
@@ -309,7 +516,10 @@ Specific personas, motivations, and quotes are not established here, and remain 
 | Observed state | Evidence boundary |
 |---|---|
 | Expanded navigation menu | Captured after a menu interaction on all three product surfaces; white surface, 1px `#e4e7ec` border, 12px radius, and `rgba(12,17,29,0.1) 0px 4px 16px 0px` shadow. |
-| Hover, focus, disabled, error, loading, empty, success, toast, dialog, and form validation | Not established by the supplied bundle; intentionally omitted rather than synthesized. |
+| Header menu link hover and pressed | `#101828` 16px / 500 at rest; `#005df9` / 700 in every hover and pressed frame of the 18 sampled links (§4). |
+| Chip and card-detail tab active variants | Rest variants paired by the `is-active` class, not by an ARIA state (§4). |
+| Pressed frames on the login action and detail-page text buttons | Recorded, but their dumped properties equal the rest frame; no pressed value is declared. |
+| Focus, disabled, error, loading, empty, success, toast, dialog, and form validation | Not established by the supplied bundle; intentionally omitted rather than synthesized. Focus frames exist for the header links but are never declared from a bundle (the collector presses before it focuses). Corrected 2026-09-29: this row previously listed hover as not established. |
 
 ## 15. Motion & Easing
 

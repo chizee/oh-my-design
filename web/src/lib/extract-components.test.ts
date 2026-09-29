@@ -47,7 +47,7 @@ describe("component extraction against current reference contracts", () => {
   it("Kakao keeps Login compliance separate from corporate controls", () => {
     const blocks = componentsFromTokens(readRef("kakao"));
     const variants = blocks!.flatMap((block) => block.variants.map((variant) => ({ type: block.type, ...variant })));
-    expect(variants).toHaveLength(6);
+    expect(variants).toHaveLength(10);
     expect(variants.find((variant) => variant.name === "kakao-login")).toMatchObject({
       type: "button",
       bg: "#fee500",

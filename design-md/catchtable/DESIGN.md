@@ -89,6 +89,7 @@ verification_v2:
     "tokens.components.merchant-cta.radius": *merchant
     "tokens.components.merchant-cta.height": *merchant
     "tokens.components.merchant-cta.font": *merchant
+    "tokens.components.merchant-cta.shadow": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
     "tokens.components.merchant-cta.states": *merchant
     "tokens.components.merchant-cta.use": *merchant
     "tokens.components.careers-orange-action.type": *career
@@ -99,6 +100,105 @@ verification_v2:
     "tokens.components.careers-orange-action.font": *career
     "tokens.components.careers-orange-action.states": *career
     "tokens.components.careers-orange-action.use": *career
+    "tokens.components.merchant-gnb-link.type": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-gnb-link.bg": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-gnb-link.fg": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-gnb-link.radius": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-gnb-link.padding": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-gnb-link.height": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-gnb-link.font": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-gnb-link.hover": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"1\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.merchant-gnb-link.pressed": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"1\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.merchant-gnb-link.states": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-gnb-link.use": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-submit-outline.type": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-submit-outline.bg": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-submit-outline.fg": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-submit-outline.border": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-submit-outline.radius": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-submit-outline.padding": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-submit-outline.height": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-submit-outline.font": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-submit-outline.states": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-submit-outline.use": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-form-input.type": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-form-input.bg": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-form-input.fg": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-form-input.radius": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-form-input.padding": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-form-input.size": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-form-input.font": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-form-input.states": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-form-input.use": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-checkbox.type": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-checkbox.bg": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-checkbox.border": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-checkbox.radius": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-checkbox.size": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-checkbox.states": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.merchant-checkbox.use": { surface_id: merchant-marketing, source_id: merchant-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-menu-item.type": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-menu-item.bg": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-menu-item.fg": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-menu-item.radius": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-menu-item.padding": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-menu-item.height": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-menu-item.font": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-menu-item.states": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-menu-item.use": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-orange-item.type": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-orange-item.bg": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-orange-item.fg": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-orange-item.radius": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-orange-item.padding": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-orange-item.height": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-orange-item.font": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-orange-item.states": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.careers-header-orange-item.use": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.careers-blue-action.type": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.careers-blue-action.bg": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.careers-blue-action.fg": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.careers-blue-action.radius": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.careers-blue-action.padding": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.careers-blue-action.height": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.careers-blue-action.font": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.careers-blue-action.states": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.careers-blue-action.use": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.careers-pill-action.type": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.careers-pill-action.bg": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.careers-pill-action.fg": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.careers-pill-action.radius": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.careers-pill-action.padding": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.careers-pill-action.height": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.careers-pill-action.font": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.careers-pill-action.states": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.careers-pill-action.use": { surface_id: careers-marketing, source_id: careers-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-category-shortcut.type": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-category-shortcut.bg": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-category-shortcut.fg": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::h3", captured: "2026-07-13" }
+    "tokens.components.consumer-category-shortcut.size": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-category-shortcut.font": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::h3", captured: "2026-07-13" }
+    "tokens.components.consumer-category-shortcut.states": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-category-shortcut.use": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-restaurant-card.type": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::article", captured: "2026-07-13" }
+    "tokens.components.consumer-restaurant-card.bg": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::article", captured: "2026-07-13" }
+    "tokens.components.consumer-restaurant-card.fg": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::h2", captured: "2026-07-13" }
+    "tokens.components.consumer-restaurant-card.size": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::article", captured: "2026-07-13" }
+    "tokens.components.consumer-restaurant-card.font": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::h2", captured: "2026-07-13" }
+    "tokens.components.consumer-restaurant-card.states": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::article", captured: "2026-07-13" }
+    "tokens.components.consumer-restaurant-card.use": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::article", captured: "2026-07-13" }
+    "tokens.components.consumer-bottom-tab.type": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-bottom-tab.bg": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-bottom-tab.size": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-bottom-tab.states": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-bottom-tab.use": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-modal-text-button.type": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"65\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-modal-text-button.bg": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"65\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-modal-text-button.fg": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"65\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-modal-text-button.height": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"65\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-modal-text-button.font": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"65\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-modal-text-button.states": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"65\"]", captured: "2026-07-13" }
+    "tokens.components.consumer-modal-text-button.use": { surface_id: consumer-home, source_id: consumer-capture, method: computed-style, selector: "home::[data-omd-capture=\"65\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -124,8 +224,20 @@ tokens:
     consumer-search: { type: input, bg: "#f5f5f5", fg: "#000000", radius: "40px", padding: "0px 15px 0px 32px", font: "15px / 500 Pretendard Std Variable", states: "default only; no interaction state captured", use: "Consumer-home search input, selector home::[data-omd-capture=0]" }
     consumer-filter-control: { type: button, bg: "#ffffff", fg: "#000000", border: "1px solid #e4e4e4", radius: "8px", height: "32px", font: "16px / 400 Pretendard Std Variable", states: "default only; no interaction state captured", use: "Consumer-home compact filter/control, selector home::[data-omd-capture=1]" }
     consumer-discovery-tile: { type: button, radius: "6px", padding: "8px 12px", font: "16px / 400 Pretendard Std Variable", states: "default only; no interaction state captured", use: "Consumer-home image-led discovery tile, selector home::[data-omd-capture=17]" }
-    merchant-cta: { type: button, bg: "#002d4e", fg: "#ffffff", radius: "8px", height: "48px", font: "16px / 700 Pretendard", states: "default only; no interaction state captured", use: "Merchant-marketing CTA link, selector surface-2::[data-omd-capture=20]" }
+    merchant-cta: { type: button, bg: "#002d4e", fg: "#ffffff", radius: "8px", height: "48px", font: "16px / 700 Pretendard", shadow: "rgba(202, 202, 202, 0.4) 0px 0px 4px 2px", states: "default only; no interaction state captured", use: "Merchant-marketing CTA link, selector surface-2::[data-omd-capture=20]" }
     careers-orange-action: { type: button, bg: "#ff3d00", fg: "#ffffff", radius: "15px", padding: "10.5px 24px", font: "16px / 400 Pretendard", states: "default only; no interaction state captured", use: "Careers-service marketing action, selector surface-3::[data-omd-capture=14]" }
+    merchant-gnb-link: { type: tab, bg: "transparent", fg: "#37352f", radius: "0px", padding: "0px", height: "56px", font: "16px / 700 / 24px Pretendard", hover: "fg #002d4e", pressed: "fg #002d4e", states: "rest on two links (capture 1 and 2); hover and pressed sampled on both, all four frames recording #002d4e, the merchant CTA fill; focus not declared", use: "Merchant-site global navigation link (a.css-rx11nm) at surface-2::[data-omd-capture=\"1\"], 60 x 56 (capture 2 is 69 x 56); the colour of its 0px border follows the text and is not a border" }
+    merchant-submit-outline: { type: button, bg: "#ffffff", fg: "#002d4e", border: "2px #002d4e", radius: "8px", padding: "0px", height: "53px", font: "16px / 700 / 18.4px Pretendard", states: "rest declared only. The hover and pressed frames agree (text and border #0d3857, fill #f2f4f6), but each channel sits about 5% of the way from its rest colour toward the element's other rest colour (fill toward #002d4e, text toward #ffffff): a transition frame, so neither is declared; focus not declared", use: "Merchant inquiry-form submit button (button.btn-submit, type=submit) at surface-2::[data-omd-capture=\"14\"], 260 x 53" }
+    merchant-form-input: { type: input, bg: "#ffffff", fg: "#000000", radius: "0px", padding: "16px", size: "414px x 77px", font: "16px / 400 / 18.4px Pretendard", states: "default captured on two inputs and one textarea; no state frame", use: "Merchant inquiry-form text input (input.__form-input) at surface-2::[data-omd-capture=\"3\"]; capture 4 matches and the textarea (capture 5) is 414 x 50; border width 0px, so no border is declared" }
+    merchant-checkbox: { type: toggle, bg: "#ffffff", border: "1px #999999", radius: "4px", size: "19px x 19px", states: "rest captured on six checkboxes; the checked property was not dumped, so no checked value is declared; no state frame", use: "Merchant inquiry-form checkbox (input type=checkbox) at surface-2::[data-omd-capture=\"6\"]; captures 7 to 10 and 12 match" }
+    careers-header-menu-item: { type: button, bg: "#ffffff", fg: "#212429", radius: "4px", padding: "5.5px 12px", height: "32px", font: "16px / 400 Pretendard", states: "default captured on five items; no state frame", use: "Careers-site header menu item (button.header__MenuItemContainer) at surface-3::[data-omd-capture=\"2\"], 81 x 32; five per header (captures 2, 4, 6, 8, 10)" }
+    careers-header-orange-item: { type: button, bg: "#ff3d00", fg: "#ffffff", radius: "4px", padding: "5.5px 12px", height: "32px", font: "16px / 400 Pretendard", states: "default captured; no state frame", use: "Careers-site header item in the orange variant of the same component (header__MenuItemContainer, iqSJex) at surface-3::[data-omd-capture=\"12\"], 55 x 32" }
+    careers-blue-action: { type: button, bg: "#388fff", fg: "#ffffff", radius: "15px", padding: "10.5px 24px", height: "48px", font: "16px / 400 Pretendard", states: "default captured; no state frame", use: "Careers-service marketing action in blue (button.button__Button, gPqMCK) at surface-3::[data-omd-capture=\"16\"], 166 x 48; same component and geometry as the orange action" }
+    careers-pill-action: { type: button, bg: "#ff3d00", fg: "#ffffff", radius: "24px", padding: "10.5px 28px", height: "48px", font: "16px / 400 Pretendard", states: "default captured; no state frame", use: "Careers-service wide orange action (button.button__Button, boFZhw) at surface-3::[data-omd-capture=\"21\"], 214 x 48" }
+    consumer-category-shortcut: { type: button, bg: "transparent", fg: "#000000", size: "109px x 65px", font: "13px / 400 / 16.9px Pretendard Std Variable", states: "default captured on twelve shortcuts; no state frame", use: "Consumer-home category shortcut (a, flex column) at home::[data-omd-capture=\"4\"]; twelve in one row (captures 4 to 15); the text style is its h3 label (home::h3), not the link container" }
+    consumer-restaurant-card: { type: card, bg: "transparent", fg: "#222222", size: "200px x 274px", font: "16px / 700 / 24px Pretendard Std Variable", states: "non-interactive; eight cards at 200 x 274 and two at 200 x 298, whose titles run to two lines", use: "Consumer-home restaurant card (article, w-[200px]) at home::article; the title is its h2 (home::h2, clamped to two lines) and the meta line its p (home::p, 12px / 400 / 18px, #666666); the article has no fill and a 0px radius, and the image corners were not sampled" }
+    consumer-bottom-tab: { type: tab, bg: "transparent", size: "120px x 56px", states: "default captured on four links; no state frame and no selected variant recorded", use: "Consumer bottom navigation link (a, flex-1) at home::[data-omd-capture=\"61\"]; four links fill a 480px row at top 844, the last 56px of the 900px viewport; the icon and label sit in children whose style was not sampled" }
+    consumer-modal-text-button: { type: button, bg: "transparent", fg: "#ffffff", height: "21px", font: "14px / 400 / 21px Pretendard Std Variable", states: "default captured on two buttons; no state frame", use: "Text button on the consumer-home modal (MUI Modal over a rgba(0, 0, 0, 0.7) backdrop, open at capture) at home::[data-omd-capture=\"65\"], 89 x 21; the second button (capture 66) is 35 x 21" }
   components_harvested: true
 ---
 
@@ -210,6 +322,7 @@ The reference therefore preserves three source domains as three facts: consumer-
 - Radius: `8px`
 - Height: `48px`
 - Font: `16px / 700 Pretendard`
+- Shadow: `rgba(202, 202, 202, 0.4) 0px 0px 4px 2px` (added 2026-09-29 from the same capture; the link is 432 × 48)
 - Use: Merchant-marketing CTA link; `surface-2::[data-omd-capture="20"]`.
 
 ### Careers orange action
@@ -222,7 +335,92 @@ The reference therefore preserves three source domains as three facts: consumer-
 - Font: `16px / 400 Pretendard`
 - Use: Careers-service marketing action; `surface-3::[data-omd-capture="14"]`.
 
-The supplied bundle reports zero interaction records. No hover, pressed, focus, disabled, menu, dialog, validation, or responsive variants are claimed; the `surface-2` static pseudo-state samples are not promoted because the bundle has no corresponding interaction provenance.
+The components below were transcribed on 2026-09-29 from the same 2026-07-13 bundle; nothing was re-measured.
+
+### Merchant navigation link
+
+**Default**
+- Background: transparent
+- Text: `#37352F`
+- Padding: `0px`
+- Height: `56px` (60 × 56 and 69 × 56)
+- Font: `16px / 700 / 24px Pretendard`
+- Hover: text `#002D4E`
+- Pressed: text `#002D4E`
+- States: sampled on both links, `surface-2::[data-omd-capture="1"]` and `"2"`. All four hover and pressed frames record `#002D4E`, which is the merchant CTA's fill and the submit button's text colour, so the value is read as settled. The frames also move the colour of the links' 0px border; a 0px border is not a border, so no border state is declared. Each link also has a focus frame in that colour, but focus is not declared from the bundle: the collector presses before it focuses.
+- Use: merchant-site global navigation (`a.css-rx11nm`).
+
+### Merchant submit button
+
+**Default**
+- Background: `#FFFFFF`
+- Text: `#002D4E`
+- Border: 2px `#002D4E`
+- Radius: `8px`
+- Padding: `0px`
+- Height: `53px` (260 × 53)
+- Font: `16px / 700 / 18.4px Pretendard`
+- States: rest only. The hover and pressed frames agree with each other (text and border `#0D3857`, fill `#F2F4F6`), but each channel sits about 5% of the way from its rest colour toward the element's other rest colour: the fill toward `#002D4E`, the text toward `#FFFFFF`. That is a transition caught early, not a settled value, so neither hover nor pressed is declared; the end value was not captured.
+- Use: merchant inquiry-form submit (`button.btn-submit`, `type=submit`); `surface-2::[data-omd-capture="14"]`.
+
+### Merchant form field
+
+**Default**
+- Background: `#FFFFFF`
+- Text: `#000000`
+- Radius: `0px`
+- Padding: `16px`
+- Size: 414 × 77 (the textarea, capture 5, is 414 × 50)
+- Font: `16px / 400 / 18.4px Pretendard`
+- Border: width 0px, so none is declared.
+- Use: merchant inquiry-form inputs (`input.__form-input`); `surface-2::[data-omd-capture="3"]` and `"4"`.
+
+### Merchant checkbox
+
+**Default**
+- Background: `#FFFFFF`
+- Border: 1px `#999999`
+- Radius: `4px`
+- Size: 19 × 19
+- States: rest on six checkboxes. The checked property was not dumped, so no checked value is declared.
+- Use: merchant inquiry-form consent row (`input[type=checkbox]`); `surface-2::[data-omd-capture="6"]` to `"10"` and `"12"`.
+
+### Careers header items
+
+- **Menu item:** background `#FFFFFF`, text `#212429`, radius `4px`, padding `5.5px 12px`, height 32px, `16px / 400 Pretendard`; five per header (`surface-3::[data-omd-capture="2"]`, `"4"`, `"6"`, `"8"`, `"10"`).
+- **Orange item:** the same component class in its orange variant: background `#FF3D00`, text `#FFFFFF`, same radius, padding and type, 55 × 32 (`surface-3::[data-omd-capture="12"]`).
+- States: default captured; no state frame on either.
+
+### Careers action variants
+
+- **Blue action:** background `#388FFF`, text `#FFFFFF`, radius `15px`, padding `10.5px 24px`, height 48px, `16px / 400 Pretendard`; 166 × 48 (`surface-3::[data-omd-capture="16"]`). Same component and geometry as the orange action above.
+- **Wide orange action:** background `#FF3D00`, text `#FFFFFF`, radius `24px`, padding `10.5px 28px`, height 48px, `16px / 400 Pretendard`; 214 × 48 (`surface-3::[data-omd-capture="21"]`).
+- States: default captured; no state frame.
+
+### Consumer category shortcut
+
+- Size: 109 × 65; twelve in one row (`home::[data-omd-capture="4"]` to `"15"`).
+- Label: its `h3`, `13px / 400 / 16.9px Pretendard Std Variable`, `#000000`. The link container's own 16px / 400 is not the label style.
+- States: default captured; no state frame.
+
+### Consumer restaurant card
+
+- Size: 200 × 274 (eight); 200 × 298 (two, whose titles run to two lines).
+- Title: `h2`, `16px / 700 / 24px Pretendard Std Variable`, `#222222`, clamped to two lines.
+- Meta: `p`, `12px / 400 / 18px`, `#666666`, one line.
+- The `article` itself has no fill and a 0px radius; the image corners were not sampled. Non-interactive.
+
+### Consumer bottom navigation
+
+- Four links, 120 × 56 each, filling a 480px row at top 844, the last 56px of the 900px viewport (`home::[data-omd-capture="61"]` to `"64"`).
+- The icon and label sit in children whose style was not sampled, so no text style is declared. Default only; no state frame, and no selected variant was recorded.
+
+### Consumer modal text buttons
+
+- Background transparent, text `#FFFFFF`, `14px / 400 / 21px Pretendard Std Variable`; 89 × 21 and 35 × 21 (`home::[data-omd-capture="65"]`, `"66"`).
+- They sit on a MUI modal whose backdrop computes `rgba(0, 0, 0, 0.7)`; the modal was open when the page was captured. Default only; no state frame.
+
+The merchant navigation link is the only component with declared pointer states. The bundle's `interactions[]` record is empty (no dialog, tab, menu, form-error, or toast record), but that record does not cover pointer states: the bundle holds eight state frames, all on `surface-2`, for the two merchant navigation links and the submit button (above). Focus, disabled, menu, validation, and responsive variants stay omitted. Corrected 2026-09-29: the July text read the empty interaction record as grounds to set every state frame aside. The navigation-link frames are settled values; the submit-button frames are a transition and stay undeclared for that reason.
 
 ---
 
@@ -235,7 +433,7 @@ Legacy claims about a 145-token semantic sheet, a universal 150% type contract, 
 
 ## 5. Elevation
 
-The selector-backed consumer controls documented above have `box-shadow: none`. The merchant CTA has a route-local shadow, but no repeatable elevation scale is established across the three domains, so no shadow token is promoted.
+The selector-backed consumer controls documented above have `box-shadow: none`. The merchant CTA has a route-local shadow (`rgba(202, 202, 202, 0.4) 0px 0px 4px 2px`, §4), but no repeatable elevation scale is established across the three domains, so no shadow token is promoted.
 
 ## 6. Spacing & Shape
 
@@ -259,7 +457,7 @@ The consumer home is image-led: repeated discovery tiles use a simple control sh
 
 - The consumer search has black text on `#F5F5F5`; the compact control has black text on white with a `#E4E4E4` border.
 - The careers orange action is `#FFFFFF` on `#FF3D00`; it is a marketing observation, not an accessibility approval for all consumer actions.
-- No keyboard or focus-visible state was captured. Any implementation needs its own accessible focus treatment rather than inferring one from the recorded radii.
+- No focus-visible state is declared. The bundle holds focus frames only for the two merchant navigation links, and the collector presses before it focuses, so those frames are not focus-visible evidence. Any implementation needs its own accessible focus treatment rather than inferring one from the recorded radii.
 - Declared-only fonts must not be presented as loaded CatchTable faces.
 
 ## 9. Content & Voice
@@ -296,7 +494,7 @@ The official service description names two stakeholder groups; this reference ke
 
 ## 14. States
 
-Only default static component samples are documented. The raw bundle contains zero interaction records, so loading, error, success, focus, hover, pressed, disabled, menu-open, dialog-open, and responsive states are intentionally omitted.
+Pointer states are declared for one component: the merchant navigation links record text `#002D4E` on hover and pressed over a `#37352F` rest (§4). The merchant submit button's frames are a transition and are not declared. The bundle's interaction record is empty, so loading, error, success, focus, disabled, menu-open, and responsive states are omitted. The consumer home was captured with a modal already open (backdrop `rgba(0, 0, 0, 0.7)`); that is a rest observation, not a dialog-open interaction. Corrected 2026-09-29: the July text read the empty interaction record as the absence of every state sample.
 
 ## 15. Motion
 

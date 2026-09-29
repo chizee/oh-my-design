@@ -52,9 +52,10 @@ verification_v2:
     "tokens.rounded.square": *product
     "tokens.rounded.compact": *product
     "tokens.components.content-tab.type": *product
-    "tokens.components.content-tab.fg": *product
+    "tokens.components.content-tab.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
     "tokens.components.content-tab.font": *product
     "tokens.components.content-tab.states": *product
+    "tokens.components.content-tab.selected": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
     "tokens.components.content-tab.use": *product
     "tokens.components.tag-link.type": *product
     "tokens.components.tag-link.bg": *product
@@ -64,10 +65,80 @@ verification_v2:
     "tokens.components.tag-link.font": *product
     "tokens.components.tag-link.use": *product
     "tokens.components.pagination.type": &challenge { surface_id: best-challenge, source_id: best-challenge-capture, method: computed-style, captured: "2026-07-13" }
-    "tokens.components.pagination.fg": *challenge
+    "tokens.components.pagination.fg": { surface_id: best-challenge, source_id: best-challenge-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"134\"]", captured: "2026-07-13" }
     "tokens.components.pagination.font": *challenge
     "tokens.components.pagination.states": *challenge
     "tokens.components.pagination.use": *challenge
+    "tokens.components.header-search.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-search.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-search.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-search.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-search.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-search.size": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-search.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-search.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-search.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.creator-entry.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.creator-entry.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.creator-entry.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.creator-entry.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.creator-entry.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.creator-entry.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.creator-entry.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.creator-entry.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.creator-entry.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.selected": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.sub-nav-link.type": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.sub-nav-link.bg": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.sub-nav-link.fg": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.sub-nav-link.radius": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.sub-nav-link.padding": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.sub-nav-link.height": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.sub-nav-link.font": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.sub-nav-link.states": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.sub-nav-link.use": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.weekday-heading.type": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::h3", captured: "2026-07-13" }
+    "tokens.components.weekday-heading.bg": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::h3", captured: "2026-07-13" }
+    "tokens.components.weekday-heading.fg": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::h3", captured: "2026-07-13" }
+    "tokens.components.weekday-heading.size": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::h3", captured: "2026-07-13" }
+    "tokens.components.weekday-heading.font": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::h3", captured: "2026-07-13" }
+    "tokens.components.weekday-heading.states": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::h3", captured: "2026-07-13" }
+    "tokens.components.weekday-heading.use": { surface_id: webtoon-list, source_id: webtoon-list-capture, method: computed-style, selector: "surface-2::h3", captured: "2026-07-13" }
+    "tokens.components.tag-link-large.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.tag-link-large.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.tag-link-large.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.tag-link-large.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.tag-link-large.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.tag-link-large.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.tag-link-large.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.tag-link-large.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.tag-link-large.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.qr-code-button.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"364\"]", captured: "2026-07-13" }
+    "tokens.components.qr-code-button.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"364\"]", captured: "2026-07-13" }
+    "tokens.components.qr-code-button.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"364\"]", captured: "2026-07-13" }
+    "tokens.components.qr-code-button.border": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"364\"]", captured: "2026-07-13" }
+    "tokens.components.qr-code-button.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"364\"]", captured: "2026-07-13" }
+    "tokens.components.qr-code-button.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"364\"]", captured: "2026-07-13" }
+    "tokens.components.qr-code-button.size": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"364\"]", captured: "2026-07-13" }
+    "tokens.components.qr-code-button.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"364\"]", captured: "2026-07-13" }
+    "tokens.components.qr-code-button.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"364\"]", captured: "2026-07-13" }
+    "tokens.components.qr-code-button.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"364\"]", captured: "2026-07-13" }
+    "tokens.components.author-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.author-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.author-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.author-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.author-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.author-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.author-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -87,9 +158,17 @@ tokens:
     tag: { size: 14, weight: 500, lineHeight: 2.14, use: "Product-home tag link" }
   rounded: { square: 0, compact: 4 }
   components:
-    content-tab: { type: tab, fg: "#00dc64", font: "15px / 500 Pretendard", states: "unselected #666666; selected #00dc64 via captured tab interaction", use: "Product content tabs, selectors home::[data-omd-capture=16] and home::[data-omd-capture=17]" }
+    content-tab: { type: tab, fg: "#666666", font: "15px / 500 Pretendard", selected: "fg #00dc64", states: "rest (aria-selected=false) #666666 and selected (aria-selected=true) #00dc64 captured on all three routes; the seven tab interactions record fg #00dc64 on each newly selected tab; no state frame. Corrected 2026-09-29: fg previously held the selected #00dc64", use: "Product content tabs, selectors home::[data-omd-capture=16] and home::[data-omd-capture=17]" }
     tag-link: { type: badge, bg: "#f6f6f6", fg: "#666666", radius: "4px", padding: "0px 10px", font: "14px / 500 Pretendard", use: "Product-home tag link, selector home::[data-omd-capture=64]" }
-    pagination: { type: button, fg: "#00dc64", font: "14px / 500 Pretendard", states: "static disabled previous control observed separately with #000000; no general disabled rule", use: "Best Challenge selected page, selector surface-3::[data-omd-capture=133]" }
+    pagination: { type: button, fg: "#000000", font: "14px / 500 Pretendard", states: "ten page buttons captured at rest: the first (capture 133) computes fg #00dc64 and the other nine #000000; no aria-current is recorded, so the green is described, not declared as a selected state. The previous control (capture 132) is disabled and computes #000000; it is not read as a rest value. No state frame. Corrected 2026-09-29: fg previously held the first page's #00dc64", use: "Best Challenge page buttons (button.Paginate__page, 28 x 28), selector surface-3::[data-omd-capture=134]; the green first page is surface-3::[data-omd-capture=133]" }
+    header-search: { type: input, bg: "#ffffff", fg: "#000000", radius: "0px", padding: "0px 65px 0px 10px", size: "268px x 35px", font: "14px / 400 / Pretendard", states: "default captured on all three routes; no state frame", use: "Product header search field (input.SearchBar__search_input) at home::[data-omd-capture=\"4\"]; the 35 x 35 search button beside it (capture 5) has no fill" }
+    creator-entry: { type: button, bg: "#00dc64", fg: "#000000", radius: "4px", padding: "11px 33px", height: "39px", font: "12px / 400 / Pretendard", states: "default captured on all three routes; no state frame", use: "Global navigation creator entry (button.GlobalNavigationBar__button_creators) at home::[data-omd-capture=\"14\"], 151 px wide" }
+    gnb-link: { type: tab, bg: "transparent", fg: "#000000", radius: "0px", padding: "0px 18px", height: "55px", font: "16px / 600 / Pretendard", selected: "bg #00dc64, fg #ffffff", states: "six links per route; on each captured route exactly one link computes a #00dc64 fill with #ffffff text, and it moves with the route: the first link on /index (capture 8), the second on /webtoon (capture 9), the fourth on /bestChallenge (capture 11). No aria-current is recorded; the selected value rests on that route-by-route agreement. No state frame", use: "Product global navigation link (a.GlobalNavigationBar__link) at home::[data-omd-capture=\"9\"]; line height 55px, tracking -0.5px" }
+    sub-nav-link: { type: tab, bg: "transparent", fg: "#000000", radius: "0px", padding: "0px 5px", height: "49px", font: "15px / 600 / Pretendard", states: "twelve links on /webtoon and eleven on /bestChallenge; on both routes the first link (capture 16) computes fg #00dc64 and the rest #000000. No aria-selected or aria-current is recorded, so the green first link is described, not declared as a selected state; no state frame", use: "Product sub-navigation link (a.SubNavigationBar__link) at surface-2::[data-omd-capture=\"17\"]; line height 49px, tracking -0.5px" }
+    weekday-heading: { type: card, bg: "transparent", fg: "#000000", size: "169px x 45px", font: "14.04px / 700 / Pretendard", states: "non-interactive; two headings captured on /webtoon: one computes a #00dc64 fill with #ffffff text, the other transparent with #000000; the capture does not record what the green one marks", use: "Weekday column heading (h3.WeekdayMainView__heading) at surface-2::h3" }
+    tag-link-large: { type: badge, bg: "#f6f6f6", fg: "#666666", radius: "4px", padding: "0px 10px", height: "37px", font: "16px / 500 / Pretendard", states: "default captured; no state frame", use: "The common size of the TagGroup__tag class at home::[data-omd-capture=\"130\"]: 184 of the 191 home tag links compute 16px / 500 / 37px (tracking -0.42px); the 14px / 30px tag-link covers the other seven" }
+    qr-code-button: { type: button, bg: "transparent", fg: "#666666", border: "1px #ebebeb", radius: "4px", padding: "0px", size: "172px x 43px", font: "13px / 500 / Pretendard", states: "default captured on home (captures 364-365) and /bestChallenge (captures 210-211); no state frame", use: "Outline QR-code button (button.QrCode__button) at home::[data-omd-capture=\"364\"]; tracking -0.5px" }
+    author-link: { type: button, bg: "transparent", fg: "#000000", height: "20px", font: "14px / 500 / Pretendard", states: "default captured on all three routes (82 occurrences); no state frame", use: "Author-name link (a.ContentAuthor__author) at home::[data-omd-capture=\"23\"]; line height 20px" }
   components_harvested: true
 ---
 
@@ -110,11 +189,12 @@ The captured product surfaces share a short, practical visual vocabulary: white 
 
 ## 2. Color Palette & Roles
 
-- **Product green** (`#00DC64`): Observed on the creator-entry button, selected content tabs, selected pagination, and a weekday browse heading.
+- **Product green** (`#00DC64`): Observed on the creator-entry button, selected content tabs, the current route's global-navigation link (as a fill), the first sub-navigation link and first pagination button (as text), and a weekday browse heading.
 - **Surface white** (`#FFFFFF`): Observed header-search background and the text on the captured green weekday heading.
 - **Foreground black** (`#000000`): Observed search text, product headings, and creator-entry text.
 - **Muted gray** (`#666666`): Observed unselected content-tab text and tag-link text.
 - **Tag surface** (`#F6F6F6`): Observed tag-link background on the product home.
+- **Outline gray** (`#EBEBEB`): Observed as the 1px border of the QR-code button (§4).
 
 No hover color, error color, dark reader surface, shadow ladder, or universal brand palette is promoted because it was not established by the supplied product capture.
 
@@ -166,6 +246,7 @@ No hover color, error color, dark reader surface, shadow ladder, or universal br
 - Font: `15px / 500 Pretendard`
 - Use: Unselected product content tab; `home::[data-omd-capture="16"]`.
 - Selected: Text `#00DC64`; observed at `home::[data-omd-capture="17"]` and in the captured tab interaction.
+- Evidence check (2026-09-29): every tab with `aria-selected=false` in the bundle computes `#666666` and every tab with `aria-selected=true` computes `#00DC64`, on all three routes; the seven tab interactions record `#00DC64` on each newly selected tab. Corrected 2026-09-29: the frontmatter token stored the selected `#00DC64` as the rest text colour; it now carries `#666666` at rest and the green as its selected value.
 
 ### Tag link
 
@@ -177,17 +258,74 @@ No hover color, error color, dark reader surface, shadow ladder, or universal br
 - Font: `14px / 500 Pretendard`
 - Use: Product-home tag link; `home::[data-omd-capture="64"]`.
 
-The same class also appears at 16px/500/37px on the home route. That is an observed route-local size record, not a generalized size scale.
+The same class also appears at 16px/500/37px on the home route; 184 of the 191 home tag links compute that size, so it is the common one and is recorded as the large tag link below. It remains a route-local record, not a generalized size scale. Corrected 2026-09-29: the July text presented the 16px size as a secondary record.
 
 ### Pagination
 
-**Selected page**
-- Text: `#00DC64`
-- Font: `14px / 500 Pretendard`
-- Use: Best Challenge selected page; `surface-3::[data-omd-capture="133"]`.
-- Disabled: A disabled previous control is statically observed at `surface-3::[data-omd-capture="132"]` with `#000000`; no reusable disabled treatment is inferred from that single observation.
+**Page buttons**
+- Text: `#000000`
+- Font: `14px / 500 Pretendard`, line height 20px, tracking -0.5px
+- Size: 28px × 28px
+- Use: Best Challenge page buttons (`button.Paginate__page`); `surface-3::[data-omd-capture="134"]` to `"142"`.
 
-Only tab selection has interaction provenance in the supplied bundle (`interactionCount: 7`). No hover, pressed, focus, menu, dialog, error, toast, responsive, card, thumbnail, reading-viewer, or checkout variant is asserted.
+**First page**
+- Text: `#00DC64`
+- Use: the first of the ten page buttons; `surface-3::[data-omd-capture="133"]`. The capture records no `aria-current`, so the green is described as the first page's variant, not declared as a selected state.
+- Disabled: A disabled previous control is statically observed at `surface-3::[data-omd-capture="132"]` with `#000000`; no reusable disabled treatment is inferred from that single observation, and it is not read as a rest value.
+
+Corrected 2026-09-29: the frontmatter token stored the first page's `#00DC64` as the pagination's rest text colour; the other nine page buttons compute `#000000`.
+
+The components below were transcribed on 2026-09-29 from the same 2026-07-13 bundle; nothing was re-measured. The header search field and creator entry above are now also frontmatter components (`header-search`, `creator-entry`) with claims; rechecked against `home::[data-omd-capture="4"]` (268px × 35px) and `"14"` (151px × 39px).
+
+### Global navigation link
+
+- Background: transparent
+- Text: `#000000`
+- Font: `16px / 600 Pretendard`, line height 55px, tracking -0.5px
+- Padding: `0px 18px`; height 55px
+- Current route: `#00DC64` fill with `#FFFFFF` text. On each captured route exactly one of the six links computes this, and it moves with the route: the first link on `/index` (`home::[data-omd-capture="8"]`), the second on `/webtoon` (`surface-2::[data-omd-capture="9"]`), the fourth on `/bestChallenge` (`surface-3::[data-omd-capture="11"]`). No `aria-current` is recorded; the selected value rests on that route-by-route agreement.
+- Use: `a.GlobalNavigationBar__link`; rest evidence `home::[data-omd-capture="9"]`.
+
+### Sub-navigation link
+
+- Background: transparent
+- Text: `#000000`
+- Font: `15px / 600 Pretendard`, line height 49px, tracking -0.5px
+- Padding: `0px 5px`; height 49px
+- First link: on both `/webtoon` (twelve links) and `/bestChallenge` (eleven) the first link (capture 16) computes `#00DC64`. No `aria-selected` or `aria-current` is recorded, so it is described, not declared as a selected state.
+- Use: `a.SubNavigationBar__link`; evidence `surface-2::[data-omd-capture="17"]`.
+
+### Weekday heading
+
+- Text: `#000000`, `14.04px / 700 Pretendard`
+- Size: 169px × 45px
+- Variant: one of the two headings captured on `/webtoon` computes a `#00DC64` fill with `#FFFFFF` text; the capture does not record what it marks.
+- Use: non-interactive `h3.WeekdayMainView__heading`; evidence `surface-2::h3`.
+
+### Large tag link
+
+- Background: `#F6F6F6`
+- Text: `#666666`
+- Radius: `4px`; padding `0px 10px`; height 37px
+- Font: `16px / 500 Pretendard`, tracking -0.42px
+- Use: the common size of `TagGroup__tag` on the product home (184 of 191); evidence `home::[data-omd-capture="130"]`.
+
+### QR-code button
+
+- Background: transparent
+- Text: `#666666`
+- Border: 1px `#EBEBEB`
+- Radius: `4px`; padding `0px`; size 172px × 43px
+- Font: `13px / 500 Pretendard`, tracking -0.5px
+- Use: outline `button.QrCode__button` on home and `/bestChallenge`; evidence `home::[data-omd-capture="364"]`.
+
+### Author link
+
+- Text: `#000000`
+- Font: `14px / 500 Pretendard`, line height 20px
+- Use: `a.ContentAuthor__author`, 82 occurrences across the three routes; evidence `home::[data-omd-capture="23"]`.
+
+Only tab selection has interaction provenance in the supplied bundle (`interactionCount: 7`). The bundle's `surfaces[].elements[]` hold no `::state-hover`, `::state-pressed`, or `::state-focus` frame (checked 2026-09-29), so no hover, pressed, or focus value is declared. No menu, dialog, error, toast, responsive, card, thumbnail, reading-viewer, or checkout variant is asserted.
 
 ---
 **Verified:** 2026-07-13
@@ -251,7 +389,8 @@ This reference does not invent demographic personas. The official context identi
 |---|---|
 | Content tab, unselected | `#666666`, 15px/500, `home::[data-omd-capture="16"]` |
 | Content tab, selected | `#00DC64`, 15px/500, `home::[data-omd-capture="17"]`; tab interaction provenance exists |
-| Pagination, selected page | `#00DC64`, 14px/500, `surface-3::[data-omd-capture="133"]` |
+| Pagination, first page | `#00DC64`, 14px/500, `surface-3::[data-omd-capture="133"]`; the other nine page buttons compute `#000000`; no `aria-current` is recorded |
+| Global navigation link, current route | `#00DC64` fill with `#FFFFFF` text on one link per route, moving with the route (§4) |
 | Pagination, disabled previous | Statically disabled with `#000000`, 14px/500, `surface-3::[data-omd-capture="132"]`; not a generalized disabled rule |
 
 No loading, empty, success, error, toast, skeleton, focus, hover, or pressed state was captured for promotion.
