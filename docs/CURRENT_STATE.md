@@ -108,6 +108,28 @@
   - fg/bg 접두어를 필수로 한다. check-claims는 hover·pressed hex를 검사하지 않는다(보강 필요).
   - `components: {}`는 append-components가 인식하지 못한다.
   - 'interactionCount 0 = 상태 없음' 오독이 3회 났다(린트 후보).
+- **/hangul 평가 — Codex 완료 (22:50).**
+  - 조건: gpt-6-astra, medium. max는 20분 한도를 넘겨 폐기했다.
+  - 스킬 없음 BLOCK 중앙값: p1 2(2–3), p2 1(1–1), p3 2(2–3) — 9회 전부 ≥1.
+  - 스킬 있음: 9회 전부 BLOCK 0·WARN 0 → 성공 기준을 충족했다.
+  - 없음 쪽 BLOCK은 거의 HG-7이다: 제목 자간 −2.8~−3.5px ≈ −0.06em으로, 실측 하한 −0.03em 밖이다. HG-1(라틴 전용 스택)은 1회. Codex는 스킬 없이도 lang="ko"를 넣었다.
+  - 주의: 체커는 스킬 규칙을 검사하므로 B의 0은 구조상 기대값이다. 가치의 근거는 A가 캐논·실측에 근거한 규칙을 어긴다는 점이다.
+  - Claude 18회는 진행 중이다.
+- **웨이브 2 커밋 `6432d4ca`:** 9곳, 헤드라인 9건 대조. 도구 커밋 `4a092f2b`: probe 종료 수정, probe-keyboard-states.mjs 추가. 오늘 KR 심화 누계는 22곳이다.
+- **GitHub Actions:** 공개 레포라 사용량 문제는 없다. 매일 실패하던 Quality 스케줄은 js-yaml 빌드 오류 때문이었고 abf37284·436da615로 수정했다(main 이후 2회 통과). 내일 09:17 KST 스케줄로 재확인한다.
+- **완료 — npm 2.0.2 공개 (22:59).**
+  - 오너가 npmjs.com에 Trusted Publisher를 등록했다(kwakseongjae/oh-my-design · release.yml).
+  - v2.0.2 태그를 main `0a041e32`로 옮겼다 → CI publish 성공, latest=2.0.2, provenance(SLSA v1) 확인. 레지스트리 반영에 약 9분 걸렸다.
+  - 예전 NPM_TOKEN 시크릿·토큰은 오너가 정리하면 된다(선택).
+- **완료 — 쇼케이스 웨이브 3 (23:10).**
+  - 커밋 `f57bf602`.
+  - 번들 6곳: catchtable 5→17, kbank 1→10, miricanvas 0→14, shinhancard 2→15, shinhanbank 0→11, naverwebtoon 3→11.
+  - 재측정 3곳: kakao 6→10, samsung 1→11(작성자 focus 2px dotted #000, 4/5), naver 8→15(로그인 CTA #03a94d 정정).
+  - Kakao 테스트 핀 6→10.
+  - **오늘 KR 심화 누계 31곳**(파일럿 2 + 웨이브 1 11 + 웨이브 2 9 + 웨이브 3 9).
+  - 쇼케이스 기준을 채운 곳은 아직 0이다: kakao·naver는 focus가 대부분 브라우저 기본이라 기준 해석이 필요하다(오너 결정).
+- **결정 (23:15).** 웨이브 1~3을 main에 반영한다. 쇼케이스 '측정됨'에 브라우저 기본 focus와 확인된 무변화를 포함한다(견본에는 솔직하게 표시).
+- **표적 재측정 B (23:10).** banksalad(focus 표시 없음 6/6, CTA ::after 0→0.04), yeogiotte(작성자 focus 1px #243b52 2개, hover #1d8bff→#006ce0), 29cm(더보기 DESIGN.md 정확 일치, focus 두 방식: 브라우저 기본 3 / #375fff 2). 보고서는 `docs/research/2026-09-29-growth/s2-probe-*.md`. 다음: 3곳 저작.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
 - **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
 
