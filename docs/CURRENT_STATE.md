@@ -318,8 +318,16 @@
 - **완료 — /hangul (`feat/hangul-skill`).**
   - `50bee2e4`: HG-1·HG-6도 한글 요소에만 적용한다. 2차 재채점 결과, 경고 이상은 17/18→0/18로 유지된다. **BLOCK만 세면 10/18→0/18.** Claude 8/9는 전부 WARN이고, 그중 3회는 −0.01em 하나뿐이다. 공개 문구에는 "BLOCK 또는 WARN"을 명시한다.
   - `c6cd774b`: `.claude/skills/hangul` 미러를 재동기화했다. prepublishOnly의 mirror 검사를 통과한다.
+- **완료 — /hangul 콘텐츠 v2 (07:55, `hangul-content/v2-*`).**
+  - `v2-cover.png`: "'있어요'가 두 줄로 갈렸습니다". Codex p1-A-r3를 360px에서 3× 배율로 캡처했다. After는 CSS 한 줄이고 render-check를 통과한다.
+  - `v2-eval-card.png`: 경고 이상 17→0, BLOCK 10→0, 채널별 수치, 한계를 카드에 인쇄했다.
+  - `v2-4up.png`: "Codex 예시"로 표기했다.
+  - **Claude 예시는 없다.** Claude 무스킬 9회는 모두 keep-all을 스스로 넣었고 렌더 단어 절단이 0이다. 경고도 전부 −0.01/−0.02em이라 눈으로 구별되지 않는다. → 이야기는 사실상 "Codex는 한국어를 영어처럼 조판한다"다.
+  - 훅 3안(`v2-NOTES.md`). 권장 H2는 숫자 없이 표지와 짝을 이룬다. 첫 댓글에 한계 4개(456자)를 단다.
+  - **메인 판단:** 표지와 평가 카드 2장은 공개할 만하다. 4컷·깜빡임은 폰에서 약하다. "사람들이모아와" 띄어쓰기 누락은 원본 마크업 그대로다(지적받을 수 있다).
+  - 부족한 것: Windows·Android 렌더, 한국 타이포그래퍼 검토, 스킬 쪽 렌더 검사, 독립 재현.
 - **다음.**
-  1. 진행 중: 저작 E1(ohouse·channeltalk·zigzag), /hangul 콘텐츠 v2(Claude 예시, 정직한 훅, 표지 HG-10). 이후 파이프라인 → 커밋.
+  1. 진행 중: 저작 E1(ohouse·channeltalk·zigzag). 이후 파이프라인 → 커밋.
   2. 오너 GO 대기: 사이트 반영(웨이브 5 + 19곳 + 라이브 정정 4곳 + E2 3곳, 이어서 E1 3곳), /hangul 공개 판단(v2 뒤).
   2. 도구 공백 수정(스프라이트·img·svg·inert) → 남은 상위 20(ohouse, channeltalk, zigzag, ably, upstage, remember) 프로브.
   3. 파이프라인 → 커밋 → 오너 GO 한 번에 요청: 웨이브 5 + 오늘 19곳 + 라이브 정정 4곳(yeogiotte, karrot, naver, samsung). 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
