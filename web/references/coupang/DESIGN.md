@@ -73,6 +73,61 @@ verification_v2:
     "tokens.components.header-account-utility.radius": *home
     "tokens.components.header-account-utility.font": *home
     "tokens.components.header-account-utility.use": *home
+    "tokens.components.header-menu-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-link.hover": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"16\"]::state-hover", captured: "2026-07-12" }
+    "tokens.components.header-menu-link.pressed": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"16\"]::state-pressed", captured: "2026-07-12" }
+    "tokens.components.header-menu-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-control.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-control.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-control.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-control.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-control.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-control.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-12" }
+    "tokens.components.header-menu-control.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-12" }
+    "tokens.components.header-search-input.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.header-search-input.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.header-search-input.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.header-search-input.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.header-search-input.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.header-search-input.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.header-search-input.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.header-search-input.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.header-search-input.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.search-category-select.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-12" }
+    "tokens.components.search-category-select.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-12" }
+    "tokens.components.search-category-select.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-12" }
+    "tokens.components.search-category-select.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-12" }
+    "tokens.components.search-category-select.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-12" }
+    "tokens.components.search-category-select.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-12" }
+    "tokens.components.search-category-select.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-12" }
+    "tokens.components.search-category-select.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-12" }
+    "tokens.components.search-category-select.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-12" }
+    "tokens.components.top-utility-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.top-utility-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.top-utility-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.top-utility-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.top-utility-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.top-utility-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.top-utility-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.top-utility-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.top-utility-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-07-12" }
 tokens:
   source: live-extract
   extracted: "2026-07-12"
@@ -95,6 +150,12 @@ tokens:
   components:
     header-menu-item: { type: listItem, fg: "#000000", radius: 0, padding: "0px 5px", use: "Observed default header menu list item only." }
     header-account-utility: { type: listItem, fg: "#212b36", radius: 0, font: "12/400 system", use: "Observed default account-area list item only." }
+    header-menu-link: { type: tab, bg: "transparent", fg: "#333333", radius: "0px", padding: "0px", height: "32px", font: "12px / 400 / 32px", hover: "fg #4285f4", pressed: "fg #4285f4", states: "rest on seventeen links (capture 16-32); hover and pressed sampled on eight of them (16-23), all recording the same value; no focus frame", use: "Home header menu link, the text link inside li.gnb-menu-item, at home::[data-omd-capture=\"16\"]" }
+    header-menu-control: { type: button, bg: "#ffffff", radius: "0px", padding: "0px 16px", size: "32px x 32px", states: "default captured on both menu buttons (capture 15 and 33; 33 carries the gnb-menu-btn-active class and records the same values); no pointer-state sample", use: "Home header menu button (a.gnb-menu-btn) at home::[data-omd-capture=\"15\"]; it has no text node, so no label colour is claimed" }
+    header-search-input: { type: input, bg: "#ffffff", fg: "#000000", radius: "0px", padding: "0px", size: "351px x 17px", font: "14px / 400 / 21px", states: "default captured; no pointer, focus, or error sample", use: "Home header search field (input.headerSearchKeyword) at home::[data-omd-capture=\"10\"]; the input itself has a 0px border, so no field frame is claimed" }
+    search-category-select: { type: button, bg: "transparent", fg: "#000000", radius: "0px", padding: "10px 20px 5px 10px", height: "37px", font: "12px / 400 / 18px", states: "default captured; no pointer-state sample", use: "Header search category selector (a.select--category__current) at home::[data-omd-capture=\"9\"]" }
+    top-utility-link: { type: tab, bg: "transparent", fg: "#000000", radius: "0px", padding: "0px", height: "13px", font: "11px / 400 / 16.5px", states: "default captured on six links (capture 2-7); no pointer-state sample", use: "Top utility navigation link at home::[data-omd-capture=\"2\"]; capture 3 through 7 record the same values" }
+    footer-link: { type: tab, bg: "transparent", fg: "#555555", border: "left 1px #888888", radius: "0px", padding: "0px 14px", height: "12px", font: "12px / 400 / normal", states: "default captured on thirteen links (capture 60-72); no pointer-state sample", use: "Footer link row at home::[data-omd-capture=\"61\"]; every link after the first carries the 1px #888888 left divider (capture 60 has a 0px border); the dump records border width and colour, not border style" }
 ---
 
 # Design System Inspiration of Coupang (쿠팡)
@@ -112,6 +173,7 @@ The reference therefore preserves the verified distinction between domains. The 
 - Search-led header with compact utility and menu controls
 - Square default geometry: sampled controls and inputs have 0px radius
 - System-font rendering on the captured commerce surface, separate from Coupang Sans on official corporate/careers surfaces
+- One settled pointer state in the capture: the header menu links turn #4285f4 on hover and press
 
 ## Primary tasks
 
@@ -126,14 +188,16 @@ The reference therefore preserves the verified distinction between domains. The 
 
 - **Canvas** (#ffffff): Observed background on the header menu control and search input.
 - **Foreground** (#000000): Dominant observed text color across all three captured routes.
-- **Muted foreground** (#555555): Repeated home-surface text color; no semantic role was observed.
-- **Secondary foreground** (#333333): Repeated home-surface text color; no semantic role was observed.
+- **Muted foreground** (#555555): Repeated home-surface text color; the footer link row uses it (§4). No wider semantic role was observed.
+- **Secondary foreground** (#333333): Repeated home-surface text color; the header menu links use it at rest (§4). No wider semantic role was observed.
 - **Account foreground** (#212b36): Observed on the home account-area list item.
 - **Hairline** (#e5e7eb): Repeated border color in the collector output.
 
 ### Boundary
 
-No live computed Coupang-red fill, WOW color, semantic status color, or hover/pressed value was present in the supplied capture. Those values are omitted rather than inferred from logos, screenshots, or third-party color lists.
+No live computed Coupang-red fill, WOW color, or semantic status color was present in the supplied capture. Those values are omitted rather than inferred from logos, screenshots, or third-party color lists.
+
+One pointer-state colour was captured: the header menu links change from #333333 to #4285f4 (rgb(66, 133, 244)) on hover and on press (§4, §14). It is recorded on that component and is not promoted to a palette role. Corrected 2026-09-29: the July text said the capture held no hover or pressed value.
 
 ## 3. Typography Rules
 
@@ -161,14 +225,14 @@ Do not substitute Pretendard, Inter, or another webfont and label it as Coupang.
 
 **Menu control — observed default**
 - Background: #ffffff
-- Text: #000000
+- Text: #000000 as computed; the control has no text node, so this is not a visible label colour
 - Radius: 0px
 - Padding: 0px 16px
 - Font: 16px / 400 / system stack
 - Use: Home header control at home::[data-omd-capture="15"]; 32px rendered height, observed default state only.
 
 **Search submit control — observed default**
-- Text: #000000
+- Text: #000000 as computed; the button has no text node, so this is not a visible label colour
 - Radius: 0px
 - Font: 16px / 400 / system stack
 - Use: Home header submit button at home::[data-omd-capture="12"]; 20px rendered height, observed default state only.
@@ -189,7 +253,7 @@ Do not substitute Pretendard, Inter, or another webfont and label it as Coupang.
 - Text: #000000
 - Radius: 0px
 - Padding: 0px 5px
-- Use: home::li.gnb-menu-item; observed 32px rendered height. This item was classified as a list item, not a tab.
+- Use: home::li.gnb-menu-item; observed 32px rendered height. This item was classified as a list item, not a tab. Its own computed colour, #000000, belongs to the container; the visible label is the link inside it, described under Header menu link below.
 
 **Account utility item — observed default**
 - Text: #212b36
@@ -197,7 +261,54 @@ Do not substitute Pretendard, Inter, or another webfont and label it as Coupang.
 - Font: 12px / 400 / system stack
 - Use: home::li.my-coupang; observed 59px rendered height and 0px 24px margin.
 
-No product card, checkout CTA, badge, selected, error, focus, hover, pressed, dialog, or mobile-tab variant is specified: none had selector/state provenance in the supplied capture.
+### Header menu link
+
+**Rest / hover / pressed**
+- Background: transparent
+- Text: #333333
+- Radius: 0px
+- Padding: 0px
+- Height: 32px
+- Font: 12px / 400 / 32px system stack
+- Hover: text #4285f4 (rgb(66, 133, 244))
+- Pressed: text #4285f4
+- Use: the text link inside each li.gnb-menu-item, at home::[data-omd-capture="16"] through "32", all with the same rest values. Hover and pressed frames exist for "16" through "23", and all eight record the same change.
+
+### Top utility link
+
+**Observed default**
+- Background: transparent
+- Text: #000000
+- Radius: 0px
+- Padding: 0px
+- Height: 13px
+- Font: 11px / 400 / 16.5px system stack
+- Use: six top utility links at home::[data-omd-capture="2"] through "7"; no pointer-state frame.
+
+### Search category selector
+
+**Observed default**
+- Background: transparent
+- Text: #000000
+- Radius: 0px
+- Padding: 10px 20px 5px 10px
+- Height: 37px
+- Font: 12px / 400 / 18px system stack
+- Use: a.select--category__current beside the search field at home::[data-omd-capture="9"]; no pointer-state frame.
+
+### Footer link
+
+**Observed default**
+- Background: transparent
+- Text: #555555
+- Divider: 1px #888888 left border on every link after the first (the dump records border width and colour; border style is not in it)
+- Radius: 0px
+- Padding: 0px 14px
+- Height: 12px
+- Font: 12px / 400 / normal system stack
+- Use: thirteen footer links at home::[data-omd-capture="60"] through "72"; no pointer-state frame.
+
+The menu control, search field, search category selector, utility links, and footer links carry default values only. Hover and pressed are specified for the header menu link alone, the one control whose frames record a settled change. The capture holds no focus frame for any element, and this collector presses the mouse before it calls `.focus()`, so a focus frame from it would not be a keyboard focus-visible measurement in any case. No product card, checkout CTA, badge, selected, error, dialog, or mobile-tab variant is specified: none had selector/state provenance in the supplied capture.
 
 ---
 **Verified:** 2026-07-13
@@ -205,7 +316,7 @@ No product card, checkout CTA, badge, selected, error, focus, hover, pressed, di
 **Tier 2 sources:** https://getdesign.md/coupang (no indexed record found); https://styles.refero.design/?q=coupang (no Coupang result found in the public search result set)
 **Conflicts unresolved:** none
 
-The live commerce capture does not corroborate legacy #E94B22, Pretendard, or any interaction/state variant; these values are intentionally absent. Coupang Sans is confirmed only for corporate/careers use, not the captured commerce product surface. Interactive machine components are omitted because the capture contains no observed interaction state; their measured defaults remain documented above as prose evidence.
+The live commerce capture does not corroborate legacy #E94B22 or Pretendard; these values are intentionally absent. Coupang Sans is confirmed only for corporate/careers use, not the captured commerce product surface. The capture does hold one settled pointer state, the header menu link hover and pressed colour. The menu control, search field, search category selector, header menu and utility links, and footer links are machine components with their measured defaults (added 2026-09-29 from the same bundle; the July text had left them out on the reading that the capture recorded no interaction state).
 
 ## 5. Layout Principles
 
@@ -221,14 +332,14 @@ The representative captured controls have box-shadow: none. No elevated componen
 
 - Keep the observed commerce header canvas white with black text and pale gray hairlines when recreating this captured state.
 - Treat Apple SD Gothic Neo as an operating-system stack on this surface, not a Coupang webfont.
-- Keep components constrained to their recorded selector, route, and default state provenance.
+- Keep components constrained to their recorded selector, route, and state provenance: default values everywhere, plus hover and pressed on the header menu link.
 - Apply the official media-assets rules when using downloaded Coupang logos or marks.
 
 ### Don't
 
 - Do not infer a consumer CTA color from Coupang’s logo, media assets, or third-party color directories.
 - Do not use Coupang Sans as a commerce UI font without product-surface and font-source corroboration.
-- Do not add hover, focus, pressed, selected, error, or responsive variants from this evidence set.
+- Do not add focus, selected, error, or responsive variants from this evidence set, or hover and pressed values beyond the header menu link.
 - Do not reuse corporate/careers or newsroom visual chrome as storefront evidence.
 
 ## 8. Responsive Behavior
@@ -239,7 +350,7 @@ No mobile viewport was captured. The source evidence does not support breakpoint
 
 ### Verified prompt boundary
 
-“Create only the observed Coupang desktop-header elements: a white, square-cornered search input with black 14px system-stack text; white/black square menu controls; and pale gray hairlines. Do not add a red CTA, product card, delivery badge, font substitution, or interaction state unless separately evidenced.”
+“Create only the observed Coupang desktop-header elements: a white, square-cornered search input with black 14px system-stack text; white/black square menu controls; and pale gray hairlines. The header menu links are #333333 12px text that turns #4285f4 on hover and press. Do not add a red CTA, product card, delivery badge, font substitution, or any other interaction state unless separately evidenced.”
 
 ## 10. Voice & Tone
 
@@ -276,7 +387,15 @@ The current public brand record also includes a purpose-built Coupang Sans famil
 
 ## 14. States
 
-Only default states were captured. The following states require a product-specific observation before specification:
+Hover and pressed were captured for the header menu links; every other captured element has default values only. Corrected 2026-09-29: the July text said only default states were captured. The bundle's coverage summary reports 0 observed states because it counts state names on its component variants, and the menu links belong to no variant; their state frames sit with the page elements.
+
+| State | Evidence |
+|-------|----------|
+| Hover | Header menu links, home capture 16 to 23: text #333333 → #4285f4 (rgb(66, 133, 244)); all eight frames agree |
+| Pressed | The same eight links, the same value |
+| Focus | No focus frame exists in this capture; not specified |
+
+The following states require a product-specific observation before specification:
 
 | Category | Evidence status |
 |----------|-----------------|
@@ -289,4 +408,4 @@ Only default states were captured. The following states require a product-specif
 
 ## 15. Motion & Easing
 
-No motion, transition, or interaction state was captured.
+No motion duration, easing, or transition timing was captured. The hover and pressed frames in §14 record resulting colours only.

@@ -110,7 +110,7 @@ describe("Reference AST normalization", () => {
     expect(ast.tokens.typography.families["corporate-web"]).toBeUndefined();
     expect(ast.tokens.typography.families.brand).toBeUndefined();
     expect(Object.keys(ast.tokens.typography.tiers)).toHaveLength(8);
-    expect(Object.keys(ast.tokens.components)).toHaveLength(7);
+    expect(Object.keys(ast.tokens.components)).toHaveLength(13);
   });
 
   it("selects Dcard's 8px token radius without scraping unrelated prose numbers", () => {

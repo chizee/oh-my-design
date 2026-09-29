@@ -59,6 +59,102 @@ verification_v2:
     "tokens.typography.display-h2.weight": *live
     "tokens.typography.family.body": *live
     "tokens.typography.family.display": *live
+    "tokens.components.vehicle-action.type": { surface_id: vehicles, source_id: vehicles-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.vehicle-action.bg": { surface_id: vehicles, source_id: vehicles-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.vehicle-action.fg": { surface_id: vehicles, source_id: vehicles-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.vehicle-action.radius": { surface_id: vehicles, source_id: vehicles-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.vehicle-action.padding": { surface_id: vehicles, source_id: vehicles-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.vehicle-action.height": { surface_id: vehicles, source_id: vehicles-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.vehicle-action.font": { surface_id: vehicles, source_id: vehicles-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.vehicle-action.states": { surface_id: vehicles, source_id: vehicles-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.vehicle-action.use": { surface_id: vehicles, source_id: vehicles-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-trigger.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-trigger.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-trigger.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-trigger.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-trigger.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-trigger.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-trigger.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-trigger.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-trigger.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.external-link-sm.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"128\"]", captured: "2026-07-13" }
+    "tokens.components.external-link-sm.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"128\"]", captured: "2026-07-13" }
+    "tokens.components.external-link-sm.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"128\"]", captured: "2026-07-13" }
+    "tokens.components.external-link-sm.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"128\"]", captured: "2026-07-13" }
+    "tokens.components.external-link-sm.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"128\"]", captured: "2026-07-13" }
+    "tokens.components.external-link-sm.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"128\"]", captured: "2026-07-13" }
+    "tokens.components.external-link-sm.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"128\"]", captured: "2026-07-13" }
+    "tokens.components.external-link-sm.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"128\"]", captured: "2026-07-13" }
+    "tokens.components.external-link-sm.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"128\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-pager.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-pager.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-pager.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-pager.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-pager.selected": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"75\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-pager.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-pager.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.family-site-control.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.family-site-control.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.family-site-control.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.family-site-control.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.family-site-control.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.family-site-control.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.family-site-control.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.family-site-control.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.family-site-control.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.family-site-control.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.chatbot-trigger.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"122\"]", captured: "2026-07-13" }
+    "tokens.components.chatbot-trigger.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"122\"]", captured: "2026-07-13" }
+    "tokens.components.chatbot-trigger.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"122\"]", captured: "2026-07-13" }
+    "tokens.components.chatbot-trigger.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"122\"]", captured: "2026-07-13" }
+    "tokens.components.chatbot-trigger.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"122\"]", captured: "2026-07-13" }
+    "tokens.components.chatbot-trigger.shadow": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"122\"]", captured: "2026-07-13" }
+    "tokens.components.chatbot-trigger.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"122\"]", captured: "2026-07-13" }
+    "tokens.components.chatbot-trigger.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"122\"]", captured: "2026-07-13" }
+    "tokens.components.quick-menu-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.quick-menu-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.quick-menu-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.quick-menu-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.quick-menu-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.quick-menu-link.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.quick-menu-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.quick-menu-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.quick-menu-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.slide-tab.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"52\"]", captured: "2026-07-13" }
+    "tokens.components.slide-tab.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"52\"]", captured: "2026-07-13" }
+    "tokens.components.slide-tab.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"52\"]", captured: "2026-07-13" }
+    "tokens.components.slide-tab.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"52\"]", captured: "2026-07-13" }
+    "tokens.components.slide-tab.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"52\"]", captured: "2026-07-13" }
+    "tokens.components.slide-tab.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"52\"]", captured: "2026-07-13" }
+    "tokens.components.slide-tab.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"52\"]", captured: "2026-07-13" }
+    "tokens.components.slide-tab.selected": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"51\"]", captured: "2026-07-13" }
+    "tokens.components.slide-tab.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"52\"]", captured: "2026-07-13" }
+    "tokens.components.slide-tab.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"52\"]", captured: "2026-07-13" }
+    "tokens.components.slide-dot.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.slide-dot.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.slide-dot.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.slide-dot.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.slide-dot.selected": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-13" }
+    "tokens.components.slide-dot.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.slide-dot.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.more-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.more-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.more-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.more-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.more-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.more-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.more-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.more-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.more-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.footer-disclosure-toggle.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.footer-disclosure-toggle.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.footer-disclosure-toggle.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.footer-disclosure-toggle.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.footer-disclosure-toggle.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.footer-disclosure-toggle.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.footer-disclosure-toggle.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.footer-disclosure-toggle.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
+    "tokens.components.footer-disclosure-toggle.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::span", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -82,7 +178,18 @@ tokens:
   rounded: { none: 0, pager: 6 }
   shadow: { chatbot: "rgba(0,0,0,0.15) 0px 0px 20px 0px" }
   components:
-    selected-carousel-indicator: { type: tab, fg: "#000000", radius: "0px", active: true, use: "Selected shell observed on the home surface" }
+    selected-carousel-indicator: { type: tab, fg: "#000000", radius: "0px", active: true, use: "Selected shell observed on the home surface; its #000000 text colour is inherited and styles no visible label, and the visible mark is the carousel-pager button" }
+    vehicle-action: { type: button, bg: "#002c5f", fg: "#ffffff", radius: "0px", padding: "0px", height: "50px", font: "16px / 500 / HyundaiSansTextKR", states: "default captured; the bundle holds no pointer-state frame for any Hyundai element", use: "Vehicle catalogue filled action (a.btn.nuxt-link-active) at surface-2::[data-omd-capture=\"15\"], 180 x 50; the IONIQ 6 intro carries the same values" }
+    primary-nav-trigger: { type: button, bg: "transparent", fg: "#000000", radius: "0px", padding: "0px", height: "30px", font: "16px / 400 / HyundaiSansHeadKRR", states: "default captured; the bundle holds no pointer-state frame for any Hyundai element", use: "Top-level menu trigger (button.lnb_depth0_btn) at home::[data-omd-capture=\"2\"]; 15 instances across the three product surfaces" }
+    external-link-sm: { type: button, bg: "transparent", fg: "#444444", radius: "0px", padding: "10px 0px", height: "34px", font: "14px / 500 / HyundaiSansHeadKR", states: "default captured; the bundle holds no pointer-state frame for any Hyundai element", use: "Inline external link (a.btn.btn-external-sm.in-phrase) at home::[data-omd-capture=\"128\"]; 9 instances across the three product surfaces" }
+    carousel-pager: { type: button, bg: "rgba(0, 0, 0, 0.1)", radius: "6px", size: "12px x 12px", selected: "bg #007fa8", states: "rest and selected variants captured; the label is hidden (font-size 0, transparent text); no pointer-state frame", use: "Home carousel pager (button.el-carousel__button) at home::[data-omd-capture=\"76\"]; the selected one is home::[data-omd-capture=\"75\"], paired one-to-one in document order with the aria-selected indicator li" }
+    family-site-control: { type: button, bg: "#1c1b1b", fg: "#999999", border: "1px solid #676767", radius: "0px", padding: "0px 13px", height: "30px", font: "13.3333px / 400 / Arial", states: "default captured; the bundle holds no pointer-state frame for any Hyundai element", use: "Footer Family Site control at home::[data-omd-capture=\"146\"], 190 x 30; present on all three product surfaces" }
+    chatbot-trigger: { type: button, bg: "#00aad2", border: "4px solid transparent", radius: "100%", size: "60px x 60px", shadow: "rgba(0, 0, 0, 0.15) 0px 0px 20px 0px", states: "default captured; the bundle holds no pointer-state frame for any Hyundai element", use: "Home chatbot button (button.btn.ibtn.chatbot) at home::[data-omd-capture=\"122\"]; one instance" }
+    quick-menu-link: { type: button, bg: "transparent", fg: "#333333", radius: "0px", padding: "82px 0px 0px", size: "100px x 100px", font: "15px / 500 / HyundaiSansTextKR", states: "default captured; the bundle holds no pointer-state frame for any Hyundai element", use: "Home quick-menu link (a.btn.menu-link.btn-text) at home::[data-omd-capture=\"36\"]; 13 instances; the 82px top padding leaves room for an icon that the style dump does not record" }
+    slide-tab: { type: tab, bg: "transparent", fg: "#666666", radius: "0px", padding: "0px", height: "30px", font: "16px / 400 / HyundaiSansTextKRR", selected: "fg #007fa8 (class is-active)", states: "rest and is-active variants captured (role=tab, no aria-selected); no pointer-state frame", use: "Home slide-information tab (button.slideinfo-list__link, role=tab) at home::[data-omd-capture=\"52\"] through \"54\"; the active one is home::[data-omd-capture=\"51\"]" }
+    slide-dot: { type: button, bg: "rgba(0, 0, 0, 0.1)", radius: "60%", size: "12px x 12px", selected: "bg #007fa8 (class is-active)", states: "rest and is-active variants captured; no pointer-state frame", use: "Home slide dot (button.slideinfo-list__link) at home::[data-omd-capture=\"29\"] through \"34\"; the active one is home::[data-omd-capture=\"28\"]" }
+    more-link: { type: button, bg: "transparent", fg: "#002c5f", radius: "0px", padding: "0px", height: "18px", font: "16px / 500 / HyundaiSansHeadKR", states: "default captured; the bundle holds no pointer-state frame for any Hyundai element", use: "Home navy more link (a.btn.btn-more-blue) at home::[data-omd-capture=\"58\"]; a white-text instance at \"57\" stands on a backdrop that is not claimed" }
+    footer-disclosure-toggle: { type: toggle, bg: "transparent", fg: "#000000", radius: "0px", padding: "24px 50px 21px", size: "1118px x 69px", font: "16px / 400 / HyundaiSansHeadKR", states: "default captured; the expanded state was not captured", use: "Footer disclosure toggle (span.button-toggle.area-icon) recorded as home::span at 1118 x 69 (top 6619); present on all three product surfaces" }
 ---
 
 # Design System Inspiration of Hyundai
@@ -104,17 +211,20 @@ The product capture favors flat, rectangular actions for its repeated navy vehic
 ### Product-surface colors
 
 - **Primary navy** (`#002c5f`): observed filled vehicle action on both the catalogue and IONIQ 6 product surfaces.
-- **Teal** (`#007fa8`): observed on home-surface carousel controls; no broader semantic role is inferred.
+- **Teal** (`#007fa8`): observed on home-surface carousel controls: it fills the selected carousel pager and the active slide dot, and colours the active slide tab's text. It marks the selected position in those controls; no broader semantic role is inferred.
 - **Cyan** (`#00aad2`): observed as the home-surface chatbot button background.
 - **Ink** (`#000000`) and **white** (`#ffffff`): repeatedly observed text and border values across the three product surfaces.
 - **Muted gray** (`#999999`) and **utility gray** (`#444444`): observed in footer/list and inline external-link chrome respectively.
 - **Footer dark** (`#1c1b1b`): observed on the Family Site control in the KR product footer.
+
+Component-scoped neutrals stay in their components rather than becoming palette roles: `#333333` is the quick-menu link text, `#666666` the resting slide-tab text, and `#676767` the Family Site control border. The resting carousel pagers and slide dots are translucent `rgba(0, 0, 0, 0.1)`, kept in prose because it has no opaque hex.
 
 ## 3. Typography Rules
 
 ### Evidence classes
 
 - **Live computed product use, FontFaceSet-backed:** `HyundaiSansTextKR` (287 observed uses) and `HyundaiSansHeadKR` (84) are visible computed families with matching loaded FontFaceSet entries in the supplied KR product capture. `HyundaiSansHeadKRR` (43) and `HyundaiSansTextKRR` (35) are likewise loaded and visibly used variants.
+- **Computed stack as recorded:** on `body` and about 230 other home elements the computed `font-family` reads `HyundaiSansTextKR, "Magul Gothic"`; it is recorded here as observed.
 - **Official brand/type context:** Hyundai's 2023 official newsroom describes Hyundai Sans UI as a next-generation mobility UX typeface that inherits the formative characteristics of Hyundai Sans. That statement concerns the ccNC infotainment context; it does not establish Hyundai Sans UI as the web product-surface family.
 - **System / declared-only:** Arial is a system family observed in utility chrome. `element-icons` is declared in the capture but has no visible usage. Neither is promoted to the UI family token.
 - **License and distribution boundary:** the supplied capture records no font source URLs, and this review found no public first-party web-font licence for the KR files. The loaded families may be described by name and observed metrics, but no downloadable asset or reuse licence is asserted.
@@ -128,10 +238,12 @@ The product capture favors flat, rectangular actions for its repeated navy vehic
 | Vehicle action | HyundaiSansTextKR | 16px | 500 | 18.4px | -0.4px | catalogue and IONIQ 6 |
 | Primary nav trigger | HyundaiSansHeadKRR | 16px | 400 | 30px | -0.4px | all three product surfaces |
 | Inline external link | HyundaiSansHeadKR | 14px | 500 | 14px | -0.4px | all three product surfaces |
+| Quick-menu link | HyundaiSansTextKR | 15px | 500 | 15px | -0.4px | home |
+| Slide tab | HyundaiSansTextKRR | 16px | 400 | 30px | -0.24px | home |
 
 ## 4. Component Stylings
 
-Only the variants below are retained because the supplied collector evidence records their selector, surface, and computed values. The capture has `interactionCount: 0`; hover, focus, pressed, disabled, menu-open, and validation states are not asserted.
+Only the variants below are retained because the supplied collector evidence records their selector, surface, and computed values. The bundle holds no `::state-hover`, `::state-pressed`, or `::state-focus` frame for any element on the three surfaces, and `interactionCount: 0` records that no dialog, menu, or tab was expanded, so hover, focus, pressed, disabled, menu-open, and validation values are not asserted. The selected variants below come from the elements' own attributes: `aria-selected="true"` on the carousel indicator and the `is-active` class on the slide tabs and dots.
 
 ### Vehicle action
 
@@ -139,8 +251,10 @@ Only the variants below are retained because the supplied collector evidence rec
 - Background: `#002c5f`
 - Text: `#ffffff`
 - Radius: 0px
-- Font: 16px / 500 / HyundaiSansTextKR
-- Use: `surface-2::[data-omd-capture="15"]`, class `btn nuxt-link-active`; observed on `surface-2` (vehicle catalogue) and `surface-3` (IONIQ 6 intro), 2 occurrences, no state captured.
+- Padding: 0px
+- Height: 50px
+- Font: 16px / 500 / HyundaiSansTextKR, letter-spacing -0.4px
+- Use: `surface-2::[data-omd-capture="15"]`, class `btn nuxt-link-active`, 180 × 50; observed on `surface-2` (vehicle catalogue) and `surface-3` (IONIQ 6 intro), 2 occurrences, no state captured. The home page repeats the colours and size on 13 `a.btn.btn` actions (`home::[data-omd-capture="60"]`) with 10px 20px padding, and has one smaller `a.btn.btn-md` (`home::[data-omd-capture="88"]`, 120 × 40, 15px / 500 / HyundaiSansHeadKRR).
 
 ### Primary navigation
 
@@ -163,18 +277,19 @@ Only the variants below are retained because the supplied collector evidence rec
 
 ### Carousel pagination
 
-**Teal pager control**
-- Background: `#007fa8`
+**Carousel pager**
+- Background: `rgba(0, 0, 0, 0.1)`
 - Radius: 6px
-- Use: `home::[data-omd-capture="75"]`, class `el-carousel__button`; observed on home only, 2 occurrences, no state captured.
+- Size: 12px × 12px
+- Selected: background `#007fa8`
+- Label: hidden (font-size 0, transparent text)
+- Use: `button.el-carousel__button` on home; resting pagers at `home::[data-omd-capture="76"]` through `"87"` and `"110"`, the two teal selected pagers at `home::[data-omd-capture="75"]` and `"109"`. The two home carousels hold 13 and 2 pagers. In each, exactly one indicator `li` has `aria-selected="true"` and exactly one pager is teal, both first in document order, and the pager label lengths repeat the indicator label lengths one for one; that is what ties the teal fill to the selected indicator, since the button itself carries no active class or ARIA state. No pointer-state frame was captured.
 
 **Selected indicator shell**
 - Background: transparent
-- Text: `#000000`
 - Radius: 0px
-- Padding: 0px 4px
-- Font: 16px / 400 / HyundaiSansTextKR
-- Use: `home::li`, class `el-carousel__indicator el-carousel__indicator--horizontal is-active`; observed on home only, 13 occurrences, `selected` is the sole captured state. The child visual control was not separately measured.
+- Padding: 0px 4px (first carousel); 12px 4px (second carousel)
+- Use: `home::li`, class `el-carousel__indicator el-carousel__indicator--horizontal is-active`, `aria-selected="true"`; one per carousel on home, among 13 and 2 indicators. The shell's computed text colour (`#000000`) and 16px / 400 HyundaiSansTextKR font are inherited: its label is hidden and the visible mark is the pager button above, so they are not a label style. The July text said this child control was not separately measured; it was, as the teal pager.
 
 ### Footer utility control
 
@@ -194,6 +309,63 @@ Only the variants below are retained because the supplied collector evidence rec
 - Shadow: rgba(0,0,0,0.15) 0px 0px 20px 0px
 - Font: 16px / 500 / HyundaiSansTextKR
 - Use: `home::[data-omd-capture="122"]`, class `btn ibtn chatbot`; observed once on the home product surface, no state captured. This is single-surface, low-confidence component evidence and does not establish a general floating-action pattern.
+
+### Quick-menu link
+
+**Icon-over-label link**
+- Background: transparent
+- Text: `#333333`
+- Radius: 0px
+- Padding: 82px 0px 0px
+- Size: 100px × 100px
+- Font: 15px / 500 / HyundaiSansTextKR, 15px line height, letter-spacing -0.4px
+- Observed-state summary: Default captured; no pointer-state frame.
+- Use: `a.btn.menu-link.btn-text` at `home::[data-omd-capture="36"]`; 13 instances on home. The 82px top padding leaves room for an icon above the label; the icon is not part of the computed style and is not claimed.
+
+### Slide information tabs and dots
+
+**Slide tab**
+- Background: transparent
+- Text: `#666666`
+- Radius: 0px
+- Padding: 0px
+- Height: 30px
+- Font: 16px / 400 / HyundaiSansTextKRR, 30px line height, letter-spacing -0.24px
+- Active (class `is-active`): text `#007fa8`; every other dumped value equals the resting tab
+- Observed-state summary: Resting and active variants captured (`role="tab"`, no `aria-selected`); no pointer-state frame.
+- Use: `button.slideinfo-list__link` at `home::[data-omd-capture="52"]` through `"54"`; the active tab is `home::[data-omd-capture="51"]`.
+
+**Slide dot**
+- Background: `rgba(0, 0, 0, 0.1)`
+- Radius: 60%
+- Size: 12px × 12px
+- Active (class `is-active`): background `#007fa8`
+- Observed-state summary: Resting and active variants captured; no pointer-state frame.
+- Use: `button.slideinfo-list__link` at `home::[data-omd-capture="29"]` through `"34"`; the active dot is `home::[data-omd-capture="28"]`. An 18px toggle control (`button.btn-control--toggle`, `home::[data-omd-capture="35"]`, background `#575757`, 10px radius) sits in the same row; it is recorded here and not tokenized.
+
+### More link
+
+**Navy more link**
+- Background: transparent
+- Text: `#002c5f`
+- Radius: 0px
+- Padding: 0px
+- Height: 18px
+- Font: 16px / 500 / HyundaiSansHeadKR, letter-spacing -0.4px
+- Observed-state summary: Default captured; no pointer-state frame.
+- Use: `a.btn.btn-more-blue` at `home::[data-omd-capture="58"]`; a white-text instance at `"57"` stands on a backdrop that is not claimed.
+
+### Footer disclosure toggle
+
+**Full-width toggle row**
+- Background: transparent
+- Text: `#000000`
+- Radius: 0px
+- Padding: 24px 50px 21px
+- Size: 1118px × 69px
+- Font: 16px / 400 / HyundaiSansHeadKR, 24px line height, letter-spacing -0.4px
+- Observed-state summary: Default captured; the expanded state was not captured.
+- Use: `span.button-toggle.area-icon`, recorded as `home::span` at top 6619; present on all three product surfaces.
 
 ---
 
@@ -233,7 +405,7 @@ No responsive viewport comparison was supplied. Breakpoints, touch-target rules,
 
 ## 9. Agent Prompt Guide
 
-Apply only source-bound values: a navy vehicle action (`#002c5f`, white text, 0px radius, 16px/500 HyundaiSansTextKR) is supported on the two vehicle product surfaces. Do not derive card, input, error-state, or motion specifications from this reference.
+Apply only source-bound values: a navy vehicle action (`#002c5f`, white text, 0px radius, 16px/500 HyundaiSansTextKR) is supported on the two vehicle product surfaces. The home carousels and slide lists mark the selected position with teal `#007fa8` (pager fill, dot fill, tab text). Do not derive card, input, error-state, hover, or motion specifications from this reference.
 
 ## 10. Voice & Tone
 
@@ -257,7 +429,15 @@ No first-party audience segmentation with enough detail to define personas was c
 
 ## 14. States
 
-No component interaction state was captured. The collector reports `interactionCount: 0` and only the carousel indicator shell carries an observed `selected` state. Empty, loading, error, success, skeleton, disabled, hover, focus, and pressed treatments are unresolved.
+The bundle holds no pointer-state frame (`::state-hover`, `::state-pressed`, `::state-focus`) for any element on the three surfaces, and `interactionCount: 0` records that no dialog, menu, or tab was expanded. Hover and pressed values are therefore unresolved. Focus is not declared: this bundle has no focus frame, and where the collector samples one it follows a mouse press, which is not a keyboard `:focus-visible` measurement. The observed state variants are selections carried by the elements themselves:
+
+| Variant | Evidence |
+|---|---|
+| Carousel indicator selected | `aria-selected="true"` on one indicator `li` per carousel; its pager button is filled `#007fa8`, the other pagers `rgba(0, 0, 0, 0.1)`. |
+| Slide tab active | class `is-active`: text `#666666` → `#007fa8`. |
+| Slide dot active | class `is-active`: fill `rgba(0, 0, 0, 0.1)` → `#007fa8`. |
+
+Empty, loading, error, success, skeleton, and disabled treatments are unresolved.
 
 ## 15. Motion & Easing
 

@@ -3,12 +3,12 @@
   "purpose": "Freeze what each reference claims to have observed, and when, so that relabelling a source kind, deleting an expired source, or rewriting a capture date appears as a reviewable diff.",
   "generator": "web/scripts/build-evidence-ledger.mjs",
   "references_with_verification_v2": 227,
-  "sources": 1272,
+  "sources": 1274,
   "sources_by_kind": {
     "brand-asset": 75,
     "license": 76,
     "official-doc": 543,
-    "product-surface": 578
+    "product-surface": 580
   },
   "references": {
     "104": {
@@ -582,13 +582,19 @@
       ]
     },
     "baemin": {
-      "checked": "2026-07-12",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
           "id": "baemin-live",
           "kind": "product-surface",
           "captured": "2026-07-11",
+          "host": "www.baemin.com"
+        },
+        {
+          "id": "baemin-probe",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
           "host": "www.baemin.com"
         },
         {
@@ -3516,7 +3522,7 @@
       ]
     },
     "karrot": {
-      "checked": "2026-09-19",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -3529,6 +3535,12 @@
           "id": "karrot-live",
           "kind": "product-surface",
           "captured": "2026-07-11",
+          "host": "www.karrotmarket.com"
+        },
+        {
+          "id": "karrot-probe",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
           "host": "www.karrotmarket.com"
         },
         {

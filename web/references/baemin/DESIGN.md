@@ -17,7 +17,7 @@ ds:
   description: Official Baemin brand-font distribution; current web UI use is verified separately from declared brand assets.
 verification_v2:
   schema: 2
-  checked: "2026-07-12"
+  checked: "2026-09-29"
   surfaces:
     - { id: baemin-home, kind: marketing, url: "https://www.baemin.com/", inspected: "2026-07-11" }
     - { id: woowa-home, kind: corporate, url: "https://www.woowahan.com/", inspected: "2026-07-11" }
@@ -30,6 +30,7 @@ verification_v2:
     - { id: font-catalog-live, kind: official-doc, url: "https://www.woowahan.com/fonts", captured: "2026-07-11" }
     - { id: font-license-live, kind: license, url: "https://www.woowahan.com/fonts/license", captured: "2026-07-11" }
     - { id: baemin-rebrand-official, kind: official-doc, url: "https://www.woowahan.com/report/detail/975?page=1", captured: "2026-07-12" }
+    - { id: baemin-probe, kind: product-surface, url: "https://www.baemin.com/", captured: "2026-09-29" }
   claims:
     "tokens.colors.primary": &baemin_live { surface_id: baemin-home, source_id: baemin-live, method: computed-style, captured: "2026-07-11" }
     "tokens.colors.canvas": *baemin_live
@@ -83,7 +84,7 @@ verification_v2:
     "tokens.rounded.download-card": *baemin_live
     "tokens.rounded.media-control": *woowa_live
     "tokens.rounded.circle": *woowa_live
-    "tokens.components.app-download-card.pressed": *baemin_live
+    "tokens.components.app-download-card.pressed": { surface_id: baemin-home, source_id: baemin-probe, method: live-state-probe, selector: "hero button App Store에서 배달의민족 앱 다운로드 :active", captured: "2026-09-29" }
     "tokens.components.app-download-card.type": *baemin_live
     "tokens.components.app-download-card.bg": *baemin_live
     "tokens.components.app-download-card.fg": *baemin_live
@@ -91,15 +92,17 @@ verification_v2:
     "tokens.components.app-download-card.height": *baemin_live
     "tokens.components.app-download-card.padding": *baemin_live
     "tokens.components.app-download-card.font": *baemin_live
-    "tokens.components.app-download-card.hover": { surface_id: baemin-home, source_id: baemin-live, method: live-css-inspect, captured: "2026-09-16" }
-    "tokens.components.app-download-card.states": *baemin_live
+    "tokens.components.app-download-card.hover": { surface_id: baemin-home, source_id: baemin-probe, method: live-state-probe, selector: "hero button App Store에서 배달의민족 앱 다운로드 :hover", captured: "2026-09-29" }
+    "tokens.components.app-download-card.states": { surface_id: baemin-home, source_id: baemin-probe, method: live-state-probe, selector: "hero button App Store에서 배달의민족 앱 다운로드", captured: "2026-09-29" }
     "tokens.components.app-download-card.use": *baemin_live
     "tokens.components.baemin-nav-link.type": *baemin_live
     "tokens.components.baemin-nav-link.bg": *baemin_live
     "tokens.components.baemin-nav-link.fg": *baemin_live
     "tokens.components.baemin-nav-link.height": *baemin_live
     "tokens.components.baemin-nav-link.font": *baemin_live
-    "tokens.components.baemin-nav-link.states": *baemin_live
+    "tokens.components.baemin-nav-link.hover": { surface_id: baemin-home, source_id: baemin-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"3\"]::state-hover", captured: "2026-07-11" }
+    "tokens.components.baemin-nav-link.pressed": { surface_id: baemin-home, source_id: baemin-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"3\"]::state-pressed", captured: "2026-07-11" }
+    "tokens.components.baemin-nav-link.states": { surface_id: baemin-home, source_id: baemin-probe, method: live-state-probe, selector: "header link 라이더 모집", captured: "2026-09-29" }
     "tokens.components.baemin-nav-link.use": *baemin_live
     "tokens.components.woowa-more-light.type": *woowa_live
     "tokens.components.woowa-more-light.bg": *woowa_live
@@ -144,6 +147,64 @@ verification_v2:
     "tokens.components.font-download.font": *catalog_live
     "tokens.components.font-download.states": *catalog_live
     "tokens.components.font-download.use": *catalog_live
+    "tokens.components.app-download-qr.type": &bmQr { surface_id: baemin-home, source_id: baemin-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-11" }
+    "tokens.components.app-download-qr.bg": *bmQr
+    "tokens.components.app-download-qr.fg": *bmQr
+    "tokens.components.app-download-qr.radius": *bmQr
+    "tokens.components.app-download-qr.padding": *bmQr
+    "tokens.components.app-download-qr.size": *bmQr
+    "tokens.components.app-download-qr.font": *bmQr
+    "tokens.components.app-download-qr.hover": { surface_id: baemin-home, source_id: baemin-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"2\"]::state-hover", captured: "2026-07-11" }
+    "tokens.components.app-download-qr.pressed": { surface_id: baemin-home, source_id: baemin-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"2\"]::state-pressed", captured: "2026-07-11" }
+    "tokens.components.app-download-qr.states": { surface_id: baemin-home, source_id: baemin-probe, method: live-state-probe, selector: "hero button QR 코드로 배달의민족 앱 다운로드", captured: "2026-09-29" }
+    "tokens.components.app-download-qr.use": *bmQr
+    "tokens.components.baemin-gift-pill.type": &bmGift { surface_id: baemin-home, source_id: baemin-probe, method: live-state-probe, selector: "bottom-section link 기업용 상품권 구매하기", captured: "2026-09-29" }
+    "tokens.components.baemin-gift-pill.bg": *bmGift
+    "tokens.components.baemin-gift-pill.fg": *bmGift
+    "tokens.components.baemin-gift-pill.radius": *bmGift
+    "tokens.components.baemin-gift-pill.padding": *bmGift
+    "tokens.components.baemin-gift-pill.height": *bmGift
+    "tokens.components.baemin-gift-pill.font": *bmGift
+    "tokens.components.baemin-gift-pill.hover": *bmGift
+    "tokens.components.baemin-gift-pill.pressed": *bmGift
+    "tokens.components.baemin-gift-pill.states": *bmGift
+    "tokens.components.baemin-gift-pill.use": *bmGift
+    "tokens.components.baemin-footer-link.type": &bmFooter { surface_id: baemin-home, source_id: baemin-probe, method: live-state-probe, selector: "footer link 배민외식업광장", captured: "2026-09-29" }
+    "tokens.components.baemin-footer-link.bg": *bmFooter
+    "tokens.components.baemin-footer-link.fg": *bmFooter
+    "tokens.components.baemin-footer-link.height": *bmFooter
+    "tokens.components.baemin-footer-link.font": *bmFooter
+    "tokens.components.baemin-footer-link.hover": *bmFooter
+    "tokens.components.baemin-footer-link.pressed": *bmFooter
+    "tokens.components.baemin-footer-link.states": *bmFooter
+    "tokens.components.baemin-footer-link.use": *bmFooter
+    "tokens.components.baemin-footer-legal-link.type": &bmLegal { surface_id: baemin-home, source_id: baemin-probe, method: live-state-probe, selector: "footer link 개인정보처리방침", captured: "2026-09-29" }
+    "tokens.components.baemin-footer-legal-link.bg": *bmLegal
+    "tokens.components.baemin-footer-legal-link.fg": *bmLegal
+    "tokens.components.baemin-footer-legal-link.height": *bmLegal
+    "tokens.components.baemin-footer-legal-link.font": *bmLegal
+    "tokens.components.baemin-footer-legal-link.hover": *bmLegal
+    "tokens.components.baemin-footer-legal-link.pressed": *bmLegal
+    "tokens.components.baemin-footer-legal-link.states": *bmLegal
+    "tokens.components.baemin-footer-legal-link.use": *bmLegal
+    "tokens.components.catalog-fill-button.type": &catFill { surface_id: font-catalog, source_id: font-catalog-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"20\"]", captured: "2026-07-11" }
+    "tokens.components.catalog-fill-button.bg": *catFill
+    "tokens.components.catalog-fill-button.fg": *catFill
+    "tokens.components.catalog-fill-button.radius": *catFill
+    "tokens.components.catalog-fill-button.padding": *catFill
+    "tokens.components.catalog-fill-button.height": *catFill
+    "tokens.components.catalog-fill-button.font": *catFill
+    "tokens.components.catalog-fill-button.states": *catFill
+    "tokens.components.catalog-fill-button.use": *catFill
+    "tokens.components.catalog-pill-button.type": &catPill { surface_id: font-catalog, source_id: font-catalog-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"22\"]", captured: "2026-07-11" }
+    "tokens.components.catalog-pill-button.bg": *catPill
+    "tokens.components.catalog-pill-button.fg": *catPill
+    "tokens.components.catalog-pill-button.radius": *catPill
+    "tokens.components.catalog-pill-button.padding": *catPill
+    "tokens.components.catalog-pill-button.height": *catPill
+    "tokens.components.catalog-pill-button.font": *catPill
+    "tokens.components.catalog-pill-button.states": *catPill
+    "tokens.components.catalog-pill-button.use": *catPill
   conflicts: []
 tokens:
   source: reconciled
@@ -175,13 +236,19 @@ tokens:
   rounded: { corporate-control: 8, download-card: 12, media-control: 16, circle: 9999 }
   components_harvested: true
   components:
-    app-download-card: { type: button, bg: "#ffffff", fg: "#222222", radius: "12px", height: "54px", padding: "14px 19px", font: "13.3333px / 400", hover: "#f7f7f7", states: "default and hover captured across store/QR variants", use: "baemin.com app-store and QR download action" , pressed: "#f7f7f7"}
-    baemin-nav-link: { type: button, bg: "transparent", fg: "#ffffff", height: "22px", font: "16px / 700", states: "default captured; hover not retained", use: "baemin.com top navigation action" }
+    app-download-card: { type: button, bg: "#ffffff", fg: "#222222", radius: "12px", height: "54px", padding: "14px 19px", font: "13.3333px / 400", hover: "#ffffff", pressed: "#ffffff", states: "store buttons: on App Store, hover and pressed measured 2026-09-29 with :hover and :active matched and nothing changes, as a 2026-09-17 run also found; keyboard focus-visible shows no indicator: outline none and nothing else changes (real Tab walk, 2026-09-29); Google Play shares the geometry but its states are unmeasured (corrected 2026-09-29: the #f7f7f7 hover and pressed previously recorded here belong to the QR button, now app-download-qr)", use: "baemin.com App Store and Google Play download buttons" }
+    baemin-nav-link: { type: button, bg: "transparent", fg: "#ffffff", height: "22px", font: "16px / 700", hover: "border-bottom 1px solid #ffffff", pressed: "border-bottom 1px solid #ffffff", states: "hover and pressed add a 1px solid #ffffff bottom border (22.4px to 23.4px tall, a 1px layout shift) on all three header links in the 2026-07-11 capture and again on 2026-09-29 with :hover and :active matched; keyboard focus-visible shows no indicator: outline none and nothing else changes (real Tab walk, 2026-09-29); corrected 2026-09-29, earlier text said hover not retained", use: "baemin.com top navigation link, white on the mint #0cefd3 navigation bar" }
     woowa-more-light: { type: button, bg: "#f3f4f5", fg: "#232324", radius: "8px", height: "52px", padding: "0 22px", font: "16px / 700", states: "default captured; hover not retained", use: "Woowa corporate light read-more action" }
     woowa-more-overlay: { type: button, bg: "rgba(0, 0, 0, 0.3)", fg: "#ffffff", border: "1px solid #ffffff", radius: "8px", height: "52px", padding: "0 22px", font: "16px / 700", states: "default on image overlay; hover not retained", use: "Woowa corporate overlay read-more action" }
     woowa-site-selector: { type: button, bg: "#ffffff", fg: "#6c6d6f", border: "1px solid #a6a7a9", radius: "8px", height: "50px", padding: "13px 16px", font: "14px / 400", states: "default captured; expanded state not retained", use: "Woowa footer family-site selector" }
     woowa-carousel-control: { type: button, bg: "rgba(0, 0, 0, 0.4)", fg: "#000000", radius: "50%", height: "40px", states: "default and disabled navigation states observed", use: "Woowa media carousel navigation" }
     font-download: { type: button, bg: "transparent", fg: "#232324", height: "28px", font: "16px / 700", states: "available download and unavailable/disabled controls observed on the catalog", use: "official font catalog download action" }
+    app-download-qr: { type: button, bg: "#ffffff", fg: "#222222", radius: "12px", padding: "13px", size: "54px x 54px", font: "13.3333px / 400", hover: "#f7f7f7", pressed: "#f7f7f7", states: "hover and pressed fill #f7f7f7 in the 2026-07-11 capture (home capture 2) and again on 2026-09-29 with :hover and :active matched; keyboard focus-visible shows no indicator: outline none and nothing else changes (real Tab walk, 2026-09-29)", use: "baemin.com QR-code app download button beside the store buttons" }
+    baemin-gift-pill: { type: button, bg: "#000000", fg: "#ffffff", radius: "9999px", padding: "16px 32px", height: "58px", font: "18px / 700 / 25.2px", hover: "#000000", pressed: "#000000", states: "present in the 2026-09-29 DOM (bottom section) and absent from the 2026-07-11 capture; hover and pressed measured 2026-09-29 with :hover and :active matched and nothing changes; keyboard focus-visible shows no indicator: outline none and nothing else changes (real Tab walk, 2026-09-29)", use: "baemin.com B2B gift-certificate purchase link (기업용 상품권 구매하기)" }
+    baemin-footer-link: { type: button, bg: "transparent", fg: "#ffffff", height: "39px", font: "30px / 700 / 39px", hover: "underline #ffffff", pressed: "underline #ffffff", states: "hover and pressed add a #ffffff underline (2026-09-29, :hover and :active matched); keyboard focus-visible shows no indicator: a focus-visible class is applied but outline stays none and nothing else changes (real Tab walk, 2026-09-29)", use: "baemin.com footer service link (배민외식업광장), white on the #000000 footer" }
+    baemin-footer-legal-link: { type: button, bg: "transparent", fg: "#b1b3b5", height: "19.6px", font: "14px / 400 / 19.6px", hover: "fg #b1b3b5 (unchanged)", pressed: "fg #b1b3b5 (unchanged)", states: "hover and pressed measured 2026-09-29 with :hover and :active matched: no visible change; keyboard focus-visible shows no indicator: outline none and nothing else changes (real Tab walk, 2026-09-29)", use: "baemin.com footer legal link (개인정보처리방침) on the #000000 footer" }
+    catalog-fill-button: { type: button, bg: "#232324", fg: "#ffffff", radius: "8px", padding: "0px 22px", height: "52px", font: "14px / 700 / 28px / -0.3px", states: "rest sampled (2026-07-11); the hover and pressed frames change only border-color, #d6d7da to #0cefd3, on a 0px border, so nothing visible changes and no state value is declared; focus not sampled", use: "Woowa font catalog filled link button (.btn-fill)" }
+    catalog-pill-button: { type: button, bg: "#f3f4f5", fg: "#a6a7a9", radius: "20px", padding: "0px 22px", height: "40px", font: "14px / 400 / 28px", states: "rest identical on ten same-style buttons (2026-07-11); no pointer-state, selected or focus sample, so none is declared", use: "Woowa font catalog pill button (.btn), ten instances" }
 ---
 
 # Design System Inspiration of Baemin (배달의민족)
@@ -270,22 +337,32 @@ The table below keeps measurements tied to the surfaces where they were observed
 
 ## 4. Component Patterns
 
-### baemin.com App Download Card
+### baemin.com App Download Buttons
 - Background: `#ffffff`
 - Text: `#222222`
 - Radius: 12px
 - Height: 54px
 - Padding: 14px 19px
 - Text style: 13.3333px / 400
-- States: default and hover captured across store/QR variants
-- Use: app-store and QR download action
+- States: on the App Store button, hover and pressed were measured on 2026-09-29 with `:hover` and `:active` confirmed, and nothing changes (a 2026-09-17 run found the same). Google Play shares the geometry; its states are unmeasured.
+- Correction (2026-09-29): this block used to say hover was "captured across store/QR variants". The `#f7f7f7` fill belongs to the QR button alone, in the 2026-07-11 capture and in the 2026-09-29 probe; the capture holds no state frame for either store button.
+- Use: App Store and Google Play download actions
+
+### baemin.com QR Download Button
+- Background: `#ffffff`; hover and pressed `#f7f7f7`
+- Text: `#222222`
+- Radius: 12px
+- Size: 54px × 54px, padding 13px
+- Text style: 13.3333px / 400
+- States: hover and pressed fill `#f7f7f7` in the 2026-07-11 capture and again on 2026-09-29
+- Use: QR-code download action beside the store buttons
 
 ### baemin.com Navigation Action
-- Background: transparent
+- Background: transparent, on the mint `#0cefd3` navigation bar
 - Text: `#ffffff`
-- Height: 22px
+- Height: 22px (22.4px measured)
 - Text style: 16px / 700
-- States: default captured; hover not retained
+- States: hover and pressed add a 1px solid `#ffffff` bottom border, so the link grows from 22.4px to 23.4px (a 1px layout shift). All three header links show it in the 2026-07-11 capture, and the 2026-09-29 probe reproduces it. The earlier "hover not retained" was wrong against the July capture itself.
 
 ### Woowa Light Read-More
 - Background: `#f3f4f5`
@@ -330,6 +407,29 @@ The table below keeps measurements tied to the surfaces where they were observed
 - Text style: 16px / 700
 - States: available download and unavailable/disabled catalog controls observed
 
+### baemin.com Gift-Certificate Pill
+- Background: `#000000`
+- Text: `#ffffff`
+- Radius: 9999px
+- Height: 58px
+- Padding: 16px 32px
+- Text style: 18px / 700 / 25.2px
+- States: none. Hover and pressed were measured on 2026-09-29 and nothing changes.
+- Use: B2B gift-certificate purchase link (`기업용 상품권 구매하기`) in the bottom section. It is in the 2026-09-29 DOM; the 2026-07-11 capture did not record it.
+
+### baemin.com Footer Links
+- Service link (`배민외식업광장`): transparent on the `#000000` footer, text `#ffffff`, 30px / 700 / 39px; hover and pressed add a `#ffffff` underline
+- Legal link (`개인정보처리방침`): transparent on the `#000000` footer, text `#b1b3b5`, 14px / 400 / 19.6px; hover and pressed change nothing
+- Measured 2026-09-29
+
+### Woowa Font Catalog Buttons
+- Filled link button (`.btn-fill`): `#232324` fill, `#ffffff` text, 8px radius, 52px tall, padding 0 22px, 14px / 700 / 28px, tracking -0.3px. Its hover and pressed frames change only the border colour, `#d6d7da` to `#0cefd3`, on a 0px border, so nothing visible changes and no state value is declared.
+- Pill button (`.btn`, ten instances): `#f3f4f5` fill, `#a6a7a9` text, 20px radius, 40px tall, padding 0 22px, 14px / 400 / 28px; rest only
+- Captured 2026-07-11 on the font catalog
+
+### Keyboard focus on baemin.com (measured 2026-09-29)
+A real Tab walk reached six baemin.com controls: the App Store and QR buttons, the gift-certificate pill, both footer link styles and a header link. On every one `:focus-visible` matched, the outline stayed `none`, and background, text, border and shadow did not change. baemin.com shows no keyboard focus indicator, neither an authored one nor the browser's ring. This is a measured accessibility gap (WCAG 2.4.7), not a Baemin focus style, so no focus token is declared.
+
 ---
 
 **Verified:** 2026-07-12 (verification v2, four live first-party web surfaces + official Baemin 2.0 product source)
@@ -360,7 +460,8 @@ No canonical shadow token is promoted. Current retained controls use flat fills,
 - Don't replace WORK with System, Arial, Pretendard, or a catalog display face in an app-facing design.
 - Don't treat every official Baemin font as a functional product UI family.
 - Don't treat `#2ac1bc` as a verified current web token; this run observed `#0cefd3` on baemin.com.
-- Don't retain the old black pill CTA after it disappeared from the current capture.
+- Don't treat the black pill as retired: the `#000000` 9999px gift-certificate link (`기업용 상품권 구매하기`) is in the 2026-09-29 DOM, though the 2026-07-11 capture did not record it.
+- Don't copy baemin.com's missing keyboard focus indicator; it is a measured gap (2026-09-29), not a style.
 - Don't fabricate restaurant cards, app tabs, inputs, badges, toasts, native motion, or semantic colors from remembered Baemin patterns.
 - Don't infer license permissions from a font file alone; keep the official license page with any redistribution workflow.
 
@@ -418,9 +519,15 @@ These are official stakeholder contexts from Woowa Brothers reporting, not inven
 
 | Component | Verified state evidence |
 |---|---|
-| App download card | default, hover |
+| App download buttons (App Store) | default; hover and pressed measured with no change (2026-09-29); Google Play unmeasured |
+| QR download button | default; hover and pressed `#f7f7f7` (2026-07-11 capture, reproduced 2026-09-29) |
+| Navigation link | default; hover and pressed add a 1px `#ffffff` bottom border (2026-07-11 capture, reproduced 2026-09-29) |
+| Footer service link | default; hover and pressed underline (2026-09-29) |
+| Footer legal link, gift-certificate pill | default; hover and pressed measured with no change (2026-09-29) |
+| Keyboard focus on the six baemin.com controls above | no indicator: outline none, nothing changes (2026-09-29) |
 | Woowa carousel | default, disabled |
 | Font catalog download | available, unavailable/disabled controls |
+| Font catalog filled button | default; its hover and pressed frames change nothing visible |
 | Other retained buttons | default only; missing states remain explicitly unclaimed |
 
 ## 15. Motion & Easing

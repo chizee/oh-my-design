@@ -58,8 +58,8 @@ verification_v2:
     "tokens.rounded.control": *corporate
     "tokens.rounded.menu": *corporate
     "tokens.shadow.menu-overlay": *corporate
-    "tokens.components.corporate-header-cta.hover": *corporate
-    "tokens.components.corporate-header-cta.pressed": *corporate
+    "tokens.components.corporate-header-cta.hover": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"13\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.corporate-header-cta.pressed": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"13\"]::state-pressed", captured: "2026-07-13" }
     "tokens.components.corporate-header-cta.type": *corporate
     "tokens.components.corporate-header-cta.bg": *corporate
     "tokens.components.corporate-header-cta.fg": *corporate
@@ -89,11 +89,105 @@ verification_v2:
     "tokens.components.resource-menu-trigger.font": *corporate
     "tokens.components.resource-menu-trigger.states": *corporate
     "tokens.components.resource-menu-trigger.use": *corporate
+    "tokens.components.corporate-outline-pill.type": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.bg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.fg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.border": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.radius": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.padding": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.height": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.font": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.hover": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"15\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.pressed": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"15\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.states": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-outline-pill.use": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.type": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.bg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.fg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.radius": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.padding": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.height": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.font": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.hover": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"9\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.pressed": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"9\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.states": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-utility-link.use": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-gnb-item.type": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-gnb-item.bg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-gnb-item.fg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-gnb-item.radius": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-gnb-item.padding": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-gnb-item.height": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-gnb-item.font": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-gnb-item.states": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-gnb-item.use": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-footer-link.type": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-footer-link.bg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-footer-link.fg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-footer-link.radius": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-footer-link.padding": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-footer-link.height": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-footer-link.font": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-footer-link.states": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.corporate-footer-link.use": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.type": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.bg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.fg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.border": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.radius": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.padding": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.size": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.font": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.shadow": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.states": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu.use": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu-item.type": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu-item.bg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu-item.fg": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu-item.radius": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu-item.padding": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu-item.size": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu-item.font": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu-item.states": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.resource-menu-item.use": { surface_id: corporate-marketing, source_id: corporate-marketing-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.docs-header-cta.type": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.docs-header-cta.bg": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.docs-header-cta.fg": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.docs-header-cta.radius": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.docs-header-cta.padding": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.docs-header-cta.height": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.docs-header-cta.font": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.docs-header-cta.states": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.docs-header-cta.use": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.type": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.bg": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.fg": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.radius": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.padding": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.height": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.font": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.selected": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.hover": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"4\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.pressed": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"4\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.states": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.docs-category-link.use": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.type": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.bg": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.fg": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.radius": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.padding": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.height": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.font": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.selected": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.hover": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"7\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.pressed": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"7\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.states": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.docs-page-link.use": { surface_id: cloud-docs, source_id: cloud-docs-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
 tokens:
   source: live-extract
   extracted: "2026-07-13"
   components_harvested: true
-  note: "Machine tokens are limited to selector-backed values from the NHN Cloud public corporate marketing route. TOAST UI and NHN Cloud documentation are recorded as separate source domains."
+  note: "Colour, typography, spacing, radius, and shadow tokens are limited to selector-backed values from the NHN Cloud public corporate marketing route. Components prefixed docs- are documentation-chrome components from docs.nhncloud.com, claimed on the cloud-docs surface; they do not populate corporate tokens. TOAST UI is recorded as a separate source domain."
   colors:
     primary: "#125de6"
     on-primary: "#ffffff"
@@ -109,9 +203,18 @@ tokens:
   rounded: { cta: 30, control: 6, menu: 8 }
   shadow: { menu-overlay: "0px 4px 8px rgba(0, 0, 0, 0.06)" }
   components:
-    corporate-header-cta: { type: button, bg: "#125de6", fg: "#ffffff", border: "1px solid #125de6", radius: "30px", padding: "8px 19px", height: "40px", font: "15px / 400 Pretendard Variable", states: "hover and pressed observed on the same selector; no state value is inferred", use: "Corporate-marketing header CTA, selector home::[data-omd-capture=13]" , hover: "#1446c8", pressed: "#1446c8"}
-    corporate-section-cta: { type: button, bg: "#125de6", fg: "#ffffff", border: "1px solid #125de6", radius: "30px", padding: "10px 27px", height: "48px", font: "17px / 500 Pretendard Variable", states: "hover and pressed observed on the same selector class; no state value is inferred", use: "Corporate-marketing section CTA, selector home::[data-omd-capture=29]" }
+    corporate-header-cta: { type: button, bg: "#125de6", fg: "#ffffff", border: "1px solid #125de6", radius: "30px", padding: "8px 19px", height: "40px", font: "15px / 400 Pretendard Variable", states: "hover and pressed sampled on this selector; both frames record the fill #1446c8, with text and border colours equal to rest. One element, no sibling; the two frames agree. No focus frame. Corrected 2026-09-29: the July text said no state value was inferred while the value was already declared", use: "Corporate-marketing header CTA, selector home::[data-omd-capture=13]" , hover: "bg #1446c8", pressed: "bg #1446c8"}
+    corporate-section-cta: { type: button, bg: "#125de6", fg: "#ffffff", border: "1px solid #125de6", radius: "30px", padding: "10px 27px", height: "48px", font: "17px / 500 Pretendard Variable", states: "default captured; the capture holds no hover, pressed, or focus frame for this element (corrected 2026-09-29: the July text gave it the state names of other rounded-30 buttons, capture 13 and 15-17)", use: "Corporate-marketing section CTA, selector home::[data-omd-capture=29]" }
     resource-menu-trigger: { type: button, fg: "#727781", border: "1px solid #51565f", radius: "6px", padding: "10px 16px", height: "42px", font: "16px / 400 Pretendard Variable", states: "expanded and menu-open observed", use: "Corporate-marketing resource/menu trigger, selector home::[data-omd-capture=130]" }
+    corporate-outline-pill: { type: button, bg: "transparent", fg: "#ffffff", border: "1px #ffffff", radius: "30px", padding: "11px 28px", height: "50px", font: "17px / 500 / 26px", hover: "fg #c8ccd4, border #c8ccd4", pressed: "fg #c8ccd4, border #c8ccd4", states: "rest on four pills (capture 14-17); hover and pressed sampled on three of them (15-17), all recording the same value; no focus frame", use: "Corporate-marketing outline pill at home::[data-omd-capture=\"15\"]; the white label implies a dark section behind it, whose fill was not sampled" }
+    corporate-utility-link: { type: tab, bg: "transparent", fg: "#ffffff", radius: "0px", padding: "0px", height: "26px", font: "17px / 500 / 26px", hover: "fg #125de6", pressed: "fg #125de6", states: "rest, hover, and pressed sampled on both header utility controls (capture 9 and 10), which record the same values; no focus frame", use: "Corporate-marketing header utility control at home::[data-omd-capture=\"9\"] (button) and \"10\" (link), both classed hover:text-blue-700" }
+    corporate-gnb-item: { type: tab, bg: "transparent", fg: "#ffffff", radius: "0px", padding: "0px 18px", height: "72px", font: "17px / 500 / 26px", states: "rest sampled on eight items (capture 1-8); the hover and pressed frames record near-black text that differs per item and between the two frames (rgb(17, 17, 17) to rgb(17, 19, 23)), a transition in progress, so no state value is declared", use: "Corporate-marketing top navigation item at home::[data-omd-capture=\"2\"]; the first item drops its left padding and the last its right" }
+    corporate-footer-link: { type: tab, bg: "transparent", fg: "#727781", radius: "0px", padding: "0px", height: "20px", font: "14px / 400 / 20px", states: "default captured; no pointer-state sample", use: "Corporate-marketing footer link at home::[data-omd-capture=\"58\"] (74 occurrences of this variant)" }
+    resource-menu: { type: card, bg: "#111111", fg: "#ffffff", border: "1px #727781", radius: "8px", padding: "8px 0px", size: "180px x 378px", font: "16px / 400 / 24px", shadow: "0px 4px 8px rgba(0, 0, 0, 0.06)", states: "expanded and menu-open observed", use: "Expanded corporate-marketing resource menu (role=menu) at home::[data-omd-interaction-capture=\"menu-0-0\"], opened from the resource-menu trigger" }
+    resource-menu-item: { type: button, bg: "transparent", fg: "#727781", radius: "0px", padding: "8px 16px", size: "178px x 36px", font: "17px / 400 / 26px", states: "observed only inside the expanded menu; no pointer-state sample", use: "Item (role=menuitem) inside the expanded resource menu at home::[data-omd-interaction-capture=\"menu-0-2\"]; \"menu-0-3\" records the same values" }
+    docs-header-cta: { type: button, bg: "#125de6", fg: "#ffffff", radius: "30px", padding: "9px 20px", height: "40px", font: "15px / 300 / 22px", states: "default captured; no pointer-state sample", use: "Documentation-chrome header CTA (a.link-text) on docs.nhncloud.com at surface-3::[data-omd-capture=\"3\"]; not the corporate CTA token" }
+    docs-category-link: { type: tab, bg: "transparent", fg: "#222222", radius: "0px", padding: "0px 0px 0px 60px", height: "46px", font: "14px / 400 / 46px", selected: "fg #125de6", hover: "fg #125de6, bg #e9f1ff", pressed: "fg #125de6, bg #e9f1ff", states: "rest, hover, and pressed sampled on nine category links (capture 4 and 16-23), all recording the same values; the current category (capture 5) is #125de6 at rest and takes the same #e9f1ff fill; no focus frame", use: "Documentation sidebar category link (a.gnb_link.category_menu) on docs.nhncloud.com at surface-3::[data-omd-capture=\"4\"]" }
+    docs-page-link: { type: tab, bg: "transparent", fg: "#555555", radius: "0px", padding: "8px 37px 8px 33px", height: "36px", font: "13px / 300 / 16px", selected: "fg #125de6", hover: "fg #125de6, bg #e9f1ff", pressed: "fg #125de6, bg #e9f1ff", states: "rest, hover, and pressed sampled on nine page links (capture 7-15), all recording the same values; the current page (capture 6, class current) is #125de6 at rest and takes the same #e9f1ff fill; no focus frame", use: "Documentation sidebar page link (a.gnb_link.link_txt) on docs.nhncloud.com at surface-3::[data-omd-capture=\"7\"]" }
 ---
 # Design System Inspiration of NHN Cloud
 
@@ -135,7 +238,9 @@ NHN Cloud is a cloud and IT-service company whose public platform describes a br
 - Muted control text: `#727781` — observed resource-menu trigger text and menu border.
 - Control border: `#51565F` — observed resource-menu trigger border.
 
-The capture also records `#E9F1FF` in documentation chrome. It is not promoted as a corporate marketing or TOAST UI token: the page is a separate documentation shell.
+Measured corporate pointer states (§4, §14): the header CTA fill deepens to `#1446C8` on hover and press; the white outline pills dim to `#C8CCD4`; the white header utility links turn primary `#125DE6`. They are state values on those components, not palette roles.
+
+The capture also records `#E9F1FF` in documentation chrome. It is not promoted as a corporate marketing or TOAST UI token: the page is a separate documentation shell. It is the hover and pressed fill of the documentation sidebar links and is recorded on those `docs-` components only.
 
 ## 3. Typography Rules
 
@@ -157,6 +262,9 @@ The capture also records `#E9F1FF` in documentation chrome. It is not promoted a
 - Padding: 8px 19px
 - Height: 40px
 - Font: 15px / 400 / Pretendard Variable
+- Hover: fill `#1446C8` (rgb(20, 70, 200)); text and border colours equal the rest frame
+- Pressed: fill `#1446C8`
+- States: one element with no sibling to cross-check; its hover and pressed frames, taken at different moments, record the identical fill, so the value is read as settled rather than mid-transition. No focus frame.
 - Use: Corporate-marketing header CTA; `home::[data-omd-capture="13"]`.
 
 ### Corporate Section CTA
@@ -169,6 +277,7 @@ The capture also records `#E9F1FF` in documentation chrome. It is not promoted a
 - Padding: 10px 27px
 - Height: 48px
 - Font: 17px / 500 / Pretendard Variable
+- States: default only. The capture holds no hover, pressed, or focus frame for `home::[data-omd-capture="29"]`; the July text had given it the state markers of other `rounded-30` buttons (corrected 2026-09-29).
 - Use: Corporate-marketing section CTA; `home::[data-omd-capture="29"]`.
 
 ### Resource Menu Trigger
@@ -194,7 +303,103 @@ The capture also records `#E9F1FF` in documentation chrome. It is not promoted a
 - Font: 16px / 400 / Pretendard Variable
 - Use: Expanded corporate-marketing menu panel; `home::[data-omd-interaction-capture="menu-0-0"]`.
 
-No TOAST widget, input, grid, editor, hover color, error treatment, or responsive variant is specified here without a captured selector/value pair on an actual relevant surface.
+### Corporate Outline Pill
+
+**Rest / hover / pressed**
+- Background: transparent
+- Text: #FFFFFF
+- Border: 1px #FFFFFF
+- Radius: 30px
+- Padding: 11px 28px
+- Height: 50px
+- Font: 17px / 500 / 26px Pretendard Variable
+- Hover: text and border #C8CCD4
+- Pressed: text and border #C8CCD4
+- Use: four outline pills at `home::[data-omd-capture="14"]` through `"17"`; hover and pressed frames exist for `"15"` through `"17"` and record the same change. The white label implies a dark section behind it; that backdrop's fill was not sampled and is not claimed.
+
+### Corporate Header Utility Link
+
+**Rest / hover / pressed**
+- Background: transparent
+- Text: #FFFFFF
+- Radius: 0px
+- Padding: 0px
+- Height: 26px
+- Font: 17px / 500 / 26px Pretendard Variable
+- Hover: text #125DE6
+- Pressed: text #125DE6
+- Use: header utility controls at `home::[data-omd-capture="9"]` (button) and `"10"` (link), both classed `hover:text-blue-700`; the header CTA's `bg-blue-700` computes to the same #125DE6.
+
+### Corporate Top Navigation Item
+
+**Rest**
+- Background: transparent
+- Text: #FFFFFF
+- Radius: 0px
+- Padding: 0px 18px (the first item drops its left padding, the last its right)
+- Height: 72px
+- Font: 17px / 500 / 26px Pretendard Variable
+- States: the hover frames (four items) and pressed frames (all eight) record near-black text that differs per item and between the two frames of one item (`rgb(17, 17, 17)` to `rgb(17, 19, 23)`). These are transition frames, so no hover or pressed value is declared.
+- Use: top navigation at `home::[data-omd-capture="1"]` through `"8"`.
+
+### Corporate Footer Link
+
+**Observed default**
+- Background: transparent
+- Text: #727781
+- Padding: 0px
+- Height: 20px
+- Font: 14px / 400 / 20px Pretendard Variable
+- Use: footer link at `home::[data-omd-capture="58"]`; the variant occurs 74 times. No pointer-state frame.
+
+### Resource Menu Item
+
+**Inside the expanded panel**
+- Background: transparent
+- Text: #727781
+- Padding: 8px 16px
+- Size: 178px × 36px
+- Font: 17px / 400 / 26px Pretendard Variable
+- Use: `role="menuitem"` rows at `home::[data-omd-interaction-capture="menu-0-2"]` and `"menu-0-3"`, inside the panel above; no pointer-state frame.
+
+### Documentation Header CTA (docs chrome)
+
+**Observed default**
+- Background: #125DE6
+- Text: #FFFFFF
+- Radius: 30px
+- Padding: 9px 20px
+- Height: 40px
+- Font: 15px / 300 / 22px Noto Sans KR
+- Use: `surface-3::[data-omd-capture="3"]` on docs.nhncloud.com. Documentation chrome, not the corporate CTA token; no pointer-state frame.
+
+### Documentation Sidebar Category Link (docs chrome)
+
+**Rest / current / hover / pressed**
+- Background: transparent
+- Text: #222222; current category #125DE6
+- Radius: 0px
+- Padding: 0px 0px 0px 60px
+- Height: 46px
+- Font: 14px / 400 / 46px Noto Sans KR
+- Hover: text #125DE6 on a #E9F1FF fill
+- Pressed: text #125DE6 on a #E9F1FF fill
+- Use: `surface-3::[data-omd-capture="4"]` and `"16"` through `"23"`, nine links recording the same values; the current category `"5"` takes the same #E9F1FF fill.
+
+### Documentation Sidebar Page Link (docs chrome)
+
+**Rest / current / hover / pressed**
+- Background: transparent
+- Text: #555555; current page #125DE6
+- Radius: 0px
+- Padding: 8px 37px 8px 33px
+- Height: 36px
+- Font: 13px / 300 / 16px Noto Sans KR
+- Hover: text #125DE6 on a #E9F1FF fill
+- Pressed: text #125DE6 on a #E9F1FF fill
+- Use: `surface-3::[data-omd-capture="7"]` through `"15"`, nine links recording the same values; the current page `"6"` (class `current`) takes the same #E9F1FF fill.
+
+Hover and pressed values are declared only where the frames record a settled change. No focus value is declared: the collector presses the mouse before it calls `.focus()`, so its focus frames are not keyboard focus-visible measurements. No TOAST widget, input, grid, editor, error treatment, or responsive variant is specified here without a captured selector/value pair on an actual relevant surface.
 
 ### Published component roster (14 published, none measured here)
 
@@ -224,6 +429,7 @@ The captured corporate CTA samples have no shadow. The expanded resource menu al
 - Use loaded `Pretendard Variable` for corporate-marketing reproductions.
 - Keep the 6px trigger and 8px expanded-menu geometry tied to their observed resource control.
 - Treat TOAST UI and NHN Cloud docs as separately evidenced developer/documentation surfaces.
+- Use the measured hover values only on their components: header CTA fill `#1446C8`, outline pill `#C8CCD4`, header utility link `#125DE6`, and, in documentation chrome only, the `#E9F1FF` sidebar-link fill.
 
 ### Don't
 
@@ -238,7 +444,7 @@ The supplied capture is 1440×900 only. It establishes 40px and 48px CTA example
 
 ## 9. Agent Prompt Guide
 
-For a corporate NHN Cloud marketing treatment, use `Pretendard Variable`, a white-on-`#125DE6` 30px pill CTA, and choose either the 40px / `8px 19px` / 15px-400 header sample or the 48px / `10px 27px` / 17px-500 section sample. For the captured resource menu, use a transparent `#727781` / `#51565F` 6px trigger and an expanded `#111111` panel with an 8px radius and the observed light overlay shadow. Do not use this small marketing sample to synthesize a cloud-console UI or TOAST UI widget library.
+For a corporate NHN Cloud marketing treatment, use `Pretendard Variable`, a white-on-`#125DE6` 30px pill CTA, and choose either the 40px / `8px 19px` / 15px-400 header sample or the 48px / `10px 27px` / 17px-500 section sample. For the captured resource menu, use a transparent `#727781` / `#51565F` 6px trigger and an expanded `#111111` panel with an 8px radius and the observed light overlay shadow. On hover and press the header CTA fill deepens to `#1446C8`, and the white outline pills dim to `#C8CCD4`. For the separate documentation shell, sidebar links take `#125DE6` text on a `#E9F1FF` fill on hover and press; keep that docs-local. Do not use this small marketing sample to synthesize a cloud-console UI or TOAST UI widget library.
 
 ## 10. Voice & Tone
 
@@ -272,11 +478,13 @@ The developer-facing counterpart is TOAST UI: its own site calls it a JavaScript
 
 ## 14. States
 
-- Corporate header and section CTA selectors carry collector markers for hover and pressed, but no separate computed state values are promoted.
+- Corporate header CTA (`home::[data-omd-capture="13"]`): hover and pressed frames both record the fill `rgb(20, 70, 200)` (`#1446C8`); text and border colours equal the rest frame. One element, no sibling; the two frames agree. The section CTA (`"29"`) has no state frame of its own. Corrected 2026-09-29: the July text said no state value was promoted, while the frontmatter already declared `#1446C8`, and it gave the section CTA the state markers of other `rounded-30` buttons.
+- Corporate outline pills: hover and pressed text and border `#C8CCD4` (three of the four pills sampled; all agree). Corporate header utility links: hover and pressed text `#125DE6` (both sampled; they agree). Corporate top navigation: the hover and pressed frames caught the text colour mid-transition, so no value is declared.
+- Documentation sidebar links (docs chrome): hover and pressed `#125DE6` text on a `#E9F1FF` fill, eighteen links in agreement; the current category and current page are `#125DE6` at rest.
 - The corporate resource trigger was observed expanded/menu-open with the 42px, 6px-radius trigger values above.
 - The expanded corporate menu panel was observed at `#111111`, with a 1px `#727781` border, 8px radius, and the recorded overlay shadow.
 - A documentation-chrome CTA was observed separately at `surface-3::[data-omd-capture="3"]`: `#125DE6`, white text, 30px radius, `9px 20px` padding, and Noto Sans KR 15px/300. It is not promoted as the corporate CTA token.
-- No focus, disabled, error, success, loading, empty, toast, dialog, or form-validation state is asserted.
+- No focus value is declared: the collector presses the mouse before it calls `.focus()`, so its focus frames are not keyboard focus-visible measurements. No disabled, error, success, loading, empty, toast, dialog, or form-validation state is asserted.
 
 ## 15. Motion & Easing
 

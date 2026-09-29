@@ -17,7 +17,7 @@ ds:
   description: Karrot (Daangn)'s open-source design system for marketplace apps.
 verification_v2:
   schema: 2
-  checked: "2026-09-19"
+  checked: "2026-09-29"
   surfaces:
     - { id: marketing-home, kind: marketing, url: "https://www.karrotmarket.com/", inspected: "2026-07-11" }
     - { id: marketing-about, kind: marketing, url: "https://www.karrotmarket.com/about/", inspected: "2026-07-11" }
@@ -32,6 +32,7 @@ verification_v2:
     - { id: seed-text-field, kind: official-doc, url: "https://v2.seed-design.io/component/text-field/usage/", captured: "2026-07-11" }
     - { id: seed-tabs, kind: official-doc, url: "https://v2.seed-design.io/component/tabs/usage/", captured: "2026-07-11" }
     - { id: seed-snackbar, kind: official-doc, url: "https://v2.seed-design.io/component/snackbar/usage/", captured: "2026-07-11" }
+    - { id: karrot-probe, kind: product-surface, url: "https://www.karrotmarket.com/", captured: "2026-09-29" }
   claims:
     "tokens.colors.primary": &seed_color { surface_id: seed-system, source_id: seed-source, method: official-source, captured: "2026-07-11" }
     "tokens.colors.primary-hover": *seed_color
@@ -82,7 +83,10 @@ verification_v2:
     "tokens.components.marketing-primary.height": *karrot_live
     "tokens.components.marketing-primary.padding": *karrot_live
     "tokens.components.marketing-primary.font": *karrot_live
-    "tokens.components.marketing-primary.states": *karrot_live
+    "tokens.components.marketing-primary.hover": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "header button Sell, ::before at :hover", captured: "2026-09-29" }
+    "tokens.components.marketing-primary.pressed": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "header button Sell, ::before at :active", captured: "2026-09-29" }
+    "tokens.components.marketing-primary.focus": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "header button Sell at :focus-visible, Tab stop 3", captured: "2026-09-29" }
+    "tokens.components.marketing-primary.states": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "header button Sell", captured: "2026-09-29" }
     "tokens.components.marketing-primary.use": *karrot_live
     "tokens.components.box-button.type": &seed_box { surface_id: seed-system, source_id: seed-box-button, method: official-doc, captured: "2026-07-11" }
     "tokens.components.box-button.bg": &seed_box_tokens { surface_id: seed-system, source_id: seed-box-button-tokens, method: css-custom-property, captured: "2026-09-17" }
@@ -101,6 +105,115 @@ verification_v2:
     "tokens.components.snackbar.type": &seed_snackbar_claim { surface_id: seed-system, source_id: seed-snackbar, method: official-doc, captured: "2026-07-11" }
     "tokens.components.snackbar.states": *seed_snackbar_claim
     "tokens.components.snackbar.use": *seed_snackbar_claim
+    "tokens.components.marketing-secondary.type": &mktSecondary { surface_id: marketing-home, source_id: karrot-live, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-11" }
+    "tokens.components.marketing-secondary.bg": *mktSecondary
+    "tokens.components.marketing-secondary.fg": *mktSecondary
+    "tokens.components.marketing-secondary.border": *mktSecondary
+    "tokens.components.marketing-secondary.radius": *mktSecondary
+    "tokens.components.marketing-secondary.padding": *mktSecondary
+    "tokens.components.marketing-secondary.height": *mktSecondary
+    "tokens.components.marketing-secondary.font": *mktSecondary
+    "tokens.components.marketing-secondary.hover": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "header button About us, ::before at :hover", captured: "2026-09-29" }
+    "tokens.components.marketing-secondary.pressed": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "header button About us, ::before at :active", captured: "2026-09-29" }
+    "tokens.components.marketing-secondary.focus": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "header button About us at :focus-visible, Tab stop 4", captured: "2026-09-29" }
+    "tokens.components.marketing-secondary.states": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "header button About us", captured: "2026-09-29" }
+    "tokens.components.marketing-secondary.use": *mktSecondary
+    "tokens.components.marketing-ghost.type": &mktGhost { surface_id: marketing-home, source_id: karrot-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-11" }
+    "tokens.components.marketing-ghost.bg": *mktGhost
+    "tokens.components.marketing-ghost.fg": *mktGhost
+    "tokens.components.marketing-ghost.radius": *mktGhost
+    "tokens.components.marketing-ghost.padding": *mktGhost
+    "tokens.components.marketing-ghost.height": *mktGhost
+    "tokens.components.marketing-ghost.font": *mktGhost
+    "tokens.components.marketing-ghost.states": *mktGhost
+    "tokens.components.marketing-ghost.use": *mktGhost
+    "tokens.components.flag-menu-button.type": &flagButton { surface_id: marketing-home, source_id: karrot-live, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-11" }
+    "tokens.components.flag-menu-button.bg": *flagButton
+    "tokens.components.flag-menu-button.fg": *flagButton
+    "tokens.components.flag-menu-button.border": *flagButton
+    "tokens.components.flag-menu-button.radius": *flagButton
+    "tokens.components.flag-menu-button.size": *flagButton
+    "tokens.components.flag-menu-button.font": *flagButton
+    "tokens.components.flag-menu-button.hover": { surface_id: marketing-home, source_id: karrot-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"4\"]::state-hover", captured: "2026-07-11" }
+    "tokens.components.flag-menu-button.pressed": { surface_id: marketing-home, source_id: karrot-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"4\"]::state-pressed", captured: "2026-07-11" }
+    "tokens.components.flag-menu-button.states": *flagButton
+    "tokens.components.flag-menu-button.use": *flagButton
+    "tokens.components.flag-menu.type": &flagMenu { surface_id: marketing-home, source_id: karrot-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-0-0\"]", captured: "2026-07-11" }
+    "tokens.components.flag-menu.bg": *flagMenu
+    "tokens.components.flag-menu.fg": *flagMenu
+    "tokens.components.flag-menu.radius": *flagMenu
+    "tokens.components.flag-menu.padding": *flagMenu
+    "tokens.components.flag-menu.size": *flagMenu
+    "tokens.components.flag-menu.font": *flagMenu
+    "tokens.components.flag-menu.shadow": *flagMenu
+    "tokens.components.flag-menu.states": *flagMenu
+    "tokens.components.flag-menu.use": *flagMenu
+    "tokens.components.flag-menu-item.type": &flagItem { surface_id: marketing-home, source_id: karrot-live, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-0-3\"]", captured: "2026-07-11" }
+    "tokens.components.flag-menu-item.bg": *flagItem
+    "tokens.components.flag-menu-item.fg": *flagItem
+    "tokens.components.flag-menu-item.radius": *flagItem
+    "tokens.components.flag-menu-item.size": *flagItem
+    "tokens.components.flag-menu-item.font": *flagItem
+    "tokens.components.flag-menu-item.states": *flagItem
+    "tokens.components.flag-menu-item.use": *flagItem
+    "tokens.components.location-chip.type": &locChip { surface_id: marketing-home, source_id: karrot-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-11" }
+    "tokens.components.location-chip.bg": *locChip
+    "tokens.components.location-chip.fg": *locChip
+    "tokens.components.location-chip.radius": *locChip
+    "tokens.components.location-chip.padding": *locChip
+    "tokens.components.location-chip.height": *locChip
+    "tokens.components.location-chip.font": *locChip
+    "tokens.components.location-chip.hover": { surface_id: marketing-home, source_id: karrot-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"5\"]::state-hover", captured: "2026-07-11" }
+    "tokens.components.location-chip.pressed": { surface_id: marketing-home, source_id: karrot-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"5\"]::state-pressed", captured: "2026-07-11" }
+    "tokens.components.location-chip.states": *locChip
+    "tokens.components.location-chip.use": *locChip
+    "tokens.components.search-field.type": &searchField { surface_id: marketing-home, source_id: karrot-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-11" }
+    "tokens.components.search-field.bg": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "search wrapper div.iusiv71 at rest", captured: "2026-09-29" }
+    "tokens.components.search-field.fg": *searchField
+    "tokens.components.search-field.radius": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "search wrapper div.iusiv71 at rest", captured: "2026-09-29" }
+    "tokens.components.search-field.height": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "search wrapper div.iusiv71 at rest", captured: "2026-09-29" }
+    "tokens.components.search-field.font": *searchField
+    "tokens.components.search-field.shadow": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "search wrapper div.iusiv71 at rest", captured: "2026-09-29" }
+    "tokens.components.search-field.hover": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "search input :hover, wrapper read", captured: "2026-09-29" }
+    "tokens.components.search-field.pressed": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "search input :active, wrapper read", captured: "2026-09-29" }
+    "tokens.components.search-field.focus": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "search input :focus-visible, wrapper read, Tab stop 7", captured: "2026-09-29" }
+    "tokens.components.search-field.states": { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "search input and wrapper", captured: "2026-09-29" }
+    "tokens.components.search-field.use": *searchField
+    "tokens.components.listing-card.type": &listingCard { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "main feed listing card link, first of 60", captured: "2026-09-29" }
+    "tokens.components.listing-card.bg": *listingCard
+    "tokens.components.listing-card.fg": *listingCard
+    "tokens.components.listing-card.radius": *listingCard
+    "tokens.components.listing-card.size": *listingCard
+    "tokens.components.listing-card.font": *listingCard
+    "tokens.components.listing-card.hover": *listingCard
+    "tokens.components.listing-card.pressed": *listingCard
+    "tokens.components.listing-card.states": *listingCard
+    "tokens.components.listing-card.use": *listingCard
+    "tokens.components.footer-link.type": &footerLink { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "footer link About Karrot", captured: "2026-09-29" }
+    "tokens.components.footer-link.bg": *footerLink
+    "tokens.components.footer-link.fg": *footerLink
+    "tokens.components.footer-link.height": *footerLink
+    "tokens.components.footer-link.font": *footerLink
+    "tokens.components.footer-link.hover": *footerLink
+    "tokens.components.footer-link.pressed": *footerLink
+    "tokens.components.footer-link.states": *footerLink
+    "tokens.components.footer-link.use": *footerLink
+    "tokens.components.category-link.type": &categoryLink { surface_id: marketing-home, source_id: karrot-probe, method: live-state-probe, selector: "main category link Furniture", captured: "2026-09-29" }
+    "tokens.components.category-link.bg": *categoryLink
+    "tokens.components.category-link.fg": *categoryLink
+    "tokens.components.category-link.height": *categoryLink
+    "tokens.components.category-link.font": *categoryLink
+    "tokens.components.category-link.hover": *categoryLink
+    "tokens.components.category-link.pressed": *categoryLink
+    "tokens.components.category-link.states": *categoryLink
+    "tokens.components.category-link.use": *categoryLink
+    "tokens.components.search-keyword-link.type": &keywordLink { surface_id: marketing-home, source_id: karrot-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-11" }
+    "tokens.components.search-keyword-link.bg": *keywordLink
+    "tokens.components.search-keyword-link.fg": *keywordLink
+    "tokens.components.search-keyword-link.height": *keywordLink
+    "tokens.components.search-keyword-link.font": *keywordLink
+    "tokens.components.search-keyword-link.states": *keywordLink
+    "tokens.components.search-keyword-link.use": *keywordLink
   conflicts: []
 tokens:
   source: reconciled
@@ -133,11 +246,22 @@ tokens:
   rounded: { sm: 6, md: 8, full: 9999 }
   components_harvested: true
   components:
-    marketing-primary: { type: button, bg: "#ff6600", fg: "#ffffff", radius: "9999px", height: "36px", padding: "4px 12px", font: "14px / 500", states: "default on two public surfaces; hover not captured", use: "Karrot marketing-site CTA" }
+    marketing-primary: { type: button, bg: "#ff6600", fg: "#ffffff", radius: "9999px", height: "36px", padding: "4px 12px", font: "14px / 500", hover: "overlay #ffffff at 0.08 via ::before; bg stays #ff6600", pressed: "overlay #ffffff at 0.12 via ::before; bg stays #ff6600", focus: "ring 0 0 0 2px #ffffff, 0 0 0 4px #e14d00", states: "default on two public surfaces (2026-07-11); hover, pressed and keyboard focus-visible measured 2026-09-29 with :hover, :active and :focus-visible matched; the fill never changes, so a background-only reading sees no change (corrected 2026-09-29: earlier text said hover not captured)", use: "Karrot marketing-site CTA" }
     box-button: { type: button, bg: "#ff6f0f", fg: "#ffffff", hover: "#ff9e66", pressed: "#ff9e66", disabled: "bg #dcdee3 fg #adb1ba", states: "primary, primary-low, secondary, danger, disabled, hover, keyboard. Pressed and hover share one background by design — SEED declares both as #ff9e66. Size and type scale are not promoted: the official preview renders one size and the reference documents five", use: "SEED action with five documented sizes" }
     text-field: { type: input, states: "outlined, underlined, focused, disabled, readonly, required, invalid", use: "SEED single-line form field" }
     tabs: { type: tab, states: "selected, disabled, focus", use: "SEED category switching with indicator" }
     snackbar: { type: toast, states: "default, success, warning, action focus", use: "SEED transient action feedback" }
+    marketing-secondary: { type: button, bg: "transparent", fg: "#1a1c20", border: "1px solid rgba(26, 28, 32, 0.118)", radius: "9999px", padding: "3px 11px", height: "36px", font: "14px / 500 / 20px", hover: "overlay #eeeff1 at 0.24 via ::before", pressed: "overlay #eeeff1 at 0.36 via ::before", focus: "ring 0 0 0 2px #ffffff, 0 0 0 4px #e14d00", states: "rest on both public surfaces in the 2026-07-11 capture and unchanged on 2026-09-29; hover, pressed and keyboard focus-visible measured 2026-09-29 with :hover, :active and :focus-visible matched; the fill stays transparent while a #eeeff1 ::before overlay carries hover and pressed; focus is a box-shadow ring with outline none", use: "karrotmarket.com header outlined pill (About us)" }
+    marketing-ghost: { type: button, bg: "transparent", fg: "#1a1c20", radius: "9999px", padding: "4px 12px", height: "36px", font: "14px / 500 / 20px", states: "rest on both public surfaces in the 2026-07-11 capture; no hover, pressed or focus sample exists, so none is declared", use: "karrotmarket.com header ghost pill (Sign In)" }
+    flag-menu-button: { type: button, bg: "transparent", fg: "#1a1c20", border: "1px solid rgba(26, 28, 32, 0.118)", radius: "9999px", size: "40px x 40px", font: "14px / 400 / 14px", hover: "bg #f3f4f5", pressed: "bg #f3f4f5", states: "rest, hover and pressed sampled on the home surface (2026-07-11): hover and pressed both fill #f3f4f5, the value the location chip also records; the about-page capture caught this control already at #f3f4f5, so rest is taken from home; opens a two-item menu (dialog-open); focus not sampled, and the control was not re-probed on 2026-09-29", use: "karrotmarket.com header 40px circle showing a flag emoji; opens the flag menu" }
+    flag-menu: { type: card, bg: "#ffffff", fg: "#1a1c20", radius: "8px", padding: "4px", size: "219px x 80px", font: "14px / 400 / 20px", shadow: "rgba(26, 28, 32, 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 5px 10px 0px, rgba(0, 0, 0, 0.07) 0px 15px 25px 0px", states: "dialog-open observed on both public surfaces (2026-07-11)", use: "Popover menu opened by the flag button" }
+    flag-menu-item: { type: listItem, bg: "transparent", fg: "#1a1c20", radius: "6px", size: "211px x 36px", font: "14px / 400 / 20px", states: "rest observed inside the open menu (2026-07-11); no pointer-state sample", use: "Menu item (role=menuitem) inside the flag menu" }
+    location-chip: { type: button, bg: "transparent", fg: "#1a1c20", radius: "9999px", padding: "4px 8px", height: "25px", font: "14px / 500 / 16.8px", hover: "bg #f3f4f5", pressed: "bg #f3f4f5", states: "rest, hover and pressed sampled (2026-07-11): hover and pressed both fill #f3f4f5, matching the flag button; keyboard focus not recorded", use: "Location chip inside the search pill (area and radius, Manhattan · 30mi on 2026-09-29)" }
+    search-field: { type: input, bg: "#ffffff", fg: "#2a3038", radius: "9999px", height: "60px", font: "18px / 400 / 20px", shadow: "rgba(0, 0, 0, 0.05) 0px 5px 10px 0px, rgba(0, 0, 0, 0.07) 0px 15px 25px 0px, #1a1c20 0px 0px 0px 2px", hover: "ring 0 0 0 2px #1a1c20 (unchanged)", pressed: "ring 0 0 0 2px #e14d00 (mouse-down focuses the field)", focus: "ring 0 0 0 2px #e14d00", states: "rest, hover, pressed and keyboard focus-visible measured 2026-09-29 with :hover, :active and :focus-visible matched; bg, radius, height and shadow belong to the 60px wrapper that carries the ring, fg and font to the input, whose values the 2026-07-11 capture records identically; hover changes nothing; pressed is the mouse-focus ring, not a separate :active style; the input itself keeps outline none", use: "karrotmarket.com search pill: a combobox input inside a ring-bearing wrapper" }
+    listing-card: { type: card, bg: "transparent", fg: "#2a3038", radius: "0px", size: "187px x 255px", font: "16px / 700", hover: "image scale(1.05)", pressed: "image scale(1.05)", states: "hover and pressed measured 2026-09-29 with :hover and :active matched: the inner image scales to 1.05 and nothing else moves or recolours; keyboard focus shows only the browser default ring (outline auto), so no focus value is declared; fg and font are the title label, not the anchor (#2a3038 14px / 400); the 2026-07-11 capture holds 60 list items of the same 187 x 255 size", use: "karrotmarket.com listing card link in the home feed (web only)" }
+    footer-link: { type: button, bg: "transparent", fg: "#555d6d", height: "24px", font: "16px / 400", hover: "underline #555d6d", pressed: "underline #555d6d", states: "hover and pressed measured 2026-09-29 with :hover and :active matched (the Accept-only consent panel covering the link was hidden for the pointer pass): an underline appears; keyboard focus shows only the browser default ring (outline auto), so no focus value is declared; fg and font are the visible label, not the anchor (#2a3038 14px / 400)", use: "karrotmarket.com footer text link (About Karrot)" }
+    category-link: { type: button, bg: "transparent", fg: "#1a1c20", height: "17px", font: "16px / 500", hover: "fg #1a1c20 (unchanged)", pressed: "fg #1a1c20 (unchanged)", states: "hover and pressed measured 2026-09-29 with :hover and :active matched: no visible change; keyboard focus shows only the browser default ring (outline auto), so no focus value is declared; fg and font are the visible label, not the anchor (#2a3038 14px / 400)", use: "karrotmarket.com category link in the home feed (Furniture and siblings)" }
+    search-keyword-link: { type: button, bg: "transparent", fg: "#1a1c20", height: "18px", font: "16px / 400 / 24px", states: "rest identical across the captured keyword links (2026-07-11, captures 8 to 39 checked); no pointer-state or focus sample, so none is declared", use: "Keyword text links listed under the search pill (ikea and siblings)" }
 ---
 
 # Design System Inspiration of Karrot (당근)
@@ -146,7 +270,7 @@ tokens:
 
 Karrot is a hyperlocal platform built around the idea that technology should make neighborhood relationships feel more human, not more anonymous. Its design keeps community content dominant through warm orange accents, calm neutrals, direct language, and light interface chrome. Two related but non-identical public surfaces express that identity: the current SEED v2 product system defines semantic Primary as carrot-500 (`#ff6f0f`), while the public Karrot marketing site renders its CTA orange as `#ff6600`. Keeping those values separate preserves both product-system truth and the recognizable warmth of the brand.
 
-SEED is the canonical source for product-system colors, type roles, and component behavior. The public marketing pages are evidence for the web font stack and marketing CTA geometry only. Both use warm neutrals, direct hierarchy, and restrained ornament so neighborhood content remains dominant.
+SEED is the canonical source for product-system colors, type roles, and component behavior. The public karrotmarket.com pages are evidence for the web font stack and the karrotmarket.com controls in §4 only; that host served an English-language surface in both captures (a US feed, Manhattan listings, on 2026-09-29), not the Korean daangn.com service. Both use warm neutrals, direct hierarchy, and restrained ornament so neighborhood content remains dominant.
 
 **Key Characteristics:**
 - SEED semantic Primary: `#ff6f0f`; current marketing CTA: `#ff6600`
@@ -180,6 +304,7 @@ SEED is the canonical source for product-system colors, type roles, and componen
 
 ### Marketing web exception
 - **Marketing CTA** (`#ff6600`): computed background on both inspected Karrot public pages. Do not label it carrot-500 or substitute it for SEED Primary.
+- **Marketing focus ring** (`#e14d00`): outer ring of the keyboard focus on the header pills (`0 0 0 2px #ffffff, 0 0 0 4px #e14d00`) and the 2px focus ring of the search pill, measured 2026-09-29. It is neither SEED Primary nor the marketing CTA orange.
 
 ## 3. Typography Rules
 
@@ -216,6 +341,8 @@ SEED is the canonical source for product-system colors, type roles, and componen
 
 ### Marketing Web
 
+These controls are measured on `https://www.karrotmarket.com/`, which served an English-language surface in both captures (a US feed, Manhattan listings, on 2026-09-29). Rest values of the header pills, flag menu, location chip, search input and keyword links come from the 2026-07-11 capture. The search wrapper, the listing card and the text links, and every hover, pressed and keyboard-focus value dated 2026-09-29, come from a targeted live probe with `:hover`, `:active` and `:focus-visible` confirmed. Nothing here is measured on the Korean daangn.com service.
+
 **Primary CTA**
 - Background: `#ff6600`
 - Text: `#ffffff`
@@ -223,8 +350,54 @@ SEED is the canonical source for product-system colors, type roles, and componen
 - Padding: 4px 12px
 - Height: 36px
 - Font: 14px / 500 / System
-- States: default observed on two public surfaces; hover not captured
+- Hover: a white `::before` overlay at opacity 0.08; the background stays `#ff6600`
+- Pressed: the same overlay at opacity 0.12
+- Focus (keyboard): box-shadow ring `0 0 0 2px #ffffff, 0 0 0 4px #e14d00`, outline none
+- States: default observed on two public surfaces (2026-07-11); hover, pressed and keyboard focus measured 2026-09-29. The 2026-07-11 capture holds no state frame for this button, and its style dump records no pseudo-elements, so it could not have seen the overlay; the background colour itself never changes.
 - Use: Header-level marketing action
+
+**Outlined Pill (About us)**
+- Background: transparent
+- Text: `#1a1c20`
+- Border: 1px solid `rgba(26, 28, 32, 0.118)`
+- Radius: 9999px
+- Padding: 3px 11px
+- Height: 36px
+- Font: 14px / 500 / 20px
+- Hover / Pressed: `#eeeff1` `::before` overlay at opacity 0.24 / 0.36 (2026-09-29)
+- Focus (keyboard): the same `#ffffff` + `#e14d00` ring as the primary CTA (2026-09-29)
+
+**Ghost Pill (Sign In)**
+- Background: transparent
+- Text: `#1a1c20`
+- Radius: 9999px
+- Padding: 4px 12px
+- Height: 36px
+- Font: 14px / 500 / 20px
+- States: rest only; no state was sampled
+
+**Flag Menu**
+- Button: 40px circle, transparent, 1px solid `rgba(26, 28, 32, 0.118)`, `#1a1c20`; hover and pressed fill `#f3f4f5`; opens the menu
+- Menu: `#ffffff`, 8px radius, 4px padding, 219 × 80px, shadow `rgba(26, 28, 32, 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 5px 10px 0px, rgba(0, 0, 0, 0.07) 0px 15px 25px 0px`
+- Menu item: 211 × 36px, 6px radius, `#1a1c20` 14px / 400 / 20px
+- Focus was not recorded for any of the three
+
+**Search Pill**
+- Wrapper: `#ffffff`, 9999px radius, 60px tall, shadow `rgba(0, 0, 0, 0.05) 0px 5px 10px 0px, rgba(0, 0, 0, 0.07) 0px 15px 25px 0px` plus a 2px `#1a1c20` ring
+- Input: `#2a3038`, 18px / 400 / 20px
+- Hover: no change. Pressed (mouse-down focuses the field) and keyboard focus: the wrapper ring turns `#e14d00`, still 2px (2026-09-29). The input keeps `outline: none`, so the indicator exists only on the wrapper.
+- Location chip inside the pill: transparent, `#1a1c20` 14px / 500 / 16.8px, 25px tall, padding 4px 8px, 9999px radius; hover and pressed fill `#f3f4f5`
+- Keyword links under the pill: `#1a1c20` 16px / 400 / 24px text links, rest only
+
+**Listing Card (home feed)**
+- Transparent 187 × 255px link; title label `#2a3038` 16px / 700
+- Hover and pressed: the image scales to 1.05; nothing recolours (2026-09-29)
+- Focus: the browser default ring only, which is not a Karrot style and is not tokenized
+
+**Text Links**
+- Footer link (About Karrot): label `#555d6d` 16px / 400; hover and pressed underline; focus shows the browser default ring only
+- Category link (Furniture): label `#1a1c20` 16px / 500; hover and pressed change nothing; focus shows the browser default ring only
+- Both anchors compute `#2a3038` 14px / 400; the visible label is the child element, and its style is the one given here
 
 ### SEED Product Components
 
@@ -278,7 +451,7 @@ Sliders, Text Fields — and each variant above is its own documented component.
 
 ## 6. Depth & Elevation
 
-The inspected public controls were flat and reported `box-shadow: none`. No universal shadow tokens are published in the canonical frontmatter until current component-style sources are captured claim by claim.
+The header controls on karrotmarket.com are flat at rest (`box-shadow: none`). Two measured exceptions are component-local: the search pill wrapper (two soft shadows plus a 2px ring, 2026-09-29) and the flag menu popover (an inset hairline plus two soft shadows, 2026-07-11). Keyboard focus on the header pills is also drawn with box-shadow. No universal shadow tokens are published in the canonical frontmatter until current component-style sources are captured claim by claim.
 
 ## 7. Do's and Don'ts
 
@@ -292,7 +465,8 @@ The inspected public controls were flat and reported `box-shadow: none`. No univ
 - Don't relabel marketing `#ff6600` as SEED carrot-500.
 - Don't treat a declared Pretendard face as proof of visible use.
 - Don't reuse the retired 26px maximum; current SEED heading roles reach 48px.
-- Don't invent marketplace cards, sheets, or native-app geometry from a marketing snapshot.
+- Don't turn the karrotmarket.com listing card into native-app cards or sheets; it is a measured web-feed component, and native-app geometry remains unmeasured.
+- Don't read the browser's default focus ring on the listing card, footer link and category link as a Karrot focus style; those three controls have no authored focus style.
 
 ## 8. Responsive Behavior
 
@@ -399,6 +573,18 @@ These are official product and stakeholder contexts, not invented demographic pe
 | **Skeleton** | `gray-200` blocks at exact final dimensions matching the listing-card layout (1:1 thumbnail, two text lines, one metadata line). Shimmer 1.2s with 8% white highlight. Never over the neighborhood-name metadata — that slot stays blank until resolved, so the UI never implies a location that hasn't been confirmed. |
 | **Disabled** | Button background drops to `gray-200`, text to `gray-500`. No color inversion. Geometry stays identical so re-enable is frame-stable. |
 
+### Measured interaction states — karrotmarket.com
+
+| Control | Hover | Pressed | Keyboard focus | Evidence |
+|---|---|---|---|---|
+| Sell (primary pill) | `#ffffff` overlay 0.08 | overlay 0.12 | `#ffffff` 2px + `#e14d00` ring | 2026-09-29 probe |
+| About us (outlined pill) | `#eeeff1` overlay 0.24 | overlay 0.36 | same ring | 2026-09-29 probe |
+| Search pill | no change | wrapper ring `#e14d00` (mouse focus) | wrapper ring `#e14d00` | 2026-09-29 probe |
+| Listing card | image scale 1.05 | image scale 1.05 | browser default only | 2026-09-29 probe |
+| Footer link | underline | underline | browser default only | 2026-09-29 probe |
+| Category link | no change | no change | browser default only | 2026-09-29 probe |
+| Flag button, location chip | fill `#f3f4f5` | fill `#f3f4f5` | not recorded | 2026-07-11 capture |
+
 ## 15. Motion & Easing
 
 **Durations** (named, not raw milliseconds):
@@ -410,6 +596,8 @@ These are official product and stakeholder contexts, not invented demographic pe
 | `motion-standard` | 250ms | The default — card taps, tab switches, bottom-sheet reveals |
 | `motion-slow` | 350ms | Emphasized transitions — full-sheet presentations, success screens |
 | `motion-page` | 300ms | Native-style push/pop between routes |
+
+Measured on the web (2026-09-29): the karrotmarket.com header pills transition `background-color, box-shadow, border-color, color, transform` over 0.2s with `cubic-bezier(0.4, 0, 0.2, 1)`.
 
 **Easings:**
 
@@ -423,7 +611,7 @@ These are official product and stakeholder contexts, not invented demographic pe
 
 **Signature motions.**
 
-1. **Listing-card tap.** Card compresses to 98% scale on press (`motion-fast / ease-standard`), releases on tap-up before navigation begins. Feedback is immediate; the route transition follows on `motion-page / ease-enter`.
+1. **Listing-card tap.** Card compresses to 98% scale on press (`motion-fast / ease-standard`), releases on tap-up before navigation begins. Feedback is immediate; the route transition follows on `motion-page / ease-enter`. On the karrotmarket.com web card no press compression was observed: pressed only keeps the hover image zoom (scale 1.05, 2026-09-29).
 2. **Bottom-sheet presentation.** Sheets rise from `y+40px` with `motion-standard / ease-enter` and a synchronized backdrop fade from `rgba(0,0,0,0)` to `rgba(0,0,0,0.5)` (`bg-overlay-muted`). Dismissal uses `motion-fast / ease-exit` — leaving is lighter than entering.
 3. **Neighborhood switch.** When the user changes their 동 (neighborhood), the listings feed cross-fades over `motion-slow` rather than sliding — sliding would imply geographic direction, which is misleading (Korean neighborhoods aren't ordered on an axis).
 4. **Reduce motion.** Under `prefers-reduced-motion: reduce`, all `motion-*` tokens collapse to `motion-instant`. No exceptions. Cross-fades replace slides. Pull-to-refresh indicator simplifies to a static spinner. The app stays fully usable; just less kinetic.

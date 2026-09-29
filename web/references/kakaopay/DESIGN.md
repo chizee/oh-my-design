@@ -67,20 +67,20 @@ verification_v2:
     "tokens.rounded.action": *corporate
     "tokens.rounded.pill": *corporate
     "tokens.shadow.none": *corporate
-    "tokens.components.corporate-menu.pressed": *corporate
+    "tokens.components.corporate-menu.pressed": { surface_id: corporate-service, source_id: corporate-service-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"1\"]::state-pressed", captured: "2026-07-13" }
     "tokens.components.corporate-menu.type": *corporate
     "tokens.components.corporate-menu.bg": *corporate
     "tokens.components.corporate-menu.fg": *corporate
     "tokens.components.corporate-menu.radius": *corporate
     "tokens.components.corporate-menu.padding": *corporate
     "tokens.components.corporate-menu.font": *corporate
-    "tokens.components.corporate-menu.hover": *corporate
+    "tokens.components.corporate-menu.hover": { surface_id: corporate-service, source_id: corporate-service-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"1\"]::state-hover", captured: "2026-07-13" }
     "tokens.components.corporate-menu.states": *corporate
     "tokens.components.corporate-menu.use": *corporate
-    "tokens.components.corporate-search.hover": *corporate
-    "tokens.components.corporate-search.pressed": *corporate
+    "tokens.components.corporate-search.hover": { surface_id: corporate-service, source_id: corporate-service-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"7\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.corporate-search.pressed": { surface_id: corporate-service, source_id: corporate-service-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"7\"]::state-pressed", captured: "2026-07-13" }
     "tokens.components.corporate-search.type": *corporate
-    "tokens.components.corporate-search.bg": *corporate
+    "tokens.components.corporate-search.bg": { surface_id: corporate-service, source_id: corporate-service-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
     "tokens.components.corporate-search.fg": *corporate
     "tokens.components.corporate-search.radius": *corporate
     "tokens.components.corporate-search.padding": *corporate
@@ -122,8 +122,8 @@ tokens:
   shadow: { none: "none" }
   components_harvested: true
   components:
-    corporate-menu: { type: button, bg: "#ffffff", fg: "#000000", radius: 999, padding: "4px 16px 6px", font: "17px/400 KakaoBig", hover: "#f3f3f3", states: "hover and pressed labels observed on .item_menu; the artifact contains no interaction snapshots.", use: "surface-3::[data-omd-capture=\"1\"] on the Kakao corporate service page, not a KakaoPay payment-app control." , pressed: "#f3f3f3"}
-    corporate-search: { type: button, bg: "#eeeeee", fg: "#333333", radius: 18, padding: "0px", font: "14px/400 KakaoSmall", states: "hover and pressed labels observed on .btn_search; the artifact contains no interaction snapshots.", use: "surface-3::[data-omd-capture=\"7\"] on the Kakao corporate service page." , hover: "#eeeeee", pressed: "#eeeeee"}
+    corporate-menu: { type: button, bg: "#ffffff", fg: "#000000", radius: 999, padding: "4px 16px 6px", font: "17px/400 KakaoBig", hover: "#f3f3f3", states: "rest, hover, and pressed sampled on five .item_menu controls that all record the same values; hover and pressed set the fill to #f3f3f3 (corrected 2026-09-29: these are computed state frames, not labels without values); no focus frame was sampled", use: "surface-3::[data-omd-capture=\"1\"] on the Kakao corporate service page, not a KakaoPay payment-app control." , pressed: "#f3f3f3"}
+    corporate-search: { type: button, bg: "transparent", fg: "#333333", radius: 18, padding: "0px", font: "14px/400 KakaoSmall", states: "rest, hover, and pressed sampled; the rest fill is transparent and the hover and pressed frames set it to #eeeeee, as on the sibling .btn_language and .btn_mode buttons (corrected 2026-09-29: the July token recorded the hover fill as the rest background); no focus frame was sampled", use: "surface-3::[data-omd-capture=\"7\"] on the Kakao corporate service page." , hover: "#eeeeee", pressed: "#eeeeee"}
     corporate-card: { type: card, bg: "#f3f3f3", fg: "#333333", radius: 16, padding: "0px", font: "14px/400 KakaoSmall", use: "surface-3::div.item_card_new.item_normal_card on the Kakao corporate service page." }
     corporate-tag: { type: badge, bg: "#eeeeee", fg: "#000000", radius: 34, padding: "0px 15px", font: "13px/400 KakaoBig", use: "surface-3::[data-omd-capture=\"26\"].link_tag on the Kakao corporate service page." }
 ---
@@ -159,8 +159,8 @@ KakaoPay’s 2024 design article makes the visual rationale unusually explicit: 
 - **Text** (`#333333`): observed corporate-service control, card, and list text.
 - **Muted** (`#666666`) and **subtle** (`#888888`): observed secondary corporate-service text.
 - **Canvas** (`#ffffff`): observed corporate-service menu background.
-- **Surface** (`#f3f3f3`): observed corporate-service menu-hover and service-card background.
-- **Surface soft** (`#eeeeee`): observed corporate-service search and tag background.
+- **Surface** (`#f3f3f3`): observed corporate-service service-card background and the corporate menu's hover and pressed fill.
+- **Surface soft** (`#eeeeee`): observed corporate-service tag background, and the hover and pressed fill of the round search, language, and mode buttons, which are transparent at rest (corrected 2026-09-29: the July text called it the search button's background).
 
 ### Official graphic guidance
 
@@ -194,17 +194,20 @@ The official KakaoPay design article establishes contrast and a newly made graph
 - Radius: 999px
 - Padding: 4px 16px 6px
 - Font: 17px / 400 / KakaoBig
-- Hover: `#f3f3f3` background (collector label)
-- Pressed: collector label observed; no separate snapshot value captured
+- Hover: `#f3f3f3` background, measured in the hover frame
+- Pressed: `#f3f3f3` background, measured in the pressed frame; `surface-3::[data-omd-capture="2"]`, `"4"`, `"5"`, and `"6"` record the same rest and state values
+- Focus: no focus frame was sampled
 - Use: `surface-3::[data-omd-capture="1"]` (`.item_menu`) on `www.kakaocorp.com/page/service/service/KakaoPay`; this is corporate navigation chrome.
 
 **Search action — observed default**
+- Background: transparent at rest
 - Text: `#333333`
 - Radius: 18px
 - Padding: 0px
 - Font: 14px / 400 / KakaoSmall
-- Hover: `#eeeeee` background (collector label)
-- Pressed: collector label observed; no separate snapshot value captured
+- Hover: `#eeeeee` background, measured in the hover frame
+- Pressed: `#eeeeee` background, measured in the pressed frame; the sibling `.btn_language` (`"8"`) and `.btn_mode` (`"9"`) buttons record the same rest and state values
+- Focus: no focus frame was sampled
 - Use: `surface-3::[data-omd-capture="7"]` (`.btn_search`) on the same corporate service page.
 
 **Service card — observed default**
@@ -223,7 +226,7 @@ The official KakaoPay design article establishes contrast and a newly made graph
 - Font: 13px / 400 / KakaoBig
 - Use: `surface-3::[data-omd-capture="26"]` (`.link_tag`) on the corporate service page.
 
-The collector records no interaction snapshots (`interactionCount: 0`). Hover and pressed labels above are preserved as labels rather than expanded into unobserved variants. No selector-backed KakaoPay payment-app button, input, receipt, account card, transaction row, toast, sheet, error, success, or mobile navigation component was captured.
+The collector expanded no dialog, menu, or tab (`interactionCount: 0`), but it did record computed hover and pressed frames (`<selector>::state-hover|pressed`) for the five menu pills and the three round utility buttons; the hover and pressed values above come from those frames. No focus frame was sampled, so no focus value is given. (Corrected 2026-09-29: the July text treated these frames as labels without values and recorded the search button's hover fill as its rest background.) No selector-backed KakaoPay payment-app button, input, receipt, account card, transaction row, toast, sheet, error, success, or mobile navigation component was captured.
 
 ---
 **Verified:** 2026-07-13
@@ -288,7 +291,7 @@ No official persona research was reviewed in this reverify packet. The public so
 
 ## 14. States
 
-The reviewed public developer reference documents API error responses and error codes, while the supplied UI artifact records no interaction snapshots. This supports neither a visual error-state specification nor payment success/loading/empty-state components. For implementation, use the endpoint’s documented error code/message contract and obtain a product-surface capture before defining visual state tokens. [Developer reference](https://developers.kakaopay.com/docs/payment/online/reference)
+The reviewed public developer reference documents API error responses and error codes, while the supplied UI artifact expanded no dialog, menu, or tab and holds pointer-state frames only for Kakao corporate-page chrome. This supports neither a visual error-state specification nor payment success/loading/empty-state components. For implementation, use the endpoint’s documented error code/message contract and obtain a product-surface capture before defining visual state tokens. [Developer reference](https://developers.kakaopay.com/docs/payment/online/reference)
 
 ## 15. Motion & Easing
 

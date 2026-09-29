@@ -76,6 +76,50 @@ verification_v2:
     "tokens.components.product-utility-button.font": *standard
     "tokens.components.product-utility-button.states": *standard
     "tokens.components.product-utility-button.use": *standard
+    "tokens.components.home-tab-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-12" }
+    "tokens.components.floating-action-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.floating-action-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.floating-action-button.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.floating-action-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.floating-action-button.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.floating-action-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.floating-action-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.global-filter-toggle.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"34\"]", captured: "2026-07-12" }
+    "tokens.components.global-filter-toggle.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"34\"]", captured: "2026-07-12" }
+    "tokens.components.global-filter-toggle.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"34\"]", captured: "2026-07-12" }
+    "tokens.components.global-filter-toggle.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"34\"]", captured: "2026-07-12" }
+    "tokens.components.global-filter-toggle.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"34\"]", captured: "2026-07-12" }
+    "tokens.components.global-filter-toggle.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"34\"]", captured: "2026-07-12" }
+    "tokens.components.global-filter-toggle.selected": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-12" }
+    "tokens.components.global-filter-toggle.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"34\"]", captured: "2026-07-12" }
+    "tokens.components.global-filter-toggle.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"34\"]", captured: "2026-07-12" }
+    "tokens.components.outline-button.type": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-07-12" }
+    "tokens.components.outline-button.bg": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-07-12" }
+    "tokens.components.outline-button.fg": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-07-12" }
+    "tokens.components.outline-button.border": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-07-12" }
+    "tokens.components.outline-button.radius": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-07-12" }
+    "tokens.components.outline-button.padding": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-07-12" }
+    "tokens.components.outline-button.height": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-07-12" }
+    "tokens.components.outline-button.font": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-07-12" }
+    "tokens.components.outline-button.states": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-07-12" }
+    "tokens.components.outline-button.use": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-07-12" }
+    "tokens.components.search-keyword-tag.type": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-12" }
+    "tokens.components.search-keyword-tag.bg": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-12" }
+    "tokens.components.search-keyword-tag.fg": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-12" }
+    "tokens.components.search-keyword-tag.radius": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-12" }
+    "tokens.components.search-keyword-tag.padding": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-12" }
+    "tokens.components.search-keyword-tag.height": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-12" }
+    "tokens.components.search-keyword-tag.font": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-12" }
+    "tokens.components.search-keyword-tag.states": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-12" }
+    "tokens.components.search-keyword-tag.use": { surface_id: standard, source_id: standard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"40\"]", captured: "2026-07-12" }
 tokens:
   source: reconciled
   extracted: "2026-07-12"
@@ -96,10 +140,15 @@ tokens:
     flat: "none"
   components_harvested: true
   components:
-    gnb-store-link: { type: button, fg: "rgba(255,255,255,0.8)", radius: "0px", padding: "0px 8px", height: "56px", font: "16px / 500 / Pretendard", states: "default captured only; interaction coverage 0", use: "Global-navigation store link on both captured storefronts" }
-    search-input: { type: input, bg: "#ffffff", fg: "#8a8a8a", radius: "4px", padding: "8px 28px 8px 8px", height: "36px", font: "14px / 400 / Pretendard", states: "default captured only; interaction coverage 0", use: "Home storefront search input" }
+    gnb-store-link: { type: button, fg: "rgba(255,255,255,0.8)", radius: "0px", padding: "0px 8px", height: "56px", font: "16px / 500 / Pretendard", states: "default captured only; the capture holds no pointer-state frame for any element on either storefront (interaction coverage 0 counts expansions only)", use: "Global-navigation store link on both captured storefronts" }
+    search-input: { type: input, bg: "#ffffff", fg: "#8a8a8a", radius: "4px", padding: "8px 28px 8px 8px", height: "36px", font: "14px / 400 / Pretendard", states: "default captured only; the capture holds no pointer-state frame for any element on either storefront (interaction coverage 0 counts expansions only)", use: "Home storefront search input" }
     product-image-link: { type: card, radius: "0px", padding: "0px", height: "312px", font: "14px / 400 / Pretendard", use: "MUSINSA STANDARD product-image link in the listing grid" }
-    product-utility-button: { type: button, fg: "#000000", radius: "0px", padding: "4px", height: "28px", font: "14px / 400 / Pretendard", states: "default captured only; interaction coverage 0", use: "Product-card utility control on the MUSINSA STANDARD storefront" }
+    product-utility-button: { type: button, fg: "#000000", radius: "0px", padding: "4px", height: "28px", font: "14px / 400 / Pretendard", states: "default captured only; the capture holds no pointer-state frame for any element on either storefront (interaction coverage 0 counts expansions only)", use: "Product-card utility control on the MUSINSA STANDARD storefront" }
+    home-tab-link: { type: tab, bg: "transparent", fg: "#000000", radius: "0px", padding: "14px 7px", height: "48px", font: "14px / 400 / 21px Pretendard", states: "rest captured on five tabs, none marked selected; the capture holds no pointer-state frame for any element on either storefront", use: "Main-storefront category tab link (TabItem__TabLink) at home::[data-omd-capture=\"22\"] through \"26\"" }
+    floating-action-button: { type: button, bg: "rgba(255, 255, 255, 0.92)", border: "1px solid #ebebeb", radius: "100%", size: "40px x 40px", states: "rest captured; the capture holds no pointer-state frame for any element on either storefront", use: "Main-storefront white floating action button (_fab__button--white) at home::[data-omd-capture=\"32\"]; \"36\" records the same values. It carries an icon, not text, so no label colour is claimed" }
+    global-filter-toggle: { type: toggle, bg: "transparent", fg: "#000000", radius: "100%", size: "40px x 40px", font: "12px / 500 / 18px Pretendard", selected: "12px / 600, class _fab-global-filter__button--active", states: "inactive rest and one active variant captured as static markup; the active option's own fill is transparent and the fill behind it was not sampled, so neither the active fill nor its text colour is claimed; the capture holds no pointer-state frame for any element on either storefront", use: "Main-storefront floating global filter option at home::[data-omd-capture=\"34\"] and \"35\"; active sample \"33\"" }
+    outline-button: { type: button, bg: "#ffffff", fg: "#000000", border: "1px solid #e0e0e0", radius: "4px", padding: "0px 11px", height: "32px", font: "14px / 400 / 21px Pretendard", states: "rest captured on three controls; the capture holds no pointer-state frame for any element on either storefront", use: "MUSINSA STANDARD outline button at surface-2::[data-omd-capture=\"36\"]; \"37\" (an anchor) and \"38\" record the same values" }
+    search-keyword-tag: { type: badge, bg: "transparent", fg: "#000000", radius: "0px", padding: "0px", height: "18px", font: "14px / 400 / 18px Pretendard", states: "rest captured on 26 tags; the capture holds no pointer-state frame for any element on either storefront", use: "MUSINSA STANDARD search keyword tag (UISearchTags__Tag) at surface-2::[data-omd-capture=\"40\"]; all 26 tags record the same values, with no fill, border, or padding" }
 ---
 
 # Design System Inspiration of Musinsa (무신사)
@@ -131,7 +180,7 @@ The two supplied Tier 1 surfaces are the main Musinsa recommendation storefront 
 - **Primary / Foreground** (`#000000`): repeated visible text and product utility-control color on both Tier 1 storefronts.
 - **Canvas** (`#ffffff`): current search-input and page-surface color.
 - **Muted text** (`#666666`): footer and supporting copy on the captured main storefront.
-- **Line** (`#ebebeb`): repeatedly computed border color across both captured surfaces.
+- **Line** (`#ebebeb`): repeatedly computed border color across both captured surfaces. The MUSINSA STANDARD outline buttons carry a separate 1px `#e0e0e0` border; it is a component value, not a palette role.
 
 ### Boundary
 
@@ -208,7 +257,60 @@ No sale, error, success, selected-filter, promotional, or dark-surface color is 
 - Use: Product-card utility control on the brand storefront.
 - Provenance: `standard::[data-omd-capture="67"]`, `button`, class includes `GoodsItem-BGx5c3Fz__Br`.
 
-No primary checkout button, filter-selected chip, sale badge, modal, toast, input focus/error, or hover/pressed state is included because the raw collector did not observe it. The prior generic component inventory is not retained as a current component contract.
+**Main-storefront Category Tab Link**
+- Background: transparent
+- Text: `#000000`
+- Radius: 0px
+- Padding: 14px 7px
+- Height: 48px
+- Font: 14px / 400 / 21px Pretendard
+- States: Rest captured on five tabs, none marked selected; the bundle holds no pointer-state frame for any element on either storefront.
+- Use: Category tab row on the main recommendation storefront.
+- Provenance: `home::[data-omd-capture="22"]` through `"26"`, `a`, class begins `TabItem__TabLink`.
+
+**Main-storefront Floating Action Button**
+- Background: `rgba(255, 255, 255, 0.92)`
+- Border: 1px solid `#ebebeb`
+- Radius: 100%
+- Size: 40px × 40px
+- States: Rest captured; no pointer-state frame exists.
+- Use: White floating action button. It carries an icon, not text, so no label colour is claimed.
+- Provenance: `home::[data-omd-capture="32"]` (`a`) and `"36"` (`button`), class includes `_fab__button--white`.
+
+**Main-storefront Global Filter Option**
+- Background: transparent
+- Text: `#000000`
+- Radius: 100%
+- Size: 40px × 40px
+- Font: 12px / 500 / 18px Pretendard
+- Active variant: 12px / 600, class `_fab-global-filter__button--active`. The option's own fill stays transparent and the fill behind it was not sampled, so neither the active fill nor its text colour is claimed.
+- States: Inactive rest and one active variant captured as static markup; no pointer-state frame exists.
+- Provenance: `home::[data-omd-capture="34"]` and `"35"` (inactive), `"33"` (active), `button`, class begins `_fab-global-filter__button`.
+
+**MUSINSA STANDARD Outline Button**
+- Background: `#ffffff`
+- Text: `#000000`
+- Border: 1px solid `#e0e0e0`
+- Radius: 4px
+- Padding: 0px 11px
+- Height: 32px
+- Font: 14px / 400 / 21px Pretendard
+- States: Rest captured on three controls; no pointer-state frame exists.
+- Use: Outline button on the brand storefront.
+- Provenance: `surface-2::[data-omd-capture="36"]` (`button`), `"37"` (`a`), and `"38"` (`button`), 197px × 32px, classes include `bg-white text-black border-gray-300`. The July notes list the same element as `standard::[data-omd-capture="36"]`.
+
+**MUSINSA STANDARD Search Keyword Tag**
+- Background: transparent
+- Text: `#000000`
+- Radius: 0px
+- Padding: 0px
+- Height: 18px
+- Font: 14px / 400 / 18px Pretendard
+- States: Rest captured on 26 tags; no pointer-state frame exists.
+- Use: Text-only keyword tag below the brand-storefront search box, with no fill, border, or padding.
+- Provenance: `surface-2::[data-omd-capture="40"]` and 25 siblings, `a`, class begins `UISearchTags__Tag`.
+
+No primary checkout button, product-filter chip, sale badge, modal, toast, input focus/error, or hover/pressed state is included. The bundle holds no pointer-state frame (`<selector>::state-hover|pressed|focus`) for any element on either storefront (`observedStates: 0`), and its zero interaction count separately means that no dialog, menu, or tab was expanded. The prior generic component inventory is not retained as a current component contract.
 
 ---
 **Verified:** 2026-07-13
@@ -266,7 +368,7 @@ No individual personas are promoted. The official material discusses customers, 
 
 ## 14. States
 
-No empty, loading, error, success, skeleton, disabled, focus, or pressed state was captured in the supplied evidence. The collector’s interaction coverage is zero, so these states are intentionally omitted.
+No empty, loading, error, success, skeleton, disabled, hover, focus, or pressed state was captured in the supplied evidence. The reason is that the bundle holds no pointer-state frame (`<selector>::state-hover|pressed|focus`) for any element on either storefront (`observedStates: 0`); the zero interaction coverage separately means that no dialog, menu, or tab was expanded. (Refined 2026-09-29: the July text gave the interaction count as the reason.) The one non-default variant recorded is static markup: the active global-filter option (`_fab-global-filter__button--active`) at 12px / 600; its fill and text colour are not claimed.
 
 ## 15. Motion & Easing
 

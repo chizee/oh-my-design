@@ -60,6 +60,104 @@ verification_v2:
     "tokens.rounded.merchandising-panel": *home
     "tokens.rounded.search-filter-pill": *search
     "tokens.shadow.none": *home
+    "tokens.components.filter-pill.type": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.filter-pill.bg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.filter-pill.fg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.filter-pill.radius": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.filter-pill.padding": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.filter-pill.height": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.filter-pill.font": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.filter-pill.states": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.filter-pill.use": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.filter-outline.type": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.filter-outline.bg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.filter-outline.fg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.filter-outline.border": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.filter-outline.radius": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.filter-outline.padding": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.filter-outline.height": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.filter-outline.font": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.filter-outline.states": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.filter-outline.use": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.home-tab.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-tab.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-tab.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-tab.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-tab.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-tab.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-tab.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-tab.selected": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-tab.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-tab.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.type": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.bg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.fg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.border": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.radius": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.padding": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.height": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.font": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.selected": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.states": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.search-tab.use": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.type": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.bg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.fg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.radius": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.padding": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.height": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.font": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.states": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.use": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.product-card.type": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"37\"]", captured: "2026-07-13" }
+    "tokens.components.product-card.bg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"37\"]", captured: "2026-07-13" }
+    "tokens.components.product-card.radius": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"37\"]", captured: "2026-07-13" }
+    "tokens.components.product-card.padding": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"37\"]", captured: "2026-07-13" }
+    "tokens.components.product-card.size": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"37\"]", captured: "2026-07-13" }
+    "tokens.components.product-card.states": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"37\"]", captured: "2026-07-13" }
+    "tokens.components.product-card.use": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"37\"]", captured: "2026-07-13" }
+    "tokens.components.recovery-button.type": { surface_id: recovery, source_id: recovery-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.recovery-button.bg": { surface_id: recovery, source_id: recovery-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.recovery-button.fg": { surface_id: recovery, source_id: recovery-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.recovery-button.border": { surface_id: recovery, source_id: recovery-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.recovery-button.radius": { surface_id: recovery, source_id: recovery-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.recovery-button.padding": { surface_id: recovery, source_id: recovery-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.recovery-button.height": { surface_id: recovery, source_id: recovery-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.recovery-button.font": { surface_id: recovery, source_id: recovery-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.recovery-button.states": { surface_id: recovery, source_id: recovery-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.recovery-button.use": { surface_id: recovery, source_id: recovery-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.merchandising-panel.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.merchandising-panel.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.merchandising-panel.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.merchandising-panel.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.merchandising-panel.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.merchandising-panel.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.merchandising-panel.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.sort-trigger.type": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.sort-trigger.bg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.sort-trigger.fg": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.sort-trigger.radius": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.sort-trigger.padding": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.sort-trigger.height": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.sort-trigger.font": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.sort-trigger.states": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.sort-trigger.use": { surface_id: search, source_id: search-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
 tokens:
   source: live-extract
   extracted: "2026-07-13"
@@ -80,8 +178,19 @@ tokens:
   spacing: { xxs: 2, xs: 4, sm: 6, md: 8, lg: 12, xl: 24 }
   rounded: { none: 0, sm: 6, recovery: 8, merchandising-panel: 16, search-filter-pill: 30 }
   shadow: { none: "none" }
-  components_harvested: false
-  components: {}
+  components_harvested: true
+  components:
+    filter-pill: { type: button, bg: "#f4f4f4", fg: "#4e4e4e", radius: "30px", padding: "0px 8px", height: "30px", font: "13px / 400 / Pretendard Variable", states: "default captured; the bundle holds no pointer-state frame for any KREAM element", use: "Search filter (button.filter_button.tint.shape_pill) at surface-3::[data-omd-capture=\"18\"]; 7 instances" }
+    filter-outline: { type: button, bg: "#ffffff", fg: "#4e4e4e", border: "1px solid #f0f0f0", radius: "6px", padding: "0px 6px 0px 4px", height: "30px", font: "13px / 400 / Pretendard Variable", states: "default captured; the bundle holds no pointer-state frame for any KREAM element", use: "Search filter (button.filter_button.line.shape_rect) at surface-3::[data-omd-capture=\"25\"]; 9 instances" }
+    home-tab: { type: tab, bg: "transparent", fg: "#222222", radius: "0px", padding: "13px 0px", height: "44px", font: "16px / 400 / Pretendard Variable", selected: "16px / 700, no bottom border (class active)", states: "rest and route-active variants captured; no pointer-state frame", use: "Home category tab (a.tab) at home::[data-omd-capture=\"13\"]; 7 instances on home; the active one is home::[data-omd-capture=\"15\"]" }
+    search-tab: { type: tab, bg: "transparent", fg: "#222222", border: "2px solid transparent (bottom edge only)", radius: "0px", padding: "0px", height: "44px", font: "16px / 400 / Pretendard Variable", selected: "16px / 700, 2px solid #222222 bottom border (class active)", states: "rest and route-active variants captured; no pointer-state frame", use: "Search result-type tab at surface-3::[data-omd-capture=\"15\"]; the active one is surface-3::[data-omd-capture=\"14\"]" }
+    search-input: { type: input, bg: "transparent", fg: "#000000", radius: "0px", padding: "0px 13px 0px 1px", height: "29px", font: "24px / 700 / Pretendard Variable", states: "default captured; no focus frame", use: "Search input (input.input_search.show_placeholder_on_focus) at surface-3::[data-omd-capture=\"12\"], 468 x 29, letter-spacing -0.36px" }
+    product-card: { type: card, bg: "transparent", radius: "6px", padding: "0px 0px 10px", size: "238px wide, 319px to 340px high", states: "default captured; the bundle holds no pointer-state frame for any KREAM element", use: "Search product card link (a.product_card) at surface-3::[data-omd-capture=\"37\"]; 15 instances; its brand, name and price labels are child elements that were not sampled" }
+    recovery-button: { type: button, bg: "transparent", fg: "#000000", border: "1px solid rgba(0, 0, 0, 0.6)", radius: "8px", padding: "0px", height: "36px", font: "13px / 300 / Pretendard Variable", states: "default captured; the bundle holds no pointer-state frame for any KREAM element", use: "Recovery-route home button (button.button-home) at surface-2::[data-omd-capture=\"12\"], 103 x 36; route-local, not a primary commerce CTA" }
+    merchandising-panel: { type: card, bg: "#f5f5f5", radius: "16px", padding: "0px", size: "1188px x 475px", states: "default captured; the bundle holds no pointer-state frame for any KREAM element", use: "Home merchandising panel link (a.layout_stack) at home::[data-omd-capture=\"21\"] through \"76\" (56 panel links); the enclosing div.flicking-panel computes a 0px radius, so the 16px corner belongs to the link" }
+    gnb-link: { type: button, bg: "transparent", fg: "#222222", radius: "0px", padding: "0px", height: "24px", font: "20px / 400 / Pretendard Variable", states: "default captured; the bundle holds no pointer-state frame for any KREAM element", use: "Header main-navigation link (a.gnb_link.badge) at home::[data-omd-capture=\"8\"], letter-spacing -0.3px, three per route on all three routes; the enclosing li.gnb_item computes 16px, which is not the label size" }
+    header-icon-button: { type: button, bg: "transparent", radius: "0px", padding: "0px", size: "40px x 40px", states: "default captured; the bundle holds no pointer-state frame for any KREAM element", use: "Header search button (button.btn_search) at home::[data-omd-capture=\"10\"] and cart link (a.header-cart-button) at \"11\"; icon-only (textLength 0), on all three routes" }
+    sort-trigger: { type: button, bg: "transparent", fg: "rgba(0, 0, 0, 0.8)", radius: "0px", padding: "0px", height: "16px", font: "13px / 400 / Pretendard Variable", states: "default captured; the bundle holds no pointer-state frame for any KREAM element", use: "Search sort trigger (button.sorting_title) at surface-3::[data-omd-capture=\"36\"], 54 x 16" }
 ---
 
 # Design System Inspiration of KREAM
@@ -97,8 +206,8 @@ The supplied live capture shows a tightly neutral interface: `#222222` is the re
 - Live commerce use of `Pretendard Variable`, verified by computed-family usage plus a loaded FontFaceSet match and 92 KREAM-hosted subset source URLs
 - White canvas and charcoal `#222222` chrome across home, recovery, and search captures
 - Search-route filters distinguish pill fill (`#f4f4f4`, 30px) from outlined rectangular controls (`#ffffff`, 6px)
-- Active search tabs retain the charcoal ink and use a 2px bottom border with 700 weight
-- No captured hover, focus, pressed, dialog, toast, loading, responsive, or other interaction state
+- Active search-result tabs retain the charcoal ink and use a 2px bottom border with 700 weight; active home category tabs change weight only
+- The capture holds no hover, pressed, or focus frame for any element, and no dialog, toast, loading, or responsive state
 
 ## Primary tasks
 
@@ -114,7 +223,7 @@ The supplied live capture shows a tightly neutral interface: `#222222` is the re
 
 - **Canvas** `#ffffff` — repeated background across home and search.
 - **Primary / foreground** `#222222` — repeated text and border ink across all supplied routes.
-- **Home merchandising surface** `#f5f5f5` — observed background on the home route; not a universal card fill.
+- **Home merchandising surface** `#f5f5f5` — observed background of the 56 home merchandising panel links (`a.layout_stack`, 16px radius); not a universal card fill.
 - **Search-control muted ink** `#4e4e4e` — observed on both default filter-control styles.
 - **Search-control hairline** `#f0f0f0` — observed 1px border on the outlined search filter control.
 - **On-primary / inverse** `#ffffff` — observed text and border value in the live capture; no semantic CTA role was established.
@@ -138,6 +247,7 @@ The collector also saw product-content colors such as `#00cc44` and `#f15746` on
 | Search filter control | 13px | 400 | normal | Search route only |
 | Search input | 24px | 700 | 29px | Search route only |
 | Active search tab | 16px | 700 | normal | Search route only |
+| Header navigation link | 20px | 400 | normal | All three routes |
 | Recovery home button | 13px | 300 | 26px | Recovery route only |
 
 ## 4. Component Stylings
@@ -163,17 +273,34 @@ The collector also saw product-content colors such as `#00cc44` and `#f15746` on
 - Height: 30px
 - Use: Search-route default filter at `surface-3::[data-omd-capture="25"]` (`filter_button line shape_rect`); 9 occurrences, no observed state transition.
 
-### Search navigation
+### Tabs
 
-**Search tab — observed default**
+**Home category tab — observed default**
 - Text: #222222
 - Radius: 0px
 - Padding: 13px 0px
 - Font: 16px / 400 / Pretendard Variable
 - Height: 44px
-- Use: Home and search tab elements; representative `home::[data-omd-capture="13"]` (`tab`).
+- Use: Home tab links (`a.tab`), 7 instances; representative `home::[data-omd-capture="13"]`.
 
-**Search tab — observed active**
+**Home category tab — observed active**
+- Text: #222222
+- Radius: 0px
+- Padding: 13px 0px
+- Font: 16px / 700 / Pretendard Variable
+- Height: 44px
+- Use: Active home tab at `home::[data-omd-capture="15"]` (`router-link-active router-link-exact-active tab active`). Weight is the only difference from the default; the home tabs have no bottom border.
+
+**Search result tab — observed default**
+- Text: #222222
+- Border: 2px on the bottom edge, transparent
+- Radius: 0px
+- Padding: 0px
+- Font: 16px / 400 / Pretendard Variable
+- Height: 44px
+- Use: Search-route tab at `surface-3::[data-omd-capture="15"]` (`router-link-active router-link-exact-active tab`, without `active`).
+
+**Search result tab — observed active**
 - Text: #222222
 - Border: 2px solid #222222 on the bottom edge
 - Radius: 0px
@@ -181,24 +308,25 @@ The collector also saw product-content colors such as `#00cc44` and `#f15746` on
 - Height: 44px
 - Use: Active search tab at `surface-3::[data-omd-capture="14"]` (`router-link-active router-link-exact-active tab active`). This is an observed route state, not a hover or pressed variant.
 
+The July text described one "search tab" whose default was the home tab (`home::[data-omd-capture="13"]`, 13px 0px padding, no border) and whose active state was the search-result tab. They are different controls: the 2px charcoal underline belongs to the search-result tabs only, whose default carries a transparent 2px bottom border in the same slot and 0px padding.
+
 ### Search input
 
 **Search text input — observed default**
 - Text: #000000
 - Radius: 0px
 - Padding: 0px 13px 0px 1px
-- Font: 24px / 700 / Pretendard Variable
+- Font: 24px / 700 / Pretendard Variable, letter-spacing -0.36px
 - Height: 29px
 - Use: Search input at `surface-3::[data-omd-capture="12"]` (`input_search show_placeholder_on_focus`). No focus state was captured.
 
 ### Product discovery card
 
 **Search product-card shell — observed default**
-- Text: #222222
 - Radius: 6px
 - Padding: 0px 0px 10px
-- Font: 16px / 400 / Pretendard Variable
-- Use: Search-route linked card at `surface-3::[data-omd-capture="37"]` (`product_card`); captured heights vary from 319px to 340px, so no fixed-height token is asserted.
+- Width: 238px
+- Use: Search-route linked card at `surface-3::[data-omd-capture="37"]` (`product_card`), 15 instances; captured heights vary from 319px to 340px, so no fixed-height token is asserted. The card link's own computed text values (#222222, 16px / 400) are inherited defaults: its brand, name, and price labels are child elements that were not sampled, so no label style is recorded. The July text listed those values as the card's text and font.
 
 ### Recovery action
 
@@ -210,7 +338,42 @@ The collector also saw product-content colors such as `#00cc44` and `#f15746` on
 - Height: 36px
 - Use: Recovery route action at `surface-2::[data-omd-capture="12"]` (`button-home`). Its route-local recovery context must not be generalized as a primary commerce CTA.
 
-No hover, focus, pressed, disabled, dialog, menu, toast, error-form, responsive, or unobserved selected component variant is specified. The collector reports zero interactions and zero observed states.
+### Merchandising panel
+
+**Home merchandising panel link — observed default**
+- Background: #f5f5f5
+- Radius: 16px
+- Padding: 0px
+- Size: 1188px × 475px
+- Use: `a.layout_stack` at `home::[data-omd-capture="21"]` through `"76"` (56 panel links). The enclosing `div.flicking-panel` computes a 0px radius, so the 16px corner and the fill belong to the link; the campaign content inside it is not claimed.
+
+### Header
+
+**Main navigation link — observed default**
+- Text: #222222
+- Radius: 0px
+- Padding: 0px
+- Font: 20px / 400 / Pretendard Variable, letter-spacing -0.3px
+- Height: 24px
+- Use: `a.gnb_link` at `home::[data-omd-capture="8"]`; three per route on all three routes. The enclosing `li.gnb_item` computes 16px, which is not the label size.
+
+**Header icon button — observed default**
+- Background: transparent
+- Radius: 0px
+- Size: 40px × 40px
+- Use: search button (`button.btn_search`) at `home::[data-omd-capture="10"]` and cart link (`a.header-cart-button`) at `"11"`, on all three routes. Both are icon-only (textLength 0); the icons are not part of the computed style.
+
+### Search results controls
+
+**Sort trigger — observed default**
+- Text: rgba(0, 0, 0, 0.8)
+- Radius: 0px
+- Padding: 0px
+- Font: 13px / 400 / Pretendard Variable
+- Height: 16px
+- Use: `button.sorting_title` at `surface-3::[data-omd-capture="36"]`, 54 × 16.
+
+No hover, focus, pressed, disabled, dialog, menu, toast, error-form, responsive, or unobserved selected component variant is specified. The bundle holds no `::state-hover`, `::state-pressed`, or `::state-focus` frame for any KREAM element, and the collector expanded no dialog, menu, or tab. Focus in particular is not declared from bundle evidence.
 
 ---
 **Verified:** 2026-07-13
@@ -250,7 +413,7 @@ The supplied collector evidence is desktop-only. No breakpoint, mobile layout, t
 
 ### Verified prompt boundary
 
-“Create only the observed KREAM commerce elements: a white/charcoal desktop search route with Pretendard Variable; 30px `#f4f4f4` pill filters; 6px white outlined filters; a 24px/700 search input; and 44px tabs whose active state uses 700 weight plus a 2px charcoal bottom border. Do not add a branded CTA color, a substituted font, a modal/menu state, or a responsive variant.”
+“Create only the observed KREAM commerce elements: a white/charcoal desktop search route with Pretendard Variable; 30px `#f4f4f4` pill filters; 6px white outlined filters; a 24px/700 search input; and 44px search-result tabs whose active state uses 700 weight plus a 2px charcoal bottom border (home category tabs change weight only). Do not add a branded CTA color, a substituted font, a modal/menu state, or a responsive variant.”
 
 ## 10. Voice & Tone
 
@@ -287,7 +450,7 @@ The current public surface reflects that service model through discovery, search
 
 ## 14. States
 
-Only component defaults and the route-selected search tab were captured. The following require a product-specific observation before specification:
+Only component defaults and the route-selected tabs (home category and search result) were captured; the bundle holds no pointer-state frame. The following require a product-specific observation before specification:
 
 | Category | Evidence status |
 | --- | --- |

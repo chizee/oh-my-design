@@ -53,8 +53,8 @@ verification_v2:
     "tokens.rounded.sm": *collection_live
     "tokens.rounded.xs": *collection_live
     "tokens.shadow.none": *collection_live
-    "tokens.components.category-tab.hover": *home_live
-    "tokens.components.category-tab.pressed": *home_live
+    "tokens.components.category-tab.hover": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"7\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.category-tab.pressed": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"7\"]::state-pressed", captured: "2026-07-13" }
     "tokens.components.category-tab.type": *home_live
     "tokens.components.category-tab.fg": *home_live
     "tokens.components.category-tab.font": *home_live
@@ -71,6 +71,47 @@ verification_v2:
     "tokens.components.product-list-article.radius": *collection_live
     "tokens.components.product-list-article.font": *collection_live
     "tokens.components.product-list-article.use": *collection_live
+    "tokens.components.header-nav-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.hover": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"14\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.pressed": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"14\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.product-list-control.type": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"148\"]", captured: "2026-07-13" }
+    "tokens.components.product-list-control.bg": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"148\"]", captured: "2026-07-13" }
+    "tokens.components.product-list-control.fg": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"148\"]", captured: "2026-07-13" }
+    "tokens.components.product-list-control.border": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"148\"]", captured: "2026-07-13" }
+    "tokens.components.product-list-control.radius": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"148\"]", captured: "2026-07-13" }
+    "tokens.components.product-list-control.padding": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"148\"]", captured: "2026-07-13" }
+    "tokens.components.product-list-control.size": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"148\"]", captured: "2026-07-13" }
+    "tokens.components.product-list-control.font": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"148\"]", captured: "2026-07-13" }
+    "tokens.components.product-list-control.states": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"148\"]", captured: "2026-07-13" }
+    "tokens.components.product-list-control.use": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"148\"]", captured: "2026-07-13" }
+    "tokens.components.compact-list-control.type": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"60\"]", captured: "2026-07-13" }
+    "tokens.components.compact-list-control.bg": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"60\"]", captured: "2026-07-13" }
+    "tokens.components.compact-list-control.fg": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"60\"]", captured: "2026-07-13" }
+    "tokens.components.compact-list-control.radius": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"60\"]", captured: "2026-07-13" }
+    "tokens.components.compact-list-control.padding": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"60\"]", captured: "2026-07-13" }
+    "tokens.components.compact-list-control.size": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"60\"]", captured: "2026-07-13" }
+    "tokens.components.compact-list-control.font": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"60\"]", captured: "2026-07-13" }
+    "tokens.components.compact-list-control.states": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"60\"]", captured: "2026-07-13" }
+    "tokens.components.compact-list-control.use": { surface_id: new-products, source_id: collection-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"60\"]", captured: "2026-07-13" }
+    "tokens.components.outline-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"92\"]", captured: "2026-07-13" }
+    "tokens.components.outline-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"92\"]", captured: "2026-07-13" }
+    "tokens.components.outline-button.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"92\"]", captured: "2026-07-13" }
+    "tokens.components.outline-button.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"92\"]", captured: "2026-07-13" }
+    "tokens.components.outline-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"92\"]", captured: "2026-07-13" }
+    "tokens.components.outline-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"92\"]", captured: "2026-07-13" }
+    "tokens.components.outline-button.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"92\"]", captured: "2026-07-13" }
+    "tokens.components.outline-button.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"92\"]", captured: "2026-07-13" }
+    "tokens.components.outline-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"92\"]", captured: "2026-07-13" }
+    "tokens.components.outline-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"92\"]", captured: "2026-07-13" }
   conflicts: []
 tokens:
   source: live-extract
@@ -89,7 +130,7 @@ tokens:
     family: { sans: "Pretendard" }
     utility: { size: 14, weight: 400, lineHeight: "14px", use: "Repeated visible text and button default in the supplied desktop commerce capture." }
     category-tab: { size: 18, weight: 400, lineHeight: "23.94px", use: "Inactive category tab in the home and new-products surfaces; selected and hover/pressed samples are separately observed." }
-    input: { size: 16, weight: 400, lineHeight: "20px", use: "Captured form input, including the collector's error-state sample." }
+    input: { size: 16, weight: 400, lineHeight: "16px", use: "Captured form input, including the collector's error-state sample; letter-spacing -0.33px. Corrected 2026-09-29 from 20px, which no input sample records." }
   spacing: { xxs: 2, xs: 4, sm: 8, md: 16 }
   rounded: { xs: 2, sm: 4 }
   shadow: { none: "none" }
@@ -98,6 +139,10 @@ tokens:
     category-tab: { type: button, fg: "#b5b5b5", font: "18px / 400 / Pretendard", states: "Selected tab is #5f0080 at 18px / 500; the captured inactive tab changed to #5f0080 at both hover and pressed.", use: "Category control at home::[data-omd-capture=\"7\"] and surface-3::[data-omd-capture=\"7\"]." , hover: "#5f0080", pressed: "#5f0080"}
     form-input: { type: input, bg: "#ffffff", fg: "#333333", font: "16px / 400 / Pretendard", error: "Error state was captured at home::[data-omd-interaction-capture=\"form-error-0-0\"] and surface-3::[data-omd-interaction-capture=\"form-error-0-0\"]; sampled computed values matched the retained default sample.", use: "Captured form input only; no focus, disabled, or success variant is specified." }
     product-list-article: { type: card, fg: "#333333", radius: "0px", font: "14px / 400 / Pretendard", use: "Article wrapper in the new-products product list at surface-3::article; 249px sampled width, with no card surface or hover variant observed." }
+    header-nav-link: { type: tab, bg: "transparent", fg: "#464c52", border: "bottom 1px, transparent at rest", radius: "0px", padding: "0px", height: "21px", font: "16px / 500 / 20px", hover: "fg #5f0080, bottom border #5f0080", pressed: "fg #5f0080, bottom border #5f0080", states: "rest, hover, and pressed sampled on six links on home (capture 14-19) and the same six on new-products, all recording the same values; no focus frame", use: "Header navigation link (a.css-1m0tfai) at home::[data-omd-capture=\"14\"]" }
+    product-list-control: { type: button, bg: "#ffffff", fg: "#333333", border: "1px #dfe4eb", radius: "4px", padding: "0px", size: "249px x 36px", font: "14px / 400 / 14px", states: "default captured; no pointer-state sample", use: "Repeated product-list button on new-products at surface-3::[data-omd-capture=\"148\"] (58 occurrences of this variant)" }
+    compact-list-control: { type: button, bg: "#f7f7f7", fg: "#b5b5b5", radius: "2px", padding: "2px 0px 3px", size: "22px x 22px", font: "13px / 400 / 17px", states: "default captured; no pointer-state sample", use: "Compact product-list control on new-products at surface-3::[data-omd-capture=\"60\"] (18 occurrences of this variant)" }
+    outline-button: { type: button, bg: "transparent", fg: "#333333", border: "1px #e2e2e2", radius: "3px", padding: "0px", size: "140px x 40px", font: "14px / 400 / 39px", states: "default captured; no pointer-state sample", use: "140 x 40 outline button at home::[data-omd-capture=\"92\"]; the variant occurs four times across home and category-list" }
 ---
 
 # Design System Inspiration of Kurly (컬리 / 마켓컬리)
@@ -110,7 +155,8 @@ Kurly is a Korean commerce company whose retail service began in 2015 around cur
 
 - Current captured commerce surfaces use `#ffffff`, `#333333`, and a deep `#5f0080` active accent.
 - Pretendard is computed on 761 visible samples and corroborated by loaded Kurly-hosted FontFace sources.
-- The retained component evidence is deliberately surface-specific: category tabs, a form-input error sample, and flat product-list articles.
+- The retained component evidence is deliberately surface-specific: category tabs, header navigation links, product-list controls, a small outline button, a form-input error sample, and flat product-list articles.
+- Measured pointer states use the accent: the inactive category tab and the header navigation links turn `#5f0080` on hover and press, and the links also show a 1px `#5f0080` bottom border.
 - The supplied artifact contains desktop captures only; responsive rules, mobile navigation, checkout, and product-detail UI are not specified.
 
 ## Primary tasks
@@ -123,10 +169,10 @@ Kurly is a Korean commerce company whose retail service began in 2015 around cur
 
 ### Observed live product surfaces
 
-- **Active accent** (`#5f0080`): repeated computed text and border value across the home, category-list, and new-products surfaces; selected category-tab and hover/pressed tab samples use it.
+- **Active accent** (`#5f0080`): repeated computed text and border value across the home, category-list, and new-products surfaces; the selected category tab, the category-tab hover/pressed samples, and the header navigation link hover/pressed samples use it.
 - **Canvas** (`#ffffff`): repeated page/control background in the supplied product surfaces.
 - **Foreground** (`#333333`): dominant computed text value in all three captured product surfaces.
-- **Body emphasis** (`#464c52`): observed text value in home and new-products samples.
+- **Body emphasis** (`#464c52`): observed text value in home and new-products samples; it is the header navigation link colour at rest.
 - **Muted control text** (`#b5b5b5`) and **muted text** (`#999999`): observed inactive/secondary text values; no wider semantic role is inferred.
 - **Control border** (`#dfe4eb`): observed 1px border on repeated 36px new-products list controls.
 - **Control fill** (`#f7f7f7`): observed on compact product-list controls in the new-products surface.
@@ -151,7 +197,8 @@ The supplied current capture does not establish the former purple ramps, cream b
 | Utility/default | 14px | 400 | 14px | Repeated visible text and buttons in all captured product surfaces |
 | Category tab, inactive | 18px | 400 | 23.94px | `home::[data-omd-capture="7"]` and matching `surface-3` control |
 | Category tab, selected/hover/pressed | 18px | 500 | 23.94px | selected `data-omd-capture="6"`; hover/pressed state capture for `"7"` |
-| Form input | 16px | 400 | 20px | retained input/error sample |
+| Header navigation link | 16px | 500 | 20px | `home::[data-omd-capture="14"]` to `"19"` and the matching new-products links |
+| Form input | 16px | 400 | 16px | all four input samples (`home` and `surface-3` capture 8, both error samples); letter-spacing -0.33px. Corrected 2026-09-29 from 20px, which no input sample records |
 
 Do not substitute Noto Sans KR or a system font and call it Kurly’s active UI family; the July capture directly corroborates Pretendard instead.
 
@@ -166,6 +213,19 @@ Do not substitute Noto Sans KR or a system font and call it Kurly’s active UI 
 - Hover: `#5f0080` text at 18px / 500 on `home::[data-omd-capture="7"]::state-hover`
 - Pressed: `#5f0080` text at 18px / 500 on `home::[data-omd-capture="7"]::state-pressed`
 - Use: Category control at `home::[data-omd-capture="6"]` / `"7"` and corresponding new-products controls; the selected tab is the active purple state.
+
+### Header navigation
+
+**Header navigation link — rest, hover, and pressed**
+- Background: transparent
+- Text: `#464c52`
+- Border: 1px bottom border, transparent at rest
+- Radius: 0px
+- Height: 21px
+- Font: 16px / 500 / 20px Pretendard
+- Hover: text `#5f0080`, and the 1px bottom border turns `#5f0080`
+- Pressed: text `#5f0080`, bottom border `#5f0080`
+- Use: six links at `home::[data-omd-capture="14"]` through `"19"` and the same six on new-products; all twelve record the same rest, hover, and pressed values.
 
 ### Form input
 
@@ -186,6 +246,7 @@ Do not substitute Noto Sans KR or a system font and call it Kurly’s active UI 
 - Radius: 4px
 - Font: 14px / 400 / Pretendard
 - Use: Repeated 249px by 36px button at `surface-3::[data-omd-capture="148"]`; default state only.
+- Home variant: `home::[data-omd-capture="51"]` (`button.product-function`) keeps the 249px × 36px size and 4px radius but computes a transparent fill, `#222222` text, a 1px `#dddddd` border, and 16px / 400 / 29px type. It is recorded as a style variant, not a separate component.
 
 **Compact product-list control — observed default**
 - Background: `#f7f7f7`
@@ -195,6 +256,17 @@ Do not substitute Noto Sans KR or a system font and call it Kurly’s active UI 
 - Font: 13px / 400 / Pretendard
 - Use: Compact 22px control at `surface-3::[data-omd-capture="60"]`; default state only.
 
+### Outline button
+
+**Observed default**
+- Background: transparent
+- Text: `#333333`
+- Border: 1px `#e2e2e2`
+- Radius: 3px
+- Size: 140px × 40px
+- Font: 14px / 400 / 39px Pretendard
+- Use: `home::[data-omd-capture="92"]`; the variant occurs four times across home and category-list. No pointer-state frame.
+
 ### Product-list article
 
 **Article wrapper — observed default**
@@ -203,7 +275,7 @@ Do not substitute Noto Sans KR or a system font and call it Kurly’s active UI 
 - Font: 14px / 400 / Pretendard
 - Use: `surface-3::article` wrapper; representative sample is 249px wide. It has a transparent computed background, no border, no shadow, and no observed hover variant.
 
-No filled purple purchase CTA, badge, modal, checkout control, product-card image treatment, responsive variant, or additional interaction state is specified: the supplied capture does not give that selector/state provenance.
+No filled purple purchase CTA, badge, modal, checkout control, product-card image treatment, or responsive variant is specified, and no interaction state beyond the category-tab and header-navigation hover/pressed frames and the form-input error sample: the supplied capture does not give that selector/state provenance. The bundle holds no focus frame for any Kurly element; this collector presses the mouse before it calls `.focus()`, so a focus frame from it would not be a keyboard focus-visible measurement in any case.
 
 ---
 **Verified:** 2026-07-13
@@ -228,7 +300,7 @@ The retained representative category tabs, repeated product-list controls, and p
 - Use `#5f0080` for the observed active category treatment, not as a presumed universal fill.
 - Use Pretendard where this reference needs the captured product-surface UI family.
 - Keep the observed new-products article wrapper flat unless another surface supplies a measured treatment.
-- Preserve the selector and state boundaries for category-tab hover/pressed and form-input error evidence.
+- Preserve the selector and state boundaries for category-tab and header-navigation hover/pressed and form-input error evidence.
 
 ### Don't
 
@@ -245,6 +317,7 @@ No mobile viewport or responsive-state capture was supplied. Breakpoints, column
 
 - "Create a captured Kurly category tab: inactive text `#b5b5b5`, selected text `#5f0080`; 18px Pretendard, 0px radius. The observed inactive tab becomes `#5f0080` at 18px/500 on hover and pressed."
 - "Create the observed new-products list control: white background, `#333333` text, 1px `#dfe4eb` border, 4px radius, 14px/400 Pretendard. Do not add a hover state."
+- "Create the captured Kurly header navigation link: `#464c52` 16px/500 Pretendard with a transparent 1px bottom border; on hover and press the text and that border turn `#5f0080`."
 - "Use a flat, transparent product-list article wrapper with `#333333` 14px/400 Pretendard; do not infer a card background, shadow, or product-image treatment."
 
 ## 10. Voice & Tone
@@ -284,21 +357,21 @@ Kurly’s first-party material identifies stakeholder groups rather than providi
 
 ## 14. States
 
-The collector recorded category-tab hover and pressed samples and a form-input error sample only. All other product states need direct surface evidence before specification.
+The collector recorded hover and pressed samples for one inactive category tab and for six header navigation links on each of two surfaces, and a form-input error sample. Corrected 2026-09-29: the July text said category-tab only; the header-link frames were in the same bundle. All other product states need direct surface evidence before specification.
 
 | Category | Evidence status |
 |----------|-----------------|
 | Default category tab | Inactive and selected values captured |
-| Hover | Captured for one inactive category tab |
-| Pressed | Captured for one inactive category tab |
+| Hover | Inactive category tab: `#b5b5b5` 18px/400 → `#5f0080` 18px/500. Header navigation links: `#464c52` → `#5f0080`, with the 1px bottom border turning from transparent to `#5f0080` |
+| Pressed | The same values as hover, for both controls |
 | Error | Captured for a form input; retained computed values matched the default sample |
 | Empty | Not observed in the captured routes |
 | Loading | Not observed in the captured routes |
 | Success | Not observed in the captured routes |
 | Skeleton | Not observed in the captured routes |
 | Disabled | Not observed in the captured routes |
-| Focus | Not observed in the captured routes |
+| Focus | No focus frame exists in the bundle; not specified |
 
 ## 15. Motion & Easing
 
-No motion duration, easing curve, or transition was captured. The hover and pressed samples establish resulting computed styles for one category tab only; they do not establish motion behavior.
+No motion duration, easing curve, or transition was captured. The hover and pressed samples establish resulting computed styles for the category tab and the header navigation links only; they do not establish motion behavior.

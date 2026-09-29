@@ -113,7 +113,7 @@ describe.sequential("GET /api/references/[id] AST contract", () => {
     expect(body.referenceAst?.foundations.brandFont).toBeNull();
     expect(body.referenceAst?.tokens.typography.families.ui?.value).toBe("BAEMINWORK");
     expect(Object.keys(body.referenceAst?.tokens.typography.tiers ?? {})).toHaveLength(8);
-    expect(Object.keys(body.referenceAst?.tokens.components ?? {})).toHaveLength(7);
+    expect(Object.keys(body.referenceAst?.tokens.components ?? {})).toHaveLength(13);
   });
 
   it("serves Baemin's active Core preview bytes without legacy-AST mixing", async () => {

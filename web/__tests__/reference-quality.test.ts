@@ -263,7 +263,7 @@ describe("generated reference quality manifest", () => {
       status: "verified_v2",
       evidenceCoverage: 1,
       surfaceCount: 5,
-      sourceCount: 5,
+      sourceCount: 6,
       conflictCount: 0,
       reasonCodes: [],
     });

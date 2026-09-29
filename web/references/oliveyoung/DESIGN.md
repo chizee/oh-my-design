@@ -57,6 +57,74 @@ verification_v2:
     "tokens.components.pagination-current.font": *storefront
     "tokens.components.pagination-current.active": *storefront
     "tokens.components.pagination-current.use": *storefront
+    "tokens.components.gnb-category-link.type": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.bg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.fg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.radius": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.padding": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.height": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.font": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.hover": { surface_id: storefront-home, source_id: storefront-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"14\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.pressed": { surface_id: storefront-home, source_id: storefront-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"14\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.states": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.use": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.utility-link.type": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.utility-link.bg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.utility-link.fg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.utility-link.radius": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.utility-link.padding": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.utility-link.height": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.utility-link.font": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.utility-link.states": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.utility-link.use": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-trigger.type": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-trigger.bg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-trigger.fg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-trigger.border": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-trigger.radius": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-trigger.padding": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-trigger.height": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-trigger.font": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-trigger.states": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-trigger.use": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-link.type": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-link.bg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-link.fg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-link.radius": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-link.padding": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-link.height": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-link.font": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-link.states": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.category-menu-link.use": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-07-13" }
+    "tokens.components.search-field.type": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.search-field.bg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.search-field.fg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.search-field.radius": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.search-field.padding": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.search-field.height": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.search-field.font": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.search-field.states": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.search-field.use": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.wishlist-control.type": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"85\"]", captured: "2026-07-13" }
+    "tokens.components.wishlist-control.bg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"85\"]", captured: "2026-07-13" }
+    "tokens.components.wishlist-control.border": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"85\"]", captured: "2026-07-13" }
+    "tokens.components.wishlist-control.radius": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"85\"]", captured: "2026-07-13" }
+    "tokens.components.wishlist-control.size": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"85\"]", captured: "2026-07-13" }
+    "tokens.components.wishlist-control.states": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"85\"]", captured: "2026-07-13" }
+    "tokens.components.wishlist-control.use": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"85\"]", captured: "2026-07-13" }
+    "tokens.components.product-thumbnail.type": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.product-thumbnail.bg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.product-thumbnail.radius": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.product-thumbnail.size": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.product-thumbnail.states": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.product-thumbnail.use": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.outline-control.type": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.outline-control.bg": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.outline-control.border": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.outline-control.radius": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.outline-control.size": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.outline-control.states": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.outline-control.use": { surface_id: storefront-home, source_id: storefront-live, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -77,6 +145,14 @@ tokens:
   rounded: { outline-control: 4, search-field: 5, pagination-current: 12 }
   components:
     pagination-current: { type: tab, bg: "#2f3030", fg: "#ffffff", radius: 12, font: "14px/700/Montserrat", active: "Current carousel pagination item; selected markup observed", use: "24px current item in storefront home carousel pagination" }
+    gnb-category-link: { type: tab, bg: "transparent", fg: "#000000", radius: "0px", padding: "0px", height: "44px", font: "16px / 700 / 44px Montserrat", hover: "fg #e02020", pressed: "fg #e02020", states: "rest, hover, and pressed sampled on nine links that all record the same values; a focus frame was also recorded, but it followed a mouse press and is not a keyboard :focus-visible measurement, so no focus value is declared", use: "Storefront home main navigation link at home::[data-omd-capture=\"14\"] through \"22\"" }
+    utility-link: { type: tab, bg: "transparent", fg: "#333333", radius: "0px", padding: "0px", height: "14px", font: "12px / 400 / 30px Montserrat", states: "rest captured; no pointer-state frame was sampled for these links", use: "Storefront header utility link at home::[data-omd-capture=\"0\"]; \"1\" through \"6\" record the same values" }
+    category-menu-trigger: { type: button, bg: "transparent", fg: "#000000", border: "1px solid #dddddd (left and right edges only)", radius: "0px", padding: "0px 0px 0px 27px", height: "44px", font: "15px / 700 / 44px Montserrat", states: "rest captured; no pointer-state frame was sampled for it", use: "Storefront category-menu trigger at home::[data-omd-capture=\"13\"], at the start of the main navigation row" }
+    category-menu-link: { type: tab, bg: "transparent", fg: "#ffffff", radius: "0px", padding: "0px 23px", height: "31px", font: "14px / 700 / 31px Montserrat", states: "rest captured on twelve links; only one link was state-sampled, and its hover and pressed frames add a translucent black fill, rgba(0, 0, 0, 0.8), that no sibling sample or rest colour in the capture confirms, so no state value is declared; no focus frame was sampled", use: "Storefront category list link (main_menu) at home::[data-omd-capture=\"23\"] through \"34\"; the white text implies a backdrop fill that was not part of the sampled elements and is not claimed" }
+    search-field: { type: input, bg: "transparent", fg: "#131518", radius: "5px", padding: "0px 10px 0px 14px", height: "38px", font: "14px / 400 / 20px", states: "rest captured; no focus, typed, error, autocomplete, or pointer-state frame was sampled", use: "Storefront header search input (header_search_input) at home::[data-omd-capture=\"8\"]; its computed family is system-resolved Arial, not an Olive Young font asset, and the input itself has no fill or border, so any visible field frame belongs to a wrapper the capture did not sample" }
+    wishlist-control: { type: button, bg: "#ffffff", border: "1px solid #ebebeb", radius: "0px", size: "40px x 40px", states: "rest captured on 29 product-grid controls; no pointer-state or active-icon frame was sampled", use: "Storefront product-grid wishlist control (btn_zzim jeem) at home::[data-omd-capture=\"85\"]; its glyph is not text (font-size 0px), so no label colour or type style is claimed" }
+    product-thumbnail: { type: card, bg: "#ffffff", radius: "0px", size: "215px x 215px", states: "rest captured; no pointer-state frame was sampled", use: "Storefront product-grid thumbnail link (prd_thumb) at home::[data-omd-capture=\"83\"]; its computed #666666 14px / 400 text is the inherited body style, not a label style" }
+    outline-control: { type: button, bg: "transparent", border: "1px solid #dddddd", radius: "4px", size: "335px x 40px", states: "rest captured; no pointer-state frame was sampled", use: "Storefront outline button (.btn) at home::[data-omd-capture=\"66\"]; \"79\" records the same values. Its computed white text on a transparent fill cannot be the visible label colour, so no foreground is claimed" }
 ---
 
 # Olive Young — Design Reference
@@ -88,6 +164,7 @@ Olive Young is the CJ retail platform that grew from Korea’s first Beauty & He
 - **Storefront evidence:** a white canvas, low-radius controls, black-to-gray text hierarchy, and carousel/product-grid mechanics on the public home page.
 - **Corporate evidence:** the green aligns with the official brand-resources description of Olive Green, while corporate typography resolves to CJONLYONENew.
 - **Current brand evolution:** Olive Young’s official 2025 newsroom announcement says its renewed wordmark was designed for clearer visibility across online and offline global expansion; that is identity context, not a storefront component token.
+- **Measured pointer state:** the storefront's main navigation links turn their text from `#000000` to red `#e02020` in both the hover and pressed frames; no other storefront control shows a settled pointer-state change in the capture.
 
 ## Primary tasks
 
@@ -113,6 +190,11 @@ Olive Young is the CJ retail platform that grew from Korea’s first Beauty & He
 
 The source bundle also contains isolated browser/vendor-like blues, reds, and other local values. Without a repeated role or a first-party product token specification, they are not promoted to a semantic palette.
 
+### Measured state and component colours
+
+- **Navigation hover red** (`#e02020`): the nine storefront main navigation links change their text from `#000000` to `#e02020` in both the hover and pressed frames (`home::[data-omd-capture="14"]` through `"22"`, captured 2026-07-13). It is a state value on those links, not a storefront palette role, so it is not added to `tokens.colors`.
+- **Header utility text** (`#333333`): the seven header utility links at the top of the storefront. It is a component value, not a palette role.
+
 ## 3. Typography Rules
 
 ### Evidence classes
@@ -133,7 +215,7 @@ The source bundle also contains isolated browser/vendor-like blues, reds, and ot
 
 ## 4. Components
 
-All components below retain their captured surface and selector provenance. The supplied bundle reports `interactionCount: 0`; it does not establish hover, focus, pressed, disabled, dialog, menu, toast, cart, or checkout variants. The selected/current carousel relationship is static markup observed in the capture, not an interaction transition contract.
+All components below retain their captured surface and selector provenance. The bundle reports `interactionCount: 0`, which counts dialog, menu, and tab expansions only: no dialog, menu, toast, cart, or checkout variant was expanded. It does hold pointer-state frames (`<selector>::state-hover|pressed|focus`) for 13 storefront links and 10 corporate links. The one settled storefront change, the main navigation hover and pressed text colour, is declared below; the other frames are listed in `.verification.md` as sampled but not declared. No focus value is declared, because the collector's focus frames follow a mouse press and are not keyboard `:focus-visible` measurements. No disabled variant was captured. The selected/current carousel relationship is static markup observed in the capture, not an interaction transition contract. (Corrected 2026-09-29: the July text read `interactionCount: 0` as the absence of any pointer-state sample.)
 
 ### Storefront carousel pagination
 
@@ -186,6 +268,62 @@ No focused, typed, error, disabled, or autocomplete state was supplied.
 
 The sample’s transparent background and white computed foreground cannot identify its composited visual context, so no foreground or reusable button-color token is asserted.
 
+### Storefront main navigation link
+
+**Rest / hover / pressed**
+- Background: transparent
+- Text: `#000000`
+- Radius: `0px`
+- Padding: `0px`
+- Height: `44px`
+- Font: `16px / 700 / 44px Montserrat`, tracking `-0.64px`
+- Hover: text `#e02020`
+- Pressed: text `#e02020`
+- Focus: a focus frame also shows `#e02020`, but the collector records it after a mouse hover and press, so it is not a keyboard `:focus-visible` measurement and no focus value is declared.
+- Use: nine main navigation links, `home::[data-omd-capture="14"]` through `"22"`, which all record the same rest and state values.
+
+### Storefront header utility link
+
+**Rest**
+- Background: transparent
+- Text: `#333333`
+- Font: `12px / 400 / 30px Montserrat`, tracking `-0.07px`
+- Height: `14px` inline box
+- States: rest only; no pointer-state frame was sampled for these links.
+- Use: seven header utility links, `home::[data-omd-capture="0"]` through `"6"`.
+
+### Storefront category-menu trigger
+
+**Rest**
+- Background: transparent
+- Text: `#000000`
+- Border: `1px solid #dddddd` on the left and right edges only
+- Padding: `0px 0px 0px 27px`
+- Height: `44px`
+- Font: `15px / 700 / 44px Montserrat`, tracking `-0.56px`
+- States: rest only; no pointer-state frame was sampled for it.
+- Use: `home::[data-omd-capture="13"]`, 170px wide, at the start of the main navigation row.
+
+### Storefront category list link
+
+**Rest**
+- Background: transparent
+- Text: `#ffffff`
+- Padding: `0px 23px`
+- Height: `31px`
+- Font: `14px / 700 / 31px Montserrat`, tracking `-0.56px`
+- States: only `home::[data-omd-capture="23"]` was state-sampled. Its hover and pressed frames add a translucent black fill, `rgba(0, 0, 0, 0.8)`, but no sibling sample and no rest colour in the capture confirms that value as a settled state, so none is declared. No focus frame was sampled.
+- Use: twelve category links (`main_menu`), `home::[data-omd-capture="23"]` through `"34"`, each 170px × 31px. The white text implies a backdrop fill that was not part of the sampled elements and is not claimed.
+
+### Storefront product thumbnail
+
+**Rest**
+- Background: `#ffffff`
+- Radius: `0px`
+- Size: `215px × 215px`
+- States: rest only; no pointer-state frame was sampled.
+- Use: product-grid thumbnail link (`prd_thumb`) at `home::[data-omd-capture="83"]` and its siblings. Its computed `#666666` 14px / 400 text is the inherited body style, not a label style, so no label treatment is claimed.
+
 ### Corporate skip link
 
 **Default visual shell**
@@ -225,11 +363,12 @@ The storefront carousel pagination, wishlist controls, search field, and outline
 - Preserve the source-domain boundary between Montserrat storefront use and CJONLYONENew corporate use.
 - Keep current carousel pagination compact: the captured current item is `#2f3030` with white text and a 12px radius.
 - Label declared-only families as unavailable rather than rendering another family under their names.
+- Use `#e02020` only as the hover and pressed text colour of the main navigation links, where it was measured.
 
 ### Don't
 
 - Do not turn the corporate skip link, top button, or Swiper chrome into storefront component tokens.
-- Do not infer cart, checkout, form-error, hover, focus, or motion behavior from this static, zero-interaction bundle.
+- Do not infer cart, checkout, form-error, focus, or motion behavior from this bundle, and do not extend the navigation hover red to other controls: the bundle expanded no dialog, menu, or tab, and the only settled pointer-state change it holds is on the main navigation links.
 - Do not promote OY Greta Sans, Pretendard, Noto Sans KR, or other zero-use declarations to the UI family.
 - Do not use official logo colors as a storefront color system without a matching storefront observation.
 
@@ -283,14 +422,16 @@ The official sources describe customers generally rather than publishing researc
 - **Observed current carousel item:** `#2f3030`, white text, 12px radius, 24px square.
 - **Observed other carousel item:** transparent, `#888888` text, 0px radius, 24px square.
 - **Observed selected carousel markup:** `home::#slick-slide10` carries `aria-selected="true"`; the capture does not record a transition or interaction event.
-- **Unobserved:** loading, empty, error, success, form validation, disabled, hover, focus, pressed, cart feedback, menu, dialog, toast, and mobile states.
+- **Measured pointer state:** the nine main navigation links (`home::[data-omd-capture="14"]` through `"22"`) change text from `#000000` to `#e02020` in the hover and pressed frames.
+- **Sampled, not declared:** focus frames (recorded after a mouse press, so not keyboard `:focus-visible`), one category list link's hover and pressed fill `rgba(0, 0, 0, 0.8)` (a single sample), the header my-menu links' pressed frames (the three siblings disagree), and the corporate frames (browser-default link colours on image links, and a one-unit colour shift). Details are in `.verification.md`.
+- **Unobserved:** loading, empty, error, success, form validation, disabled, cart feedback, menu, dialog, toast, and mobile states. (Corrected 2026-09-29: the July text also listed hover and pressed as unobserved.)
 - **Motion:** the bundle contains Slick and Swiper class names, but no captured duration, easing, or interaction sequence. No motion token is asserted.
 
 ## 15. References & Boundaries
 
 ### Tier 1 live evidence
 
-- `https://www.oliveyoung.co.kr/store/main/main.do?oy=0` — public storefront: 532 captured elements, Montserrat loaded/high with 528 uses, and the measured search, wishlist, outline-control, and carousel-pagination samples.
+- `https://www.oliveyoung.co.kr/store/main/main.do?oy=0` — public storefront: 532 captured elements, Montserrat loaded/high with 528 uses, the measured search, wishlist, outline-control, carousel-pagination, navigation, utility-link, and product-thumbnail samples, and 32 pointer-state frames for 13 links.
 - `https://corp.oliveyoung.com/ko` — public corporate surface: 176 captured elements, CJONLYONENew loaded/high with 176 uses, corporate skip-link and top-button samples, and declared-only corporate font assets.
 
 ### First-party context, brand, and font boundaries

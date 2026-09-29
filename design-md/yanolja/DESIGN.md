@@ -57,6 +57,7 @@ verification_v2:
     "tokens.components.utility-button.radius": *live
     "tokens.components.utility-button.type": *live
     "tokens.components.utility-button.use": *live
+    "tokens.components.utility-button.states": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"14\"]::state-hover", captured: "2026-07-13" }
     "tokens.rounded.full": *live
     "tokens.rounded.md": *live
     "tokens.rounded.sm": *live
@@ -94,6 +95,87 @@ verification_v2:
     "tokens.typography.search.size": *hotel
     "tokens.typography.search.use": *hotel
     "tokens.typography.search.weight": *hotel
+    "tokens.components.action-pill.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.action-pill.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.action-pill.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.action-pill.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.action-pill.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.action-pill.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.action-pill.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.action-pill.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.action-pill.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-action.type": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"101\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-action.bg": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"101\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-action.fg": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"101\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-action.border": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"101\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-action.radius": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"101\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-action.padding": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"101\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-action.height": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"101\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-action.font": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"101\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-action.states": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"101\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-action.use": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"101\"]", captured: "2026-07-13" }
+    "tokens.components.ghost-action.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.ghost-action.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.ghost-action.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.ghost-action.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.ghost-action.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.ghost-action.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.ghost-action.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.ghost-action.hover": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"7\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.ghost-action.pressed": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"7\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.ghost-action.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.ghost-action.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.icon-button.type": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.icon-button.bg": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.icon-button.fg": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.icon-button.radius": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.icon-button.padding": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.icon-button.size": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.icon-button.states": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.icon-button.use": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.type": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.bg": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.fg": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.radius": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.padding": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.height": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.font": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.states": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.use": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.search-bar-button.type": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-bar-button.bg": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-bar-button.border": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-bar-button.radius": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-bar-button.padding": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-bar-button.size": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-bar-button.shadow": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-bar-button.states": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.search-bar-button.use": { surface_id: hotel, source_id: hotel-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-button.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-button.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-button.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"131\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.overlay-icon-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.overlay-icon-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.overlay-icon-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.overlay-icon-button.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.overlay-icon-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.overlay-icon-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -119,8 +201,17 @@ tokens:
   shadow:
     utility: "0 0 8px rgba(0,0,0,0.1)"
   components:
-    utility-button: { type: button, bg: "#ffffff", fg: "#000000", radius: 16, padding: "0px", font: "14px/700 Pretendard", hover: "#f7f8fb", use: "48px product utility button; hover capture switches to #f7f8fb" , pressed: "#f7f8fb"}
+    utility-button: { type: button, bg: "#ffffff", fg: "#000000", radius: 16, padding: "0px", font: "14px/700 Pretendard", hover: "#f7f8fb", use: "48px product utility button; hover capture switches to #f7f8fb" , pressed: "#f7f8fb", states: "hover and pressed frames sampled on home captures 14 and 15; in all four frames bg #ffffff becomes #f7f8fb and the shadow rgba(0,0,0,0.1) 0 0 8px becomes rgba(0,0,0,0.2) 0 0 6px; focus not declared" }
     neutral-badge: { type: badge, bg: "#f7f8fb", fg: "#1b1c1f", radius: 9999, padding: "2px 8px 2px 6px", font: "12px/400 Pretendard", use: "26px product badge observed on hotel and leisure" }
+    action-pill: { type: button, bg: "#ffffff", fg: "#1b1c1f", radius: "9999px", padding: "4px 16px", height: "52px", font: "16px / 700 / Pretendard", states: "default captured; no pointer-state frame for this control", use: "White pill action at home::[data-omd-capture=\"50\"], 127 x 52; 6 instances across home and leisure" }
+    outlined-action: { type: button, bg: "#ffffff", fg: "#1b1c1f", border: "1px solid #1b1c1f", radius: "16px", padding: "4px 16px", height: "52px", font: "16px / 400 / Pretendard", states: "default captured; no pointer-state frame for this control", use: "Outlined full-width action at surface-2::[data-omd-capture=\"101\"], 768 x 52; 4 instances across hotel and leisure" }
+    ghost-action: { type: button, bg: "transparent", fg: "#1b1c1f", radius: "16px", padding: "4px 16px", height: "52px", font: "16px / 700 / Pretendard", hover: "bg #f2f3f7", pressed: "bg #f2f3f7", states: "hover and pressed frames sampled on this one element, both opaque rgb(242, 243, 247) from a fully transparent base; the neighbouring header actions move toward the same RGB but were caught mid-transition; focus not declared", use: "Home transparent 16px-radius action at home::[data-omd-capture=\"7\"], 147 x 52 near the top of the page (top 74)" }
+    icon-button: { type: button, bg: "transparent", fg: "#1b1c1f", radius: "16px", padding: "4px", size: "56px x 56px", states: "default captured; no pointer-state frame for this control", use: "Icon-only control (textLength 0) at surface-2::[data-omd-capture=\"7\"]; \"9\" and \"11\" and the same three on leisure match" }
+    search-input: { type: input, bg: "transparent", fg: "#1b1c1f", radius: "0px", padding: "0px", height: "22px", font: "18px / 700 / Pretendard", states: "default captured; no focus frame", use: "Search text input at surface-2::[data-omd-capture=\"1\"], 582 x 22; hotel and leisure" }
+    search-bar-button: { type: button, bg: "transparent", border: "1px solid #1b1c1f", radius: "8px", padding: "0px 20px 0px 24px", size: "520px x 60px", shadow: "rgba(0, 0, 0, 0.1) 0px 0px 8px 0px", states: "default captured; no pointer-state frame for this control", use: "Hotel bordered search trigger (class includes border-fill-neutral-main, shadow-2) at surface-2::[data-omd-capture=\"12\"]; its own 10px / 400 computed font is the page root size, and the visible label sits in child elements that were not sampled" }
+    footer-bordered-button: { type: button, bg: "#ffffff", fg: "#000000", border: "1px solid #dadbdf", radius: "5px", padding: "0px 12px", height: "32px", font: "12px / 400 / Pretendard", states: "default captured; no pointer-state frame; no open state captured", use: "Home bordered row button (flex, justify-between; class includes border-line-neutral-weak3, bg-static-white) at home::[data-omd-capture=\"131\"], 328 x 32 near the page foot (top 6017)" }
+    footer-text-link: { type: button, bg: "transparent", fg: "#6e6f73", radius: "0px", padding: "0px", height: "18px", font: "12px / 400 / Pretendard", states: "default captured; no pointer-state frame", use: "Home text button (class text-text-neutral-sub underline) at home::[data-omd-capture=\"149\"], 144 x 18 (top 6252); the underline is named by the class, text-decoration is not in the style dump" }
+    overlay-icon-button: { type: button, bg: "rgba(0, 0, 0, 0.5)", radius: "9999px", size: "32px x 32px", states: "default captured; no pointer-state frame", use: "Home translucent circular icon-only button (class includes rounded-full) at home::[data-omd-capture=\"12\"] (top 499), beside a 32px-high counter button at \"13\"" }
   components_harvested: true
 ---
 
@@ -149,7 +240,7 @@ Yanolja is a global travel-technology company whose consumer division operates N
 - **Foreground** (`#1B1C1F`): observed product text and border value across all three captured NOL surfaces.
 - **Canvas / raised surface** (`#FFFFFF`): observed page and action surface.
 - **Neutral weak fill** (`#F7F8FB`): observed badge fill and utility-button hover fill.
-- **Neutral hover fill** (`#F2F3F7`): observed menu/action hover fill on the NOL home surface.
+- **Neutral hover fill** (`#F2F3F7`): observed only in state frames on the NOL home surface, as the hover and pressed fill of the transparent 16px-radius home action (`home::[data-omd-capture="7"]`); the header actions beside it move toward the same RGB. It does not appear at rest in the capture.
 - **Muted text** (`#6E6F73`): observed on the NOL home surface.
 - **Hairline** (`#DADBDF`): one captured NOL home control border; retain as a local border observation, not a global rule.
 
@@ -193,7 +284,8 @@ The following are direct product observations. Selector, surface, and state prov
 - Font: 14px / 700 / Pretendard
 - Height: 48px
 - Hover: `#F7F8FB` background with `0 0 6px rgba(0,0,0,0.2)` shadow
-- Use: `home::[data-omd-capture="14"]`; high-confidence, 33 occurrences across home, hotel, and leisure. Hover and pressed were captured, but only the hover computed value is asserted here.
+- Pressed: the same `#F7F8FB` background and `0 0 6px rgba(0,0,0,0.2)` shadow
+- Use: `home::[data-omd-capture="14"]`; high-confidence, 33 occurrences across home, hotel, and leisure. Hover and pressed frames exist for `"14"` and `"15"`, and all four frames carry the same background and shadow. The July text asserted only the hover value while the frontmatter already declared the pressed one; the frames support both. Focus is not declared.
 
 ### Action button
 
@@ -216,15 +308,25 @@ The following are direct product observations. Selector, surface, and state prov
 - Height: 52px
 - Use: `surface-2::[data-omd-capture="101"]`; high-confidence, 4 occurrences across hotel and leisure.
 
+**Transparent ghost action**
+- Background: transparent (`rgba(255, 255, 255, 0)`)
+- Text: `#1B1C1F`
+- Radius: 16px
+- Padding: 4px 16px
+- Font: 16px / 700 / Pretendard
+- Height: 52px
+- Hover: background `#F2F3F7`
+- Pressed: background `#F2F3F7`
+- Use: `home::[data-omd-capture="7"]`, 147 × 52 near the top of the home page. This is one element. Its hover and pressed frames are both opaque `rgb(242, 243, 247)`. From a fully transparent base, a frame caught mid-transition carries fractional alpha, as the header actions beside it show (`rgba(242, 243, 247, 0.04)` to `0.11`, not declared for them), so the opaque value is read as the settled fill. The value is not seen at rest anywhere in the capture. Focus is not declared.
+
 ### Icon button
 
 **Transparent rounded icon control**
 - Text: `#1B1C1F`
 - Radius: 16px
 - Padding: 4px
-- Font: 10px / 700 / Pretendard
-- Height: 56px
-- Use: `surface-2::[data-omd-capture="7"]`; high-confidence, 6 occurrences across hotel and leisure.
+- Height: 56px (56px × 56px)
+- Use: `surface-2::[data-omd-capture="7"]`; high-confidence, 6 occurrences across hotel and leisure (`"7"`, `"9"`, `"11"` on each). The control has no text (textLength 0), so its computed 10px / 700 font styles no visible label; the July text listed it as the control's font, and it is no longer recorded as one.
 
 ### Search input
 
@@ -246,6 +348,50 @@ The following are direct product observations. Selector, surface, and state prov
 - Height: 26px
 - Use: `surface-2::div`; high-confidence, 2 occurrences across hotel and leisure.
 
+### Search trigger
+
+**Bordered search bar button**
+- Background: transparent
+- Border: 1px solid `#1B1C1F`
+- Radius: 8px
+- Padding: 0px 20px 0px 24px
+- Size: 520px × 60px
+- Shadow: `rgba(0, 0, 0, 0.1) 0px 0px 8px 0px`
+- Observed-state summary: Default captured; no pointer-state frame.
+- Use: `surface-2::[data-omd-capture="12"]` on the hotel sub-home (class includes `border-fill-neutral-main`, `shadow-2`). Its own computed font, 10px / 400, is the page's root size; the visible label sits in child elements that were not sampled, so no label style is recorded.
+
+### Footer controls
+
+**Bordered row button**
+- Background: `#FFFFFF`
+- Text: `#000000`
+- Border: 1px solid `#DADBDF`
+- Radius: 5px
+- Padding: 0px 12px
+- Height: 32px
+- Font: 12px / 400 / Pretendard, 18px line height
+- Observed-state summary: Default captured; no pointer-state frame and no open state.
+- Use: `home::[data-omd-capture="131"]`, 328 × 32 near the page foot (class includes `justify-between`, `border-line-neutral-weak3`, `bg-static-white`).
+
+**Muted text button**
+- Background: transparent
+- Text: `#6E6F73`
+- Radius: 0px
+- Padding: 0px
+- Height: 18px
+- Font: 12px / 400 / Pretendard, 18px line height
+- Observed-state summary: Default captured; no pointer-state frame.
+- Use: `home::[data-omd-capture="149"]`, 144 × 18 (class `text-text-neutral-sub underline`). The class names an underline; text-decoration is not part of the style dump.
+
+### Overlay icon button
+
+**Translucent circular icon button**
+- Background: `rgba(0, 0, 0, 0.5)`
+- Radius: 9999px
+- Size: 32px × 32px
+- Observed-state summary: Default captured; no pointer-state frame.
+- Use: `home::[data-omd-capture="12"]` at top 499, icon-only (textLength 0), beside a 32px-high counter button at `"13"` whose visible fill belongs to a child element and is not recorded.
+
 ---
 **Verified:** 2026-07-13
 **Tier 1 sources:** `https://nol.yanolja.com/`; `https://nol.yanolja.com/sub-home/hotel`; `https://nol.yanolja.com/sub-home/leisure` (raw computed-style and FontFaceSet evidence in `artifacts/reference-evidence/yanolja.json`); `https://www.yanoljagroup.com/brand_center`; `https://www.yanoljagroup.com/about`; `https://www.yanoljagroup.com/yanolja_way`; `https://www.yanoljagroup.com/en/press_release/view?id=1534`
@@ -256,11 +402,11 @@ Corporate-brand values and NOL product values are separate evidence domains, so 
 
 ## 5. Layout Principles
 
-The capture supports a compact spacing vocabulary of 2, 4, 8, 12, 16, 20, 24, and 32px. Radius observations are mostly 0px in unframed text/content, 16px in rounded product controls, 8px on one captured bordered control, and 9999px for pills. No grid, card, responsive-breakpoint, or booking-detail layout rule is asserted because this packet did not measure one.
+The capture supports a compact spacing vocabulary of 2, 4, 8, 12, 16, 20, 24, and 32px. Radius observations are mostly 0px in unframed text/content, 16px in rounded product controls, 8px on the hotel search bar button, 5px on the home footer row button, and 9999px for pills. No grid, card, responsive-breakpoint, or booking-detail layout rule is asserted because this packet did not measure one.
 
 ## 6. Depth & Elevation
 
-The verified product depth evidence is local rather than a complete elevation scale: the 48px white utility control has `0 0 8px rgba(0,0,0,0.1)` at rest and the captured hover value is `0 0 6px rgba(0,0,0,0.2)`. Other observed product controls are shadowless. No modal, popover, card, or sheet elevation token is claimed.
+The verified product depth evidence is local rather than a complete elevation scale: the 48px white utility control has `0 0 8px rgba(0,0,0,0.1)` at rest and the captured hover and pressed value is `0 0 6px rgba(0,0,0,0.2)`. The hotel search bar button carries the same `rgba(0, 0, 0, 0.1) 0px 0px 8px 0px` at rest. Other observed product controls are shadowless. No modal, popover, card, or sheet elevation token is claimed.
 
 ## 7. Do's and Don'ts
 
@@ -294,7 +440,7 @@ No breakpoint, mobile navigation, touch-target policy, or responsive grid is doc
 
 ### Example Component Prompts
 
-- "Create a NOL-style observed product utility control: white 48px surface, 16px radius, `#000000` 14px/700 Pretendard text, and `0 0 8px rgba(0,0,0,0.1)` shadow. Its captured hover background is `#F7F8FB`."
+- "Create a NOL-style observed product utility control: white 48px surface, 16px radius, `#000000` 14px/700 Pretendard text, and `0 0 8px rgba(0,0,0,0.1)` shadow. Its captured hover and pressed background is `#F7F8FB`."
 - "Create an observed NOL product action pill: white background, `#1B1C1F` 16px/700 Pretendard label, 52px height, 4px 16px padding, and a full radius."
 - "Create the observed NOL weak badge: `#F7F8FB` fill, `#1B1C1F` 12px/400 Pretendard text, 26px height, 2px 8px 2px 6px padding, and a full radius."
 
@@ -339,6 +485,15 @@ This reference records verified stakeholder groups, not synthetic personas.
 ## 14. States
 
 No empty, loading, error, success, skeleton, or disabled-state treatment is verified by the supplied capture. Do not infer colors, timing, layouts, or copy for these states from the Group brand palette or from generic travel-product conventions.
+
+Pointer-state frames exist for six home elements; the collector expanded no dialog, menu, or tab (`interactionCount: 0`).
+
+| Category | Verified boundary |
+|---|---|
+| Hover | Utility button (`"14"`, `"15"`): background `#FFFFFF` → `#F7F8FB`, shadow `rgba(0,0,0,0.1) 0 0 8px` → `rgba(0,0,0,0.2) 0 0 6px`. Transparent ghost action (`"7"`): background → `#F2F3F7`. |
+| Pressed | The same values as hover for both controls. |
+| Sampled, not declared | Header actions `"3"` to `"5"`: background moved from transparent toward `rgb(242, 243, 247)` at 4% to 11% alpha, different per element and per frame, consistent with a transition caught at its start. |
+| Focus | Not declared. The bundle has no focus frame, and a collector focus frame would follow a mouse press, which is not a keyboard `:focus-visible` measurement. |
 
 ## 15. Motion & Easing
 
