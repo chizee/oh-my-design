@@ -136,7 +136,7 @@ export function ReferenceEvidenceDrawer({
         </span>
         <span className="ml-auto hidden truncate text-[10px] text-muted-foreground sm:block">
           {quality.evidenceClaimCount}/{quality.claimCount} claims
-          {quality.verifiedAt ? ` · checked ${quality.verifiedAt}` : ""}
+          {(evidence?.checkedAt ?? quality.verifiedAt) ? ` · checked ${evidence?.checkedAt ?? quality.verifiedAt}` : ""}
         </span>
         <ChevronDown className={`h-3.5 w-3.5 shrink-0 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
