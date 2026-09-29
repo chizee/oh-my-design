@@ -12,7 +12,7 @@ let md = fs.readFileSync(file, 'utf8');
 const lines = md.split('\n');
 const fmEnd = lines.indexOf('---', 1);
 
-const ORDER = ['type','bg','fg','border','radius','padding','height','size','font','shadow','selected','checked','hover','pressed','states','use'];
+const ORDER = ['type','bg','fg','border','radius','padding','height','size','font','shadow','selected','checked','hover','pressed','focus','states','use'];
 const q = (v) => JSON.stringify(String(v));
 const claimObj = (c) => {
   const parts = [`surface_id: ${c.surface_id}`, `source_id: ${c.source_id}`, `method: ${c.method}`];

@@ -604,12 +604,12 @@ function inPage(opts) {
 
 // The consent step: only reject / necessary-only buttons are ever pressed (same lists as probe-component-states.mjs).
 function consentFn() {
-  const REJECT = ["#onetrust-reject-all-handler", "#CybotCookiebotDialogBodyButtonDecline", "button[data-testid='uc-deny-all-button']", ".didomi-continue-without-agreeing", "#didomi-notice-disagree-button", "#cm [data-role=\"necessary\"]", "#c-s-bn", "button.cc-btn[data-role=necessary]"];
+  const REJECT = ["#onetrust-reject-all-handler", "#reject-all", "#CybotCookiebotDialogBodyButtonDecline", "button[data-testid='uc-deny-all-button']", ".didomi-continue-without-agreeing", "#didomi-notice-disagree-button", "#cm [data-role=\"necessary\"]", "#c-s-bn", "button.cc-btn[data-role=necessary]"];
   const roots = [document];
   const walk = (r) => { for (const h of r.querySelectorAll("*")) if (h.shadowRoot) { roots.push(h.shadowRoot); walk(h.shadowRoot); } };
   walk(document);
   for (const root of roots) for (const sel of REJECT) { const b = root.querySelector(sel); if (b && b.getClientRects().length) { b.click(); return sel; } }
-  const WORDS = /^(reject all|reject|decline all|only necessary|necessary only|use necessary only|essential only|only essential|alle ablehnen|ablehnen|nur erforderliche( verwenden)?|nur notwendige|tout refuser|refuser|continuer sans accepter|rechazar todo|rifiuta tutto|avvisa alla|neka alla|endast nödvändiga cookies|endast nödvändiga|reject non-essential|refuse|deny all|deny|alles weigeren|weigeren|weiger|alleen noodzakelijke cookies|alleen noodzakelijk|weiger alle|拒否する|すべて拒否|모두 거부|거부|필수(만| 항목만| 쿠키만) (허용|동의)(하기)?)$/i;
+  const WORDS = /^(reject all|reject|decline all|decline|only necessary|necessary only|use necessary only|essential only|only essential|alle ablehnen|ablehnen|nur erforderliche( verwenden)?|nur notwendige|tout refuser|refuser|continuer sans accepter|rechazar todo|rifiuta tutto|avvisa alla|neka alla|endast nödvändiga cookies|endast nödvändiga|reject non-essential|refuse|deny all|deny|alles weigeren|weigeren|weiger|alleen noodzakelijke cookies|alleen noodzakelijk|weiger alle|拒否する|すべて拒否|모두 거부|거부|필수(만| 항목만| 쿠키만) (허용|동의)(하기)?)$/i;
   for (const root of roots) for (const b of root.querySelectorAll("button, [role=button], a")) {
     if (b.getClientRects().length && WORDS.test((b.textContent || "").trim())) { b.click(); return "text:" + b.textContent.trim(); }
   }

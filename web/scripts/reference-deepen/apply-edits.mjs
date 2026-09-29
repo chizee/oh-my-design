@@ -10,9 +10,15 @@ for (const block of src.split(/^@@@FILE /m).slice(1)) {
   const file = block.slice(0, nl).trim();
   const body = block.slice(nl + 1);
   const edits = [];
-  const re = /^@@@OLD\n([\s\S]*?)\n@@@NEW\n([\s\S]*?)\n@@@END$/gm;
+  // Each marker must sit on its own line. NEW may be empty: the old pattern needed a newline before
+  // @@@END, so an empty NEW swallowed the next block (lotteon, 2026-09-30).
+  const re = /^@@@OLD\n([\s\S]*?)^@@@NEW\n([\s\S]*?)^@@@END$/gm;
+  const strip = (s) => s.replace(/\n$/, '');
   let m;
-  while ((m = re.exec(body))) edits.push([m[1], m[2]]);
+  while ((m = re.exec(body))) edits.push([strip(m[1]), strip(m[2])]);
+  const declared = (body.match(/^@@@OLD$/gm) || []).length;
+  if (declared !== edits.length) { console.log(`FAIL ${file}: ${declared} @@@OLD markers but ${edits.length} complete blocks`); process.exit(1); }
+  for (const [o, n] of edits) if (/^@@@/m.test(o) || /^@@@/m.test(n)) { console.log(`FAIL ${file}: a marker inside a block body`); process.exit(1); }
   files.set(file, edits);
 }
 let failed = false;

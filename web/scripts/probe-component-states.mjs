@@ -172,7 +172,7 @@ async function visit(act) {
   // 대상 표시(data-omd-probe) 뒤에 누르면 안 된다: gousto의 cookieconsent는 거부 시 DOM을
   // 다시 그려 표시가 사라졌다.
   const rejected = await page.evaluate(() => {
-    const REJECT = ["#onetrust-reject-all-handler", "#CybotCookiebotDialogBodyButtonDecline",
+    const REJECT = ["#onetrust-reject-all-handler", "#reject-all", "#CybotCookiebotDialogBodyButtonDecline",
       "button[data-testid='uc-deny-all-button']", ".didomi-continue-without-agreeing", "#didomi-notice-disagree-button",
       "#cm [data-role=\"necessary\"]", "#c-s-bn", "button.cc-btn[data-role=necessary]"];
     // Usercentrics v3 등은 배너를 열린 shadow root 안에 그린다 — document.querySelector로는 안 보인다.
@@ -183,7 +183,7 @@ async function visit(act) {
     walk(document);
     for (const root of roots) for (const sel of REJECT) { const b = root.querySelector(sel); if (b && b.getClientRects().length) { b.click(); return sel; } }
     // 자체 제작 배너는 선택자가 없다 — 거부 문구로 찾는다 (wolt "Nur erforderliche verwenden", 2026-09-26).
-    const WORDS = /^(reject all|reject|decline all|only necessary|necessary only|use necessary only|alle ablehnen|ablehnen|nur erforderliche( verwenden)?|nur notwendige|tout refuser|refuser|continuer sans accepter|rechazar todo|rifiuta tutto|avvisa alla|neka alla|endast nödvändiga cookies|endast nödvändiga|reject non-essential|refuse|deny all|deny|alles weigeren|weigeren|weiger|alleen noodzakelijke cookies|alleen noodzakelijk|weiger alle|拒否する|すべて拒否|모두 거부|거부)$/i;
+    const WORDS = /^(reject all|reject|decline all|decline|only necessary|necessary only|use necessary only|alle ablehnen|ablehnen|nur erforderliche( verwenden)?|nur notwendige|tout refuser|refuser|continuer sans accepter|rechazar todo|rifiuta tutto|avvisa alla|neka alla|endast nödvändiga cookies|endast nödvändiga|reject non-essential|refuse|deny all|deny|alles weigeren|weigeren|weiger|alleen noodzakelijke cookies|alleen noodzakelijk|weiger alle|拒否する|すべて拒否|모두 거부|거부)$/i;
     // 거부 링크가 <a>인 배너도 있다 — alan.com "Continuer sans accepter"(2026-09-26). 문구가 거부일 때만 누른다.
     for (const root of roots) for (const b of root.querySelectorAll("button, [role=button], a")) {
       if (b.getClientRects().length && WORDS.test((b.textContent || "").trim())) { b.click(); return "text:" + b.textContent.trim(); }
