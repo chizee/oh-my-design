@@ -19,7 +19,7 @@ ds:
   og_image: "https://framerusercontent.com/assets/kA6JROOLbG0jX7SQZl1tLZzahM.jpg"
 verification_v2:
   schema: 2
-  checked: "2026-07-11"
+  checked: "2026-09-29"
   surfaces:
     - { id: home, kind: product, url: "https://www.yeogi.com/", inspected: "2026-07-11" }
     - { id: results, kind: product, url: "https://www.yeogi.com/domestic-accommodations", inspected: "2026-07-11" }
@@ -42,6 +42,8 @@ verification_v2:
     - { id: components-doc, kind: official-doc, url: "https://designlibrary.yeogi.com/components/overview", captured: "2026-07-11" }
     - { id: shadow-doc, kind: official-doc, url: "https://designlibrary.yeogi.com/foudations/shadow", captured: "2026-07-11" }
     - { id: spacing-doc, kind: official-doc, url: "https://designlibrary.yeogi.com/foudations/spacing", captured: "2026-07-11" }
+    - { id: yeogiotte-probe, kind: product-surface, url: "https://www.yeogi.com/", captured: "2026-09-29" }
+    - { id: yeogiotte-probe-results, kind: product-surface, url: "https://www.yeogi.com/domestic-accommodations", captured: "2026-09-29" }
   claims:
     "tokens.colors.primary": &color { surface_id: colors, source_id: colors-doc, method: official-doc, captured: "2026-07-11" }
     "tokens.colors.canvas": *color
@@ -108,16 +110,106 @@ verification_v2:
     "tokens.components.price-marker.radius": *component
     "tokens.components.price-marker.states": *component
     "tokens.components.price-marker.use": *component
-    "tokens.components.filter-chip.type": &results { surface_id: results, source_id: results-live, method: live-inspect, captured: "2026-07-11" }
-    "tokens.components.filter-chip.bg": *results
-    "tokens.components.filter-chip.fg": *results
-    "tokens.components.filter-chip.border": *results
-    "tokens.components.filter-chip.radius": *results
-    "tokens.components.filter-chip.use": *results
-    "tokens.components.listing-card.type": *results
-    "tokens.components.listing-card.bg": *results
-    "tokens.components.listing-card.radius": *results
-    "tokens.components.listing-card.use": *results
+    "tokens.components.filter-chip.type": &yChip { surface_id: results, source_id: yeogiotte-probe-results, method: live-state-probe, selector: "button.gc-capsule-button 5만원 이하, rest at page top", captured: "2026-09-29" }
+    "tokens.components.filter-chip.bg": *yChip
+    "tokens.components.filter-chip.fg": *yChip
+    "tokens.components.filter-chip.border": *yChip
+    "tokens.components.filter-chip.radius": *yChip
+    "tokens.components.filter-chip.padding": *yChip
+    "tokens.components.filter-chip.height": *yChip
+    "tokens.components.filter-chip.font": *yChip
+    "tokens.components.filter-chip.hover": { surface_id: results, source_id: yeogiotte-probe-results, method: live-state-probe, selector: "button.gc-capsule-button 5만원 이하 at :hover", captured: "2026-09-29" }
+    "tokens.components.filter-chip.pressed": { surface_id: results, source_id: yeogiotte-probe-results, method: live-state-probe, selector: "button.gc-capsule-button 5만원 이하 at :active", captured: "2026-09-29" }
+    "tokens.components.filter-chip.focus": { surface_id: results, source_id: yeogiotte-probe-results, method: live-state-probe, selector: "button.gc-capsule-button at :focus-visible, Tab stop 29", captured: "2026-09-29" }
+    "tokens.components.filter-chip.states": { surface_id: results, source_id: yeogiotte-probe-results, method: live-state-probe, selector: "button.gc-capsule-button 5만원 이하", captured: "2026-09-29" }
+    "tokens.components.filter-chip.use": *yChip
+    "tokens.components.listing-card.type": &yCard { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-11" }
+    "tokens.components.listing-card.bg": *yCard
+    "tokens.components.listing-card.radius": *yCard
+    "tokens.components.listing-card.padding": *yCard
+    "tokens.components.listing-card.size": *yCard
+    "tokens.components.listing-card.hover": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "first home card a.css-1w02mxj, img.gc-carousel-seller-card-image at :hover", captured: "2026-09-29" }
+    "tokens.components.listing-card.pressed": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "first home card a.css-1w02mxj, img.gc-carousel-seller-card-image at :active", captured: "2026-09-29" }
+    "tokens.components.listing-card.focus": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "first home card a.css-1w02mxj at :focus-visible, Tab stop 75", captured: "2026-09-29" }
+    "tokens.components.listing-card.states": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "first home card a.css-1w02mxj", captured: "2026-09-29" }
+    "tokens.components.listing-card.use": *yCard
+    "tokens.components.search-cta.type": &ySearchCta { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-07-11" }
+    "tokens.components.search-cta.bg": *ySearchCta
+    "tokens.components.search-cta.fg": *ySearchCta
+    "tokens.components.search-cta.radius": *ySearchCta
+    "tokens.components.search-cta.padding": *ySearchCta
+    "tokens.components.search-cta.height": *ySearchCta
+    "tokens.components.search-cta.font": *ySearchCta
+    "tokens.components.search-cta.hover": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.yf-relative.yf-box-border 검색 at :hover", captured: "2026-09-29" }
+    "tokens.components.search-cta.pressed": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.yf-relative.yf-box-border 검색 at :active", captured: "2026-09-29" }
+    "tokens.components.search-cta.focus": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.yf-relative.yf-box-border 검색 at :focus-visible, Tab stop 14", captured: "2026-09-29" }
+    "tokens.components.search-cta.states": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.yf-relative.yf-box-border 검색", captured: "2026-09-29" }
+    "tokens.components.search-cta.use": *ySearchCta
+    "tokens.components.box-button.type": &yBox { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"67\"]", captured: "2026-07-11" }
+    "tokens.components.box-button.bg": *yBox
+    "tokens.components.box-button.fg": *yBox
+    "tokens.components.box-button.radius": *yBox
+    "tokens.components.box-button.padding": *yBox
+    "tokens.components.box-button.height": *yBox
+    "tokens.components.box-button.font": *yBox
+    "tokens.components.box-button.hover": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.gc-box-button 로그인/회원가입 at :hover", captured: "2026-09-29" }
+    "tokens.components.box-button.pressed": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.gc-box-button 로그인/회원가입 at :active", captured: "2026-09-29" }
+    "tokens.components.box-button.focus": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.gc-box-button at :focus-visible, Tab stop 116", captured: "2026-09-29" }
+    "tokens.components.box-button.states": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.gc-box-button 로그인/회원가입", captured: "2026-09-29" }
+    "tokens.components.box-button.use": *yBox
+    "tokens.components.outline-button.type": &yOutline { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-11" }
+    "tokens.components.outline-button.bg": *yOutline
+    "tokens.components.outline-button.fg": *yOutline
+    "tokens.components.outline-button.border": *yOutline
+    "tokens.components.outline-button.radius": *yOutline
+    "tokens.components.outline-button.padding": *yOutline
+    "tokens.components.outline-button.height": *yOutline
+    "tokens.components.outline-button.font": *yOutline
+    "tokens.components.outline-button.hover": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.yf-box-border 비회원 예약조회 at :hover", captured: "2026-09-29" }
+    "tokens.components.outline-button.pressed": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.yf-box-border 비회원 예약조회 at :active", captured: "2026-09-29" }
+    "tokens.components.outline-button.focus": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.yf-box-border 비회원 예약조회 at :focus-visible, Tab stop 2", captured: "2026-09-29" }
+    "tokens.components.outline-button.states": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "button.yf-box-border 비회원 예약조회", captured: "2026-09-29" }
+    "tokens.components.outline-button.use": *yOutline
+    "tokens.components.header-login-button.type": &yHeaderLogin { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-11" }
+    "tokens.components.header-login-button.bg": *yHeaderLogin
+    "tokens.components.header-login-button.fg": *yHeaderLogin
+    "tokens.components.header-login-button.border": *yHeaderLogin
+    "tokens.components.header-login-button.radius": *yHeaderLogin
+    "tokens.components.header-login-button.padding": *yHeaderLogin
+    "tokens.components.header-login-button.height": *yHeaderLogin
+    "tokens.components.header-login-button.font": *yHeaderLogin
+    "tokens.components.header-login-button.states": *yHeaderLogin
+    "tokens.components.header-login-button.use": *yHeaderLogin
+    "tokens.components.menu-button.type": &yMenu { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-11" }
+    "tokens.components.menu-button.bg": *yMenu
+    "tokens.components.menu-button.radius": *yMenu
+    "tokens.components.menu-button.size": *yMenu
+    "tokens.components.menu-button.hover": { surface_id: home, source_id: product-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"3\"]::state-hover", captured: "2026-07-11" }
+    "tokens.components.menu-button.pressed": { surface_id: home, source_id: product-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"3\"]::state-pressed", captured: "2026-07-11" }
+    "tokens.components.menu-button.states": *yMenu
+    "tokens.components.menu-button.use": *yMenu
+    "tokens.components.search-field.type": &yField { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-11" }
+    "tokens.components.search-field.bg": *yField
+    "tokens.components.search-field.fg": { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"] (the destination input)", captured: "2026-07-11" }
+    "tokens.components.search-field.border": *yField
+    "tokens.components.search-field.radius": *yField
+    "tokens.components.search-field.padding": *yField
+    "tokens.components.search-field.size": *yField
+    "tokens.components.search-field.font": { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"8\"] (the destination input)", captured: "2026-07-11" }
+    "tokens.components.search-field.hover": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "label.yf-flex.yf-h-72 wrapper of input.yf-w-full at :hover", captured: "2026-09-29" }
+    "tokens.components.search-field.states": { surface_id: home, source_id: yeogiotte-probe, method: live-state-probe, selector: "label.yf-flex.yf-h-72 wrapper of input.yf-w-full, Tab stop 10", captured: "2026-09-29" }
+    "tokens.components.search-field.use": *yField
+    "tokens.components.section-tab-chip.type": &yTab { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"80\"]", captured: "2026-07-11" }
+    "tokens.components.section-tab-chip.bg": *yTab
+    "tokens.components.section-tab-chip.fg": *yTab
+    "tokens.components.section-tab-chip.border": *yTab
+    "tokens.components.section-tab-chip.radius": *yTab
+    "tokens.components.section-tab-chip.padding": *yTab
+    "tokens.components.section-tab-chip.height": *yTab
+    "tokens.components.section-tab-chip.font": *yTab
+    "tokens.components.section-tab-chip.selected": { surface_id: home, source_id: product-live, method: computed-style, selector: "home::[data-omd-capture=\"79\"] (aria-selected=true)", captured: "2026-07-11" }
+    "tokens.components.section-tab-chip.states": *yTab
+    "tokens.components.section-tab-chip.use": *yTab
 tokens:
   source: reconciled
   extracted: "2026-07-11"
@@ -150,8 +242,15 @@ tokens:
     button: { type: button, bg: "#1d8bff", fg: "#ffffff", radius: "8px", states: "enabled, pressed, disabled", use: "YDS public Button family; exact variant geometry belongs to the component page" }
     search-bar: { type: input, bg: "#ffffff", fg: "#222222", radius: "12px", states: "idle, focused, typing, populated", use: "YDS public search pattern and product destination/accommodation search" }
     price-marker: { type: badge, bg: "#ffffff", fg: "#222222", radius: "20px", states: "default, selected", use: "YDS public map price marker" }
-    filter-chip: { type: badge, bg: "#ffffff", fg: "#222222", border: "1.5px solid #e6e6e6", radius: "50%", use: "Observed product accommodation filters" }
-    listing-card: { type: card, bg: "#ffffff", radius: "12px", use: "Observed photo-led accommodation result pattern" }
+    filter-chip: { type: button, bg: "#ffffff", fg: "#222222", border: "1px solid #e6e6e6", radius: "100px", padding: "0px 16px", height: "32px", font: "13px / 600 / Pretendard", hover: "bg #f5f5f5", pressed: "bg #f5f5f5", focus: "border 1px #243b52 replaces the 1px #e6e6e6 border (authored; gone after blur) — measured 2026-09-29", states: "rest, hover, pressed and keyboard focus measured 2026-09-29 on the results page's '5만원 이하' (real :hover, :active, and Tab to :focus-visible); instant (transition all 0s)", use: "Price and grade filters on the accommodation results page (gc-capsule-button)" }
+    listing-card: { type: card, bg: "#ffffff", radius: "12px", padding: "0px 0px 24px", size: "282px x 343px", hover: "photo only: image filter none → brightness(0.8) saturate(1.5), image bg rgba(0,0,0,0.16); the card itself unchanged", pressed: "same as hover", focus: "no visible change (measured 2026-09-29)", states: "default captured 2026-07-11 (35 cards on the home carousels); hover and pressed measured 2026-09-29 in a run with this card alone, keyboard focus in the first run", use: "Home accommodation carousel card (gc-carousel-seller-card): photo, grade, name, location, rating, price" }
+    search-cta: { type: button, bg: "#1d8bff", fg: "#ffffff", radius: "10px", padding: "0px 18px", height: "48px", font: "15px / 700 / Pretendard", hover: "bg #006ce0", pressed: "bg #006ce0", focus: "no visible change: no outline is drawn and nothing else changes (measured 2026-09-29)", states: "default captured 2026-07-11; hover, pressed and keyboard focus measured 2026-09-29; 0.15s transition", use: "Home search submit '검색' (yf-* family); 10px radius, not the 8px of the YDS Button" }
+    box-button: { type: button, bg: "#1d8bff", fg: "#ffffff", radius: "8px", padding: "9px 14px", height: "40px", font: "14px / 600 / Pretendard", hover: "bg #006ce0", pressed: "bg #006ce0", focus: "border 1px #243b52 added (authored), widening the box 117.7px → 119.7px — measured 2026-09-29", states: "default captured 2026-07-11; hover, pressed and keyboard focus measured 2026-09-29", use: "Filled product button (gc-box-button), e.g. '로그인/회원가입' in the page body; same #1d8bff fill and 8px radius as the YDS Button" }
+    outline-button: { type: button, bg: "#ffffff", fg: "#222222", border: "1px solid #e6e6e6", radius: "8px", padding: "0px 14px", height: "40px", font: "14px / 600 / Pretendard", hover: "bg #f5f5f5", pressed: "bg #f5f5f5", focus: "no visible change: no outline is drawn and nothing else changes (measured 2026-09-29)", states: "default captured 2026-07-11; hover, pressed and keyboard focus measured 2026-09-29; colour transitions 0.15s", use: "Header '비회원 예약조회'" }
+    header-login-button: { type: button, bg: "#ffffff", fg: "#1d8bff", border: "1px solid #1d8bff", radius: "8px", padding: "0px 14px", height: "40px", font: "14px / 600 / Pretendard", states: "default captured 2026-07-11; no pointer-state sample", use: "Header '로그인/회원가입', outlined in the action blue" }
+    menu-button: { type: button, bg: "#ffffff", radius: "8px", size: "40px x 40px", hover: "bg #e6e6e6", pressed: "bg #e6e6e6", states: "hover and pressed state samples captured 2026-07-11, both settling on #e6e6e6 (the Neutral 100 border colour); keyboard focus not measured", use: "Header '메뉴 열기' icon button" }
+    search-field: { type: input, bg: "transparent", fg: "#222222", border: "1px solid transparent", radius: "16px", padding: "16px 24px", size: "351px x 72px", font: "16px / 600 / Pretendard (input text)", hover: "bg #e6e6e6 (field wrapper)", states: "default captured 2026-07-11 (three fields: 여행지, 일정, 인원); hover measured 2026-09-29; a press or keyboard focus turns the wrapper #ffffff with a 1px #222222 border, but that look stayed after blur, so it may be script state and is not declared", use: "Home search field wrapper, the live product's search bar; the YDS search-bar entry keeps its documented 12px radius" }
+    section-tab-chip: { type: tab, bg: "#ffffff", fg: "#222222", border: "1px solid #e6e6e6", radius: "100px", padding: "8px 16px", height: "32px", font: "13px / 500 / Pretendard", selected: "bg #1d8bff, fg #ffffff, border 1px #ffffff, 13px / 700", states: "unselected and aria-selected=true variants captured 2026-07-11 (7 and 10 samples; the collector's tab interactions selected each in turn); no pointer-state sample", use: "Home section tablist chip (role=tab)" }
 ---
 
 # Design System Inspiration of 여기어때 (GoodChoice)
@@ -201,7 +300,7 @@ Specimen availability is separate from family truth and requires a loadable, lic
 
 ## 4. Component Stylings
 
-공개 YDS component catalog는 현재 Button, Price marker, Search bar를 명시합니다. 아래 숙소 filter와 card는 동일 capture에서 확인한 제품 패턴이며, 공개 YDS 명세와 혼동하지 않습니다.
+공개 YDS component catalog는 현재 Button, Price marker, Search bar를 명시합니다. 아래 숙소 filter와 card, 그리고 "라이브 제품 컴포넌트"는 제품 surface에서 측정한 패턴이며, 공개 YDS 명세와 혼동하지 않습니다.
 
 ### Buttons
 
@@ -212,6 +311,7 @@ Specimen availability is separate from family truth and requires a loadable, lic
 - Radius: 8px
 - States: enabled, pressed, disabled
 - Use: 검색과 다음 단계로 이어지는 핵심 행동
+- 라이브 대응(2026-09-29 확인): 제품의 `gc-box-button`(아래 Box Button)이 이 문서값과 같은 `#1d8bff` fill과 8px radius입니다. 홈의 '검색' 버튼은 10px radius의 다른 요소(`yf-*` 계열, 아래 Search CTA)이므로 이 YDS 문서값을 고치지 않습니다.
 
 ### Inputs
 
@@ -222,6 +322,7 @@ Specimen availability is separate from family truth and requires a loadable, lic
 - Radius: 12px
 - States: idle, focused, typing, populated
 - Use: 여행지와 숙소 검색
+- 라이브 대응: 제품 홈의 검색 필드 wrapper는 16px radius입니다(2026-07-11 캡처와 2026-09-29 측정이 같음, 아래 Search Field). 12px는 YDS 문서값으로 둡니다.
 
 ### Cards
 
@@ -229,8 +330,12 @@ Specimen availability is separate from family truth and requires a loadable, lic
 - Type: card
 - Background: `#FFFFFF`
 - Radius: 12px
-- Shadow: none or Flat only
-- Use: 사진, 숙소명, 위치, 평점, 가격의 반복 결과 구조
+- Padding: 0 0 24px, 282px × 343px
+- Shadow: none
+- Hover·Pressed: 카드 자체는 그대로이고, 사진에만 `filter: brightness(0.8) saturate(1.5)`와 rgba(0,0,0,0.16) 배경이 걸립니다(2026-09-29 측정)
+- Focus: 보이는 변화 없음(2026-09-29 측정)
+- Use: 홈 숙소 carousel 카드(`gc-carousel-seller-card`): 사진, 등급, 숙소명, 위치, 평점, 가격
+- 근거 정정(2026-09-29): 이 12px 카드는 2026-07-11 캡처의 홈 surface에 있습니다(35개). 같은 캡처의 결과 페이지 surface는 Cloudflare 차단 화면이라 카드가 없었습니다. 결과 페이지의 목록 카드는 다른 레이아웃(880px 폭의 행, anchor radius 0, 아래쪽 1px `#e6e6e6` 구분선; 2026-09-29 survey)이며 측정하지 않았습니다.
 
 ### Badges
 
@@ -243,14 +348,54 @@ Specimen availability is separate from family truth and requires a loadable, lic
 - Use: 지도 위 가격 탐색
 
 **Filter Chip — observed product pattern**
-- Type: badge
+- Type: button (`gc-capsule-button`)
 - Background: `#FFFFFF`
-- Text: `#222222`
-- Border: 1.5px solid `#E6E6E6`
-- Radius: 50%
-- Use: 가격·등급·편의시설 필터
+- Text: `#222222`, 13px / 600
+- Border: 1px solid `#E6E6E6`
+- Radius: 100px (capsule), 높이 32px, padding 0 16px
+- Hover·Pressed: 배경 `#f5f5f5`
+- Focus: 테두리가 1px `#243b52`로 바뀝니다(작성된 스타일이며 blur 후 사라짐; 2026-09-29 측정)
+- Use: 결과 페이지의 가격·등급 필터('5만원 이하' 등)
+- 정정(2026-09-29): 이전의 1.5px 테두리와 50% radius는 측정값이 아니었습니다. 2026-07-11 캡처의 결과 surface는 Cloudflare 차단 화면이었고, 2026-09-29 같은 URL에서 1px와 100px가 측정됐습니다.
 
-**Verified:** 2026-07-11 (eight-surface deterministic capture plus official in-app inspection)
+### 라이브 제품 컴포넌트 (2026-07-11 캡처, 상태는 2026-09-29 측정)
+
+YDS 문서 컴포넌트와 별도로 제품 홈에서 측정한 컨트롤입니다. 측정한 모든 컨트롤에서 hover와 pressed는 같은 값입니다.
+
+**Search CTA** — 홈 검색 제출 '검색'
+- `#1d8bff` 배경, `#ffffff` 텍스트, 10px radius, 높이 48px, padding 0 18px, 15px / 700
+- Hover·Pressed: 배경 `#006ce0`
+- Focus: 보이는 변화 없음(outline이 그려지지 않고 다른 속성도 그대로; 2026-09-29 측정)
+- 0.15s 전환
+
+**Box Button** — `gc-box-button`, 예: 본문의 '로그인/회원가입'
+- `#1d8bff` 배경, `#ffffff` 텍스트, 8px radius, 높이 40px, padding 9px 14px, 14px / 600
+- Hover·Pressed: 배경 `#006ce0`
+- Focus: 1px `#243b52` 테두리가 추가되고 폭이 117.7px에서 119.7px로 늘어납니다(2026-09-29 측정)
+
+**Outline Button** — 헤더 '비회원 예약조회'
+- `#ffffff` 배경, `#222222` 텍스트, 1px solid `#e6e6e6`, 8px radius, 높이 40px, padding 0 14px, 14px / 600
+- Hover·Pressed: 배경 `#f5f5f5`. Focus: 보이는 변화 없음(2026-09-29 측정)
+
+**Header Login Button** — 헤더 '로그인/회원가입'
+- `#ffffff` 배경, `#1d8bff` 텍스트와 1px 테두리, 8px radius, 높이 40px, 14px / 600
+- 상태 샘플 없음
+
+**Menu Button** — 헤더 '메뉴 열기'
+- 40px × 40px, `#ffffff` 배경, 8px radius
+- Hover·Pressed: 배경 `#e6e6e6`(2026-07-11 상태 샘플). 키보드 focus는 측정하지 않았습니다
+
+**Search Field** — 홈 검색 필드 wrapper(여행지·일정·인원)
+- 351px × 72px, 16px radius, padding 16px 24px, 투명 배경과 1px 투명 테두리. 입력 텍스트는 `#222222` 16px / 600
+- Hover: wrapper 배경 `#e6e6e6`(2026-09-29 측정)
+- 누르거나 키보드로 focus하면 wrapper가 `#ffffff` 배경과 1px `#222222` 테두리가 됩니다. 다만 focus가 떠난 뒤에도 남아 있어 스크립트 상태일 수 있으므로 상태값으로 선언하지 않습니다.
+
+**Section Tab Chip** — 홈 섹션 tablist(role=tab)
+- 미선택: `#ffffff` 배경, `#222222` 텍스트, 1px solid `#e6e6e6`, 100px radius, 높이 32px, padding 8px 16px, 13px / 500
+- 선택(aria-selected=true): `#1d8bff` 배경, `#ffffff` 텍스트, 13px / 700
+- pointer 상태 샘플 없음
+
+**Verified:** 2026-07-11 (eight-surface deterministic capture plus official in-app inspection) · states re-measured 2026-09-29 (live probe of the home and results pages)
 **Tier 1 sources:** https://www.yeogi.com/ , https://www.yeogi.com/domestic-accommodations , https://designlibrary.yeogi.com/ , https://designlibrary.yeogi.com/foudations/color/palette-color , https://designlibrary.yeogi.com/foudations/typography , https://designlibrary.yeogi.com/foudations/layout , https://designlibrary.yeogi.com/foudations/radius , https://designlibrary.yeogi.com/components/overview
 
 ## 5. Layout & Spacing
@@ -282,6 +427,8 @@ Specimen availability is separate from family truth and requires a loadable, lic
 ## 9. Interaction & Motion
 
 확인된 상태는 버튼·검색바·price marker의 기본/선택/입력 흐름과 product filter interaction입니다. duration이나 easing은 공개 source에서 확인되지 않았으므로 고정 token을 만들지 않습니다. 상태 변화는 색상만이 아니라 label, border, focus affordance로도 구분합니다.
+
+2026-09-29 라이브 측정: 여섯 컨트롤 모두 hover와 pressed가 같은 값입니다(채운 `#1d8bff` 버튼은 `#006ce0`, 흰 outline 컨트롤은 `#f5f5f5`). 키보드 focus는 outline으로 그려지지 않습니다. `gc-*` 컨트롤(Box Button, Filter Chip)은 1px `#243b52` 테두리를 그리고, `yf-*` 버튼(Search CTA, Outline Button)과 홈 숙소 카드는 보이는 변화가 없습니다. '검색' 버튼과 헤더 outline 버튼에만 0.15s 전환이 있고 나머지는 즉시 바뀝니다. 이 값들은 컴포넌트 측정값이며 motion token으로 만들지 않습니다.
 
 ## 10. Responsive Behavior
 
@@ -315,6 +462,8 @@ YDS와 live product를 함께 읽으면 여기어때의 차별점은 특정 장�
 ## 14. Accessibility
 
 작은 badge와 caption에서도 의미를 색상 하나에만 의존하지 않습니다. 사진 위 텍스트는 별도 contrast surface를 확보하고, search·filter·button은 visible focus와 명시적 label을 유지합니다. 정확한 contrast ratio나 target size는 별도 검증 전에는 주장하지 않습니다.
+
+측정 결과(2026-09-29): 키보드 focus가 보이는 컨트롤은 `gc-*` 계열의 1px `#243b52` 테두리뿐입니다. '검색' 버튼, 헤더 '비회원 예약조회', 홈 숙소 카드는 focus가 보이지 않고, 브라우저 기본 ring도 그려지지 않습니다.
 
 ## 15. Implementation Checklist
 

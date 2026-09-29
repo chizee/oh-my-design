@@ -12,7 +12,7 @@ verified: "2026-07-12"
 omd: "0.1"
 verification_v2:
   schema: 2
-  checked: "2026-07-12"
+  checked: "2026-09-29"
   surfaces:
     - { id: home, kind: marketing-product, url: "https://www.banksalad.com/", inspected: "2026-07-12" }
     - { id: contents, kind: product-directory, url: "https://www.banksalad.com/contents", inspected: "2026-07-12" }
@@ -27,6 +27,10 @@ verification_v2:
     - { id: card-live, kind: product-surface, url: "https://www.banksalad.com/product/cards/CARD002319", captured: "2026-07-12" }
     - { id: bpl-design, kind: official-doc, url: "https://blog.banksalad.com/tech/banksalad-product-language-design/", captured: "2026-07-12" }
     - { id: bpl-engineering, kind: official-doc, url: "https://blog.banksalad.com/tech/banksalad-product-language-ios/", captured: "2026-07-12" }
+    - { id: banksalad-probe-home, kind: product-surface, url: "https://www.banksalad.com/", captured: "2026-09-29" }
+    - { id: banksalad-probe-loan, kind: product-surface, url: "https://www.banksalad.com/loan/interest-rate-cut", captured: "2026-09-29" }
+    - { id: banksalad-probe-safety, kind: product-surface, url: "https://www.banksalad.com/customer-safety", captured: "2026-09-29" }
+    - { id: banksalad-probe-card, kind: product-surface, url: "https://www.banksalad.com/product/cards/CARD002319", captured: "2026-09-29" }
   conflicts: []
   claims:
     "tokens.colors.primary": &home_evidence { surface_id: home, source_id: home-live, method: live-inspect, captured: "2026-07-12" }
@@ -72,7 +76,7 @@ verification_v2:
     "tokens.components.primary-action.padding": *loan_evidence
     "tokens.components.primary-action.height": *loan_evidence
     "tokens.components.primary-action.font": *loan_evidence
-    "tokens.components.primary-action.states": *loan_evidence
+    "tokens.components.primary-action.states": { surface_id: loan, source_id: banksalad-probe-loan, method: live-state-probe, selector: "button.relative.inline-flex 10초만에 신청하기", captured: "2026-09-29" }
     "tokens.components.primary-action.use": *loan_evidence
     "tokens.components.filter-chip.type": *contents_evidence
     "tokens.components.filter-chip.bg": *contents_evidence
@@ -90,11 +94,84 @@ verification_v2:
     "tokens.components.safety-card.use": *safety_evidence
     "tokens.components.disclosure-row.type": *card_evidence
     "tokens.components.disclosure-row.bg": *card_evidence
-    "tokens.components.disclosure-row.fg": *card_evidence
+    "tokens.components.disclosure-row.fg": { surface_id: card, source_id: banksalad-probe-card, method: live-state-probe, selector: "button.flex.w-full 원하는 혜택 직접 골라보기, label span.text-b16.font-bold", captured: "2026-09-29" }
     "tokens.components.disclosure-row.radius": *card_evidence
     "tokens.components.disclosure-row.padding": *card_evidence
-    "tokens.components.disclosure-row.font": *card_evidence
+    "tokens.components.disclosure-row.font": { surface_id: card, source_id: banksalad-probe-card, method: live-state-probe, selector: "button.flex.w-full 원하는 혜택 직접 골라보기, label span.text-b16.font-bold", captured: "2026-09-29" }
     "tokens.components.disclosure-row.use": *card_evidence
+    "tokens.components.primary-action.hover": { surface_id: loan, source_id: banksalad-probe-loan, method: live-state-probe, selector: "button.relative.inline-flex 10초만에 신청하기 at :hover", captured: "2026-09-29" }
+    "tokens.components.primary-action.pressed": { surface_id: loan, source_id: banksalad-probe-loan, method: live-state-probe, selector: "button.relative.inline-flex 10초만에 신청하기 at :active", captured: "2026-09-29" }
+    "tokens.components.primary-action.focus": { surface_id: loan, source_id: banksalad-probe-loan, method: live-state-probe, selector: "button.relative.inline-flex at :focus-visible, Tab stop 9", captured: "2026-09-29" }
+    "tokens.components.disclosure-row.hover": { surface_id: card, source_id: banksalad-probe-card, method: live-state-probe, selector: "button.flex.w-full 원하는 혜택 직접 골라보기 at :hover", captured: "2026-09-29" }
+    "tokens.components.disclosure-row.pressed": { surface_id: card, source_id: banksalad-probe-card, method: live-state-probe, selector: "button.flex.w-full 원하는 혜택 직접 골라보기 at :active", captured: "2026-09-29" }
+    "tokens.components.disclosure-row.focus": { surface_id: card, source_id: banksalad-probe-card, method: live-state-probe, selector: "button.flex.w-full at :focus-visible, Tab stop 16", captured: "2026-09-29" }
+    "tokens.components.disclosure-row.states": { surface_id: card, source_id: banksalad-probe-card, method: live-state-probe, selector: "button.flex.w-full 원하는 혜택 직접 골라보기", captured: "2026-09-29" }
+    "tokens.components.gnb-link.type": &bGnb { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.gnb-link.bg": *bGnb
+    "tokens.components.gnb-link.fg": *bGnb
+    "tokens.components.gnb-link.padding": *bGnb
+    "tokens.components.gnb-link.height": *bGnb
+    "tokens.components.gnb-link.font": *bGnb
+    "tokens.components.gnb-link.hover": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a#gnb-title 카드 at :hover", captured: "2026-09-29" }
+    "tokens.components.gnb-link.pressed": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a#gnb-title 카드 at :active", captured: "2026-09-29" }
+    "tokens.components.gnb-link.focus": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a#gnb-title 카드 at :focus-visible, Tab stop 2", captured: "2026-09-29" }
+    "tokens.components.gnb-link.states": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a#gnb-title 카드", captured: "2026-09-29" }
+    "tokens.components.gnb-link.use": *bGnb
+    "tokens.components.hero-pill-cta.type": &bHeroPill { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-12" }
+    "tokens.components.hero-pill-cta.bg": *bHeroPill
+    "tokens.components.hero-pill-cta.fg": *bHeroPill
+    "tokens.components.hero-pill-cta.radius": *bHeroPill
+    "tokens.components.hero-pill-cta.padding": *bHeroPill
+    "tokens.components.hero-pill-cta.height": *bHeroPill
+    "tokens.components.hero-pill-cta.font": *bHeroPill
+    "tokens.components.hero-pill-cta.shadow": *bHeroPill
+    "tokens.components.hero-pill-cta.hover": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a.inline-flex 뱅크샐러드 사용해보기 at :hover", captured: "2026-09-29" }
+    "tokens.components.hero-pill-cta.pressed": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a.inline-flex 뱅크샐러드 사용해보기 at :active", captured: "2026-09-29" }
+    "tokens.components.hero-pill-cta.focus": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a.inline-flex 뱅크샐러드 사용해보기 at :focus-visible, Tab stop 11", captured: "2026-09-29" }
+    "tokens.components.hero-pill-cta.states": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a.inline-flex 뱅크샐러드 사용해보기", captured: "2026-09-29" }
+    "tokens.components.hero-pill-cta.use": *bHeroPill
+    "tokens.components.hero-outline-pill.type": &bHeroOutline { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-12" }
+    "tokens.components.hero-outline-pill.bg": *bHeroOutline
+    "tokens.components.hero-outline-pill.fg": *bHeroOutline
+    "tokens.components.hero-outline-pill.border": *bHeroOutline
+    "tokens.components.hero-outline-pill.radius": *bHeroOutline
+    "tokens.components.hero-outline-pill.padding": *bHeroOutline
+    "tokens.components.hero-outline-pill.height": *bHeroOutline
+    "tokens.components.hero-outline-pill.font": *bHeroOutline
+    "tokens.components.hero-outline-pill.shadow": *bHeroOutline
+    "tokens.components.hero-outline-pill.hover": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a.inline-flex 서비스 더 알아보기 at :hover", captured: "2026-09-29" }
+    "tokens.components.hero-outline-pill.pressed": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a.inline-flex 서비스 더 알아보기 at :active", captured: "2026-09-29" }
+    "tokens.components.hero-outline-pill.focus": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a.inline-flex 서비스 더 알아보기 at :focus-visible, Tab stop 12", captured: "2026-09-29" }
+    "tokens.components.hero-outline-pill.states": { surface_id: home, source_id: banksalad-probe-home, method: live-state-probe, selector: "a.inline-flex 서비스 더 알아보기", captured: "2026-09-29" }
+    "tokens.components.hero-outline-pill.use": *bHeroOutline
+    "tokens.components.safety-link-card.type": &bSafetyLink { surface_id: safety, source_id: safety-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.safety-link-card.bg": *bSafetyLink
+    "tokens.components.safety-link-card.fg": { surface_id: safety, source_id: banksalad-probe-safety, method: live-state-probe, selector: "a.relative.flex 명의 도용 의심, title h2.whitespace-pre-line", captured: "2026-09-29" }
+    "tokens.components.safety-link-card.border": *bSafetyLink
+    "tokens.components.safety-link-card.radius": *bSafetyLink
+    "tokens.components.safety-link-card.padding": *bSafetyLink
+    "tokens.components.safety-link-card.size": *bSafetyLink
+    "tokens.components.safety-link-card.font": { surface_id: safety, source_id: banksalad-probe-safety, method: live-state-probe, selector: "a.relative.flex 명의 도용 의심, title h2.whitespace-pre-line", captured: "2026-09-29" }
+    "tokens.components.safety-link-card.shadow": *bSafetyLink
+    "tokens.components.safety-link-card.hover": { surface_id: safety, source_id: banksalad-probe-safety, method: live-state-probe, selector: "a.relative.flex 명의 도용 의심 at :hover", captured: "2026-09-29" }
+    "tokens.components.safety-link-card.pressed": { surface_id: safety, source_id: banksalad-probe-safety, method: live-state-probe, selector: "a.relative.flex 명의 도용 의심 at :active", captured: "2026-09-29" }
+    "tokens.components.safety-link-card.focus": { surface_id: safety, source_id: banksalad-probe-safety, method: live-state-probe, selector: "a.relative.flex 명의 도용 의심 at :focus-visible, Tab stop 2", captured: "2026-09-29" }
+    "tokens.components.safety-link-card.states": { surface_id: safety, source_id: banksalad-probe-safety, method: live-state-probe, selector: "a.relative.flex 명의 도용 의심", captured: "2026-09-29" }
+    "tokens.components.safety-link-card.use": *bSafetyLink
+    "tokens.components.carousel-indicator.type": &bDot { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-12" }
+    "tokens.components.carousel-indicator.bg": *bDot
+    "tokens.components.carousel-indicator.radius": *bDot
+    "tokens.components.carousel-indicator.size": *bDot
+    "tokens.components.carousel-indicator.shadow": *bDot
+    "tokens.components.carousel-indicator.states": *bDot
+    "tokens.components.carousel-indicator.use": *bDot
+    "tokens.components.footer-link.type": &bFooter { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.bg": *bFooter
+    "tokens.components.footer-link.fg": *bFooter
+    "tokens.components.footer-link.height": *bFooter
+    "tokens.components.footer-link.font": *bFooter
+    "tokens.components.footer-link.states": *bFooter
+    "tokens.components.footer-link.use": *bFooter
 tokens:
   source: reconciled
   extracted: "2026-07-12"
@@ -119,10 +196,16 @@ tokens:
     flat: "none"
   components_harvested: true
   components:
-    primary-action: { type: button, bg: "#06a96c", fg: "#ffffff", radius: "16px", padding: "16px 20px", height: "56px", font: "16px / 700", states: "default captured; no safe active interaction expansion", use: "Full-width primary action in the public interest-rate flow" }
+    primary-action: { type: button, bg: "#06a96c", fg: "#ffffff", radius: "16px", padding: "16px 20px", height: "56px", font: "16px / 700", hover: "overlay ::after #000000 opacity 0→0.04; bg stays #06a96c", pressed: "overlay ::after #000000 opacity 0→0.04 (same as hover)", focus: "no visible indication: outline none and no other property changes (measured 2026-09-29)", states: "default captured 2026-07-12; hover, pressed and keyboard focus measured 2026-09-29 on the same loan-flow button (real :hover, :active, and Tab to :focus-visible); every change is instant (transition all 0s)", use: "Full-width primary action in the public interest-rate flow" }
     filter-chip: { type: button, bg: "rgba(19,189,126,0.15)", fg: "#13bd7e", radius: "6px", padding: "10px 12px", font: "16px / 500", states: "default captured; no safe active interaction expansion", use: "Content-directory category or filter action" }
     safety-card: { type: card, bg: "#ffffff", border: "1px solid #f0f2f5", radius: "24px", padding: "24px", use: "Customer-safety action and guidance card" }
-    disclosure-row: { type: listItem, bg: "transparent", fg: "#111111", radius: "0px", padding: "24px 20px", font: "16px / 400", use: "Expandable disclosure row on a public card product detail" }
+    disclosure-row: { type: listItem, bg: "transparent", fg: "#272a30", radius: "0px", padding: "24px 20px", font: "16px / 700 (label span; the button's own computed style is #000000 16px / 400)", hover: "no visible change (measured 2026-09-29)", pressed: "no visible change (measured 2026-09-29)", focus: "no visible indication: outline none and no other property changes (measured 2026-09-29)", states: "default captured 2026-07-12; hover, pressed and keyboard focus measured 2026-09-29; the expanded state was not opened", use: "Expandable disclosure row on a public card product detail" }
+    gnb-link: { type: tab, bg: "transparent", fg: "#111111", padding: "0px 22px", height: "26px", font: "16px / 700 / Pretendard, -0.08px tracking", hover: "fg #13bd7e", pressed: "fg #13bd7e", focus: "no visible indication: outline none and no other property changes (measured 2026-09-29)", states: "hover and pressed state samples captured 2026-07-12 on all 11 header links across four surfaces (44 of 44 read fg #13bd7e); re-measured 2026-09-29 on '카드' with real :hover and :active; keyboard focus measured 2026-09-29", use: "Sticky desktop header menu link (카드, 대출, 예적금, 무료 건강 검사 …)" }
+    hero-pill-cta: { type: button, bg: "#13bd7e", fg: "#ffffff", radius: "41px", padding: "10px 20px", height: "41px", font: "18px / 500 / Pretendard", shadow: "0 4px 9px rgba(0,0,0,0.15)", hover: "no visible change (measured 2026-09-29)", pressed: "no visible change (measured 2026-09-29)", focus: "no visible indication: outline none and no other property changes (measured 2026-09-29)", states: "default captured 2026-07-12; hover, pressed and keyboard focus measured 2026-09-29 (the hero carousel auto-advances, so the pill was read 1.5 s after load)", use: "Home hero carousel pill '뱅크샐러드 사용해보기'; other slides recolour the same pill" }
+    hero-outline-pill: { type: button, bg: "#ffffff", fg: "#13bd7e", border: "1px solid #13bd7e", radius: "41px", padding: "10px 20px", height: "43px", font: "18px / 500 / Pretendard", shadow: "0 4px 9px rgba(0,0,0,0.15)", hover: "no visible change (measured 2026-09-29)", pressed: "no visible change (measured 2026-09-29)", focus: "no visible indication: outline none and no other property changes (measured 2026-09-29)", states: "default captured 2026-07-12; hover, pressed and keyboard focus measured 2026-09-29 in a run with this control alone", use: "Home hero secondary pill '서비스 더 알아보기'" }
+    safety-link-card: { type: card, bg: "#ffffff", fg: "#272a30", border: "1px solid #f0f2f5", radius: "24px", padding: "28px 24px", size: "564px x 190px", font: "24px / 700 (title h2)", shadow: "0 8px 24px #dce9f3", hover: "no visible change (measured 2026-09-29)", pressed: "no visible change (measured 2026-09-29)", focus: "no visible indication: outline none and no other property changes (measured 2026-09-29)", states: "default captured 2026-07-12 (three link cards, 564px and 272px wide); hover, pressed and keyboard focus measured 2026-09-29 on the first", use: "Customer-safety report link card (명의 도용 의심 …); a different element from safety-card, the 158px guidance list card" }
+    carousel-indicator: { type: button, bg: "#ffffff", radius: "9999px", size: "36px x 8px", shadow: "0 2px 8px rgba(0,0,0,0.1)", states: "default captured 2026-07-12 (the current page's dot); the 2026-09-29 survey reads the other dots at 8px x 8px; no pointer-state sample", use: "Home hero banner page dot ('N페이지 배너 보기')" }
+    footer-link: { type: tab, bg: "transparent", fg: "#111111", height: "20px", font: "16px / 400 / Pretendard", states: "default captured 2026-07-12 (57 links on home, contents and card detail); no pointer-state sample", use: "Footer column link (회사소개, 블로그, 공지사항, 이용약관 …)" }
 ---
 
 # Design System Inspiration of Banksalad
@@ -220,7 +303,10 @@ Specimen availability requires a loadable font source and is separate from famil
 - Padding: 16px 20px
 - Height: 56px
 - Font: 16px / 700 / Pretendard
-- States: default captured; no safe active interaction expansion
+- Hover: a full-size black `::after` overlay goes from opacity 0 to 0.04; the fill stays `#06a96c`
+- Pressed: the same overlay at 0.04 (pressed equals hover)
+- Focus: no visible indication — `outline-style: none`, and no other property changes (measured 2026-09-29 after real Tab presses, `:focus-visible` matched)
+- States: default captured 2026-07-12; hover, pressed and focus measured 2026-09-29 on the same loan-flow button; every change is instant (`transition: all 0s`)
 - Use: Full-width primary action in the public interest-rate flow
 
 **Content Filter Chip**
@@ -229,7 +315,7 @@ Specimen availability requires a loadable font source and is separate from famil
 - Radius: 6px
 - Padding: 10px 12px
 - Font: 16px / 500 / Pretendard
-- States: default captured; no safe active interaction expansion
+- States: default captured 2026-07-12; no safe active interaction expansion. The `/contents` surface answered HTTP 404 on 2026-09-29 (four attempts), so these values could not be re-measured and stay as captured
 - Use: Category and filter action on the public contents directory
 
 **Customer Safety Card**
@@ -238,14 +324,54 @@ Specimen availability requires a loadable font source and is separate from famil
 - Radius: 24px
 - Padding: 24px
 - Use: Customer-safety action and guidance card
+- Scope: the 158px guidance list card (`surface-4::li`, six on the page). The report link cards at the top of the same page are a different element, recorded below as Safety Link Card; the 2026-09-29 probe measured one of those, so its 28px 24px padding and tinted shadow do not apply here
 
 **Product Disclosure Row**
 - Background: transparent
-- Text: `#111111`
+- Label: `#272a30`, 16px / 700 / Pretendard — the visible `span.text-b16.font-bold` (measured 2026-09-29). The button's own computed style is `#000000` 16px / 400; the earlier `#111111` matched neither
 - Radius: 0px
 - Padding: 24px 20px
-- Font: 16px / 400 / Pretendard
-- Use: Expandable disclosure row on the public card-product detail
+- Hover and pressed: no visible change (measured 2026-09-29)
+- Focus: no visible indication — `outline-style: none`, nothing else changes (measured 2026-09-29)
+- Use: Expandable disclosure row on the public card-product detail (the expanded state was not opened)
+
+### Header, hero and footer (captured 2026-07-12; states measured 2026-09-29)
+
+**Header Menu Link**
+- Text: `#111111`, 16px / 700 / Pretendard, -0.08px tracking; padding 0 22px, 26px line box, no fill
+- Hover and pressed: the text turns `#13bd7e`. All 44 July state samples (11 links on four surfaces) agree, and the 2026-09-29 probe read the same on 카드 with real `:hover` and `:active`
+- Focus: no visible indication — `outline-style: none`, nothing else changes (measured 2026-09-29)
+- Use: sticky desktop header (카드, 대출, 예적금, 무료 건강 검사, 건강 보험, 자동차보험 …)
+
+**Hero Pill CTA**
+- Background `#13bd7e`, text `#ffffff`, 41px radius, padding 10px 20px, 41px tall, 18px / 500 / Pretendard
+- Shadow: `0 4px 9px rgba(0,0,0,0.15)`
+- Hover and pressed: no visible change. Focus: no visible indication (all measured 2026-09-29)
+- The carousel's other slides recolour the same pill: `#877af5` with white text (내 최저금리 조회하기) and `#ffbe4c` with `#111111` text (이벤트 보기), captured 2026-07-12 and present again in the 2026-09-29 survey
+- Use: 뱅크샐러드 사용해보기
+
+**Hero Outline Pill**
+- Background `#ffffff`, text and 1px border `#13bd7e`; the filled pill's radius, padding, type and shadow; 43px tall
+- Hover and pressed: no visible change. Focus: no visible indication (all measured 2026-09-29)
+- Use: 서비스 더 알아보기
+
+**Safety Link Card**
+- Background `#ffffff`, 1px solid `#f0f2f5` border, 24px radius, padding 28px 24px, 564px × 190px (272px-wide cards sit beside it)
+- Shadow: `0 8px 24px #dce9f3` — a tinted rest shadow, present in the 2026-07-12 capture and on 2026-09-29
+- Title: `#272a30`, 24px / 700 (measured 2026-09-29)
+- Hover and pressed: no visible change. Focus: no visible indication (all measured 2026-09-29)
+- Use: customer-safety report links (명의 도용 의심 …)
+
+**Carousel Page Dot**
+- `#ffffff`, 9999px radius, 36px × 8px for the current page, shadow `0 2px 8px rgba(0,0,0,0.1)`; the 2026-09-29 survey reads the other dots at 8px × 8px
+- No pointer-state sample
+
+**Footer Link**
+- Text `#111111`, 16px / 400 / Pretendard, 20px line box, no fill
+- No pointer-state sample
+- Use: footer columns (회사소개, 블로그, 공지사항, 이용약관 …)
+
+None of the six controls probed on 2026-09-29 shows a visible keyboard focus indication: each removes the browser ring (`outline-style: none`) and changes nothing else. That is recorded as a measured absence on each component, not as a focus token.
 
 <details>
 <summary>Superseded 2026-05 legacy snapshot — retained for audit history, not canonical</summary>
@@ -472,7 +598,7 @@ Specimen availability requires a loadable font source and is separate from famil
 
 ---
 
-**Verified:** 2026-07-12 (omd:migrate)
+**Verified:** 2026-07-12 (omd:migrate) · states re-measured 2026-09-29 (live probe of the home, loan, customer-safety and card-detail pages)
 **Tier 1 sources:** https://www.banksalad.com/ ; https://www.banksalad.com/contents ; https://www.banksalad.com/loan/interest-rate-cut ; https://www.banksalad.com/customer-safety ; https://www.banksalad.com/product/cards/CARD002319 ; https://blog.banksalad.com/tech/banksalad-product-language-design/ ; https://blog.banksalad.com/tech/banksalad-product-language-ios/
 **Tier 2 sources:** https://getdesign.md/banksalad (no brand record found in exact search); https://styles.refero.design/?q=banksalad (attempted; browser-harness unavailable and indexed search returned no brand result)
 **Tier 2 status:** unavailable
@@ -522,6 +648,8 @@ Banksalad's 2px is a typographic-engineering commitment: pixel rounding sharp en
 | Halo | `0 0 2px rgba(0,0,0,.26)` | Thin outline on overlay menus and popovers |
 
 **Shadow Philosophy.** Shadows are **always neutral and single-layer.** No colored shadows, no parallax stacks. Where Stripe brands its shadows in navy and Toss uses near-zero shadows for clinical clarity, Banksalad sits between — visible enough that cards lift off the surface, restrained enough that the data inside is what the eye lands on. The signature `0 2px 5px rgba(0,0,0,.12)` is a small, low-cost lift used 38× in the bundle.
+
+Measured exception (2026-07-12 capture, confirmed 2026-09-29): the customer-safety link card carries a tinted rest shadow, `0 8px 24px #dce9f3`, so the neutral-only statement above does not hold for that card.
 
 ## 7. Do's and Don'ts
 
@@ -675,7 +803,9 @@ These are observable jobs, not invented people. Names, ages, quotes, income, beh
 
 ## 14. States
 
-The collector recorded default render states only and performed zero safe interaction expansions. No canonical empty, loading, error, success, disabled, hover, focus, or pressed treatment is promoted. The loan accordion was captured in its rendered state, but this does not establish a complete product-state system.
+The 2026-07-12 collector performed zero safe interaction expansions, but its pseudo-state pass did record hover and pressed samples for the 11 header menu links on four surfaces (text `#111111` to `#13bd7e`). This paragraph previously said default render states only (corrected 2026-09-29).
+
+A live probe on 2026-09-29 measured hover, pressed and keyboard focus on six controls. The header link turns `#13bd7e`; the loan action darkens through a black `::after` overlay at opacity 0.04; the two hero pills, the safety link card and the disclosure row do not change; and none of the six shows a visible keyboard focus indication (`outline-style: none`, nothing else changes). No canonical empty, loading, error, success, or disabled treatment is promoted. The loan accordion was captured in its rendered state, but this does not establish a complete product-state system.
 
 <details>
 <summary>Superseded synthetic state proposals — not verified product facts</summary>
@@ -700,7 +830,7 @@ The collector recorded default render states only and performed zero safe intera
 
 ## 15. Motion & Easing
 
-One current public accordion panel exposed a `350ms` height/opacity transition using `cubic-bezier(0.25, 0.1, 0.25, 1)`. No broader duration scale, spring policy, chart animation, score count-up, or reduced-motion implementation was verified in this capture.
+One current public accordion panel exposed a `350ms` height/opacity transition using `cubic-bezier(0.25, 0.1, 0.25, 1)`. No broader duration scale, spring policy, chart animation, score count-up, or reduced-motion implementation was verified in this capture. The six controls probed on 2026-09-29 all compute `transition: all 0s`, so their hover and pressed changes are instant.
 
 <details>
 <summary>Superseded synthetic motion proposals — not verified product facts</summary>

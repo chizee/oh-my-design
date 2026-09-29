@@ -12,7 +12,7 @@ verified: "2026-07-11"
 omd: "0.1"
 verification_v2:
   schema: 2
-  checked: "2026-07-11"
+  checked: "2026-09-29"
   surfaces:
     - { id: home, kind: storefront, url: "https://www.29cm.co.kr/", inspected: "2026-07-11" }
     - { id: best, kind: catalog, url: "https://www.29cm.co.kr/best-products?period=HOURLY&ranking=POPULARITY&gender=F&age=30", inspected: "2026-07-11" }
@@ -25,6 +25,9 @@ verification_v2:
     - { id: magazine-live, kind: product-surface, url: "https://www.29cm.co.kr/content/29magazine", captured: "2026-07-11" }
     - { id: showcase-live, kind: product-surface, url: "https://www.29cm.co.kr/store/showcase", captured: "2026-07-11" }
     - { id: product-live, kind: product-surface, url: "https://www.29cm.co.kr/products/3970725", captured: "2026-07-11" }
+    - { id: 29cm-probe, kind: product-surface, url: "https://www.29cm.co.kr/", captured: "2026-09-29" }
+    - { id: 29cm-probe-best, kind: product-surface, url: "https://www.29cm.co.kr/best-products?period=HOURLY&ranking=POPULARITY&gender=F&age=30", captured: "2026-09-29" }
+    - { id: 29cm-probe-product, kind: product-surface, url: "https://www.29cm.co.kr/products/3970725", captured: "2026-09-29" }
   claims:
     "tokens.colors.accent": &best_evidence { surface_id: best, source_id: best-live, method: live-inspect, captured: "2026-07-11" }
     "tokens.colors.border": &home_evidence { surface_id: home, source_id: home-live, method: live-inspect, captured: "2026-07-11" }
@@ -40,14 +43,14 @@ verification_v2:
     "tokens.components.carousel-control.height": *product_evidence
     "tokens.components.carousel-control.padding": *product_evidence
     "tokens.components.carousel-control.radius": *product_evidence
-    "tokens.components.carousel-control.states": *product_evidence
+    "tokens.components.carousel-control.states": { surface_id: product, source_id: 29cm-probe-product, method: live-state-probe, selector: "main button.flex.flex-row gallery next (nth 1), run without the Tab walk", captured: "2026-09-29" }
     "tokens.components.carousel-control.type": *product_evidence
     "tokens.components.carousel-control.use": *product_evidence
     "tokens.components.editorial-story-item.bg": &showcase_evidence { surface_id: showcase, source_id: showcase-live, method: live-inspect, captured: "2026-07-11" }
     "tokens.components.editorial-story-item.radius": *showcase_evidence
     "tokens.components.editorial-story-item.type": *showcase_evidence
     "tokens.components.editorial-story-item.use": *showcase_evidence
-    "tokens.components.ghost-outline.pressed": *home_evidence
+    "tokens.components.ghost-outline.pressed": { surface_id: home, source_id: 29cm-probe, method: live-state-probe, selector: "button.relative.flex 더보기 at :active", captured: "2026-09-29" }
     "tokens.components.ghost-outline.bg": *home_evidence
     "tokens.components.ghost-outline.border": *home_evidence
     "tokens.components.ghost-outline.fg": *home_evidence
@@ -55,7 +58,7 @@ verification_v2:
     "tokens.components.ghost-outline.height": *home_evidence
     "tokens.components.ghost-outline.padding": *home_evidence
     "tokens.components.ghost-outline.radius": *home_evidence
-    "tokens.components.ghost-outline.states": *home_evidence
+    "tokens.components.ghost-outline.states": { surface_id: home, source_id: 29cm-probe, method: live-state-probe, selector: "button.relative.flex 더보기", captured: "2026-09-29" }
     "tokens.components.ghost-outline.type": *home_evidence
     "tokens.components.ghost-outline.use": *home_evidence
     "tokens.components.product-grid-item.bg": *best_evidence
@@ -68,7 +71,7 @@ verification_v2:
     "tokens.components.quantity-input.font": *product_evidence
     "tokens.components.quantity-input.height": *product_evidence
     "tokens.components.quantity-input.radius": *product_evidence
-    "tokens.components.quantity-input.states": *product_evidence
+    "tokens.components.quantity-input.states": { surface_id: product, source_id: 29cm-probe-product, method: live-state-probe, selector: "input.text-sm.m-0 quantity field", captured: "2026-09-29" }
     "tokens.components.quantity-input.type": *product_evidence
     "tokens.components.quantity-input.use": *product_evidence
     "tokens.rounded.chip": *product_evidence
@@ -111,6 +114,77 @@ verification_v2:
     "tokens.typography.product-price.size": *best_evidence
     "tokens.typography.product-price.use": *best_evidence
     "tokens.typography.product-price.weight": *best_evidence
+    "tokens.colors.focus-outline": { surface_id: home, source_id: 29cm-probe, method: live-state-probe, selector: "button.relative.flex 더보기 at :focus-visible, Tab stop 77 (also the BEST period chip 일간, Tab stop 39)", captured: "2026-09-29" }
+    "tokens.components.ghost-outline.hover": { surface_id: home, source_id: 29cm-probe, method: live-state-probe, selector: "button.relative.flex 더보기 at :hover", captured: "2026-09-29" }
+    "tokens.components.ghost-outline.focus": { surface_id: home, source_id: 29cm-probe, method: live-state-probe, selector: "button.relative.flex 더보기 at :focus-visible, Tab stop 77", captured: "2026-09-29" }
+    "tokens.components.carousel-control.hover": { surface_id: product, source_id: 29cm-probe-product, method: live-state-probe, selector: "main button.flex.flex-row gallery next at :hover, enabled (restParked = rest)", captured: "2026-09-29" }
+    "tokens.components.carousel-control.pressed": { surface_id: product, source_id: 29cm-probe-product, method: live-state-probe, selector: "main button.flex.flex-row gallery next at :active, enabled (restParked = rest)", captured: "2026-09-29" }
+    "tokens.components.quantity-input.hover": { surface_id: product, source_id: 29cm-probe-product, method: live-state-probe, selector: "input.text-sm.m-0 quantity field at :hover", captured: "2026-09-29" }
+    "tokens.components.quantity-input.pressed": { surface_id: product, source_id: 29cm-probe-product, method: live-state-probe, selector: "input.text-sm.m-0 quantity field at :active", captured: "2026-09-29" }
+    "tokens.components.quantity-input.focus": { surface_id: product, source_id: 29cm-probe-product, method: live-state-probe, selector: "input.text-sm.m-0 at :focus-visible, Tab stop 29", captured: "2026-09-29" }
+    "tokens.components.nav-display-link.type": &cNav { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-11" }
+    "tokens.components.nav-display-link.bg": *cNav
+    "tokens.components.nav-display-link.fg": *cNav
+    "tokens.components.nav-display-link.height": *cNav
+    "tokens.components.nav-display-link.font": *cNav
+    "tokens.components.nav-display-link.hover": { surface_id: home, source_id: 29cm-probe, method: live-state-probe, selector: "a Showcase at :hover, parent ::before", captured: "2026-09-29" }
+    "tokens.components.nav-display-link.pressed": { surface_id: home, source_id: 29cm-probe, method: live-state-probe, selector: "a Showcase at :active, parent ::before", captured: "2026-09-29" }
+    "tokens.components.nav-display-link.focus": { surface_id: home, source_id: 29cm-probe, method: live-state-probe, selector: "a Showcase at :focus-visible, Tab stop 7", captured: "2026-09-29" }
+    "tokens.components.nav-display-link.states": { surface_id: home, source_id: 29cm-probe, method: live-state-probe, selector: "a Showcase", captured: "2026-09-29" }
+    "tokens.components.nav-display-link.use": *cNav
+    "tokens.components.period-chip.type": &cChip { surface_id: best, source_id: best-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"34\"]", captured: "2026-07-11" }
+    "tokens.components.period-chip.bg": *cChip
+    "tokens.components.period-chip.fg": *cChip
+    "tokens.components.period-chip.radius": *cChip
+    "tokens.components.period-chip.padding": &cChipProbe { surface_id: best, source_id: 29cm-probe-best, method: live-state-probe, selector: "button.focus-visible:outline 일간, rest at page top; label span.text-m.text-secondary", captured: "2026-09-29" }
+    "tokens.components.period-chip.height": *cChipProbe
+    "tokens.components.period-chip.font": *cChipProbe
+    "tokens.components.period-chip.selected": { surface_id: best, source_id: best-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"33\"]", captured: "2026-07-11" }
+    "tokens.components.period-chip.hover": { surface_id: best, source_id: 29cm-probe-best, method: live-state-probe, selector: "button.focus-visible:outline 일간 at :hover", captured: "2026-09-29" }
+    "tokens.components.period-chip.pressed": { surface_id: best, source_id: 29cm-probe-best, method: live-state-probe, selector: "button.focus-visible:outline 일간 at :active", captured: "2026-09-29" }
+    "tokens.components.period-chip.focus": { surface_id: best, source_id: 29cm-probe-best, method: live-state-probe, selector: "button.focus-visible:outline 일간 at :focus-visible, Tab stop 39", captured: "2026-09-29" }
+    "tokens.components.period-chip.states": *cChipProbe
+    "tokens.components.period-chip.use": *cChip
+    "tokens.components.product-image-link.type": &cImg { surface_id: best, source_id: best-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"38\"]", captured: "2026-07-11" }
+    "tokens.components.product-image-link.bg": *cImg
+    "tokens.components.product-image-link.size": *cImg
+    "tokens.components.product-image-link.hover": { surface_id: best, source_id: 29cm-probe-best, method: live-state-probe, selector: "a.relative.inline-block first BEST item at :hover", captured: "2026-09-29" }
+    "tokens.components.product-image-link.pressed": { surface_id: best, source_id: 29cm-probe-best, method: live-state-probe, selector: "a.relative.inline-block first BEST item at :active", captured: "2026-09-29" }
+    "tokens.components.product-image-link.focus": { surface_id: best, source_id: 29cm-probe-best, method: live-state-probe, selector: "a.relative.inline-block at :focus-visible, Tab stop 42", captured: "2026-09-29" }
+    "tokens.components.product-image-link.states": { surface_id: best, source_id: 29cm-probe-best, method: live-state-probe, selector: "a.relative.inline-block first BEST item", captured: "2026-09-29" }
+    "tokens.components.product-image-link.use": *cImg
+    "tokens.components.buy-cta.type": &cBuy { surface_id: product, source_id: product-live, method: computed-style, selector: "surface-5::[data-omd-capture=\"29\"]", captured: "2026-07-11" }
+    "tokens.components.buy-cta.bg": *cBuy
+    "tokens.components.buy-cta.fg": *cBuy
+    "tokens.components.buy-cta.radius": *cBuy
+    "tokens.components.buy-cta.padding": *cBuy
+    "tokens.components.buy-cta.height": *cBuy
+    "tokens.components.buy-cta.font": *cBuy
+    "tokens.components.buy-cta.states": *cBuy
+    "tokens.components.buy-cta.use": *cBuy
+    "tokens.components.quantity-stepper.type": &cStep { surface_id: product, source_id: product-live, method: computed-style, selector: "surface-5::[data-omd-capture=\"25\"] and [data-omd-capture=\"27\"]", captured: "2026-07-11" }
+    "tokens.components.quantity-stepper.bg": *cStep
+    "tokens.components.quantity-stepper.border": *cStep
+    "tokens.components.quantity-stepper.radius": *cStep
+    "tokens.components.quantity-stepper.size": *cStep
+    "tokens.components.quantity-stepper.states": *cStep
+    "tokens.components.quantity-stepper.use": *cStep
+    "tokens.components.option-thumbnail.type": &cThumb { surface_id: product, source_id: product-live, method: computed-style, selector: "surface-5::[data-omd-capture=\"23\"]", captured: "2026-07-11" }
+    "tokens.components.option-thumbnail.bg": *cThumb
+    "tokens.components.option-thumbnail.border": *cThumb
+    "tokens.components.option-thumbnail.radius": *cThumb
+    "tokens.components.option-thumbnail.size": *cThumb
+    "tokens.components.option-thumbnail.selected": { surface_id: product, source_id: product-live, method: computed-style, selector: "surface-5::[data-omd-capture=\"24\"]", captured: "2026-07-11" }
+    "tokens.components.option-thumbnail.states": *cThumb
+    "tokens.components.option-thumbnail.use": *cThumb
+    "tokens.components.editorial-tag.type": &cTag { surface_id: magazine, source_id: magazine-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"13\"]", captured: "2026-07-11" }
+    "tokens.components.editorial-tag.bg": *cTag
+    "tokens.components.editorial-tag.border": *cTag
+    "tokens.components.editorial-tag.radius": *cTag
+    "tokens.components.editorial-tag.padding": *cTag
+    "tokens.components.editorial-tag.height": *cTag
+    "tokens.components.editorial-tag.states": *cTag
+    "tokens.components.editorial-tag.use": *cTag
 
 tokens:
   source: reconciled
@@ -125,6 +199,7 @@ tokens:
     ink-tertiary: "#474747"
     accent: "#ff4800"
     border: "#dddddd"
+    focus-outline: "#375fff"
   typography:
     family: { sans: "Pretendard Variable" }
     nav-display: { size: 40, weight: 700, lineHeight: 1.5, use: "Desktop editorial navigation" }
@@ -140,11 +215,18 @@ tokens:
     flat: "none"
   components_harvested: true
   components:
-    ghost-outline: { type: button, bg: "#ffffff", fg: "#000000", border: "1px solid #dddddd", radius: "4px", padding: "16px 16px 16px 20px", height: "52px", font: "14px / 700", states: "default on home and magazine; pressed observed on product outline CTA", use: "Editorial more and brand-home action" , pressed: "bg #f4f4f4 fg #474747"}
-    carousel-control: { type: button, bg: "rgba(0,0,0,0.5)", fg: "#ffffff", radius: "9999px", padding: "14px", height: "52px", font: "16px / 400", states: "disabled, focus, hover, pressed", use: "Product-image previous/next control" }
+    ghost-outline: { type: button, bg: "#ffffff", fg: "#000000", border: "1px solid #dddddd", radius: "4px", padding: "16px 16px 16px 20px", height: "52px", font: "14px / 700", hover: "no visible change (measured 2026-09-29)", pressed: "bg #f4f4f4 fg #474747", focus: "outline 1px #375fff, offset 2px (authored, not the browser ring) — measured 2026-09-29", states: "default on home and magazine (2026-07-11); pressed first seen on the product outline CTA, then measured on the home '더보기' itself on 2026-09-17 and 2026-09-29; hover and keyboard focus measured 2026-09-29", use: "Editorial more and brand-home action" }
+    carousel-control: { type: button, bg: "rgba(0,0,0,0.5)", fg: "#ffffff", radius: "9999px", padding: "14px", height: "52px", font: "16px / 400", hover: "bg rgba(0,0,0,0.9)", pressed: "bg #27272a", states: "hover and pressed measured 2026-09-29 on the enabled next button (real :hover and :active); disabled look bg rgba(93,93,93,0.4), fg rgba(255,255,255,0.5), cursor not-allowed; keyboard focus not measured (the Tab walk moved the gallery and the button was disabled when reached)", use: "Product-image previous/next control" }
     product-grid-item: { type: listItem, bg: "transparent", radius: "4px", use: "BEST product result with image, brand, name, discount, price, and shipping caption" }
     editorial-story-item: { type: listItem, bg: "transparent", radius: "0px", use: "29Magazine and Showcase story/list entry" }
-    quantity-input: { type: input, bg: "#ffffff", fg: "#000000", border: "1px solid #dddddd", radius: "0px", height: "36px", font: "16px / 500", states: "default captured; no changed focus style observed", use: "Product-detail quantity field" }
+    quantity-input: { type: input, bg: "#ffffff", fg: "#000000", border: "1px solid #dddddd", radius: "0px", height: "36px", font: "16px / 500", hover: "no visible change (measured 2026-09-29)", pressed: "no authored change; the press focuses the field, so the browser default ring (not brand) appears — measured 2026-09-29", focus: "browser default ring (not brand); the border stays #dddddd — measured 2026-09-29", states: "default captured 2026-07-11; hover, pressed and keyboard focus measured 2026-09-29; no authored focus style", use: "Product-detail quantity field" }
+    nav-display-link: { type: tab, bg: "transparent", fg: "#000000", height: "48px", font: "40px / 700 / Pretendard Variable", hover: "::before (parent) bar #000000, height 0→6px under the link; text colour unchanged", pressed: "same bar as hover", focus: "browser default ring (not brand) — measured 2026-09-29; the bar is not drawn on focus", states: "default captured 2026-07-11 (four links on each of five surfaces); hover and pressed measured 2026-09-29 on 'Showcase' in the scrolled header, where the link renders 24px / 700 and the bar is 116px wide; keyboard focus measured at page top", use: "Desktop editorial navigation (BEST, Showcase, 29Magazine …)" }
+    period-chip: { type: button, bg: "rgba(93,93,93,0.08)", fg: "#474747", radius: "10px", padding: "0px 10px", height: "32px", font: "13px / 400 / Pretendard Variable (label span)", selected: "bg #000000, fg #ffffff (the chip of the period in the URL: 실시간 for period=HOURLY)", hover: "no visible change (measured 2026-09-29)", pressed: "fg #5d5d5d (label)", focus: "outline 1px #375fff, offset 1px (authored) — measured 2026-09-29", states: "unselected and selected captured 2026-07-11 (30px tall, padding 6px 10px then) and again in the 2026-09-29 survey (32px, padding 0 10px); hover, pressed and keyboard focus measured 2026-09-29 on '일간'", use: "BEST ranking period chips (실시간, 일간, 주간, 월간)" }
+    product-image-link: { type: card, bg: "transparent", size: "251px x 251px", hover: "no visible change (measured 2026-09-29)", pressed: "no visible change (measured 2026-09-29)", focus: "browser default ring (not brand) — measured 2026-09-29", states: "default captured 2026-07-11 (40 on BEST); hover, pressed and keyboard focus measured 2026-09-29 on the first BEST item", use: "Image link of a BEST product item, inside product-grid-item (the rank badge is its label)" }
+    buy-cta: { type: button, bg: "#000000", fg: "#ffffff", radius: "4px", padding: "12px 18px", height: "44px", font: "14px / 700", states: "default captured 2026-07-11 and seen again in the 2026-09-29 survey; never pressed (a purchase action), so no state is declared", use: "Product-detail '바로 구매하기'" }
+    quantity-stepper: { type: button, bg: "#ffffff", border: "1px solid #dddddd (no inner edge)", radius: "4px 0px 0px 4px (minus); 0px 4px 4px 0px (plus)", size: "36px x 36px", states: "default captured 2026-07-11; no state sample", use: "Quantity minus and plus buttons ('감소', '증가') either side of quantity-input" }
+    option-thumbnail: { type: button, bg: "transparent", border: "1px solid #dddddd", radius: "2px", size: "74px x 74px", selected: "border 1px #000000", states: "default and selected captured 2026-07-11 and seen again in the 2026-09-29 survey; no pointer-state sample", use: "Product option thumbnail (colour option), an a role=button" }
+    editorial-tag: { type: button, bg: "transparent", border: "1px solid #d4d4d4", radius: "2px", padding: "0px 9px", height: "25px", states: "default captured 2026-07-11 (24 on 29Magazine); no state sample", use: "29Magazine story tag chip" }
 ---
 
 # Design System Inspiration of 29CM
@@ -184,6 +266,7 @@ Pretendard Variable was both declared and loaded, and the collector observed it 
 - **Tertiary ink** — `#474747`: catalog and product-detail supporting copy.
 - **Border** — `#dddddd`: live outline-button and quantity-control border.
 - **Accent** — `#ff4800`: current discount percentage text on BEST and product-detail surfaces.
+- **Focus outline** — `#375fff`: authored 1px keyboard-focus outline on the ghost outline action (offset 2px) and the BEST period chips (offset 1px), measured 2026-09-29. Nav links, product image links and the quantity input show the browser's default ring instead, so this is not a site-wide focus rule.
 
 The accent is rendered as text on a transparent background with 0px radius; it should not be reconstructed as the old `#ff0066` or `#ff003c` sale pill. Low-frequency page-specific values such as `#f4f4f4` were captured but remain evidence rather than canonical tokens because they were not sufficiently recurrent.
 
@@ -230,7 +313,9 @@ Use the large-to-small contrast intentionally: editorial navigation and stories 
 - Padding: 16px 16px 16px 20px
 - Height: 52px
 - Font: 14px at weight 700
-- States: default captured on home and magazine; a related product outline action exposed pressed state
+- Hover: no visible change (measured 2026-09-29)
+- Pressed: background `#f4f4f4`, text `#474747` (first seen on the product outline action in July; measured on the home 더보기 itself on 2026-09-17 and 2026-09-29)
+- Focus: authored outline 1px `#375fff`, offset 2px (measured 2026-09-29)
 - Use: editorial more action and brand-home action
 
 ### Carousel Control
@@ -242,7 +327,10 @@ Use the large-to-small contrast intentionally: editorial navigation and stories 
 - Padding: 14px
 - Height: 52px
 - Font: 16px at weight 400
-- States: disabled, focus, hover, and pressed captured
+- Hover: background darkens to `rgba(0,0,0,0.9)` (measured 2026-09-29 on the enabled next button)
+- Pressed: background `#27272a` (measured 2026-09-29)
+- Disabled: background `rgba(93,93,93,0.4)`, icon `rgba(255,255,255,0.5)`, cursor not-allowed
+- Keyboard focus was not read: in the runs with a keyboard walk the gallery moved and the button was disabled when reached
 - Use: product-image previous and next controls
 
 ### Product Grid Item
@@ -267,14 +355,56 @@ Use the large-to-small contrast intentionally: editorial navigation and stories 
 - Radius: 0px
 - Height: 36px
 - Font: 16px at weight 500
-- States: default captured; no visually distinct changed focus style was observed
+- Hover: no visible change (measured 2026-09-29)
+- Focus: the browser's default ring (not brand); the border stays `#dddddd`. A mouse press focuses the field and shows the same ring. No authored focus or pressed style (measured 2026-09-29)
 - Use: product-detail quantity field
 
-The collector found 68 component variants across the five routes: 40 button variants, 27 list-item variants, and one input variant. No safe click expansion was executed because the candidate interactions could mutate navigation or commerce state; pseudo-state capture still recorded disabled, focus, hover, and pressed variants where available.
+### Desktop Navigation Link
+- Type: navigation link
+- Text: `#000000`, 40px at weight 700, 48px link box, no fill
+- Hover and pressed: the parent's `::before` draws a 6px `#000000` bar under the link; the text colour does not change. Read on 2026-09-29 in the scrolled header, where the same link renders 24px / 700 and the bar is 116px wide
+- Focus: the browser's default ring (not brand), measured 2026-09-29; the bar is not drawn on focus
+- Use: BEST, Showcase, 29Magazine and the other desktop navigation entries
+
+### Period Chip
+- Type: button
+- Background: `rgba(93,93,93,0.08)`; label `#474747`, 13px at weight 400
+- Radius: 10px; 32px tall with 0 10px padding on 2026-09-29 (30px tall with 6px 10px padding in the July capture)
+- Selected: background `#000000`, text `#ffffff` — the chip of the period in the URL (실시간 for period=HOURLY)
+- Hover: no visible change. Pressed: the label turns `#5d5d5d`. Focus: authored outline 1px `#375fff`, offset 1px (all measured 2026-09-29)
+- Use: BEST ranking period chips (실시간, 일간, 주간, 월간)
+
+### Product Image Link
+- Type: card
+- Transparent, 251px square image link inside a BEST product item; the rank badge is its label
+- Hover and pressed: no visible change. Focus: the browser's default ring, not brand (all measured 2026-09-29)
+
+### Buy CTA
+- Type: button
+- Background: `#000000`; Text: `#ffffff`; Radius: 4px; Padding: 12px 18px; Height: 44px; Font: 14px at weight 700
+- States: default only. It is a purchase action and was never pressed
+- Use: 바로 구매하기 on the product page, beside the 44px outline 장바구니 담기
+
+### Quantity Stepper
+- Type: button
+- Background: `#ffffff`; 1px `#dddddd` border with no inner edge; 36px square; radius 4px on the outer corners only
+- Use: the minus and plus buttons either side of the quantity input
+
+### Option Thumbnail
+- Type: button
+- 74px square, transparent, 1px `#dddddd` border, 2px radius; the selected option's border is `#000000`
+- Use: product option thumbnails
+
+### Editorial Tag
+- Type: button
+- Transparent, 1px `#d4d4d4` border, 2px radius, 0 9px padding, 25px tall
+- Use: tag chips on 29Magazine stories
+
+The collector found 68 component variants across the five routes: 40 button variants, 27 list-item variants, and one input variant. No safe click expansion was executed because the candidate interactions could mutate navigation or commerce state; pseudo-state capture still recorded disabled, focus, hover, and pressed variants where available. Its only carousel state frames sit on `surface-5::[data-omd-capture="17"]`, the previous button while disabled (`rgba(93,93,93,0.4)`), so they are not used as values; the hover, pressed and focus values above come from the 2026-09-29 live probe, which reads real `:hover`, `:active` and keyboard `:focus-visible`.
 
 ---
 
-**Verified:** 2026-07-11 (five-surface live recapture and deterministic reconciliation)
+**Verified:** 2026-07-11 (five-surface live recapture and deterministic reconciliation) · states re-measured 2026-09-29 (live probe of the home, BEST and product pages)
 **Tier 1 sources:** https://www.29cm.co.kr/ , https://www.29cm.co.kr/best-products?period=HOURLY&ranking=POPULARITY&gender=F&age=30 , https://www.29cm.co.kr/content/29magazine , https://www.29cm.co.kr/store/showcase , https://www.29cm.co.kr/products/3970725
 **Tier 2 sources:** https://getdesign.md/29cm returned “No designs found for 29cm”; https://styles.refero.design/?q=29CM exposed no 29CM-specific style result in the rendered search path inspected on 2026-07-11.
 **Conflicts unresolved:** none
@@ -349,7 +479,7 @@ The July 11 evidence set validates current desktop layouts and component geometr
 ### Construction prompts
 - “Build a 29CM ghost action with a white background, black 14px/700 text, 1px `#dddddd` border, 4px radius, 52px height, and 16px 16px 16px 20px padding.”
 - “Build a BEST product list item with image, 11px/700 brand, 12px/400 product name, transparent `#ff4800` 13px/700 discount text, 13px/700 price, and 10px/500 shipping flag.”
-- “Build a product-gallery control at 52px square with `rgba(0,0,0,0.5)` background, white icon, 14px padding, and 9999px radius. Include disabled, focus, hover, and pressed variants.”
+- “Build a product-gallery control at 52px square with `rgba(0,0,0,0.5)` background, white icon, 14px padding, and 9999px radius. Hover darkens it to `rgba(0,0,0,0.9)`, pressed is `#27272a`, and disabled is `rgba(93,93,93,0.4)` with a half-transparent white icon; no focus style was measured.”
 - “Build a quantity input at 36px height with white background, black 16px/500 text, 1px `#dddddd` border, and 0px radius.”
 
 Use the exact component evidence before extrapolating. If a requested state, viewport, or pattern is absent, mark it for capture rather than filling it with a generic commerce convention.
@@ -388,10 +518,10 @@ No current first-party persona definitions were verified. Observable task contex
 | State | Verified treatment |
 |---|---|
 | Default | Captured for buttons, list items, and the product quantity input |
-| Hover | Captured on eligible button controls |
-| Focus | Captured on eligible button controls |
-| Pressed | Captured on eligible button controls |
-| Disabled | Captured on product-gallery controls |
+| Hover | Measured 2026-09-29: no visible change on the ghost outline, period chip, product image link and quantity input; the carousel control darkens to `rgba(0,0,0,0.9)`; desktop navigation draws a 6px black bar |
+| Focus | Measured 2026-09-29: authored 1px `#375fff` outline on the ghost outline and period chips; the browser's default ring on navigation links, product image links and the quantity input; carousel focus not measured |
+| Pressed | Measured 2026-09-29: ghost outline `#f4f4f4` / `#474747`, period chip label `#5d5d5d`, carousel `#27272a`; no change on the product image link |
+| Disabled | Captured on product-gallery controls: `rgba(93,93,93,0.4)` with a half-transparent white icon |
 | Sale | `#ff4800` text, transparent background, 0px radius |
 | Empty | Not captured — a dedicated public empty-state capture is required |
 | Loading | Not captured — a dedicated loading-state capture is required |

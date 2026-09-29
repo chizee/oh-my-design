@@ -3,12 +3,12 @@
   "purpose": "Freeze what each reference claims to have observed, and when, so that relabelling a source kind, deleting an expired source, or rewriting a capture date appears as a reviewable diff.",
   "generator": "web/scripts/build-evidence-ledger.mjs",
   "references_with_verification_v2": 227,
-  "sources": 1277,
+  "sources": 1286,
   "sources_by_kind": {
     "brand-asset": 75,
     "license": 76,
     "official-doc": 543,
-    "product-surface": 583
+    "product-surface": 592
   },
   "references": {
     "104": {
@@ -102,9 +102,27 @@
       ]
     },
     "29cm": {
-      "checked": "2026-07-11",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
+        {
+          "id": "29cm-probe",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.29cm.co.kr"
+        },
+        {
+          "id": "29cm-probe-best",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.29cm.co.kr"
+        },
+        {
+          "id": "29cm-probe-product",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.29cm.co.kr"
+        },
         {
           "id": "best-live",
           "kind": "product-surface",
@@ -624,9 +642,33 @@
       ]
     },
     "banksalad": {
-      "checked": "2026-07-12",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
+        {
+          "id": "banksalad-probe-card",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.banksalad.com"
+        },
+        {
+          "id": "banksalad-probe-home",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.banksalad.com"
+        },
+        {
+          "id": "banksalad-probe-loan",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.banksalad.com"
+        },
+        {
+          "id": "banksalad-probe-safety",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.banksalad.com"
+        },
         {
           "id": "bpl-design",
           "kind": "official-doc",
@@ -8700,7 +8742,7 @@
       ]
     },
     "yeogiotte": {
-      "checked": "2026-07-11",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -8762,6 +8804,18 @@
           "kind": "official-doc",
           "captured": "2026-07-11",
           "host": "designlibrary.yeogi.com"
+        },
+        {
+          "id": "yeogiotte-probe",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.yeogi.com"
+        },
+        {
+          "id": "yeogiotte-probe-results",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.yeogi.com"
         }
       ]
     },
