@@ -284,8 +284,25 @@
   - 오늘 19곳: `cf59d446`
   - 라이브 정정 4곳 + 근거 14곳: `7a3a703a`
   - 프리뷰 배포 확인 중.
+- **반영 전 확인 (03:50).**
+  - Vercel 프리뷰는 인증 보호(302)라 외부에서 확인할 수 없다. 대신 로컬 `next dev`로 확인했다.
+  - 카탈로그: tossbank 신규 컴포넌트·틴트, onestore 개발자 컴포넌트 0건, naver 정정분이 모두 렌더된다.
+  - builder: Home→/builder→검색→토스뱅크 카드→preview 이동이 정상이다.
+  - 발견해서 고친 것(`2b16cf7d`): Evidence 요약 줄이 레지스트리 `verified`(07-13)를 쓰고 펼친 칸은 `checkedAt`(09-29)을 썼다. 둘 다 `checkedAt` 우선으로 맞췄다. tsc와 컴포넌트 테스트 통과.
+- **완료 — 프로브 도구 2차 (`662f5653`).**
+  - 스프라이트(background-position/size/repeat, 전체 background-image), img src/srcset, SVG(fill/stroke 속성, path d, use href, 그라데이션 stop), Tab 도착 시 inert 재확인.
+  - 회귀 5건 PASS: naver 뉴스 스프라이트 검출, socar 맨 위로 포커스 측정. 음성 대조군 30상태는 이전과 같다.
+- **완료 — /hangul 체커 정밀도 (`feat/hangul-skill` `4c82f86c`).**
+  - HG-11·HG-8·HG-7은 한글을 담은 요소에만 적용한다(추적 불가면 기존 심각도 유지).
+  - `render-check.mjs`(선택형 렌더 단어 절단 검사)를 추가했다. install-skills·doctor 테스트 84건 통과.
+  - 재채점(36회 전부 재현):
+    - Codex A: 9/9 유지.
+    - Claude A: BLOCK 3→1/9, 경고 이상 8/9 유지.
+    - B 두 팔: 0.
+  - "17/18 → 0/18"은 유지된다. Claude는 WARN 수준 근거다.
+  - 남은 가짜 양성 HG-1·HG-6(라틴 요소)을 수정하는 레인이 진행 중이다. 재채점 결과가 공개 문구를 좌우한다.
 - **다음.**
-  1. ~~정정 레인~~ (완료).
+  1. ~~정정 레인~~ (완료). 진행 중: 프로브 E1(ohouse·channeltalk·zigzag)·E2(ably·upstage·remember), /hangul HG-1·HG-6.
   2. 도구 공백 수정(스프라이트·img·svg·inert) → 남은 상위 20(ohouse, channeltalk, zigzag, ably, upstage, remember) 프로브.
   3. 파이프라인 → 커밋 → 오너 GO 한 번에 요청: 웨이브 5 + 오늘 19곳 + 라이브 정정 4곳(yeogiotte, karrot, naver, samsung). 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
   - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
