@@ -217,7 +217,18 @@
     - tossbank: pill 배경 알파 누락(`#fdfdfe` → `rgba(253,253,254,0.89)`).
   - 부재 의존 줄 목록은 `reverify-absence-lines.md`에 있다.
   - 도구 공백: `append-components.mjs`가 focus 필드에서 멈춘다(에이전트는 사본 append2로 우회했다) → 헬퍼에 반영할 후속 작업이다.
-- **진행 중.** /hangul 시각 콘텐츠 v1, 웨이브 6 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
+- **완료 — 웨이브 6 a·b·c (02:40, 미커밋, 번들만 사용).**
+  - 컴포넌트 증가:
+    - a: 11st 4→13, classum 5→14, lotteon 4→15, kmong 6→16
+    - b: jandi 2→13, makinarocks 1→14, kb-kookmin 3→16
+    - c: cgv 4→16, wooribank 1→13, megabox 1→13
+  - 확인: 전원 check-claims·27/27 통과. 헤드라인 12건을 번들과 직접 대조해 모두 일치했다(cgv 선택 탭·예매 버튼, jandi CTA, megabox 선택 탭·예매 링크, wooribank current 링크, kb 선택 탭, makinarocks 탭, 11st hover #ff0038 ×3, lotteon #000000 ×21).
+  - 11st 후속 처리(메인):
+    - 번들 포커스로 적힌 search focus `#111111`을 철회했다. 번들 포커스 금지 규칙에 따른 것이다. pressed는 두 경로가 일치하고 기본 잉크와 같아 유지한다.
+    - 카테고리 URL은 캡처가 오류 페이지였으므로, Tier 1 목록과 레이아웃 문구에서 "제품 카테고리"라는 표현을 정정했다.
+  - makinarocks 키 개명(disabled-home-control → carousel-arrow-button)은 파이프라인에서 반영한다.
+  - 도구 공백: `apply-edits.mjs`에서 빈 `@@@NEW` 블록이 다음 블록을 삼킨다. 6d가 끝난 뒤 헬퍼 2건(이것과 append focus)을 고친다.
+- **진행 중.** /hangul 시각 콘텐츠 v1, 웨이브 6d(kakaogames·soop·onestore), 재측정 R1·R2·R3 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
   - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
 - **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
