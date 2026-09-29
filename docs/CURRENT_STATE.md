@@ -190,7 +190,21 @@
     - hyundaicard 링: home `auto 2px off -3px` ×12, corp `auto 1px off 1px` ×6.
     - likelion 입력창: 두 표면 모두 0개.
   - **세 곳 모두 부재 판독을 셀 때만 기준을 넘는다.** 긍정 판독만 세면 kakaobank 4, hyundaicard 2, likelion 0이다. 부재 의존 줄 목록은 에이전트 보고에 있다. 재측정 결과로 최종 판정한다.
-- **진행 중.** /hangul 시각 콘텐츠 v1, 저작 C(socar·wanted·tossbank), 프로브 도구 수정, 웨이브 6 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
+- **완료 — 프로브 도구 수정 (02:15, `b6f7370b`).**
+  - 고친 것: 빈 자식 레이어·자손 링·tabIndex<0·비활성 판별·Tab 안착 대기.
+  - 모든 판독이 비교 범위(`compared`)와 판정(`verdict`)을 싣는다. 값이 아직 움직이면 "NO SETTLED CHANGE"(=미측정)로 적는다.
+  - 라이브 회귀 5건 PASS. kakaobank 음성 대조군은 6상태 모두 이전과 같다.
+  - 새로 보인 실제 변화 3건:
+    - wanted mini-job-card hover: 북마크가 나타난다.
+    - hyundaicard nav-card: 헤더 그림자가 사라진다.
+    - socar floating-control: home에서는 inert다.
+  - PROBE_BRIEF를 새 도구 기준으로 갱신했다.
+  - 한계: 캔버스·SVG `<use>`·형제 요소는 판독 범위 밖이다.
+- **진행 중 — 부재 재측정.**
+  - R1: banksalad·29cm·yeogiotte. 기존 cfg로 재실행 → `reverify-r1.md`.
+  - R2: baemin·karrot·kakao·naver·samsung. cfg를 새로 만들어 재실행 → `reverify-r2.md`.
+  - R3: 저작 C·D 6곳. 저작 C가 끝나면 시작한다.
+- **진행 중.** /hangul 시각 콘텐츠 v1, 저작 C(socar·wanted·tossbank), 웨이브 6 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
   - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
 - **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
