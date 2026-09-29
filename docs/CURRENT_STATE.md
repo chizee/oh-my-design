@@ -250,8 +250,27 @@
     - Tab 순회 중 inert를 다시 확인하지 않는다(socar floating-control).
   - 정정 반영 상태: yeogiotte·hyundaicard·wanted는 메인이 작업 트리에서 고쳤다(미커밋). karrot·naver·samsung은 정정 레인에서 고친다.
   - 보고서: `reverify-r1/r2/r3.md`.
+- **완료 — /hangul 시각 콘텐츠 v1 (03:00, `docs/research/2026-09-29-growth/hangul-content/`, 12MB 로컬).**
+  - 결과물:
+    - 같은 페이지 전후(390/1440)
+    - 4컷 "AI가 한국어를 영어처럼 조판한다" — HG-10 단어 중간 절단 "있어/요.", HG-1 숫자 Arial+한글 혼합, HG-7 자간, HG-3 8px 캡션
+    - 스크롤 비교 영상
+    - 헤드라인 깜빡임 영상
+    - 67곳 실측 데이터 카드
+  - 1차 결함 2건은 고쳤다. 렌더 단어 절단 검사도 추가해 모든 After가 통과한다.
+  - **메인 판단:** 4컷(특히 HG-10)과 데이터 카드는 공유할 만하다. 전후 비교와 깜빡임은 차이가 미세해 보조 자료다. 표지는 깜빡임보다 HG-10 단어 절단이 낫다.
+  - 약점:
+    - 예시 4개가 전부 Codex이고, 그중 3개가 한 페이지에서 나왔다.
+    - macOS 렌더만 있다.
+    - 실제 break-all·가짜 이탤릭 사례가 없다.
+  - **평가 수치 점검:** eval의 가짜 양성(HG-11 이탤릭 3, HG-8 URL 박스 2)을 빼도 A팔 "18번 중 17번 경고 이상"은 유지된다. 다만 BLOCK은 10/18이다. HG-7은 OmD가 실측에서 도출한 규칙이므로, 문구는 "어겼다"보다 "한국 서비스 67곳 실측 기준을 벗어났다"가 정확하다.
+  - **공개 전 스킬 보완 (진행 중, feat/hangul-skill 워크트리):**
+    - check.mjs 정밀도 — HG-11·HG-8·HG-7이 한글 요소에만 적용되게 한다.
+    - 선택형 렌더 검사 `render-check.mjs` 추가.
+    - 저장된 eval 산출물 재채점.
+    - 이어서 콘텐츠 v2: Claude 예시 추가, 훅 문구, 표지 교체.
 - **다음.**
-  1. 정정 레인: karrot·naver·samsung 정정 + 14곳 `.verification.md`에 재측정 근거 한 줄.
+  1. 정정 레인 (진행 중): karrot·naver·samsung 정정 + 14곳 `.verification.md`에 재측정 근거 한 줄.
   2. 도구 공백 수정(스프라이트·img·svg·inert) → 남은 상위 20(ohouse, channeltalk, zigzag, ably, upstage, remember) 프로브.
   3. 파이프라인 → 커밋 → 오너 GO 한 번에 요청: 웨이브 5 + 오늘 19곳 + 라이브 정정 4곳(yeogiotte, karrot, naver, samsung). 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
   - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
