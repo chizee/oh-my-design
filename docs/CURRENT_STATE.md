@@ -151,13 +151,14 @@
   - Claude(Sonnet): A는 BLOCK 3/9·WARN 8/9(HG-6 본문 음수 자간 ×14, break-all ×2), B는 0/9.
   - 주의: 체커는 스킬 규칙을 검사하고, B는 스킬을 명시 지시했다.
 - **다음 큐 (9/30~).**
-  1. README용 전후 스크린샷 한 쌍(Codex p1 A vs B 렌더).
+  1. README용 전후 스크린샷: 서로 다른 생성물 비교(Codex p1-A-r3 vs p1-B-r1, `raw/hangul-eval/screens/`)는 카피가 달라 약하다. 같은 페이지(p1-A-r3)에 /hangul APPLY로 고친 전후를 만든다. 전 h1: −3.3px@60px(−0.055em)·Arial 우선 / 후 기대치: −0.03em·Pretendard·keep-all.
   2. /hangul 통합: package files, D3 internal 플래그, doctor·install-skills 테스트, 스킬 수 28→29, README 색인. 공개(main)와 W1 런칭 게시는 오너 몫.
   3. 웨이브 4(banksalad·yeogiotte·29cm) main 반영 — 오너 GO.
   4. 상위 20 남은 12곳(socar, wanted, tossbank, kakaobank, hyundaicard, likelion, ohouse, channeltalk, zigzag, ably, upstage, remember): 프로브 → 저작.
   5. 번들 심화 남은 19곳(sktelecom, nhn, class101, dabang, brandi, inflearn, kmong, jandi, makinarocks, 11st, classum, kb-kookmin, wooribank, lotteon, cgv, kakaogames, megabox, soop, onestore).
   6. 후속: builder 딥링크(step=customize), 동의 배너(영어·죽은 GA 고지), staged Core v2 baemin 재이관, check-claims 상태값 grounding, 쇼케이스 배지 셈 규칙.
   7. 9/30 09:17 KST Quality 스케줄 결과 확인.
+- **결정 (9/30 00:35).** 웨이브 4를 사이트에 반영한다. /hangul 공개는 바이럴 수준의 시각 콘텐츠(모션그래픽·스크린샷)가 준비된 뒤다 → 콘텐츠 레인을 새로 둔다: 같은 페이지 전후, omd-showcase 비교 영상, 실측 67곳 데이터 카드.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
 - **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
 
