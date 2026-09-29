@@ -3,12 +3,12 @@
   "purpose": "Freeze what each reference claims to have observed, and when, so that relabelling a source kind, deleting an expired source, or rewriting a capture date appears as a reviewable diff.",
   "generator": "web/scripts/build-evidence-ledger.mjs",
   "references_with_verification_v2": 227,
-  "sources": 1305,
+  "sources": 1308,
   "sources_by_kind": {
     "brand-asset": 75,
     "license": 76,
     "official-doc": 543,
-    "product-surface": 611
+    "product-surface": 614
   },
   "references": {
     "104": {
@@ -1182,7 +1182,7 @@
       ]
     },
     "channeltalk": {
-      "checked": "2026-09-19",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -1196,6 +1196,12 @@
           "kind": "official-doc",
           "captured": "2026-09-19",
           "host": "github.com"
+        },
+        {
+          "id": "channeltalk-probe",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "channel.io"
         },
         {
           "id": "help-live",
@@ -5574,7 +5580,7 @@
       ]
     },
     "ohouse": {
-      "checked": "2026-07-13",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -5599,6 +5605,12 @@
           "id": "home-live",
           "kind": "product-surface",
           "captured": "2026-07-13",
+          "host": "ohou.se"
+        },
+        {
+          "id": "ohouse-probe",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
           "host": "ohou.se"
         },
         {
@@ -9168,7 +9180,7 @@
       ]
     },
     "zigzag": {
-      "checked": "2026-07-13",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -9200,6 +9212,12 @@
           "kind": "official-doc",
           "captured": "2026-07-13",
           "host": "devblog.kakaostyle.com"
+        },
+        {
+          "id": "zigzag-probe",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "zigzag.kr"
         }
       ]
     }

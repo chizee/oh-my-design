@@ -13,7 +13,7 @@ verified: "2026-07-13"
 omd: "0.1"
 verification_v2:
   schema: 2
-  checked: "2026-07-13"
+  checked: "2026-09-29"
   surfaces:
     - { id: home, kind: product, url: "https://ohou.se/", inspected: "2026-07-13" }
     - { id: experts, kind: product, url: "https://ohou.se/experts", inspected: "2026-07-13" }
@@ -25,6 +25,7 @@ verification_v2:
     - { id: bucketplace-about, kind: official-doc, url: "https://www.bucketplace.com/en/", captured: "2026-07-13" }
     - { id: pretendard-doc, kind: official-doc, url: "https://github.com/orioncactus/pretendard/blob/main/packages/pretendard/docs/en/README.md", captured: "2026-07-13" }
     - { id: pretendard-license, kind: license, url: "https://github.com/orioncactus/pretendard/blob/main/LICENSE", captured: "2026-07-13" }
+    - { id: ohouse-probe, kind: product-surface, url: "https://ohou.se/", captured: "2026-09-29" }
   conflicts: []
   claims:
     "tokens.colors.action": &home { surface_id: home, source_id: home-live, method: computed-style, captured: "2026-07-13" }
@@ -74,6 +75,108 @@ verification_v2:
     "tokens.components.product-list-article.padding": *home
     "tokens.components.product-list-article.font": *home
     "tokens.components.product-list-article.use": *home
+    "tokens.components.product-list-article.hover": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "a.today-deal-item__overlay (first of ten) at :hover", captured: "2026-09-29" }
+    "tokens.components.product-list-article.pressed": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "a.today-deal-item__overlay (first of ten) at :active", captured: "2026-09-29" }
+    "tokens.components.product-list-article.focus": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "a.today-deal-item__overlay at :focus-visible, Tab stop 88", captured: "2026-09-29" }
+    "tokens.components.product-list-article.states": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "article.today-deal-item > a.today-deal-item__overlay", captured: "2026-09-29" }
+    "tokens.components.compact-blue-action.type": &ohCompact { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.compact-blue-action.bg": *ohCompact
+    "tokens.components.compact-blue-action.fg": *ohCompact
+    "tokens.components.compact-blue-action.radius": *ohCompact
+    "tokens.components.compact-blue-action.padding": *ohCompact
+    "tokens.components.compact-blue-action.size": *ohCompact
+    "tokens.components.compact-blue-action.font": *ohCompact
+    "tokens.components.compact-blue-action.hover": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-1dfthii 글쓰기 at :hover", captured: "2026-09-29" }
+    "tokens.components.compact-blue-action.pressed": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-1dfthii 글쓰기 at :active", captured: "2026-09-29" }
+    "tokens.components.compact-blue-action.focus": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-1dfthii 글쓰기 at :focus-visible, Tab stop 14", captured: "2026-09-29" }
+    "tokens.components.compact-blue-action.states": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-1dfthii 글쓰기", captured: "2026-09-29" }
+    "tokens.components.compact-blue-action.use": *ohCompact
+    "tokens.components.circular-floating-control.type": &ohFloat { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.circular-floating-control.bg": *ohFloat
+    "tokens.components.circular-floating-control.fg": *ohFloat
+    "tokens.components.circular-floating-control.radius": *ohFloat
+    "tokens.components.circular-floating-control.padding": *ohFloat
+    "tokens.components.circular-floating-control.size": *ohFloat
+    "tokens.components.circular-floating-control.font": *ohFloat
+    "tokens.components.circular-floating-control.shadow": *ohFloat
+    "tokens.components.circular-floating-control.hover": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-tydaxw 다음 (first of five) at :hover", captured: "2026-09-29" }
+    "tokens.components.circular-floating-control.pressed": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-tydaxw 다음 (first of five) at :active", captured: "2026-09-29" }
+    "tokens.components.circular-floating-control.focus": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-tydaxw 다음 (first of five) at :focus-visible, Tab stop 59", captured: "2026-09-29" }
+    "tokens.components.circular-floating-control.states": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-tydaxw 다음 (first of five)", captured: "2026-09-29" }
+    "tokens.components.circular-floating-control.use": *ohFloat
+    "tokens.components.outlined-utility-control.type": &ohOutlined { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"127\"]", captured: "2026-07-13" }
+    "tokens.components.outlined-utility-control.bg": *ohOutlined
+    "tokens.components.outlined-utility-control.fg": *ohOutlined
+    "tokens.components.outlined-utility-control.border": *ohOutlined
+    "tokens.components.outlined-utility-control.radius": *ohOutlined
+    "tokens.components.outlined-utility-control.padding": *ohOutlined
+    "tokens.components.outlined-utility-control.size": *ohOutlined
+    "tokens.components.outlined-utility-control.font": *ohOutlined
+    "tokens.components.outlined-utility-control.states": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "survey raw/ohouse-survey-home.json: no element 182x32 and no #e0e0e0 border on home", captured: "2026-09-29" }
+    "tokens.components.outlined-utility-control.use": *ohOutlined
+    "tokens.components.text-action.type": &ohText { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.text-action.bg": *ohText
+    "tokens.components.text-action.fg": *ohText
+    "tokens.components.text-action.radius": *ohText
+    "tokens.components.text-action.padding": *ohText
+    "tokens.components.text-action.size": *ohText
+    "tokens.components.text-action.font": *ohText
+    "tokens.components.text-action.hover": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-twcqd0 더보기 (first of six) at :hover", captured: "2026-09-29" }
+    "tokens.components.text-action.pressed": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-twcqd0 더보기 (first of six) at :active", captured: "2026-09-29" }
+    "tokens.components.text-action.focus": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-twcqd0 더보기 (first of six) at :focus-visible, Tab stop 37", captured: "2026-09-29" }
+    "tokens.components.text-action.states": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "button.css-twcqd0 더보기 (first of six)", captured: "2026-09-29" }
+    "tokens.components.text-action.use": *ohText
+    "tokens.components.top-nav-search-input.type": &ohSearch { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.top-nav-search-input.bg": *ohSearch
+    "tokens.components.top-nav-search-input.fg": *ohSearch
+    "tokens.components.top-nav-search-input.radius": *ohSearch
+    "tokens.components.top-nav-search-input.padding": *ohSearch
+    "tokens.components.top-nav-search-input.size": *ohSearch
+    "tokens.components.top-nav-search-input.font": *ohSearch
+    "tokens.components.top-nav-search-input.hover": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "input.css-p0pfr3 통합검색 at :hover", captured: "2026-09-29" }
+    "tokens.components.top-nav-search-input.pressed": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "input.css-p0pfr3 통합검색 at :active", captured: "2026-09-29" }
+    "tokens.components.top-nav-search-input.focus": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "input.css-p0pfr3 통합검색 at :focus-visible, Tab stop 9", captured: "2026-09-29" }
+    "tokens.components.top-nav-search-input.states": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "input.css-p0pfr3 통합검색", captured: "2026-09-29" }
+    "tokens.components.top-nav-search-input.use": *ohSearch
+    "tokens.components.primary-nav-link.type": &ohNav { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-link.bg": *ohNav
+    "tokens.components.primary-nav-link.fg": *ohNav
+    "tokens.components.primary-nav-link.radius": *ohNav
+    "tokens.components.primary-nav-link.padding": *ohNav
+    "tokens.components.primary-nav-link.size": *ohNav
+    "tokens.components.primary-nav-link.font": *ohNav
+    "tokens.components.primary-nav-link.selected": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.primary-nav-link.hover": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "a.css-rldqun 쇼핑 at :hover", captured: "2026-09-29" }
+    "tokens.components.primary-nav-link.pressed": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "a.css-rldqun 쇼핑 at :active", captured: "2026-09-29" }
+    "tokens.components.primary-nav-link.focus": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "a.css-rldqun 쇼핑 at :focus-visible, Tab stop 7", captured: "2026-09-29" }
+    "tokens.components.primary-nav-link.states": { surface_id: home, source_id: ohouse-probe, method: live-state-probe, selector: "a.css-rldqun 쇼핑", captured: "2026-09-29" }
+    "tokens.components.primary-nav-link.use": *ohNav
+    "tokens.components.header-subnav-link.type": &ohSubnav { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"] to [data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.header-subnav-link.bg": *ohSubnav
+    "tokens.components.header-subnav-link.fg": *ohSubnav
+    "tokens.components.header-subnav-link.radius": *ohSubnav
+    "tokens.components.header-subnav-link.padding": *ohSubnav
+    "tokens.components.header-subnav-link.height": *ohSubnav
+    "tokens.components.header-subnav-link.font": *ohSubnav
+    "tokens.components.header-subnav-link.states": *ohSubnav
+    "tokens.components.header-subnav-link.use": *ohSubnav
+    "tokens.components.header-utility-link.type": &ohUtility { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"] to [data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.bg": *ohUtility
+    "tokens.components.header-utility-link.fg": *ohUtility
+    "tokens.components.header-utility-link.radius": *ohUtility
+    "tokens.components.header-utility-link.padding": *ohUtility
+    "tokens.components.header-utility-link.height": *ohUtility
+    "tokens.components.header-utility-link.font": *ohUtility
+    "tokens.components.header-utility-link.states": *ohUtility
+    "tokens.components.header-utility-link.use": *ohUtility
+    "tokens.components.scrap-toggle.type": &ohScrap { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.scrap-toggle.bg": *ohScrap
+    "tokens.components.scrap-toggle.fg": *ohScrap
+    "tokens.components.scrap-toggle.radius": *ohScrap
+    "tokens.components.scrap-toggle.padding": *ohScrap
+    "tokens.components.scrap-toggle.size": *ohScrap
+    "tokens.components.scrap-toggle.states": *ohScrap
+    "tokens.components.scrap-toggle.use": *ohScrap
 tokens:
   source: live-extract
   extracted: "2026-07-13"
@@ -96,7 +199,16 @@ tokens:
   shadow:
     floating: "0 2px 5px rgba(63, 71, 77, 0.15)"
   components:
-    product-list-article: { type: card, bg: "transparent", fg: "#424242", radius: 0, padding: "0px", font: "15px / 400 / Pretendard Variable", use: "Observed outer product-list article shell on the consumer home" }
+    product-list-article: { type: card, bg: "transparent", fg: "#424242", radius: 0, padding: "0px", font: "15px / 400 / Pretendard Variable", hover: "no change in the compared scope (the overlay link a.today-deal-item__overlay, its ::before/::after, 0 descendants, 3 ancestor levels; the card image and text are siblings of the link and were not compared) — measured 2026-09-29", pressed: "no change in the compared scope (same scope as hover) — measured 2026-09-29", focus: "shadow #69c3fd 0 0 0 4px ring and radius 0px → 2px on the overlay link (authored, no outline) — measured 2026-09-29", states: "default captured 2026-07-13 on the outer article; hover, pressed and keyboard focus measured 2026-09-29 on the empty overlay link inside the first today-deal card (269px x 404px, Tab 88)", use: "Observed outer product-list article shell on the consumer home" }
+    compact-blue-action: { type: button, bg: "#00a1ff", fg: "#ffffff", radius: "4px", padding: "0px 16px", size: "91px x 40px", font: "14px / 400 / Pretendard Variable", hover: "bg #0497ef", pressed: "bg #0497ef", focus: "shadow #ddf3ff 0 0 0 3px (authored ring, no outline); bg #0497ef — measured 2026-09-29", states: "default captured 2026-07-13; hover, pressed and keyboard focus measured 2026-09-29 on 글쓰기 (Tab 14), logged out and never activated; hover equals pressed", use: "Header 글쓰기 action at home::[data-omd-capture=\"9\"]; one captured occurrence" }
+    circular-floating-control: { type: button, bg: "#ffffff", fg: "#ffffff", radius: "24px", padding: "0px", size: "48px x 48px", font: "16px / 700 / Pretendard Variable", shadow: "0px 2px 5px rgba(63, 71, 77, 0.15)", hover: "bg #f7f9fa", pressed: "bg #f7f9fa", focus: "bg #f7f9fa (background tint only, no ring or outline) — measured 2026-09-29", states: "default captured 2026-07-13 (seven occurrences, no text content); hover, pressed and keyboard focus measured 2026-09-29 on the first 집사진 carousel 다음 arrow (Tab 59); focus equals hover", use: "Circular carousel arrow at home::[data-omd-capture=\"20\"]" }
+    outlined-utility-control: { type: button, bg: "transparent", fg: "#2f3438", border: "1px solid #e0e0e0", radius: "4px", padding: "0px 8px", size: "182px x 32px", font: "14px / 400 / Pretendard Variable", states: "default captured 2026-07-13 only (an 80px link at capture 128 shares the class); absent from the home page on 2026-09-29 at 1440x1000, so no state was measured", use: "Utility control near the foot of home at home::[data-omd-capture=\"127\"]" }
+    text-action: { type: button, bg: "transparent", fg: "#00a1ff", radius: "0px", padding: "0px", size: "41px x 20px", font: "16px / 700 / Pretendard Variable", hover: "opacity 1 → 0.5", pressed: "opacity 1 → 0.5", focus: "no focus indication in the compared scope (self, its ::before/::after, 0 descendants, 3 ancestor levels) — measured 2026-09-29", states: "default captured 2026-07-13 (six occurrences); hover, pressed and keyboard focus measured 2026-09-29 on the first 더보기 (Tab 37); the label is the button itself", use: "Blue 더보기 text action at home::[data-omd-capture=\"32\"]" }
+    top-nav-search-input: { type: input, bg: "transparent", fg: "#141414", radius: "0px", padding: "0px", size: "255px x 20px", font: "14px / 400 / Pretendard Variable", hover: "no change in the compared scope (self, its ::before/::after, 0 descendants, 3 ancestor levels) — measured 2026-09-29", pressed: "no change in the compared scope (self, its ::before/::after, 0 descendants, 3 ancestor levels) — measured 2026-09-29", focus: "no focus indication in the compared scope (self, its ::before/::after, 0 descendants, 3 ancestor levels) — measured 2026-09-29", states: "default captured 2026-07-13; hover, pressed and keyboard focus measured 2026-09-29 on 통합검색 (Tab 9); nothing was typed; any search dropdown lies outside the compared scope", use: "Header 통합검색 input at home::[data-omd-capture=\"4\"]" }
+    primary-nav-link: { type: tab, bg: "transparent", fg: "#2f3438", radius: "0px", padding: "21px 5px", size: "41px x 60px", font: "18px / 700 / Pretendard Variable", selected: "fg #00a1ff (the current section, 집구경)", hover: "fg #00a1ff", pressed: "fg #00a1ff", focus: "fg #00a1ff; shadow #ddf3ff 0 0 0 3px on the label span (authored ring, no outline) — measured 2026-09-29", states: "default and selected captured 2026-07-13; hover, pressed and keyboard focus measured 2026-09-29 on 쇼핑 (Tab 7), label span.css-1w2ex0u; hover equals pressed", use: "Header section link (집구경, 쇼핑, 인테리어/생활) at home::[data-omd-capture=\"1\"] to [data-omd-capture=\"3\"]" }
+    header-subnav-link: { type: tab, bg: "transparent", fg: "#424242", radius: "0px", padding: "12px 6px", height: "51px", font: "15px / 400 / Pretendard Variable", states: "default captured 2026-07-13 on six links; not probed", use: "Second header row of text links at home::[data-omd-capture=\"10\"] to [data-omd-capture=\"15\"]" }
+    header-utility-link: { type: tab, bg: "transparent", fg: "#2f3438", radius: "0px", padding: "0px 10px", height: "18px", font: "14px / 400 / Pretendard Variable", states: "default captured 2026-07-13; 회원가입 and 고객센터 carry a 1px #eaedef left border that divides the three; not probed", use: "Header 로그인 / 회원가입 / 고객센터 links at home::[data-omd-capture=\"6\"] to [data-omd-capture=\"8\"]" }
+    scrap-toggle: { type: button, bg: "transparent", fg: "#000000", radius: "0px", padding: "0px", size: "36px x 36px", states: "default captured 2026-07-13 (14 occurrences, no text node; the icon is an SVG whose paint was not captured); not probed", use: "Scrap toggle on home content cards at home::[data-omd-capture=\"33\"]" }
   components_harvested: true
 ---
 
@@ -115,6 +227,7 @@ Ohouse is Bucketplace’s lifestyle service for taking an envisioned life into a
 - The loaded UI face is `Pretendard Variable`; the home’s computed stack includes declared fallbacks but only the first family is loaded and visibly used.
 - The representative product-list articles are visually unframed at their outer element: transparent background, zero radius, and zero padding. Their child composition was not separately measured.
 - Captured radii are mostly `0px`, with observed `4px` utility/action corners and a `24px` circular control.
+- Keyboard focus is drawn with box-shadow, never an outline (2026-09-29 probe): a 3px `#ddf3ff` ring on the 글쓰기 action and the header section label, a 4px `#69c3fd` ring on the deal card. Hover and press are one-property steps, identical to each other.
 
 ## Primary tasks
 
@@ -138,7 +251,8 @@ The values below are representative computed values from the populated consumer-
 
 ### Unresolved roles
 
-- No published sale, error, success, hover, pressed, focus, disabled, overlay, or selected-state color was collected.
+- No published sale, error, success, disabled, or overlay color was collected.
+- Hover, pressed and keyboard focus were measured on 2026-09-29 and are recorded per component in §4, not promoted as palette roles: `#0497ef` (글쓰기 hover, press and focus), `#f7f9fa` (carousel-arrow hover, press and focus), and two box-shadow focus rings, `#ddf3ff` (3px) and `#69c3fd` (4px). The current header section rests in `#00a1ff`, the value the other section links take on hover.
 - `#35c5f0` is not retained as a current token: it was not present in the supplied computed-style evidence, and no first-party token source was found.
 
 ## 3. Typography Rules
@@ -163,7 +277,7 @@ The values below are representative computed values from the populated consumer-
 
 ## 4. Component Stylings
 
-These are only the representative controls directly preserved by the collector. Each use line carries its product-surface selector and no interaction-state variants are claimed because `interactionCount` is `0`.
+These are the representative controls preserved by the July collector, plus the header links. Rest values are the July 2026-07-13 capture unless marked. Hover, pressed and keyboard focus were measured on 2026-09-29 with the fixed live state probe (logged out, keyboard walk first, nothing activated); "no change" means no computed change across the control, its ::before/::after, every descendant and 3 ancestor levels, and nothing wider.
 
 ### Buttons
 
@@ -175,6 +289,8 @@ These are only the representative controls directly preserved by the collector. 
 - Padding: `0px 16px`
 - Font: `14px / 400 / Pretendard Variable`
 - Use: Home `home::[data-omd-capture="9"]`, `button[role="button"]`, 91×40px; one captured occurrence.
+- Hover and pressed: background `#0497ef`.
+- Keyboard focus: background `#0497ef` plus a 3px `#ddf3ff` box-shadow ring; no outline.
 
 **Circular floating control**
 - Background: `#ffffff`
@@ -185,6 +301,7 @@ These are only the representative controls directly preserved by the collector. 
 - Shadow: `0px 2px 5px rgba(63, 71, 77, 0.15)`
 - Font: `16px / 700 / Pretendard Variable`
 - Use: Home `home::[data-omd-capture="20"]`, `button`, 48×48px; seven captured occurrences. The captured control has no text content.
+- Hover, pressed and keyboard focus: background `#f7f9fa` only; focus draws no ring.
 
 **Outlined utility control**
 - Background: `transparent`
@@ -193,7 +310,8 @@ These are only the representative controls directly preserved by the collector. 
 - Radius: `4px`
 - Padding: `0px 8px`
 - Font: `14px / 400 / Pretendard Variable`
-- Use: Home `home::[data-omd-capture="127"]`, `button`, 182×32px; one captured occurrence.
+- Use: Home `home::[data-omd-capture="127"]`, `button`, 182×32px; the 80×32px link at `[data-omd-capture="128"]` shares its class and values.
+- Not on the home page on 2026-09-29 (1440×1000): no surveyed element had its size or a `#e0e0e0` border. These are July values; no state was measured.
 
 **Text action**
 - Background: `transparent`
@@ -202,6 +320,8 @@ These are only the representative controls directly preserved by the collector. 
 - Radius: `0px`
 - Font: `16px / 700 / Pretendard Variable`
 - Use: Home `home::[data-omd-capture="32"]`, `button`, 41×20px; six captured occurrences.
+- Hover and pressed: opacity 1 → 0.5.
+- Keyboard focus: no change within scope (0 descendants). It has no focus indication.
 
 ### Inputs
 
@@ -212,6 +332,7 @@ These are only the representative controls directly preserved by the collector. 
 - Radius: `0px`
 - Font: `14px / 400 / Pretendard Variable`
 - Use: Home `home::[data-omd-capture="4"]`, `input[type="text"]`, 255×20px; one captured occurrence.
+- Hover, pressed and keyboard focus: no change within scope (0 descendants). No focus indication; a search dropdown, if one opens, is outside the scope.
 
 ### Content shells
 
@@ -223,10 +344,44 @@ These are only the representative controls directly preserved by the collector. 
 - Padding: `0px`
 - Font: `15px / 400 / Pretendard Variable`
 - Use: Home `home::article.today-deal-item`, representative 269px-wide articles; 4+ captured occurrences. This describes the outer article only, not unmeasured child image, price, badge, or metadata styles.
+- States (2026-09-29, on the empty overlay link `a.today-deal-item__overlay` inside the first card, 269×404px): hover and pressed, no change within scope; keyboard focus, a 4px `#69c3fd` box-shadow ring and a 2px radius. The card image, price and title are siblings of that link, outside the scope, so a hover change on them is not ruled out.
+
+### Header navigation
+
+**Primary section link** (집구경, 쇼핑, 인테리어/생활)
+- Background: transparent
+- Text: `#2f3438`; the current section (집구경) rests in `#00a1ff`
+- Radius: `0px`
+- Padding: `21px 5px`
+- Font: `18px / 700 / Pretendard Variable`
+- Use: Home `home::[data-omd-capture="1"]` to `[data-omd-capture="3"]`, 41×60px on 쇼핑.
+- Hover and pressed (measured on 쇼핑): text `#00a1ff`.
+- Keyboard focus: text `#00a1ff` and a 3px `#ddf3ff` box-shadow ring on the label span; no outline.
+
+**Second-row link**
+- Background: transparent
+- Text: `#424242`
+- Padding: `12px 6px`, 51px tall
+- Font: `15px / 400 / Pretendard Variable`
+- Use: Home `home::[data-omd-capture="10"]` to `[data-omd-capture="15"]`, six links. Default only; not probed.
+
+**Utility link** (로그인 / 회원가입 / 고객센터)
+- Background: transparent
+- Text: `#2f3438`
+- Padding: `0px 10px`, 18px tall
+- Font: `14px / 400 / Pretendard Variable`
+- Use: Home `home::[data-omd-capture="6"]` to `[data-omd-capture="8"]`; 회원가입 and 고객센터 carry a 1px `#eaedef` left border that divides the three. Default only; not probed.
+
+### Card controls
+
+**Scrap toggle**
+- Background: transparent; computed text `#000000` (the icon is an SVG whose paint was not captured)
+- Radius: `0px`; padding `0px`; 36×36px
+- Use: Home `home::[data-omd-capture="33"]`, 14 captured occurrences. Default only; not probed.
 
 ### Not observed
 
-- No hover, pressed, focus, disabled, validation, dialog, menu, tab, toast, or responsive component state was captured.
+- No disabled, validation, dialog, menu, toast, or responsive component state was captured. Hover, pressed and keyboard focus are recorded on each component above (2026-09-29); the second-row links, utility links, scrap toggle and outlined utility control were not probed.
 - Badge class names were present, but a standalone badge fill/text treatment was not measured with sufficient provenance; no badge variant is specified.
 
 ## 5. Layout Principles
@@ -235,7 +390,7 @@ The populated home capture provides spacing clusters rather than a documented la
 
 ## 6. Depth & Elevation
 
-One repeated floating-control shadow was observed: `0px 2px 5px rgba(63, 71, 77, 0.15)`. The outer product-list article has no shadow. No elevation scale, modal shadow, or hover-lift rule was captured.
+One repeated floating-control shadow was observed: `0px 2px 5px rgba(63, 71, 77, 0.15)`. The outer product-list article has no shadow. No elevation scale, modal shadow, or hover-lift rule was captured. Keyboard focus rings are box-shadows too (`#ddf3ff` 3px, `#69c3fd` 4px); they are recorded per component, not as an elevation level.
 
 ## 7. Do's and Don'ts
 
@@ -249,7 +404,8 @@ One repeated floating-control shadow was observed: `0px 2px 5px rgba(63, 71, 77,
 
 - Don't resurrect `#35c5f0` as a current Ohouse token from historic or secondary descriptions.
 - Don't convert declared-only font faces into visible UI-family claims.
-- Don't invent state variants, badge treatments, price styles, or mobile chrome from the static home capture.
+- Don't invent disabled, error or validation variants, badge treatments, price styles, or mobile chrome from the static home capture.
+- Don't add an outline focus ring: the measured controls draw focus with box-shadow, and two of them (더보기, the search input) show none within scope.
 
 ## 8. Responsive Behavior
 
@@ -257,7 +413,7 @@ No responsive sweep was included in the supplied collector evidence. The only me
 
 ## 9. Agent Prompt Guide
 
-Use a prompt bounded to the evidence, for example: “Create a desktop Ohouse-inspired home-section control using `Pretendard Variable`, white canvas, `#424242` body text, and one 91×40px `#00a1ff` action with 4px radius. Do not infer hover or mobile behavior.” Do not request a complete Ohouse design system from this snapshot.
+Use a prompt bounded to the evidence, for example: “Create a desktop Ohouse-inspired home-section control using `Pretendard Variable`, white canvas, `#424242` body text, and one 91×40px `#00a1ff` action with 4px radius. Hover and press turn it `#0497ef`; keyboard focus adds a 3px `#ddf3ff` ring. Do not infer mobile behavior.” Do not request a complete Ohouse design system from this snapshot.
 
 ## 10. Voice & Tone
 
@@ -287,11 +443,11 @@ No age, location, frequency, preference, or conversion behavior is assigned to t
 
 ## 14. States
 
-The collector recorded no interaction expansions or state transitions (`interactionKinds: 0`, `interactionCount: 0`). Empty, loading, error, success, disabled, and validation treatments are unresolved and intentionally omitted rather than reconstructed from generic commerce patterns.
+The July collector recorded no interaction expansions or state transitions (`interactionKinds: 0`, `interactionCount: 0`). The 2026-09-29 live state probe then measured hover, pressed and keyboard focus on six home controls. Hover equals pressed on every one: 글쓰기 `#00a1ff` → `#0497ef`; the carousel arrow `#ffffff` → `#f7f9fa`; 더보기 opacity 1 → 0.5; 쇼핑 `#2f3438` → `#00a1ff`; no change within scope on the search input and the deal-card link. Keyboard focus is a box-shadow ring — `#ddf3ff` 3px on 글쓰기 and the 쇼핑 label, `#69c3fd` 4px on the deal card — or a background tint on the carousel arrow, and nothing within scope on 더보기 and the search input. Empty, loading, error, success, disabled, and validation treatments remain unresolved and are intentionally omitted rather than reconstructed from generic commerce patterns.
 
 ## 15. Motion & Easing
 
-No timing, easing, reduced-motion behavior, or animated-state evidence was collected. Motion guidance is unresolved.
+No timing, easing, reduced-motion behavior, or animated-state evidence was collected. On 2026-09-29 none of the six probed controls declared a transition on the element itself. Motion guidance is unresolved.
 
 ---
 
