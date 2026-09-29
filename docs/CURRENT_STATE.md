@@ -326,8 +326,21 @@
   - 훅 3안(`v2-NOTES.md`). 권장 H2는 숫자 없이 표지와 짝을 이룬다. 첫 댓글에 한계 4개(456자)를 단다.
   - **메인 판단:** 표지와 평가 카드 2장은 공개할 만하다. 4컷·깜빡임은 폰에서 약하다. "사람들이모아와" 띄어쓰기 누락은 원본 마크업 그대로다(지적받을 수 있다).
   - 부족한 것: Windows·Android 렌더, 한국 타이포그래퍼 검토, 스킬 쪽 렌더 검사, 독립 재현.
+- **완료 — 저작 E1 (`814d11eb`).**
+  - ohouse 1→10: 포커스를 box-shadow로 그린다. 링 #ddf3ff ×7, #69c3fd ×3.
+  - channeltalk 5→12: `#3a3a3f`(×6)를 헤더 링크로 이관했다. 히어로는 opacity 0.85(×2).
+  - zigzag 4→12: 범위 명시 포커스 무변화.
+  - 세 곳 모두 쇼케이스 기준을 충족한다. channeltalk 탭은 선택 탭의 포커스로만 센 것이다(롤링 tabindex 패턴이라 채택). 파이프라인 통과.
+- **상위 20 재측정·저작 완료 (08:10).** 20곳 중 19곳이 쇼케이스 기준을 충족하고 socar만 미달(4)이다.
+- **사이트 반영 패키지 (브랜치 `codex/track-foundation`, 오너 GO 대기).**
+  - 웨이브 5: 6곳, `4dba6b39`
+  - 오늘 심화: 19곳 `cf59d446`, E2 3곳 `119895be`, E1 3곳 `814d11eb`
+  - 라이브 정정: 4곳(yeogiotte·karrot·naver·samsung) + 근거 14곳, `7a3a703a`
+  - Evidence 날짜 표시 수정: `2b16cf7d`
+  - 도구·상태 커밋: 사이트 영향 없음
+- **/hangul 공개 판단 자료:** `feat/hangul-skill` `c6cd774b`(체커 정밀도·렌더 검사·미러 동기화), 콘텐츠 v2의 표지와 평가 카드.
 - **다음.**
-  1. 진행 중: 저작 E1(ohouse·channeltalk·zigzag). 이후 파이프라인 → 커밋.
+  1. ~~저작 E1~~ (완료).
   2. 오너 GO 대기: 사이트 반영(웨이브 5 + 19곳 + 라이브 정정 4곳 + E2 3곳, 이어서 E1 3곳), /hangul 공개 판단(v2 뒤).
   2. 도구 공백 수정(스프라이트·img·svg·inert) → 남은 상위 20(ohouse, channeltalk, zigzag, ably, upstage, remember) 프로브.
   3. 파이프라인 → 커밋 → 오너 GO 한 번에 요청: 웨이브 5 + 오늘 19곳 + 라이브 정정 4곳(yeogiotte, karrot, naver, samsung). 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
