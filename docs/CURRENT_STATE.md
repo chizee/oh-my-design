@@ -157,8 +157,24 @@
   4. 상위 20 남은 12곳(socar, wanted, tossbank, kakaobank, hyundaicard, likelion, ohouse, channeltalk, zigzag, ably, upstage, remember): 프로브 → 저작.
   5. 번들 심화 남은 19곳(sktelecom, nhn, class101, dabang, brandi, inflearn, kmong, jandi, makinarocks, 11st, classum, kb-kookmin, wooribank, lotteon, cgv, kakaogames, megabox, soop, onestore).
   6. 후속: builder 딥링크(step=customize), 동의 배너(영어·죽은 GA 고지), staged Core v2 baemin 재이관, check-claims 상태값 grounding, 쇼케이스 배지 셈 규칙.
-  7. 9/30 09:17 KST Quality 스케줄 결과 확인.
+  7. 9/30 09:17 KST Quality 스케줄 결과 확인(01:13 기준 main 최근 4회 전부 성공).
 - **결정 (9/30 00:35).** 웨이브 4를 사이트에 반영한다. /hangul 공개는 바이럴 수준의 시각 콘텐츠(모션그래픽·스크린샷)가 준비된 뒤다 → 콘텐츠 레인을 새로 둔다: 같은 페이지 전후, omd-showcase 비교 영상, 실측 67곳 데이터 카드.
+- **완료 — 웨이브 4 사이트 반영 (00:40).** main `79281e16`. 라이브 확인: yeogiotte #243b52, 29cm #375fff 반영, banksalad·/·/builder 200.
+- **완료 — /hangul 통합 (브랜치 보관).**
+  - 커밋 `4b14743d`(origin `feat/hangul-skill`). 공개 스킬 4개(hangul, omd-feel, omd-apply, omd-init)이고 나머지는 metadata.internal로 숨겼다. 스킬 수 28→29, 커서 27→28. 모든 검사 통과.
+  - 오너 결정(바이럴급 시각 콘텐츠 준비 후 공개)에 따라 codex/track-foundation에는 아직 합치지 않는다.
+  - 남은 질문: omd-apply 중복 행, 기존 40행 삭제 요청(오너), ego-browser·google-analytics 외부 스킬 처리(오너).
+- **완료 — 웨이브 5 (01:06).**
+  - 커밋 `4dba6b39`(브랜치). sktelecom 4→11, nhn 1→10, class101 1→11, dabang 4→16, brandi 1→12, inflearn 5→20.
+  - 헤드라인 6건 대조. 알파 단계 상태(0.1→0.12 등, 형제 전원 일치)는 flex·coinone 선례로 채택했다.
+  - **오늘 KR 심화 누계 40곳**(사이트 반영 34곳, 브랜치 6곳).
+- **완료 — 프로브 D (01:10).** kakaobank 6·hyundaicard 6·likelion 5 컨트롤. kakaobank 7월 pressed #141414·focus #131313은 전환 중간 프레임이었다(안착 #444444). 포커스는 전원 `2px solid #007bff`. hyundaicard 카드 hover가 부모 li를 −12px 올린다. likelion은 선언된 검색 입력창이 사라졌고 포커스 링이 없다. → 저작 레인 시작.
+- **완료 — 프로브 C (01:14).** socar hover 5·pressed 5·focus 4/6(search-action 비활성). wanted 6/6/6(버튼 hover·pressed가 빈 자식 레이어 opacity로 칠해짐 0.0375/0.09). tossbank 6/6/6. → 저작 레인 시작.
+- **⚠ 발견 — 프로브 도구 사각지대 (01:14).**
+  - 증상: `probe-keyboard-states.mjs`가 (a) 빈 자식 요소, (b) 자손의 outline, (c) tabIndex<0 컨트롤을 비교하지 않는다. (d) 비활성 컨트롤의 hover를 측정으로 읽는다. (e) 포커스에 반응하는 페이지에서 Tab 순회가 일찍 끝난다.
+  - 영향: 프로브 기반 "변화 없음"·"포커스 링 없음" 주장이 틀렸을 수 있다. 이미 **사이트에 나간 8곳**(29cm, baemin, banksalad, karrot, kakao, naver, samsung, yeogiotte)이 해당한다. 긍정 판독(변화·링 있음)은 영향이 없다.
+  - 조치: 도구 수정 + 라이브 회귀(wanted·tossbank·socar·hyundaicard·kakaobank 음성 대조) → 고친 도구로 8곳 + likelion·kakaobank service-tab의 부재 주장 재측정 → 뒤집힌 것은 정정해 사이트에 다시 반영한다. 남은 상위 20(ohouse, channeltalk, zigzag, ably, upstage, remember)은 고친 도구로 잰다.
+- **진행 중.** /hangul 시각 콘텐츠 v1, 저작 D(kakaobank·hyundaicard·likelion)·C(socar·wanted·tossbank), 프로브 도구 수정.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
 - **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
 
