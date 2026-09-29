@@ -111,7 +111,7 @@
     "check:public-core-schemas": "node scripts/check-public-core-schemas.cjs",
     "check:web-core-verifier": "node scripts/build-web-core-verifier.cjs --check",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run query:references:data:check && npm run gen:presets:check && npm run build && node scripts/sync-runtime-mirrors.cjs --check && node scripts/gen-llms-full.cjs --check-only && bash scripts/check-release-hygiene.sh pack && npm run gate:quality:strict",
+    "prepublishOnly": "npm run query:references:data:check && npm run gen:presets:check && npm run build && node scripts/sync-runtime-mirrors.cjs --check && node scripts/gen-llms-full.cjs --check-only && bash scripts/check-release-hygiene.sh pack",
     "gen:llms-full": "node scripts/gen-llms-full.cjs",
     "gen:llms-full:check": "node scripts/gen-llms-full.cjs --check-only",
     "sync:runtime-mirrors": "node scripts/sync-runtime-mirrors.cjs --write",

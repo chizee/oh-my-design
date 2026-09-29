@@ -30,6 +30,17 @@ const onlyIdx = argv.indexOf("--only");
 const only = onlyIdx >= 0 ? new Set(String(argv[onlyIdx + 1] || "").split(",").map((s) => s.trim())) : null;
 
 const cfg = JSON.parse(readFileSync(join(ROOT, "test-v2/content-runs/fixtures.json"), "utf8"));
+// 기록된 제외(2026-09-29 오너 결정 D4 등)는 매 실행마다 출력한다. 출력 전용 — 제외된 픽스처도 그대로
+// 선택·검사·집계되고 판정 규칙(lib/quality-gate-policy.mjs)은 바뀌지 않는다.
+const exclusions = Array.isArray(cfg.exclusions) ? cfg.exclusions : [];
+const excludedBy = new Map(exclusions.flatMap((e) => (e.fixtures || []).map((id) => [id, e])));
+if (!asJson && exclusions.length) {
+  for (const e of exclusions) {
+    console.log(`제외 기록 — ${e.date} · ${e.decision}${e.release ? ` · ${e.release}` : ""}: ${(e.fixtures || []).join(", ")} — ${e.reason}`);
+  }
+  console.log("  (출력 전용: 제외된 픽스처도 검사·집계되며 판정은 바뀌지 않는다)");
+  console.log();
+}
 let fixtures;
 try {
   fixtures = selectFixtures(cfg, only);
@@ -117,12 +128,12 @@ for (const f of fixtures) {
 
 const { counts, hardFail, styleFail, softFail, verdict } = summarizeQualityGate(rows, strict);
 
-if (asJson) console.log(JSON.stringify({ verdict, counts, strict, rows }, null, 1));
+if (asJson) console.log(JSON.stringify({ verdict, counts, strict, exclusions, rows }, null, 1));
 else {
   console.log(`품질 게이트 — 픽스처 ${rows.length}개 · ${Object.entries(counts).map(([k, v]) => `${k} ${v}`).join(" · ")}\n`);
   for (const r of rows) {
     const mark = { PASS: "✓", FAIL: "✗", STYLE_FAIL: "✗", CHECK_ERROR: "✗", CHECK_PENDING: "?", REVIEW_PENDING: "?", MISSING: "·", UNVERIFIED: "?", STALE: "⚠" }[r.status];
-    console.log(`${mark} ${r.status.padEnd(8)} ${r.id.padEnd(20)} ${r.skill}`);
+    console.log(`${mark} ${r.status.padEnd(8)} ${r.id.padEnd(20)} ${r.skill}${excludedBy.has(r.id) ? ` — 제외 기록: ${excludedBy.get(r.id).decision}` : ""}`);
     if (r.note) console.log(`     ${r.note}`);
     if (r.receipt?.mismatches?.length) console.log(`     receipt: ${r.receipt.mismatches.join("; ")}`);
     for (const c of r.failedChecks || []) {

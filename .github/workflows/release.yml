@@ -2,8 +2,11 @@
 #
 # 릴리스 절차 (로컬):
 #   1. package.json version 범프 + CHANGELOG 항목 → main 머지
-#   2. git tag v1.7.2 && git push origin v1.7.2
-#   3. 이 워크플로가 테스트 → 빌드 → npm publish (provenance 포함)
+#   2. 오너 기계에서 `npm run gate:quality:strict` (스킬 산출물 품질 게이트). CI는 이 게이트를 돌릴 수 없어
+#      2026-09-29 prepublishOnly에서 뺐다 — test-v2/content-runs/QUALITY_GATE.md. BLOCKED면 오너 waiver를
+#      CHANGELOG에 적은 경우에만 태그한다.
+#   3. git tag v1.7.2 && git push origin v1.7.2
+#   4. 이 워크플로가 테스트 → 빌드 → npm publish (provenance 포함)
 #
 # 필요 시크릿: NPM_TOKEN (npmjs.com granular token, oh-my-design-cli read+write)
 # 주의: npm 계정 2FA 설정이 "Require 2FA and disallow tokens"면 publish가
