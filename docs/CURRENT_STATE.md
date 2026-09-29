@@ -182,7 +182,15 @@
   - **After 이미지가 HG-8을 스스로 어긴다.** 390px 푸터에서 "생/활", "예시입니/다"가 단어 중간에서 끊긴다(캡션 크기를 키워 줄바꿈이 생겼다). check.mjs는 통과했다 → **렌더 기준 줄바꿈 검사가 없는 체커 공백이다. /hangul 공개 전에 막아야 한다.**
   - 번호 마커가 글자를 가린다.
   - 에이전트에 보낸 지시: 수정, 렌더 단어 절단 검사, A/B 깜빡임 모션, 비디자이너도 보이는 오류(390px 단어 절단, 숫자 혼합 글꼴)를 앞에 배치.
-- **진행 중.** /hangul 시각 콘텐츠 v1, 저작 D(kakaobank·hyundaicard·likelion)·C(socar·wanted·tossbank), 프로브 도구 수정, 웨이브 6 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
+- **완료 — 저작 D (02:05, 미커밋).**
+  - 컴포넌트 증가: kakaobank 5→10, hyundaicard 1→11(본문엔 3개가 있었다), likelion 3→11(`/catalog` 표면 추가).
+  - check-claims 전원 통과, verify 27/27.
+  - 헤드라인 직접 대조:
+    - kakaobank hover 전환 프레임: 363ms에 rgb(20,20,20), 596ms에 #444444로 안착.
+    - hyundaicard 링: home `auto 2px off -3px` ×12, corp `auto 1px off 1px` ×6.
+    - likelion 입력창: 두 표면 모두 0개.
+  - **세 곳 모두 부재 판독을 셀 때만 기준을 넘는다.** 긍정 판독만 세면 kakaobank 4, hyundaicard 2, likelion 0이다. 부재 의존 줄 목록은 에이전트 보고에 있다. 재측정 결과로 최종 판정한다.
+- **진행 중.** /hangul 시각 콘텐츠 v1, 저작 C(socar·wanted·tossbank), 프로브 도구 수정, 웨이브 6 번들 심화 a(11st·classum·lotteon·kmong)·b(jandi·makinarocks·kb-kookmin)·c(wooribank·cgv·megabox). 대기: 웨이브 6d(kakaogames·soop·onestore).
   - 커밋 규칙: 저작 레인이 동시에 레퍼런스를 고치는 동안 전역 파이프라인을 돌리면 반쯤 쓴 파일이 생성물에 섞인다. 그래서 C·D·웨이브 6이 모두 끝난 뒤 한 번에 파이프라인 → 커밋한다. 재측정·프로브 E 레인은 레퍼런스를 고치지 않는다.
 - **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
 - **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
