@@ -68,6 +68,75 @@ verification_v2:
     "tokens.typography.section-heading.size": *live
     "tokens.typography.section-heading.use": *live
     "tokens.typography.section-heading.weight": *live
+    "tokens.components.legal-document-tab.type": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-12" }
+    "tokens.components.legal-document-tab.bg": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-12" }
+    "tokens.components.legal-document-tab.fg": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-testid=\"title\"]", captured: "2026-07-12" }
+    "tokens.components.legal-document-tab.border": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-12" }
+    "tokens.components.legal-document-tab.radius": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-12" }
+    "tokens.components.legal-document-tab.padding": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-12" }
+    "tokens.components.legal-document-tab.height": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-12" }
+    "tokens.components.legal-document-tab.font": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-testid=\"title\"]", captured: "2026-07-12" }
+    "tokens.components.legal-document-tab.selected": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.legal-document-tab.states": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-12" }
+    "tokens.components.legal-document-tab.use": { surface_id: giftcard, source_id: giftcard-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-12" }
+    "tokens.components.home-nav-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.home-nav-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.home-nav-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.home-nav-button.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.home-nav-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.home-nav-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.home-outlined-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.home-outlined-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.home-outlined-button.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.home-outlined-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.home-outlined-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.home-outlined-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.home-outlined-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.home-outlined-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-12" }
+    "tokens.components.home-tab.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-12" }
+    "tokens.components.tinted-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.tinted-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.tinted-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.tinted-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.tinted-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.tinted-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.tinted-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.content-card.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-12" }
+    "tokens.components.content-card.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-testid=\"title\"]", captured: "2026-07-12" }
+    "tokens.components.content-card.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-12" }
+    "tokens.components.content-card.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-testid=\"title\"]", captured: "2026-07-12" }
+    "tokens.components.content-card.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-12" }
+    "tokens.components.content-card.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-12" }
+    "tokens.components.showcase-list-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"82\"]", captured: "2026-07-12" }
+    "tokens.components.showcase-list-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"82\"]", captured: "2026-07-12" }
+    "tokens.components.showcase-list-button.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"82\"]", captured: "2026-07-12" }
+    "tokens.components.showcase-list-button.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-testid=\"title\"]", captured: "2026-07-12" }
+    "tokens.components.showcase-list-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"82\"]", captured: "2026-07-12" }
+    "tokens.components.showcase-list-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"82\"]", captured: "2026-07-12" }
+    "tokens.components.header-category-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.header-category-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.header-category-button.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-testid=\"title\"]", captured: "2026-07-12" }
+    "tokens.components.header-category-button.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.header-category-button.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-testid=\"title\"]", captured: "2026-07-12" }
+    "tokens.components.header-category-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.header-category-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-12" }
+    "tokens.components.header-accent-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.header-accent-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.header-accent-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-testid=\"title\"]", captured: "2026-07-12" }
+    "tokens.components.header-accent-link.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.header-accent-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-testid=\"title\"]", captured: "2026-07-12" }
+    "tokens.components.header-accent-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.header-accent-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.list-row-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"88\"]", captured: "2026-07-12" }
+    "tokens.components.list-row-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"88\"]", captured: "2026-07-12" }
+    "tokens.components.list-row-button.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"88\"]", captured: "2026-07-12" }
+    "tokens.components.list-row-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"88\"]", captured: "2026-07-12" }
+    "tokens.components.list-row-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"88\"]", captured: "2026-07-12" }
 tokens:
   source: live-extract
   extracted: "2026-07-13"
@@ -86,11 +155,21 @@ tokens:
     page-title: { size: 28, weight: 700, lineHeight: 1.29, tracking: "-0.616px", use: "Observed h1" }
     section-heading: { size: 26, weight: 700, lineHeight: 1.38, use: "Observed h2" }
     body: { size: 18, weight: 400, lineHeight: 1.67, use: "Observed reading text" }
-    control: { size: 16, weight: 400, lineHeight: 1, use: "Observed home controls and tabs" }
+    control: { size: 16, weight: 400, lineHeight: 1, use: "Computed on the home control and tab roots, which carry the inherited body type; their visible labels were not sampled separately (corrected 2026-09-30)" }
   spacing: { xs: 4, sm: 8, md: 12, lg: 24, xl: 36 }
   rounded: { sm: 4, md: 8, lg: 12 }
   components:
     legal-list-item: { type: listItem, bg: "transparent", fg: "#0C0C0C", padding: "0px 0px 0px 24px", font: "16px / 400 / Pretendard Variable", use: "Observed official privacy-document list item only" }
+    legal-document-tab: { type: tab, bg: "transparent", fg: "rgba(55, 55, 55, 0.8)", border: "1px transparent", radius: "0px", padding: "12px 0px 10px", height: "45px", font: "18px / 700 / Pretendard Variable", selected: "border 1px #0c0c0c (bottom side), fg #0c0c0c", states: "five tabs per legal page; the one with aria-selected=\"true\" (giftcard capture 2, privacy capture 1, compared as a string) computes a #0c0c0c bottom border and a #0c0c0c label, and the four with \"false\" keep a transparent 1px bottom border and a rgba(55, 55, 55, 0.8) label. Both pages agree. No state frame", use: "Legal-document tab (button role=tab) at surface-2::[data-omd-capture=\"0\"]; the root computes #000000 / 16px / 400 and the label is its child h3 (line height 22px, tracking -0.288px). Document chrome, not product navigation" }
+    home-nav-button: { type: button, bg: "transparent", radius: "8px", size: "108px x 38px", states: "eleven captured at rest on home; no state frame", use: "Home category button (css-bzjpx5) at home::[data-omd-capture=\"6\"]. The root computes #000000 / 16px / 400 with line height normal, and no child label was captured, so no label style is declared" }
+    home-outlined-button: { type: button, bg: "transparent", border: "1px rgba(255, 255, 255, 0.298)", radius: "12px", padding: "14px 13px", height: "50px", states: "captured at rest on home (captures 28 and 86, 240 px wide; capture 95 has the same outline at 121 px); no state frame", use: "Home outlined button (css-67lr3i) at home::[data-omd-capture=\"28\"]. The root computes #000000 / 16px / 400 and no child label was captured, so no label style is declared" }
+    home-tab: { type: tab, bg: "transparent", radius: "0px", size: "97px x 44px", states: "ten captured on home, every one aria-selected=\"false\" (compared as a string), so no selected style is declared; no state frame", use: "Home tab (div role=tab, css-12n7wd0) at home::[data-omd-capture=\"7\"]. Its colour and type equal the inherited body text (#000000, 16px / 400 / 16px), so it is a container and no label style is declared" }
+    tinted-button: { type: button, bg: "rgba(0, 0, 0, 0.03)", radius: "8px", padding: "10px", height: "38px", states: "captured at rest twice on home: header link capture 5 (62 px wide) and footer button capture 96 (74 px wide); no state frame", use: "Tinted compact button at home::[data-omd-capture=\"5\"]; the root computes the inherited #000000 / 16px / 400 and no child label was captured" }
+    content-card: { type: card, fg: "#ffffff", size: "240px x 147px", font: "18px / 700 / Pretendard Variable", states: "52 captured at rest on home; no state frame", use: "Home content card (a.css-1lalw83) at home::[data-omd-capture=\"30\"]; text colour and font are the child h3[data-testid=\"title\"] (208 px wide, line height 22px, tracking -0.288px). The anchor computes no fill and 0px radius and its image was not captured, so no fill or radius is declared" }
+    showcase-list-button: { type: button, bg: "transparent", size: "300px x 134px", font: "20px / 700 / Pretendard Variable", states: "four captured at rest on home (captures 82-85). One title computes #0c0c0c and the other three rgba(55, 55, 55, 0.8); no aria-selected is recorded and nothing else in the capture names the active one, so neither a text colour nor a selected style is declared. No state frame", use: "Home showcase list button (css-vf38px) at home::[data-omd-capture=\"82\"]; the font is the child h3[data-testid=\"title\"] (260 px wide, line height 26px, tracking -0.36px)" }
+    header-category-button: { type: button, bg: "transparent", fg: "rgba(55, 55, 55, 0.8)", size: "87px x 22px", font: "18px / 500 / Pretendard Variable", states: "one captured at rest on home; no state frame", use: "Home header button (css-1hvtp3b) at home::[data-omd-capture=\"2\"]; text colour and font are the child h3[data-testid=\"title\"] (five characters, matched by top offset and text length; line height 22px, tracking -0.288px)" }
+    header-accent-link: { type: button, bg: "transparent", fg: "#ff5d00", size: "179px x 26px", font: "20px / 700 / Pretendard Variable", states: "one captured at rest on home; no state frame", use: "Home header link (a.css-b70msd) at home::[data-omd-capture=\"1\"]; text colour and font are its two-character child h3[data-testid=\"title\"] (line height 26px, tracking -0.36px), one of the three orange title samples" }
+    list-row-button: { type: button, bg: "transparent", size: "600px x 62px", states: "five captured at rest on home; no state frame", use: "Home list row button (css-1hvtp3b) at home::[data-omd-capture=\"88\"]; the root computes the inherited #000000 / 16px / 400 and no child label was captured" }
 ---
 
 # Design System Inspiration of Class101 (클래스101)
@@ -132,52 +211,53 @@ No success, error, warning, CTA-background, hover, or shadow color is promoted: 
 | H1 | 28px | 700 | 36px | -0.616px | captured h1 aggregate |
 | H2 | 26px | 700 | 36px | normal | captured h2 aggregate |
 | Reading body | 18px | 400 | 30px | normal | 269 captured occurrences |
-| Control / tab | 16px | 400 | 16px / normal | normal | home control and tab samples |
+| Control / tab root | 16px | 400 | 16px / normal | normal | home control and tab roots; this is the inherited body type, not a sampled label (corrected 2026-09-30) |
 
 ## 4. Component Stylings
 
-Only the following default-state components have selector and surface provenance. The collector recorded `interactionCount: 0`; hover, focus, pressed, disabled, error, dialog, toast, input, card, and selected-tab variants are not asserted.
+Only the following components have selector and surface provenance. The bundle holds no pointer-state frame (`::state-*`) on any surface, so hover, focus and pressed are not asserted; disabled, error, dialog, toast and input variants were not observed. The one declared state is the legal-document tab's `aria-selected="true"` variant. Corrected 2026-09-30: the July text gave `interactionCount: 0` as the reason; that count covers expansions, not pointer states. It also excluded the selected tab, which the bundle records on both legal pages.
 
 ### Home navigation button
 
 **Default — product home**
 - Background: transparent
-- Text: `#000000`
 - Border: none
 - Radius: 8px
-- Font: 16px / 400 / Pretendard Variable
-- Use: Home control at `home::[data-omd-capture="6"]`; 108px × 38px observed
+- Label: not sampled. The root computes `#000000`, 16px / 400 (line height normal), the page's inherited colour and type, and no child label was captured, so no label style is declared.
+- Use: Home control at `home::[data-omd-capture="6"]`; 108px × 38px observed; eleven instances
+- Corrected 2026-09-30: the July text listed the root's `#000000` and 16px / 400 as the text style.
 
 ### Home outlined button
 
 **Default — product home**
 - Background: transparent
-- Text: `#000000`
-- Border: 1px solid rgba(255,255,255,0.298)
+- Border: 1px rgba(255, 255, 255, 0.298)
 - Radius: 12px
 - Padding: 14px 13px
-- Font: 16px / 400 / Pretendard Variable
-- Use: Home button at `home::[data-omd-capture="28"]`; 240px × 50px observed
+- Label: not sampled. The root computes `#000000`, 16px / 400, the inherited colour and type, and no child label was captured, so no label style is declared.
+- Use: Home button at `home::[data-omd-capture="28"]` and `"86"`; 240px × 50px observed (`"95"` has the same outline at 121px wide)
+- Corrected 2026-09-30: the July text listed the root's `#000000` and 16px / 400 as the text style.
 
 ### Home tab wrapper
 
 **Unselected — product home**
 - Background: transparent
-- Text: `#000000`
 - Border: none
 - Radius: 0px
-- Font: 16px / 400 / Pretendard Variable
-- Use: `div[role="tab"]` at `home::[data-omd-capture="7"]`; `aria-selected="false"`, 97px × 44px observed
+- Label: not sampled. The tab's colour and type (`#000000`, 16px / 400 / 16px, tracking normal) equal the inherited body text, so it is a container and no label style is declared.
+- Use: `div[role="tab"]` at `home::[data-omd-capture="7"]`; `aria-selected="false"`, 97px × 44px observed. All ten home tabs record `aria-selected="false"`, so no selected style is declared.
+- Corrected 2026-09-30: the July text listed the container's `#000000` and 16px / 400 as the text style.
 
 ### Legal-document tab
 
 **Observed — official documentation chrome**
 - Background: transparent
-- Text: `#000000`
-- Border: 0px 0px 1px rgb(0,0,0)
+- Label: `rgba(55, 55, 55, 0.8)`, 18px / 700 / 22px, tracking -0.288px (the child `h3[data-testid="title"]`)
+- Border: bottom 1px transparent (`rgba(0, 0, 0, 0)`); the other sides are 0px
 - Radius: 0px
 - Padding: 12px 0px 10px
-- Font: 16px / 400 / Pretendard Variable
+- Selected: the tab with `aria-selected="true"` (giftcard capture 2, privacy capture 1) computes a 1px `#0C0C0C` bottom border and a `#0C0C0C` label. Both legal pages agree.
+- Corrected 2026-09-30: the July text gave this tab a black bottom border and `#000000` 16px / 400 text. On unselected tabs the 1px bottom border is transparent and the black sits on 0px sides; the `#000000` and 16px / 400 are the root's inherited values, and the visible label is its child.
 - Use: `button[role="tab"]` at `surface-2::[data-omd-capture="0"]`; 61px × 45px observed. This is document chrome, not evidence for product navigation.
 
 ### Legal-document list item
@@ -189,6 +269,45 @@ Only the following default-state components have selector and surface provenance
 - Padding: 0px 0px 0px 24px
 - Font: 16px / 400 / Pretendard Variable
 - Use: `surface-3::li`; 28px line height and 4px bottom margin observed
+
+The components below were transcribed on 2026-09-30 from the same 2026-07-12 bundle; nothing was re-measured. None has a state frame.
+
+### Tinted compact button
+
+- Background: `rgba(0, 0, 0, 0.03)`
+- Radius: 8px; padding 10px; height 38px
+- Label: not sampled; the root computes the inherited `#000000` / 16px / 400.
+- Use: header link (`home::[data-omd-capture="5"]`, 62px wide) and footer button (`home::[data-omd-capture="96"]`, 74px wide).
+
+### Home content card
+
+- Size: 240px × 147px
+- Title: `#FFFFFF`, 18px / 700 / 22px, tracking -0.288px (the child `h3[data-testid="title"]`, 208px wide)
+- Use: 52 cards on the home page; evidence `home::[data-omd-capture="30"]`. The anchor computes no fill and 0px radius, and its image was not captured, so no fill or radius is declared.
+
+### Home showcase list button
+
+- Size: 300px × 134px
+- Title: 20px / 700 / 26px, tracking -0.36px (the child `h3[data-testid="title"]`, 260px wide). One of the four titles computes `#0C0C0C` and the other three `rgba(55, 55, 55, 0.8)`. No `aria-selected` is recorded and nothing else in the capture names the active one, so no selected style is declared.
+- Use: four buttons on the home page; evidence `home::[data-omd-capture="82"]` to `"85"`.
+
+### Header category button
+
+- Size: 87px × 22px
+- Label: `rgba(55, 55, 55, 0.8)`, 18px / 500 / 22px, tracking -0.288px (the child `h3[data-testid="title"]`, matched by top offset and text length)
+- Use: home header; evidence `home::[data-omd-capture="2"]`.
+
+### Header accent link
+
+- Size: 179px × 26px
+- Label: `#FF5D00`, 20px / 700 / 26px, tracking -0.36px (the child `h3[data-testid="title"]`, two characters); this is one of the three orange title samples in §2.
+- Use: home header; evidence `home::[data-omd-capture="1"]`.
+
+### Home list row button
+
+- Size: 600px × 62px
+- Label: not sampled; the root computes the inherited `#000000` / 16px / 400.
+- Use: five stacked rows on the home page; evidence `home::[data-omd-capture="88"]`.
 
 ---
 **Verified:** 2026-07-13
@@ -218,7 +337,7 @@ The representative captured controls and list items have `box-shadow: none`. No 
 
 - Don't restore the legacy black CTA, orange CTA, semantic state colors, or hover shadows without new surface evidence.
 - Don't treat declared system-font fallbacks as loaded Class101 font assets.
-- Don't infer interaction variants from this capture: it recorded no interactions.
+- Don't infer hover, focus or pressed variants from this capture: it holds no pointer-state frame. The legal-document tab's selected state is the one recorded variant.
 
 ## 8. Responsive Behavior
 
@@ -229,8 +348,8 @@ No responsive transition was captured. The only recorded viewport is desktop `14
 ### Verified prompt fragments
 
 - "Use `Pretendard Variable`; the captured home resolves it through a loaded FontFaceSet match."
-- "Create a neutral home navigation button: transparent background, `#000000` text, no border, 8px radius, 16px / 400, 38px observed height."
-- "Create the observed home outlined button only when its context warrants it: transparent background, `#000000` text, 1px `rgba(255,255,255,0.298)` border, 12px radius, 14px 13px padding, 50px observed height."
+- "Create a neutral home navigation button: transparent background, no border, 8px radius, 38px observed height; its label style was not sampled (corrected 2026-09-30: the July fragment gave it `#000000` 16px / 400 text, the root's inherited values)."
+- "Create the observed home outlined button only when its context warrants it: transparent background, 1px `rgba(255,255,255,0.298)` border, 12px radius, 14px 13px padding, 50px observed height; its label style was not sampled (corrected 2026-09-30: the July fragment gave it `#000000` text)."
 
 Do not request unverified cards, inputs, toasts, modal sheets, hover states, responsive behavior, or semantic colors as though they were observed Class101 specifications.
 
@@ -264,7 +383,7 @@ No first-party user-research or persona material was found in the reviewed sourc
 
 ## 14. States
 
-Empty, loading, success, error, disabled, skeleton, and validation states were not observed in the supplied capture. No state token or copy should be inferred from the default-state components.
+Empty, loading, success, error, disabled, skeleton, and validation states were not observed in the supplied capture, and the bundle holds no hover, pressed or focus frame. The one recorded state is the legal-document tab's `aria-selected="true"` variant: a 1px `#0C0C0C` bottom border and a `#0C0C0C` label, against a transparent border and a `rgba(55, 55, 55, 0.8)` label on unselected tabs, on both legal pages (§4). No other state token or copy should be inferred from the default-state components.
 
 ## 15. Motion & Easing
 

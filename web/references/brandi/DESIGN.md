@@ -66,6 +66,102 @@ verification_v2:
     "tokens.components.product-badge.padding": *product
     "tokens.components.product-badge.font": *product
     "tokens.components.product-badge.use": *product
+    "tokens.components.product-buy-button.type": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.product-buy-button.bg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.product-buy-button.fg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.product-buy-button.radius": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.product-buy-button.padding": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.product-buy-button.height": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.product-buy-button.font": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.product-buy-button.states": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.product-buy-button.use": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-07-13" }
+    "tokens.components.product-partner-buy-button.type": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.product-partner-buy-button.bg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.product-partner-buy-button.fg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.product-partner-buy-button.radius": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.product-partner-buy-button.padding": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.product-partner-buy-button.height": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.product-partner-buy-button.font": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.product-partner-buy-button.states": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.product-partner-buy-button.use": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.product-cart-button.type": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.product-cart-button.bg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.product-cart-button.border": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.product-cart-button.radius": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.product-cart-button.size": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.product-cart-button.states": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.product-cart-button.use": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-select.type": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-select.bg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-select.border": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-select.radius": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-select.size": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-select.states": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-select.use": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-list.type": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-list.bg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-list.border": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-list.radius": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-list.padding": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-list.size": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-list.states": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-list.use": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-item.type": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-item.bg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-item.border": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-item.padding": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-item.height": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-item.states": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.product-option-item.use": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tab.type": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tab.fg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tab.border": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.product-detail-tab.padding": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tab.height": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tab.font": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tab.selected": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tab.states": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.product-detail-tab.use": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.product-text-tab.type": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"26\"]", captured: "2026-07-13" }
+    "tokens.components.product-text-tab.fg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"26\"]", captured: "2026-07-13" }
+    "tokens.components.product-text-tab.padding": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"26\"]", captured: "2026-07-13" }
+    "tokens.components.product-text-tab.height": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"26\"]", captured: "2026-07-13" }
+    "tokens.components.product-text-tab.font": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"26\"]", captured: "2026-07-13" }
+    "tokens.components.product-text-tab.selected": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.product-text-tab.states": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"26\"]", captured: "2026-07-13" }
+    "tokens.components.product-text-tab.use": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"26\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.type": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.bg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.fg": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.border": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.radius": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.padding": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.size": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.font": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.selected": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"28\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.states": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.product-pagination.use": { surface_id: product-a, source_id: product-a-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.selected": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"26\"]", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.home-promo-tab.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"27\"]", captured: "2026-07-13" }
+    "tokens.components.home-more-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.home-more-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.home-more-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.home-more-link.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.home-more-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.home-more-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.home-more-link.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.home-more-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.home-more-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
+    "tokens.components.home-more-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"36\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -83,13 +179,24 @@ tokens:
     badge-text: "#808893"
   typography:
     family: { ui: "Noto Sans KR" }
-    product-action: { size: 17, weight: 500, lineHeight: 1.0, use: "Observed direct and partner purchase links on both captured product pages." }
-    option: { size: 13, weight: 400, lineHeight: 1.0, use: "Observed product-option select and expanded listbox." }
-    badge: { size: 13, weight: 700, lineHeight: 1.0, use: "Observed product-detail badge." }
+    product-action: { size: 17, weight: 500, lineHeight: "normal", use: "Observed direct and partner purchase links on both captured product pages." }
+    option: { size: 13, weight: 400, lineHeight: "normal", use: "Inherited page text on the product-option trigger and expanded list containers (the page body records the same values); not a measured option-label style." }
+    badge: { size: 13, weight: 700, lineHeight: "normal", use: "Observed product-detail badge." }
   spacing: { action-x: 4, action-y: 18, option-item: 16, badge-x: 8, badge-y-start: 2, badge-y-end: 3 }
   rounded: { product-action: 6, option: 6, option-menu: 6, badge: 6 }
   components:
     product-badge: { type: badge, bg: "#ebeef2", fg: "#808893", radius: "6px", padding: "2px 8px 3px", font: "13px / 700 / Noto Sans KR", use: "Observed product-detail metadata badge." }
+    product-buy-button: { type: button, bg: "#1e1e1e", fg: "#ffffff", radius: "6px", padding: "18px 4px", height: "61px", font: "17px / 500 Noto Sans KR", states: "default on both product pages (surface-2 capture 17, surface-3 capture 16); the bundle holds no state frame for any Brandi element", use: "Direct purchase link (a.btn-buy) at surface-2::[data-omd-capture=\"17\"], 206 x 61" }
+    product-partner-buy-button: { type: button, bg: "#00c73c", fg: "#ffffff", radius: "6px", padding: "18px 4px", height: "62px", font: "17px / 500 Noto Sans KR", states: "default on both product pages (surface-2 capture 18, surface-3 capture 17); no state frame", use: "Adjacent partner purchase link (a.btn-n-buy) at surface-2::[data-omd-capture=\"18\"], 206 x 62" }
+    product-cart-button: { type: button, bg: "#ffffff", border: "1px #e3e5e8", radius: "6px", size: "62px x 62px", states: "default on two icon links per product page (capture 19, 20); no state frame", use: "Icon link (a.btn-cart-ico) beside the purchase links at surface-2::[data-omd-capture=\"19\"]; its font size is 0px, so no label style is claimed" }
+    product-option-select: { type: input, bg: "#ffffff", border: "1px #e6e6e6", radius: "6px", size: "560px x 50px", states: "rest on the first option trigger on both product pages (surface-2 capture 15, surface-3 capture 14); activating it opened the option list (expanded, menu-open); the second trigger (capture 16) is disabled and records border 1px #e1e1e1; no pointer-state frame", use: "Product option trigger (span, role button, aria-haspopup listbox) at surface-2::[data-omd-capture=\"15\"]; its own #202429 13px / 400 Spoqa Han Sans equals the inherited page text, so it is treated as a container and no label style is claimed" }
+    product-option-list: { type: card, bg: "#ffffff", border: "1px #e6e6e6 on the sides and bottom", radius: "0px 0px 6px 6px", padding: "0px 0px 1px", size: "560px x 241px", states: "captured open after the option trigger was activated on both product pages (expanded, menu-open)", use: "Option list (ul, role listbox) at surface-2::[data-omd-interaction-capture=\"menu-0-0\"]; its #202429 13px / 400 is the inherited page text on a container, so no label style is claimed" }
+    product-option-item: { type: listItem, bg: "#ffffff", border: "1px #e1e1e1 on the bottom edge of the wrapping li", padding: "16px", height: "59px", states: "four option rows captured in the open list; the last wrapper has no divider; no state frame", use: "Option row (div, role option) at surface-2::[data-omd-interaction-capture=\"menu-0-2\"], 558 x 59; inherited 13px / 400 type, so no label style is claimed" }
+    product-detail-tab: { type: tab, fg: "#9a9a9e", border: "4px #f2f2f2 on the bottom edge of the parent li", padding: "17px 4px 22px", height: "68px", font: "20px / 400 Noto Sans KR", selected: "fg #202429, 20px / 500, parent li bottom border 4px #1e1e1e", states: "rest on three tabs (capture 22-24); the tab whose li has class active (label capture 21) differs from them and is recorded as selected; no state frame", use: "Product-detail section tab label (a) at surface-2::[data-omd-capture=\"22\"], 290 x 68, inside li in ul.tab" }
+    product-text-tab: { type: tab, fg: "#a4a4a8", padding: "0px 0px 0px 17px", height: "32px", font: "22px / 400 Noto Sans KR", selected: "fg #1e1e1e", states: "rest on two tabs (capture 26, 27); the link with class active (capture 25) differs from them and is recorded as selected; no state frame", use: "Product-page text tab link (a) at surface-2::[data-omd-capture=\"26\"]" }
+    product-pagination: { type: button, bg: "#ffffff", fg: "#9a9a9e", border: "1px #e6e6e6", radius: "0px", padding: "0px 4px", size: "46px x 46px", font: "17px / 400 / 46px Noto Sans KR", selected: "fg #202429", states: "rest on eight page links (capture 29-32, 42-45); the links with class page active (capture 28, 41) differ from them and are recorded as selected; no state frame", use: "Product-page pagination link (a.page) at surface-2::[data-omd-capture=\"29\"]" }
+    home-promo-tab: { type: tab, bg: "#ffffff", fg: "#808893", border: "1px #d3d7df", radius: "26px", padding: "0px 24px", height: "46px", font: "18px / 400 / 46px Spoqa Han Sans", selected: "bg #ff365d, border 1px #ff365d, fg #ffffff, 18px / 700", states: "rest on one slide (li swiper-slide-next, label capture 27); the li with class active (label captures 26, 37) differs from it and is recorded as selected; no state frame", use: "Home promotional slider tab: an li holding the label link, label at home::[data-omd-capture=\"27\"]; fill, border, radius, padding and height sit on the li" }
+    home-more-link: { type: button, bg: "transparent", fg: "#5f6773", border: "1px #d3d7df", radius: "28px", padding: "15px", size: "320px x 53px", font: "14px / 400 Spoqa Han Sans", states: "default on three links (capture 36, 46, 57); no state frame", use: "Home section more link (a) at home::[data-omd-capture=\"36\"]" }
 ---
 
 # Design System Inspiration of Brandi
@@ -124,6 +231,7 @@ Brandi is an official Korean women's fashion shopping service: the public site t
 - **Option border** (`#e6e6e6`): default product-option selector border.
 - **Disabled option border** (`#e1e1e1`): observed disabled selector border.
 - **Badge surface / text** (`#ebeef2` / `#808893`): product-detail badge pair.
+- **Component-local colours** recorded in §4, not promoted to palette roles: `#9a9a9e` (unselected product-tab and pagination text), `#f2f2f2` (unselected product-tab underline), `#a4a4a8` (unselected product text tab), `#5f6773` with a 1px `#d3d7df` border (home more link; the same border outlines the unselected promotional tab), and `#e3e5e8` (icon link border beside the purchase links).
 
 No `#ff204b` live use was recorded by the supplied 2026-07-13 capture, so it is not retained as a current token.
 
@@ -146,6 +254,8 @@ No `#ff204b` live use was recorded by the supplied 2026-07-13 capture, so it is 
 | Product option / expanded menu | Spoqa Han Sans | 13px | 400 | normal | option trigger and listbox on both product pages |
 | Product badge | Noto Sans KR | 13px | 700 | normal | `.badge` on both product pages |
 
+Corrected 2026-09-30: the frontmatter recorded `lineHeight: 1.0` for these three roles where the capture records `normal`; the tokens now read `normal`. The option row is the page's inherited body text (the body element records the same `#202429`, 13px / 400 Spoqa Han Sans) on the trigger and list containers, not a measured option-label style.
+
 ## 4. Component Stylings
 
 ### Product purchase action
@@ -156,7 +266,7 @@ No `#ff204b` live use was recorded by the supplied 2026-07-13 capture, so it is 
 - Radius: `6px`
 - Padding: `18px 4px`
 - Font: `17px / 500 / Noto Sans KR`
-- Use: `surface-2::[data-omd-capture="17"]` / `.btn-buy`, also observed on surface-3; direct product purchase link.
+- Use: `surface-2::[data-omd-capture="17"]` / `.btn-buy` (`product-buy-button`), also observed on surface-3; direct product purchase link, 206px × 61px.
 
 **Partner purchase — observed default**
 - Background: `#00c73c`
@@ -164,19 +274,19 @@ No `#ff204b` live use was recorded by the supplied 2026-07-13 capture, so it is 
 - Radius: `6px`
 - Padding: `18px 4px`
 - Font: `17px / 500 / Noto Sans KR`
-- Use: `surface-2::[data-omd-capture="18"]` / `.btn-n-buy`, also observed on surface-3; adjacent green partner purchase link.
+- Use: `surface-2::[data-omd-capture="18"]` / `.btn-n-buy` (`product-partner-buy-button`), also observed on surface-3; adjacent green partner purchase link, 206px × 62px.
 
 ### Product option select
 
 **Default and observed states**
 - Background: `#ffffff`
-- Text: `#202429`
+- Text and type on the trigger element: `#202429`, `13px / 400 / Spoqa Han Sans`. Corrected 2026-09-30: these equal the page's inherited body text, so they describe the container, not a measured label; the label sits in a child the capture did not sample.
 - Border: `1px solid #e6e6e6`
 - Radius: `6px`
-- Font: `13px / 400 / Spoqa Han Sans`
+- Size: 560px × 50px
 - Expanded: The trigger at `surface-2::[data-omd-capture="15"]` opened the recorded listbox on both product routes.
 - Disabled: The disabled trigger at `surface-2::[data-omd-capture="16"]` retained white background and `#202429` text with `1px solid #e1e1e1` border.
-- Use: Product-option selector. No hover, focus, pressed, validation, or selected-option styling is specified.
+- Use: Product-option selector (`product-option-select`). The bundle holds no hover, focus, or pressed frame for any Brandi element, so none is specified; validation and selected-option styling are not specified either.
 
 ### Product option listbox
 
@@ -188,7 +298,7 @@ No `#ff204b` live use was recorded by the supplied 2026-07-13 capture, so it is 
 - Padding: `0px 0px 1px`
 - Font: `13px / 400 / Spoqa Han Sans`
 - Expanded: `surface-2::[data-omd-interaction-capture="menu-0-0"]` / `.ui-menu` appeared after the option-trigger interaction; a 16px-padded option wrapper was observed inside it.
-- Use: Product-option listbox on product pages only.
+- Use: Product-option listbox on product pages only (`product-option-list`). Its option rows (`product-option-item`, `surface-2::[data-omd-interaction-capture="menu-0-2"]`) record background `#ffffff`, `16px` padding and 558px × 59px, each wrapping `li` divided by a 1px `#e1e1e1` bottom border except the last. Corrected 2026-09-30: the listbox's `#202429` and `13px / 400` are the inherited page text on a container, not a label style.
 
 ### Product detail badge
 
@@ -198,7 +308,37 @@ No `#ff204b` live use was recorded by the supplied 2026-07-13 capture, so it is 
 - Radius: `6px`
 - Padding: `2px 8px 3px`
 - Font: `13px / 700 / Noto Sans KR`
-- Use: `surface-2::span` / `.badge`, also observed on surface-3.
+- Use: `surface-2::span` / `.badge` (`product-badge`), also observed on surface-3.
+
+### Product-page icon link
+
+**Default** (`product-cart-button`): background `#ffffff`, border 1px `#e3e5e8`, `6px` radius, 62px × 62px; `surface-2::[data-omd-capture="19"]` and `"20"` (`a.btn-cart-ico`), beside the purchase links on both product pages. Its font size is 0px, so no label style is claimed.
+
+### Product-detail section tab
+
+**Default** (`product-detail-tab`): text `#9a9a9e`, `20px / 400 Noto Sans KR`, `17px 4px 22px` padding, 290px × 68px; the parent `li` carries a 4px `#f2f2f2` bottom border. `surface-2::[data-omd-capture="22"]` through `"24"`, inside `ul.tab`.
+
+**Selected**: the tab whose `li` has class `active` (label `surface-2::[data-omd-capture="21"]`) records text `#202429` at 500, and its `li` a 4px `#1e1e1e` bottom border.
+
+### Product-page text tab
+
+**Default** (`product-text-tab`): text `#a4a4a8`, `22px / 400 Noto Sans KR`, 17px left padding, 32px high; `surface-2::[data-omd-capture="26"]` and `"27"`. **Selected**: the link with class `active` (`surface-2::[data-omd-capture="25"]`) records text `#1e1e1e`.
+
+### Product-page pagination
+
+**Default** (`product-pagination`): background `#ffffff`, text `#9a9a9e`, border 1px `#e6e6e6`, square corners, `0px 4px`, 46px × 46px, `17px / 400 / 46px Noto Sans KR`; `surface-2::[data-omd-capture="29"]` (eight links). **Selected**: the links with class `page active` (captures 28 and 41) record text `#202429`.
+
+### Home promotional tab
+
+**Default** (`home-promo-tab`): the `li` has background `#ffffff`, border 1px `#d3d7df`, `26px` radius, `0px 24px` padding and a 46px height; its label link (`home::[data-omd-capture="27"]`) records `#808893` at `18px / 400 / 46px Spoqa Han Sans`.
+
+**Selected**: the `li` with class `active` records background `#ff365d` and border 1px `#ff365d`; its label links (captures 26 and 37) record `#ffffff` at 700.
+
+### Home more link
+
+**Default** (`home-more-link`): transparent, text `#5f6773`, border 1px `#d3d7df`, `28px` radius, `15px` padding, 320px × 53px, `14px / 400 Spoqa Han Sans`; `home::[data-omd-capture="36"]`, `"46"` and `"57"`.
+
+The bundle holds no hover, pressed, or focus frame for any Brandi element (zero `::state-*` samples), so no pointer state is declared anywhere in this reference. Each selected value above rests on a semantic class (`active`, `page active`) together with a measured difference from the unselected siblings; the option trigger's disabled border and its expanded list are the other recorded states.
 
 ---
 **Verified:** 2026-07-13
@@ -260,7 +400,7 @@ No first-party, source-backed stakeholder groups or research are available. No s
 
 ## 14. States
 
-Only the product-option expanded/listbox state and the disabled option border were observed. Empty, loading, error, success, cart, wish, sold-out, and validation treatments are not specified.
+Observed states: the product-option expanded list, the disabled option border (1px `#e1e1e1`), and four selected treatments, each marked by a semantic class and a measured difference from its siblings: the product-detail tab (text `#202429` at 500 over a 4px `#1e1e1e` underline), the product text tab (`#1e1e1e`), the pagination link (`#202429`), and the home promotional tab (`#ff365d` fill, white 700 label). The bundle holds no hover, pressed, or focus frame. Empty, loading, error, success, cart, wish, sold-out, and validation treatments are not specified.
 
 ## 15. Motion & Easing
 

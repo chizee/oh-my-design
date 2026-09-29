@@ -68,6 +68,7 @@ verification_v2:
     "tokens.components.resource-download.padding": *brand
     "tokens.components.resource-download.font": *brand
     "tokens.components.resource-download.use": *brand
+    "tokens.components.resource-download.states": { surface_id: brand, source_id: brand-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"13\"]::state-hover", captured: "2026-07-13" }
     "tokens.components.outline-title-link.type": *brand
     "tokens.components.outline-title-link.bg": *brand
     "tokens.components.outline-title-link.fg": *brand
@@ -86,6 +87,71 @@ verification_v2:
     "tokens.components.top-action.font": *home
     "tokens.components.top-action.states": *home
     "tokens.components.top-action.use": *home
+    "tokens.components.brand-section-link.type": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.bg": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.fg": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.radius": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.padding": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.height": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.font": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.selected": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.hover": { surface_id: brand, source_id: brand-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"2\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.pressed": { surface_id: brand, source_id: brand-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"2\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.states": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.brand-section-link.use": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.lnb-link.type": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.lnb-link.bg": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.lnb-link.fg": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.lnb-link.radius": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.lnb-link.padding": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.lnb-link.height": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.lnb-link.font": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.lnb-link.selected": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.lnb-link.hover": { surface_id: brand, source_id: brand-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"8\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.lnb-link.pressed": { surface_id: brand, source_id: brand-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"8\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.lnb-link.states": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.lnb-link.use": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.intro-tile.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.intro-tile.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.intro-tile.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.intro-tile.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.intro-tile.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.intro-tile.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.newsroom-card.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.newsroom-card.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.newsroom-card.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.newsroom-card.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.newsroom-card.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.newsroom-card.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.newsroom-card.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.content-row.type": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.content-row.bg": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.content-row.fg": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::p", captured: "2026-07-13" }
+    "tokens.components.content-row.border": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.content-row.radius": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.content-row.padding": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.content-row.size": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.content-row.font": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::p", captured: "2026-07-13" }
+    "tokens.components.content-row.states": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.content-row.use": { surface_id: brand, source_id: brand-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
 tokens:
   source: live-extract
   extracted: "2026-07-13"
@@ -107,10 +173,17 @@ tokens:
   rounded: { square: 0, media-tile: 16 }
   shadow: { flat: "none" }
   components:
-    brand-current-link: { type: listItem, fg: "#3a46cd", padding: "0px 12px", font: "16px / 600 / SKT Sans Text", use: "Static current-page link on the public brand navigation" }
-    resource-download: { type: listItem, bg: "transparent", fg: "#1a2232", border: "1px solid #727887", radius: 0, padding: "11px 24px", font: "13px / 600 / SKT Sans Text", use: "Public brand-page download link" }
+    brand-current-link: { type: listItem, fg: "#3a46cd", padding: "0px", font: "16px / 600 / SKT Sans Text", use: "Static current-page link in the brand-page local navigation (a.depth2-link depth2-brand is-active at surface-2::[data-omd-capture=\"11\"], 168 x 20 px); it is the selected state of lnb-link. Corrected 2026-09-30: padding is 0px; the July value 0px 12px belongs to the section links (brand-section-link)" }
+    resource-download: { type: listItem, bg: "transparent", fg: "#1a2232", border: "1px solid #727887", radius: 0, padding: "11px 24px", font: "13px / 600 / SKT Sans Text", states: "default captured on both download links (surface-2 captures 13 and 14). Their hover and pressed frames record bg rgba(74, 80, 143, 0.027) and their focus frames rgba(74, 80, 143, 0.16), two points on one line from transparent, with text colours that differ by one unit between the two links, so they are transition frames and no state value is declared", use: "Public brand-page download link" }
     outline-title-link: { type: listItem, bg: "transparent", fg: "#595e6b", border: "1px solid #d0d1d3", radius: 0, padding: "6px 12px 6px 16px", height: 34, font: "12px / 600 / SKT Sans Text", use: "Public footer/title link" }
-    top-action: { type: button, bg: "#727887", fg: "#ffffff", radius: 0, padding: "1px 6px", height: 58, font: "10px / 700 / SKT Sans Text", states: "default observed; interaction count 0, so no hover, focus, pressed, disabled, or error state is retained", use: "Public desktop/tablet top action" }
+    top-action: { type: button, bg: "#727887", fg: "#ffffff", radius: 0, padding: "1px 6px", height: 58, font: "10px / 700 / SKT Sans Text", states: "default observed; the capture holds no state frame for this control, so no hover, focus, pressed, disabled, or error state is retained. Corrected 2026-09-30: the July text derived this from interaction count 0, which counts dialog, tab and menu expansions, not pointer-state frames", use: "Public desktop/tablet top action" }
+    brand-section-link: { type: tab, bg: "transparent", fg: "#595e6b", radius: "0px", padding: "0px 12px", height: "74px", font: "16px / 600 / SKT Sans Text", selected: "fg #3a46cd, 16px / 700", hover: "fg #3a46cd, 16px / 700", pressed: "fg #3a46cd, 16px / 700", states: "rest sampled on five section links (captures 2-6). The link with class is-active (capture 1, the current section on this route) computes #3a46cd and 700; no aria-selected is recorded, so that pairing rests on the class name. Capture 2's hover and pressed frames record exactly those values (rgb(58, 70, 205), 700). Captures 3-6 record 700 in every frame, but their colours lie on the line from the rest #595e6b toward #3a46cd, so they are transition frames: the weight change is settled on all five links, the colour on the one that finished. Focus is not declared from the bundle", use: "Brand-page header section link (a.sub-depth1-link) at surface-2::[data-omd-capture=\"2\"]; 59-90 px wide, line height 20px" }
+    lnb-link: { type: tab, bg: "transparent", fg: "#727887", radius: "0px", padding: "0px", height: "20px", font: "16px / 600 / SKT Sans Text", selected: "fg #3a46cd", hover: "fg #3a46cd", pressed: "fg #3a46cd", states: "rest sampled on four local-navigation links (captures 8, 9, 10, 12). Every hover and pressed frame of all four records rgb(58, 70, 205) with weight 600 in every frame, exactly the rest colour of the is-active link (capture 11), so the value is settled. Their focus frames record the same colour; focus is not declared from the bundle", use: "Brand-page local navigation (LNB) link (a.depth2-link) at surface-2::[data-omd-capture=\"8\"]; 168 px wide, line height 20px" }
+    intro-tile: { type: card, radius: "16px", size: "260px wide, 114-228px tall", font: "20px / 700 / SKT Sans Text", states: "13 tiles captured at rest. Each records a pressed frame in which the anchor's own colour moves from rgb(0, 0, 238) to rgb(255, 0, 0), Chromium's default link and active-link colours; the tile text is set by child p elements, so that colour never renders and no pressed value is declared", use: "Home service tile (a.item intro-imgNN-target) at home::[data-omd-capture=\"0\"]. The font is the child p.title (20px / 700 / 26px; one tile 18px / 700 / 27px); p.desc is 13px / 600 / 20.8px, tracking -0.13px. The labels compute #ffffff on most tiles, #1a2232 on two (item-safety, item-investor) and #3a46cd on one (item-adot), so no single text colour is declared" }
+    newsroom-card: { type: card, fg: "#1a2232", radius: "0px", size: "311px x 271px", font: "14px / 500 / SKT Sans Text", states: "eight cards captured at rest (captures 13-20: four a.newsroom-link, four a.news-link, 248-271 px tall). Their pressed frames move only the anchor's default link colour (rgb(0, 0, 238) to rgb(255, 0, 0)), which the child text does not use, so no pressed value is declared", use: "Home newsroom card (a.newsroom-link) at home::[data-omd-capture=\"13\"]; text colour and font are the child p.text (295 px wide, line height 22.4px)" }
+    footer-menu-link: { type: button, bg: "transparent", fg: "#3a404e", radius: "0px", padding: "0px", height: "20px", font: "14px / 500 / SKT Sans Text", states: "rest captured on home (captures 21-23) and on the brand page (captures 52-54). The home links' hover and pressed frames all record rgb(23, 26, 32), which lies on the line from the rest #3a404e to #000000 (58, 64, 78 x 0.404 = 23.43, 25.86, 31.51, rounding to 23, 26, 32), so it is treated as a transition frame and no hover or pressed value is declared", use: "Footer menu link (first footer row) at home::[data-omd-capture=\"21\"]; 51-89 px wide, line height 20px, tracking -0.56px" }
+    footer-link: { type: button, bg: "transparent", fg: "#727887", radius: "0px", padding: "0px", height: "20px", font: "12px / 600 / SKT Sans Text", states: "default captured on both surfaces; no state frame. The first link (a.link strong, capture 31) computes #3a404e at the same size and weight", use: "Footer policy-row link (a.link) at home::[data-omd-capture=\"32\"] (also captures 33-38 and brand-page captures 62-69); tracking -0.48px" }
+    content-row: { type: button, bg: "transparent", fg: "#3a404e", border: "1px #ecedef", radius: "0px", padding: "24px 24px 0px 0px", size: "850px wide", font: "15px / 600 / SKT Sans Text", states: "37 rows captured at rest on the brand page; 15 carry the top border and 24px top padding, 22 have neither (0px 24px 0px 0px). No state frame", use: "Brand-page content row (button.content) at surface-2::[data-omd-capture=\"18\"]. The root computes the inherited body text (#000000, 10px / 400 / 11.5px); text colour and font are the child title p.tit (599 px wide, line height 27px), matched by top offset" }
   components_harvested: true
 ---
 
@@ -137,7 +210,7 @@ SK텔레콤 is a Korean connectivity and consumer-technology company whose publi
 
 | Role | Value | Usage and evidence boundary |
 | --- | --- | --- |
-| Brand current-link | `#3A46CD` | Current-page and focused public brand-navigation links; this is an observed public navigation treatment. |
+| Brand current-link | `#3A46CD` | Current-page brand-navigation links (the `is-active` section link and LNB link) and the settled hover and pressed colour of the LNB and section links (§4). Corrected 2026-09-30: the July text also said "focused", which came from the bundle's focus frames; focus is not declared from a bundle. |
 | Foreground | `#1A2232` | Public brand-page resource-download text only. |
 | Strong link text | `#3A404E` | Repeated stronger public link text on the supplied pages. |
 | Muted link text | `#595E6B` | Public footer/title link text. |
@@ -177,9 +250,10 @@ T Blue and T Red are named in SK텔레콤’s 2022 renewal story as brand colors
 - Text: `#3A46CD`
 - Border: none
 - Radius: 0px
-- Padding: 0px 12px
+- Padding: 0px (168px × 20px)
 - Font: 16px / 600 / SKT Sans Text
-- Use: `surface-2::[data-omd-capture="11"]`, static current-page brand navigation
+- Use: `surface-2::[data-omd-capture="11"]` (`a.depth2-link depth2-brand is-active`), the static current-page link in the brand-page local navigation; it is the selected state of the LNB link below.
+- Corrected 2026-09-30: the July text gave this link 0px 12px padding. Capture 11 computes 0px; the 12px inline padding belongs to the section links in the brand-page header (see below).
 
 ### Resource download link
 
@@ -215,7 +289,79 @@ T Blue and T Red are named in SK텔레콤’s 2022 renewal story as brand colors
 - Font: 10px / 700 / SKT Sans Text
 - Use: `home::[data-omd-capture="29"]` and `surface-2::[data-omd-capture="60"]`, public desktop/tablet top action
 
-The artifact retains static CSS snapshots with `state-hover`, `state-pressed`, and `state-focus` selector suffixes, but its top-level `interactions` array is empty and `interactionCount` is zero. They are recorded as raw proof only, not promoted to interaction-state tokens or a behavior contract.
+Corrected 2026-09-30: the July text here said the state-suffixed snapshots could not be promoted because the `interactions` array is empty and `interactionCount` is zero. That count covers dialog, tab and menu expansions, not pointer states. The bundle holds 62 state frames on 37 elements; the settled ones are declared below, and the rest are listed with the reason in `.verification.md` (2026-09-30 appendix).
+
+The components below were transcribed on 2026-09-30 from the same 2026-07-13 bundle; nothing was re-measured.
+
+### Brand section link
+
+- Background: transparent
+- Text: `#595E6B`
+- Font: 16px / 600 / SKT Sans Text, line height 20px
+- Radius: 0px; padding 0px 12px; height 74px (59px to 90px wide)
+- Selected: the link carrying class `is-active` (capture 1, the current section on this route) computes `#3A46CD` and weight 700. No `aria-selected` is recorded, so the pairing rests on the class name.
+- Hover: text `#3A46CD`, weight 700
+- Pressed: text `#3A46CD`, weight 700
+- States: capture 2's hover and pressed frames record `rgb(58, 70, 205)` and weight 700, exactly the rest values of the `is-active` link. Captures 3 to 6 record weight 700 in every frame, but their colours (`rgb(87, 93, 112)` and similar in hover and pressed, `rgb(79, 86, 138)` in focus) lie on the line from the rest `#595E6B` toward `#3A46CD`, so they are transition frames. The weight change is settled on all five links and the colour on the one that finished. Focus is not declared from the bundle.
+- Use: `a.sub-depth1-link` in the brand-page header; evidence `surface-2::[data-omd-capture="2"]`.
+
+### Brand LNB link
+
+- Background: transparent
+- Text: `#727887`
+- Font: 16px / 600 / SKT Sans Text, line height 20px
+- Radius: 0px; padding 0px; height 20px (168px wide)
+- Selected: `#3A46CD` at the same weight (the brand current link above, capture 11).
+- Hover: text `#3A46CD`
+- Pressed: text `#3A46CD`
+- States: all four unselected links (captures 8, 9, 10 and 12) record `rgb(58, 70, 205)` in every hover and pressed frame, with weight 600 in every frame. That is exactly the rest colour of the current link, so the value is settled. Their focus frames record the same colour; focus is not declared from the bundle.
+- Use: `a.depth2-link` in the brand-page local navigation; evidence `surface-2::[data-omd-capture="8"]`.
+
+The LNB title above these links (`p.lnb-title`) computes `#3A46CD`, 26px / 700 / 36.4px, with a 4px `#3A46CD` bottom border and 3px bottom padding (99px × 43px). It is a heading, so it is recorded here rather than as a component.
+
+### Home service tile
+
+- Radius: 16px
+- Size: 260px wide, 114px to 228px tall
+- Labels: child elements. `p.title` computes 20px / 700 / 26px (one tile: 18px / 700 / 27px) and `p.desc` 13px / 600 / 20.8px, tracking -0.13px. They compute `#FFFFFF` on most tiles, `#1A2232` on two (`item-safety`, `item-investor`) and `#3A46CD` on one (`item-adot`), so no single text colour is declared.
+- States: all 13 tiles record a pressed frame in which the anchor's own colour moves from `rgb(0, 0, 238)` to `rgb(255, 0, 0)`, Chromium's default link and active-link colours. The anchor's text is set by its child `p` elements, so that colour never renders, and no pressed value is declared.
+- Use: `a.item intro-imgNN-target` on home; evidence `home::[data-omd-capture="0"]` to `"12"`.
+
+### Newsroom card
+
+- Radius: 0px
+- Size: 311px × 271px (news cards 248px to 271px tall)
+- Text: `#1A2232`, 14px / 500 / 22.4px (the child `p.text`, 295px wide)
+- States: the eight cards (captures 13 to 20: four `a.newsroom-link`, four `a.news-link`) record pressed frames that move only the anchor's default link colour (`rgb(0, 0, 238)` to `rgb(255, 0, 0)`), which the child text does not use; no pressed value is declared.
+- Use: home newsroom and news lists; evidence `home::[data-omd-capture="13"]`.
+
+### Footer menu link
+
+- Background: transparent
+- Text: `#3A404E`
+- Font: 14px / 500 / SKT Sans Text, line height 20px, tracking -0.56px
+- Radius: 0px; padding 0px; height 20px (51px to 89px wide)
+- States: rest captured on home (captures 21 to 23) and on the brand page (captures 52 to 54). The three home links' hover and pressed frames all record `rgb(23, 26, 32)`. That point lies on the line from the rest `#3A404E` to `#000000`: 58, 64, 78 × 0.404 gives 23.43, 25.86, 31.51, which rounds to 23, 26, 32. It is therefore treated as a transition frame, and no hover or pressed value is declared.
+- Use: first footer row; evidence `home::[data-omd-capture="21"]`.
+
+### Footer link
+
+- Background: transparent
+- Text: `#727887`
+- Font: 12px / 600 / SKT Sans Text, line height 20px, tracking -0.48px
+- Radius: 0px; padding 0px; height 20px
+- Strong variant: the first link (`a.link strong`, capture 31) computes `#3A404E` at the same size and weight.
+- States: default only; no state frame.
+- Use: `a.link` in the footer policy row; evidence `home::[data-omd-capture="32"]` (also captures 33 to 38, and brand-page captures 62 to 69). The copyright line (`p.copy`) computes `#727887`, 12px / 600 / 21.6px.
+
+### Brand content row
+
+- Background: transparent
+- Border: 15 rows carry a 1px `#ECEDEF` top border with 24px top padding (`24px 24px 0px 0px`); 22 rows have neither (`0px 24px 0px 0px`)
+- Size: 850px wide
+- Title: `#3A404E`, 15px / 600 / 27px (the child `p.tit`, 599px wide, matched by top offset)
+- States: default only; no state frame.
+- Use: `button.content` rows on the brand page; evidence `surface-2::[data-omd-capture="18"]` (bordered) and `"15"` (unbordered). The root computes the inherited body text (`#000000`, 10px / 400 / 11.5px), so no label style is taken from it.
 
 ---
 **Verified:** 2026-07-13
@@ -309,7 +455,7 @@ A public, institutional, or industry participant concerned with the wider AI-inf
 
 ## 14. States
 
-No component-state matrix is retained. The supplied evidence bundle has zero recorded interaction expansions and no selector-backed loading, empty, error, success, disabled, dialog, toast, or form-validation contract. Static state-like CSS snapshots remain documented in `.verification.md` but are not represented as usable product states.
+Pointer states are declared only where the 2026-07-13 bundle holds a settled frame. The brand LNB links and brand section links turn `#3A46CD` on hover and pressed (the section links also move to weight 700), and the current-page link of each list is its selected state (§4). Every other state frame is listed in `.verification.md` with the reason it is not declared: transition frames (section-link colours on four links, the footer menu links, the download links), Chromium's default link colours on container anchors, and focus frames, which are never declared from a bundle. The bundle records no dialog, tab, menu, toast or form interaction, and no selector-backed loading, empty, error, success, disabled or validation state. Corrected 2026-09-30: the July text said no component-state matrix could be retained because the bundle has zero interaction expansions; that count does not cover pointer-state frames, of which the bundle holds 62.
 
 ## 15. Motion & Easing
 

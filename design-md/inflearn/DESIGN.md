@@ -65,10 +65,9 @@ verification_v2:
     "tokens.components.product-search-submit.bg": *product
     "tokens.components.product-search-submit.fg": *product
     "tokens.components.product-search-submit.radius": *product
-    "tokens.components.product-search-submit.font": *product
-    "tokens.components.product-search-submit.hover": *product
-    "tokens.components.product-search-submit.pressed": &inflearn_css { surface_id: product-home, source_id: home-capture, method: live-css-inspect, captured: "2026-09-16" }
-    "tokens.components.product-search-submit.focus": *inflearn_css
+    "tokens.components.product-search-submit.hover": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"8\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.product-search-submit.pressed": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"8\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.product-search-submit.focus": &inflearn_css { surface_id: product-home, source_id: home-capture, method: live-css-inspect, captured: "2026-09-16" }
     "tokens.components.product-search-submit.disabled": *inflearn_css
     "tokens.components.product-search-submit.states": *product
     "tokens.components.product-search-submit.use": *product
@@ -78,29 +77,169 @@ verification_v2:
     "tokens.components.product-nav-action.radius": *product
     "tokens.components.product-nav-action.padding": *product
     "tokens.components.product-nav-action.font": *product
-    "tokens.components.product-nav-action.hover": *product
-    "tokens.components.product-nav-action.pressed": *inflearn_css
+    "tokens.components.product-nav-action.hover": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"12\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.product-nav-action.pressed": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"12\"]::state-pressed", captured: "2026-07-13" }
     "tokens.components.product-nav-action.disabled": *inflearn_css
     "tokens.components.product-nav-action.states": *product
     "tokens.components.product-nav-action.use": *product
     "tokens.components.product-course-card.type": *product
     "tokens.components.product-course-card.radius": *product
-    "tokens.components.product-course-card.font": *product
     "tokens.components.product-course-card.states": *product
     "tokens.components.product-course-card.use": *product
     "tokens.components.product-content-tab.type": *product
-    "tokens.components.product-content-tab.bg": *product
-    "tokens.components.product-content-tab.fg": *product
+    "tokens.components.product-content-tab.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.product-content-tab.fg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
     "tokens.components.product-content-tab.radius": *product
     "tokens.components.product-content-tab.padding": *product
-    "tokens.components.product-content-tab.font": *product
+    "tokens.components.product-content-tab.font": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.product-content-tab.selected": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.product-content-tab.hover": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"20\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.product-content-tab.pressed": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"20\"]::state-pressed", captured: "2026-07-13" }
     "tokens.components.product-content-tab.states": *product
     "tokens.components.product-content-tab.use": *product
     "tokens.components.product-dialog-overlay.type": *product
     "tokens.components.product-dialog-overlay.bg": *product
-    "tokens.components.product-dialog-overlay.font": *product
     "tokens.components.product-dialog-overlay.states": *product
     "tokens.components.product-dialog-overlay.use": *product
+    "tokens.components.gnb-service-link.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-service-link.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-service-link.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-service-link.padding": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-service-link.height": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-service-link.hover": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"1\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.gnb-service-link.pressed": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"1\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.gnb-service-link.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-service-link.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-trigger.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-trigger.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-trigger.border": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-trigger.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-trigger.size": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-trigger.hover": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"6\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-trigger.pressed": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"6\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-trigger.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-trigger.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.fg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.border": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.padding": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.height": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.font": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.hover": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"9\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.pressed": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"9\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-text-button.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-icon-trigger.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-icon-trigger.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-icon-trigger.border": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-icon-trigger.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-icon-trigger.size": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-icon-trigger.hover": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"10\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.gnb-icon-trigger.pressed": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"10\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.gnb-icon-trigger.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-icon-trigger.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-search-input.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-search-input.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-search-input.fg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-search-input.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-search-input.size": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-search-input.font": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-search-input.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-search-input.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu.border": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu.padding": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu.size": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu.shadow": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-item.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-item.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-item.fg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-item.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-item.padding": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-item.height": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-item.font": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-item.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-menu-item.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-popover.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-1-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-popover.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-1-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-popover.border": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-1-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-popover.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-1-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-popover.padding": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-1-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-popover.size": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-1-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-popover.shadow": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-1-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-popover.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-1-0\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-popover.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-1-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-modal.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-2-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-modal.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-2-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-modal.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-2-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-modal.size": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-2-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-modal.shadow": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-2-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-modal.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-2-0\"]", captured: "2026-07-13" }
+    "tokens.components.product-modal.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-interaction-capture=\"dialog-2-0\"]", captured: "2026-07-13" }
+    "tokens.components.hero-carousel-icon-button.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.hero-carousel-icon-button.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.hero-carousel-icon-button.border": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.hero-carousel-icon-button.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.hero-carousel-icon-button.size": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.hero-carousel-icon-button.hover": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"15\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.hero-carousel-icon-button.pressed": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"15\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.hero-carousel-icon-button.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.hero-carousel-icon-button.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-07-13" }
+    "tokens.components.home-carousel-arrow.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.home-carousel-arrow.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.home-carousel-arrow.fg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.home-carousel-arrow.border": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.home-carousel-arrow.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.home-carousel-arrow.size": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.home-carousel-arrow.hover": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"18\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.home-carousel-arrow.pressed": { surface_id: product-home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"18\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.home-carousel-arrow.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.home-carousel-arrow.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"18\"]", captured: "2026-07-13" }
+    "tokens.components.home-article-card.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"46\"]", captured: "2026-07-13" }
+    "tokens.components.home-article-card.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"46\"]", captured: "2026-07-13" }
+    "tokens.components.home-article-card.border": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"46\"]", captured: "2026-07-13" }
+    "tokens.components.home-article-card.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"46\"]", captured: "2026-07-13" }
+    "tokens.components.home-article-card.size": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"46\"]", captured: "2026-07-13" }
+    "tokens.components.home-article-card.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"46\"]", captured: "2026-07-13" }
+    "tokens.components.home-article-card.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"46\"]", captured: "2026-07-13" }
+    "tokens.components.course-tag-badge.type": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.course-tag-badge.bg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.course-tag-badge.fg": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.course-tag-badge.border": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.course-tag-badge.radius": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.course-tag-badge.padding": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.course-tag-badge.height": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.course-tag-badge.font": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.course-tag-badge.states": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.course-tag-badge.use": { surface_id: product-home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.type": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.bg": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.fg": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.border": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.radius": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.padding": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.height": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.font": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.hover": { surface_id: product-courses, source_id: courses-capture, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"14\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.pressed": { surface_id: product-courses, source_id: courses-capture, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"14\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.states": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.course-filter-chip.use": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-07-13" }
+    "tokens.components.course-pagination.type": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"71\"]", captured: "2026-07-13" }
+    "tokens.components.course-pagination.bg": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"71\"]", captured: "2026-07-13" }
+    "tokens.components.course-pagination.fg": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"71\"]", captured: "2026-07-13" }
+    "tokens.components.course-pagination.border": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"71\"]", captured: "2026-07-13" }
+    "tokens.components.course-pagination.radius": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"71\"]", captured: "2026-07-13" }
+    "tokens.components.course-pagination.padding": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"71\"]", captured: "2026-07-13" }
+    "tokens.components.course-pagination.size": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"71\"]", captured: "2026-07-13" }
+    "tokens.components.course-pagination.font": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"71\"]", captured: "2026-07-13" }
+    "tokens.components.course-pagination.states": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"71\"]", captured: "2026-07-13" }
+    "tokens.components.course-pagination.use": { surface_id: product-courses, source_id: courses-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"71\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -128,11 +267,26 @@ tokens:
   shadow:
     flat: "none"
   components:
-    product-search-submit: { type: button, bg: "#00c471", fg: "#ffffff", radius: "999px", font: "16px / 400 Pretendard", hover: "#00a760", pressed: "#00a760", focus: "#212529", disabled: "#f1f3f5", states: "hover observed: #00a760", use: "Product GNB search submit; home::[data-omd-capture=8]" }
-    product-nav-action: { type: button, bg: "#f8f9fa", fg: "#495057", radius: "32px", padding: "0px 22px", font: "16px / 600 Pretendard", hover: "rgba(241, 243, 245, 0.65)", pressed: "rgba(241, 243, 245, 0.65)", disabled: "#f1f3f5", states: "hover observed: rgba(241,243,245,0.65)", use: "Product GNB navigation action; home::[data-omd-capture=12]" }
-    product-course-card: { type: card, radius: "8px", font: "16px / 400 Pretendard", states: "default only; no card interaction state captured", use: "Product course article shell; home::article" }
-    product-content-tab: { type: tab, bg: "#25262b", fg: "#ffffff", radius: "9999px", padding: "10px 16px", font: "14px / 700 system sans-serif", states: "selected observed", use: "Product-home selected content tab; home::[data-omd-capture=19]" }
-    product-dialog-overlay: { type: dialog, bg: "rgba(0,0,0,0.6)", font: "16px / 400 Pretendard", states: "dialog-open observed", use: "Product dialog backdrop; home::[data-omd-interaction-capture=dialog-2-8]" }
+    product-search-submit: { type: button, bg: "#00c471", fg: "#ffffff", radius: "999px", hover: "bg #00a760", pressed: "bg #00a760", focus: "#212529", disabled: "#f1f3f5", states: "rest on the GNB search submit on both routes (capture 8); hover and pressed sampled on both, all four frames recording bg #00a760; the focus and disabled values come from a 2026-09-16 live CSS inspection (claim method live-css-inspect) that does not name the property, and the bundle holds no focus or disabled frame on this element, so it cannot confirm them", use: "Product GNB search submit; home::[data-omd-capture=8]; icon-only (no text node), so fg is the computed colour its glyph can inherit. Corrected 2026-09-30: the July font leaf (16px / 400 Pretendard) was the inherited page type on an element without text and was removed" }
+    product-nav-action: { type: button, bg: "#f8f9fa", fg: "#495057", radius: "32px", padding: "0px 22px", font: "16px / 600 Pretendard", hover: "bg rgba(241, 243, 245, 0.65)", pressed: "bg rgba(241, 243, 245, 0.65)", disabled: "#f1f3f5", states: "rest on the GNB button on both routes (capture 12); hover and pressed sampled on it and on the two icon buttons beside it (capture 10, 11), all twelve frames recording bg rgba(241, 243, 245, 0.65); the disabled value comes from the 2026-09-16 live CSS inspection, and the bundle holds no disabled frame on this element; focus not declared", use: "Product GNB navigation action; home::[data-omd-capture=12]" }
+    product-course-card: { type: card, radius: "8px", states: "default only; no card interaction state captured", use: "Product course article shell; home::article (article.mantine-Card-root, 262 x 307 on home). Corrected 2026-09-30: the July font leaf (16px / 400 Pretendard) was the inherited page type on a container and was removed" }
+    product-content-tab: { type: tab, bg: "transparent", fg: "#212529", radius: "9999px", padding: "10px 16px", font: "14px / 400 / 14px system sans-serif", selected: "bg #25262b, fg #ffffff, 14px / 700", hover: "bg #f8f9fa", pressed: "bg #f8f9fa", states: "rest on the tabs with aria-selected \"false\" (capture 20-24); the tab with aria-selected \"true\" (capture 19, interaction capture tab-3-0) is recorded as selected; hover and pressed sampled on four rest tabs (capture 20-23), all eight frames recording bg #f8f9fa; focus not declared. Corrected 2026-09-30: the July record stored the selected fill as the rest value", use: "Product-home content tab (button, role tab) at home::[data-omd-capture=20]" }
+    product-dialog-overlay: { type: dialog, bg: "rgba(0,0,0,0.6)", states: "dialog-open observed", use: "Product dialog backdrop; home::[data-omd-interaction-capture=dialog-2-8], 1440 x 900 behind the panel listed as product-modal. Corrected 2026-09-30: the July font leaf (16px / 400 Pretendard) was the inherited page type on an element with no text and was removed" }
+    gnb-service-link: { type: tab, bg: "transparent", radius: "0px", padding: "6px 10px", height: "44px", hover: "bg #f8f9fa, radius 50px", pressed: "bg #f8f9fa, radius 50px", states: "rest on five links on both routes (capture 1-5); hover and pressed sampled on all ten, all twenty frames recording bg #f8f9fa with a 50px radius; focus not declared", use: "GNB service link (a, Mantine Anchor) at home::[data-omd-capture=\"1\"], 84 x 44; the link element's own colour is #00a760 and its type equals the page text, and its label sits in a child the capture did not sample, so no label style is claimed" }
+    gnb-menu-trigger: { type: button, bg: "transparent", border: "1px transparent", radius: "32px", size: "61px x 42px", hover: "bg #f8f9fa", pressed: "bg #f8f9fa", states: "rest on both routes (capture 6); hover and pressed sampled on both, all four frames recording bg #f8f9fa; activating it opened the menu listed as gnb-menu (menu-open, expanded); focus not declared", use: "GNB menu button (aria-haspopup menu) at home::[data-omd-capture=\"6\"]; icon-only, so no label colour is claimed" }
+    gnb-text-button: { type: button, bg: "transparent", fg: "#495057", border: "1px transparent", radius: "32px", padding: "0px 12px", height: "42px", font: "16px / 600 / 16px Pretendard", hover: "bg #f8f9fa", pressed: "bg #f8f9fa", states: "rest on both routes (capture 9); hover and pressed sampled on both, all four frames recording bg #f8f9fa; focus not declared", use: "GNB text button (a, Mantine Button) at home::[data-omd-capture=\"9\"], 81 x 42" }
+    gnb-icon-trigger: { type: button, bg: "#f8f9fa", border: "1px transparent", radius: "32px", size: "42px x 42px", hover: "bg rgba(241, 243, 245, 0.65)", pressed: "bg rgba(241, 243, 245, 0.65)", states: "rest on two icon buttons per route (capture 10, 11); hover and pressed sampled on all four, all eight frames recording bg rgba(241, 243, 245, 0.65), the value the GNB navigation action takes; each opened a popover or modal (dialog-open); focus not declared", use: "GNB icon button (aria-haspopup dialog) at home::[data-omd-capture=\"10\"]; icon-only, so no label colour is claimed" }
+    gnb-search-input: { type: input, bg: "#ffffff", fg: "#000000", radius: "8px", size: "377px x 36px", font: "16px / 400 / 34px Pretendard", states: "default captured on both routes; its pressed and focus frames change only the colour of a 0px border, and the values drift between routes, so no state is declared", use: "GNB search input at home::[data-omd-capture=\"7\"]; border width 0px, so no field border is claimed" }
+    gnb-menu: { type: card, bg: "#ffffff", border: "1px #e9ecef", radius: "8px", padding: "4px", size: "110px x 256px", shadow: "rgba(0, 0, 0, 0.05) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px", states: "captured open after the GNB menu button was activated on both routes (menu-open, expanded)", use: "GNB menu dropdown (div, role menu) at home::[data-omd-interaction-capture=\"menu-0-0\"]; its #212529 16px / 400 is the inherited page text on a container, so no label style is claimed" }
+    gnb-menu-item: { type: button, bg: "transparent", fg: "#000000", radius: "8px", padding: "10px 12px", height: "41px", font: "14px / 400 / 16.1px Pretendard", states: "six items captured in the open menu; no state frame", use: "GNB menu item (button, role menuitem) at home::[data-omd-interaction-capture=\"menu-0-1\"], 100 x 41" }
+    gnb-popover: { type: dialog, bg: "#ffffff", border: "1px #e9ecef", radius: "16px", padding: "12px 10px", size: "253px x 248px", shadow: "rgba(0, 0, 0, 0.05) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 10px 15px -5px, rgba(0, 0, 0, 0.04) 0px 7px 7px -5px", states: "captured open (dialog-open) after a GNB icon button was activated", use: "GNB popover (div, role dialog) at home::[data-omd-interaction-capture=\"dialog-1-0\"]" }
+    product-modal: { type: dialog, bg: "#ffffff", radius: "16px", size: "320px x 263px", shadow: "rgba(0, 0, 0, 0.05) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 36px 28px -7px, rgba(0, 0, 0, 0.04) 0px 17px 17px -7px", states: "captured open (dialog-open) over the overlay listed as product-dialog-overlay; it holds a close button (dialog-2-2, 31 x 31, 8px radius) and a radio group whose first radio records a #00c471 fill and border against #ffffff with 1px #ced4da on the others; no aria-checked is recorded, so no checked state is declared", use: "Modal panel (section, role dialog) at home::[data-omd-interaction-capture=\"dialog-2-0\"]; its #495057 14px / 400 / 21px is content colour set on the panel, not a label style" }
+    hero-carousel-icon-button: { type: button, bg: "rgba(248, 249, 250, 0.2)", border: "1px transparent", radius: "32px", size: "30px x 30px", hover: "bg rgba(248, 249, 250, 0.4)", pressed: "bg rgba(248, 249, 250, 0.4)", states: "rest on two buttons (capture 15, 16); hover and pressed sampled on both, all four frames recording the same value; focus not declared", use: "Icon button over the home hero banner at home::[data-omd-capture=\"15\"]; icon-only, so no label colour is claimed" }
+    home-carousel-arrow: { type: button, bg: "#ffffff", fg: "#212529", border: "1px #ced4da", radius: "32px", size: "30px x 30px", hover: "bg #f8f9fa, fg #000000", pressed: "bg #f8f9fa, fg #000000", states: "hover and pressed frames agree exactly and both colours are rest colours elsewhere on the page; its sibling (capture 17) is disabled and records bg #f1f3f5, fg #adb5bd, border 1px #dee2e6; focus not declared", use: "Home carousel arrow (button) at home::[data-omd-capture=\"18\"]; icon-only, so fg is the computed colour its glyph can inherit" }
+    home-article-card: { type: card, bg: "#ffffff", border: "1px #e9ecef", radius: "8px", size: "246px x 139px", states: "default on fifteen cards (capture 46-60); no state frame", use: "Home link card (a, role article) at home::[data-omd-capture=\"46\"]; a container whose own colour is the browser default link blue, so no label style is claimed" }
+    course-tag-badge: { type: badge, bg: "#e7f5ff", fg: "#228be6", border: "1px transparent", radius: "4px", padding: "0px 4px", height: "20px", font: "11px / 700 / 18px Pretendard, letter-spacing 0.25px", states: "default on the blue pair (ten on home); the same geometry and type carry #e3fafc / #1098ad, #00a760 / #ffffff and, on the catalog, #228be6 / #ffffff; no state frame", use: "Course badge (div.mantine-Badge-root) on home and catalog, 51 x 20; bare selector home::div" }
+    course-filter-chip: { type: button, bg: "rgba(73, 80, 87, 0.1)", fg: "#495057", border: "1px transparent", radius: "32px", padding: "0px 18px", height: "36px", font: "14px / 600 / 14px system sans-serif", hover: "bg rgba(73, 80, 87, 0.12)", pressed: "bg rgba(73, 80, 87, 0.12)", states: "rest on nine chips (capture 14-22); hover and pressed sampled on all nine, all eighteen frames recording the same value; focus not declared", use: "Course-catalog filter chip (button) at surface-2::[data-omd-capture=\"14\"], 106 x 36" }
+    course-pagination: { type: button, bg: "#ffffff", fg: "#000000", border: "1px #ced4da", radius: "8px", padding: "9.5px", size: "38px x 38px", font: "18px / 400 / 18px system sans-serif", states: "rest on five page buttons (capture 71-75); capture 70 records bg #00c471, fg #ffffff and border 1px #00c471, but only generated classes separate it, so no selected state is declared; the previous-page button (capture 69) is disabled; no state frame", use: "Course-catalog pagination button at surface-2::[data-omd-capture=\"71\"]" }
   components_harvested: true
 ---
 
@@ -165,6 +319,7 @@ The current product shell should not be confused with every Inflearn-owned page.
 - `#00A760` — observed hover treatment for the GNB search-submit and an observed course-badge background.
 - `#E7F5FF` / `#228BE6` — observed blue course-badge wrapper/text pair.
 - `#E3FAFC` / `#1098AD` — observed cyan course-badge wrapper/text pair.
+- Component-local colours recorded in §4, not promoted to palette roles: `#CED4DA` (home carousel arrow and catalog pagination borders; unchecked radio border), `#E9ECEF` (menu, popover and home link-card borders), `#25262B` (selected content-tab fill), `#000000` (menu item, pagination, search-input and hovered carousel-arrow text), and the translucent fills `rgba(73, 80, 87, 0.1)` (catalog filter chips) and `rgba(248, 249, 250, 0.2)` (hero icon buttons).
 
 These values are product-route observations, not a claim that every public Inflab site has the same palette.
 
@@ -189,8 +344,9 @@ These values are product-route observations, not a claim that every public Infla
 - Background: `#00C471`
 - Text: `#FFFFFF`
 - Radius: `999px`
-- Font: `16px / 400 Pretendard`
-- Hover: background `#00A760`
+- Hover and pressed: background `#00A760` (four frames on the two routes agree)
+- Focus and disabled: the frontmatter keeps `#212529` and `#F1F3F5` from a 2026-09-16 live CSS inspection that does not name the property. The 2026-07-13 bundle holds no focus or disabled frame on this element and cannot confirm them: its only `#212529` focus value is the search input's colour on a 0px border, and its only `#F1F3F5` disabled fill is the home carousel arrow (capture 17), a different element.
+- Corrected 2026-09-30: the July `16px / 400 Pretendard` font line was the inherited page type on an icon-only button, not a label style.
 - Use: Product GNB search-submit; `home::[data-omd-capture="8"]`. Hover provenance is `home::[data-omd-capture="8"]::state-hover` and is also present on the catalog surface.
 
 ### Product GNB navigation action
@@ -201,7 +357,7 @@ These values are product-route observations, not a claim that every public Infla
 - Radius: `32px`
 - Padding: `0px 22px`
 - Font: `16px / 600 Pretendard`
-- Hover: background `rgba(241, 243, 245, 0.65)`
+- Hover and pressed: background `rgba(241, 243, 245, 0.65)`; the two icon buttons beside it take the same value (twelve frames agree)
 - Use: Product GNB navigation action; `home::[data-omd-capture="12"]`. The observed hover selector is `home::[data-omd-capture="12"]::state-hover`.
 
 ### Product course card
@@ -209,36 +365,72 @@ These values are product-route observations, not a claim that every public Infla
 **Default**
 - Radius: `8px`
 - Padding: `0px`
-- Font: `16px / 400 Pretendard`
 - Shadow: none
+- Corrected 2026-09-30: the July `16px / 400 Pretendard` font line was the article container's inherited page type, not a label style.
 - Use: Product course article shell on home and course catalog; `home::article` and `surface-2::article`.
 
 ### Product content tab
 
-**Selected**
-- Background: `#25262B`
-- Text: `#FFFFFF`
-- Radius: `9999px`
-- Padding: `10px 16px`
-- Font: `14px / 700 system sans-serif`
-- Use: Selected product-home content tab; `home::[data-omd-capture="19"]` and interaction capture `home::[data-omd-interaction-capture="tab-3-3"]`.
-
-**Hover**
-- Background: `#F8F9FA`
+**Default** (`aria-selected="false"`)
+- Background: transparent
 - Text: `#212529`
 - Radius: `9999px`
 - Padding: `10px 16px`
-- Font: `14px / 400 system sans-serif`
-- Use: Product-home content-tab hover sample; `home::[data-omd-capture="20"]::state-hover`.
+- Font: `14px / 400 / 14px system sans-serif`
+- Hover and pressed: background `#F8F9FA` (four rest tabs, eight frames agree)
+- Use: `home::[data-omd-capture="20"]` through `"24"`.
+
+**Selected** (`aria-selected="true"`)
+- Background: `#25262B`
+- Text: `#FFFFFF`
+- Font: `14px / 700 / 14px system sans-serif`
+- Use: `home::[data-omd-capture="19"]`, also `home::[data-omd-interaction-capture="tab-3-0"]` after the tab interaction. Corrected 2026-09-30: the July record stored these selected values as the tab's rest values and cited `tab-3-3`, a tab in a lower group (99px × 36px, with a 1px `#25262B` border).
 
 ### Product dialog overlay
 
 **Open**
 - Background: `rgba(0, 0, 0, 0.6)`
-- Font: `16px / 400 Pretendard`
-- Use: Dialog backdrop expanded by the collector on home and catalog; `home::[data-omd-interaction-capture="dialog-2-8"]`.
+- Use: Dialog backdrop expanded by the collector on home and catalog; `home::[data-omd-interaction-capture="dialog-2-8"]`. Corrected 2026-09-30: the July `16px / 400 Pretendard` font line was the inherited page type on an element without text.
 
-The supplied bundle records menu, dialog, and tab interactions (nine interaction expansions in total). Only the selectors and states listed above are reusable claims. No checkout, payment, error, toast, skeleton, course-card-hover, or responsive variant is inferred.
+### GNB controls
+
+**Service link** (`gnb-service-link`): transparent, square corners at rest, `6px 10px` padding, `44px` high; `home::[data-omd-capture="1"]` through `"5"` on both routes. Hover and pressed: background `#F8F9FA` with a `50px` radius (twenty frames agree). The link element's own colour is `#00A760` and its type equals the page text; its label sits in a child the capture did not sample, so no label style is claimed.
+
+**Menu button** (`gnb-menu-trigger`): transparent, border 1px transparent, `32px` radius, 61px × 42px, icon-only; `home::[data-omd-capture="6"]`. Hover and pressed: background `#F8F9FA` (four frames agree). Activating it opened the menu below.
+
+**Text button** (`gnb-text-button`): transparent, text `#495057`, border 1px transparent, `32px` radius, `0px 12px`, `42px` high, `16px / 600 / 16px Pretendard`; `home::[data-omd-capture="9"]`. Hover and pressed: background `#F8F9FA` (four frames agree).
+
+**Icon buttons** (`gnb-icon-trigger`): background `#F8F9FA`, border 1px transparent, `32px` radius, 42px × 42px, icon-only; `home::[data-omd-capture="10"]` and `"11"` (`aria-haspopup="dialog"`). Hover and pressed: background `rgba(241, 243, 245, 0.65)`, the value the navigation action takes (eight frames agree). Each opened a popover or modal.
+
+**Search input** (`gnb-search-input`): background `#FFFFFF`, text `#000000`, `8px` radius, 377px × 36px, `16px / 400 / 34px Pretendard`, border width 0px; `home::[data-omd-capture="7"]`.
+
+**Menu** (`gnb-menu`): background `#FFFFFF`, border 1px `#E9ECEF`, `8px` radius, `4px` padding, 110px × 256px, shadow `rgba(0, 0, 0, 0.05) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px`; `home::[data-omd-interaction-capture="menu-0-0"]`, captured open (menu-open, expanded) on both routes. Its items (`gnb-menu-item`): transparent, text `#000000`, `8px` radius, `10px 12px`, `41px` high, `14px / 400 / 16.1px Pretendard`; `home::[data-omd-interaction-capture="menu-0-1"]`, six items.
+
+**Popover** (`gnb-popover`): background `#FFFFFF`, border 1px `#E9ECEF`, `16px` radius, `12px 10px` padding, 253px × 248px, shadow `rgba(0, 0, 0, 0.05) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 10px 15px -5px, rgba(0, 0, 0, 0.04) 0px 7px 7px -5px`; `home::[data-omd-interaction-capture="dialog-1-0"]`, captured open (dialog-open).
+
+### Modal
+
+**Panel** (`product-modal`): background `#FFFFFF`, `16px` radius, 320px × 263px, shadow `rgba(0, 0, 0, 0.05) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 36px 28px -7px, rgba(0, 0, 0, 0.04) 0px 17px 17px -7px`; `home::[data-omd-interaction-capture="dialog-2-0"]`, over the overlay above. The panel sets `#495057` at `14px / 400 / 21px` for its content; that is content colour on a container, not a label style. It holds a close button (`dialog-2-2`, 31px × 31px, 8px radius) and a radio group whose first radio records a `#00C471` fill and border against `#FFFFFF` with 1px `#CED4DA` on the other three; no `aria-checked` is recorded, so no checked state is declared.
+
+### Home carousel and cards
+
+**Hero icon buttons** (`hero-carousel-icon-button`): background `rgba(248, 249, 250, 0.2)`, border 1px transparent, `32px` radius, 30px × 30px, icon-only; `home::[data-omd-capture="15"]` and `"16"`. Hover and pressed: background `rgba(248, 249, 250, 0.4)` (four frames agree).
+
+**Carousel arrow** (`home-carousel-arrow`): background `#FFFFFF`, text `#212529`, border 1px `#CED4DA`, `32px` radius, 30px × 30px, icon-only; `home::[data-omd-capture="18"]`. Hover and pressed: background `#F8F9FA`, text `#000000`; both frames agree and both colours are rest colours elsewhere on the page. Its sibling (capture 17) is disabled and records background `#F1F3F5`, text `#ADB5BD`, border 1px `#DEE2E6`.
+
+**Link card** (`home-article-card`): background `#FFFFFF`, border 1px `#E9ECEF`, `8px` radius, 246px × 139px; `home::[data-omd-capture="46"]` through `"60"`. A link container whose own colour is the browser's default link blue, so no label style is claimed.
+
+**Course badge** (`course-tag-badge`): background `#E7F5FF`, text `#228BE6`, border 1px transparent, `4px` radius, `0px 4px`, `20px` high, `11px / 700 / 18px Pretendard`, letter-spacing 0.25px; bare selector `home::div` (`div.mantine-Badge-root`). The same geometry carries `#E3FAFC` / `#1098AD`, `#00A760` / `#FFFFFF`, and on the catalog `#228BE6` / `#FFFFFF`.
+
+### Course-catalog controls
+
+**Filter chip** (`course-filter-chip`): background `rgba(73, 80, 87, 0.1)`, text `#495057`, border 1px transparent, `32px` radius, `0px 18px`, `36px` high, `14px / 600 / 14px system sans-serif`; `surface-2::[data-omd-capture="14"]` through `"22"`. Hover and pressed: background `rgba(73, 80, 87, 0.12)` (nine chips, eighteen frames agree).
+
+**Pagination** (`course-pagination`): background `#FFFFFF`, text `#000000`, border 1px `#CED4DA`, `8px` radius, `9.5px` padding, 38px × 38px, `18px / 400 / 18px system sans-serif`; `surface-2::[data-omd-capture="71"]` through `"75"`. Capture 70 records background `#00C471`, text `#FFFFFF` and border 1px `#00C471`; only generated classes separate it, so it is described, not declared as selected. The previous-page button (capture 69) is disabled.
+
+### How states were read
+
+A state frame is the computed style the collector recorded with the pointer over an element (hover) or pressed on it. Settled frames are declared above, on sibling agreement or a match with a colour the page uses at rest. The collector's timing varies (the search input's pressed frame reads `rgb(24, 26, 29)` on home and `rgb(2, 3, 3)` on the catalog), so one exact value across nine chips or ten links is a settled value, not one moment of a transition. The search input's pressed and focus frames change only the colour of a 0px border, the hero banner link turns its own colour to `#00C471` (a container, not a label), and the third-party chat launcher's pressed frame is the browser's default active-link red; none is declared. No focus value is declared: the bundle's two focus frames are both on the search input, and the collector presses the mouse before focusing, which leaves `:focus-visible` false. No checkout, payment, error, toast, skeleton, course-card-hover, or responsive variant is inferred.
 
 ---
 
@@ -256,7 +448,7 @@ The product surfaces include course articles and standard controls, but the supp
 ## 6. Shape & Elevation
 
 - Product evidence includes 4px badge wrappers, 8px course-card/input shells, 32px GNB actions, and `999px`/`9999px` pill controls. These are distinct observed shapes, not a mandate to round unrelated interfaces.
-- The selector-backed GNB controls, search submit, course article, and dialog backdrop have `box-shadow: none`. A separate course-catalog control has a local shadow observation, but the bundle does not establish a reusable elevation scale.
+- The selector-backed GNB controls, search submit, course article, and dialog backdrop have `box-shadow: none`. A separate course-catalog control has a local shadow observation, but the bundle does not establish a reusable elevation scale. The open menu, popover, and modal panels carry the layered shadows recorded in §4; they are component values, not an elevation scale.
 
 ## 7. Content & Voice
 
@@ -311,11 +503,12 @@ The official company page identifies learners seeking career development and exp
 
 | State | Selector-backed observation | Boundary |
 |---|---|---|
-| Hover | GNB search submit changes to `#00A760`; GNB action has `rgba(241,243,245,0.65)` background. | Only the listed selectors are promoted. |
-| Selected | Product content tab has `#25262B` background, white 14px/700 text, and full pill radius. | Product-home tab only. |
-| Menu open | Collector expanded a product menu; a 14px Pretendard option at 8px radius and `10px 12px` padding was recorded. | No general menu token is inferred. |
-| Dialog open | Collector recorded a `rgba(0,0,0,0.6)` product backdrop. | No dialog-panel, validation, or checkout state is inferred. |
+| Hover and pressed | GNB search submit `#00A760`; GNB navigation action and icon buttons `rgba(241, 243, 245, 0.65)`; GNB service links, menu button, text button and content tabs `#F8F9FA` (the links also take a 50px radius); carousel arrow `#F8F9FA` with `#000000` text; hero icon buttons `rgba(248, 249, 250, 0.4)`; catalog chips `rgba(73, 80, 87, 0.12)`. | Hover and pressed frames agree on every declared element. |
+| Selected | Product content tab with `aria-selected="true"`: `#25262B` background, white 14px/700 text; the rest tabs (`aria-selected="false"`) are transparent with `#212529` text. | Product-home tab only. |
+| Menu open | Collector expanded the GNB menu (`gnb-menu`: white, 1px `#E9ECEF`, 8px radius, layered shadow); its items are 14px Pretendard at 8px radius and `10px 12px` padding (`gnb-menu-item`). | GNB menu only. |
+| Dialog open | Collector recorded a `rgba(0,0,0,0.6)` backdrop under a white 16px-radius modal panel, and a GNB popover (white, 1px `#E9ECEF`, 16px radius). | No validation or checkout state is inferred. |
 | Disabled | Home selector records a neutral 32px button; catalog selector records a different 8px control. | Keep them selector-local; do not create a universal token. |
+| Focus | The frontmatter keeps `#212529` on the GNB search submit from the 2026-09-16 live CSS inspection, which does not name the property. The 2026-07-13 bundle cannot confirm it: its two focus frames are the search input's colour on a 0px border. | Not a bundle measurement; no other focus value is declared. |
 
 ## 15. Motion & Easing
 

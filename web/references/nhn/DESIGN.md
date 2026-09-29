@@ -65,11 +65,94 @@ verification_v2:
     "tokens.rounded.pill": *services
     "tokens.shadow.none": *home
     "tokens.components.previous-control.type": *services
-    "tokens.components.previous-control.fg": *services
     "tokens.components.previous-control.radius": *services
-    "tokens.components.previous-control.font": *services
+    "tokens.components.previous-control.size": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"38\"]", captured: "2026-07-13" }
     "tokens.components.previous-control.states": *services
     "tokens.components.previous-control.use": *services
+    "tokens.components.gnb-submenu-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.selected": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.hover": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"2\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.pressed": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"2\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-submenu-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.selected": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.category-tab-pill.type": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.category-tab-pill.bg": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.category-tab-pill.fg": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.category-tab-pill.radius": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.category-tab-pill.padding": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.category-tab-pill.height": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.category-tab-pill.font": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.category-tab-pill.selected": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.category-tab-pill.states": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.category-tab-pill.use": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.services-pill.type": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.services-pill.bg": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.services-pill.fg": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.services-pill.radius": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.services-pill.padding": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.services-pill.height": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.services-pill.font": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.services-pill.states": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.services-pill.use": { surface_id: services, source_id: services-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.ir-subtab-link.type": { surface_id: ir, source_id: ir-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"39\"]", captured: "2026-07-13" }
+    "tokens.components.ir-subtab-link.bg": { surface_id: ir, source_id: ir-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"39\"]", captured: "2026-07-13" }
+    "tokens.components.ir-subtab-link.fg": { surface_id: ir, source_id: ir-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"39\"]", captured: "2026-07-13" }
+    "tokens.components.ir-subtab-link.radius": { surface_id: ir, source_id: ir-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"39\"]", captured: "2026-07-13" }
+    "tokens.components.ir-subtab-link.padding": { surface_id: ir, source_id: ir-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"39\"]", captured: "2026-07-13" }
+    "tokens.components.ir-subtab-link.height": { surface_id: ir, source_id: ir-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"39\"]", captured: "2026-07-13" }
+    "tokens.components.ir-subtab-link.font": { surface_id: ir, source_id: ir-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"39\"]", captured: "2026-07-13" }
+    "tokens.components.ir-subtab-link.selected": { surface_id: ir, source_id: ir-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"38\"]", captured: "2026-07-13" }
+    "tokens.components.ir-subtab-link.states": { surface_id: ir, source_id: ir-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"39\"]", captured: "2026-07-13" }
+    "tokens.components.ir-subtab-link.use": { surface_id: ir, source_id: ir-live, method: computed-style, selector: "surface-3::[data-omd-capture=\"39\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::h2", captured: "2026-07-13" }
+    "tokens.components.feature-card.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::h2", captured: "2026-07-13" }
+    "tokens.components.feature-card.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.news-list-item.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.news-list-item.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.news-list-item.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::h3", captured: "2026-07-13" }
+    "tokens.components.news-list-item.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.news-list-item.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.news-list-item.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::h3", captured: "2026-07-13" }
+    "tokens.components.news-list-item.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.news-list-item.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"45\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"45\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"45\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"45\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"45\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"45\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"45\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"45\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"45\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-button.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-button.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
+    "tokens.components.footer-social-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"50\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -95,7 +178,16 @@ tokens:
   shadow:
     none: "none"
   components:
-    previous-control: { type: button, fg: "#212126", radius: "0px", font: "16px / 400 Pretendard Variable", states: "disabled opacity 0.4", use: "Observed previous-navigation control on the services surface" }
+    previous-control: { type: button, radius: "0px", size: "26px x 32px", states: "captured disabled on the services surface (captures 37, 40, 44: the carousels sat on their first slide). Its dumped properties equal the enabled next control (captures 38, 41, 45); the class list names opacity-40, but opacity is outside the dump, so no disabled value is declared. Corrected 2026-09-30: the July entry took its values from the disabled element, gave it the inherited body text (#212126, 16px / 400) as a label although the control is icon-only, and stated opacity 0.4 from the class name", use: "Carousel previous control (button.prevNav) on the services surface; geometry from the enabled next control at surface-2::[data-omd-capture=\"38\"]" }
+    gnb-submenu-link: { type: tab, bg: "transparent", fg: "#57575b", radius: "0px", padding: "0px", height: "22px", font: "14px / 500 / Pretendard Variable", selected: "font 14px / 700, tracking normal", hover: "font 14px / 700, tracking normal", pressed: "font 14px / 700, tracking normal", states: "rest, hover and pressed sampled on 52 header sub-menu links across the three surfaces (104 frames). Every frame changes only the weight (500 to 700) and the tracking (-0.14px to normal); the colour and every other dumped property stay at rest. The current sub-page link computes the same 700 / normal at rest on services (capture 10) and IR (capture 17), so the value is settled. Focus was not sampled", use: "Header sub-menu link (a.text-body11-m inside li.py-7) at home::[data-omd-capture=\"2\"]; 48-90 px wide, line height 22px, rest tracking -0.14px" }
+    gnb-link: { type: tab, bg: "transparent", fg: "#36363d", radius: "0px", padding: "0px", height: "28px", font: "16px / 500 / Pretendard Variable", selected: "font 16px / 700", states: "rest captured on all three surfaces; the current section's link computes 700 on services (capture 6) and on IR (capture 14), the same pairing on both routes. No state frame", use: "Header main navigation link (a.text-body10-m inside li.mainLink, which carries the colour and 80px right padding) at home::[data-omd-capture=\"1\"]; line height 28px" }
+    category-tab-pill: { type: tab, bg: "#ffffff", fg: "#62626a", radius: "40px", padding: "0px 32px", height: "48px", font: "16px / 500 / Pretendard Variable", selected: "bg #212126, fg #ffffff, 16px / 700", states: "unselected pills captured on services (four) and IR (five); the pill for the current tab computes bg #212126, fg #ffffff and 700 on both routes (services capture 35, IR capture 34) and adds cursor-default to its class list. No aria-selected is recorded; no state frame. The class list names a border, but its computed width is 0px", use: "Services and IR category tab pill (a.rounded-40) at surface-2::[data-omd-capture=\"33\"]; 92-124 px wide, line height 28px" }
+    services-pill: { type: button, bg: "#f8f8f8", fg: "#62626a", radius: "50px", padding: "4px 8px 4px 14px", height: "32px", font: "14px / 500 / Pretendard Variable", states: "four captured at rest on services (button capture 43; links 39, 42, 46); no state frame", use: "Services tag pill at surface-2::[data-omd-capture=\"43\"]; 90-109 px wide, line height 22px, tracking -0.14px" }
+    ir-subtab-link: { type: tab, bg: "transparent", fg: "#aaaaae", radius: "100px", padding: "11.008px 0px 11.008px 32px", height: "50px", font: "16px / 500 / Pretendard Variable", selected: "fg #212126, font 16px / 700 (label)", states: "two captured on IR; one (capture 38) computes #212126 with a 700 label, the other #aaaaae with 500. No aria-selected is recorded, so the pairing rests on that difference on a route carrying a subTab parameter. The hover colours in the class lists are declarations; no state frame", use: "IR financial sub-tab link (a, 240 px wide) at surface-3::[data-omd-capture=\"39\"]; the font is its li label (line height 28px)" }
+    feature-card: { type: card, bg: "#f8f8f8", fg: "#ffffff", radius: "24px", size: "612px x 702px", font: "32px / 800 / Main Pretendard Variable", states: "one card captured at rest on home; no state frame", use: "Home feature card at home::[data-omd-capture=\"33\"]; text colour and font are the child h2 (line height 48px); the root's #212126 / 16px / 400 are the inherited body text" }
+    news-list-item: { type: card, bg: "transparent", fg: "#36363d", padding: "0px 22px 0px 0px", size: "508px x 126px", font: "20px / 700 / Main Pretendard Variable", states: "nine captured at rest on home (captures 35-43); no state frame", use: "Home news list item at home::[data-omd-capture=\"35\"]; text colour and font are the child h3 (line height 30px, clamped to two lines); the root's #212126 / 16px / 400 are the inherited body text" }
+    footer-link: { type: button, bg: "transparent", fg: "#212126", radius: "0px", padding: "0px", height: "28px", font: "16px / 500 / Pretendard Variable", states: "captured on all three surfaces; the nine-character item (capture 47, 114 px wide) computes 700. No state frame", use: "Footer link and link-styled button (text-grayscale-1 min-w-[56px] text-body10-l) at home::[data-omd-capture=\"45\"]; minimum width 56px, line height 28px" }
+    footer-social-button: { type: button, bg: "#f8f8f8", border: "1px #f8f8f8", radius: "100px", padding: "10px", size: "42px x 42px", states: "four per surface, captured at rest on all three surfaces; icon only; no state frame", use: "Footer social link (a with border-grayscale-12 bg-grayscale-12) at home::[data-omd-capture=\"50\"]" }
   components_harvested: true
 ---
 
@@ -105,7 +197,7 @@ tokens:
 
 NHN is a Korean IT group whose public corporate presence connects a long Hangame-era history with businesses in games, payments and advertising, technology, commerce, and content. Its current brand expression is built around **Weaving New Play**: NHN’s own rebrand story explains the phrase as a move from a simple connection toward a more multidirectional act of weaving. The 2024 CI then made that idea tangible through folded-paper forms, a 27-degree fold motif, and a decision to abandon a single fixed brand colour in favour of achromatic identity. [NHN history](https://www.nhn.com/company?tab=about) and [official CI story](https://inside.nhn.com/corp/245) provide that context.
 
-The supplied July 2026 runtime evidence is limited to three public corporate surfaces: the main site, a services listing, and an investor-relations financial page. Across those surfaces, the visible interface is restrained and nearly monochrome: `#212126` is the principal ink, `#36363d` and `#57575b` carry hierarchy, and `#f8f8f8` provides the recurring soft surface. The collector observed no shadows and only zero-radius navigation/action controls plus a 50px pill on one low-confidence services control. These are corporate-web observations, not a claim about NHN’s separate customer products or their documentation interfaces.
+The supplied July 2026 runtime evidence is limited to three public corporate surfaces: the main site, a services listing, and an investor-relations financial page. Across those surfaces, the visible interface is restrained and nearly monochrome: `#212126` is the principal ink, `#36363d` and `#57575b` carry hierarchy, and `#f8f8f8` provides the recurring soft surface. The collector observed no shadows. Navigation links and text actions are square; the rounded shapes are pills and circles: 40px category tabs on the services and IR pages, 50px tag pills, a 24px feature card and 42px circular social links (§4). Corrected 2026-09-30: the July text said the only rounded element was a 50px pill on one low-confidence services control. These are corporate-web observations, not a claim about NHN’s separate customer products or their documentation interfaces.
 
 **Key Characteristics:**
 - Official brand rationale: connection reinterpreted as multidirectional weaving
@@ -164,15 +256,17 @@ NHN’s official CI story says the company chose achromatic brand colour rather 
 - Text: `#36363d`
 - Radius: 0px
 - Padding: 0px 80px 0px 0px
-- Font: 16px / 400 / Pretendard Variable
+- Label: the child link (`a.text-body10-m`) computes 16px / 500 / 28px; the current section's link computes 700 (see Header main link below).
 - Use: Observed corporate primary-navigation list item (`home::li`; also present on services and IR surfaces).
+- Corrected 2026-09-30: the July text gave this item 16px / 400, which is the list item's inherited body type; the visible label is its child link.
 
 **Secondary list item**
 - Text: `#57575b`
 - Radius: 0px
 - Padding: 7.008px 0px
-- Font: 16px / 400 / Pretendard Variable
+- Label: the child link (`a.text-body11-m`) computes 14px / 500 / 22px, tracking -0.14px (see Header sub-menu link below).
 - Use: Observed corporate secondary/list item (`home::li`; also present on services and IR surfaces).
+- Corrected 2026-09-30: the July text gave this item 16px / 400, the list item's inherited body type; the visible label is its child link.
 
 ### Actions
 
@@ -180,20 +274,19 @@ NHN’s official CI story says the company chose achromatic brand colour rather 
 - Text: `#212126`
 - Radius: 0px
 - Font: 16px / 500 / Pretendard Variable
-- Use: Observed transparent action control (`home::[data-omd-capture="45"]`) across the corporate surfaces.
+- Use: Observed transparent action control (`home::[data-omd-capture="45"]`) across the corporate surfaces. It is the footer link recorded as `footer-link` below.
 
 **Secondary label action**
 - Text: `#62626a`
 - Radius: 0px
 - Font: 14px / 500 / Pretendard Variable
-- Use: Observed services-surface control (`surface-2::[data-omd-capture="49"]`).
+- Use: Observed services-surface control (`surface-2::[data-omd-capture="49"]`). It is an unselected label inside a 273px × 48px control whose frame has a 40px radius and 0px 22px padding. The neighbouring label (capture 48) computes `#ffffff` / 14px / 700 over a fill the capture does not include, so no selected style is declared.
 
 **Previous control**
-- Text: `#212126`
-- Radius: 0px
-- Font: 16px / 400 / Pretendard Variable
-- Disabled: Observed disabled instance has transparent background and `opacity: 0.4` (`surface-2::[data-omd-capture="37"]`).
-- Use: Observed previous-navigation control on the services surface.
+- Radius: 0px; size 26px × 32px; transparent
+- Disabled: all three previous controls on the services surface (captures 37, 40, 44) were disabled at capture time. Their dumped properties equal the enabled next controls (captures 38, 41, 45). The class list names `opacity-40`, but opacity is outside the collector's dump, so no disabled value is declared.
+- Use: Observed previous-navigation control on the services surface; icon only.
+- Corrected 2026-09-30: the July text read this control's values from the disabled element, listed the inherited body text (`#212126`, 16px / 400) as its text style, and stated `opacity: 0.4` from the class name.
 
 ### Compact pill
 
@@ -203,7 +296,86 @@ NHN’s official CI story says the company chose achromatic brand colour rather 
 - Radius: 50px
 - Padding: 4px 8px 4px 14px
 - Font: 14px / 500 / Pretendard Variable
-- Use: One low-confidence observed services control (`surface-2::[data-omd-capture="43"]`); do not generalize it to other NHN surfaces.
+- Use: Services tag pill (`surface-2::[data-omd-capture="43"]`, a button; captures 39, 42 and 46 are links with the same values); do not generalize it to other NHN surfaces. Corrected 2026-09-30: the July text called it one low-confidence control; the services page holds four.
+
+The components below were transcribed on 2026-09-30 from the same 2026-07-13 bundle; nothing was re-measured.
+
+### Header sub-menu link
+
+- Background: transparent
+- Text: `#57575b`
+- Font: 14px / 500 / Pretendard Variable, line height 22px, tracking -0.14px
+- Radius: 0px; padding 0px; height 22px (48px to 90px wide)
+- Hover: weight 700, tracking normal; colour #57575b in every frame
+- Pressed: weight 700, tracking normal; colour #57575b in every frame
+- Selected: the current sub-page link computes 700 and tracking normal at rest on services (capture 10) and IR (capture 17).
+- States: 52 links across the three surfaces record a hover and a pressed frame (104 frames). Every frame changes only the weight (500 to 700) and the tracking (-0.14px to normal), which is exactly the current sub-page link's rest style on two routes, so the value is settled. The class list also names `hover:text-body11-l`; that is a declaration, and the frames are the measurement. Focus was not sampled.
+- Use: `a.text-body11-m` inside the header sub-menu; evidence `home::[data-omd-capture="2"]`.
+
+### Header main link
+
+- Background: transparent
+- Text: `#36363d`
+- Font: 16px / 500 / Pretendard Variable, line height 28px
+- Radius: 0px; padding 0px; height 28px
+- Selected: the current section's link computes 700 on services (capture 6) and IR (capture 14).
+- States: rest only; no state frame.
+- Use: `a.text-body10-m` inside `li.mainLink`; evidence `home::[data-omd-capture="1"]`.
+
+### Category tab pill
+
+- Background: `#ffffff`
+- Text: `#62626a`
+- Font: 16px / 500 / Pretendard Variable, line height 28px
+- Radius: 40px; padding 0px 32px; height 48px (92px to 124px wide)
+- Selected: `#212126` fill, `#ffffff` text, weight 700 (services capture 35, IR capture 34); the class list adds `cursor-default`. No `aria-selected` is recorded; the pairing agrees on both routes.
+- Border: none. The class list names `border`, but the computed width is 0px.
+- States: default and selected only; no state frame.
+- Use: category tabs on the services and IR pages; evidence `surface-2::[data-omd-capture="33"]`.
+
+### IR sub-tab link
+
+- Background: transparent
+- Text: `#aaaaae`; label 16px / 500 / 28px (the child `li`)
+- Radius: 100px; padding 11.008px 0px 11.008px 32px; 240px × 50px
+- Selected: one of the two links (capture 38) computes `#212126` with a 700 label. No `aria-selected` is recorded, so the pairing rests on that difference on a route that carries a `subTab` parameter.
+- States: no state frame; the hover colours in the class lists are declarations.
+- Use: financial-statement sub-tabs on the IR page; evidence `surface-3::[data-omd-capture="39"]`.
+
+### Feature card
+
+- Background: `#f8f8f8`
+- Radius: 24px
+- Size: 612px × 702px
+- Title: `#ffffff`, 32px / 800 / 48px, Main Pretendard Variable (the child `h2`)
+- States: default only; no state frame.
+- Use: home feature card; evidence `home::[data-omd-capture="33"]`. The root computes the inherited body text, so no text style is taken from it.
+
+### News list item
+
+- Background: transparent
+- Size: 508px × 126px; padding 0px 22px 0px 0px
+- Title: `#36363d`, 20px / 700 / 30px, Main Pretendard Variable, clamped to two lines (the child `h3`)
+- States: nine captured at rest on home; no state frame.
+- Use: home news list; evidence `home::[data-omd-capture="35"]`. The root computes the inherited body text.
+
+### Footer link
+
+- Background: transparent
+- Text: `#212126`
+- Font: 16px / 500 / Pretendard Variable, line height 28px
+- Radius: 0px; padding 0px; height 28px; minimum width 56px
+- Emphasis: the nine-character item (capture 47, 114px wide) computes 700.
+- States: default only; no state frame.
+- Use: footer links and link-styled buttons on all three surfaces; evidence `home::[data-omd-capture="45"]` to `"47"`.
+
+### Footer social link
+
+- Background: `#f8f8f8`
+- Border: 1px `#f8f8f8`
+- Radius: 100px; padding 10px; 42px × 42px
+- States: four per surface, captured at rest on all three surfaces; icon only; no state frame.
+- Use: footer social links; evidence `home::[data-omd-capture="50"]` to `"53"`.
 
 ---
 
@@ -232,7 +404,7 @@ All captured representative components report `box-shadow: none`. Separation in 
 ### Don't
 - Promote affiliate-product colours or components into the NHN corporate reference without direct evidence.
 - Rename `__Poppins_1848dd` to Poppins in a token set without a reliable public-family mapping.
-- Invent hover, focus, pressed, error, or success variants: the supplied collector has zero interaction captures.
+- Invent hover, focus, pressed, error, or success variants beyond the header sub-menu link's measured hover and pressed weight change. Corrected 2026-09-30: the July reason, "zero interaction captures", counts expansions, not pointer-state frames.
 - Generalize the low-confidence services pill into a global button style.
 
 ## 8. Responsive Behavior
@@ -263,7 +435,7 @@ NHN has not supplied first-party audience-segment or persona documentation in th
 
 ## 14. States
 
-The only state recorded by the supplied collector is a **disabled** previous-navigation control on the services surface: transparent background, `#212126` text, and `opacity: 0.4`. Hover, focus, pressed, loading, error, empty, and success states were not captured and are unresolved.
+The supplied collector recorded 104 pointer-state frames, all on the header sub-menu links: hover and pressed change the weight from 500 to 700 and the tracking from -0.14px to normal, matching the current sub-page link at rest (§4). Selected states are recorded as current-route markers: the header main link (700), the category tab pill (`#212126` fill, `#ffffff` text) and the IR sub-tab link (`#212126`, 700). The previous-navigation controls were disabled at capture time; opacity is outside the dump, so their disabled look is unresolved. Focus, loading, error, empty and success states were not captured and are unresolved. Corrected 2026-09-30: the July text named the disabled control as the only recorded state and gave it `#212126` text and `opacity: 0.4`, taken from the body text and the class name.
 
 ## 15. Motion & Easing
 
