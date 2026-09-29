@@ -1,6 +1,20 @@
 {
   "why": "릴리즈 게이트가 검사할 스킬 산출물 목록. 목표 행렬을 전부 적고, 아직 생성되지 않은 칸은 MISSING 으로 드러낸다 — 있는 것만 적어 통과시키면 커버리지 부족이 숨는다(2026-09-02 도그푸딩: 4경로가 '돌아간다'까지만 확인됐다).",
   "rule": "픽스처는 **배포되는 스킬**(skills/…)로 만든 산출물이어야 한다. 동결 벤치 팩(benchmarks/…/competitor-skills-2.0/)으로 만든 산출물은 다른 실험의 것이며 게이트 픽스처가 아니다 — 2026-09-03에 autopilot 두 칸이 이 경우여서 교체했다. 각 칸의 provenance 에 어떤 프롬프트가 만들었는지 적는다.",
+  "exclusions": [
+    {
+      "date": "2026-09-29",
+      "decision": "owner decision D4",
+      "release": "2.0.2",
+      "fixtures": [
+        "landing/stripe",
+        "landing/toss",
+        "landing/karrot"
+      ],
+      "reason": "integrity FAIL; receipts to regenerate",
+      "effect": "릴리스 waiver 기록이다. 출력 전용 — 게이트는 매 실행마다 이 기록을 출력하지만 이 픽스처들도 그대로 선택·검사·집계되고 판정 규칙은 바뀌지 않는다. 2.0.2 는 이 게이트가 green 이 아닌 채 오너 waiver 로 나간다(QUALITY_GATE.md 「현재 상태」)."
+    }
+  ],
   "sourceSkills": {
     "omd-landing": [
       "skills/omd-landing/SKILL.md",

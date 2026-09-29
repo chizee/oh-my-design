@@ -2,12 +2,16 @@
 #
 # 릴리스 절차 (로컬):
 #   1. package.json version 범프 + CHANGELOG 항목 → main 머지
-#   2. git tag v1.7.2 && git push origin v1.7.2
-#   3. 이 워크플로가 테스트 → 빌드 → npm publish (provenance 포함)
+#   2. 오너 기계에서 `npm run gate:quality:strict` (스킬 산출물 품질 게이트). CI는 이 게이트를 돌릴 수 없어
+#      2026-09-29 prepublishOnly에서 뺐다 — test-v2/content-runs/QUALITY_GATE.md. BLOCKED면 오너 waiver를
+#      CHANGELOG에 적은 경우에만 태그한다.
+#   3. git tag v1.7.2 && git push origin v1.7.2
+#   4. 이 워크플로가 테스트 → 빌드 → npm publish (provenance 포함)
 #
-# 필요 시크릿: NPM_TOKEN (npmjs.com granular token, oh-my-design-cli read+write)
-# 주의: npm 계정 2FA 설정이 "Require 2FA and disallow tokens"면 publish가
-# EOTP로 실패한다 — "2FA for authorization only" 또는 토큰 허용으로 둘 것.
+# 인증: npm Trusted Publishing(OIDC) — 시크릿 없음 (2026-09-29, 90일 만료 토큰이 2.0.2 발행을 막아 전환).
+#   npmjs.com → oh-my-design-cli → Settings → Trusted publishing:
+#   GitHub Actions / kwakseongjae / oh-my-design / release.yml (대소문자 그대로).
+#   요구사항: npm CLI 11.5.1+, Node 22.14.0+, permissions.id-token: write. provenance는 자동.
 
 name: Release to npm
 
@@ -140,8 +144,10 @@ jobs:
         run: npm run build
         working-directory: web
 
+      # Trusted publishing needs npm CLI 11.5.1+; Node 22 ships npm 10.
+      - name: Use an npm CLI that supports trusted publishing
+        run: npm install -g npm@^11.5.1 && npm --version
+
       # prepublishOnly가 build + llms check-only + release-hygiene(pack)을 다시 돌린다
       - name: Publish
         run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

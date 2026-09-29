@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { spawnSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { selectFixtures, summarizeQualityGate } from "../../../test-v2/tools/lib/quality-gate-policy.mjs";
 
 const config = () => ({
@@ -46,5 +47,17 @@ describe("release quality gate coverage", () => {
     const result = spawnSync(process.execPath, ["test-v2/tools/quality-gate.mjs", "--only", "not-a-real-fixture", "--json"], { encoding: "utf8" });
     expect(result.status).toBe(1);
     expect(result.stderr).toContain("unknown fixture id: not-a-real-fixture");
+  });
+
+  it("recorded exclusions name real fixtures and carry date, decision and reason (print-only waiver record)", () => {
+    const cfg = JSON.parse(readFileSync("test-v2/content-runs/fixtures.json", "utf8"));
+    const ids = new Set(cfg.fixtures.map((fixture) => fixture.id));
+    for (const exclusion of cfg.exclusions || []) {
+      expect(exclusion.date).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(exclusion.decision).toBeTruthy();
+      expect(exclusion.reason).toBeTruthy();
+      expect(exclusion.fixtures.length).toBeGreaterThan(0);
+      for (const id of exclusion.fixtures) expect(ids.has(id)).toBe(true);
+    }
   });
 });

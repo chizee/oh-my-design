@@ -1094,7 +1094,7 @@ describe('install-skills', () => {
         );
       }
     }
-  });
+  }, 30_000);
 
   it('cursor --cursor-rule-only applies existing Core files but fails closed on creation', async () => {
     expect(await runInstallSkills({

@@ -111,7 +111,7 @@
     "check:public-core-schemas": "node scripts/check-public-core-schemas.cjs",
     "check:web-core-verifier": "node scripts/build-web-core-verifier.cjs --check",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run query:references:data:check && npm run gen:presets:check && npm run build && node scripts/sync-runtime-mirrors.cjs --check && node scripts/gen-llms-full.cjs --check-only && bash scripts/check-release-hygiene.sh pack && npm run gate:quality:strict",
+    "prepublishOnly": "npm run query:references:data:check && npm run gen:presets:check && npm run build && node scripts/sync-runtime-mirrors.cjs --check && node scripts/gen-llms-full.cjs --check-only && bash scripts/check-release-hygiene.sh pack",
     "gen:llms-full": "node scripts/gen-llms-full.cjs",
     "gen:llms-full:check": "node scripts/gen-llms-full.cjs --check-only",
     "sync:runtime-mirrors": "node scripts/sync-runtime-mirrors.cjs --write",
@@ -187,6 +187,7 @@
     "@neondatabase/serverless": "^1.1.0",
     "@types/node": "^22.13.10",
     "axe-core": "4.11.2",
+    "js-yaml": "4.3.0",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2",
     "vitest": "^3.1.1"
