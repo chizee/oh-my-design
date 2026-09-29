@@ -47,14 +47,121 @@ verification_v2:
     "tokens.typography.body.use": *home
     "tokens.spacing.nav-control": *home
     "tokens.rounded.nav-control": *home
-    "tokens.rounded.disabled-control": *home
-    "tokens.components.disabled-home-control.type": *home
-    "tokens.components.disabled-home-control.bg": *home
-    "tokens.components.disabled-home-control.fg": *home
-    "tokens.components.disabled-home-control.radius": *home
-    "tokens.components.disabled-home-control.font": *home
-    "tokens.components.disabled-home-control.states": *home
-    "tokens.components.disabled-home-control.use": *home
+    "tokens.rounded.carousel-arrow": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-button.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-button.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-button.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-button.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-button.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-button.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-button.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-button.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-button.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-contact-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.header-contact-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.header-contact-link.border": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.header-contact-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.header-contact-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.header-contact-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.header-contact-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.header-contact-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.hero-outline-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.hero-outline-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.hero-outline-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.hero-outline-link.border": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.hero-outline-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.hero-outline-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.hero-outline-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.hero-outline-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.hero-outline-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.hero-outline-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.large-outline-link.type": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.large-outline-link.bg": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.large-outline-link.fg": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.large-outline-link.border": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.large-outline-link.radius": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.large-outline-link.padding": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.large-outline-link.height": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.large-outline-link.font": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.large-outline-link.states": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.large-outline-link.use": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow-button.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow-button.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow-button.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow-button.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow-button.size": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow-button.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.carousel-arrow-button.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.solution-card-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.solution-card-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.solution-card-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.solution-card-link.size": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.solution-card-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::h3", captured: "2026-07-13" }
+    "tokens.components.solution-card-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.solution-card-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.news-card-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.news-card-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.news-card-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::h3", captured: "2026-07-13" }
+    "tokens.components.news-card-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.news-card-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.news-card-link.size": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.news-card-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::h3", captured: "2026-07-13" }
+    "tokens.components.news-card-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.news-card-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.about-stat-card.type": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-stat-card.bg": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-stat-card.radius": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-stat-card.padding": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-stat-card.size": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-stat-card.states": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.about-stat-card.use": { surface_id: about, source_id: about-capture, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.blog-category-tab.type": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.blog-category-tab.bg": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.blog-category-tab.fg": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.blog-category-tab.radius": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.blog-category-tab.padding": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.blog-category-tab.height": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.blog-category-tab.font": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.blog-category-tab.selected": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.blog-category-tab.states": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.blog-category-tab.use": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.blog-featured-post.type": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.blog-featured-post.fg": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::h3", captured: "2026-07-13" }
+    "tokens.components.blog-featured-post.size": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.blog-featured-post.font": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::h3", captured: "2026-07-13" }
+    "tokens.components.blog-featured-post.states": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.blog-featured-post.use": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.blog-post-card.type": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.blog-post-card.fg": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::h3", captured: "2026-07-13" }
+    "tokens.components.blog-post-card.radius": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.blog-post-card.padding": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.blog-post-card.size": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.blog-post-card.font": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::h3", captured: "2026-07-13" }
+    "tokens.components.blog-post-card.states": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.blog-post-card.use": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.blog-pagination-link.type": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.blog-pagination-link.bg": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.blog-pagination-link.fg": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.blog-pagination-link.radius": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.blog-pagination-link.size": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.blog-pagination-link.font": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.blog-pagination-link.states": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.blog-pagination-link.use": { surface_id: blog, source_id: blog-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.footer-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.border": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.size": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -70,9 +177,22 @@ tokens:
     display-hero: { size: 64, weight: 700, lineHeight: 83.2, tracking: -1.6, use: "Public-home marketing hero" }
     body: { size: 16, weight: 400, lineHeight: 25.6, tracking: -0.16, use: "Public marketing and corporate reading text" }
   spacing: { nav-control: 16 }
-  rounded: { nav-control: 0, disabled-control: 28 }
+  rounded: { nav-control: 0, carousel-arrow: 28 }
   components:
-    disabled-home-control: { type: button, bg: "rgba(196, 196, 212, 0.5)", fg: "#000000", radius: "28px", font: "13.3333px / 400 / Pretendard", states: "disabled computed snapshot only", use: "Disabled public-home control at home::[data-omd-capture=\"19\"]" }
+    header-nav-button: { type: button, bg: "transparent", fg: "#000000", radius: "0px", padding: "16px", height: "64px", font: "16px / 400 / 32px KmrApparat", states: "rest on four header buttons (capture 1-4) on all three capture records; the bundle holds no state frame for any MakinaRocks element", use: "Public header navigation button at home::[data-omd-capture=\"1\"], 133 x 64, tracking normal" }
+    header-contact-link: { type: button, bg: "#ffffff", border: "1px #000000", radius: "19px", padding: "5px 30px", height: "38px", states: "rest on all three capture records (capture 5); no state frame", use: "Header contact link (a.contact) at home::[data-omd-capture=\"5\"], 117 x 38 on home and 141 x 38 on About and Blog; its #000000 16px / 400 / 25.6px Pretendard text equals the page body text, so no label style is claimed" }
+    hero-outline-link: { type: button, bg: "transparent", fg: "#1a1a1a", border: "1px #1a1a1a", radius: "50px", padding: "9px 24px", height: "46px", font: "16px / 500 / 25.6px KmrApparat", states: "rest on the light hero slide (capture 9, a.outline); the dark hero slide link (capture 8, a.outline.dark) records fg #ffffff and border 1px #ffffff with the same geometry; no state frame", use: "Hero outline pill link at home::[data-omd-capture=\"9\"], 157 x 46, gap 12px, tracking -0.16px" }
+    large-outline-link: { type: button, bg: "transparent", fg: "#1a1a1a", border: "1px #e7e7ee", radius: "50px", padding: "12px 24px", height: "55px", font: "18px / 500 / 28.8px KmrApparat", states: "rest on two About links (capture 8, 9, a.outline.light); the home closing-band link (capture 31, a.outline.dark) records fg #ffffff and border 1px #ffffff with the same geometry; no state frame", use: "Large outline pill link at surface-2::[data-omd-capture=\"8\"], 169 x 55, gap 12px, tracking -0.16px" }
+    carousel-arrow-button: { type: button, bg: "rgba(196, 196, 212, 0.5)", radius: "28px", padding: "0px", size: "40px x 40px", states: "rest on the enabled next arrows (capture 20, 30); the prev arrows beside them (capture 19, 29) are disabled and record the same captured values, and opacity is not among the captured properties, so no disabled treatment is declared; no state frame", use: "Home carousel arrow button (button.next) at home::[data-omd-capture=\"20\"]; its 13.3333px / 400 type is the browser default for a button, so no label style is claimed" }
+    solution-card-link: { type: card, radius: "24px", padding: "20px 37px", size: "358px x 358px", font: "24px / 700 / 38.4px KmrApparat", states: "captured at rest on the home solution cards (capture 12 and its siblings); no state frame", use: "Home solution card link (a) at home::[data-omd-capture=\"12\"]; the title is a child h3 in #ffffff 24px / 700 / 38.4px KmrApparat over artwork the capture does not record (background-color computes transparent; background-image is not among the captured properties), so no fill or fg is claimed; the link's own #0000ee is the browser default link colour" }
+    news-card-link: { type: card, bg: "#ffffff", fg: "#000000", radius: "12px", padding: "0px", size: "340px x 376px", font: "16px / 500 / 20.8px KmrApparat", states: "eight cards captured at rest (capture 21-28); no state frame", use: "Home news card link (a) at home::[data-omd-capture=\"21\"]; fg and font come from its child h3 title (tracking -0.16px); the link itself records the page body text" }
+    about-stat-card: { type: card, bg: "#f9f9fb", radius: "24px", padding: "24px", size: "328px x 328px", states: "eight tiles captured at rest; no state frame", use: "About-page tile (li) at surface-2::li, two rows of four; the li records #5a5a72 24px / 400 / 31.2px Pretendard, but its inner text elements were not sampled, so no label style is claimed" }
+    blog-category-tab: { type: tab, bg: "transparent", fg: "#5a5a72", radius: "12px", padding: "4px 30px", height: "29px", font: "16px / 500 / 20.8px Pretendard", selected: "bg #ffffff", states: "rest on three category links (capture 9-11); the link with class on (capture 8) records bg #ffffff with the same text and geometry and is recorded as selected; no state frame", use: "Blog category filter link (a) in div#category-toggle.tab-list at surface-3::[data-omd-capture=\"9\"], tracking -0.16px" }
+    blog-featured-post: { type: card, fg: "#2b2b3b", size: "1408px x 422px", font: "32px / 500 / 41.6px Pretendard", states: "one featured post captured at rest; no state frame", use: "Blog featured post link (a) at surface-3::[data-omd-capture=\"12\"]: a 774 x 422 image block with 24px radius (p.image) beside a text column opened by a category line (padding 40px 40px 0px), a #2b2b3b 32px / 500 / 41.6px title (h3) and a #5a5a72 16px / 400 description" }
+    blog-post-card: { type: card, fg: "#2b2b3b", radius: "16px", padding: "16px", size: "354px x 381px", font: "20px / 500 / normal Pretendard", states: "twelve post cards captured at rest (capture 13-24); no state frame", use: "Blog post card link (a) at surface-3::[data-omd-capture=\"13\"]: a 322 x 180 image with 16px radius, a category line (padding 24px 0px 0px), a #2b2b3b 20px / 500 title (h3) and a #5a5a72 16px / 400 / 25.6px date" }
+    blog-pagination-link: { type: button, bg: "transparent", fg: "#2b2b3b", radius: "22px", size: "44px x 44px", font: "16px / 400 / 25.6px Pretendard", states: "rest on three page links (capture 25-27); no link records a different value, so no current-page variant is declared; no state frame", use: "Blog pagination link (a) at surface-3::[data-omd-capture=\"25\"]" }
+    footer-link: { type: listItem, fg: "#ffffff", height: "26px", font: "16px / 400 / 25.6px KmrApparat", states: "rest on the footer link columns (capture 35 and its siblings); no state frame", use: "Footer link (a) at home::[data-omd-capture=\"35\"] inside a 202 x 26 li whose own text is #8d8da5; tracking -0.16px" }
+    footer-outline-button: { type: button, bg: "transparent", fg: "#ffffff", border: "1px #ffffff", radius: "10px", size: "100px x 40px", font: "12px / 700 / normal Pretendard", states: "one button captured at rest (capture 32); no state frame", use: "Footer outline button at home::[data-omd-capture=\"32\"]; its 1px 6px padding is the browser default for a button and is not claimed" }
 ---
 
 # Design System Inspiration of MakinaRocks
@@ -104,6 +224,7 @@ The public design is also in transition. In May 2026, MakinaRocks introduced a n
 - **Ink** (`#000000`): high-confidence primary reading, border, and public navigation-control text.
 - **Slate** (`#5a5a72`): high-confidence secondary public copy on the captured routes.
 - **Muted** (`#8d8da5`): high-confidence lower-emphasis public text on all three captured routes.
+- **Component-local colours** recorded in §4, not promoted to palette roles: `#1a1a1a` (outline pill text and border on light surfaces), `#e7e7ee` (the large outline pill's border on About), and `#f9f9fb` (About tile fill).
 
 ### Brand asset outside the token sheet
 
@@ -126,7 +247,10 @@ MakinaRocks’ 2026 rebrand post identifies fluorescent yellow-green as the new 
 | Public-home hero | KmrApparat | 64px | 700 | 83.2px | -1.6px | captured `h1` on `home` |
 | Public reading text | Pretendard | 16px | 400 | 25.6px | -0.16px | captured `body` on `home` |
 | Public header navigation control | KmrApparat | 16px | 400 | 32px | normal | `home::[data-omd-capture="1"]` |
-| Disabled public-home control | Pretendard | 13.3333px | 400 | normal | normal | `home::[data-omd-capture="19"]` |
+| Hero outline pill link | KmrApparat | 16px | 500 | 25.6px | -0.16px | `home::[data-omd-capture="9"]` |
+| Blog post title | Pretendard | 20px | 500 | normal | -0.16px | `h3` in `surface-3::[data-omd-capture="13"]` |
+
+Corrected 2026-09-30: the table listed a disabled public-home control at 13.3333px / 400. That is the browser's default button type on the home carousel arrows, and the enabled arrows record the same, so it is not a MakinaRocks type role; the row is replaced by two measured control and card roles.
 
 ## 4. Component Stylings
 
@@ -139,20 +263,87 @@ MakinaRocks’ 2026 rebrand post identifies fluorescent yellow-green as the new 
 - Radius: 0px
 - Padding: 16px
 - Font: 16px / 400 / KmrApparat
-- Use: `home::[data-omd-capture="1"]`, public-home header navigation control
+- Height: 64px (133px wide for the first label)
+- Use: `home::[data-omd-capture="1"]` through `"4"` (`header-nav-button`), public-home header navigation control on all three routes
 
-### Disabled public-home control
+### Header contact link
 
-**Disabled — observed computed snapshot**
+**Default** (`header-contact-link`)
+- Background: `#ffffff`
+- Border: 1px `#000000`
+- Radius: 19px
+- Padding: 5px 30px
+- Size: 117px × 38px on home, 141px × 38px on About and Blog
+- Label: not claimed; its `#000000` 16px / 400 / 25.6px Pretendard equals the page body text.
+- Use: `home::[data-omd-capture="5"]` (`a.contact`) on all three routes
+
+### Outline pill links
+
+**Hero pill** (`hero-outline-link`)
+- Text and border: `#1a1a1a`, 1px
+- Radius: 50px
+- Padding: 9px 24px
+- Size: 157px × 46px
+- Font: 16px / 500 / 25.6px / -0.16px KmrApparat
+- Dark slide: `home::[data-omd-capture="8"]` (`a.outline.dark`) records `#ffffff` text and a 1px `#ffffff` border with the same geometry.
+- Use: `home::[data-omd-capture="9"]` (`a.outline`) on the hero
+
+**Large pill** (`large-outline-link`)
+- Text: `#1a1a1a`; border: 1px `#e7e7ee`
+- Radius: 50px
+- Padding: 12px 24px
+- Size: 169px × 55px
+- Font: 18px / 500 / 28.8px / -0.16px KmrApparat
+- Dark band: `home::[data-omd-capture="31"]` (`a.outline.dark`) records `#ffffff` text and border with the same geometry.
+- Use: `surface-2::[data-omd-capture="8"]`, `"9"` (`a.outline.light`) on About
+
+### Carousel arrow button
+
+**Default** (`carousel-arrow-button`)
 - Background: `rgba(196, 196, 212, 0.5)`
-- Text: `#000000`
 - Border: 0px
 - Radius: 28px
-- Font: 13.3333px / 400 / Pretendard
-- Disabled: captured static disabled state only
-- Use: `home::[data-omd-capture="19"]`, public-home control
+- Size: 40px × 40px
+- Use: the enabled next arrows, `home::[data-omd-capture="20"]` and `"30"` (`button.next`).
+- Corrected 2026-09-30: July recorded this control as a disabled snapshot from the prev arrow (`"19"`), with `#000000` text and 13.3333px / 400 Pretendard type. The enabled next arrows record the same background and radius, so the fill is the control's rest value, not a disabled treatment; the prev arrows' disabled look is not resolved because opacity is not captured. The 13.3333px / 400 type is the browser's default button size and is no longer claimed.
 
-The collector reports `interactionCount: 0` and no interaction expansions. It does not establish hover, pressed, focus, menu, dialog, carousel, form, or transition behavior. Other older card, CTA, mega-menu, category-label, and carousel variants are not retained because their selector/surface/state provenance is absent from the supplied 2026-07-13 bundle.
+### Home cards
+
+**Solution card** (`solution-card-link`): a 358px × 358px link with a 24px radius and `20px 37px` padding; its title is a child `h3` in `#ffffff` 24px / 700 / 38.4px KmrApparat over artwork the capture does not record, so no fill or text colour is claimed. The link's own `#0000ee` is the browser default link colour. `home::[data-omd-capture="12"]` and siblings.
+
+**News card** (`news-card-link`): background `#ffffff`, 12px radius, 340px × 376px; title `h3` in `#000000` 16px / 500 / 20.8px / -0.16px KmrApparat. Eight cards, `home::[data-omd-capture="21"]` through `"28"`.
+
+### About tile
+
+**Static default** (`about-stat-card`): background `#f9f9fb`, 24px radius, 24px padding, 328px × 328px, eight tiles in two rows. The `li` records `#5a5a72` 24px / 400 / 31.2px Pretendard, but its inner text elements were not sampled, so no label style is claimed. `surface-2::li`.
+
+### Blog components
+
+**Category tab** (`blog-category-tab`)
+- Background: transparent; selected: `#ffffff`
+- Text: `#5a5a72`
+- Radius: 12px
+- Padding: 4px 30px
+- Height: 29px
+- Font: 16px / 500 / 20.8px / -0.16px Pretendard
+- Selected: the link with class `on` (`surface-3::[data-omd-capture="8"]`) records `#ffffff` with the same text and geometry.
+- Use: `surface-3::[data-omd-capture="9"]` through `"11"`, inside `div#category-toggle.tab-list`
+
+**Featured post** (`blog-featured-post`): a 1408px × 422px link; a 774px × 422px image block with a 24px radius beside a text column opened by a category line (`40px 40px 0px` padding), a `#2b2b3b` 32px / 500 / 41.6px title and a `#5a5a72` 16px / 400 description. `surface-3::[data-omd-capture="12"]`.
+
+**Post card** (`blog-post-card`): a 354px × 381px link with a 16px radius and 16px padding; a 322px × 180px image with a 16px radius, a category line (`24px 0px 0px`), a `#2b2b3b` 20px / 500 / normal title and a `#5a5a72` 16px / 400 / 25.6px date. Twelve cards, `surface-3::[data-omd-capture="13"]` through `"24"`.
+
+**Pagination link** (`blog-pagination-link`): transparent, `#2b2b3b`, 22px radius, 44px × 44px, 16px / 400 / 25.6px Pretendard. Three links, `surface-3::[data-omd-capture="25"]` through `"27"`; none records a different value, so no current-page variant is declared.
+
+### Footer
+
+**Link** (`footer-link`): `#ffffff` 16px / 400 / 25.6px / -0.16px KmrApparat links inside 202px × 26px list items whose own text is `#8d8da5`; `home::[data-omd-capture="35"]` and siblings.
+
+**Outline button** (`footer-outline-button`): transparent, `#ffffff` text, 1px `#ffffff` border, 10px radius, 100px × 40px, 12px / 700 / normal Pretendard; its `1px 6px` padding is the browser default for a button and is not claimed. `home::[data-omd-capture="32"]`.
+
+### How states were read
+
+The bundle holds no `::state-*` frame for any MakinaRocks element, so hover, pressed, and focus values are not declared. The blog category link with class `on` is the one selected variant. Corrected 2026-09-30: the July text gave `interactionCount: 0` as the reason; that count covers menu, dialog, and tab expansions only. The older card, CTA, mega-menu, and category-label variants stay withdrawn; the pills and cards above are re-derived from selector-level samples in the 2026-07-13 bundle.
 
 ---
 **Verified:** 2026-07-13
@@ -182,13 +373,13 @@ No reusable shadow or elevation token is promoted. The supplied collector output
 - Use KmrApparat only where a target project has a lawful source; otherwise label it unavailable rather than substituting a system font.
 - Use Pretendard only with its upstream SIL OFL 1.1 boundary understood.
 - Preserve fluorescent yellow-green as qualitative rebrand context until an exact, selector-provenanced public UI value is observed.
-- Keep the two retained controls tied to their precise `home` selectors and captured state boundary.
+- Keep each component in §4 tied to its selector and surface; none declares a pointer or focus state, because the bundle holds no state frame.
 
 ### Don't
 
 - Don't treat the public homepage as evidence for a logged-in AI OS or documentation chrome.
 - Don't turn the 2026 rebrand’s logo/asset color into a guessed hex token.
-- Don't reuse old carousel, card, pill CTA, mega-menu, hover, pressed, or focus variants without present selector/surface/state evidence.
+- Don't reuse old mega-menu, hover, pressed, or focus variants without present selector/surface/state evidence; the pills, arrows, and cards in §4 are the measured replacements for the older inferred ones.
 - Don't call `Pretendard JP` a live family: this bundle records it as declared-only with zero visible use.
 - Don't advertise KmrApparat as a redistributable public font; no downstream licence was found.
 
@@ -203,7 +394,7 @@ No responsive viewport comparison was supplied. The collector used a 1440×900 v
 - Use white `#ffffff`, ink `#000000`, dark indigo `#2b2b3b`, slate `#5a5a72`, and muted `#8d8da5` only as public-web visual evidence.
 - Use a 64px / 700 / 83.2px / -1.6px KmrApparat hero only when the target can legally load that family; otherwise omit that specimen rather than use a substitute.
 - Use Pretendard 16px / 400 / 25.6px / -0.16px for the captured public-web reading example when appropriate.
-- The only retained components are the selector-provenanced public-home header control and a static disabled public-home control. Do not synthesize a component library from them.
+- Components are limited to the fourteen selector-provenanced entries in §4 (header controls, outline pills, carousel arrow, home cards, About tile, blog tabs, cards and pagination, footer); none carries a measured pointer or focus state.
 
 ## 10. Voice & Tone
 
@@ -242,7 +433,7 @@ The first-party sources identify industrial contexts rather than named end-user 
 
 ## 14. States
 
-No reusable product-state guidance is established. The bundle contains one static `disabled` computed snapshot at `home::[data-omd-capture="19"]`, but `interactions: []` and `interactionCount: 0`. Empty, loading, error, success, form-validation, focus, pressed, and motion states are unresolved rather than inferred from marketing copy.
+No reusable product-state guidance is established. The bundle holds no `::state-*` frame for any element, so hover, pressed, and focus values are not declared. The disabled carousel arrows (`home::[data-omd-capture="19"]`, `"29"`) record the same captured values as the enabled ones and opacity is not captured, so no disabled treatment is declared either. The blog category link with class `on` is the one selected variant recorded. Empty, loading, error, success, form-validation, and motion states are unresolved rather than inferred from marketing copy. Corrected 2026-09-30: the July text cited `interactions: []` and `interactionCount: 0`; those count menu, dialog, and tab expansions only.
 
 ## 15. Motion & Easing
 

@@ -64,6 +64,7 @@ verification_v2:
     "tokens.components.category-chip.padding": *home
     "tokens.components.category-chip.height": *home
     "tokens.components.category-chip.font": *home
+    "tokens.components.category-chip.selected": { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
     "tokens.components.category-chip.states": *home
     "tokens.components.category-chip.use": *home
     "tokens.components.outline-action.type": *home
@@ -77,23 +78,121 @@ verification_v2:
     "tokens.components.outline-action.use": *home
     "tokens.components.screen-format-badge.type": *home
     "tokens.components.screen-format-badge.bg": *home
-    "tokens.components.screen-format-badge.fg": *home
     "tokens.components.screen-format-badge.radius": *home
     "tokens.components.screen-format-badge.padding": *home
     "tokens.components.screen-format-badge.height": *home
-    "tokens.components.screen-format-badge.font": *home
     "tokens.components.screen-format-badge.use": *home
     "tokens.components.menu-row.type": *home
     "tokens.components.menu-row.bg": *home
-    "tokens.components.menu-row.fg": *home
     "tokens.components.menu-row.radius": *home
     "tokens.components.menu-row.height": *home
-    "tokens.components.menu-row.font": *home
     "tokens.components.menu-row.use": *home
+    "tokens.components.line-tab.type": &w6LineTab { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"42\"]", captured: "2026-07-13" }
+    "tokens.components.line-tab.bg": *w6LineTab
+    "tokens.components.line-tab.fg": *w6LineTab
+    "tokens.components.line-tab.padding": *w6LineTab
+    "tokens.components.line-tab.height": *w6LineTab
+    "tokens.components.line-tab.font": *w6LineTab
+    "tokens.components.line-tab.selected": { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"41\"]", captured: "2026-07-13" }
+    "tokens.components.line-tab.states": *w6LineTab
+    "tokens.components.line-tab.use": *w6LineTab
+    "tokens.components.like-button.type": &w6Like { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"51\"]", captured: "2026-07-13" }
+    "tokens.components.like-button.bg": *w6Like
+    "tokens.components.like-button.radius": *w6Like
+    "tokens.components.like-button.size": *w6Like
+    "tokens.components.like-button.states": *w6Like
+    "tokens.components.like-button.use": *w6Like
+    "tokens.components.poster-card.type": &w6Poster { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::div.mainMovieChartCard_imgArea", captured: "2026-07-13" }
+    "tokens.components.poster-card.radius": *w6Poster
+    "tokens.components.poster-card.size": *w6Poster
+    "tokens.components.poster-card.shadow": *w6Poster
+    "tokens.components.poster-card.states": *w6Poster
+    "tokens.components.poster-card.use": *w6Poster
+    "tokens.components.search-input.type": &w6Search { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"141\"]", captured: "2026-07-13" }
+    "tokens.components.search-input.bg": *w6Search
+    "tokens.components.search-input.fg": *w6Search
+    "tokens.components.search-input.border": *w6Search
+    "tokens.components.search-input.radius": *w6Search
+    "tokens.components.search-input.padding": *w6Search
+    "tokens.components.search-input.size": *w6Search
+    "tokens.components.search-input.font": *w6Search
+    "tokens.components.search-input.states": *w6Search
+    "tokens.components.search-input.use": *w6Search
+    "tokens.components.search-shortcut-pill.type": &w6Pill { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"145\"]", captured: "2026-07-13" }
+    "tokens.components.search-shortcut-pill.bg": *w6Pill
+    "tokens.components.search-shortcut-pill.fg": *w6Pill
+    "tokens.components.search-shortcut-pill.border": *w6Pill
+    "tokens.components.search-shortcut-pill.radius": *w6Pill
+    "tokens.components.search-shortcut-pill.padding": *w6Pill
+    "tokens.components.search-shortcut-pill.height": *w6Pill
+    "tokens.components.search-shortcut-pill.font": *w6Pill
+    "tokens.components.search-shortcut-pill.states": *w6Pill
+    "tokens.components.search-shortcut-pill.use": *w6Pill
+    "tokens.components.reserve-button.type": &w6Reserve { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"152\"]", captured: "2026-07-13" }
+    "tokens.components.reserve-button.bg": *w6Reserve
+    "tokens.components.reserve-button.fg": *w6Reserve
+    "tokens.components.reserve-button.border": *w6Reserve
+    "tokens.components.reserve-button.radius": *w6Reserve
+    "tokens.components.reserve-button.padding": *w6Reserve
+    "tokens.components.reserve-button.size": *w6Reserve
+    "tokens.components.reserve-button.font": *w6Reserve
+    "tokens.components.reserve-button.states": *w6Reserve
+    "tokens.components.reserve-button.use": *w6Reserve
+    "tokens.components.text-link-button.type": &w6TextLink { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"47\"]", captured: "2026-07-13" }
+    "tokens.components.text-link-button.bg": *w6TextLink
+    "tokens.components.text-link-button.fg": *w6TextLink
+    "tokens.components.text-link-button.size": *w6TextLink
+    "tokens.components.text-link-button.font": *w6TextLink
+    "tokens.components.text-link-button.states": *w6TextLink
+    "tokens.components.text-link-button.use": *w6TextLink
+    "tokens.components.footer-link.type": &w6Footer { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"21\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.bg": *w6Footer
+    "tokens.components.footer-link.fg": *w6Footer
+    "tokens.components.footer-link.padding": *w6Footer
+    "tokens.components.footer-link.height": *w6Footer
+    "tokens.components.footer-link.font": *w6Footer
+    "tokens.components.footer-link.states": *w6Footer
+    "tokens.components.footer-link.use": *w6Footer
+    "tokens.components.common-select.type": &w6Select { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.common-select.bg": *w6Select
+    "tokens.components.common-select.fg": *w6Select
+    "tokens.components.common-select.border": *w6Select
+    "tokens.components.common-select.radius": *w6Select
+    "tokens.components.common-select.padding": *w6Select
+    "tokens.components.common-select.size": *w6Select
+    "tokens.components.common-select.font": *w6Select
+    "tokens.components.common-select.states": *w6Select
+    "tokens.components.common-select.use": *w6Select
+    "tokens.components.bottom-sheet.type": &w6Sheet { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::div.main-modal-container", captured: "2026-07-13" }
+    "tokens.components.bottom-sheet.bg": *w6Sheet
+    "tokens.components.bottom-sheet.radius": *w6Sheet
+    "tokens.components.bottom-sheet.padding": *w6Sheet
+    "tokens.components.bottom-sheet.size": *w6Sheet
+    "tokens.components.bottom-sheet.states": *w6Sheet
+    "tokens.components.bottom-sheet.use": *w6Sheet
+    "tokens.components.sheet-close-button.type": &w6SheetClose { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-07-13" }
+    "tokens.components.sheet-close-button.bg": *w6SheetClose
+    "tokens.components.sheet-close-button.fg": *w6SheetClose
+    "tokens.components.sheet-close-button.radius": *w6SheetClose
+    "tokens.components.sheet-close-button.padding": *w6SheetClose
+    "tokens.components.sheet-close-button.size": *w6SheetClose
+    "tokens.components.sheet-close-button.font": *w6SheetClose
+    "tokens.components.sheet-close-button.states": *w6SheetClose
+    "tokens.components.sheet-close-button.use": *w6SheetClose
+    "tokens.components.round-outline-pill.type": &w6RoundPill { surface_id: home, source_id: cgv-home, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-13" }
+    "tokens.components.round-outline-pill.bg": *w6RoundPill
+    "tokens.components.round-outline-pill.fg": *w6RoundPill
+    "tokens.components.round-outline-pill.border": *w6RoundPill
+    "tokens.components.round-outline-pill.radius": *w6RoundPill
+    "tokens.components.round-outline-pill.padding": *w6RoundPill
+    "tokens.components.round-outline-pill.size": *w6RoundPill
+    "tokens.components.round-outline-pill.font": *w6RoundPill
+    "tokens.components.round-outline-pill.states": *w6RoundPill
+    "tokens.components.round-outline-pill.use": *w6RoundPill
 tokens:
   source: live-extract
   extracted: "2026-07-13"
-  note: "Three supplied public CGV captures (coverage 81). Pretendard is loaded/high with 1,217 visible uses; interaction count is zero, so only default component values are promoted."
+  note: "Three supplied public CGV captures (coverage 81). Pretendard is loaded/high with 1,217 visible uses; the bundle holds no ::state-* sample for any element, so only rest values and two class-marked selected tabs are promoted."
   colors:
     foreground: "#121212"
     canvas: "#ffffff"
@@ -112,10 +211,22 @@ tokens:
     flat: "none"
   components_harvested: true
   components:
-    category-chip: { type: button, bg: "#f4f4f4", fg: "#454545", border: "1px solid #f4f4f4", radius: "25px", padding: "0px 16px", height: "40px", font: "15px / 400 / Pretendard", states: "default observed at home::[data-omd-capture=\"36\"]; no hover, focus, pressed, disabled, or error state observed", use: "Public main-category tab" }
-    outline-action: { type: button, bg: "#ffffff", fg: "#121212", border: "1px solid #d9d9d9", radius: "20px", padding: "9px 24px", font: "14px / 500 / Pretendard", states: "default observed at home::[data-omd-capture=\"128\"]; no hover, focus, pressed, disabled, or error state observed", use: "Rounded public movie-card action" }
-    screen-format-badge: { type: badge, bg: "rgba(0, 0, 0, 0.55)", fg: "#121212", radius: "4px", padding: "0px 5px", height: "20px", font: "11px / 700 / Pretendard", use: "Movie-card screen-format marker" }
-    menu-row: { type: listItem, bg: "transparent", fg: "#121212", radius: "0px", height: "40px", font: "10px / 400 / Pretendard", use: "Observed public navigation/menu row" }
+    category-chip: { type: button, bg: "#f4f4f4", fg: "#454545", border: "1px solid #f4f4f4", radius: "25px", padding: "0px 16px", height: "40px", font: "15px / 400 / Pretendard", selected: "bg #121212, border 1px #121212, fg #ffffff, 15px / 700", states: "rest on four main-category tabs (home capture 36-39); the tab with class maintab_tabTitleActive (capture 35) differs from them and is recorded as selected; the bundle holds no state frame for any CGV element", use: "Public main-category tab" }
+    outline-action: { type: button, bg: "#ffffff", fg: "#121212", border: "1px solid #d9d9d9", radius: "20px", padding: "9px 24px", font: "14px / 500 / Pretendard", states: "rest on 33 movie-card actions per capture; rects vary with the carousel slide they sit on (e.g. 104px x 31px, 90px x 31px); no state frame", use: "Rounded public movie-card action (button.btn.btn-round32.line-gray.bg-white) at home::[data-omd-capture=\"49\"]" }
+    screen-format-badge: { type: badge, bg: "rgba(0, 0, 0, 0.55)", radius: "4px", padding: "0px 5px", height: "20px", use: "Movie-card screen-format marker (span.badge.screenType.img); all 15 sampled badges record no text (textLength 0), so no label colour or type is claimed" }
+    menu-row: { type: listItem, bg: "transparent", radius: "0px", height: "40px", use: "Observed public navigation/menu row (li.mets01390_linkItem, 200px x 40px, five per capture); its #121212 and 10px / 400 equal the page body's inherited values, so no label style is claimed" }
+    line-tab: { type: tab, bg: "transparent", fg: "#121212", padding: "2px 0px 8px", height: "25px", font: "15px / 500 / 15px Pretendard, tracking -0.225px", selected: "weight 700, tracking -0.3px; fg #121212 as at rest", states: "rest on five tabs (home capture 42-46); the tab with class linetabMini_tabTitleActive (capture 41) differs from them and is recorded as selected; the bundle holds no state frame for any CGV element", use: "Movie-chart line tab (button.linetabMini_tabTitle) at home::[data-omd-capture=\"42\"], 74px x 25px; the capture records no border on the tab element" }
+    like-button: { type: button, bg: "rgba(18, 18, 18, 0.2)", radius: "50%", size: "36px x 36px", states: "rest on 22-23 buttons per capture; copies on the smaller carousel slides render 27-33px; no state frame", use: "Circular like button (button.btn-like.dark) on the largest movie-chart poster at home::[data-omd-capture=\"51\"]; its own #121212 and 10px / 400 equal the page body's inherited values, so no label style is claimed" }
+    poster-card: { type: card, radius: "12px", size: "254px x 362px", shadow: "rgba(18, 18, 18, 0.24) 0px 20px 25px 0px on the largest card", states: "rest; 33 poster areas per capture; the largest records the shadow, the other 32 a zero-alpha shadow and smaller rects; no state frame", use: "Movie-chart poster area (div.mainMovieChartCard_imgArea) holding the poster image (img.mainMovieChartCard_poster, same rect); its text values are inherited, so no label style is claimed" }
+    search-input: { type: input, bg: "transparent", fg: "#000000", border: "1px #121212", radius: "8px", padding: "0px 52px 0px 16px", size: "530px x 46px", font: "14px / 400 / 19.6px Pretendard, tracking -0.2px", states: "rest, empty (textLength 0); no state frame", use: "Main search field (input.mainSearch_mainSearchInput) at home::[data-omd-capture=\"141\"]; its 52px right padding matches the 52px x 46px search button beside it (capture 143, radius 0px 8px 8px 0px)" }
+    search-shortcut-pill: { type: button, bg: "#ffffff", fg: "#121212", border: "1px #e9e9e9", radius: "30px", padding: "0px 12px", height: "46px", font: "13px / 500 / 13px Pretendard, tracking -0.2px", states: "rest on three pills (home capture 144-146); no state frame", use: "Search shortcut pill (button.mainSearch_searchBtn) at home::[data-omd-capture=\"145\"], 78px x 46px, below the search field; the two with class mainSearch_withImg (capture 144, 146) use 0px 12px 0px 6px padding" }
+    reserve-button: { type: button, bg: "transparent", fg: "#fc5555", border: "1px #fc5555", radius: "4px", padding: "8px", size: "60px x 29px", font: "11px / 500 / 11px Pretendard, tracking -0.165px", states: "rest; one per capture (surface-2 and surface-3 capture 151); no state frame", use: "Outline button with class btn_reserve at home::[data-omd-capture=\"152\"], inside the video article, below its player; the #fc5555 signal value is this button's text and border" }
+    text-link-button: { type: button, bg: "transparent", fg: "#707070", size: "77px x 20px", font: "14px / 400 / 19.6px Pretendard, tracking -0.21px", states: "rest; no state frame", use: "Movie-chart text button (button.mainMovieChart_linkBtn) at home::[data-omd-capture=\"47\"], at the end of the line-tab row; column gap 2px" }
+    footer-link: { type: button, bg: "transparent", fg: "#707070", padding: "0px 9px 0px 0px", height: "17px", font: "12px / 400 / 16.8px Pretendard, tracking -0.2px", states: "rest on eight footer links (home capture 21-28); no state frame", use: "Footer link (button.cgv-footer-link) at home::[data-omd-capture=\"21\"]; the last link of each row (capture 23, 25, 28) has 0px padding" }
+    common-select: { type: input, bg: "transparent", fg: "#121212", border: "1px #d9d9d9", radius: "10px", padding: "0px 16px", size: "200px x 48px", font: "14px / 400 / 19.6px Pretendard, tracking -0.2px", states: "rest; no state frame", use: "Native select (select.select_commonSelect) below the footer links at home::[data-omd-capture=\"29\"]" }
+    bottom-sheet: { type: dialog, bg: "#ffffff", radius: "24px 24px 0px 0px", padding: "20px 0px 32px", size: "600px x 391px", states: "open in all three captures (div.cgv-modal.cgv-bot-modal.active, role dialog); no state frame", use: "Promotional bottom sheet (div.main-modal-container), 600px wide and flush with the bottom of the 900px viewport (top 509px); its own #121212 10px / 400 is inherited page text, so no label style is claimed" }
+    sheet-close-button: { type: button, bg: "#f5f5f5", fg: "#707070", radius: "6px", padding: "8px 10px", size: "40px x 28px", font: "12px / 400 / 12px Pretendard, tracking -0.2px", states: "rest; no state frame", use: "Close button (button.mmns00008_close) in the bottom sheet at home::[data-omd-capture=\"8\"]; beside it a fill-less #707070 14px / 400 / 19.6px text button (button.mmns00008_today, capture 7)" }
+    round-outline-pill: { type: button, bg: "transparent", fg: "#ffffff", border: "1px #ffffff", radius: "100px", padding: "0px 12px", size: "90px x 34px", font: "12px / 500 / 16.8px Pretendard, tracking -0.2px", states: "rest; no state frame", use: "White outline pill (button.mets01390_roundBtn) at home::[data-omd-capture=\"30\"], under white 22px / 700 and 14px / 700 text (p.mets01390_title, p.mets01390_txt); the fill behind the three is not in the capture" }
 ---
 
 # Design System Inspiration of CGV
@@ -130,8 +241,8 @@ The captured interface is crisp and utility-led rather than theatrical by defaul
 - White `#ffffff` public canvas with near-black `#121212` information hierarchy
 - Loaded Pretendard across the captured public surface
 - `#f4f4f4` / `#454545` rounded category treatment and `#d9d9d9` outline actions
-- Compact 10px, 14px, 15px, and 22px observed text roles
-- Static evidence for buttons, badges, and a navigation row; no interaction state values
+- Compact 12px, 13px, 14px, 15px, and 22px observed text roles; the 10px on the page body and its wrappers is the inherited root size, not a rendered label (corrected 2026-09-30)
+- Rest values for tabs, buttons, fields, a select, a bottom sheet, poster cards, badges, and a navigation row, plus two class-marked selected tabs; the bundle holds no hover, pressed, or focus frame
 
 ## Primary tasks
 
@@ -148,7 +259,8 @@ The captured interface is crisp and utility-led rather than theatrical by defaul
 - **Subtle control** (`#f4f4f4`): observed category-chip background and border.
 - **Secondary text** (`#454545`): category-chip foreground.
 - **Line** (`#d9d9d9`): observed rounded outline-action border.
-- **Signal** (`#fc5555`): a low-frequency public text/border observation; it is preserved as a signal value, not promoted to a primary or state palette.
+- **Signal** (`#fc5555`): a low-frequency public text/border observation; it is preserved as a signal value, not promoted to a primary or state palette. The bundle records it on one element per capture, the `btn_reserve` outline button (§4).
+- **Component-local colours** recorded in §4, not promoted to palette roles: `#707070` (footer links, the chart text button, and the bottom-sheet close label on a `#f5f5f5` fill), `#e9e9e9` (search shortcut pill border), `#000000` (search field text), and the translucent fills `rgba(18, 18, 18, 0.2)` (poster like button) and `rgba(0, 0, 0, 0.55)` (screen-format badge).
 
 No verified current error, success, warning, hover, pressed, or focus palette was supplied. Those groups are omitted.
 
@@ -176,8 +288,11 @@ No verified current error, success, warning, hover, pressed, or focus palette wa
 |---|---|---:|---:|---:|---:|---|
 | Prominent heading | Pretendard | 22px | 700 | 30.8px | -0.4px | Observed prominent body-role heading |
 | Public body | Pretendard | 14px | 400 | 19.6px | -0.2px | Body and input copy |
-| Category label | Pretendard | 15px | 400 | 15px | -0.2px | Category-tab label |
-| Screen marker | Pretendard | 11px | 700 | 19px | -0.2px | Movie-card format badge |
+| Category label | Pretendard | 15px | 400 | 15px | -0.2px | Category-tab label; the selected tab sets 700 |
+| Line tab | Pretendard | 15px | 500 | 15px | -0.225px | Movie-chart line tab; the selected tab sets 700 and -0.3px |
+| Footer link | Pretendard | 12px | 400 | 16.8px | -0.2px | Footer links |
+
+Corrected 2026-09-30: a "Screen marker" row (11px / 700 / 19px) described the screen-format badge, but all 15 sampled badges record no text (textLength 0), so it was not a rendered text style and is withdrawn. The 10px / 400 / 10px on the page body, wrappers, the menu row, and icon buttons is the root size those elements inherit, not a label.
 
 ## 4. Component Stylings
 
@@ -191,7 +306,8 @@ No verified current error, success, warning, hover, pressed, or focus palette wa
 - Padding: 0px 16px
 - Height: 40px
 - Font: 15px / 400 / Pretendard
-- States: Default only at `home::[data-omd-capture="36"]`; no hover, focus, pressed, disabled, or error state observed.
+- Selected: background `#121212`, border 1px `#121212`, text `#ffffff`, 15px / 700 — the tab with class `maintab_tabTitleActive` (`home::[data-omd-capture="35"]`, 86px × 40px)
+- States: rest on four tabs (`home::[data-omd-capture="36"]` to `"39"`) plus the class-marked selected tab; the bundle holds no hover, pressed, or focus frame.
 - Use: Public main-category tab
 
 **Outline Action**
@@ -201,27 +317,65 @@ No verified current error, success, warning, hover, pressed, or focus palette wa
 - Radius: 20px
 - Padding: 9px 24px
 - Font: 14px / 500 / Pretendard
-- States: Default only at `home::[data-omd-capture="128"]`; no hover, focus, pressed, disabled, or error state observed.
-- Use: Rounded public movie-card action
+- States: rest on 33 movie-card actions per capture; the bundle holds no hover, pressed, or focus frame.
+- Use: Rounded public movie-card action, `home::[data-omd-capture="49"]` (104px × 31px). Corrected 2026-09-30: the July record cited capture `"128"`, a copy that renders 30px × 10px on a scaled carousel slide; its computed values are the same.
 
 **Screen Format Badge**
 - Background: `rgba(0, 0, 0, 0.55)`
-- Text: `#121212`
 - Radius: 4px
 - Padding: 0px 5px
 - Height: 20px
-- Font: 11px / 700 / Pretendard
-- Use: Movie-card screen-format marker
+- Use: Movie-card screen-format marker (`span.badge.screenType.img`). Corrected 2026-09-30: the July record gave it text `#121212` and 11px / 700 type, but all 15 sampled badges record no text (textLength 0); the colour is inherited and no label style is claimed.
 
 **Menu Row**
 - Background: transparent
-- Text: `#121212`
 - Radius: 0px
 - Height: 40px
-- Font: 10px / 400 / Pretendard
-- Use: Observed public navigation/menu row
+- Use: Observed public navigation/menu row (`li.mets01390_linkItem`, 200px × 40px, five per capture). Corrected 2026-09-30: the July record gave it text `#121212` and 10px / 400 type; those equal the page body's inherited values on a container, so no label style is claimed.
 
-The capture contains 383 component variants over three supplied public surfaces. Only the selector-backed static variants above are canonical tokens; 0 interaction observations means no interactive states are inferred.
+### Line tab
+
+**Rest** (`line-tab`): text `#121212`, 15px / 500 / 15px Pretendard, tracking -0.225px, padding 2px 0px 8px, 25px high; `home::[data-omd-capture="42"]` (`button.linetabMini_tabTitle`, 74px × 25px) and four siblings (`"43"` to `"46"`). The capture records no border on the tab element.
+
+**Selected**: the tab with class `linetabMini_tabTitleActive` (`"41"`) sets 700 and tracking -0.3px; its text stays `#121212`.
+
+### Search field and shortcut pills
+
+**Search field** (`search-input`): transparent fill, text `#000000`, border 1px `#121212`, 8px radius, padding 0px 52px 0px 16px, 530px × 46px, 14px / 400 / 19.6px; `home::[data-omd-capture="141"]` (`input.mainSearch_mainSearchInput`), empty in the capture. The 52px right padding matches the 52px × 46px search button beside it (`"143"`, radius 0px 8px 8px 0px).
+
+**Shortcut pill** (`search-shortcut-pill`): background `#ffffff`, text `#121212`, border 1px `#e9e9e9`, 30px radius, padding 0px 12px, 46px high, 13px / 500 / 13px; `home::[data-omd-capture="145"]` (`button.mainSearch_searchBtn`, 78px × 46px). The two with class `mainSearch_withImg` (`"144"`, `"146"`) use 0px 12px 0px 6px padding.
+
+### Poster like button and poster card
+
+**Like button** (`like-button`): fill `rgba(18, 18, 18, 0.2)`, 50% radius, 36px × 36px on the largest poster; `home::[data-omd-capture="51"]` (`button.btn-like.dark`), 22-23 per capture. Copies on the smaller carousel slides render 27-33px, so only the largest size is recorded. Its own `#121212` and 10px / 400 are the page body's inherited values, so no label style is claimed.
+
+**Poster card** (`poster-card`): 12px radius, 254px × 362px (`div.mainMovieChartCard_imgArea` holding `img.mainMovieChartCard_poster`). Of the 33 poster areas per capture, the largest records the shadow `rgba(18, 18, 18, 0.24) 0px 20px 25px 0px`; the other 32 record a zero-alpha shadow and smaller rects.
+
+### Reserve button
+
+**Rest** (`reserve-button`): transparent fill, text and 1px border `#fc5555`, 4px radius, 8px padding, 60px × 29px, 11px / 500 / 11px, tracking -0.165px; `home::[data-omd-capture="152"]` (`button.btn_reserve`; `"151"` on the other two captures), one per capture, inside the video article below its player. The article's player controls (`button.btn_play`, `.btn_muted`, `.btn_fullscreen`) belong to an embedded player and are not promoted.
+
+### Text buttons
+
+**Chart text button** (`text-link-button`): text `#707070`, 14px / 400 / 19.6px, tracking -0.21px, 77px × 20px, column gap 2px; `home::[data-omd-capture="47"]` (`button.mainMovieChart_linkBtn`) at the end of the line-tab row.
+
+**Footer link** (`footer-link`): text `#707070`, 12px / 400 / 16.8px, padding 0px 9px 0px 0px, 17px high; `home::[data-omd-capture="21"]` to `"28"` (`button.cgv-footer-link`). The last link of each row (`"23"`, `"25"`, `"28"`) has 0px padding.
+
+### Select
+
+**Rest** (`common-select`): transparent fill, text `#121212`, border 1px `#d9d9d9`, 10px radius, padding 0px 16px, 200px × 48px, 14px / 400 / 19.6px; `home::[data-omd-capture="29"]` (`select.select_commonSelect`), below the footer links.
+
+### Bottom sheet
+
+**Open** (`bottom-sheet`): background `#ffffff`, radius 24px 24px 0px 0px, padding 20px 0px 32px, 600px × 391px, flush with the bottom of the 900px viewport (top 509px); `div.main-modal-container` inside `div.cgv-modal.cgv-bot-modal.active` (role dialog), open in all three captures.
+
+**Close button** (`sheet-close-button`): background `#f5f5f5`, text `#707070`, 6px radius, padding 8px 10px, 40px × 28px, 12px / 400 / 12px; `home::[data-omd-capture="8"]` (`button.mmns00008_close`). Beside it, `button.mmns00008_today` (`"7"`) is a fill-less `#707070` 14px / 400 / 19.6px text button.
+
+### Round outline pill
+
+**Rest** (`round-outline-pill`): transparent fill, text and 1px border `#ffffff`, 100px radius, padding 0px 12px, 90px × 34px, 12px / 500 / 16.8px; `home::[data-omd-capture="30"]` (`button.mets01390_roundBtn`), under white 22px / 700 and 14px / 700 text (`p.mets01390_title`, `p.mets01390_txt`). The fill behind the three is not in the capture.
+
+The capture contains 383 component variants over three captures of the same URL (`https://cgv.co.kr/`); `surface-2` and `surface-3` repeat the home's elements and computed styles with small rect differences, so every citation above uses `home`. Only the selector-backed variants above are canonical tokens. Not promoted: the carousel-library arrows (`button.swiper-button-prev` / `-next`, colour `#007aff`, no text), the embedded video controls, and two class markers with no unmarked sibling to compare against (`button.cgv-footer-content-title.active`, the search banner's `mainSearch_active`). No showtime, seat, or booking-flow control is in the bundle. Corrected 2026-09-30: the July text read `interactionCount: 0` as the reason no states exist; that counter covers opened dialogs, tabs, and menus. States are absent because the bundle holds no `::state-*` sample for any of its 1,220 elements, so no hover, pressed, or focus value is declared.
 
 ---
 **Verified:** 2026-07-13
@@ -232,7 +386,7 @@ The capture contains 383 component variants over three supplied public surfaces.
 ## 5. Layout Principles
 
 - Use white public surfaces and a near-black information hierarchy where the captured CGV pattern is relevant.
-- Keep dense content roles compact: 10px metadata, 8/10/16/24px recurring spacing, and 40px category/menu controls where specifically observed.
+- Keep dense content roles compact: 12-14px metadata, 8/10/16/24px recurring spacing, and 40px category/menu controls where specifically observed (10px is the inherited root size, not a metadata style; corrected 2026-09-30).
 - Treat rounded controls as role-specific: 25px category chip, 20px outline action, 16px media, and 4px badge.
 - Do not generalize the supplied home capture into authenticated seat selection, payment, or theatre-operation layouts.
 
@@ -306,7 +460,7 @@ These are stakeholder groups stated or directly implied by first-party CGV mater
 
 ## 14. States
 
-No visual state system was captured. The following content requirements are not token values and must be designed only with separately verified visual evidence.
+Observed: two class-marked selected tabs — the main-category tab (`maintab_tabTitleActive`: `#121212` fill and border, `#ffffff` label at 700) and the movie-chart line tab (`linetabMini_tabTitleActive`: 700, tracking -0.3px) — and the bottom sheet, open in all three captures. The bundle holds no hover, pressed, or focus frame for any element, so none is declared. Two class markers have no unmarked sibling to compare against (`button.cgv-footer-content-title.active`, the search banner's `mainSearch_active`), so neither is recorded as a state. The following content requirements are not token values and must be designed only with separately verified visual evidence.
 
 | Category | Requirement |
 |---|---|

@@ -65,12 +65,110 @@ verification_v2:
     "tokens.components.security-environment-card.bg": *security
     "tokens.components.security-environment-card.radius": *security
     "tokens.components.security-environment-card.padding": *security
+    "tokens.components.security-environment-card.shadow": *security
     "tokens.components.security-environment-card.use": *security
     "tokens.components.ai-environment-card.type": &ai { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, captured: "2026-07-13" }
     "tokens.components.ai-environment-card.bg": *ai
     "tokens.components.ai-environment-card.radius": *ai
     "tokens.components.ai-environment-card.padding": *ai
+    "tokens.components.ai-environment-card.shadow": *ai
     "tokens.components.ai-environment-card.use": *ai
+    "tokens.components.header-primary-action.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-primary-action.bg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-primary-action.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-primary-action.border": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-primary-action.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-primary-action.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-primary-action.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-primary-action.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-primary-action.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-primary-action.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-outline-action.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.header-outline-action.bg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.header-outline-action.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.header-outline-action.border": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.header-outline-action.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.header-outline-action.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.header-outline-action.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.header-outline-action.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.header-outline-action.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.header-outline-action.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.bg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-nav-link.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.landing-white-action.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.landing-white-action.bg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.landing-white-action.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.landing-white-action.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.landing-white-action.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.landing-white-action.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.landing-white-action.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.landing-white-action.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.landing-white-action.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.feature-floating-nav-button.type": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.feature-floating-nav-button.bg": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.feature-floating-nav-button.radius": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.feature-floating-nav-button.padding": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.feature-floating-nav-button.size": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.feature-floating-nav-button.states": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.feature-floating-nav-button.use": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.security-accordion-button.type": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.security-accordion-button.bg": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.security-accordion-button.fg": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.security-accordion-button.radius": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.security-accordion-button.padding": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.security-accordion-button.height": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.security-accordion-button.font": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.security-accordion-button.states": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.security-accordion-button.use": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.ai-faq-question-button.type": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.ai-faq-question-button.bg": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.ai-faq-question-button.fg": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.ai-faq-question-button.radius": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.ai-faq-question-button.padding": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.ai-faq-question-button.height": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.ai-faq-question-button.font": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.ai-faq-question-button.states": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.ai-faq-question-button.use": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.bottom-banner-pill-link.type": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.bottom-banner-pill-link.fg": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.bottom-banner-pill-link.radius": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.bottom-banner-pill-link.padding": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.bottom-banner-pill-link.height": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.bottom-banner-pill-link.font": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.bottom-banner-pill-link.states": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.bottom-banner-pill-link.use": { surface_id: surface-5, source_id: surface-surface-5, method: computed-style, selector: "surface-5::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.footer-sitemap-link.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.footer-sitemap-link.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.footer-sitemap-link.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.footer-sitemap-link.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.footer-sitemap-link.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.footer-sitemap-link.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.footer-sitemap-link.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-07-13" }
+    "tokens.components.footer-info-toggle.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.footer-info-toggle.bg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.footer-info-toggle.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.footer-info-toggle.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.footer-info-toggle.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.footer-info-toggle.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.footer-info-toggle.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.footer-info-toggle.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.footer-info-toggle.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"43\"]", captured: "2026-07-13" }
+    "tokens.components.ai-partner-card.type": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::li", captured: "2026-07-13" }
+    "tokens.components.ai-partner-card.bg": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::div", captured: "2026-07-13" }
+    "tokens.components.ai-partner-card.fg": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::p", captured: "2026-07-13" }
+    "tokens.components.ai-partner-card.radius": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::li", captured: "2026-07-13" }
+    "tokens.components.ai-partner-card.padding": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::div", captured: "2026-07-13" }
+    "tokens.components.ai-partner-card.size": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::li", captured: "2026-07-13" }
+    "tokens.components.ai-partner-card.font": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::p", captured: "2026-07-13" }
+    "tokens.components.ai-partner-card.states": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::li", captured: "2026-07-13" }
+    "tokens.components.ai-partner-card.use": { surface_id: surface-6, source_id: surface-surface-6, method: computed-style, selector: "surface-6::li", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -90,8 +188,19 @@ tokens:
   spacing: { nav-action-y: 7, nav-action-x: 14, landing-action-y: 12, landing-action-x: 30 }
   rounded: { action: 6, floating-nav: 10, security-card: 16 }
   components:
-    security-environment-card: { type: card, bg: "#ffffff", radius: "16px", padding: "40px 32px 54px", use: "Static security environment card; surface-5::li.Security_securityEnvironmentList__3CRP0" }
-    ai-environment-card: { type: card, bg: "#ffffff", radius: "16px", padding: "40px 32px 54px", use: "Static AI environment card; surface-6::li.JandiAi_aiEnvironmentList__2ng2t" }
+    security-environment-card: { type: card, bg: "#ffffff", radius: "16px", padding: "40px 32px 54px", shadow: "rgba(0, 18, 47, 0.08) 0px 14px 24px 0px", use: "Static security environment card; surface-5::li.Security_securityEnvironmentList__3CRP0; its text sits in children (h3 #333333 24px / 700 / 34px, p #333333 16px / 400 / 24px)" }
+    ai-environment-card: { type: card, bg: "#ffffff", radius: "16px", padding: "40px 32px 54px", shadow: "rgba(0, 18, 47, 0.16) 0px 14px 24px 0px", use: "Static AI environment card; surface-6::li.JandiAi_aiEnvironmentList__2ng2t; its text sits in children (strong #333333 40px / 700 / 42px, h3 24px / 700 / 34px, p 16px / 400 / 24px)" }
+    header-primary-action: { type: button, bg: "#00c473", fg: "#ffffff", border: "1px #00c473", radius: "6px", padding: "7px 14px", height: "36px", font: "14px / 500 / 20px Noto Sans", states: "rest on all six capture records (capture 10 on each); the bundle holds no state frame for any JANDI element", use: "Global navigation primary action (a) at home::[data-omd-capture=\"10\"], 69 x 36; the same values repeat on surface-2 through surface-6" }
+    header-outline-action: { type: button, bg: "transparent", fg: "#000000", border: "1px #dddddd", radius: "6px", padding: "7px 14px", height: "36px", font: "14px / 500 / 20px Noto Sans", states: "rest on all six capture records (capture 9 on each); no state frame", use: "Global navigation outline action (a) beside the primary action at home::[data-omd-capture=\"9\"], 82 x 36" }
+    header-nav-link: { type: tab, bg: "transparent", fg: "#333333", radius: "0px", padding: "8px 14px", height: "36px", font: "14px / 500 / 20px Noto Sans", states: "rest on eight menu links (capture 1-8) on all six capture records; no link records a different value and no state frame exists", use: "Global navigation menu link (a) at home::[data-omd-capture=\"1\"]; the label is the a itself, while its li records the inherited #000000 14px / 400 text and is not read as the label" }
+    landing-white-action: { type: button, bg: "#ffffff", fg: "#041911", radius: "6px", padding: "12px 30px", height: "44px", font: "15px / 500 / 20px Noto Sans", states: "rest on two links on the landing record (capture 19, 20; surface-2 repeats them); no state frame", use: "White landing action (a) at home::[data-omd-capture=\"19\"], 115 x 44" }
+    feature-floating-nav-button: { type: button, bg: "transparent", radius: "10px", padding: "12px", size: "105px x 105px", states: "rest on five buttons on the collaboration page (capture 11-15) and four on the member page (capture 11-14); no state frame", use: "Floating feature-navigation item (div, role button) at surface-3::[data-omd-capture=\"11\"], set in a white bar (div.floatingNavButtonContainer: bg #ffffff, padding 0px 120px; inner gap 8px); its #000000 16px / 400 / 16px equals the page body text, so no label style is claimed" }
+    security-accordion-button: { type: button, bg: "transparent", fg: "#a2a2a2", radius: "0px", padding: "16px 0px", height: "62px", font: "20px / 700 / 30px Noto Sans", states: "rest on eight buttons in two groups (capture 12-15, 17-20); the first button of each group (capture 11, 16) records fg #00c473, 32px / 700 / 46px and padding 0px 0px 16px and is the only one followed by a captured description paragraph; the bundle records no aria-expanded or aria-selected on these buttons, so that variant is described, not declared as a state; no state frame", use: "Security-page accordion button (button.Security_accordionButton__2zHEj) at surface-5::[data-omd-capture=\"12\"], 460 x 62" }
+    ai-faq-question-button: { type: button, bg: "transparent", fg: "#333333", radius: "0px", padding: "24px 0px", height: "76px", font: "20px / 400 / 28px Noto Sans", states: "rest on five question buttons (capture 11-15); capture 11 carries an extra class but records the same values, so no variant is declared; no state frame", use: "JANDI AI page FAQ question button at surface-6::[data-omd-capture=\"12\"], each in a 1200 x 76 li" }
+    bottom-banner-pill-link: { type: button, fg: "#041911", radius: "50px", padding: "12px 30px", height: "44px", font: "15px / 500 / 20px Noto Sans", states: "rest on two links on the security page (capture 25, 26) and two on the AI page (capture 16, 17); no state frame", use: "Bottom-banner pill link (a.JndLink_green__3tVcD) at surface-5::[data-omd-capture=\"25\"], 115 x 44; its background-color computes transparent and background-image is not among the captured properties, so no fill is claimed" }
+    footer-sitemap-link: { type: listItem, fg: "#ffffff", padding: "8px 0px", height: "36px", font: "13px / 700 / 20px Noto Sans", states: "rest on 21 links (capture 21-41); no state frame", use: "Footer sitemap link: the label a at home::[data-omd-capture=\"22\"] sits in a 120 x 36 li with 8px 0px padding; the footer background is not among the captured elements" }
+    footer-info-toggle: { type: button, bg: "transparent", fg: "#a2a2a2", radius: "0px", padding: "5px 0px", height: "36px", font: "14px / 400 / 26px Noto Sans", states: "rest on one button per capture record (home and surface-2 capture 43, surface-3 40, surface-4 39, surface-5 49, surface-6 40); no state frame", use: "Footer text button at home::[data-omd-capture=\"43\"], 83 x 36, beside the #a2a2a2 13px / 400 / 20px company-information lines" }
+    ai-partner-card: { type: card, bg: "#ffffff", fg: "#333333", radius: "16px", padding: "8px 16px 24px", size: "382px x 369px", font: "16px / 400 / 30px Noto Sans", states: "three cards captured at rest; no state frame", use: "JANDI AI partner card (li.JandiAi_aiPartnerCardItem__15AOx, 16px radius, 382 x 369): a 382 x 210 image block over a content block (div.JandiAi_aiPartnerCardContents__3H6Wk: bg #ffffff, padding 8px 16px 24px) holding a logo and a #333333 16px / 400 / 30px description (p)" }
   components_harvested: true
 ---
 
@@ -129,6 +238,7 @@ The product is evolving beyond messaging. Toss Lab’s June 2026 Project 2.0 ann
 - `#333333` — observed supporting text on public feature, security, and AI content.
 - `#a2a2a2` — observed muted public text and static accordion-button presentation.
 - `#041911` — observed text on the white landing and pill-link actions.
+- Component-local, recorded in §4 and not promoted to a palette role: `#dddddd`, the 1px border of the global outline action.
 
 These are public-surface roles only. Neither the documentation centre nor the announced authenticated project experience contributes a semantic application palette.
 
@@ -142,7 +252,7 @@ These are public-surface roles only. Neither the documentation centre nor the an
 
 ## 4. Components
 
-All entries below retain the supplied surface and selector provenance. They are static computed-style observations, not a reusable authenticated-product library. The bundle records zero interaction events, interaction kinds, and observed states; no hover, pressed, focus, disabled, error, dialog, menu, or responsive variant is documented.
+All entries below retain the supplied surface and selector provenance. They are static computed-style observations, not a reusable authenticated-product library. The bundle holds no `::state-*` frame for any element on any of the six records, so hover, pressed, and focus values are not declared; disabled, error, dialog, menu, and responsive variants were not observed. Corrected 2026-09-30: the July text gave the zero interaction count as the reason; that count covers menu, dialog, and tab expansions only.
 
 ### Global navigation action
 
@@ -153,7 +263,7 @@ All entries below retain the supplied surface and selector provenance. They are 
 - Radius: `6px`
 - Padding: `7px 14px`
 - Font: `14px / 500 / Noto Sans`
-- Use: repeated public global navigation action; evidence `home::[data-omd-capture="10"]` and the corresponding selector on `surface-2` through `surface-6`.
+- Use: repeated public global navigation action (`header-primary-action`, 69px × 36px); evidence `home::[data-omd-capture="10"]` and the corresponding selector on `surface-2` through `surface-6`.
 
 ### Landing action
 
@@ -163,36 +273,107 @@ All entries below retain the supplied surface and selector provenance. They are 
 - Radius: `6px`
 - Padding: `12px 30px`
 - Font: `15px / 500 / Noto Sans`
-- Use: static white landing action on the duplicated landing records; evidence `home::[data-omd-capture="19"]` and `surface-2::[data-omd-capture="19"]`.
+- Use: static white landing action on the duplicated landing records (`landing-white-action`, 115px × 44px, line height 20px); evidence `home::[data-omd-capture="19"]`, `"20"` and `surface-2::[data-omd-capture="19"]`.
 
 ### Feature floating navigation
 
 **Static default**
-- Text: `#000000`
+- Background: transparent, inside a white bar (`div.floatingNavButtonContainer`: `#ffffff`, padding `0px 120px`; inner gap `8px`)
 - Radius: `10px`
 - Padding: `12px`
-- Font: `16px / 400 / Noto Sans`
-- Use: static `role="button"` floating feature-navigation item; evidence `surface-3::[data-omd-capture="11"]` (`Collaboration_icon1__cFiWm`) and `surface-4::[data-omd-capture="11"]` (`Member_icon1__MIU61`).
+- Size: 105px × 105px
+- Label: not claimed. Corrected 2026-09-30: the July entry gave `#000000` text and `16px / 400 / Noto Sans` type; those equal the page body's inherited text (the body records `#000000`, 16px / 400 / 16px), so they describe the item as a container, and its label was not sampled.
+- Use: static `role="button"` floating feature-navigation item (`feature-floating-nav-button`); evidence `surface-3::[data-omd-capture="11"]` through `"15"` (`Collaboration_icon1__cFiWm` onward) and `surface-4::[data-omd-capture="11"]` through `"14"` (`Member_icon1__MIU61` onward).
 
 ### Security environment card
 
 **Static default**
 - Background: `#ffffff`
-- Text: `#000000`
 - Radius: `16px`
 - Padding: `40px 32px 54px`
-- Font: `16px / 400 / Noto Sans`
+- Shadow: `rgba(0, 18, 47, 0.08) 0px 14px 24px 0px`
+- Size: 379px × 334px (three cards)
+- Text (children): a `#333333` 24px / 700 / 34px title (`h3`) and a `#333333` 16px / 400 / 24px description (`p`), under an empty 40px icon holder (`strong`).
 - Use: static security-environment card; evidence `surface-5::li.Security_securityEnvironmentList__3CRP0`.
+- Corrected 2026-09-30: the July entry gave the card `#000000` text and `16px / 400` type, the page body's inherited values on the `li` container (line height 16px); the text sits in the children above. It also left out the card's measured shadow, which the frontmatter now carries on this card only.
 
 ### AI environment card
 
 **Static default**
 - Background: `#ffffff`
-- Text: `#000000`
 - Radius: `16px`
 - Padding: `40px 32px 54px`
-- Font: `16px / 400 / Noto Sans`
+- Shadow: `rgba(0, 18, 47, 0.16) 0px 14px 24px 0px`, twice the security card's shadow alpha
+- Size: 276px × 358px (four cards)
+- Text (children): a `#333333` 40px / 700 / 42px label (`strong`), a 24px / 700 / 34px title (`h3`) and a 16px / 400 / 24px description (`p`), all `#333333`.
 - Use: static AI-environment card; evidence `surface-6::li.JandiAi_aiEnvironmentList__2ng2t`.
+- Corrected 2026-09-30: as with the security card, the July `#000000` / `16px / 400` values were the container's inherited text, and the measured shadow was left out.
+
+### Global navigation outline action
+
+**Default** (`header-outline-action`)
+- Background: transparent
+- Text: `#000000`
+- Border: 1px `#dddddd`
+- Radius: `6px`
+- Padding: `7px 14px`
+- Size: 82px × 36px
+- Font: `14px / 500 / 20px Noto Sans`
+- Use: the outline action beside the green primary action; `home::[data-omd-capture="9"]`, with the same values on all six records.
+
+### Global navigation menu link
+
+**Default** (`header-nav-link`)
+- Text: `#333333`
+- Padding: `8px 14px`
+- Height: 36px
+- Font: `14px / 500 / 20px Noto Sans`
+- Use: eight menu links, `home::[data-omd-capture="1"]` through `"8"`, identical on all six records. The label is the link itself; its `li` records the inherited `#000000` 14px / 400 text and is not read as the label.
+
+### Security accordion button
+
+**Default** (`security-accordion-button`)
+- Background: transparent
+- Text: `#a2a2a2`
+- Padding: `16px 0px`
+- Size: 460px × 62px
+- Font: `20px / 700 / 30px Noto Sans`
+- Variant: the first button of each of the two groups (`surface-5::[data-omd-capture="11"]`, `"16"`) records `#00c473`, 32px / 700 / 46px and padding `0px 0px 16px`, and it is the only button followed by a captured description paragraph (`#333333` 16px / 400 / 30px). The bundle records no `aria-expanded` or `aria-selected` on these buttons, so the variant is described here, not declared as a state.
+- Use: `surface-5::[data-omd-capture="12"]` through `"15"` and `"17"` through `"20"` (`button.Security_accordionButton__2zHEj`).
+
+### JANDI AI FAQ question
+
+**Default** (`ai-faq-question-button`)
+- Background: transparent
+- Text: `#333333`
+- Padding: `24px 0px`
+- Height: 76px, each inside a 1200px × 76px `li`
+- Font: `20px / 400 / 28px Noto Sans`
+- Use: five question buttons, `surface-6::[data-omd-capture="11"]` through `"15"`. The first carries an extra class (`JandiAi_faqActive__vQl-v`) but records the same values, so no variant is declared.
+
+### JANDI AI partner card
+
+**Static default** (`ai-partner-card`)
+- Card: a 382px × 369px `li` with a 16px radius; a 382px × 210px image block sits above the content block.
+- Content block: background `#ffffff`, padding `8px 16px 24px`, holding a logo and a `#333333` 16px / 400 / 30px description (`p`).
+- Use: three cards, `surface-6::li.JandiAi_aiPartnerCardItem__15AOx`.
+
+### Bottom-banner pill link
+
+**Default** (`bottom-banner-pill-link`)
+- Text: `#041911`
+- Radius: `50px`
+- Padding: `12px 30px`
+- Size: 115px × 44px (132px wide for a longer label)
+- Font: `15px / 500 / 20px Noto Sans`
+- Fill: not claimed. The background colour computes transparent, and background-image is not among the captured properties; class names are not read as colours.
+- Use: `surface-5::[data-omd-capture="25"]`, `"26"` and `surface-6::[data-omd-capture="16"]`, `"17"`. On the collaboration page, `a.JndLink_linkBtn__2MwSk` (`surface-3` `"16"`, `"17"`) has the same text, padding and size with a 0px radius.
+
+### Footer
+
+**Sitemap link** (`footer-sitemap-link`): a `#ffffff` 13px / 700 / 20px label in a 120px × 36px `li` with `8px 0px` padding; 21 links, `home::[data-omd-capture="21"]` through `"41"`. The footer background is not among the captured elements.
+
+**Text button** (`footer-info-toggle`): transparent, `#a2a2a2`, padding `5px 0px`, 83px × 36px, 14px / 400 / 26px; one per record (`home::[data-omd-capture="43"]`), beside `#a2a2a2` 13px / 400 / 20px company-information lines.
 
 ---
 
@@ -201,7 +382,7 @@ All entries below retain the supplied surface and selector provenance. They are 
 **Tier 2 sources:** `https://getdesign.md/jandi` (attempted; built-in-web open returned an internal error/no usable JANDI record), `https://styles.refero.design/?q=jandi` (attempted; built-in-web open returned an internal error/no usable JANDI record), built-in web search for both catalogs (no usable JANDI design record returned)
 **Conflicts unresolved:** none
 
-The previous legacy material asserted a `/ko/pricing` surface, pricing-card variants, interaction states, generic inputs, and a universal card-shadow system. None occurs in the supplied 2026-07-13 evidence, so those claims are removed rather than substituted.
+The previous legacy material asserted a `/ko/pricing` surface, pricing-card variants, interaction states, generic inputs, and a universal card-shadow system. None occurs in the supplied 2026-07-13 evidence, so those claims are removed rather than substituted. Corrected 2026-09-30: no universal shadow system occurs, but each environment card records its own shadow, which is now carried on those two cards only.
 
 ## 5. Iconography
 
@@ -260,7 +441,7 @@ No named or demographic personas are invented.
 
 ## 14. States
 
-No empty, loading, error, success, disabled, focus, or validation states were captured. The component appearances in §4 are static public-page observations, not behavioral state specifications.
+No empty, loading, error, success, disabled, focus, or validation states were captured, and the bundle holds no `::state-*` frame for any element. The component appearances in §4 are static public-page observations, not behavioral state specifications.
 
 ## 15. Motion & Easing
 

@@ -63,7 +63,6 @@ verification_v2:
     "tokens.rounded.billboard-control": *product
     "tokens.rounded.circular": *product
     "tokens.components.global-search.pressed": *product
-    "tokens.components.global-search.focus": *product
     "tokens.components.global-search.type": *product
     "tokens.components.global-search.bg": *product
     "tokens.components.global-search.fg": *product
@@ -83,7 +82,8 @@ verification_v2:
     "tokens.components.billboard-control.use": *product
     "tokens.components.deal-card.type": *product
     "tokens.components.deal-card.bg": *product
-    "tokens.components.deal-card.fg": *product
+    "tokens.components.deal-card.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
+    "tokens.components.deal-card.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::div", captured: "2026-07-13" }
     "tokens.components.deal-card.radius": *product
     "tokens.components.deal-card.shadow": *product
     "tokens.components.deal-card.states": *product
@@ -94,6 +94,86 @@ verification_v2:
     "tokens.components.header-inventory-dialog.radius": *product
     "tokens.components.header-inventory-dialog.states": *product
     "tokens.components.header-inventory-dialog.use": *product
+    "tokens.components.gnb-category-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-category-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-side-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-side-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-side-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-side-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-side-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-side-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-side-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-side-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-side-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.header-list-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.header-list-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.header-list-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.header-list-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.header-list-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.header-list-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.header-list-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.header-list-link.hover": { surface_id: home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"3\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.header-list-link.pressed": { surface_id: home, source_id: home-capture, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"3\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.header-list-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.header-list-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.icon-text-tile.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"117\"]", captured: "2026-07-13" }
+    "tokens.components.icon-text-tile.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"117\"]", captured: "2026-07-13" }
+    "tokens.components.icon-text-tile.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"117\"]", captured: "2026-07-13" }
+    "tokens.components.icon-text-tile.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"117\"]", captured: "2026-07-13" }
+    "tokens.components.icon-text-tile.size": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"117\"]", captured: "2026-07-13" }
+    "tokens.components.icon-text-tile.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"117\"]", captured: "2026-07-13" }
+    "tokens.components.icon-text-tile.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"117\"]", captured: "2026-07-13" }
+    "tokens.components.wing-top-button.type": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"120\"]", captured: "2026-07-13" }
+    "tokens.components.wing-top-button.bg": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"120\"]", captured: "2026-07-13" }
+    "tokens.components.wing-top-button.radius": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"120\"]", captured: "2026-07-13" }
+    "tokens.components.wing-top-button.size": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"120\"]", captured: "2026-07-13" }
+    "tokens.components.wing-top-button.states": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"120\"]", captured: "2026-07-13" }
+    "tokens.components.wing-top-button.use": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"120\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.type": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"121\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.bg": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"121\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.fg": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"121\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.radius": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"121\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.padding": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"121\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.height": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"121\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.font": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"121\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.states": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"121\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.use": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"121\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.type": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.bg": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.fg": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.border": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.radius": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.padding": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.height": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.font": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.states": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.footer-outline-button.use": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"130\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.type": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"133\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.bg": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"133\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.fg": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"133\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.border": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"133\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.radius": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"133\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.padding": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"133\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.height": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"133\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.font": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"133\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.states": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"133\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.use": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"133\"]", captured: "2026-07-13" }
+    "tokens.components.footer-contact-button.type": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.footer-contact-button.bg": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.footer-contact-button.fg": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.footer-contact-button.radius": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.footer-contact-button.padding": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.footer-contact-button.height": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.footer-contact-button.font": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.footer-contact-button.states": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
+    "tokens.components.footer-contact-button.use": { surface_id: main, source_id: main-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"135\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -115,10 +195,19 @@ tokens:
   spacing: { xs: 4, sm: 8, md: 12, lg: 20 }
   rounded: { square: 0, card: 4, billboard-control: 50, circular: 9999 }
   components:
-    global-search: { type: input, bg: "transparent", fg: "#666666", radius: "0px", height: "44px", font: "18px / 400 Noto Sans KR", states: "focus and pressed samples change foreground to #111111; no flow transition inferred", use: "Product home and /main; selector home::[data-omd-capture=1]" , pressed: "#111111", focus: "#111111"}
+    global-search: { type: input, bg: "transparent", fg: "#666666", radius: "0px", height: "44px", font: "18px / 400 Noto Sans KR", states: "pressed samples on home and /main change foreground to #111111; focus not declared (the bundle records its focus frames after a press, so they are not a focus-visible sample); no flow transition inferred", use: "Product home and /main; selector home::[data-omd-capture=1]" , pressed: "#111111"}
     billboard-control: { type: button, bg: "#ffffff", fg: "#999999", border: "1px solid #eeeeee", radius: "50px", height: "50px", font: "17px / 400 Noto Sans KR", states: "default only; no interaction transition captured", use: "Product home and /main billboard control; selector home::[data-omd-capture=109]" }
-    deal-card: { type: card, bg: "#ffffff", fg: "#666666", radius: "4px", shadow: "rgba(0,0,0,0.06) 0px 2px 10px -2px, rgba(0,0,0,0.28) 0px 0px 1px", states: "default only; no hover contract captured", use: "Home deal card; selector home::div.c-card-item.c-card-item--deal.c-card-item--box" }
+    deal-card: { type: card, bg: "#ffffff", fg: "#111111", radius: "4px", font: "15px / 400 Noto Sans KR", shadow: "rgba(0,0,0,0.06) 0px 2px 10px -2px, rgba(0,0,0,0.28) 0px 0px 1px", states: "default only; hover not sampled. Text colour and font are the card name line (div.c-card-item__name, line height 22.5px), corrected 2026-09-30", use: "Home deal card; selector home::div.c-card-item.c-card-item--deal.c-card-item--box" }
     header-inventory-dialog: { type: dialog, bg: "#ffffff", fg: "#666666", radius: "0px", states: "dialog-open observed after the menu trigger on home and /main", use: "Header inventory dialog; selector home::[data-omd-interaction-capture=dialog-0-0]" }
+    gnb-category-link: { type: tab, bg: "transparent", fg: "#111111", radius: "0px", padding: "0px", height: "66px", font: "17px / 700 11StreetGothic", states: "rest captured on home and /main (captures 12-18 on each route); no state frame in the bundle", use: "Header category link set in the brand face, home::[data-omd-capture=\"12\"]; line height 66px, the height of the row" }
+    gnb-side-link: { type: tab, bg: "transparent", fg: "#111111", radius: "0px", padding: "0px", height: "21px", font: "14px / 400 Noto Sans KR", states: "rest captured on home and /main (captures 19 and 20 on each route); no state frame in the bundle", use: "Header link to the right of the category links, home::[data-omd-capture=\"19\"]; line height 21px; its list item (class line) adds 14px left padding" }
+    header-list-link: { type: button, bg: "transparent", fg: "#666666", radius: "0px", padding: "0px", height: "24px", font: "14px / 400 Noto Sans KR", hover: "fg #ff0038", pressed: "fg #ff0038", states: "rest on four links (captures 3 and 4 on home and /main); hover and pressed sampled on three of them (6 frames), each recording colour #666666 to #ff0038 and nothing else; focus not sampled", use: "Header text link, 147 px wide, in the two-row list between the search button (capture 2) and the button with class raking_button (capture 5), home::[data-omd-capture=\"3\"]; line height 21px" }
+    icon-text-tile: { type: card, bg: "#ffffff", radius: "27px", padding: "90px 0px 0px", size: "166px x 103px", states: "six captured at rest on home (captures 117-122); no state frame in the bundle", use: "Home icon-and-text shortcut tile (a.c-icontext), home::[data-omd-capture=\"117\"]. The anchor computes font-size 0px, so its label sits in a child outside the dump and no label style is declared. The more tile (button.c-icontext--more, capture 123) shares the background, radius and padding at 166 x 126" }
+    wing-top-button: { type: button, bg: "#000000", radius: "50%", size: "60px x 60px", states: "one captured at rest on /main; no state frame in the bundle", use: "Circular button with class c_wing_top on /main, surface-2::[data-omd-capture=\"120\"]; its label text is visually hidden (line height 200px), so no label style is declared" }
+    footer-menu-link: { type: button, bg: "transparent", fg: "#333333", radius: "0px", padding: "0px", height: "20px", font: "14px / 400 Noto Sans KR", states: "nine captured at rest on /main (captures 121-129); no state frame in the bundle", use: "Footer menu link (a.lk_f_menu) on /main, surface-2::[data-omd-capture=\"121\"]; line height 21px" }
+    footer-outline-button: { type: button, bg: "transparent", fg: "#111111", border: "1px #cccccc", radius: "0px", padding: "0px 35px 0px 10px", height: "36px", font: "14px / 400 Noto Sans KR", states: "two captured at rest on /main (captures 130 and 131, both 175 px wide); no state frame in the bundle", use: "Footer outlined button on /main, surface-2::[data-omd-capture=\"130\"]; line height 21px" }
+    footer-bordered-link: { type: button, bg: "transparent", fg: "#111111", border: "1px #eeeeee", radius: "0px", padding: "0px 6px", height: "24px", font: "12px / 400 Noto Sans KR", states: "two captured at rest on /main (captures 133 and 134); no state frame in the bundle", use: "Small bordered footer link on /main, surface-2::[data-omd-capture=\"133\"]; line height 22px" }
+    footer-contact-button: { type: button, bg: "transparent", fg: "#111111", radius: "0px", padding: "0px", height: "20px", font: "14px / 700 Noto Sans KR", states: "one captured at rest on /main; no state frame in the bundle", use: "Bold footer text button (button.c-footer-contact__button) on /main, surface-2::[data-omd-capture=\"135\"]; line height 20px" }
   components_harvested: true
 ---
 
@@ -140,7 +229,7 @@ The official brand presentation is broader than the captured web palette. It des
 ## 2. Color Palette & Roles
 
 - **Canvas — `#FFFFFF`:** observed white surface on public product routes and the header-inventory dialog.
-- **Foreground — `#111111`:** repeated dark text and the focused/pressed global-search foreground.
+- **Foreground — `#111111`:** repeated dark text and the pressed global-search foreground.
 - **Body — `#666666`:** repeated default text, borders, buttons, list items, and dialog text across home and `/main`.
 - **Brand red — `#FF0038`:** observed product-route text and border color, including the home deal-card rate sample. The capture does not establish it as a universal filled CTA background.
 - **Muted — `#A9A9A9`:** home deal-card struck-price text sample.
@@ -178,7 +267,7 @@ The official advertising-production guide allows 11Street Gothic-Kor and Noto Sa
 - Height: `44px`
 - Font: `18px / 400 Noto Sans KR`
 - Use: Public product home and `/main`; `home::[data-omd-capture="1"]`, `.search_text.search_text_ad`.
-- Focus: foreground `#111111` in the captured focus sample.
+- Focus: not declared. The bundle records its focus frames after a press, so they are not a focus-visible sample (July value withdrawn 2026-09-30).
 - Pressed: foreground `#111111` in the captured pressed sample.
 
 ### Billboard control
@@ -196,12 +285,13 @@ The official advertising-production guide allows 11Street Gothic-Kor and Noto Sa
 
 **Default**
 - Background: `#ffffff`
-- Text: `#666666`
+- Text: `#111111` (the card name line, `div.c-card-item__name`)
+- Font: `15px / 400 Noto Sans KR`, line height 22.5px (card name)
 - Radius: `4px`
 - Shadow: `rgba(0,0,0,0.06) 0px 2px 10px -2px, rgba(0,0,0,0.28) 0px 0px 1px`
 - Use: Home deal card; `home::div.c-card-item.c-card-item--deal.c-card-item--box` (16 observed occurrences).
 
-The card’s observed price is `#111111`, `16px / 400`, with `Lato New` first; its observed struck-price is `#A9A9A9`, `13px / 400`, also with `Lato New` first. No hover, selection, loading, or purchase state is claimed for this card.
+The card’s observed price is `#111111`, `16px / 400`, with `Lato New` first; its observed struck-price is `#A9A9A9`, `13px / 400`, also with `Lato New` first. Hover, selection, loading and purchase states were not sampled for this card, so none is claimed. Corrected 2026-09-30: the July text gave the card's text colour as `#666666`, the card container's own inherited colour (the container computes font-size 0px and holds no text of its own). `#666666` remains the colour of the card's benefit and delivery lines (13px / 400).
 
 ### Header inventory dialog
 
@@ -214,9 +304,106 @@ The card’s observed price is `#111111`, `16px / 400`, with `Lato New` first; i
 
 The collector records two menu-to-dialog interaction expansions. It does not establish further dialog variants, focus management, close behavior beyond the observed close control, or a generic overlay pattern.
 
+The sections below were added on 2026-09-30 from the same 2026-07-13 bundle (bundle-only; no new capture). The category URL (bundle `surface-3`) rendered an error page (five elements: paragraphs with the classes `errImg` and `MsgImg` and two anchors, all 12px 돋움), so no component is taken from it.
+
+### Header category link
+
+**Default**
+- Background: transparent
+- Text: `#111111`
+- Radius: `0px`
+- Padding: `0px`
+- Height: `66px`
+- Font: `17px / 700 11StreetGothic`, line height 66px (the height of the row)
+- Use: header category links on home and `/main` (captures 12-18 on each route); `home::[data-omd-capture="12"]`.
+- States: the bundle holds no state frame for these links; none is declared.
+
+### Header side link
+
+**Default**
+- Background: transparent
+- Text: `#111111`
+- Radius: `0px`
+- Height: `21px`
+- Font: `14px / 400 Noto Sans KR`, line height 21px
+- Use: the links to the right of the category links (captures 19 and 20 on home and `/main`); `home::[data-omd-capture="19"]`. Their list item (`li.line`) adds 14px of left padding.
+
+### Header list link
+
+**Default and pointer states**
+- Background: transparent
+- Text: `#666666`
+- Radius: `0px`
+- Height: `24px` (147 px wide)
+- Font: `14px / 400 Noto Sans KR`, line height 21px
+- Hover: fg `#ff0038`
+- Pressed: fg `#ff0038`
+- Use: the two-row header list between the search button (capture 2) and the button with class `raking_button` (capture 5); `home::[data-omd-capture="3"]`, four links across home and `/main`.
+- Evidence: three of the four links carry hover and pressed frames (6 frames); each records colour `#666666` to `#ff0038` and nothing else. `#ff0038` is the brand red, also the rest colour of the deal card's discount rate. Focus was not sampled.
+
+### Icon-and-text shortcut tile
+
+**Default**
+- Background: `#ffffff`
+- Radius: `27px`
+- Padding: `90px 0px 0px` (the icon area)
+- Size: `166px x 103px`
+- Use: six home shortcut tiles (`a.c-icontext`, captures 117-122); `home::[data-omd-capture="117"]`. The more tile (`button.c-icontext--more`, capture 123) shares the background, radius and padding at 166 × 126.
+- Label: not declared. The anchors compute font-size 0px, so their labels sit in child elements outside the dump.
+
+### Wing top button
+
+**Default**
+- Background: `#000000`
+- Radius: `50%`
+- Size: `60px x 60px`
+- Use: circular button with class `c_wing_top` on `/main`; `surface-2::[data-omd-capture="120"]`. Its label text is visually hidden (line height 200px), so no label style is declared.
+
+### Footer menu link
+
+**Default**
+- Background: transparent
+- Text: `#333333`
+- Height: `20px`
+- Font: `14px / 400 Noto Sans KR`, line height 21px
+- Use: nine footer menu links (`a.lk_f_menu`) on `/main`; `surface-2::[data-omd-capture="121"]`.
+
+### Footer outlined button
+
+**Default**
+- Background: transparent
+- Text: `#111111`
+- Border: `1px #cccccc`
+- Radius: `0px`
+- Padding: `0px 35px 0px 10px`
+- Height: `36px` (175 px wide)
+- Font: `14px / 400 Noto Sans KR`, line height 21px
+- Use: two footer buttons on `/main`; `surface-2::[data-omd-capture="130"]`.
+
+### Footer bordered link
+
+**Default**
+- Background: transparent
+- Text: `#111111`
+- Border: `1px #eeeeee`
+- Radius: `0px`
+- Padding: `0px 6px`
+- Height: `24px`
+- Font: `12px / 400 Noto Sans KR`, line height 22px
+- Use: two small bordered footer links on `/main`; `surface-2::[data-omd-capture="133"]`.
+
+### Footer contact button
+
+**Default**
+- Background: transparent
+- Text: `#111111`
+- Height: `20px`
+- Font: `14px / 700 Noto Sans KR`, line height 20px
+- Use: bold footer text button (`button.c-footer-contact__button`) on `/main`; `surface-2::[data-omd-capture="135"]`.
+
 ---
 **Verified:** 2026-07-13
-**Tier 1 sources:** `https://www.11st.co.kr/` (product home), `https://www.11st.co.kr/main` (product home), `https://www.11st.co.kr/categories/1467565` (product category), `https://www.11stcorp.com/brand` (official identity, font asset, and font-use terms), `https://design.11stcorp.com/` (official design-system context), `https://www.11stcorp.com/resources/guide/2026_11street_Brochure_Kor.pdf` (official current company/history context), and `https://ads.11st.co.kr/contents/guide/read?bbsNo=617&incHideYN=Y` (official advertising-font guidance)
+**Tier 1 sources:** `https://www.11st.co.kr/` (product home), `https://www.11st.co.kr/main` (product home), `https://www.11st.co.kr/categories/1467565` (inspected 2026-07-13; the capture rendered an error page, so no value comes from it), `https://www.11stcorp.com/brand` (official identity, font asset, and font-use terms), `https://design.11stcorp.com/` (official design-system context), `https://www.11stcorp.com/resources/guide/2026_11street_Brochure_Kor.pdf` (official current company/history context), and `https://ads.11st.co.kr/contents/guide/read?bbsNo=617&incHideYN=Y` (official advertising-font guidance)
 **Tier 2 sources:** `https://getdesign.md/11st` (attempted; built-in web open returned no accessible record), `https://styles.refero.design/?q=11st` (attempted; built-in web open returned no accessible record), and built-in web search for both `11st` and `11번가` on each directory (no record returned)
 **Conflicts unresolved:** none
 
@@ -224,7 +411,7 @@ Legacy claims that promoted a `#F43142` discount token, filled primary/ghost CTA
 
 ## 5. Layout Principles
 
-The supplied evidence covers three public desktop routes at `1440×900`. It establishes a 44px search input, 50px billboard control, repeated header/list chrome, and the observed deal-card samples above. It does not establish a reusable grid width, breakpoint range, mobile composition, category hierarchy, seller tool, cart, checkout, or account layout; those are deliberately omitted rather than inferred from an open-market category.
+The supplied evidence covers two public desktop routes at `1440×900` (a third, the category URL, rendered an error page). It establishes a 44px search input, 50px billboard control, repeated header/list chrome, and the observed deal-card samples above. It does not establish a reusable grid width, breakpoint range, mobile composition, category hierarchy, seller tool, cart, checkout, or account layout; those are deliberately omitted rather than inferred from an open-market category.
 
 ## 6. Depth & Elevation
 
@@ -252,7 +439,7 @@ No responsive capture was supplied. The only verified viewport is `1440×900`; n
 
 ## 9. Agent Prompt Guide
 
-Use only selector-backed public-web facts: a transparent 44px search field with `#666666` default text that becomes `#111111` in captured focus/pressed samples; a white 50px billboard control with `#999999` text, `#EEEEEE` border, and 50px radius; or the specifically observed home deal card. Do not ask an implementation to reproduce an unobserved purchase journey, brand-gradient campaign, or loaded font that the evidence does not support.
+Use only selector-backed public-web facts: a transparent 44px search field with `#666666` default text that becomes `#111111` in captured pressed samples; a white 50px billboard control with `#999999` text, `#EEEEEE` border, and 50px radius; or the specifically observed home deal card. Do not ask an implementation to reproduce an unobserved purchase journey, brand-gradient campaign, or loaded font that the evidence does not support.
 
 ## 10. Voice & Tone
 
@@ -279,9 +466,10 @@ The official brand page describes the logo as a minimal street sign: a visual gu
 | Observed state | Treatment | Evidence boundary |
 |---|---|---|
 | Search default | Transparent field, `#666666` text, 44px height | Public home and `/main` selector-backed sample |
-| Search focus | `#111111` foreground | Captured pseudo-state only |
 | Search pressed | `#111111` foreground | Captured pseudo-state only |
 | Header inventory dialog open | White, square, `#666666` text dialog | Two collector interaction expansions on home and `/main` |
+| Header list link hover | `#ff0038` foreground | Hover frames on three header list links, home and `/main` (added 2026-09-30) |
+| Header list link pressed | `#ff0038` foreground | Pressed frames on the same three links (added 2026-09-30) |
 
 No empty, loading, validation, disabled, cart, order, error, toast, or success state was captured, so none is specified.
 

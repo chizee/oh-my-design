@@ -38,12 +38,11 @@ verification_v2:
     "tokens.components.home-image-tab.height": *home_evidence
     "tokens.components.home-image-tab.padding": *home_evidence
     "tokens.components.home-image-tab.radius": *home_evidence
+    "tokens.components.home-image-tab.selected": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
     "tokens.components.home-image-tab.states": *home_evidence
     "tokens.components.home-image-tab.type": *home_evidence
     "tokens.components.home-image-tab.use": *home_evidence
     "tokens.components.product-card.bg": *home_evidence
-    "tokens.components.product-card.fg": *home_evidence
-    "tokens.components.product-card.font": *home_evidence
     "tokens.components.product-card.height": *home_evidence
     "tokens.components.product-card.padding": *home_evidence
     "tokens.components.product-card.radius": *home_evidence
@@ -89,6 +88,108 @@ verification_v2:
     "tokens.typography.tab-label.size": *home_evidence
     "tokens.typography.tab-label.use": *home_evidence
     "tokens.typography.tab-label.weight": *home_evidence
+    "tokens.components.gnb-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.hover": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"10\"]::state-hover", captured: "2026-07-13" }
+    "tokens.components.gnb-link.pressed": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"10\"]::state-pressed", captured: "2026-07-13" }
+    "tokens.components.gnb-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-link.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.header-icon-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.section-more-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.section-more-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.section-more-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.section-more-link.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.section-more-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.section-more-link.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.section-more-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.section-more-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.section-more-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.product-tag.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.product-tag.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.product-tag.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.product-tag.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.product-tag.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.product-tag.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.product-tag.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.product-tag.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.product-tag.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.recent-tab.type": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.recent-tab.bg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.recent-tab.fg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.recent-tab.radius": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.recent-tab.padding": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.recent-tab.height": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.recent-tab.font": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.recent-tab.selected": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"77\"]", captured: "2026-07-13" }
+    "tokens.components.recent-tab.states": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.recent-tab.use": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"76\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-menu-link.type": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"55\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-menu-link.bg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"55\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-menu-link.fg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"55\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-menu-link.radius": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"55\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-menu-link.padding": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"55\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-menu-link.height": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"55\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-menu-link.font": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"55\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-menu-link.states": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"55\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-menu-link.use": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"55\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-outline-link.type": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"74\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-outline-link.bg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"74\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-outline-link.fg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"74\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-outline-link.border": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"74\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-outline-link.radius": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"74\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-outline-link.padding": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"74\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-outline-link.size": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"74\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-outline-link.font": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"74\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-outline-link.states": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"74\"]", captured: "2026-07-13" }
+    "tokens.components.mylotte-outline-link.use": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"74\"]", captured: "2026-07-13" }
+    "tokens.components.outline-pill-link.type": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"78\"]", captured: "2026-07-13" }
+    "tokens.components.outline-pill-link.bg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"78\"]", captured: "2026-07-13" }
+    "tokens.components.outline-pill-link.border": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"78\"]", captured: "2026-07-13" }
+    "tokens.components.outline-pill-link.radius": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"78\"]", captured: "2026-07-13" }
+    "tokens.components.outline-pill-link.size": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"78\"]", captured: "2026-07-13" }
+    "tokens.components.outline-pill-link.states": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"78\"]", captured: "2026-07-13" }
+    "tokens.components.outline-pill-link.use": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"78\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.type": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"80\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.bg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"80\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.fg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"80\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.radius": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"80\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.padding": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"80\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.height": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"80\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.font": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"80\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.states": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"80\"]", captured: "2026-07-13" }
+    "tokens.components.footer-menu-link.use": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"80\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.type": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"94\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.bg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"94\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.fg": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"94\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.border": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.radius": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.padding": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.height": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::li", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.font": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"94\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.states": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"94\"]", captured: "2026-07-13" }
+    "tokens.components.footer-bordered-link.use": { surface_id: recent-products, source_id: recent-products-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"94\"]", captured: "2026-07-13" }
 
 tokens:
   source: live-extract
@@ -114,10 +215,21 @@ tokens:
     flat: "none"
   components_harvested: true
   components:
-    product-card: { type: card, bg: "transparent", fg: "#333333", radius: "0px", padding: "0px", height: "368px", font: "16px / 400", use: "Repeated home product-card container" }
-    home-image-tab: { type: tab, bg: "#ffffff", fg: "#666666", border: "1px solid #eeeeee", radius: "23px", padding: "0px 16px 0px 4px", height: "46px", font: "16px / 500", states: "default and selected captured; no hover, focus, pressed, disabled, or error values captured", use: "Home image-tab control" }
-    search-input: { type: input, bg: "transparent", fg: "#333333", radius: "0px", padding: "0px 28px 0px 0px", height: "30px", font: "16px / 400", states: "default captured; no hover, focus, pressed, disabled, or error values captured", use: "Home search field" }
-    recent-products-dropdown: { type: button, bg: "#ffffff", fg: "#333333", border: "1px solid #dddddd", radius: "0px", padding: "0px 38px 0px 16px", height: "32px", font: "13px / 400", states: "default captured; no hover, focus, pressed, disabled, or error values captured", use: "Recently viewed products dropdown trigger" }
+    product-card: { type: card, bg: "transparent", radius: "0px", padding: "0px", height: "368px", use: "Repeated home product-card container; its name, price and tags sit in child elements, so no label colour or font is declared (corrected 2026-09-30)" }
+    home-image-tab: { type: tab, bg: "#ffffff", fg: "#666666", border: "1px solid #eeeeee", radius: "23px", padding: "0px 16px 0px 4px", height: "46px", font: "16px / 500", selected: "bg #000000, fg #ffffff, border 1px #000000", states: "default and selected captured (aria-selected true on capture 147 and on three tab-interaction captures); hover, focus, pressed, disabled and error were not sampled", use: "Home image-tab control" }
+    search-input: { type: input, bg: "transparent", fg: "#333333", radius: "0px", padding: "0px 28px 0px 0px", height: "30px", font: "16px / 400", states: "default captured; hover, focus, pressed, disabled and error were not sampled", use: "Home search field" }
+    recent-products-dropdown: { type: button, bg: "#ffffff", fg: "#333333", border: "1px solid #dddddd", radius: "0px", padding: "0px 38px 0px 16px", height: "32px", font: "13px / 400", states: "default captured; hover, focus, pressed, disabled and error were not sampled", use: "Dropdown trigger in the recent-products page footer row (captures 89 and 90 at top 1690, below the content area that ends at 1675); corrected 2026-09-30 from a recently viewed products trigger" }
+    gnb-link: { type: tab, bg: "transparent", fg: "#333333", radius: "0px", padding: "0px", height: "19px", font: "16px / 400", hover: "fg #000000", pressed: "fg #000000", states: "rest on 22 header links (11 on home, 11 on recent products); hover and pressed sampled on 21 of them (42 frames), each recording colour #333333 to #000000 and nothing else; focus frames exist but are not declared", use: "Header navigation link, home::[data-omd-capture=\"10\"]; NotoSansKR, line height 50px (the height of the row), tracking -0.32px" }
+    header-utility-link: { type: button, bg: "transparent", fg: "#757575", radius: "0px", padding: "0px", height: "14px", font: "12px / 400", states: "three per route captured at rest on home and recent products; no state frame in the bundle", use: "Top utility link, home::[data-omd-capture=\"0\"]; NotoSansKR, line height 17px, tracking -0.2px" }
+    header-icon-link: { type: button, bg: "transparent", fg: "#333333", radius: "0px", padding: "37px 0px 0px", size: "74px x 56px", font: "13px / 400", states: "three per route captured at rest on home and recent products; no state frame in the bundle", use: "Header icon link with its label below the icon (a.heart and two siblings), home::[data-omd-capture=\"6\"]; the 37px top padding holds the icon; NotoSansKR, line height 18.98px, tracking -0.3px" }
+    section-more-link: { type: button, bg: "transparent", fg: "#757575", radius: "0px", padding: "0px 12px 0px 0px", height: "20px", font: "14px / 400", states: "one captured at rest on home; no state frame in the bundle", use: "Section heading more link (a.c-title__more), home::[data-omd-capture=\"146\"]; Pretendard, line height 20px" }
+    product-tag: { type: badge, bg: "#f5f5f5", fg: "#333333", radius: "0px", padding: "0px 4px", height: "21px", font: "12px / 400", states: "13 captured at rest in the home product cards; no state frame in the bundle", use: "Product-card tag: a list item that holds its own text, home::li (top 1407); Pretendard, line height 21px" }
+    recent-tab: { type: tab, bg: "#ffffff", fg: "#666666", radius: "0px", padding: "12px 16px", height: "52px", font: "20px / 500", selected: "fg #000000, 20px / 600", states: "two tabs captured on recent products: the rest tab (capture 76) and the tab with class active (capture 77); no state frame in the bundle", use: "Recent-products page tab (a.tab), surface-2::[data-omd-capture=\"76\"]; NotoSansKR, line height 28px, tracking -0.036px; each tab is 453 px wide" }
+    mylotte-menu-link: { type: tab, bg: "transparent", fg: "#757575", radius: "0px", padding: "0px", height: "21px", font: "14px / 400", states: "19 captured at rest on recent products (captures 55-73); no state frame in the bundle", use: "Account-page menu link on recent products, surface-2::[data-omd-capture=\"55\"]; NotoSansKR, line height 21px, tracking -0.42px" }
+    mylotte-outline-link: { type: button, bg: "transparent", fg: "#333333", border: "1px #dddddd", radius: "6px", padding: "0px", size: "178px x 40px", font: "13px / 400", states: "two captured at rest on recent products (captures 74 and 75); no state frame in the bundle", use: "Outlined link on recent products, surface-2::[data-omd-capture=\"74\"]; NotoSansKR, line height 38px, tracking -0.26px" }
+    outline-pill-link: { type: button, bg: "transparent", border: "1px #000000", radius: "24px", size: "242px x 48px", states: "one captured at rest on recent products; no state frame in the bundle", use: "Outlined pill link (a.anchor) in the recent-products content, surface-2::[data-omd-capture=\"78\"]. The anchor computes 16px / 400 with the 16px line height of the content area, which is inherited container type, so no label style is declared" }
+    footer-menu-link: { type: button, bg: "transparent", fg: "#333333", radius: "0px", padding: "0px", height: "15px", font: "13px / 400", states: "nine captured at rest on recent products (captures 80-88); capture 83 computes 700; no state frame in the bundle", use: "Footer menu link, surface-2::[data-omd-capture=\"80\"]; NotoSansKR, line height 21.32px, tracking -0.3px" }
+    footer-bordered-link: { type: button, bg: "transparent", fg: "#757575", border: "1px #dddddd", radius: "2px", padding: "0px 6px", height: "22px", font: "11px / 400", states: "four captured at rest on recent products (links 94-97 in bordered list items); no state frame in the bundle", use: "Small bordered footer link: the list item holds the border, radius, padding and 22px height, and the link inside it (surface-2::[data-omd-capture=\"94\"]) holds the text; NotoSansKR, line height 22px, tracking -0.1px" }
 ---
 
 # Design System Inspiration of 롯데ON
@@ -197,12 +309,11 @@ The three tokenized roles retain their measured sizes, weights, and line-height 
 **Home product-card container**
 - Type: card
 - Background: transparent
-- Text: `#333333`
 - Radius: 0px
 - Padding: 0px
 - Height: 368px
-- Font: 16px at weight 400
 - Use: repeated home product-card container
+- Corrected 2026-09-30: the July text gave this card `#333333` text and 16px / 400 type. Those are the container's own values: the card anchor (`a.c-product-card__url`) computes a 16px line height, the inherited type of the content area, and the name, price and tags sit in child elements (the tags are described below as Product tag). No label colour or font is declared for the container.
 
 ### Home Image Tab
 
@@ -215,7 +326,8 @@ The three tokenized roles retain their measured sizes, weights, and line-height 
 - Padding: 0px 16px 0px 4px
 - Height: 46px
 - Font: 16px at weight 500
-- States: default and selected captured; no hover, focus, pressed, disabled, or error values captured
+- Selected: bg `#000000`, fg `#ffffff`, border 1px `#000000` (`aria-selected` "true" on capture 147 and on the three tab-interaction captures)
+- States: default and selected captured; hover, focus, pressed, disabled and error were not sampled
 - Use: home image-tab control
 
 The selected sibling used `#000000` background and `#ffffff` text with the same 23px radius, 46px height, and padding. Only selected state changes were observed through three tab interactions.
@@ -230,7 +342,7 @@ The selected sibling used `#000000` background and `#ffffff` text with the same 
 - Padding: 0px 28px 0px 0px
 - Height: 30px
 - Font: 16px at weight 400
-- States: default captured; no hover, focus, pressed, disabled, or error values captured
+- States: default captured; hover, focus, pressed, disabled and error were not sampled
 - Use: home search field
 
 ### Recent Products Dropdown
@@ -244,10 +356,140 @@ The selected sibling used `#000000` background and `#ffffff` text with the same 
 - Padding: 0px 38px 0px 16px
 - Height: 32px
 - Font: 13px at weight 400
-- States: default captured; no hover, focus, pressed, disabled, or error values captured
-- Use: recently viewed products dropdown trigger
+- States: default captured; hover, focus, pressed, disabled and error were not sampled
+- Use: dropdown trigger in the recent-products page footer row (captures 89 and 90, top 1690)
+- Corrected 2026-09-30: the July text called this the recently viewed products dropdown. Both triggers sit at top 1690, below the page's content area (`main#content`, top 177, 1498 tall, ending at 1675) and beside the footer menu links (top 1698), so they belong to the footer. The key name is kept.
 
 The supplied evidence contains 38 component variants across card, listItem, button, input, and tab classifications. Static default geometry is retained even where no interaction-specific values were observed; only unobserved interactive states are omitted.
+
+The sections below were added on 2026-09-30 from the same 2026-07-13 bundle (bundle-only; no new capture).
+
+### Header Navigation Link
+
+**Default and pointer states**
+- Type: tab
+- Background: transparent
+- Text: `#333333`
+- Radius: 0px
+- Height: 19px (inline link in a 50px row)
+- Font: 16px at weight 400, NotoSansKR, line height 50px, tracking -0.32px
+- Hover: fg `#000000`
+- Pressed: fg `#000000`
+- Use: header navigation links, 11 on home and 11 on recent products; `home::[data-omd-capture="10"]`
+- Evidence: 21 of the 22 links carry hover, pressed and focus frames (63). Every hover and pressed frame (42) records colour `#333333` to `#000000` and nothing else; `#000000` is the primary colour of this reference. Focus frames exist but are not declared.
+
+### Header Utility Link
+
+**Default**
+- Type: button
+- Background: transparent
+- Text: `#757575`
+- Height: 14px
+- Font: 12px at weight 400, NotoSansKR, line height 17px, tracking -0.2px
+- Use: top utility links, three per route; `home::[data-omd-capture="0"]`
+
+### Header Icon Link
+
+**Default**
+- Type: button
+- Background: transparent
+- Text: `#333333`
+- Padding: 37px 0px 0px (the icon sits in the top padding)
+- Size: 74px x 56px
+- Font: 13px at weight 400, NotoSansKR, line height 18.98px, tracking -0.3px
+- Use: header icon links with the label below the icon, three per route; `home::[data-omd-capture="6"]`
+
+### Section More Link
+
+**Default**
+- Type: button
+- Background: transparent
+- Text: `#757575`
+- Padding: 0px 12px 0px 0px
+- Height: 20px
+- Font: 14px at weight 400, Pretendard, line height 20px
+- Use: more link beside a home section heading (`a.c-title__more`); `home::[data-omd-capture="146"]`
+
+### Product Tag
+
+**Default**
+- Type: badge
+- Background: `#f5f5f5`
+- Text: `#333333`
+- Radius: 0px
+- Padding: 0px 4px
+- Height: 21px
+- Font: 12px at weight 400, Pretendard, line height 21px
+- Use: 13 tags in the home product cards; each is a list item that holds its own text (`home::li`, top 1407)
+
+### Recent Products Tab
+
+**Default and selected**
+- Type: tab
+- Background: `#ffffff`
+- Text: `#666666`
+- Radius: 0px
+- Padding: 12px 16px
+- Height: 52px (453 px wide)
+- Font: 20px at weight 500, NotoSansKR, line height 28px, tracking -0.036px
+- Selected: fg `#000000`, 20px at weight 600 (the tab with class `active`, capture 77)
+- Use: the two tabs of the recent-products page; `surface-2::[data-omd-capture="76"]`. This is a separate tab group from the home image tab.
+
+### Account Menu Link
+
+**Default**
+- Type: tab
+- Background: transparent
+- Text: `#757575`
+- Height: 21px
+- Font: 14px at weight 400, NotoSansKR, line height 21px, tracking -0.42px
+- Use: 19 account-page menu links on recent products; `surface-2::[data-omd-capture="55"]`
+
+### Account Outlined Link
+
+**Default**
+- Type: button
+- Background: transparent
+- Text: `#333333`
+- Border: 1px `#dddddd`
+- Radius: 6px
+- Size: 178px x 40px
+- Font: 13px at weight 400, NotoSansKR, line height 38px, tracking -0.26px
+- Use: two outlined links on recent products; `surface-2::[data-omd-capture="74"]`
+
+### Outlined Pill Link
+
+**Default**
+- Type: button
+- Background: transparent
+- Border: 1px `#000000`
+- Radius: 24px
+- Size: 242px x 48px
+- Use: outlined pill link in the recent-products content (`a.anchor`); `surface-2::[data-omd-capture="78"]`
+- Label: not declared. The anchor computes 16px / 400 with the 16px line height of the content area, which is inherited container type.
+
+### Footer Menu Link
+
+**Default**
+- Type: button
+- Background: transparent
+- Text: `#333333`
+- Height: 15px
+- Font: 13px at weight 400, NotoSansKR, line height 21.32px, tracking -0.3px
+- Use: nine footer menu links on recent products; `surface-2::[data-omd-capture="80"]`. One of them (capture 83) computes weight 700.
+
+### Footer Bordered Link
+
+**Default**
+- Type: button
+- Background: transparent
+- Text: `#757575`
+- Border: 1px `#dddddd` (on the list item)
+- Radius: 2px
+- Padding: 0px 6px
+- Height: 22px
+- Font: 11px at weight 400, NotoSansKR, line height 22px, tracking -0.1px
+- Use: four small bordered footer links on recent products; the list item holds the border, radius and padding, and the link inside it (`surface-2::[data-omd-capture="94"]`) holds the text
 
 ---
 **Verified:** 2026-07-14
@@ -374,17 +616,18 @@ No age, income, motivation, task-success rate, or behavioral preference is infer
 | Tab selected | Home image tab: `#000000` background, `#ffffff` text; three selected-state interactions captured |
 | Search input default | Transparent background, `#333333` text, 30px height, 0px radius |
 | Dropdown default | `#ffffff` background, `#333333` text, 1px `#dddddd` border, 32px height |
-| Product card default | Transparent `#333333` information container, 0px radius, 368px height |
-| Hover | No hover value captured |
-| Focus | No focus value captured |
-| Pressed | No pressed value captured |
+| Product card default | Transparent container, 0px radius, 368px height; its text sits in child elements (corrected 2026-09-30) |
+| Recent products tab selected | `#000000` text at weight 600 on the tab with class `active` (added 2026-09-30) |
+| Hover | Header navigation link: fg `#000000` (corrected 2026-09-30; hover frames on 21 links across both routes) |
+| Focus | Focus frames exist on the header navigation links but are not declared: bundle focus frames are not a reliable focus-visible sample |
+| Pressed | Header navigation link: fg `#000000` (corrected 2026-09-30; pressed frames on the same 21 links) |
 | Disabled | No disabled value captured |
 | Error | No error value captured |
 | Empty | No empty-state capture |
 | Loading | No loading-state capture |
 | Success | No success-state capture |
 
-The interaction count of three supports the selected tab state only. It does not justify filling interactive-state values for buttons, inputs, or other tabs.
+The interaction count of three covers the tab expansions only. The pointer-state frames are separate: 63 on the header navigation links, of which the 42 hover and pressed frames are declared (corrected 2026-09-30). Neither justifies filling state values for other buttons, inputs, or tabs.
 
 ## 15. Motion & Easing
 

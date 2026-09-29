@@ -3,12 +3,12 @@
   "purpose": "Freeze what each reference claims to have observed, and when, so that relabelling a source kind, deleting an expired source, or rewriting a capture date appears as a reviewable diff.",
   "generator": "web/scripts/build-evidence-ledger.mjs",
   "references_with_verification_v2": 227,
-  "sources": 1286,
+  "sources": 1299,
   "sources_by_kind": {
     "brand-asset": 75,
     "license": 76,
     "official-doc": 543,
-    "product-surface": 592
+    "product-surface": 605
   },
   "references": {
     "104": {
@@ -3108,7 +3108,7 @@
       ]
     },
     "hyundaicard": {
-      "checked": "2026-07-13",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -3127,6 +3127,18 @@
           "id": "collector-home",
           "kind": "product-surface",
           "captured": "2026-07-13",
+          "host": "www.hyundaicard.com"
+        },
+        {
+          "id": "hyundaicard-probe-ceh",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.hyundaicard.com"
+        },
+        {
+          "id": "hyundaicard-probe-home",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
           "host": "www.hyundaicard.com"
         },
         {
@@ -3468,7 +3480,7 @@
       ]
     },
     "kakaobank": {
-      "checked": "2026-07-12",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -3487,6 +3499,24 @@
           "id": "home-live",
           "kind": "product-surface",
           "captured": "2026-07-12",
+          "host": "www.kakaobank.com"
+        },
+        {
+          "id": "kakaobank-probe-brand",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.kakaobank.com"
+        },
+        {
+          "id": "kakaobank-probe-home",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.kakaobank.com"
+        },
+        {
+          "id": "kakaobank-probe-service",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
           "host": "www.kakaobank.com"
         },
         {
@@ -4140,7 +4170,7 @@
       ]
     },
     "likelion": {
-      "checked": "2026-09-19",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -4172,6 +4202,18 @@
           "kind": "official-doc",
           "captured": "2026-09-19",
           "host": "designsystem.likelion.net"
+        },
+        {
+          "id": "likelion-probe-catalog",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "likelion.net"
+        },
+        {
+          "id": "likelion-probe-home",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "likelion.net"
         },
         {
           "id": "pretendard-license",
@@ -6960,7 +7002,7 @@
       ]
     },
     "socar": {
-      "checked": "2026-09-19",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -6998,6 +7040,18 @@
           "kind": "official-doc",
           "captured": "2026-09-19",
           "host": "design.socar.kr"
+        },
+        {
+          "id": "socar-probe-guide",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.socar.kr"
+        },
+        {
+          "id": "socar-probe-home",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.socar.kr"
         }
       ]
     },
@@ -7908,7 +7962,7 @@
       ]
     },
     "tossbank": {
-      "checked": "2026-07-13",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -7946,6 +8000,18 @@
           "kind": "official-doc",
           "captured": "2026-07-13",
           "host": "developers-apps-in-toss.toss.im"
+        },
+        {
+          "id": "tossbank-probe-disclosure",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.tossbank.com"
+        },
+        {
+          "id": "tossbank-probe-home",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.tossbank.com"
         },
         {
           "id": "tps-history",
@@ -8442,7 +8508,7 @@
       ]
     },
     "wanted": {
-      "checked": "2026-09-19",
+      "checked": "2026-09-29",
       "claims": 0,
       "sources": [
         {
@@ -8492,6 +8558,18 @@
           "kind": "official-doc",
           "captured": "2026-09-19",
           "host": "montage.wanted.co.kr"
+        },
+        {
+          "id": "wanted-probe-home",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.wanted.co.kr"
+        },
+        {
+          "id": "wanted-probe-jobs",
+          "kind": "product-surface",
+          "captured": "2026-09-29",
+          "host": "www.wanted.co.kr"
         }
       ]
     },

@@ -124,8 +124,96 @@ verification_v2:
     "tokens.components.category-panel.bg": *category
     "tokens.components.category-panel.radius": *category
     "tokens.components.category-panel.padding": *category
-    "tokens.components.category-panel.font": *category
     "tokens.components.category-panel.use": *category
+    "tokens.components.header-text-link.type": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-text-link.bg": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-text-link.fg": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.header-text-link.radius": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-text-link.padding": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-text-link.height": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-text-link.font": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.header-text-link.states": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.header-text-link.use": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.keyword-chip.type": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.keyword-chip.bg": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.keyword-chip.fg": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.keyword-chip.radius": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.keyword-chip.padding": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.keyword-chip.height": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.keyword-chip.font": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.keyword-chip.states": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.keyword-chip.use": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-07-13" }
+    "tokens.components.section-outline-link.type": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"42\"]", captured: "2026-07-13" }
+    "tokens.components.section-outline-link.bg": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"42\"]", captured: "2026-07-13" }
+    "tokens.components.section-outline-link.fg": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.section-outline-link.border": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"42\"]", captured: "2026-07-13" }
+    "tokens.components.section-outline-link.radius": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"42\"]", captured: "2026-07-13" }
+    "tokens.components.section-outline-link.padding": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"42\"]", captured: "2026-07-13" }
+    "tokens.components.section-outline-link.height": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"42\"]", captured: "2026-07-13" }
+    "tokens.components.section-outline-link.font": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.section-outline-link.states": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"42\"]", captured: "2026-07-13" }
+    "tokens.components.section-outline-link.use": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"42\"]", captured: "2026-07-13" }
+    "tokens.components.caption-tile.type": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.caption-tile.bg": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.caption-tile.fg": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.caption-tile.radius": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.caption-tile.size": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.caption-tile.font": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.caption-tile.states": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.caption-tile.use": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"66\"]", captured: "2026-07-13" }
+    "tokens.components.category-nav-link.type": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.category-nav-link.bg": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.category-nav-link.fg": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::p", captured: "2026-07-13" }
+    "tokens.components.category-nav-link.radius": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.category-nav-link.padding": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.category-nav-link.height": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.category-nav-link.font": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::p", captured: "2026-07-13" }
+    "tokens.components.category-nav-link.states": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.category-nav-link.use": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.category-link-card.type": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::li", captured: "2026-07-13" }
+    "tokens.components.category-link-card.bg": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::li", captured: "2026-07-13" }
+    "tokens.components.category-link-card.fg": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::h3", captured: "2026-07-13" }
+    "tokens.components.category-link-card.border": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::li", captured: "2026-07-13" }
+    "tokens.components.category-link-card.radius": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::li", captured: "2026-07-13" }
+    "tokens.components.category-link-card.padding": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.category-link-card.size": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::li", captured: "2026-07-13" }
+    "tokens.components.category-link-card.font": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::h3", captured: "2026-07-13" }
+    "tokens.components.category-link-card.states": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::li", captured: "2026-07-13" }
+    "tokens.components.category-link-card.use": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::li", captured: "2026-07-13" }
+    "tokens.components.pagination-button.type": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"141\"]", captured: "2026-07-13" }
+    "tokens.components.pagination-button.bg": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"141\"]", captured: "2026-07-13" }
+    "tokens.components.pagination-button.fg": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"141\"]", captured: "2026-07-13" }
+    "tokens.components.pagination-button.radius": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"141\"]", captured: "2026-07-13" }
+    "tokens.components.pagination-button.size": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"141\"]", captured: "2026-07-13" }
+    "tokens.components.pagination-button.selected": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"140\"]", captured: "2026-07-13" }
+    "tokens.components.pagination-button.states": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"141\"]", captured: "2026-07-13" }
+    "tokens.components.pagination-button.use": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"141\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.type": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.bg": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.fg": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.radius": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.padding": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.font": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.states": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.use": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"149\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-button.type": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-button.bg": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-button.fg": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-button.border": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-button.radius": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-button.padding": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-button.height": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-button.font": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-button.states": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-button.use": { surface_id: marketplace-category, source_id: category-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"147\"]", captured: "2026-07-13" }
+    "tokens.components.inline-text-link.type": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.inline-text-link.bg": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.inline-text-link.fg": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.inline-text-link.radius": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.inline-text-link.padding": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.inline-text-link.font": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.inline-text-link.states": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
+    "tokens.components.inline-text-link.use": { surface_id: marketplace-home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"146\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -161,7 +249,17 @@ tokens:
     home-search: { type: input, bg: "#ffffff", fg: "#212224", border: "1px solid #c8cad2", radius: "36px", padding: "0px 32px", height: "64px", font: "20px / 400 Pretendard", states: "default only; no interaction state captured", use: "Public home search shell/input, selectors home::form and home::[data-omd-capture=7]" }
     home-outline-cta: { type: button, bg: "#ffffff", fg: "#212224", border: "1px solid #c8cad2", radius: "8px", padding: "0px 24px", height: "52px", font: "16px / 500 Pretendard", states: "default only; no interaction state captured", use: "Public home outlined CTA, selector home::[data-omd-capture=145]" }
     category-filter-control: { type: button, bg: "#ffffff", fg: "#212224", border: "1px solid #e4e5ed", radius: "8px", padding: "0px 12px", height: "36px", font: "14px / 400 Pretendard", states: "default only; no interaction state captured", use: "Public category filter control, selector surface-3::[data-omd-capture=93]" }
-    category-panel: { type: card, bg: "#fafafc", radius: "12px", padding: "32px 24px", font: "16px / 400 Pretendard", use: "Public category-page panel, selector surface-3::article" }
+    category-panel: { type: card, bg: "#fafafc", radius: "12px", padding: "32px 24px", use: "Public category-page panel, selector surface-3::article; its text sits in child elements and the 16px / 400 it computes is the inherited body type, so no font is declared (corrected 2026-09-30)" }
+    header-text-link: { type: tab, bg: "transparent", fg: "#212224", radius: "0px", padding: "0px", height: "36px", font: "14px / 500 Pretendard", states: "three per capture at rest on both home captures and on category; no state frame in the bundle", use: "Header text link and link-styled buttons (home captures 3-5), home::[data-omd-capture=\"4\"]; colour and font are the child label p.font-medium.typo-14 (line height 20px); the control itself computes the 16px / 400 body type" }
+    keyword-chip: { type: button, bg: "#f2f3f7", fg: "#212224", radius: "9999px", padding: "0px 16px", height: "36px", font: "14px / 400 Pretendard", states: "ten per home capture at rest (captures 9-18 on home); no state frame in the bundle", use: "Rounded chip on home, home::[data-omd-capture=\"9\"]; colour and font are the child label p (line height 21px)" }
+    section-outline-link: { type: button, bg: "transparent", fg: "#212224", border: "1px #c8cad2", radius: "4px", padding: "0px 20px", height: "42px", font: "16px / 400 Pretendard", states: "twelve per home capture at rest (even captures 42-64 on home); no state frame in the bundle", use: "Outlined link, 214 px wide, home::[data-omd-capture=\"42\"]; colour and font are the child label p.typo-16 (line height 23px)" }
+    caption-tile: { type: card, bg: "transparent", fg: "#212224", radius: "0px", size: "143px x 138px", font: "15px / 500 Pretendard", states: "twelve per home capture at rest (captures 66-77 on home); no state frame in the bundle", use: "Home tile with a centred caption, home::[data-omd-capture=\"66\"]; colour and font are the caption p (line height 20px)" }
+    category-nav-link: { type: tab, bg: "transparent", fg: "#212224", radius: "0px", padding: "0px", height: "48px", font: "16px / 500 Pretendard", states: "nine captured at rest on category (captures 10-18); no state frame in the bundle", use: "Category-page navigation link, surface-3::[data-omd-capture=\"10\"]; colour and font are the child label p (line height 24px)" }
+    category-link-card: { type: card, bg: "#ffffff", fg: "#212224", border: "1px #e4e5ed", radius: "12px", padding: "16px 12px", size: "218px x 70px", font: "14px / 700 Pretendard", states: "five captured at rest on category; no state frame in the bundle", use: "Bordered link card on category: the list item holds the background, border and radius, the link inside it (surface-3::[data-omd-capture=\"20\"]) the padding, and its h3 the label (line height 20px)" }
+    pagination-button: { type: button, bg: "transparent", fg: "#9a9ba7", radius: "8px", size: "32px x 36px", selected: "bg #212224", states: "four page buttons captured at rest on category (captures 141-144); the current page (capture 140, class cursor-default) computes bg #212224; captures 139 and 145 are disabled and give no rest value; no state frame in the bundle", use: "Category pagination button, surface-3::[data-omd-capture=\"141\"]; the colour comes from the button class text-gray-500; no label font is declared because the digit has no element of its own in the dump" }
+    footer-link: { type: button, bg: "transparent", fg: "#727585", radius: "0px", padding: "0px", font: "14px / 400 Pretendard", states: "17 captured at rest on category (captures 149-165); no state frame in the bundle", use: "Footer text link on category, surface-3::[data-omd-capture=\"149\"]; its child p computes the same colour and type (line height 21px)" }
+    outline-link-button: { type: button, bg: "#ffffff", fg: "#212224", border: "1px #c8cad2", radius: "8px", padding: "0px 16px", height: "40px", font: "14px / 700 Pretendard", states: "two captured at rest on category (captures 147 and 148); no state frame in the bundle", use: "Outlined link button (role link) on category, surface-3::[data-omd-capture=\"147\"]; line height 14px as computed on the control" }
+    inline-text-link: { type: button, bg: "transparent", fg: "#4b94fa", radius: "0px", padding: "0px", font: "16px / 400 Pretendard", states: "nine per home capture at rest (captures 146-154 on home); no state frame in the bundle", use: "Blue text link (classes text-blue-500 and underline) inside the 390 px home articles, home::[data-omd-capture=\"146\"]; line height 24px" }
   components_harvested: true
 ---
 
@@ -275,10 +373,113 @@ Kmong is a Korean expert-services marketplace: its public home lets people find 
 - Background: `#FAFAFC`
 - Radius: `12px`
 - Padding: `32px 24px`
-- Font: `16px / 400 Pretendard`
-- Use: Public category-page panel; `surface-3::article`.
+- Use: Public category-page panel; `surface-3::article` (class `rounded-xl bg-gray-100 px-6 py-8`).
+- Corrected 2026-09-30: the July text gave the panel `16px / 400 Pretendard`. The panel carries no text classes; that value is the inherited body type (the page body computes the same `16px / 400 / 24px`), so no font is declared for the container.
 
-The supplied bundle reports zero interaction records. No hover, pressed, focus, disabled, menu, dialog, validation, or responsive variants are claimed from class names or static samples.
+The sections below were added on 2026-09-30 from the same 2026-07-13 bundle (bundle-only; no new capture). Bundle captures `home` and `surface-2` are the same URL (`https://kmong.com/`), so they count as two samples of one route. Where a control's text sits in a child `p` or `h3`, the text colour and font below are the child's; the controls themselves compute the `16px / 400` body type.
+
+### Header text link
+
+**Default**
+- Background: transparent
+- Text: `#212224` (child label `p.font-medium.typo-14`)
+- Height: `36px`
+- Font: `14px / 500 Pretendard`, line height 20px
+- Use: header text link and link-styled buttons (home captures 3-5), on both home captures and on category; `home::[data-omd-capture="4"]`.
+
+### Keyword chip
+
+**Default**
+- Background: `#F2F3F7`
+- Text: `#212224` (child label `p`)
+- Radius: `9999px`
+- Padding: `0px 16px`
+- Height: `36px`
+- Font: `14px / 400 Pretendard`, line height 21px
+- Use: ten rounded chips per home capture (captures 9-18); `home::[data-omd-capture="9"]`. The class list names `hover:bg-gray-300`; a class name is not a measurement, so the hover colour is not declared.
+
+### Section outlined link
+
+**Default**
+- Background: transparent
+- Text: `#212224` (child label `p.typo-16`)
+- Border: `1px #C8CAD2`
+- Radius: `4px`
+- Padding: `0px 20px`
+- Height: `42px` (214 px wide)
+- Font: `16px / 400 Pretendard`, line height 23px
+- Use: twelve outlined links per home capture (even captures 42-64); `home::[data-omd-capture="42"]`.
+
+### Caption tile
+
+**Default**
+- Background: transparent
+- Text: `#212224` (caption `p`, centred)
+- Size: `143px x 138px`
+- Font: `15px / 500 Pretendard`, line height 20px
+- Use: twelve home tiles per capture (captures 66-77); `home::[data-omd-capture="66"]`.
+
+### Category navigation link
+
+**Default**
+- Background: transparent
+- Text: `#212224` (child label `p`)
+- Height: `48px`
+- Font: `16px / 500 Pretendard`, line height 24px
+- Use: nine category-page navigation links (captures 10-18); `surface-3::[data-omd-capture="10"]`.
+
+### Category link card
+
+**Default**
+- Background: `#FFFFFF`
+- Text: `#212224` (the card's `h3`)
+- Border: `1px #E4E5ED`
+- Radius: `12px`
+- Padding: `16px 12px` (on the link inside the card)
+- Size: `218px x 70px`
+- Font: `14px / 700 Pretendard`, line height 20px
+- Use: five bordered link cards on category (`surface-3::li`; links from `surface-3::[data-omd-capture="20"]`).
+
+### Pagination button
+
+**Default and current page**
+- Background: transparent
+- Text: `#9A9BA7` (the button's own class `text-gray-500`)
+- Radius: `8px`
+- Size: `32px x 36px`
+- Current page: bg `#212224` (capture 140, class `cursor-default`)
+- Use: category pagination; `surface-3::[data-omd-capture="141"]`, four page buttons at rest (captures 141-144).
+- Not used: captures 139 and 145 are `disabled: true` and give no rest value. No label font is declared, because the digit has no element of its own in the dump.
+
+### Footer link
+
+**Default**
+- Background: transparent
+- Text: `#727585`
+- Font: `14px / 400 Pretendard`, line height 21px
+- Use: 17 footer text links on category (captures 149-165); `surface-3::[data-omd-capture="149"]`. Each link's child `p` computes the same colour and type.
+
+### Outlined link button
+
+**Default**
+- Background: `#FFFFFF`
+- Text: `#212224`
+- Border: `1px #C8CAD2`
+- Radius: `8px`
+- Padding: `0px 16px`
+- Height: `40px`
+- Font: `14px / 700 Pretendard`, line height 14px as computed on the control
+- Use: two outlined link buttons (role `link`) on category; `surface-3::[data-omd-capture="147"]`.
+
+### Inline text link
+
+**Default**
+- Background: transparent
+- Text: `#4B94FA` (class `text-blue-500`; the class list also names `underline`)
+- Font: `16px / 400 Pretendard`, line height 24px
+- Use: nine blue text links per home capture inside the 390 px home articles (captures 146-154); `home::[data-omd-capture="146"]`.
+
+The bundle holds no `::state-*` frame on any of its three captures, so no pointer state is declared; missing frames do not show that the controls lack states. Class names that name hover or active styles are not measurements. Menu, dialog, validation and responsive variants were not captured. (Rephrased 2026-09-30.)
 
 ---
 
@@ -353,7 +554,7 @@ Kmong’s official company site presents the service as an expert platform where
 
 ## 14. States
 
-No reusable empty, loading, error, success, disabled, validation, or skeleton treatment is recorded. The bundle has zero interaction records, so state design is intentionally omitted rather than synthesized.
+No reusable empty, loading, error, success, disabled, validation, or skeleton treatment is recorded. The bundle has zero interaction records and no `::state-*` frame, so no pointer state is declared; this records missing samples, not missing states. The category pagination marks its current page with bg `#212224` (see Pagination button), and two pagination controls were captured with `disabled: true`; their look is not declared.
 
 ## 15. Motion & Easing
 

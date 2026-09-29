@@ -53,12 +53,66 @@ verification_v2:
     "tokens.components.home-game-card.padding": { surface_id: home, source_id: home-live, method: computed-style, captured: "2026-07-13" }
     "tokens.components.home-game-card.use": { surface_id: home, source_id: home-live, method: computed-style, captured: "2026-07-13" }
     "tokens.components.home-hero-arrow.type": { surface_id: home, source_id: home-live, method: computed-style, captured: "2026-07-13" }
-    "tokens.components.home-hero-arrow.fg": { surface_id: home, source_id: home-live, method: computed-style, captured: "2026-07-13" }
+    "tokens.components.home-hero-arrow.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
     "tokens.components.home-hero-arrow.radius": { surface_id: home, source_id: home-live, method: computed-style, captured: "2026-07-13" }
     "tokens.components.home-hero-arrow.padding": { surface_id: home, source_id: home-live, method: computed-style, captured: "2026-07-13" }
     "tokens.components.home-hero-arrow.height": { surface_id: home, source_id: home-live, method: computed-style, captured: "2026-07-13" }
     "tokens.components.home-hero-arrow.states": { surface_id: home, source_id: home-live, method: computed-style, captured: "2026-07-13" }
     "tokens.components.home-hero-arrow.use": { surface_id: home, source_id: home-live, method: computed-style, captured: "2026-07-13" }
+    "tokens.components.home-slide-control.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.home-slide-control.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.home-slide-control.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.home-slide-control.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.home-slide-control.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.home-slide-control.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-07-13" }
+    "tokens.components.home-game-filter-tab.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-game-filter-tab.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-game-filter-tab.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-game-filter-tab.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-game-filter-tab.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-game-filter-tab.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-game-filter-tab.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.home-game-filter-tab.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-title-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-title-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-title-link.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-title-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-title-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-title-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-slide-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-slide-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-slide-button.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-slide-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.notice-bar-slide-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"33\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"47\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"47\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-button.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"47\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"47\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"47\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-button.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"47\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"47\"]", captured: "2026-07-13" }
+    "tokens.components.footer-text-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"47\"]", captured: "2026-07-13" }
+    "tokens.components.error-outline-link.type": { surface_id: error, source_id: error-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.error-outline-link.bg": { surface_id: error, source_id: error-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.error-outline-link.border": { surface_id: error, source_id: error-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.error-outline-link.radius": { surface_id: error, source_id: error-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.error-outline-link.size": { surface_id: error, source_id: error-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.error-outline-link.states": { surface_id: error, source_id: error-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.error-outline-link.use": { surface_id: error, source_id: error-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.home-news-card.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-news-card.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.home-news-card.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-news-card.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-news-card.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.home-news-card.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-news-card.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-media-card.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-media-card.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.home-media-card.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.home-media-card.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-media-card.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::p", captured: "2026-07-13" }
+    "tokens.components.home-media-card.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
+    "tokens.components.home-media-card.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::li", captured: "2026-07-13" }
 tokens:
   source: live-extract
   extracted: "2026-07-13"
@@ -69,7 +123,7 @@ tokens:
   typography:
     family: { ui: "SUIT Variable" }
     hero: { size: 50, weight: 700, lineHeight: 1.2, tracking: 0, use: "Homepage desktop hero title only." }
-    section-title: { size: 34, weight: 600, lineHeight: 1, tracking: 0, use: "Homepage section heading only." }
+    section-title: { size: 34, weight: 600, lineHeight: "normal", tracking: 0, use: "Homepage section heading only." }
     footer: { size: 14, weight: 300, lineHeight: 1.4, tracking: 0, use: "Homepage footer information only." }
   spacing: { card-bottom: 40 }
   rounded: { none: 0, news-item: 4 }
@@ -77,7 +131,15 @@ tokens:
   components_harvested: true
   components:
     home-game-card: { type: card, radius: 0, padding: "0px 0px 40px", use: "home::div.card; static homepage game-card wrapper, observed at 248px × 437px." }
-    home-hero-arrow: { type: button, fg: "#000000", radius: 0, padding: "0px", height: 60, states: "Default only: 60px × 60px; the capture reports 0 interaction snapshots, so no hover, focus, pressed, disabled, or active value is recorded.", use: "home::[data-omd-capture=\"1\"] (.btn-arrow.btn-arrow--prev) on the homepage hero." }
+    home-hero-arrow: { type: button, bg: "rgba(255, 255, 255, 0.05)", radius: 0, padding: "0px", height: 60, states: "Default on the prev/next pair (capture 1, 2), 60px × 60px; the bundle holds no state frame for any element, so hover, focus, and pressed values are not recorded.", use: "home::[data-omd-capture=\"1\"] (.btn-arrow.btn-arrow--prev) on the homepage hero; its font size is 0px, so no label style is claimed." }
+    home-slide-control: { type: tab, bg: "transparent", padding: "0px 10px", size: "330px x 60px", states: "rest on three hero control-bar buttons (capture 4-6); capture 3 carries class active, but none of its captured properties differs from theirs and the capture holds no opacity, so no selected value is declared; the bundle holds no state frame", use: "Homepage hero slide control (button.swiper-controlbar__btn) at home::[data-omd-capture=\"4\"]; its own font size is 0px, so its label sits in an unsampled child and no label style is claimed" }
+    home-game-filter-tab: { type: tab, bg: "transparent", fg: "#000000", padding: "0px", height: "43px", font: "34px / 600 / normal SUIT Variable", states: "rest on two filter buttons (capture 13, 14); capture 12 carries class active, but none of its captured properties differs from theirs and the capture holds no opacity, so no selected value is declared; the bundle holds no state frame", use: "Homepage game-category filter button inside li.game-filter__item at home::[data-omd-capture=\"13\"], 60 x 43" }
+    notice-bar-title-link: { type: button, fg: "#000000", size: "70px x 25px", font: "20px / 400 / normal SUIT Variable", states: "default on the homepage (capture 32) and the error page (surface-2 capture 2); the bundle holds no state frame", use: "Notice-bar title link (a) inside h1.notice-bar__title at home::[data-omd-capture=\"32\"]; the ticker items beside it are p elements at #000000, 16px / 300 / 16px" }
+    notice-bar-slide-button: { type: button, bg: "transparent", size: "26px x 26px", states: "default on the prev/next pair on the homepage (capture 33, 34) and the error page (surface-2 capture 3, 4); the bundle holds no state frame", use: "Notice-bar prev/next button (button.btn-slide) at home::[data-omd-capture=\"33\"]; its font size is 0px, so no label style is claimed" }
+    footer-text-button: { type: button, bg: "transparent", fg: "#898989", padding: "0px", height: "20px", font: "14px / 300 / 19.6px SUIT Variable", states: "default on two footer buttons on the homepage (capture 46, 47) and the error page (surface-2 capture 16, 17); the bundle holds no state frame", use: "Footer information-line text button (button.btn-text) at home::[data-omd-capture=\"47\"]; capture 46 adds class underline, which the capture does not confirm as a text decoration" }
+    error-outline-link: { type: button, bg: "transparent", border: "1px #e0e0e0", radius: "4px", size: "318px x 78px", states: "default on the error page (surface-2 capture 1; the second error capture repeats it); the bundle holds no state frame", use: "Error-page outline link (a) at surface-2::[data-omd-capture=\"1\"]; its own font size is 0px and its colour is the browser-default link blue, so its label sits in an unsampled child and no label style is claimed" }
+    home-news-card: { type: card, fg: "#000000", radius: "4px", size: "650px x 230px", font: "24.48px / 600 / 35.496px SUIT Variable", states: "default on two news items; the bundle holds no state frame", use: "Homepage news item (li.news-box__item): radius and size sit on the li; text colour and type come from its title paragraph (home::p, 540 x 71), which holds all of the item text" }
+    home-media-card: { type: card, fg: "#000000", padding: "18px 0px 18px 28px on the caption", size: "423px x 291px", font: "16px / 400 / 16px SUIT Variable", states: "default on three media items; the bundle holds no state frame", use: "Homepage media item (li.media-box__item): size sits on the li; colour, padding and type come from its caption paragraph (home::p, 423 x 52), which holds all of the item text" }
 ---
 
 # Design System Inspiration of 카카오게임즈
@@ -137,14 +199,43 @@ The capture also exposes browser-default blue links (`#0000ee`) and transparent 
 ### Homepage hero arrow
 
 **Observed default**
-- Text: `#000000`
+- Background: `rgba(255, 255, 255, 0.05)`
 - Radius: 0px
 - Padding: 0px
 - Height: 60px
-- State: Default only, at 60px × 60px; `interactionCount` is 0, so no hover, focus, pressed, disabled, or active value is recorded.
+- State: default on the prev/next pair (`home::[data-omd-capture="1"]` and `"2"`), 60px × 60px.
 - Use: `home::[data-omd-capture="1"]` (`.btn-arrow.btn-arrow--prev`) on the homepage hero.
+- Corrected 2026-09-30: the July record gave the arrow a text colour of `#000000` and cited `interactionCount` 0 as the reason no state was recorded. The arrow's font size is 0px and `#000000` is the page body's inherited colour, so that value described no visible label and is withdrawn; the interaction count covers expansions, not pointer states. The translucent fill was in the capture but unrecorded; it is added.
 
-The supplied artifact records 19 variants but zero interaction kinds and zero interaction snapshots. It therefore retains measured default card and arrow geometry while omitting unobserved interactive states. Other captured rows and links remain list items unless actual button semantics were observed.
+### Homepage hero slide control
+
+**Default** (`home-slide-control`): transparent, `0px 10px` padding, 330px × 60px; `home::[data-omd-capture="4"]` to `"6"` (`button.swiper-controlbar__btn`) in the hero control bar. The button's own font size is 0px, so its label sits in a child the capture did not sample and no label style is claimed. The button with class `active` (`"3"`) records the same captured values as its siblings, and the capture holds no opacity, so no selected value is declared.
+
+### Homepage game filter
+
+**Default** (`home-game-filter-tab`): text `#000000`, `34px / 600 / normal SUIT Variable`, no padding, 60px × 43px; `home::[data-omd-capture="13"]` and `"14"` inside `li.game-filter__item`. The button with class `active` (`"12"`) records the same captured values, so no selected value is declared.
+
+### Notice bar
+
+**Title link** (`notice-bar-title-link`): text `#000000`, `20px / 400 / normal SUIT Variable`, 70px × 25px; `home::[data-omd-capture="32"]` inside `h1.notice-bar__title`, repeated on the error page (`surface-2::[data-omd-capture="2"]`). The ticker items beside it are `p` elements at `#000000`, `16px / 300 / 16px`.
+
+**Prev/next buttons** (`notice-bar-slide-button`): transparent, 26px × 26px; `home::[data-omd-capture="33"]` and `"34"` (`button.btn-slide`), repeated on the error page. Their font size is 0px, so no label style is claimed.
+
+### Footer text button
+
+**Default** (`footer-text-button`): transparent, text `#898989`, `14px / 300 / 19.6px SUIT Variable`, 20px high; `home::[data-omd-capture="46"]` and `"47"` (`button.btn-text`) in the footer information lines, repeated on the error page. `"46"` also carries class `underline`; the capture records no text decoration, so none is claimed.
+
+### Error-page outline link
+
+**Default** (`error-outline-link`): transparent, border 1px `#e0e0e0`, `4px` radius, 318px × 78px; `surface-2::[data-omd-capture="1"]`, which the second error capture repeats. The link's own font size is 0px and its colour is the browser-default `#0000ee`, so its label sits in an unsampled child and no label style is claimed.
+
+### Homepage news and media items
+
+**News item** (`home-news-card`): `li.news-box__item` with a `4px` radius at 650px × 230px (two items). Its title paragraph holds all of the item text at `#000000`, `24.48px / 600 / 35.496px SUIT Variable`.
+
+**Media item** (`home-media-card`): `li.media-box__item` at 423px × 291px (three items). Its caption paragraph (423px × 52px) holds all of the item text at `#000000`, `16px / 400 / 16px`, with `18px 0px 18px 28px` padding.
+
+The bundle holds no hover, pressed, or focus frame for any Kakao Games element (zero `::state-*` samples on all three captures) and no interaction record, so no pointer or focus state is declared anywhere in this reference. Two `active` classes (hero control bar, game filter) carry no measured difference, so no selected treatment is declared either. Anchors whose own colour is the browser-default `#0000ee` (game-card, footer-menu, social, and certificate links) keep their visible labels in unsampled children and are not promoted.
 
 ---
 **Verified:** 2026-07-13
@@ -219,7 +310,7 @@ These are stakeholder archetypes derived from the company’s published audience
 
 ## 14. States
 
-No visual empty, loading, error, success, skeleton, or disabled-state treatment is established by the supplied capture. The `/error/` route is a public utility surface, but it does not provide selector-backed error-component styling in this evidence bundle. Absence of a measured state is not a license to fill it with a generic pattern.
+No visual empty, loading, error, success, skeleton, disabled, or selected treatment is established by the supplied capture; the two `active` classes in §4 carry no measured difference. The `/error/` route is a public utility surface, but it does not provide selector-backed error-component styling in this evidence bundle. Absence of a measured state is not a license to fill it with a generic pattern.
 
 ## 15. Motion & Easing
 

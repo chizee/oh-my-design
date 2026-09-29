@@ -58,6 +58,107 @@ verification_v2:
     "tokens.components.movie-like-button.font": { surface_id: surface-2, source_id: product-movie, method: computed-style, captured: "2026-07-13" }
     "tokens.components.movie-like-button.states": { surface_id: surface-2, source_id: product-movie, method: static-selector-and-interaction-summary, captured: "2026-07-13" }
     "tokens.components.movie-like-button.use": { surface_id: surface-2, source_id: product-movie, method: selector-provenance, captured: "2026-07-13" }
+    "tokens.components.movie-like-button-on-dark.type": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.movie-like-button-on-dark.bg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.movie-like-button-on-dark.fg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.movie-like-button-on-dark.border": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.movie-like-button-on-dark.radius": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.movie-like-button-on-dark.padding": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.movie-like-button-on-dark.size": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.movie-like-button-on-dark.font": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.movie-like-button-on-dark.states": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.movie-like-button-on-dark.use": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.booking-button.type": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.booking-button.bg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.booking-button.fg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.booking-button.radius": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.booking-button.padding": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.booking-button.size": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.booking-button.font": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.booking-button.states": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.booking-button.use": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-07-13" }
+    "tokens.components.home-teal-button.type": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-13" }
+    "tokens.components.home-teal-button.bg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-13" }
+    "tokens.components.home-teal-button.fg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-13" }
+    "tokens.components.home-teal-button.radius": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-13" }
+    "tokens.components.home-teal-button.padding": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-13" }
+    "tokens.components.home-teal-button.size": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-13" }
+    "tokens.components.home-teal-button.font": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-13" }
+    "tokens.components.home-teal-button.states": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-13" }
+    "tokens.components.home-teal-button.use": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"30\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-on-dark.type": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-on-dark.bg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-on-dark.fg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-on-dark.border": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-on-dark.radius": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-on-dark.padding": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-on-dark.size": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-on-dark.font": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-on-dark.states": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-07-13" }
+    "tokens.components.outline-link-on-dark.use": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-07-13" }
+    "tokens.components.movie-tab.type": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.movie-tab.bg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.movie-tab.fg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.movie-tab.border": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.movie-tab.size": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.movie-tab.font": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.movie-tab.selected": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.movie-tab.states": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.movie-tab.use": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"20\"]", captured: "2026-07-13" }
+    "tokens.components.movie-search-input.type": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.movie-search-input.bg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.movie-search-input.fg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.movie-search-input.padding": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.movie-search-input.size": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.movie-search-input.font": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.movie-search-input.states": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.movie-search-input.use": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"25\"]", captured: "2026-07-13" }
+    "tokens.components.list-more-button.type": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"109\"]", captured: "2026-07-13" }
+    "tokens.components.list-more-button.bg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"109\"]", captured: "2026-07-13" }
+    "tokens.components.list-more-button.fg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"109\"]", captured: "2026-07-13" }
+    "tokens.components.list-more-button.border": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"109\"]", captured: "2026-07-13" }
+    "tokens.components.list-more-button.radius": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"109\"]", captured: "2026-07-13" }
+    "tokens.components.list-more-button.padding": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"109\"]", captured: "2026-07-13" }
+    "tokens.components.list-more-button.size": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"109\"]", captured: "2026-07-13" }
+    "tokens.components.list-more-button.font": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"109\"]", captured: "2026-07-13" }
+    "tokens.components.list-more-button.states": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"109\"]", captured: "2026-07-13" }
+    "tokens.components.list-more-button.use": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"109\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.type": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.bg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.fg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.height": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.font": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.states": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.gnb-link.use": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.type": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.bg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.fg": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.height": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.font": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.states": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.header-utility-link.use": { surface_id: surface-2, source_id: product-movie, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.type": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.bg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.fg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.height": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.font": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.states": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.footer-link.use": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"83\"]", captured: "2026-07-13" }
+    "tokens.components.theater-lookup-pill.type": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"91\"]", captured: "2026-07-13" }
+    "tokens.components.theater-lookup-pill.bg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"91\"]", captured: "2026-07-13" }
+    "tokens.components.theater-lookup-pill.fg": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"91\"]", captured: "2026-07-13" }
+    "tokens.components.theater-lookup-pill.border": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"91\"]", captured: "2026-07-13" }
+    "tokens.components.theater-lookup-pill.radius": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"91\"]", captured: "2026-07-13" }
+    "tokens.components.theater-lookup-pill.size": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"91\"]", captured: "2026-07-13" }
+    "tokens.components.theater-lookup-pill.font": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"91\"]", captured: "2026-07-13" }
+    "tokens.components.theater-lookup-pill.states": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"91\"]", captured: "2026-07-13" }
+    "tokens.components.theater-lookup-pill.use": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"91\"]", captured: "2026-07-13" }
+    "tokens.components.special-hall-card.type": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"63\"]", captured: "2026-07-13" }
+    "tokens.components.special-hall-card.radius": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"63\"]", captured: "2026-07-13" }
+    "tokens.components.special-hall-card.size": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"63\"]", captured: "2026-07-13" }
+    "tokens.components.special-hall-card.shadow": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"63\"]", captured: "2026-07-13" }
+    "tokens.components.special-hall-card.states": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"63\"]", captured: "2026-07-13" }
+    "tokens.components.special-hall-card.use": { surface_id: home, source_id: product-home, method: computed-style, selector: "home::[data-omd-capture=\"63\"]", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -82,7 +183,19 @@ tokens:
     none: "none"
   components_harvested: true
   components:
-    movie-like-button: { type: button, bg: "#ffffff", text: "#503396", border: "1px solid #ebebeb", radius: "4px", padding: "0px 5px", height: "36px", font: "13.0005px / 400 / NanumBarunGothic", states: "Default enabled button observed; the supplied bundle records no hover, focus, pressed, error, or interaction-expanded state for this control.", use: "Movie route list action at surface-2::[data-omd-capture=\"29\"]." }
+    movie-like-button: { type: button, bg: "#ffffff", text: "#503396", border: "1px solid #ebebeb", radius: "4px", padding: "0px 5px", height: "36px", font: "13.0005px / 400 / NanumBarunGothic", states: "rest on 20 like buttons on the movie route (surface-2 capture 29 and siblings); the bundle holds no state frame for any MEGABOX element", use: "Movie route list action at surface-2::[data-omd-capture=\"29\"]." }
+    movie-like-button-on-dark: { type: button, bg: "rgba(0, 0, 0, 0.4)", fg: "#ffffff", border: "1px #555555", radius: "4px", padding: "0px 5px", size: "80px x 36px", font: "13.0005px / 400 / 34px NanumBarunGothic, tracking -0.5px", states: "rest on four home buttons (home capture 29, 32, 35, 38); no state frame", use: "Home like button (button.button.btn-like, the movie-route class) at home::[data-omd-capture=\"29\"], under each home movie poster; translucent black fill" }
+    booking-button: { type: button, bg: "#503396", fg: "#ffffff", radius: "4px", padding: "0px", size: "153px x 36px", font: "15px / 400 / 36px NanumBarunGothic", states: "rest on the movie-route booking links; no state frame", use: "Booking link (a.button.purple.bokdBtn; an a element with no button role) at surface-2::[data-omd-capture=\"35\"], one per movie card beside the like button; it narrows to 74px x 36px where an icon-only a.button.purple.img.splBtn (capture 31, no text) sits beside it (capture 30, 39)" }
+    home-teal-button: { type: button, bg: "#037b94", fg: "#ffffff", radius: "4px", padding: "0px", size: "160px x 36px", font: "15px / 400 / 36px NanumBarunGothic", states: "rest on four home links (home capture 30, 33, 36, 39); no state frame", use: "Link (a.button.gblue; no button role) beside each home like button at home::[data-omd-capture=\"30\"]; a larger a.button.gblue (capture 58, 145px x 50px, 19.9995px / 400 / 48px) sits further down the home" }
+    outline-link-on-dark: { type: button, bg: "transparent", fg: "#ffffff", border: "1px #ffffff", radius: "4px", padding: "0px", size: "145px x 50px", font: "19.9995px / 400 / 48px NanumBarunGothic", states: "rest; one instance; no state frame", use: "White outline link (a.button; no button role) at home::[data-omd-capture=\"57\"], beside the larger teal link (capture 58) below white 36px / 400 title text (p.tit); the fill behind them is not in the capture" }
+    movie-tab: { type: tab, bg: "transparent", fg: "#222222", border: "1px #ebebeb on top and 1px #503396 at the bottom of the parent li; 1px #ebebeb side dividers on some", size: "220px x 41px", font: "16.0005px / 400 / 40px NanumBarunGothic", selected: "bg #ffffff, fg #503396; parent li border 1px #503396 on the top and sides, 0px at the bottom", states: "rest on four tabs (surface-2 capture 20-23); the tab whose li has class on (capture 19) differs from them and is recorded as selected; no state frame", use: "Movie-route tab label (a) in div.tab-list.fixed at surface-2::[data-omd-capture=\"20\"]; the borders sit on the parent li (220px x 42px)" }
+    movie-search-input: { type: input, bg: "#ffffff", fg: "#444444", padding: "0px 10px", size: "197px x 34px", font: "15px / 400 / 30px NanumBarunGothic", states: "rest, empty (textLength 0); no state frame", use: "Movie-route search field (input.input-text) at surface-2::[data-omd-capture=\"25\"]; the input records no border of its own; its 30px x 32px search button (capture 26) has 0px type; the home input.input-text (capture 40) is transparent with #ffffff text, 170px x 29px" }
+    list-more-button: { type: button, bg: "transparent", fg: "#666666", border: "1px #eaeaea", radius: "0px", padding: "0px", size: "1100px x 40px", font: "15px / 400 / 17.25px NanumBarunGothic, tracking -0.5px", states: "rest; no state frame", use: "Full-width button (button.btn) below the movie list at surface-2::[data-omd-capture=\"109\"]" }
+    gnb-link: { type: tab, bg: "transparent", fg: "#444444", height: "38px", font: "15px / 400 / 22.5px NanumBarunGothic", states: "rest on six links on the movie and booking routes (surface-2 and surface-3 capture 11-16); no state frame", use: "Main navigation link (a.gnb-txt-movie, .gnb-txt-reserve, .gnb-txt-theater and siblings) at surface-2::[data-omd-capture=\"11\"]; the same links are #ffffff on the home (capture 12-17)" }
+    header-utility-link: { type: button, bg: "transparent", fg: "#444444", height: "20px", font: "13.0005px / 400 / 19.5007px NanumBarunGothic", states: "rest on six links per route (surface-2 capture 1-6); no state frame", use: "Header utility link (a; no button role) above the main navigation at surface-2::[data-omd-capture=\"1\"]; #888888 on the home (capture 2-7)" }
+    footer-link: { type: button, bg: "transparent", fg: "#666666", height: "30px", font: "13.0005px / 400 / 30px NanumBarunGothic", states: "rest on six links per route (home capture 83-87, 90); no state frame", use: "Footer link (a; no button role) on all three routes at home::[data-omd-capture=\"83\"]; two links per route are #222222 at 700 (home capture 88, 89)" }
+    theater-lookup-pill: { type: button, bg: "transparent", fg: "#666666", border: "1px #d8d9db", radius: "30px", size: "106px x 30px", font: "13.0005px / 400 / 28px NanumBarunGothic", states: "rest on all three routes (home capture 91, surface-2 capture 118, surface-3 capture 27); no state frame", use: "Footer link (a.btn-looking-theater; no button role) at home::[data-omd-capture=\"91\"]; the element behind the theater-lookup 30px radius token" }
+    special-hall-card: { type: card, radius: "10px", size: "170px x 170px", shadow: "rgba(0, 0, 0, 0.2) 5px 5px 10px 0px", states: "rest on ten cards (home capture 63-72); no state frame", use: "Special-hall link card (a.bg-dolby, .bg-dva, .bg-mx4d and siblings) on the home at home::[data-omd-capture=\"63\"]; its background colour is transparent and its type is 0px, so neither a fill nor a label style is claimed" }
 ---
 
 # 메가박스 — Design Reference
@@ -119,6 +232,7 @@ tokens:
 - `#FFFFFF` — 영화 목록 항목과 좋아요 버튼의 관찰된 흰 배경, 보라 예약 링크의 텍스트.
 - `#444444` — 세 공개 경로에 걸쳐 반복 관찰된 본문 잉크.
 - `#666666` — 극장 찾기 제어 및 일부 보조 텍스트에 관찰된 보조 잉크.
+- 컴포넌트 전용 색(§4에 기록, 팔레트 역할로 승격하지 않음): `#037b94`(홈 청록 링크), `#555555`(홈 좋아요 버튼 테두리), `#222222`(영화 탭 라벨과 굵은 푸터 링크), `#ebebeb`(영화 탭 구분선), `#eaeaea`(목록 더보기 버튼 테두리), `#d8d9db`(극장 찾기 칩 테두리), `#888888`(홈 헤더 유틸리티 링크), 반투명 `rgba(0, 0, 0, 0.4)`(홈 좋아요 버튼 채움).
 
 ### Typography evidence classes
 
@@ -144,10 +258,56 @@ tokens:
 - Padding: `0px 5px`
 - Height: `36px`
 - Font: `13.0005px / 400 / NanumBarunGothic`
-- States: Default enabled control observed. The supplied bundle has zero interaction records, so no hover, focus, pressed, or error styling is claimed.
+- States: rest on 20 like buttons on the movie route. The bundle holds no hover, pressed, or focus frame for any element, so none is declared. Corrected 2026-09-30: the July line gave zero interaction records as the reason; that counter covers opened dialogs, tabs, and menus, not pointer states.
 - Use: Actual `button` element at `surface-2::[data-omd-capture="29"]` on the public movie route.
 
-The public movie route also contains a 36px-high purple reservation **link** (`a.button.purple.bokdBtn`) and the home includes a disabled carousel-arrow button. The former is not promoted as a button token because the supplied selector does not evidence button semantics; the latter documents only a static disabled element, not a transition or reusable disabled style. Their measured defaults remain in the proof record rather than being erased.
+The home includes a disabled carousel-arrow button (`button.special-prev.swiper-button-disabled`). It documents only a static disabled element, not a transition or reusable disabled style, and stays out of the component set.
+
+Updated 2026-09-30: the purple reservation link and the other button-like links below are now recorded as components. Their `type` records the visual role the catalog renders; each `use` names the element, so the links (`a`, no button role) stay distinguishable from the HTML `button` elements (the like buttons and the list-more button).
+
+### Movie list action on the home
+
+**Rest** (`movie-like-button-on-dark`): fill `rgba(0, 0, 0, 0.4)`, text `#ffffff`, border 1px `#555555`, radius `4px`, padding `0px 5px`, 80px × 36px, `13.0005px / 400 / 34px`, tracking -0.5px; `home::[data-omd-capture="29"]`, `"32"`, `"35"`, `"38"` (`button.button.btn-like`, the movie-route class), under each home movie poster.
+
+### Booking link
+
+**Rest** (`booking-button`): background `#503396`, text `#ffffff`, radius `4px`, padding `0px`, 153px × 36px, `15px / 400 / 36px`; `surface-2::[data-omd-capture="35"]` (`a.button.purple.bokdBtn`), one per movie card beside the like button. Where an icon-only `a.button.purple.img.splBtn` (`"31"`, no text) sits beside it, the booking link narrows to 74px × 36px (`"30"`, `"39"`).
+
+### Home teal and outline links
+
+**Teal link** (`home-teal-button`): background `#037b94`, text `#ffffff`, radius `4px`, 160px × 36px, `15px / 400 / 36px`; `home::[data-omd-capture="30"]`, `"33"`, `"36"`, `"39"` (`a.button.gblue`), beside each home like button. A larger `a.button.gblue` (`"58"`, 145px × 50px, `19.9995px / 400 / 48px`) sits further down the home.
+
+**White outline link** (`outline-link-on-dark`): transparent fill, text and 1px border `#ffffff`, radius `4px`, 145px × 50px, `19.9995px / 400 / 48px`; `home::[data-omd-capture="57"]` (`a.button`), beside that larger teal link and below white `36px / 400` title text (`p.tit`). The fill behind them is not in the capture.
+
+### Movie-route tabs
+
+**Rest** (`movie-tab`): label `#222222`, `16.0005px / 400 / 40px`, 220px × 41px; `surface-2::[data-omd-capture="20"]` to `"23"` (`a` in `div.tab-list.fixed`). The borders sit on the parent `li` (220px × 42px): 1px `#ebebeb` on top, 1px `#503396` at the bottom, and 1px `#ebebeb` side dividers on some.
+
+**Selected**: the label in `li.on` (`"19"`) is `#503396` on `#ffffff`; that `li` draws 1px `#503396` on the top and sides and 0px at the bottom, where its neighbours draw the purple line.
+
+### Search field
+
+**Rest** (`movie-search-input`): background `#ffffff`, text `#444444`, padding `0px 10px`, 197px × 34px, `15px / 400 / 30px`; `surface-2::[data-omd-capture="25"]` (`input.input-text`), empty in the capture. The input records no border of its own; its search button (`button.btn-search-input`, `"26"`, 30px × 32px) has 0px type. On the home, `input.input-text` (`"40"`) is transparent with `#ffffff` text, 170px × 29px.
+
+### List more button
+
+**Rest** (`list-more-button`): transparent fill, text `#666666`, border 1px `#eaeaea`, radius `0px`, 1100px × 40px, `15px / 400 / 17.25px`, tracking -0.5px; `surface-2::[data-omd-capture="109"]` (`button.btn`) below the movie list.
+
+### Navigation and footer links
+
+**Main navigation** (`gnb-link`): text `#444444`, `15px / 400 / 22.5px`, 38px high; `surface-2::[data-omd-capture="11"]` to `"16"` (`a.gnb-txt-movie`, `.gnb-txt-reserve`, `.gnb-txt-theater` and siblings), repeated on `/booking`; the same links are `#ffffff` on the home (`"12"` to `"17"`).
+
+**Header utility link** (`header-utility-link`): text `#444444`, `13.0005px / 400 / 19.5007px`, 20px high; `surface-2::[data-omd-capture="1"]` to `"6"`; `#888888` on the home (`"2"` to `"7"`).
+
+**Footer link** (`footer-link`): text `#666666`, `13.0005px / 400 / 30px`; six per route (`home::[data-omd-capture="83"]` to `"87"`, `"90"`); two per route are `#222222` at 700 (`"88"`, `"89"`).
+
+**Theater lookup pill** (`theater-lookup-pill`): transparent fill, text `#666666`, border 1px `#d8d9db`, radius `30px`, 106px × 30px, `13.0005px / 400 / 28px`; `a.btn-looking-theater` in the footer of all three routes (`home::[data-omd-capture="91"]`, `surface-2` `"118"`, `surface-3` `"27"`), the element behind the `theater-lookup` 30px radius token.
+
+### Special-hall card
+
+**Rest** (`special-hall-card`): radius `10px`, 170px × 170px, shadow `rgba(0, 0, 0, 0.2) 5px 5px 10px 0px`; ten links on the home (`home::[data-omd-capture="63"]` to `"72"`, `a.bg-dolby`, `.bg-dva`, `.bg-mx4d` and siblings). The background colour is transparent and the type is 0px, so neither a fill nor a label style is claimed.
+
+The `/booking` capture renders 48 elements, all header, navigation, and footer: no showtime, seat, or booking-flow control is in the bundle. A home `button.on` (`"26"`) has no unmarked sibling to compare against and is not recorded as a state.
 
 ---
 
@@ -158,7 +318,7 @@ The public movie route also contains a 36px-high purple reservation **link** (`a
 
 ## 5. Elevation
 
-The selector-backed movie-list action has `box-shadow: none`. The supplied three-route capture does not establish a repeatable shadow scale, so only the explicit `none` value is tokenized.
+The selector-backed movie-list action has `box-shadow: none`. The supplied three-route capture does not establish a repeatable shadow scale, so only the explicit `none` value is tokenized. The ten home special-hall cards record `rgba(0, 0, 0, 0.2) 5px 5px 10px 0px` (§4); that shadow stays on the component and is not promoted to a scale.
 
 ## 6. Spacing & Shape
 
@@ -166,7 +326,7 @@ The most useful measured inline values are `5px` on the movie-list action and `1
 
 ## 7. Iconography & Imagery
 
-The supplied routes use film imagery, poster-led movie listings, header utility controls, and carousel affordances. No named icon library, stroke width, asset aspect-ratio rule, or reusable media-card contract is established by the evidence.
+The supplied routes use film imagery, poster-led movie listings, header utility controls, and carousel affordances. No named icon library, stroke width, asset aspect-ratio rule, or reusable media-card contract is established by the evidence; the special-hall card's 10px corner and shadow are measured on one home row only.
 
 ### Do
 
@@ -176,7 +336,7 @@ The supplied routes use film imagery, poster-led movie listings, header utility 
 
 ### Don't
 
-- Convert poster links, booking links, or rows into generic buttons without evidence of button semantics.
+- Convert poster links, booking links, or rows into generic buttons without evidence of button semantics. (§4 records such links by visual role and names the `a` element in each `use`.)
 - Infer hover, focus, pressed, dialog, seat-selection, payment, or responsive states from default geometry.
 - Treat Roboto or text-security-disc as a Megabox brand-family replacement.
 
@@ -231,7 +391,7 @@ These are stakeholder groups stated or directly implied by Megabox’s official 
 
 ## 14. States
 
-The supplied evidence records `interactionCount: 0` and no interaction kinds. It includes one static disabled carousel-arrow element, but no observable empty, loading, error, success, skeleton, focus, pressed, or transition treatment. No state tokens or fabricated state specifications are supplied.
+Observed: one selected movie-route tab (`li.on`: `#503396` label on `#ffffff`, purple top and side borders, no bottom border) and one static disabled carousel-arrow element on the home. The bundle holds no `::state-hover`, `::state-pressed`, or `::state-focus` sample for any element (0 of 464), so no pointer or focus state is declared. Corrected 2026-09-30: the July text gave `interactionCount: 0` as the reason; that counter covers opened dialogs, tabs, and menus. A home `button.on` has no unmarked sibling to compare against and is not recorded as a state. No empty, loading, error, success, skeleton, or transition treatment is in the bundle, and no fabricated state specification is supplied.
 
 ## 15. Motion & Easing
 

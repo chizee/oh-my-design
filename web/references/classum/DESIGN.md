@@ -97,6 +97,85 @@ verification_v2:
     "tokens.components.university-grid-card.font": *lms
     "tokens.components.university-grid-card.states": *lms
     "tokens.components.university-grid-card.use": *lms
+    "tokens.components.nav-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.nav-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.medium-primary-action.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.medium-primary-action.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.medium-primary-action.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.medium-primary-action.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.medium-primary-action.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.medium-primary-action.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.medium-primary-action.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.medium-primary-action.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.medium-primary-action.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-07-13" }
+    "tokens.components.white-action.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.white-action.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.white-action.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.white-action.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.white-action.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.white-action.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.white-action.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.white-action.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.white-action.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-07-13" }
+    "tokens.components.black-action.type": { surface_id: learning, source_id: learning-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.black-action.bg": { surface_id: learning, source_id: learning-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.black-action.fg": { surface_id: learning, source_id: learning-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.black-action.radius": { surface_id: learning, source_id: learning-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.black-action.padding": { surface_id: learning, source_id: learning-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.black-action.height": { surface_id: learning, source_id: learning-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.black-action.font": { surface_id: learning, source_id: learning-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.black-action.states": { surface_id: learning, source_id: learning-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.black-action.use": { surface_id: learning, source_id: learning-capture, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.gray-action.type": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gray-action.bg": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gray-action.fg": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gray-action.radius": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gray-action.padding": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gray-action.height": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gray-action.font": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gray-action.states": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.gray-action.use": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-07-13" }
+    "tokens.components.sitemap-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.sitemap-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.sitemap-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.sitemap-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.sitemap-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.sitemap-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.sitemap-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.sitemap-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.sitemap-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-07-13" }
+    "tokens.components.copyright-link.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.copyright-link.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.copyright-link.fg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.copyright-link.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.copyright-link.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.copyright-link.height": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.copyright-link.font": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.copyright-link.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.copyright-link.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.type": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.bg": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.radius": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.padding": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.size": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.states": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.feature-card.use": { surface_id: home, source_id: home-capture, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.comparison-table-row.type": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::div", captured: "2026-07-13" }
+    "tokens.components.comparison-table-row.bg": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::div", captured: "2026-07-13" }
+    "tokens.components.comparison-table-row.fg": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::div", captured: "2026-07-13" }
+    "tokens.components.comparison-table-row.border": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::div", captured: "2026-07-13" }
+    "tokens.components.comparison-table-row.padding": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::div", captured: "2026-07-13" }
+    "tokens.components.comparison-table-row.height": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::div", captured: "2026-07-13" }
+    "tokens.components.comparison-table-row.font": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::div", captured: "2026-07-13" }
+    "tokens.components.comparison-table-row.states": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::div", captured: "2026-07-13" }
+    "tokens.components.comparison-table-row.use": { surface_id: university-lms, source_id: university-lms-capture, method: computed-style, selector: "surface-3::div", captured: "2026-07-13" }
 tokens:
   source: reconciled
   extracted: "2026-07-13"
@@ -123,6 +202,15 @@ tokens:
     nav-outline-dark: { type: button, fg: "#ffffff", border: "1px solid #ffffff", radius: "8px", padding: "6px 16px", font: "15px / 600 Pretendard Variable", states: "default only; no interaction state captured", use: "Public marketing dark-background navigation outline; home::[data-omd-capture=8]" }
     large-primary-action: { type: button, bg: "#ff4438", fg: "#ffffff", radius: "8px", padding: "12px 34px", font: "18px / 600 Pretendard Variable", states: "default only; no interaction state captured", use: "Public marketing large CTA on home and learning routes; home::[data-omd-capture=17]" }
     university-grid-card: { type: card, bg: "#f6f6f9", fg: "#333333", radius: "30px", padding: "30px", font: "14px / 400 Pretendard Variable", states: "default only; no interaction state captured", use: "University-LMS public-marketing grid card; university-lms::div.grid-card" }
+    nav-link: { type: tab, bg: "transparent", fg: "#232334", radius: "0px", padding: "0px 18px", height: "64px", font: "15px / 600 Pretendard Variable", states: "rest captured on all three routes: six light-header copies (class on-white) and six dark-header copies; no state frame in the bundle", use: "Header navigation link (a.nav-link.on-white), home::[data-omd-capture=\"1\"]; line height 22.5px, tracking -0.6px. The dark-header copy (a.nav-link, home captures 6 and 7) computes fg #ffffff with the same geometry and type" }
+    medium-primary-action: { type: button, bg: "#ff4438", fg: "#ffffff", radius: "8px", padding: "8px 24px", height: "49px", font: "16px / 600 Pretendard Variable", states: "one captured at rest in the home hero; no state frame in the bundle", use: "Home hero primary action (a.primary-button.medium), home::[data-omd-capture=\"11\"]; line height 24px" }
+    white-action: { type: button, bg: "#ffffff", fg: "#232334", radius: "8px", padding: "12px 34px", height: "51px", font: "18px / 600 Pretendard Variable", states: "captured at rest in three sizes: large (home capture 16), medium (home capture 10: 8px 24px, 49px, 16px / 600) and small (learning capture 10: 8px 16px, 43px, 18px / 600); no state frame in the bundle", use: "White action on dark sections (a.primary-button.white-button), home::[data-omd-capture=\"16\"]; line height 27px" }
+    black-action: { type: button, bg: "#232334", fg: "#ffffff", radius: "8px", padding: "12px 34px", height: "51px", font: "18px / 600 Pretendard Variable", states: "one captured at rest on learning; no state frame in the bundle", use: "Dark action (a.primary-button.large.black-button) on the learning route, surface-2::[data-omd-capture=\"12\"]; line height 27px" }
+    gray-action: { type: button, bg: "#dadeea", fg: "#272730", radius: "8px", padding: "0px 36px", height: "49px", font: "18px / 600 Pretendard Variable", states: "one captured at rest on university-lms; no state frame in the bundle", use: "Grey action (a.primary-button.gray-button) in the university-LMS hero, surface-3::[data-omd-capture=\"10\"]; it sits beside a #ff4438 action with the same padding and height (capture 11)" }
+    sitemap-link: { type: button, bg: "transparent", fg: "#ffffff", radius: "0px", padding: "0px", height: "29px", font: "18px / 600 Pretendard Variable", states: "ten per route captured at rest on all three routes (30 in all); no state frame in the bundle", use: "Footer sitemap link (a.sitemap-link) on the dark footer, home::[data-omd-capture=\"19\"]; line height 28.8px" }
+    copyright-link: { type: button, bg: "transparent", fg: "#ffffff", radius: "0px", padding: "0px", height: "18px", font: "12px / 300 Pretendard Variable", states: "two per route captured at rest on all three routes; no state frame in the bundle", use: "Footer legal link (class copryright-link, as spelled in the markup), home::[data-omd-capture=\"29\"]; line height 18px" }
+    feature-card: { type: card, bg: "#dadeec", radius: "12px", padding: "0px", size: "563px x 456px", states: "four captured at rest on home (captures 12-15). The bundle holds 10 frames on them (hover and pressed on all four, focus on 14 and 15); none records a settled change: hover moves box-shadow from none to an alpha-0 colour, pressed to an alpha-0.004 colour, and focus is not declared from bundles", use: "Home feature card (a.feat-item), home::[data-omd-capture=\"12\"]. The anchor computes Chromium default link colour #0000ee and the 14px / 400 body type, which is container text, so no label style is declared" }
+    comparison-table-row: { type: card, bg: "transparent", fg: "#666b80", border: "0px 0px 2px #333333", padding: "15px 0px", height: "67px", font: "22px / 400 Pretendard Variable", states: "18 rows captured at rest on university-lms; no state frame in the bundle", use: "Comparison table row (div.table-line) on university-lms, surface-3::div; the 2px #333333 border is on the bottom edge only; text colour and font are the row heading child (div.table-row-heading, line height 35.2px)" }
   components_harvested: true
 ---
 
@@ -221,7 +309,103 @@ No semantic success, warning, error, product-app, or documentation palette is cl
 - Font: `14px / 400 Pretendard Variable`
 - Use: University-LMS public-marketing grid card; selector `university-lms::div.grid-card`, two occurrences on that route.
 
-The supplied bundle records zero interaction transitions. Hover, focus, pressed, selected, disabled, dialog, menu, tab, toast, and form-error variants are deliberately absent rather than invented.
+The sections below were added on 2026-09-30 from the same 2026-07-13 bundle (bundle-only; no new capture).
+
+### Header navigation link
+
+**Default**
+- Background: transparent
+- Text: `#232334` on the light header (class `on-white`); `#FFFFFF` on the dark-header copy
+- Radius: `0px`
+- Padding: `0px 18px`
+- Height: `64px`
+- Font: `15px / 600 Pretendard Variable`, line height 22.5px, tracking -0.6px
+- Use: header navigation; `home::[data-omd-capture="1"]`, six light-header and six dark-header copies across the three routes.
+
+### Public marketing medium primary action
+
+**Default**
+- Background: `#FF4438`
+- Text: `#FFFFFF`
+- Radius: `8px`
+- Padding: `8px 24px`
+- Height: `49px`
+- Font: `16px / 600 Pretendard Variable`, line height 24px
+- Use: home hero primary action (`a.primary-button.medium`); `home::[data-omd-capture="11"]`.
+
+### White action
+
+**Default**
+- Background: `#FFFFFF`
+- Text: `#232334`
+- Radius: `8px`
+- Padding: `12px 34px` (large); `8px 24px` at 49px with 16px / 600 (medium, home capture 10); `8px 16px` at 43px with 18px / 600 (small, learning capture 10)
+- Height: `51px` (large)
+- Font: `18px / 600 Pretendard Variable`, line height 27px
+- Use: white action on dark sections (`a.primary-button.white-button`); `home::[data-omd-capture="16"]`.
+
+### Black action
+
+**Default**
+- Background: `#232334`
+- Text: `#FFFFFF`
+- Radius: `8px`
+- Padding: `12px 34px`
+- Height: `51px`
+- Font: `18px / 600 Pretendard Variable`, line height 27px
+- Use: dark action on the learning route (`a.primary-button.large.black-button`); `surface-2::[data-omd-capture="12"]`.
+
+### Grey action
+
+**Default**
+- Background: `#DADEEA`
+- Text: `#272730`
+- Radius: `8px`
+- Padding: `0px 36px`
+- Height: `49px`
+- Font: `18px / 600 Pretendard Variable`, line height 27px
+- Use: grey action in the university-LMS hero (`a.primary-button.gray-button`); `surface-3::[data-omd-capture="10"]`. It sits beside a `#FF4438` action with the same padding and height (capture 11).
+
+### Footer sitemap link
+
+**Default**
+- Background: transparent
+- Text: `#FFFFFF`
+- Height: `29px`
+- Font: `18px / 600 Pretendard Variable`, line height 28.8px
+- Use: footer sitemap links (`a.sitemap-link`) on the dark footer, ten per route on all three routes; `home::[data-omd-capture="19"]`.
+
+### Footer legal link
+
+**Default**
+- Background: transparent
+- Text: `#FFFFFF`
+- Height: `18px`
+- Font: `12px / 300 Pretendard Variable`, line height 18px
+- Use: footer legal links (class `copryright-link`, as spelled in the markup), two per route; `home::[data-omd-capture="29"]`.
+
+### Home feature card
+
+**Default**
+- Background: `#DADEEC`
+- Radius: `12px`
+- Padding: `0px`
+- Size: `563px x 456px`
+- Use: four home feature cards (`a.feat-item`, captures 12-15); `home::[data-omd-capture="12"]`.
+- Label: not declared. The anchor computes Chromium's default link colour `#0000EE` and the 14px / 400 body type, which is container text.
+- Frames: the bundle holds 10 state frames on these cards (hover and pressed on all four, focus on 14 and 15). Hover moves box-shadow from `none` to `rgba(0, 0, 0, 0) 0px 0px 0px 0px` (alpha 0); pressed moves it to `rgba(73, 73, 90, 0.004) 0px 0.62335px 0.649323px -0.259729px`, a frame caught early in a transition; focus is not declared from bundles. None of them is a settled change, so no state value is declared.
+
+### Comparison table row
+
+**Default**
+- Background: transparent
+- Border: 2px `#333333` on the bottom edge only (`border-width: 0px 0px 2px`)
+- Padding: `15px 0px`
+- Height: `67px`
+- Label: the row heading child (`div.table-row-heading`): `#666B80`, `22px / 400 Pretendard Variable`, line height 35.2px
+- Use: 18 comparison-table rows (`div.table-line`) on university-lms; `surface-3::div`.
+
+Pointer states: the bundle holds 10 state frames, all on the four home feature cards, and none records a settled change, so hover and pressed values are not declared; focus is never declared from these bundles. Selected, disabled, dialog, menu, tab, toast and form-error variants were not captured. Corrected 2026-09-30: the July text read the collector's zero interaction count (which covers expansions such as dialogs and menus) as zero state samples.
 
 ## 5. Layout Principles
 
@@ -296,9 +480,9 @@ No behavioral, demographic, or satisfaction claims are inferred beyond those pub
 | Success | Not captured. |
 | Disabled | Not captured. |
 | Skeleton | Not captured. |
-| Hover | Not captured; interaction count is zero. |
-| Focus | Not captured; interaction count is zero. |
-| Pressed | Not captured; interaction count is zero. |
+| Hover | Not declared. Hover frames exist on the four home feature cards; their only change is a box-shadow moving from `none` to an alpha-0 colour. Corrected 2026-09-30: the interaction count covers expansions only. |
+| Focus | Not declared. Bundle focus frames are not a reliable focus-visible sample (corrected 2026-09-30). |
+| Pressed | Not declared. The pressed frames on the feature cards record a box-shadow of alpha 0.004, a transition frame (corrected 2026-09-30). |
 
 ## 15. Motion & Easing
 

@@ -18,7 +18,7 @@ ds:
   og_image: "https://design.socar.kr/og.jpg"
 verification_v2:
   schema: 2
-  checked: "2026-09-19"
+  checked: "2026-09-29"
   surfaces:
     - { id: home, kind: marketing-product, url: "https://www.socar.kr/", inspected: "2026-07-12" }
     - { id: service, kind: product-directory, url: "https://www.socar.kr/service", inspected: "2026-07-12" }
@@ -32,6 +32,8 @@ verification_v2:
     - { id: guide-live, kind: product-surface, url: "https://www.socar.kr/guide", captured: "2026-07-12" }
     - { id: brand-live, kind: brand-asset, url: "https://design.socar.kr/", captured: "2026-07-12" }
     - { id: fare-live, kind: product-surface, url: "https://www.socar.kr/fare", captured: "2026-07-12" }
+    - { id: socar-probe-home, kind: product-surface, url: "https://www.socar.kr/", captured: "2026-09-29" }
+    - { id: socar-probe-guide, kind: product-surface, url: "https://www.socar.kr/guide", captured: "2026-09-29" }
   conflicts: []
   claims:
     "tokens.colors.primary": &guide_evidence { surface_id: guide, source_id: guide-live, method: live-inspect, captured: "2026-07-12" }
@@ -77,7 +79,10 @@ verification_v2:
     "tokens.components.primary-action.radius": *guide_evidence
     "tokens.components.primary-action.padding": *guide_evidence
     "tokens.components.primary-action.font": *guide_evidence
-    "tokens.components.primary-action.states": *guide_evidence
+    "tokens.components.primary-action.hover": { surface_id: guide, source_id: socar-probe-guide, method: live-state-probe, selector: "a 웹에서 예약하기 at :hover", captured: "2026-09-29" }
+    "tokens.components.primary-action.pressed": { surface_id: guide, source_id: socar-probe-guide, method: live-state-probe, selector: "a 웹에서 예약하기 at :active", captured: "2026-09-29" }
+    "tokens.components.primary-action.focus": { surface_id: guide, source_id: socar-probe-guide, method: live-state-probe, selector: "a 웹에서 예약하기 at :focus-visible, Tab stop 17", captured: "2026-09-29" }
+    "tokens.components.primary-action.states": { surface_id: guide, source_id: socar-probe-guide, method: live-state-probe, selector: "a 웹에서 예약하기 (href /rentacar)", captured: "2026-09-29" }
     "tokens.components.primary-action.use": *guide_evidence
     "tokens.components.search-action.type": *home_evidence
     "tokens.components.search-action.bg": *home_evidence
@@ -86,7 +91,7 @@ verification_v2:
     "tokens.components.search-action.padding": *home_evidence
     "tokens.components.search-action.font": *home_evidence
     "tokens.components.search-action.disabled": *home_evidence
-    "tokens.components.search-action.states": *home_evidence
+    "tokens.components.search-action.states": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "button 검색 (disabled=true)", captured: "2026-09-29" }
     "tokens.components.search-action.use": *home_evidence
     "tokens.components.region-list.type": *home_evidence
     "tokens.components.region-list.bg": *home_evidence
@@ -100,9 +105,79 @@ verification_v2:
     "tokens.components.floating-control.radius": *home_evidence
     "tokens.components.floating-control.padding": *home_evidence
     "tokens.components.floating-control.font": *home_evidence
-    "tokens.components.floating-control.pressed": { surface_id: home, source_id: home-live, method: live-css-inspect, captured: "2026-09-16" }
-    "tokens.components.floating-control.states": *home_evidence
+    "tokens.components.floating-control.hover": { surface_id: guide, source_id: socar-probe-guide, method: live-state-probe, selector: "button 맨 위로 at :hover", captured: "2026-09-29" }
+    "tokens.components.floating-control.pressed": { surface_id: guide, source_id: socar-probe-guide, method: live-state-probe, selector: "button 맨 위로 at :active", captured: "2026-09-29" }
+    "tokens.components.floating-control.focus": { surface_id: guide, source_id: socar-probe-guide, method: live-state-probe, selector: "button 맨 위로 at :focus-visible, Tab stop 18", captured: "2026-09-29" }
+    "tokens.components.floating-control.states": { surface_id: guide, source_id: socar-probe-guide, method: live-state-probe, selector: "button 맨 위로 in div.tw-fixed", captured: "2026-09-29" }
     "tokens.components.floating-control.use": *home_evidence
+    "tokens.components.nav-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.nav-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.nav-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.nav-link.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.nav-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.nav-link.hover": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-title2 예약하기 at :hover", captured: "2026-09-29" }
+    "tokens.components.nav-link.pressed": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-title2 예약하기 at :active", captured: "2026-09-29" }
+    "tokens.components.nav-link.focus": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-title2 예약하기 at :focus-visible, Tab stop 2", captured: "2026-09-29" }
+    "tokens.components.nav-link.states": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-title2 예약하기", captured: "2026-09-29" }
+    "tokens.components.nav-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.search-input.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.search-input.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.search-input.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.search-input.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.search-input.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.search-input.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.search-input.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.search-input.hover": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "input 대여 장소 검색 at :hover", captured: "2026-09-29" }
+    "tokens.components.search-input.pressed": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "input 대여 장소 검색 at :active, wrapper div.tw-group/input-wrapper", captured: "2026-09-29" }
+    "tokens.components.search-input.focus": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "input 대여 장소 검색 at :focus-visible, Tab stop 9, wrapper div.tw-group/input-wrapper", captured: "2026-09-29" }
+    "tokens.components.search-input.states": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "input 대여 장소 검색", captured: "2026-09-29" }
+    "tokens.components.search-input.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-12" }
+    "tokens.components.time-range-chip.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.time-range-chip.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.time-range-chip.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.time-range-chip.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.time-range-chip.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.time-range-chip.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.time-range-chip.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.time-range-chip.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-12" }
+    "tokens.components.location-tile.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-12" }
+    "tokens.components.location-tile.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-12" }
+    "tokens.components.location-tile.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::h3", captured: "2026-07-12" }
+    "tokens.components.location-tile.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-12" }
+    "tokens.components.location-tile.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-12" }
+    "tokens.components.location-tile.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-12" }
+    "tokens.components.location-tile.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-12" }
+    "tokens.components.location-tile.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::h3", captured: "2026-07-12" }
+    "tokens.components.location-tile.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-12" }
+    "tokens.components.location-tile.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-07-12" }
+    "tokens.components.jeju-entry-tile.type": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 (href /jeju)", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.bg": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 (href /jeju)", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.fg": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 (href /jeju)", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.border": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 (href /jeju)", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.radius": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 (href /jeju)", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.padding": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 (href /jeju)", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.size": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 (href /jeju)", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.font": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 (href /jeju)", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.hover": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 at :hover", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.pressed": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 at :active", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.states": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 (href /jeju)", captured: "2026-09-29" }
+    "tokens.components.jeju-entry-tile.use": { surface_id: home, source_id: socar-probe-home, method: live-state-probe, selector: "a.tw-flex 제주에서 빌리기 (href /jeju)", captured: "2026-09-29" }
+    "tokens.components.row-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-12" }
+    "tokens.components.row-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-12" }
+    "tokens.components.row-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-12" }
+    "tokens.components.row-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-12" }
+    "tokens.components.row-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-12" }
+    "tokens.components.row-button.pressed": { surface_id: guide, source_id: guide-live, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"8\"]::state-pressed", captured: "2026-07-12" }
+    "tokens.components.row-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-12" }
+    "tokens.components.row-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"58\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"73\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"73\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"73\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"73\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.hover": { surface_id: service, source_id: service-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"21\"]::state-hover", captured: "2026-07-12" }
+    "tokens.components.footer-link.pressed": { surface_id: service, source_id: service-live, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"21\"]::state-pressed", captured: "2026-07-12" }
+    "tokens.components.footer-link.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"73\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"73\"]", captured: "2026-07-12" }
 tokens:
   source: reconciled
   extracted: "2026-07-12"
@@ -129,10 +204,17 @@ tokens:
     floating: "rgba(38,47,60,0.04) 0px 0px 6px, rgba(38,47,60,0.04) 0px 3px 2px, rgba(38,47,60,0.08) 0px 2px 8px"
   components_harvested: true
   components:
-    primary-action: { type: button, bg: "#0078ff", fg: "#ffffff", radius: "14px", padding: "16px 22px", font: "16px / 600", states: "default captured; no safe active expansion", use: "Prominent guide/product action" }
-    search-action: { type: button, bg: "#f2f3f8", fg: "#b4bbcb", radius: "12px", padding: "12px 18px", font: "14px / 600", disabled: "#f2f3f8", states: "disabled appearance captured", use: "Home search action before required values are complete" }
+    primary-action: { type: button, bg: "#0078ff", fg: "#ffffff", radius: "14px", padding: "16px 22px", font: "16px / 600", hover: "no visible change (measured 2026-09-29)", pressed: "transform scale(0.92); overlay ::after rgba(242,243,248,0.66) over the full box; bg stays #0078ff", focus: "outline browser default ring (outline-style auto), not brand — measured 2026-09-29", states: "default captured 2026-07-12; hover, pressed and keyboard focus measured 2026-09-29 on the /guide 웹에서 예약하기 link (real :hover, :active and Tab to :focus-visible, three reads); transition all 0.1s ease-in-out", use: "Prominent guide/product action" }
+    search-action: { type: button, bg: "#f2f3f8", fg: "#b4bbcb", radius: "12px", padding: "12px 18px", font: "14px / 600", disabled: "#f2f3f8", states: "disabled appearance captured 2026-07-12; re-read 2026-09-29 as a genuinely disabled control (disabled=true, cursor not-allowed), so its hover and pressed reads are its disabled rendering, not states, and it takes no keyboard focus; the enabled look needs a completed booking form", use: "Home search action before required values are complete" }
     region-list: { type: listItem, bg: "#f9f9fb", fg: "#354153", radius: "12px", padding: "24px 16px", use: "Home region or destination collection item" }
-    floating-control: { type: button, bg: "#ffffff", fg: "#354153", radius: "48px", padding: "11px", font: "14px / 600", pressed: "rgba(20, 26, 36, 0.06)", states: "default and pressed snapshots observed", use: "Floating circular navigation/control button" }
+    floating-control: { type: button, bg: "#ffffff", fg: "#354153", radius: "48px", padding: "11px", font: "14px / 600", hover: "no visible change (measured 2026-09-29 on /guide)", pressed: "overlay ::after rgba(20,26,36,0.06); transform scale(0.95)", focus: "outline browser default ring (outline-style auto), not brand — measured 2026-09-29 on /guide", states: "default captured 2026-07-12 on home, service, guide and fare; the pressed overlay was first read 2026-09-16; hover, pressed and keyboard focus measured 2026-09-29 on /guide, because on home the button's fixed wrapper stays at opacity 0, and the button reads inert with pointer-events none, until the page scrolls; transition all 0.1s ease-in-out", use: "Floating circular navigation/control button" }
+    nav-link: { type: tab, bg: "transparent", fg: "#354153", padding: "0px", font: "16px / 600 / Pretendard", hover: "fg #0078ff", pressed: "fg #0078ff", focus: "outline browser default ring (outline-style auto), not brand — measured 2026-09-29", states: "hover and pressed state samples captured 2026-07-12 on the header links of home, service, guide and fare (22 frames, all #0078ff); re-measured 2026-09-29 on 예약하기 with real :hover and :active; keyboard focus measured 2026-09-29 (Tab 2)", use: "Header navigation link (예약하기, 쏘카 서비스, 블로그)" }
+    search-input: { type: input, bg: "transparent", fg: "#354153", radius: "0px", padding: "0px", height: "24px", font: "16px / 400 / Pretendard", hover: "no visible change (measured 2026-09-29)", pressed: "border 1px #99ceff on the wrapper div two levels up (the press focuses the field)", focus: "border 1px #e5e8ef → 1px #99ceff on the wrapper div two levels up; no outline on the input — measured 2026-09-29", states: "default captured 2026-07-12; hover, pressed and keyboard focus measured 2026-09-29 (Tab 9); focusing the field opens a place layer (제주예약, 닫기)", use: "Home booking-strip place field 대여 장소 검색; the visible box is its wrapper (bg #ffffff, 1px solid #e5e8ef)" }
+    time-range-chip: { type: button, bg: "#ffffff", border: "1px solid #e5e8ef", radius: "14px", padding: "0px 12px", height: "48px", states: "default captured 2026-07-12 (343px wide on home); no state sample; its label element was not captured, so no text colour or type is declared", use: "Home booking-strip date-time chip (오늘 09:50 ~ 13:50)" }
+    location-tile: { type: card, bg: "#ffffff", fg: "#354153", border: "1px solid #e5e8ef", radius: "14px", padding: "20px", size: "300px x 90px", font: "16px / 600 / Pretendard (city-name h3)", states: "default captured 2026-07-12 (14 tiles at 300px x 90px, 24 at 300px x 66px); the July hover and pressed frames drift the border by 1-5 channel units with no sibling agreement (transition frames), so no hover or pressed value is declared", use: "Home city and airport entry tile (the Location / Region Card in the prose)" }
+    jeju-entry-tile: { type: card, bg: "#f9f9fb", fg: "#354153", border: "1px solid #e5e8ef", radius: "16px", padding: "20px", size: "618px x 90px", font: "16px / 600 / Pretendard (label span)", hover: "no visible change (measured 2026-09-29)", pressed: "no visible change (measured 2026-09-29)", states: "rest, hover and pressed measured 2026-09-29 (probe tool plus a cross-check over all seven descendants); keyboard focus UNMEASURED: 300 Tab presses never reached it because the place layer traps the walk", use: "Home 제주에서 빌리기 entry tile (link to /jeju); the July capture has no 618px-wide tile" }
+    row-button: { type: button, bg: "transparent", radius: "0px", padding: "14px 16px", height: "52px", pressed: "bg rgba(20,26,36,0.06); radius 0px → 14px", states: "default captured 2026-07-12 (18 rows on home, guide and fare); pressed frames on guide and fare agree 12 of 12; hover and focus not sampled; the label span was not captured, so no text colour or type is declared", use: "Full-width list row button (1248px x 52px) on home, guide and fare" }
+    footer-link: { type: tab, bg: "transparent", fg: "#697383", font: "14px / 400 / Pretendard", hover: "fg #354153", pressed: "fg #354153", states: "default captured 2026-07-12 (56 links on home, service, guide and fare); hover and pressed frames on four links on service and fare all read #354153; focus not sampled", use: "Footer link in secondary text" }
 ---
 
 # Design System Inspiration of SOCAR
@@ -232,11 +314,12 @@ Specimen availability is evaluated independently for brand and live web surfaces
 
 **Primary CTA (booking surface)**
 
-- Background: SOCAR Blue (brand-blue, public hex unpublished; product-flow primary)
+- Background: SOCAR Blue `#0078ff` (the /guide '웹에서 예약하기' link, captured 2026-07-12 and re-read 2026-09-29)
 - Text: `#ffffff`
-- Radius: 12px
-- Font: 14–16px Pretendard, weight 600
-- Padding: 12px 18px (matches search button geometry)
+- Radius: 14px (the 12px written here earlier is the search button's radius)
+- Font: 16px Pretendard, weight 600
+- Padding: 16px 22px
+- Hover: no visible change. Pressed: the button shrinks to `scale(0.92)` (148.6px × 56px renders 136.7px × 51.5px) under a full-size `::after` veil `rgba(242,243,248,0.66)`; the fill stays `#0078ff`, so the pressed look is paler, not darker. Focus: the browser's default ring (`#005fcc`, outline-style auto), not a brand ring (all measured 2026-09-29)
 - Use: "예약하기" final confirm in the reservation flow; app download badge background
 - Note: On the public home page, this CTA appears as the header nav `예약하기` link styled as text — the strongly-colored variant is reserved for the booking funnel.
 
@@ -257,6 +340,7 @@ Specimen availability is evaluated independently for brand and live web surfaces
 - Font: 16px Pretendard / weight 600
 - Padding: 0
 - Use: "예약하기", "쏘카 서비스", "블로그" in the top nav. No underline, no hover bg — pure typographic link.
+- Hover and pressed: the text turns SOCAR Blue `#0078ff` (22 July state frames on four surfaces; re-measured 2026-09-29). Focus: the browser's default ring, not brand (measured 2026-09-29)
 
 ### Cards & Containers
 
@@ -296,7 +380,7 @@ Specimen availability is evaluated independently for brand and live web surfaces
 - Text: 16px Pretendard / 400 / `#354153`
 - Placeholder: `#b4bbcb`
 - Padding: 12px 18px (filled) / 0 13px (search bar)
-- No focus-ring color verified on the public home — the booking flow likely shifts the border to SOCAR Blue.
+- Focus (measured 2026-09-29 on the home place field '대여 장소 검색', Tab 9): the input draws nothing itself (outline width 0); its wrapper two levels up changes its border from `1px solid #e5e8ef` to `1px solid #99ceff`, a pale blue rather than SOCAR Blue. A mouse press shows the same change because it focuses the field. Hover: no visible change (measured 2026-09-29)
 
 ### Navigation (Header)
 
@@ -316,9 +400,58 @@ Specimen availability is evaluated independently for brand and live web surfaces
 ### Badges (inferred from page label patterns)
 - City tiles use inline labels like "인기" — these read as small bold tags rendered inside the card label rather than as standalone badge components. No distinct badge token observed on the public home.
 
+### Measured components (captured 2026-07-12; states measured 2026-09-29)
+
+Rest values below come from the July capture unless marked 2026-09-29; hover, pressed and focus come from the 2026-09-29 live probe (real `:hover`, `:active`, and Tab to `:focus-visible`) or from July state frames where siblings agree, as each entry says.
+
+**Header Nav Link** (`nav-link`)
+- Text `#354153`, 16px / 600 / Pretendard, no fill, no padding
+- Hover and pressed: fg `#0078ff`. The July capture holds 22 state frames on the header links of home, service, guide and fare, all `#0078ff`; the 2026-09-29 probe read the same on 예약하기
+- Focus: the browser's default ring (`#005fcc`, outline-style auto, offset 1px), not brand (Tab 2, measured 2026-09-29)
+
+**Place Search Field** (`search-input`)
+- The input is transparent with `#354153` text, 16px / 400 / Pretendard, a 24px line box, no padding and no radius. The visible box is its wrapper: `#ffffff` with a `1px solid #e5e8ef` border (the wrapper's radius was not read)
+- Hover: no visible change (measured 2026-09-29)
+- Pressed and focus: the wrapper border turns `1px #99ceff`; nothing is drawn on the input (Tab 9, measured 2026-09-29). Focus also opens a place layer (제주예약, 닫기)
+
+**Date-Time Chip** (`time-range-chip`)
+- `#ffffff` fill, `1px solid #e5e8ef` border, 14px radius, padding 0 12px, 48px tall, 343px wide on home. The 2026-09-29 probe survey lists the same chip at 343px × 48px with the same radius and border
+- No state sample. Its label element was not captured, so no text colour or type is declared
+
+**City and Airport Tile** (`location-tile`)
+- `#ffffff` fill, `1px solid #e5e8ef` border, 14px radius, 20px padding; 14 tiles at 300px × 90px and 24 at 300px × 66px; the city name is an `h3` in `#354153`, 16px / 600
+- No hover or pressed value: the July frames move the border by one to five channel units (`#e4e8ef`, `#e4e7ef`, `#e1e6ef`, `#e0e6ef`) and no two siblings agree, which reads as transition frames rather than a settled state
+
+**Jeju Entry Tile** (`jeju-entry-tile`, 2026-09-29 only)
+- `#f9f9fb` fill, `1px solid #e5e8ef` border, 16px radius, 20px padding, 618px × 90px; label `#354153`, 16px / 600
+- Hover and pressed: no visible change (probe tool plus a cross-check over all seven descendants, measured 2026-09-29)
+- Focus: UNMEASURED. 300 Tab presses never reached it, because the place layer traps the walk
+- The July capture has no 618px-wide tile. This is not the `region-list` item (see below)
+
+**List Row Button** (`row-button`)
+- Transparent, padding 14px 16px, 52px tall, 1248px wide; 18 rows on home, guide and fare. The button element computes `#354153` 16px / 400, but its label span was not captured, so no text colour or type is declared
+- Pressed: bg `rgba(20,26,36,0.06)` and the radius goes from 0px to 14px. All 12 pressed frames on guide and fare agree (2026-07-12), and the fill is the same `rgba(20,26,36,0.06)` the floating button uses
+- Hover and focus: not sampled
+
+**Footer Link** (`footer-link`)
+- Text `#697383`, 14px / 400 / Pretendard, no fill; 56 links on home, service, guide and fare
+- Hover and pressed: fg `#354153`; all four sampled links on service and fare agree (2026-07-12). Focus: not sampled
+
+**Floating Control, re-measured** (`floating-control`)
+- Measured on /guide, not on home: on home the fixed wrapper stays at opacity 0 until the page scrolls, and the fixed probe tool reads the button there as `pointer-events: none` and `inert` (`probe-tool-fix.md`), so neither the pointer nor the Tab walk reaches it. The /guide button is the same component (44px × 44px, 48px radius, 11px padding, `#ffffff` / `#354153`, the three-layer `shadow.floating`)
+- Hover: no visible change. Pressed: `::after` overlay `rgba(20,26,36,0.06)` plus `scale(0.95)` (44px renders 41.8px). Focus: the browser's default ring, not brand (Tab 18; all measured 2026-09-29)
+
+**Region List Item, scope** (`region-list`)
+- The July values (`#f9f9fb`, 12px radius, padding 24px 16px) match four `li` items on home in the July capture (300px × 98px, 14px gap). The 2026-09-29 probe's candidate, the 제주에서 빌리기 tile, is a different element (16px radius, 20px padding, a border) and is recorded above as `jeju-entry-tile`; its hover and pressed reads are not attached here. Whether the July items are still on the page was not re-measured. Keyboard focus for `region-list`: UNMEASURED (neither the July capture nor the 2026-09-29 Tab walk reached it)
+
+**Search Button, re-measured** (`search-action`)
+- Still `disabled=true` with `cursor: not-allowed` on 2026-09-29, so the probe's hover and pressed reads are its disabled rendering, not states, and it takes no keyboard focus. The enabled look needs a completed booking form, which was not used
+
+Four controls have hover, pressed and keyboard focus all measured: the primary action, the floating control, the nav link and the place field. None of them draws an authored focus outline.
+
 ---
 
-**Verified:** 2026-07-12 (omd:migrate)
+**Verified:** 2026-07-12 (omd:migrate) · states re-measured 2026-09-29 (live probe of the home and /guide pages)
 **Tier 1 sources:** https://www.socar.kr/ ; https://www.socar.kr/service ; https://www.socar.kr/guide ; https://design.socar.kr/ ; https://www.socar.kr/fare
 - `https://www.socar.kr/` — live computed-style inspect (Pretendard family, `#354153` body, `#e5e8ef` borders, `#f2f3f8` input fill, `#b4bbcb` placeholder, 12/14/16px radii, `rgba(0,0,0,0.1) 0 4px 8px` card shadow, footer `#f5f5f5`, H1 26/700, H2 22/700, H3 16/600, nav 16/600)
 - `https://design.socar.kr/` — SOCAR Brand Center, navigated (SPA shell only via static fetch; live inspect of the booking flow's primary CTA could not be completed in this session because a shared browser session bounced between unrelated tabs after the first inspection)
@@ -398,7 +531,7 @@ type says otherwise.
 
 - **Text contrast.** Body `#354153` on `#ffffff` measures ~9.4:1 — well above WCAG AAA for body text.
 - **Placeholder contrast.** `#b4bbcb` on `#ffffff` measures ~2.5:1 — below WCAG AA for normal text. Acceptable for placeholder/disabled treatment only; care needed if the same color is reused for active text.
-- **Focus states** not directly inspected on the public home; the booking flow likely surfaces a SOCAR Blue border on input focus consistent with FRAME's documented practice.
+- **Focus states** (measured 2026-09-29 after real Tab presses): the home place field turns its wrapper border `#99ceff`; the header nav link, the guide primary action and the floating button show the browser's default ring (`#005fcc`, outline-style auto). No authored focus outline was found, and a pale `#99ceff` border on a white field is a weak cue. Region tiles and everything after the place field were not reached, because focusing the field opens a place layer that traps the Tab walk.
 - **Korean as primary script.** All copy is set in Pretendard, which carries an explicit Korean glyph set — no fallback flicker, no width mismatch.
 - **Touch targets.** Search button at 12px 18px padding plus 14px-font line height clears the 44×44px iOS recommendation. City tiles at 20px padding clear it comfortably.
 - **Motion / reduced motion.** Not directly verified — should be added to the SOCAR Frame docs review before a strict claim is made.
@@ -466,12 +599,17 @@ What SOCAR refuses: the playful consumer-app vocabulary of its earlier identity 
 | **Success (reservation confirmed)** | Dedicated confirmation screen — not a toast. The reservation timeline, location, vehicle, and total fare laid out in a single readable column. Single primary CTA: *"확인"*. Money-moving events are never reduced to a toast. |
 | **Success (small action, e.g. saved location)** | Brief 3s toast at the bottom of the viewport, dark background, white text, no emoji. |
 | **Skeleton** | `#e5e8ef` blocks at exact card dimensions. Subtle shimmer. Fare amounts never render as skeletons — they show *"--"* until resolved. |
+| **Hover (measured 2026-09-29)** | Header links recolour `#354153` → `#0078ff`; footer links `#697383` → `#354153` (July frames). The primary action, floating button, place field and 제주 tile show no visible change. |
+| **Pressed (measured)** | Buttons shrink under a pale overlay: the primary action to `scale(0.92)` with `rgba(242,243,248,0.66)`, the floating button to `scale(0.95)` with `rgba(20,26,36,0.06)`; list rows take a `rgba(20,26,36,0.06)` fill with 14px corners (July frames). |
+| **Focus (measured 2026-09-29)** | The place field's wrapper border turns `#99ceff`; the other reached controls show only the browser's default ring. No authored focus outline. |
 | **Disabled (CTA, form incomplete)** | Search button drops to `#f2f3f8` background with `#b4bbcb` label — the verified default disabled state on the home. The geometry stays stable; only the color contrast changes. |
 | **No connectivity** | Top-bar banner: *"인터넷 연결을 확인해 주세요"*. Last-known content stays visible. Critical actions (confirm reservation) are blocked until connectivity returns. |
 
 ## 15. Motion & Easing
 
 The public home page is mostly static — SOCAR earns its trust through restraint rather than kinetic flourish. The motion vocabulary below is the principled extension of FRAME's documented practice into SOCAR Blue brand-tier surfaces; specific token values are not published on the public site and are reasoned from observed behavior.
+
+Measured on 2026-09-29 (computed `transition`, not tokens): the primary action, the floating button and the search button run `all 0.1s ease-in-out`; the nav link, the 제주 tile and the place field have no transition (`all 0s`). The list rows' class list names a 200ms transform transition (class evidence only). The tables below remain reasoned values, not measurements.
 
 **Durations**:
 

@@ -18,7 +18,7 @@ ds:
   description: Official Toss group mark and color guidance; it is not a Toss Bank product-UI token source.
 verification_v2:
   schema: 2
-  checked: "2026-07-13"
+  checked: "2026-09-29"
   surfaces:
     - { id: home, kind: marketing, url: "https://www.tossbank.com/", inspected: "2026-07-12" }
     - { id: product-disclosure, kind: documentation, url: "https://www.tossbank.com/customer/product-disclosure", inspected: "2026-07-12" }
@@ -32,6 +32,8 @@ verification_v2:
     - { id: tps-history, kind: official-doc, url: "https://toss.im/tossfeed/article/beginning-of-tps", captured: "2026-07-13" }
     - { id: tds-design-tool, kind: official-doc, url: "https://developers-apps-in-toss.toss.im/design/prepare/design.html", captured: "2026-07-13" }
     - { id: bank-story, kind: official-doc, url: "https://www.tossbank.com/ten-million", captured: "2026-07-13" }
+    - { id: tossbank-probe-home, kind: product-surface, url: "https://www.tossbank.com/", captured: "2026-09-29" }
+    - { id: tossbank-probe-disclosure, kind: product-surface, url: "https://www.tossbank.com/customer/product-disclosure", captured: "2026-09-29" }
   conflicts: []
   claims:
     "tokens.colors.brand": &brand { surface_id: brand-assets, source_id: brand-resource, method: official-doc, captured: "2026-07-13" }
@@ -76,17 +78,112 @@ verification_v2:
     "tokens.components.docs-outline-button.radius": *docs
     "tokens.components.docs-outline-button.padding": *docs
     "tokens.components.docs-outline-button.font": *docs
-    "tokens.components.docs-outline-button.hover": &docs_state { surface_id: product-disclosure, source_id: disclosure-live, method: live-css-inspect, captured: "2026-09-16" }
-    "tokens.components.docs-outline-button.pressed": *docs_state
-    "tokens.components.docs-outline-button.focus": *docs_state
-    "tokens.components.docs-outline-button.states": *docs
+    "tokens.components.docs-outline-button.border": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.docs-outline-button.hover": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "button.css-6erbde 시작하기 at :hover (two loads)", captured: "2026-09-29" }
+    "tokens.components.docs-outline-button.pressed": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "button.css-6erbde 시작하기 at :active (two loads)", captured: "2026-09-29" }
+    "tokens.components.docs-outline-button.focus": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "button.css-6erbde at :focus-visible, Tab stop 12 (two loads)", captured: "2026-09-29" }
+    "tokens.components.docs-outline-button.states": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "button.css-6erbde 시작하기", captured: "2026-09-29" }
     "tokens.components.docs-outline-button.use": *docs
-    "tokens.components.docs-tab.type": *docs
-    "tokens.components.docs-tab.fg": *docs
-    "tokens.components.docs-tab.padding": *docs
-    "tokens.components.docs-tab.font": *docs
-    "tokens.components.docs-tab.states": *docs
-    "tokens.components.docs-tab.use": *docs
+    "tokens.components.docs-tab.type": &docs_tab { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-07-12" }
+    "tokens.components.docs-tab.fg": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "button#radix-trigger-U visible label span (opacity 1)", captured: "2026-09-29" }
+    "tokens.components.docs-tab.padding": *docs_tab
+    "tokens.components.docs-tab.font": *docs_tab
+    "tokens.components.docs-tab.selected": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "button#radix-trigger-U aria-selected=true, child span fill", captured: "2026-09-29" }
+    "tokens.components.docs-tab.hover": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "button#radix-trigger-U at :hover", captured: "2026-09-29" }
+    "tokens.components.docs-tab.pressed": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "button#radix-trigger-U at :active", captured: "2026-09-29" }
+    "tokens.components.docs-tab.focus": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "button#radix-trigger-U at :focus-visible, Tab stop 13 (fixed probe tool, raw/tool-fix-tossbank-disclosure.json)", captured: "2026-09-29" }
+    "tokens.components.docs-tab.states": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "button#radix-trigger-U role=tab", captured: "2026-09-29" }
+    "tokens.components.docs-tab.use": *docs_tab
+    "tokens.components.pill-action.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.pill-action.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.pill-action.fg": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "button.css-k1k999 label span 자세히 보기", captured: "2026-09-29" }
+    "tokens.components.pill-action.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.pill-action.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.pill-action.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.pill-action.font": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "button.css-k1k999 label span 자세히 보기", captured: "2026-09-29" }
+    "tokens.components.pill-action.hover": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "button.css-k1k999 자세히 보기 at :hover", captured: "2026-09-29" }
+    "tokens.components.pill-action.pressed": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "button.css-k1k999 자세히 보기 at :active", captured: "2026-09-29" }
+    "tokens.components.pill-action.focus": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "button.css-k1k999 at :focus-visible, Tab stop 13", captured: "2026-09-29" }
+    "tokens.components.pill-action.states": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "button.css-k1k999 자세히 보기", captured: "2026-09-29" }
+    "tokens.components.pill-action.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-07-12" }
+    "tokens.components.article-card.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.article-card.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.article-card.fg": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "a.e1853ft10 title p (first of 24)", captured: "2026-09-29" }
+    "tokens.components.article-card.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.article-card.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.article-card.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.article-card.hover": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "a.e1853ft10 at :hover", captured: "2026-09-29" }
+    "tokens.components.article-card.pressed": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "a.e1853ft10 at :active", captured: "2026-09-29" }
+    "tokens.components.article-card.focus": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "a.e1853ft10 at :focus-visible, Tab stop 14", captured: "2026-09-29" }
+    "tokens.components.article-card.states": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "a.e1853ft10 (first of 24)", captured: "2026-09-29" }
+    "tokens.components.article-card.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.nav-menu.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.nav-menu.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.nav-menu.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.nav-menu.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.nav-menu.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.nav-menu.hover": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "button.e159wptm1 은행소개 at :hover", captured: "2026-09-29" }
+    "tokens.components.nav-menu.pressed": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "button.e159wptm1 은행소개 at :active", captured: "2026-09-29" }
+    "tokens.components.nav-menu.focus": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "button.e159wptm1 은행소개 at :focus-visible, Tab stop 3", captured: "2026-09-29" }
+    "tokens.components.nav-menu.states": { surface_id: home, source_id: tossbank-probe-home, method: live-state-probe, selector: "button.e159wptm1 은행소개", captured: "2026-09-29" }
+    "tokens.components.nav-menu.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-07-12" }
+    "tokens.components.docs-link.type": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.docs-link.bg": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.docs-link.fg": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.docs-link.padding": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.docs-link.font": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.docs-link.hover": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "a.css-1irxrvp 금융감독원 금융소비자정보포털시스템 at :hover", captured: "2026-09-29" }
+    "tokens.components.docs-link.pressed": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "a.css-1irxrvp 금융감독원 금융소비자정보포털시스템 at :active", captured: "2026-09-29" }
+    "tokens.components.docs-link.focus": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "a.css-1irxrvp at :focus-visible, Tab stop 14", captured: "2026-09-29" }
+    "tokens.components.docs-link.states": { surface_id: product-disclosure, source_id: tossbank-probe-disclosure, method: live-state-probe, selector: "a.css-1irxrvp 금융감독원 금융소비자정보포털시스템", captured: "2026-09-29" }
+    "tokens.components.docs-link.use": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"31\"]", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.border": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.height": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.hover": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"10\"]::state-hover", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.pressed": { surface_id: home, source_id: home-live, method: computed-style-state-sample, selector: "home::[data-omd-capture=\"10\"]::state-pressed", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.home-outline-button.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-07-12" }
+    "tokens.components.carousel-arrow.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-12" }
+    "tokens.components.carousel-arrow.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-12" }
+    "tokens.components.carousel-arrow.radius": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-12" }
+    "tokens.components.carousel-arrow.padding": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-12" }
+    "tokens.components.carousel-arrow.size": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-12" }
+    "tokens.components.carousel-arrow.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-12" }
+    "tokens.components.carousel-arrow.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"29\"]", captured: "2026-07-12" }
+    "tokens.components.category-tag.type": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.category-tag.bg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.category-tag.fg": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.category-tag.font": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.category-tag.states": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.category-tag.use": { surface_id: home, source_id: home-live, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-07-12" }
+    "tokens.components.submenu-link.type": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-12" }
+    "tokens.components.submenu-link.bg": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-12" }
+    "tokens.components.submenu-link.fg": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-12" }
+    "tokens.components.submenu-link.padding": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-12" }
+    "tokens.components.submenu-link.height": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-12" }
+    "tokens.components.submenu-link.font": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-12" }
+    "tokens.components.submenu-link.states": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-12" }
+    "tokens.components.submenu-link.use": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.type": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.bg": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.fg": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.font": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.states": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-12" }
+    "tokens.components.footer-link.use": { surface_id: product-disclosure, source_id: disclosure-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-07-12" }
+    "tokens.components.data-table.type": { surface_id: protected-products, source_id: protected-live, method: computed-style, selector: "surface-3::td", captured: "2026-07-12" }
+    "tokens.components.data-table.bg": { surface_id: protected-products, source_id: protected-live, method: computed-style, selector: "surface-3::td", captured: "2026-07-12" }
+    "tokens.components.data-table.fg": { surface_id: protected-products, source_id: protected-live, method: computed-style, selector: "surface-3::td", captured: "2026-07-12" }
+    "tokens.components.data-table.border": { surface_id: protected-products, source_id: protected-live, method: computed-style, selector: "surface-3::td", captured: "2026-07-12" }
+    "tokens.components.data-table.height": { surface_id: protected-products, source_id: protected-live, method: computed-style, selector: "surface-3::td", captured: "2026-07-12" }
+    "tokens.components.data-table.font": { surface_id: protected-products, source_id: protected-live, method: computed-style, selector: "surface-3::td", captured: "2026-07-12" }
+    "tokens.components.data-table.states": { surface_id: protected-products, source_id: protected-live, method: computed-style, selector: "surface-3::td", captured: "2026-07-12" }
+    "tokens.components.data-table.use": { surface_id: protected-products, source_id: protected-live, method: computed-style, selector: "surface-3::td", captured: "2026-07-12" }
 tokens:
   source: reconciled
   extracted: "2026-07-12"
@@ -113,8 +210,18 @@ tokens:
   shadow: { none: "none" }
   components_harvested: true
   components:
-    docs-outline-button: { type: button, fg: "#4e5968", radius: 40, padding: "4px 10px", font: "11/600 Toss Product Sans", hover: "rgba(217, 217, 255, 0.11)", pressed: "rgba(217, 217, 255, 0.11)", focus: "rgba(217, 217, 255, 0.11)", states: "Collector labels focus/hover/pressed on the documented control; interactionCount is 0, so no state value is specified.", use: "Observed default documentation-chrome button on the two customer-information routes only." }
-    docs-tab: { type: tab, fg: "#212529", padding: "9px 14px", font: "16/400 Toss Product Sans", states: "Selected only (aria-selected=true); no other tab state was captured.", use: "Observed selected documentation tab at product-disclosure only." }
+    docs-outline-button: { type: button, fg: "#4e5968", border: "1px solid #4e5968", radius: 40, padding: "4px 10px", font: "11/600 Toss Product Sans", hover: "bg rgba(217,217,255,0.11)", pressed: "bg rgba(217,217,255,0.11)", focus: "bg rgba(217,217,255,0.11); no outline, so the faint tint is the only focus signal — measured 2026-09-29", states: "default captured 2026-07-12 on product-disclosure and protected-products, with July state frames reading the same tint; hover, pressed and keyboard focus measured 2026-09-29 on product-disclosure in two separate loads (Tab 12), identical values; transition all 0s", use: "Observed default documentation-chrome button on the two customer-information routes only." }
+    docs-tab: { type: tab, fg: "rgba(2,9,19,0.91)", padding: "9px 14px", font: "16/400 Toss Product Sans (the button's computed style; the visible label span's size and weight were not read)", selected: "bg rgba(2,32,71,0.05) on a child span filling the tab (174.9px x 40px); the button stays transparent", hover: "no visible change (measured 2026-09-29)", pressed: "no visible change (measured 2026-09-29)", focus: "no visible indication: no change on the tab, its ::before/::after, 4 descendants or 3 ancestor levels, border included (fixed probe tool after Tab 13) — measured 2026-09-29", states: "Selected tab (aria-selected=true) captured 2026-07-12; hover and pressed measured 2026-09-29 (tool and cross-check); keyboard focus reached by Tab 13 although tabIndex reads -1, read first by a cross-check script and then by the fixed probe tool with border compared; the other tab was not measured", use: "Observed selected documentation tab at product-disclosure only." }
+    pill-action: { type: button, bg: "rgba(253,253,254,0.89)", fg: "#191f28", radius: "100px", padding: "18px 32px", height: "63px", font: "17px / 700 / Toss Product Sans (label span; the button computes #212529 16px / 400)", hover: "bg #ffffff", pressed: "bg #ffffff", focus: "no visible indication: outline none and no other compared property changes (measured 2026-09-29)", states: "default captured 2026-07-12; hover, pressed and keyboard focus measured 2026-09-29 (Tab 13); only the fill alpha changes; transition background 0.15s ease-in", use: "Home hero pill action 자세히 보기 on the dark hero; marketing evidence only" }
+    article-card: { type: card, bg: "transparent", fg: "#e5e8eb", radius: "20px", padding: "0px 0px 32px", size: "319px x 348px", hover: "transform translateY(-8px); overlay gradient rgba(255,255,255,0.4) / rgba(209,209,253,0.05) → rgba(255,255,255,0.3) / rgba(217,217,255,0.11); title fg #e5e8eb → #3182f6", pressed: "same as hover: transform translateY(-8px), overlay gradient to rgba(217,217,255,0.11), title fg #3182f6", focus: "no visible indication: outline none and no other compared property changes (measured 2026-09-29)", states: "default captured 2026-07-12 (24 cards); hover, pressed and keyboard focus measured 2026-09-29 on the first card (Tab 14); box-shadow stays none; transition transform 0.15s ease-in, background 0.3s ease-out", use: "Home article card (link to /articles/…); fg is the title text" }
+    nav-menu: { type: tab, bg: "transparent", fg: "rgba(253,253,254,0.89)", padding: "12px 0px", font: "15px / 500 / Toss Product Sans", hover: "fg #3182f6", pressed: "fg #3182f6", focus: "no visible indication: outline none and no other compared property changes (measured 2026-09-29)", states: "default, hover and pressed captured 2026-07-12 on home (9 buttons, all #3182f6) and on the documentation routes, where the buttons rest at #4e5968; re-measured 2026-09-29 on 은행소개; keyboard focus measured 2026-09-29 (Tab 3); the July focus frames were read with the pointer still over the control", use: "Global header menu button (은행소개, 통장, 예금・적금 …) over the dark home hero" }
+    docs-link: { type: tab, bg: "transparent", fg: "#3182f6", padding: "0px 7px 0px 0px", font: "15px / 400 / Toss Product Sans", hover: "fg #0056b3", pressed: "fg #0056b3", focus: "outline browser default ring (outline-style auto), not brand — measured 2026-09-29", states: "default captured 2026-07-12 (nine links); hover, pressed and keyboard focus measured 2026-09-29 in two loads (Tab 14)", use: "Product-disclosure regulator link (금융감독원 금융소비자정보포털시스템 …)" }
+    home-outline-button: { type: button, bg: "transparent", fg: "#d1d6db", border: "1px solid #e5e8eb", radius: "40px", padding: "4px 10px", height: "28px", font: "11px / 600 / Toss Product Sans", hover: "bg rgba(217,217,255,0.11)", pressed: "bg rgba(217,217,255,0.11)", states: "default, hover and pressed captured 2026-07-12 (one button; both frames equal the tint measured on docs-outline-button); not state-read on 2026-09-29; keyboard focus not measured", use: "Home header 시작하기 over the dark hero: the same control as docs-outline-button in the home colour context" }
+    carousel-arrow: { type: button, bg: "rgba(222,222,255,0.19)", radius: "50%", padding: "10px", size: "64px x 64px", states: "default captured 2026-07-12 (two arrows); the 2026-09-29 probe survey lists the same arrows with tabIndex -1; no state was read", use: "Home hero carousel previous and next arrow (div role=button, outside the Tab order)" }
+    category-tag: { type: badge, bg: "transparent", fg: "#b0b8c1", font: "12px / 500 / Toss Product Sans", states: "default captured 2026-07-12 (24, one per article card) and read again 2026-09-29 as the article card label span; no state sample", use: "Article-card category tag (span role=button, e.g. 일상)" }
+    submenu-link: { type: tab, bg: "transparent", fg: "#191f28", padding: "12px 0px", height: "48px", font: "16px / 700 / Toss Product Sans", states: "default captured 2026-07-12 (24 on the documentation routes; on home the same links read #d1d6db); no state sample", use: "Header mega-menu product link (nav-pc-submenu), in the DOM before the menu opens" }
+    footer-link: { type: tab, bg: "transparent", fg: "#6b7684", font: "13px / 400 / Toss Product Sans", states: "default captured 2026-07-12 (18 on the documentation routes; the home footer sets the same colour at 11px / 400); no state sample", use: "Footer link" }
+    data-table: { type: listItem, bg: "#ffffff", fg: "#6b7684", border: "1px solid #d1d6db", height: "41px", font: "14px / 500 / Toss Product Sans", states: "default captured 2026-07-12 (168 body cells, 7 header cells); no state sample", use: "Protected-products table: header cells bg #f2f4f6 with #4e5968 text, body cells #ffffff with #6b7684 text, 1px #d1d6db grid, 41px rows" }
 ---
 
 # Design System Inspiration of Toss Bank (토스뱅크)
@@ -185,13 +292,13 @@ Do not substitute SF Pro, Pretendard, Inter, or a system font and label it Toss 
 
 ### Public marketing home
 
-**Pill action — observed default**
-- Background: #fdfdfe
-- Text: #212529
+**Pill action** (`pill-action`)
+- Background: `rgba(253,253,254,0.89)`, a near-white fill at 89% alpha in both the July capture and the 2026-09-29 probe (the opaque #fdfdfe written here earlier dropped the alpha)
+- Label: `#191f28`, 17px / 700 / Toss Product Sans, the visible label span (2026-09-29). The button element's own computed style is `#212529` 16px / 400
 - Radius: 100px
 - Padding: 18px 32px
-- Font: 16px / 400 / Toss Product Sans
-- Use: `home::[data-omd-capture="28"]`, a single public-home action with a 63px rendered height. It is marketing evidence only.
+- Hover and pressed: the fill turns opaque `#ffffff`; only the alpha changes, over `background 0.15s ease-in`. Focus: no visible indication — outline none and no other compared property changes (Tab 13, measured 2026-09-29)
+- Use: `home::[data-omd-capture="28"]` 자세히 보기, a single public-home action with a 63px rendered height on the dark hero. It is marketing evidence only.
 
 ### Customer-information documentation chrome
 
@@ -202,17 +309,62 @@ Do not substitute SF Pro, Pretendard, Inter, or a system font and label it Toss 
 - Padding: 4px 10px
 - Font: 11px / 600 / Toss Product Sans
 - Use: `surface-2::[data-omd-capture="10"]`, also repeated on `surface-3`; 28px rendered height.
+- Hover, pressed and keyboard focus: the background turns `rgba(217,217,255,0.11)` (measured 2026-09-29 in two loads, Tab 12; the July state frames read the same). Focus draws no outline, so this faint tint, roughly 1.03:1 against white (arithmetic), is the only focus signal
+- The same-labelled home header button sits in another colour context: `#d1d6db` text and a `1px solid #e5e8eb` border over the dark hero, with the same tint in its July hover and pressed frames (`home-outline-button` below; not state-read on 2026-09-29)
 
-**Documentation tab — observed selected**
-- Text: #212529
+**Documentation tab — observed selected** (`docs-tab`)
+- Text: the visible label span reads `rgba(2,9,19,0.91)` (2026-09-29). The #212529 recorded here earlier is the button element's own colour; a bold copy of the label (`#4e5968`, 15px / 700) sits at opacity 0 and only reserves width
 - Padding: 9px 14px
-- Font: 16px / 400 / Toss Product Sans
+- Font: 16px / 400 / Toss Product Sans is the button element's computed style; the visible label span's size and weight were not read
+- Selected: a child span fills the tab with `rgba(2,32,71,0.05)` (174.9px × 40px); the button itself stays transparent
+- Hover and pressed: no visible change over the tab, 4 descendants and 2 ancestors (measured 2026-09-29, probe tool and cross-check). Focus: Tab 13 reaches it although `tabIndex` reads -1; no visible indication — no change on the tab, its pseudo-elements, 4 descendants or 3 ancestor levels, border included (fixed probe tool, `probe-tool-fix.md`; an earlier cross-check agreed)
 - Use: `surface-2::[data-omd-capture="29"]`, `role="tab"` and `aria-selected="true"`; 40px rendered height.
 
-The raw artifact labels some public buttons with focus/hover/pressed state markers but contains no interaction snapshots (`interactionCount: 0`). No state styling is therefore specified. No authenticated-app button, account card, input, badge, toast, sheet, toggle, error, success, or mobile navigation variant had selector and surface provenance in this update.
+The July artifact carries hover, pressed and focus state frames for several public buttons but no dialog or menu interaction snapshots (`interactionCount: 0`). The 2026-09-29 live probe re-measured six controls with real `:hover`, `:active` and Tab to `:focus-visible`; their states are recorded above and below. No authenticated-app button, account card, input, badge, toast, sheet, toggle, error, success, or mobile navigation variant had selector and surface provenance in this update.
+
+### Measured and added components (captured 2026-07-12; states measured 2026-09-29)
+
+Every value below is from tossbank.com: the July capture of the home, product-disclosure and protected-products routes, and the 2026-09-29 probe of the home and product-disclosure routes. Nothing here speaks for toss.im or the authenticated app.
+
+**Article card** (`article-card`, home)
+- Link box 319px × 348px, 20px radius, padding 0 0 32px, transparent, with an overlay gradient `linear-gradient(rgba(255,255,255,0.4) 50%, rgba(209,209,253,0.05) 100%)`; title text `#e5e8eb` on the dark section; 24 cards
+- Hover and pressed: the card lifts `translateY(-8px)`, the gradient becomes `rgba(255,255,255,0.3)` / `rgba(217,217,255,0.11)` (the same tint at 0.11 as the documentation button), and the title turns `#3182f6`. Box-shadow stays none, so the lift is a transform, not elevation; transition `transform 0.15s ease-in, background 0.3s ease-out`
+- Focus: no visible indication — outline none and no other compared property changes on the card, 9 descendants or 2 ancestors (Tab 14, measured 2026-09-29, confirmed by a cross-check)
+- The link element's own colour (#007bff, #0056b3 on hover) is a stylesheet default that no visible text renders, so it is not declared as a state
+
+**Header menu button** (`nav-menu`, home)
+- `rgba(253,253,254,0.89)` text over the dark hero, 15px / 500 / Toss Product Sans, padding 12px 0, no fill
+- Hover and pressed: fg `#3182f6`. Nine July header buttons agree, and the 2026-09-29 probe read the same on 은행소개. On the documentation routes the same buttons rest at `#4e5968` and turn `#3182f6` (18 July frames)
+- Focus: no visible indication — outline none and no other compared property changes (Tab 3, measured 2026-09-29). The July focus frames also read `#3182f6`, but they were taken with the pointer still over the control, so they show the hover colour
+
+**Regulator link** (`docs-link`, product-disclosure)
+- `#3182f6`, 15px / 400 / Toss Product Sans, padding 0 7px 0 0; nine links
+- Hover and pressed: fg `#0056b3` (two loads agree). The July logo link shows the same #007bff → `#0056b3` pair, which reads like a stylesheet-default link pair (an inference from the values), so `#0056b3` is not promoted to `tokens.colors`
+- Focus: the browser's default ring (`#005fcc`, outline-style auto), not brand (Tab 14, measured 2026-09-29)
+
+**Home header outline button** (`home-outline-button`)
+- `#d1d6db` text, `1px solid #e5e8eb` border, 40px radius, padding 4px 10px, 28px tall, 11px / 600 over the dark hero: the 시작하기 control in its home colour context
+- Hover and pressed: bg `rgba(217,217,255,0.11)` in its July frames, the tint the documentation button shows in the 2026-09-29 probe. Keyboard focus not measured
+
+**Hero carousel arrow** (`carousel-arrow`)
+- 64px × 64px, 50% radius, padding 10px, fill `rgba(222,222,255,0.19)`; two arrows, `div role="button"` outside the Tab order (`tabIndex` -1). The 2026-09-29 probe survey lists them with the same values. No state was read
+
+**Category tag** (`category-tag`)
+- `#b0b8c1`, 12px / 500 / Toss Product Sans, `span role="button"`; one per article card (24). No state sample
+
+**Mega-menu link** (`submenu-link`)
+- `#191f28`, 16px / 700 / Toss Product Sans, padding 12px 0, 48px tall on the documentation routes; the same links read `#d1d6db` on home. They sit in the DOM before the menu opens. No state sample
+
+**Footer link** (`footer-link`)
+- `#6b7684`, 13px / 400 / Toss Product Sans on the documentation routes; the home footer sets the same colour at 11px / 400. No state sample
+
+**Protected-products table** (`data-table`)
+- Header cells `#f2f4f6` with `#4e5968` text; body cells `#ffffff` with `#6b7684` text; a `1px solid #d1d6db` grid; 41px rows; 14px / 500. No state sample
+
+Five controls have hover, pressed and keyboard focus all measured by the probe tool, cross-checked where noted: the pill action, the article card, the header menu button, the documentation outline button and the regulator link. The documentation tab is a sixth, its focus read by the fixed probe tool with border compared. The pill action, the article card, the header menu button and the documentation tab show no visible keyboard focus at all.
 
 ---
-**Verified:** 2026-07-13
+**Verified:** 2026-07-13 · states re-measured 2026-09-29 (live probe of the tossbank.com home and product-disclosure pages; no toss.im page)
 **Tier 1 sources:** https://www.tossbank.com/; https://www.tossbank.com/customer/product-disclosure; https://www.tossbank.com/customer/protected-products; https://brand.toss.im/; https://toss.im/tossfeed/article/beginning-of-tps; https://developers-apps-in-toss.toss.im/design/prepare/design.html; https://www.tossbank.com/ten-million
 **Tier 2 sources:** https://getdesign.md/tossbank (attempted; no usable record returned); https://styles.refero.design/?q=tossbank (attempted; no usable record returned)
 **Conflicts unresolved:** none
@@ -225,7 +377,7 @@ The supplied desktop capture exposes public marketing and documentation layouts,
 
 ## 6. Depth & Elevation
 
-The representative public controls have `box-shadow: none`. No evidence in this run supports a card, sheet, modal, floating-action, or elevation scale. Use flat public-surface controls only where their documented source domain applies; do not infer banking-product depth rules.
+The representative public controls have `box-shadow: none`. No evidence in this run supports a card, sheet, modal, floating-action, or elevation scale. The home article card does move on hover — `translateY(-8px)` with box-shadow still none (measured 2026-09-29) — so motion stands in for elevation there; it is not an elevation token. Use flat public-surface controls only where their documented source domain applies; do not infer banking-product depth rules.
 
 ## 7. Do's and Don'ts
 
@@ -240,7 +392,7 @@ The representative public controls have `box-shadow: none`. No evidence in this 
 
 - Do not turn the observed `#3182f6` text/border value into a universal filled banking CTA.
 - Do not reuse the public pill action as a transfer, account-opening, or confirmation component.
-- Do not invent hover, pressed, focus, error, disabled, success, or responsive variants from this artifact.
+- Do not invent error, disabled, success, or responsive variants from this artifact; hover, pressed and focus are declared only where §4 records a measurement.
 - Do not substitute a system font and call it Toss Product Sans.
 
 ## 8. Responsive Behavior
@@ -283,8 +435,14 @@ The public campaign names customers with roles including self-employed people, o
 
 ## 14. States
 
-The supplied artifact records one selected documentation tab (`aria-selected="true"`). It contains no captured interaction snapshots and no selector-backed empty, loading, error, success, disabled, toast, or skeleton state. Those state specifications are intentionally absent rather than inferred from generic banking conventions.
+Measured 2026-09-29 on tossbank.com (real `:hover`, `:active`, and Tab to `:focus-visible`):
+
+- **Hover and pressed.** The documentation outline button fills with `rgba(217,217,255,0.11)`; the pill action's fill goes from `rgba(253,253,254,0.89)` to `#ffffff`; the header menu button and the article-card title turn `#3182f6`; the article card lifts `translateY(-8px)`; the regulator link turns `#0056b3`. The selected documentation tab shows no visible change.
+- **Focus.** The documentation outline button shows only its faint tint; the regulator link shows the browser's default ring; the pill action, the article card, the header menu button and the documentation tab show no visible indication. There is no authored focus ring.
+- **Selected.** The documentation tab (`aria-selected="true"`) carries a `rgba(2,32,71,0.05)` fill on a child span.
+
+There is no selector-backed empty, loading, error, success, disabled, toast, or skeleton state. Those state specifications are intentionally absent rather than inferred from generic banking conventions.
 
 ## 15. Motion & Easing
 
-No transition duration, easing curve, reduced-motion behavior, or animated state was captured on the supplied routes. Motion tokens are intentionally absent.
+Computed transitions read on 2026-09-29 (observations, not tokens): the pill action `background 0.15s ease-in`; the article card `transform 0.15s ease-in, background 0.3s ease-out` with its 8px lift; the documentation button, tab, link and header menu `all 0s`. Reduced-motion behavior was not checked, and motion tokens remain intentionally absent.

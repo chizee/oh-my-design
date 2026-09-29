@@ -41,35 +41,70 @@ verification_v2:
     "tokens.typography.body.weight": *store_home
     "tokens.typography.body.lineHeight": *store_home
     "tokens.typography.body.use": *store_home
-    "tokens.colors.developer-surface": &developer { surface_id: developer-portal, source_id: developer-portal-live, method: computed-style, selector: "surface-5::[data-omd-capture=10]", captured: "2026-07-13" }
-    "tokens.colors.developer-border": &developer_input { surface_id: developer-portal, source_id: developer-portal-live, method: computed-style, selector: "surface-5::[data-omd-capture=12]", captured: "2026-07-13" }
-    "tokens.typography.developer-control.size": *developer
-    "tokens.typography.developer-control.weight": *developer
-    "tokens.typography.developer-control.use": *developer
-    "tokens.spacing.developer-button-x": *developer
-    "tokens.spacing.developer-input-y": *developer_input
-    "tokens.spacing.developer-input-x": *developer_input
     "tokens.rounded.square": *store_home
-    "tokens.components.developer-basic-button.type": *developer
-    "tokens.components.developer-basic-button.bg": *developer
-    "tokens.components.developer-basic-button.fg": *developer
-    "tokens.components.developer-basic-button.border": *developer
-    "tokens.components.developer-basic-button.radius": *developer
-    "tokens.components.developer-basic-button.padding": *developer
-    "tokens.components.developer-basic-button.height": *developer
-    "tokens.components.developer-basic-button.font": *developer
-    "tokens.components.developer-basic-button.states": *developer
-    "tokens.components.developer-basic-button.use": *developer
-    "tokens.components.developer-login-input.type": *developer_input
-    "tokens.components.developer-login-input.bg": *developer_input
-    "tokens.components.developer-login-input.fg": *developer_input
-    "tokens.components.developer-login-input.border": *developer_input
-    "tokens.components.developer-login-input.radius": *developer_input
-    "tokens.components.developer-login-input.padding": *developer_input
-    "tokens.components.developer-login-input.height": *developer_input
-    "tokens.components.developer-login-input.font": *developer_input
-    "tokens.components.developer-login-input.states": *developer_input
-    "tokens.components.developer-login-input.use": *developer_input
+    "tokens.components.game-primary-button.type": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.game-primary-button.bg": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.game-primary-button.fg": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.game-primary-button.border": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.game-primary-button.radius": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.game-primary-button.padding": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.game-primary-button.height": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.game-primary-button.font": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.game-primary-button.states": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.game-primary-button.use": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.game-light-button.type": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.game-light-button.bg": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.game-light-button.fg": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.game-light-button.border": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.game-light-button.radius": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.game-light-button.padding": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.game-light-button.height": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.game-light-button.font": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.game-light-button.states": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.game-light-button.use": { surface_id: game-catalog, source_id: game-catalog-live, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-link-button.type": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-link-button.bg": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-link-button.fg": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-link-button.padding": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-link-button.height": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-link-button.font": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-link-button.states": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-link-button.use": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"1\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-info-link.type": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-info-link.bg": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-info-link.fg": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-info-link.padding": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-info-link.height": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-info-link.font": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-info-link.states": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.app-detail-info-link.use": { surface_id: app-detail, source_id: app-detail-live, method: computed-style, selector: "surface-4::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-notice-link.type": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.home-notice-link.bg": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.home-notice-link.radius": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.home-notice-link.padding": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.home-notice-link.size": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.home-notice-link.states": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.home-notice-link.use": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-07-13" }
+    "tokens.components.home-filled-link.type": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-filled-link.bg": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-filled-link.padding": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-filled-link.size": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-filled-link.states": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-filled-link.use": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-link.type": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-link.bg": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-link.fg": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-link.padding": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-link.height": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-link.font": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-link.states": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-link.use": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-icon-link.type": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-icon-link.bg": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-icon-link.padding": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-icon-link.size": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-icon-link.states": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
+    "tokens.components.home-footer-icon-link.use": { surface_id: store-home, source_id: store-home-live, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-07-13" }
 tokens:
   source: live-extract
   extracted: "2026-07-13"
@@ -80,16 +115,18 @@ tokens:
     canvas: "#ffffff"
     foreground: "#000000"
     secondary-foreground: "#454545"
-    developer-surface: "#efefef"
-    developer-border: "#767676"
   typography:
     body: { size: 15, weight: 400, lineHeight: 1.46, use: "Storefront body sample; computed system stack is not a brand font" }
-    developer-control: { size: 13.3333, weight: 400, use: "Developer-portal button and input sample; computed Arial is a system font" }
-  spacing: { developer-button-x: 20, developer-input-y: 1, developer-input-x: 2 }
   rounded: { square: 0 }
   components:
-    developer-basic-button: { type: button, bg: "#efefef", fg: "#000000", border: "2px solid #000000", radius: "0px", padding: "0px 20px", height: "50px", font: "13.3333px / 400 Arial", states: "Default observed only; interactionCount is 0, so no hover, focus, pressed, disabled, or error value is asserted", use: "Developer portal GeneralButton-module__box___leAwc.large at surface-5::[data-omd-capture=10]" }
-    developer-login-input: { type: input, bg: "#ffffff", fg: "#000000", border: "2px solid #767676", radius: "0px", padding: "1px 2px", height: "21px", font: "13.3333px / 400 Arial", states: "Default observed only; interactionCount is 0, so no hover, focus, pressed, disabled, or error value is asserted", use: "Developer portal LoginField-module__loginField___7ReTE at surface-5::[data-omd-capture=12]" }
+    game-primary-button: { type: button, bg: "#28245b", fg: "#ffffff", border: "1px #28245b", radius: "23px", padding: "11px 28px", height: "45px", font: "16px / 400 / 21px", states: "default on one button; the bundle holds no state frame", use: "Game-catalog filled pill button (a.btn.btn-primary) at surface-2::[data-omd-capture=\"1\"], 140 x 45, paired with game-light-button in one button group; the computed family is the system stack, so no family is claimed" }
+    game-light-button: { type: button, bg: "#ffffff", fg: "#3e3877", border: "1px #acaac4", radius: "23px", padding: "11px 28px", height: "45px", font: "16px / 400 / 21px", states: "default on one button; the bundle holds no state frame", use: "Game-catalog outline pill button (a.btn.btn-light) at surface-2::[data-omd-capture=\"0\"], 140 x 45, first in the same button group; system-stack family, not claimed" }
+    app-detail-link-button: { type: button, bg: "transparent", fg: "#3d3a73", padding: "13.5px 16px", height: "48px", font: "15px / 400 / 21px", states: "default on two links (capture 1, 2); the bundle holds no state frame", use: "App-detail section text button (a.btn.btn-link.sm) at surface-4::[data-omd-capture=\"1\"], 71 x 48, beside the description and update-history headings" }
+    app-detail-info-link: { type: button, bg: "transparent", fg: "#4b469c", padding: "14.5px 0px", height: "48px", font: "13px / 400 / 19px", states: "default on one link; the bundle holds no state frame", use: "App-detail additional-information link (a) at surface-4::[data-omd-capture=\"3\"], 60 x 48" }
+    home-notice-link: { type: button, bg: "#f7f7f8", radius: "16px", padding: "21.5px 0px", size: "1100px x 64px", states: "default on one link; the bundle holds no state frame", use: "Storefront home notice bar (a.notice-link) at home::[data-omd-capture=\"5\"]; its own text colour and type equal the page body (#000000, 15px / 400 / 21.9px), so no label style is claimed" }
+    home-filled-link: { type: button, bg: "rgba(42, 31, 96, 0.96)", padding: "19px 0px", size: "250px x 60px", states: "default on two links (capture 3, 4); the bundle holds no state frame", use: "Storefront home filled link (a) at home::[data-omd-capture=\"3\"] and \"4\"; it has no text content, so no label style is claimed" }
+    home-footer-link: { type: button, bg: "transparent", fg: "#000000", padding: "1.5px 0px", height: "20px", font: "15px / 400 / 21px", states: "default on six footer links (capture 6-9, 18, 20); the bundle holds no state frame", use: "Storefront footer link (a) at home::[data-omd-capture=\"6\"]; the link with class point (capture 19) records 15px / 700 / 21px" }
+    home-footer-icon-link: { type: button, bg: "transparent", padding: "4px", size: "48px x 48px", states: "default on two links (capture 12, 13); the bundle holds no state frame", use: "Storefront footer icon link (a) at home::[data-omd-capture=\"12\"]; its own type equals the page body, so no label style is claimed" }
 ---
 # Design System Inspiration of 원스토어
 
@@ -107,20 +144,21 @@ tokens:
 
 ### Selector-backed surface values
 
-- **Brand-surface candidate** (`#2A1F60`): observed twice as a background on the captured storefront home route. It is retained as a narrow surface observation and catalog identity color, not as a universal action color.
+- **Brand-surface candidate** (`#2A1F60`): observed twice as a background on the captured storefront home route. It is retained as a narrow surface observation and catalog identity color, not as a universal action color. Noted 2026-09-30: both backgrounds are the filled links `home::[data-omd-capture="3"]` and `"4"` (§4), whose computed value is `rgba(42, 31, 96, 0.96)`; the bundle's colour census drops the alpha to `#2a1f60`, which is the value this token carries.
 - **Canvas** (`#FFFFFF`): observed across all five captured surfaces.
 - **Foreground** (`#000000`): the dominant observed text and border value across all five captured surfaces.
 - **Storefront secondary text** (`#454545`): repeated on home-route list items.
-- **Developer control surface** (`#EFEFEF`) and **developer input border** (`#767676`): observed only on `dev.onestore.net`; they do not define the consumer marketplace palette.
+- **Developer portal** (`dev.onestore.net`): its July capture shows `#EFEFEF` and `#767676`, the browser's default button face and text-field border, on a page whose body is Times 16px. The portal's stylesheet evidently did not apply, so neither value is promoted (withdrawn 2026-09-30, §4).
+- **Component-local colours** recorded in §4, not promoted to palette roles: `#28245b` (game-catalog filled button fill and border), `#3e3877` with a 1px `#acaac4` border (game-catalog outline button), `#3d3a73` and `#4b469c` (app-detail text links), and `#f7f7f8` (home notice bar).
 
-No semantic success, error, selected, hover, pressed, or CTA color is specified. `#0000EE` appears on the developer portal, but the supplied evidence does not establish it as a One Store brand value, so it is not promoted.
+No semantic success, error, selected, hover, or pressed color is specified, and the storefront button fills in §4 stay component-local. `#0000EE` appears on the developer portal, but the supplied evidence does not establish it as a One Store brand value, so it is not promoted.
 
 ## 3. Typography Rules
 
 ### Evidence classes
 
 - **Live computed storefront use:** the main storefront’s visible samples resolve to `helvetica, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", Arial, sans-serif`. The collector classifies this as a high-confidence operating-system stack; no loaded FontFace/source supports a One Store-owned UI family. The measured 15px / 400 / 21.9px body metrics remain useful, but the stack is not emitted as a brand font token.
-- **Live computed developer-product use:** the developer portal samples use system `Arial` at 13.3333px / 400. The portal’s `geistSans`, `geistMono`, and `notoSansKr` faces are declared-only in the supplied evidence; none had visible usage and none is promoted.
+- **Live computed developer-product use:** the developer portal samples use `Arial` at 13.3333px / 400, the browser's default form-control font on a page that rendered unstyled (§4); it is not a product font. The portal’s `geistSans`, `geistMono`, and `notoSansKr` faces are declared-only in the supplied evidence; none had visible usage and none is promoted.
 - **Official distributed brand assets:** One Store publicly distributes Mobile Gothic Body, Mobile Gothic Title, and Mobile Gothic POP. The company describes the Body face as mobile-optimised and modern/comfortable, the Title face as stable and firm, and POP as a lively handwritten face. These are useful font assets, not evidence that the captured storefront loads them. [Official font page](https://www.onestorecorp.com/sv/fordev_font/)
 - **Official licence/use boundary:** the company’s launch announcement says the three fonts are free and commercially usable. That establishes distribution/use terms, not consumer-storefront deployment. [Font announcement](https://onestorecorp.com/news/presskit/2021/2021-05-17.html)
 - **Unresolved:** `Times` appears in sparse developer-portal samples without a matching loaded FontFace or official product-use evidence; it is omitted.
@@ -131,33 +169,30 @@ No semantic success, error, selected, hover, pressed, or CTA color is specified.
 |------|------|--------|-------------|-------------------|
 | Storefront body | 15px | 400 | 21.9px | Home-route computed system stack |
 | Storefront secondary list text | 14px | 400 | 20px | Home-route list items |
-| Developer control | 13.3333px | 400 | normal | Developer portal system Arial samples |
 
 ## 4. Component Stylings
 
-### Developer portal controls
+### Developer portal (withdrawn 2026-09-30)
 
-**General button — observed default**
-- Background: #EFEFEF
-- Text: #000000
-- Border: 2px solid #000000
-- Radius: 0px
-- Padding: 0px 20px
-- Height: 50px
-- Font: 13.3333px / 400 / Arial
-- Use: `GeneralButton-module__box___leAwc.large` at `surface-5::[data-omd-capture="10"]`; default only.
+The July reference listed a general button and a login input from `dev.onestore.net` as components. Both are withdrawn: the capture rendered that page without its stylesheet, so their values are the browser's defaults rather than One Store's (see the paragraph below). They are kept here only as the July observation.
 
-**Login input — observed default**
-- Background: #FFFFFF
-- Text: #000000
-- Border: 2px solid #767676
-- Radius: 0px
-- Padding: 1px 2px
-- Height: 21px
-- Font: 13.3333px / 400 / Arial
-- Use: `LoginField-module__loginField___7ReTE` at `surface-5::[data-omd-capture="12"]`; default only.
+The bundle holds no hover, pressed, or focus frame for any One Store element, so no state value is recorded. Corrected 2026-09-30: the July text gave the zero interaction count as the reason; that count covers expansions, not pointer states.
 
-The evidence records no interaction snapshots or observed states. The two default controls above remain available because their selector, surface, and computed geometry are present; hover, focus, pressed, disabled, and error values are absent. Storefront links and rows are documented only as list items in the raw evidence and are not relabelled as buttons.
+The developer-portal capture renders much of the page in browser defaults: the body is Times 16px with an 8px margin, its links are the browser's `#0000ee`, and its `h3` headings are 18.72px / 700. The login input's values (2px `#767676` border, `1px 2px` padding, 153px × 21px, 13.3333px Arial) are the browser's default text field, and the general button's `#EFEFEF` fill and 13.3333px Arial are the browser's default button face and font; only its 2px black border, `0px 20px` padding and 180px × 50px size differ from those defaults. Whether the portal's own stylesheet set any of these values is unresolved. The two controls, and the `developer-surface`, `developer-border`, `developer-control` and developer spacing tokens drawn from them, were withdrawn from the machine tokens on 2026-09-30 for this reason.
+
+### Storefront buttons and links
+
+**Game-catalog pill pair**: the filled button (`game-primary-button`, `a.btn.btn-primary`, `surface-2::[data-omd-capture="1"]`) records background `#28245b`, text `#ffffff` and border 1px `#28245b`; the outline button beside it (`game-light-button`, `a.btn.btn-light`, `"0"`) records background `#ffffff`, text `#3e3877` and border 1px `#acaac4`. Both have a `23px` radius, `11px 28px` padding, 140px × 45px and `16px / 400 / 21px` type on the system stack, in one button group.
+
+**App-detail text buttons**: the section link (`app-detail-link-button`, `a.btn.btn-link.sm`, `surface-4::[data-omd-capture="1"]` and `"2"`) records text `#3d3a73`, `13.5px 16px` padding, 71px × 48px and `15px / 400 / 21px`; the additional-information link (`app-detail-info-link`, `"3"`) records text `#4b469c`, `14.5px 0px` padding, 60px × 48px and `13px / 400 / 19px`.
+
+**Home notice bar** (`home-notice-link`): background `#f7f7f8`, `16px` radius, `21.5px 0px` padding, 1100px × 64px; `home::[data-omd-capture="5"]` (`a.notice-link`). Its own text equals the page body (`#000000`, 15px / 400 / 21.9px), so no label style is claimed.
+
+**Home filled link** (`home-filled-link`): background `rgba(42, 31, 96, 0.96)`, `19px 0px` padding, 250px × 60px; `home::[data-omd-capture="3"]` and `"4"`. It holds no text, so no label style is claimed.
+
+**Footer links**: the text links (`home-footer-link`, `home::[data-omd-capture="6"]` to `"9"`, `"18"`, `"20"`) record `#000000`, `1.5px 0px` padding, 20px height and `15px / 400 / 21px`; the link with class `point` (`"19"`) records `15px / 700 / 21px`. The icon links (`home-footer-icon-link`, `"12"`, `"13"`) are 48px × 48px with `4px` padding; their own type equals the page body, so no label style is claimed.
+
+No storefront component above has a state value. Storefront links keep their element names (`a`) in each use field; the renderer's `button` type is only their category.
 
 ---
 **Verified:** 2026-07-13
@@ -167,7 +202,7 @@ The evidence records no interaction snapshots or observed states. The two defaul
 
 ## 5. Layout Principles
 
-The supplied bundle covers five 1440×900 routes but does not establish a single cross-domain layout system. On the developer portal, the observed button is 180×50px and the input is 153×21px; these are individual control measurements, not a consumer-marketplace grid. The storefront’s only retained measurement is its system-stack body text and sparse list-item geometry. No product-card grid, breakpoint, sticky header, or responsive rule is claimed.
+The supplied bundle covers five 1440×900 routes but does not establish a single cross-domain layout system. On the developer portal, the observed button is 180×50px and the input is 153×21px; these are individual control measurements, not a consumer-marketplace grid. The storefront’s retained measurements are its system-stack body text, list-item geometry, and the buttons and links in §4 (a 140px × 45px pill pair on the game catalog, 48px-high text links on the app detail page, a 1100px × 64px notice bar on the home route). No product-card grid, breakpoint, sticky header, or responsive rule is claimed.
 
 ## 6. Depth & Elevation
 
@@ -178,7 +213,7 @@ The retained button and input samples have `box-shadow: none`. No elevated card,
 ### Do
 
 - Keep consumer storefront, developer portal, corporate brand assets, and font distribution as separately evidenced domains.
-- Reuse the recorded developer button or input only at their documented default geometry and source surface.
+- Treat the developer button and input as observations of a largely browser-default render (§4), not as a One Store control style.
 - Treat One Store Mobile Gothic as an official distributable brand asset, not a verified storefront webfont.
 - Preserve the measured storefront body metrics without silently substituting a claimed brand typeface.
 
@@ -186,7 +221,7 @@ The retained button and input samples have `box-shadow: none`. No elevated card,
 
 - Do not turn the narrow `#2A1F60` background observation into a universal CTA or product palette.
 - Do not use `geistSans`, `geistMono`, `notoSansKr`, Times, Arial, Helvetica, or a system fallback as though it were an observed One Store brand UI font.
-- Do not reclassify observed links/rows as buttons or infer components from generic marketplace conventions.
+- Do not infer components from generic marketplace conventions; §4 records only measured storefront links and buttons, each with its element named.
 - Do not add hover, focus, pressed, disabled, error, selected, responsive, or motion values from this capture.
 
 ## 8. Responsive Behavior
@@ -195,7 +230,7 @@ All supplied surfaces were captured at 1440×900. No mobile viewport, breakpoint
 
 ## 9. Agent Prompt Guide
 
-“Treat One Store as a Korean mobile-content marketplace with separate storefront, developer, corporate-brand, and font-asset evidence. For the documented developer portal default, use a square #EFEFEF button with a 2px black border, 0px 20px padding, 50px height, and system Arial metrics; pair it only with the measured square white login input. Preserve the storefront’s white/black baseline and narrow #2A1F60 background observation. Do not synthesize a consumer CTA, card, brand webfont, interaction state, responsive pattern, or elevation system.”
+“Treat One Store as a Korean mobile-content marketplace with separate storefront, developer, corporate-brand, and font-asset evidence. For storefront actions, use the measured game-catalog pill pair: #28245b fill with white text, or white with #3e3877 text and a 1px #acaac4 border, both 23px radius, 11px 28px padding and 45px high. Do not reuse the developer-portal controls as a One Store style; that capture is largely browser-default. Preserve the storefront’s white/black baseline and narrow #2A1F60 background observation. Do not synthesize a consumer card, brand webfont, interaction state, responsive pattern, or elevation system.”
 
 ## 10. Voice & Tone
 
@@ -237,7 +272,7 @@ In 2021, the company made three mobile fonts publicly available and described th
 
 ## 14. States
 
-No state-specific UI was observed: the supplied bundle has `interactionCount: 0` and `observedStates: 0`. The following state categories are intentionally unspecified until a relevant product-surface selector/value pair is captured.
+No state-specific UI was observed: the bundle holds no state frame (`::state-*`) and no interaction record (`observedStates: 0`, `interactionCount: 0`). The following state categories are intentionally unspecified until a relevant product-surface selector/value pair is captured.
 
 | Category | Evidence status |
 |----------|-----------------|
