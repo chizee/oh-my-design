@@ -9,7 +9,9 @@ A request to make a page feel like Baemin can quickly become a mint palette and 
 
 Baemin, the Korean delivery service, offers an instructive example. Its public font catalog, a technical article about conference typography, and an app rebranding announcement describe different uses of type. Keeping those contexts intact makes the reference more useful to both designers and coding assistants.
 
-![Source facts, interpretation, and the project decision kept in separate columns](/blog-assets/baemin-type-decisions.svg)
+![Three cards stacked from source fact to interpretation to project decision](/blog-assets/baemin-type-decisions.svg)
+
+*Figure: the dated WORK announcement, the role-based reading, and the Sunday Table decision, kept apart.*
 
 ## A recognizable voice has different jobs
 
@@ -25,7 +27,7 @@ In November 2024, Woowa’s technical blog described Interop, which combines Int
 
 A reference can preserve that conference website decision. Assigning the same face to Baemin’s app body text would extend the claim beyond its source. Shared company ownership does not establish shared typography across products and events.
 
-For your own page, prepare mixed content before choosing type. A line such as `일요일 12:30 · 2인분 · 8,000원` brings Korean text, time, quantities, and currency together. Check wrapping and alignment with that content, as well as with an attractive alphabet specimen.
+For your own page, prepare mixed content before choosing type. A line such as `일요일 12:30 · 2인분 · 8,000원` brings Korean text, time, quantities, and currency together. Check wrapping and alignment with that content. An attractive alphabet specimen on its own rarely reveals these problems.
 
 ## Record a rebrand with its date
 
@@ -67,4 +69,4 @@ The test is concrete: can a first-time visitor find when and where the meal take
 
 When collecting a reference, keep its visual character and its original job together. Choose a company in [Builder](https://oh-my-design.kr/builder), then distinguish the facts you are carrying forward from the choices your new project still needs to make.
 
-OmD is also preparing a skill for Hangul typography; installation steps for the skills available today are in the [CLI guide](https://oh-my-design.kr/cli).
+OmD is also preparing a skill for Hangul typography.
