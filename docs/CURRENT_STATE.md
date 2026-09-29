@@ -3,6 +3,116 @@
 갱신: **2026-09-17 저녁** · 오너 지적 2건(라우트·토스) 처리. 우선순위는 2026-09-16 재편분 유지. 분기 `codex/track-foundation`, baseline `15ff0139`
 (main과 동일 커밋). 9/7~9/8 스프린트 산출물은 **전부 미커밋 상태로 보존**되어 있다.
 
+## ▶ 2026-09-29 · 성장 전략 결정 17개 → 병렬 실행 착수 (521 · 227)
+
+- **문서.**
+  - `docs/GROWTH_PLAN_2026-09-29.md` — 계획
+  - `docs/GROWTH_DECISIONS_2026-09-29.md` — 결정 17개 + 정정
+  - `docs/research/2026-09-29-growth/` — Emil 해부, 경쟁 지형. gitignored 로컬
+  - Aphrodite: `~/Desktop/projects/aphrodite-mela/docs/ADVANCEMENT-PLAN-2026-09-29.md`
+- **오너 선택.** D1 KR 깊이 먼저 → 18:12 재결정: **번들 기반 쇼케이스 심화(verified 67) 먼저**, partial 100은 그 뒤, D2 회사명 금지 + apple 예외, D10 웨이브 5~8, **A1 Aphrodite = 범용 에이전트 캔버스(pen.dev형)**. 나머지는 추천안이고, A3·A5·A7은 컨셉 A에 맞춰 조정했다.
+- **정정.**
+  - KR 캡처 번들은 verified 67개(수요 상위 전부)에만 있고 partial 100개엔 없다. 그래서 쇼케이스 심화와 partial 검증 두 경로로 나뉜다.
+  - "국가 미기재 3"은 오탐이었다(toss·krds·serendie는 Core v2 형식, 레지스트리 정상).
+- **차단과 해소.** 9/29 오후 macOS가 Desktop 기존 파일 읽기를 막았다(EPERM). 재부팅 후 복구됐다. 스크래치패드는 사라졌지만 산출물은 레포에 남아 있다.
+- **실행 중 (18:05~).**
+  - Aphrodite 컨셉 A 계획 개정(Opus)
+  - 한글 타이포 원전 조사(Sonnet)
+  - skills.sh 노출 규칙·이름 충돌 조사(Sonnet)
+  - Aphrodite P0 승인 가드 수정(Opus) — 워크트리 `../aphrodite-mela-p0`, 브랜치 `fix/approval-guard-0-2-8`, 로컬 커밋만
+  - npm 2.0.2 strict 게이트 해소(Opus) — OmD 격리 워크트리
+  - KR 쇼케이스 인벤토리(Sonnet, 읽기 전용)
+- **완료 — 계측 복구 (18:30).** 서버측 카운터 `/api/active`는 살아 있었다: 9/28 DAU 386, WAU 2,108, MAU 9,668, 30일 전부 기록됨. `scripts/growth/snapshot.mjs`를 추가했다(GitHub 별·트래픽·리퍼러, npm, skills.sh 스킬별 설치, DAU/WAU/MAU → `data/growth/metrics.jsonl`). 주 1회 이상 실행한다(GitHub 트래픽은 14일만 보관). 미커밋.
+- **완료 — 원고 2편 사실 확인 (18:45).**
+  - 배민 글은 OK 28, STALE 2(날짜, 선데이 테이블 예제의 9/20 일정)이고 근거 없는 주장은 0이다. Core 글은 OK 32, STALE 1(날짜)이다.
+  - 수정본은 `.omd/execution/2026-09-08/sprint90/content/*/article/*.2026-09-29.md`에 있다. 배민 글에는 한글 타이포 스킬 예고 한 줄을 넣었다(날짜·이름 없음).
+  - 발행 전 남은 일: `web/public/blog-assets/`에 에셋 4개 복사, 매니페스트 재생성, 발행일(오너).
+- **완료 — skills.sh 조사 (18:50).**
+  - skills.sh는 크롤링하지 않는다. `npx skills add` 설치 텔레메트리로 행이 생기고, 행은 frontmatter `name` 단위다. `omd:apply`와 `omd-apply`처럼 트리마다 이름이 달라 중복 행이 생긴다. 그래서 "401 설치"는 합산이고 실제 최고치는 18이다.
+  - 숨김 수단은 `metadata.internal: true` 하나다. 기존 40행은 남는다. 삭제는 수동 요청(공개 게시라 오너 결정)이다.
+  - 이름은 `design-system`만 정확히 충돌한다(ui-ux-pro-max 32.6K, ecc 8.8K). W6 전에 개명한다. 나머지 5개는 충돌 없음.
+  - 적용할 경로 표: `docs/research`가 아니라 스크래치패드 `omd-out/skills-sh-indexing.md`(첫 공개 스킬과 함께 적용).
+- **완료 — Aphrodite P0 (19:05).**
+  - 승인 우회 경로 3개(act, click, MCP use_interface)가 모두 실제였다. 새 테스트 43개 중 37개가 수정 전 실패했다.
+  - 수정은 사람 전용 액션 집합을 권한 판정 첫 단계에서 거절하고, UI에서 `isTrusted`로 한 번 더 막는다. 0.2.8로 올렸다.
+  - 커밋 `59ccba3`(워크트리 `../aphrodite-mela-p0`, 브랜치 `fix/approval-guard-0-2-8`, 로컬만).
+  - 본 세션 재실행: 새 테스트 44/44, 전체 459/461(실패 1은 기존 아이콘 테스트).
+  - 남은 위험: OS 수준 컴퓨터 유즈 클릭은 trusted라 구분 못 한다 → 0.3 후보로 OS 인증(Touch ID 등)을 승인에 건다.
+- **정정 — 2.0.2 게이트 (19:00).**
+  - D4 전제가 틀렸다. strict는 픽스처가 1개 이상이고 모두 PASS여야 통과한다. CI에서는 픽스처 6개 출력이 gitignore라 전부 MISSING이고, 영수증은 노트북 절대경로를 고정한다. 그래서 prepublishOnly에 걸린 게이트는 CI에서 절대 통과할 수 없다.
+  - landing 3개는 "영수증 없음"이 아니라 통합성 검사 실제 FAIL이다(위 2026-09-27 기록 정정).
+  - llms-full.txt는 2.0.2 CHANGELOG 누락으로 CI 검사가 실패했다 → 재생성함(미커밋).
+  - 오너 재결정 대기. 보고서: 스크래치패드 `omd-out/release-202-report.md`, 워크트리 `.claude/worktrees/agent-a55ee5c9247ca43b1`.
+- **결정 (19:15).** 2.0.2는 게이트를 로컬 단계로 옮겨 면제 출시한다(구현 중, 태그 전 재확인). Aphrodite 0.2.8은 draft PR #2(#1 위에 쌓음).
+- **완료 — KR 쇼케이스 인벤토리 (19:10).**
+  - 방식: 65개는 DESIGN.md 제자리 편집(assemble 재생성 금지 — 단일 home 표면 하드코딩). toss·krds는 graph 투영이라 별도 트랙이다.
+  - 번들의 components[]는 스타일 변형 수라 상한이다(cgv 383 = 6종).
+  - 상태값은 `surfaces[].elements[]`의 `::state-hover|pressed|focus`에 있다. focus는 신뢰도가 낮다.
+  - 번들만으로 '5개 이상 × hover·pressed·focus 전부'인 곳은 0/67이다 → 쇼케이스 기준 재정의가 필요하다.
+  - 가장 싼 9곳(상태 측정됐으나 미선언): upstage, toss-securities, lguplus, samsung, remember, yeogiotte, flex, catchtable, sktelecom.
+  - 번들 백업 위치가 미정이다(`artifacts/README.md:67`).
+- **결정 (19:30).** 쇼케이스는 번들로 먼저 하고 상위 20곳은 표적 재측정한다. 번들을 iCloud Drive에 백업했다(177+333 파일 해시 일치, `artifacts/README.md` 백업 위치 기재).
+- **쇼케이스 착수 (19:45).**
+  - 수요 순위는 Upstash 누적 select 80,552건에서 뽑았다. KR 상위 20(legacy 형식 verified): karrot, baemin, kakao, samsung, naver, banksalad, yeogiotte, 29cm, socar, wanted, tossbank, kakaobank, hyundaicard, likelion, ohouse, channeltalk, zigzag, ably, upstage, remember. toss(11,189, 전체 14%)와 krds는 Core v2 graph 트랙이라 따로 한다.
+  - 파일럿 2개가 돌고 있다: 번들 심화(toss-securities, lguplus), 표적 재측정(karrot, baemin — hover·pressed·키보드 focus).
+- **완료 — 2.0.2 출시 준비 (19:55).**
+  - 커밋 `6237385b`(브랜치 `worktree-agent-a55ee5c9247ca43b1`, main HEAD 바로 위). strict 게이트를 prepublishOnly에서 뺐고, 규칙 파일은 바이트 동일하다.
+  - D4 제외는 fixtures.json의 기록이다(필터가 아니라 매 실행 출력). CHANGELOG에 면제 한 줄을 넣고 llms-full을 재생성했다.
+  - prepublishOnly 전 구간이 통과했다. pack: 854파일, 7.1MB, 레퍼런스 521.
+  - 로컬 strict는 BLOCKED로 남는다(의도된 상태). main 병합과 태그 푸시는 오너 GO를 기다린다.
+- **2.0.2 출시 진행 (20:00, 오너 GO).**
+  - main을 `6237385b`로 fast-forward하고 태그를 푸시했다 → CI 1차 실패. node18-smoke가 루트 의존성만 설치하는데 수집기 번들이 `web/scripts/lib/reference-source.mjs`에서 js-yaml을 불러서다. 로컬은 web/node_modules로 풀려 못 잡았다. publish 전이라 npm엔 아무것도 안 나갔다.
+  - 수정 `abf37284`: 루트 devDependency `js-yaml@4.3.0` 한 줄. Node 18 클린 설치·빌드·팩 스모크 통과, web 의존성 있는 publish 조건에서 번들 바이트 동일, 미러 검사 통과를 로컬에서 확인했다.
+  - main → `abf37284`, 미공개 태그 v2.0.2를 새 커밋으로 옮김 → CI 2차 실행 중.
+- **2.0.2 CI 2차 (20:10).**
+  - node18-smoke는 통과했다. publish는 테스트 1건(install-skills Core v2 closure)이 CI에서 5초 타임아웃으로 실패했고, 재실행하니 테스트는 전부 통과했다.
+  - 그 뒤 `npm publish`의 PUT이 **E404**로 실패했다(prepublishOnly 통과, provenance 서명 완료 후). npm은 인증 실패를 404로 돌려준다. `NPM_TOKEN`은 2026-06-10에 만든 것이라, 쓰기 토큰 90일 한도로 만료된 것으로 추정한다.
+  - 오너 조치가 필요하다: 새 토큰으로 시크릿을 갱신하거나 npm Trusted Publishing을 설정한다. npm latest는 여전히 2.0.0.
+- **npm 전환 (20:20, 오너 결정: Trusted Publishing).**
+  - main `2112f070`: release.yml을 토큰 없이 OIDC로 발행하게 바꿨다. npm ^11.5.1을 설치하고 NODE_AUTH_TOKEN을 제거했다.
+  - main `436da615`: CI에서 5초를 넘긴 install-skills 테스트에 30초 타임아웃을 줬다(단언은 그대로).
+  - 오너가 npmjs.com에 trusted publisher를 등록하면 v2.0.2 태그를 `436da615`로 옮기고 재실행한다.
+- **완료 — 파일럿 커밋 (20:15).**
+  - `5f649000`: toss-securities 3→12 컴포넌트, lguplus 2→13. 본 세션이 헤드라인 2건을 번들로 재확인했고 게이트가 전부 통과했다. 푸시함.
+  - 헬퍼 스크립트는 `web/scripts/reference-deepen/`(미커밋).
+- **완료 — /hangul 초안 (20:20).**
+  - `skills/hangul/`(미커밋): SKILL.md 151줄, rules, measured-67, check.mjs(셀프테스트 PASS). KRDS·TDS·SEED 본문 행간은 전부 1.5로 원문 확인했다(SEED 수치는 캐논 문서 정정 필요).
+  - 우리 사이트를 검사하니 한국어 페이지에 `lang="en"`, font-card.tsx에 `break-all`이 잡혔다.
+  - 평가 채널은 오너 확인 뒤 돌린다.
+- **완료 — 표적 재측정 파일럿 (20:20).**
+  - karrot·baemin 각 6개 컨트롤의 hover·pressed·키보드 focus를 측정했다. baemin은 focus 표시가 없고, karrot는 ::before 오버레이 hover다.
+  - 레포 프로브 도구는 종료 때 멈춘다 → 수정 중.
+- **배민 글 QA 1차.** REVISION: SVG 팔레트, "-세요", 캡션 누락 → 2차 수정 중.
+- **웨이브 실행 중 (20:25).** 배민 2차 수정, karrot·baemin 쇼케이스 저작, 번들 심화 1배치(coupang·kurly·nhncloud / hyundai·yanolja·kream / oliveyoung·kakaopay·musinsa), 프로브 도구 수정과 상위 20 A배치(kakao·samsung·naver).
+- **/hangul 평가 (20:40, 오너 결정: Claude + Codex).**
+  - 계획은 `docs/research/2026-09-29-growth/hangul-eval-plan.md`다. 프롬프트 3 × (스킬 없음 / 스킬 파일 + 적용 지시 1줄) × 3회를 채널마다 돌린다. create-next-app 16.3.7 템플릿(lang="en"·Geist 기본값 유지, AGENTS/CLAUDE.md 제거)을 쓰고 check.mjs로 채점한다.
+  - Codex(gpt-6-astra, 설정 기본값) 18회는 실행 중이다(스크래치패드 `hangul-eval/`). Claude 18회는 현재 웨이브가 끝난 뒤 서브에이전트로 돌린다.
+- **배민 글 (20:55).**
+  - 2차 수정 커밋 `6985ae1d`(브랜치 `worktree-agent-a624066df7c6d1fcb`, `643851d0` 위): SVG를 사이트 팔레트 정확값으로 바꿨고, "-세요"를 없앴고, 캡션·en alt를 넣었고, 주어 오류와 중복 /cli 링크를 고쳤다.
+  - 렌더 확인: 1440·390px, ko·en 모두 가로 넘침 없음, 그림 로드 정상.
+  - QA 2차 진행 중. 남은 것은 발행일(오너)과 main 반영 GO다.
+  - 부수 발견: 사이트 동의 배너가 한국어 페이지에서도 영어이고, 이미 죽은 GA/Mixpanel 사용을 고지한다.
+- **완료 — 배민 글 발행 (22:05, 오너 GO).**
+  - main `0a041e32`(체리픽 4커밋, 날짜 2026-09-29). QA 2차 PASS, 1440·390 렌더 확인.
+  - 라이브 확인: ko·en 200, 에셋 2개 200, /blog 목록 노출.
+- **완료 — 쇼케이스 웨이브 1 (22:06).**
+  - 커밋 `3bbf9e2a` 푸시(feature 브랜치).
+  - 번들 9곳: coupang 2→8, kurly 3→7, nhncloud 3→12, hyundai 1→12, yanolja 2→11, kream 0→11, oliveyoung 1→9, musinsa 4→9, kakaopay(정정만).
+  - 재측정 2곳: karrot 5→16, baemin 7→13(쇼케이스 기준은 미달).
+  - 헤드라인 11건 전부 본 세션이 증거와 대조했다.
+  - 배민 골든 테스트 핀을 갱신했다(컴포넌트 7→13, 소스 5→6, Core parity 레거시 sha). **staged Core v2 baemin 마이그레이션은 이제 정본보다 뒤처졌다 — 컷오버 재개 시 재이관.**
+  - main 반영(프로덕션)은 오너 GO가 필요하다.
+- **레시피 메모 (웨이브 2용).**
+  - 상태 프레임은 변형이 아니라 요소에서 직접 스캔한다. 색 센서스는 상태값을 포함한다.
+  - 테두리 스타일은 미측정이다("1px #hex"로 통일할 것).
+  - fg/bg 접두어를 필수로 한다. check-claims는 hover·pressed hex를 검사하지 않는다(보강 필요).
+  - `components: {}`는 append-components가 인식하지 못한다.
+  - 'interactionCount 0 = 상태 없음' 오독이 3회 났다(린트 후보).
+- **다음 (웨이브 2).** 분석 스냅샷 + `/api/active` 확인, 원고 2편 사실 재확인, README·홈 첫 화면, `/hangul` 측정·작성, skills.sh 정리 적용, KR 경로 본작업.
+- **오너 몫.** 2.0.2 태그 GO, 블로그 발행 확인, Threads·X 게시, Aphrodite 0.2.x 설치 앱 확인과 stash 폐기 여부.
+
+---
+
 ## ⏸ 2026-09-27 · 레퍼런스 확충 중단 → 프로덕션 반영 준비 (521 · 227)
 
 - 오너 지시로 루프 중단. EU5는 deepl·komoot·blinkist·n8n·dailymotion·spendesk·zara 7/16에서 멈춤(mango 측정 중단, withings·idealista·zooplus 보류 — 메모는 scratchpad).
@@ -10,7 +120,7 @@
 - GitHub description "500+"로 갱신 완료.
 - 검증: CLI build·tsc OK, CLI 테스트는 전체 병렬 실행에서 부하성 타임아웃 2~4건(단독 실행 시 전부 통과), web vitest 1,060 통과, `next build` 성공(521 페이지). web lint 52 errors(배포 경로 아님, main 대비 비교 못 함).
 - **오너 결정 2026-09-27**: main fast-forward 병합(15ff0139→3d5e0d0e) 승인·완료, npm은 보류(strict 게이트 유지, 2.0.0 그대로). 같은 SHA가 이미 Preview로 빌드돼 Production 배포가 생성되지 않아, 새 커밋으로 Production 재트리거.
-- (이전 기록) **막힘(오너 결정)**: ① main 병합(269커밋, fast-forward 가능, Vercel 자동 배포) ② npm publish — prepublishOnly의 `gate:quality:strict`가 landing 픽스처 3개(generation receipt 없음)로 BLOCKED. 이 브랜치의 4dae1aa0에서 strict로 바뀜. npm 로그인도 오너 필요.
+- (이전 기록) **막힘(오너 결정)**: ① main 병합(269커밋, fast-forward 가능, Vercel 자동 배포) ② npm publish — prepublishOnly의 `gate:quality:strict`가 landing 픽스처 3개(generation receipt 없음)로 BLOCKED. *(정정 2026-09-29: 영수증 문제가 아니라 CI에서 픽스처 6개가 모두 MISSING이고, landing 3개는 통합성 FAIL이다 — 위 9/29 절 참고)* 이 브랜치의 4dae1aa0에서 strict로 바뀜. npm 로그인도 오너 필요.
 
 ---
 

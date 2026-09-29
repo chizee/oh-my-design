@@ -1,5 +1,12 @@
 # JOURNAL
 
+## 2026-09-29
+
+- **한 일**: 성장 전략 리서치(Emil 해부·경쟁 지형·한국 빈자리)와 계획(`docs/GROWTH_PLAN_2026-09-29.md`), Aphrodite 고도화 계획. 오너 결정 17개 기록(`docs/GROWTH_DECISIONS_2026-09-29.md`) — Aphrodite는 컨셉 A(범용 에이전트 캔버스).
+- **열린 것**: D1 전제 정정(번들은 KR verified 67에만 있음) → 재결정 대기. macOS Desktop 읽기 차단으로 반나절 정지, 재부팅으로 복구(스크래치패드 소실).
+- **한 일(2)**: 계측 복구(/api/active 생존, snapshot 스크립트), 2.0.2 릴리스(CI 두 번 수정: js-yaml·타임아웃, Trusted Publishing 전환 대기), Aphrodite P0 PR #2, 배민 글 발행, KR 쇼케이스 11곳(3bbf9e2a), /hangul 초안·평가 착수.
+- **다음**: npm Trusted Publishing 등록(오너) → v2.0.2 재태그; 웨이브 2(번들 다음 배치·상위 20 프로브 B); /hangul Claude 평가·통합.
+
 ## 2026-09-26
 
 - **한 일**: 재부팅으로 잃은 프로브 6건 재실행 → pairs·hatena·sainsburys·bloomandwild·gousto·nhs 전부 verified(**472 / 178**). 위임 프로브 헤드라인 오답 3건을 재측정으로 잡음. 프로브 도구: 동의 배너 선거부·`:hover` 매칭 검사. 저작 도구를 레포로.

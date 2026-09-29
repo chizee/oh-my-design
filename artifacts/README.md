@@ -64,7 +64,7 @@ critical 트리에 누락이 있으면 exit 1.
 
 **매니페스트는 손실을 알려줄 뿐 막지 못한다.** 실제 사본은 이 디스크 밖에 있어야 한다.
 
-현재 백업 위치: *(미설정 — 아래 중 하나를 정해 여기에 적을 것)*
+현재 백업 위치: **iCloud Drive `~/Library/Mobile Documents/com~apple~CloudDocs/omd-evidence-backup/`** (오너 결정 2026-09-29). 첫 복사 때 파일별 SHA-256 일치를 확인했다: reference-evidence 177개, reverify 333개. 새로 캡쳐한 뒤에는 `rsync -a artifacts/reference-evidence artifacts/reverify artifacts/local-store.manifest.json <백업>/`로 갱신하고 해시를 대조한다.
 
 - 외장 디스크 / Time Machine에 포함되는 경로
 - 개인 클라우드 드라이브의 동기화 폴더
