@@ -468,18 +468,39 @@ async function documentFonts(page: Page): Promise<FontFaceEvidence[]> {
   });
 }
 
+// Time budgets (2026-09-30). Two sites (elice.io/ko/ax/lxp, greetinghr.com) held a
+// capture at 0% CPU for 11–17 minutes: one awaited step never returned and nothing timed
+// it out. Each route now has a budget. A route that overruns is skipped, logged on stderr,
+// and the page is replaced so a stuck evaluate cannot block the next route. The whole run
+// also has a budget, and the final browser.close cannot hold the process open.
+// The step that stalled on greetinghr.com (a Framer site) was the pseudo-state pass, on
+// every route. A stalled state or interaction pass now costs only that pass: the route
+// keeps its rest values, the pass is logged as unmeasured, and the page is replaced.
+const STEP_BUDGET_MS = Number(option("--step-budget-ms") ?? "90000");
+const ROUTE_BUDGET_MS = Number(option("--route-budget-ms") ?? "300000");
+const TOTAL_BUDGET_MS = Number(option("--total-budget-ms") ?? "900000");
+class StepTimeout extends Error {}
+function withTimeout<T>(work: Promise<T>, ms: number, label: string): Promise<T> {
+  work.catch(() => {});
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const expiry = new Promise<never>((_, reject) => { timer = setTimeout(() => reject(new StepTimeout(label)), ms); });
+  return Promise.race([work, expiry]).finally(() => clearTimeout(timer));
+}
+
 const browser = await chromium.launch({ executablePath: chromePath, headless: true, args: ["--disable-http2"] });
 const context = await browser.newContext({
   userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36",
   viewport: { width: 1440, height: 900 },
 });
-const page = await context.newPage();
 const cssByUrl = new Map<string, string>();
-page.on("response", async (response: PlaywrightResponse) => {
+async function collectCss(response: PlaywrightResponse): Promise<void> {
   const contentType = response.headers()["content-type"] ?? "";
   if (!contentType.includes("css") && !/\.css(?:\?|$)/.test(response.url())) return;
   try { cssByUrl.set(response.url(), await response.text()); } catch {}
-});
+}
+let page = await context.newPage();
+page.on("response", collectCss);
+const skippedRoutes: { url: string; reason: string }[] = [];
 
 const capturedAt = new Date().toISOString();
 const surfaces: ReferenceEvidenceBundle["surfaces"][number][] = [];
@@ -496,25 +517,85 @@ const routeUrls = [homepage, ...explicitRoutes, ...configuredRoutes, ...discover
   .filter((url, index, list) => list.indexOf(url) === index)
   .slice(0, maxRoutes * 3);
 
-for (const [index, url] of routeUrls.entries()) {
-  if (surfaces.length >= maxRoutes) break;
+const runStartedAt = Date.now();
+let currentStep = "navigate";
+async function captureRoute(index: number, url: string) {
+  currentStep = "navigate";
   if (index > 0) {
     await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45_000 }).catch(() => null);
     await page.waitForTimeout(900);
     await dismissObstructions(page);
   }
   const currentUrl = new URL(page.url());
-  if (isUnsafeCaptureSurface(currentUrl.href)) continue;
+  if (isUnsafeCaptureSurface(currentUrl.href)) return null;
   const surfaceId = surfaces.length === 0 ? "home" : `surface-${surfaces.length + 1}`;
-  const capturedSurfaceUrl = currentUrl.href;
-  const baselineElements = await captureElements(page, surfaceId);
-  const pseudoStates = capturePseudoStates
-    ? await captureStates(page, surfaceId, baselineElements)
-    : { elements: [], states: {} };
-  const expanded = captureExpandedInteractions
-    ? await captureInteractions(page, surfaceId)
-    : { elements: [], states: {}, interactions: [] };
-  if (isUnsafeCaptureSurface(page.url())) continue;
+  currentStep = "elements";
+  const baselineElements = await withTimeout(captureElements(page, surfaceId), STEP_BUDGET_MS, "elements");
+  const unmeasured: string[] = [];
+  let pseudoStates: Awaited<ReturnType<typeof captureStates>> = { elements: [], states: {} };
+  if (capturePseudoStates) {
+    currentStep = "pseudo-states";
+    try {
+      pseudoStates = await withTimeout(captureStates(page, surfaceId, baselineElements), STEP_BUDGET_MS, "pseudo-states");
+    } catch (error) {
+      if (!(error instanceof StepTimeout)) throw error;
+      unmeasured.push("pseudo-states");
+      await replacePage(currentUrl.href);
+    }
+  }
+  let expanded: Awaited<ReturnType<typeof captureInteractions>> = { elements: [], states: {}, interactions: [] };
+  if (captureExpandedInteractions && unmeasured.length === 0) {
+    currentStep = "interactions";
+    try {
+      expanded = await withTimeout(captureInteractions(page, surfaceId), STEP_BUDGET_MS, "interactions");
+    } catch (error) {
+      if (!(error instanceof StepTimeout)) throw error;
+      unmeasured.push("interactions");
+      await replacePage(currentUrl.href);
+    }
+  } else if (captureExpandedInteractions) {
+    unmeasured.push("interactions (skipped after the stalled pseudo-state pass)");
+  }
+  if (isUnsafeCaptureSurface(page.url())) return null;
+  currentStep = "fonts";
+  const faces = await withTimeout(documentFonts(page), 20_000, "fonts").catch(() => [] as FontFaceEvidence[]);
+  for (const pass of unmeasured) {
+    const why = pass.includes("skipped") ? "" : ` (no result within ${STEP_BUDGET_MS}ms)`;
+    console.error(`[reference-evidence] ${currentUrl.href}: ${pass} unmeasured${why}; rest values kept`);
+  }
+  return { surfaceId, capturedSurfaceUrl: currentUrl.href, baselineElements, pseudoStates, expanded, faces };
+}
+
+/** Close a page that may be stuck mid-step and continue on a fresh one at the same URL. */
+async function replacePage(url: string): Promise<void> {
+  await withTimeout(page.close(), 10_000, "page.close").catch(() => {});
+  page = await context.newPage();
+  page.on("response", collectCss);
+  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45_000 }).catch(() => null);
+  await page.waitForTimeout(900);
+  await dismissObstructions(page);
+}
+
+for (const [index, url] of routeUrls.entries()) {
+  if (surfaces.length >= maxRoutes) break;
+  if (Date.now() - runStartedAt > TOTAL_BUDGET_MS) {
+    skippedRoutes.push({ url, reason: `total budget ${TOTAL_BUDGET_MS}ms spent before this route` });
+    continue;
+  }
+  let captured: Awaited<ReturnType<typeof captureRoute>>;
+  try {
+    captured = await withTimeout(captureRoute(index, url), ROUTE_BUDGET_MS, url);
+  } catch (error) {
+    if (!(error instanceof StepTimeout)) throw error;
+    skippedRoutes.push({ url, reason: `no result within ${ROUTE_BUDGET_MS}ms (stuck at: ${currentStep})` });
+    console.error(`[reference-evidence] skipped ${url}: stuck at ${currentStep} past ${ROUTE_BUDGET_MS}ms; replacing the page`);
+    await withTimeout(page.close(), 10_000, "page.close").catch(() => {});
+    page = await context.newPage();
+    page.on("response", collectCss);
+    continue;
+  }
+  if (!captured) continue;
+  const { surfaceId, capturedSurfaceUrl, baselineElements, pseudoStates, expanded, faces } = captured;
   for (const [selector, values] of Object.entries(pseudoStates.states)) {
     stateEvidence[selector] = [...new Set([...(stateEvidence[selector] ?? []), ...values])];
   }
@@ -524,9 +605,11 @@ for (const [index, url] of routeUrls.entries()) {
   interactionEvidence.push(...expanded.interactions);
   const elements = [...baselineElements, ...pseudoStates.elements, ...expanded.elements];
   surfaces.push({ id: surfaceId, url: capturedSurfaceUrl, viewport: "1440x900", elements });
-  allFaces.push(...await documentFonts(page));
+  allFaces.push(...faces);
 }
-await browser.close();
+await withTimeout(browser.close(), 15_000, "browser.close").catch(() => {
+  console.error("[reference-evidence] browser.close did not finish in 15s; exiting after the bundle is written");
+});
 
 for (const [cssUrl, css] of cssByUrl) allFaces.push(...fontSources(css, cssUrl));
 const mergedFaces = new Map<string, FontFaceEvidence>();
@@ -574,3 +657,6 @@ else {
     console.log(`  font ${font.family}: ${font.status}/${font.confidence} · usage ${font.usageCount} · ${font.roles.join(", ") || "not observed"}`);
   }
 }
+for (const skipped of skippedRoutes) console.error(`[reference-evidence] skipped route ${skipped.url}: ${skipped.reason}`);
+// A stuck page or browser must not keep the process alive once the bundle is on disk.
+process.exit(0);
