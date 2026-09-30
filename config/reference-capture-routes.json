@@ -147,6 +147,53 @@
         "https://corp.remember.co.kr/",
         "https://dramancompany.github.io/remember-ui/"
       ]
+    },
+    "naverpay": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://developers.pay.naver.com/",
+        "https://developers.pay.naver.com/design/bridge",
+        "https://www.naverfincorp.com/"
+      ]
+    },
+    "nexon": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.nexon.com/Home/Game",
+        "https://brand.nexon.com/ko"
+      ]
+    },
+    "lemonbase": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://lemonbase.com/",
+        "https://lemonbase.com/pricing",
+        "https://lemonbase.com/products/inquiry"
+      ]
+    },
+    "hana": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.kebhana.com/",
+        "https://www.kebhana.com/cont/mall/mall08/mall0805/index.jsp?_menuNo=62608",
+        "https://www.kebhana.com/cont/news/news01/index.jsp"
+      ]
+    },
+    "hwahae": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.hwahae.co.kr/",
+        "https://www.hwahae.co.kr/rankings",
+        "https://www.hwahae.co.kr/awards/home/2026"
+      ]
+    },
+    "goorm": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.goorm.io/",
+        "https://www.goorm.io/solution/ai-dev",
+        "https://edu.goorm.io/"
+      ]
     }
   }
 }

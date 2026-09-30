@@ -98,18 +98,31 @@ function fontSources(css: string, cssUrl: string): FontFaceEvidence[] {
   return results;
 }
 
+// Consent is refused, never granted (2026-09-30). The July version clicked "Accept", "동의",
+// "모두 동의" and the first button inside any cookie container, which contradicts the probe
+// brief's reject-only rule. It now presses only reject / necessary-only controls and close
+// buttons, with the same vocabulary as probe-keyboard-states.mjs.
+const CONSENT_REJECT_SELECTORS = [
+  "#onetrust-reject-all-handler", "#reject-all", "#CybotCookiebotDialogBodyButtonDecline",
+  "button[data-testid='uc-deny-all-button']", ".didomi-continue-without-agreeing", "#didomi-notice-disagree-button",
+];
+const CONSENT_REJECT_WORDS = /^(reject all|reject|decline all|decline|only necessary|necessary only|use necessary only|essential only|only essential|deny all|deny|refuse|모두 거부|거부|필수(만| 항목만| 쿠키만) (허용|동의)(하기)?|拒否する|すべて拒否)$/i;
+
 async function dismissObstructions(page: Page): Promise<void> {
   await page.keyboard.press("Escape").catch(() => {});
   const selectors = [
+    ...CONSENT_REJECT_SELECTORS,
     '[aria-label*="close" i]', '[aria-label*="dismiss" i]', '[aria-label*="닫기"]',
-    'button:has-text("Accept")', 'button:has-text("I agree")', 'button:has-text("동의")',
-    'button:has-text("모두 동의")', '[id*="cookie" i] button', '[class*="cookie" i] button',
   ];
   for (const selector of selectors) {
     const locator = page.locator(selector).first();
     if (await locator.isVisible({ timeout: 150 }).catch(() => false)) {
       await locator.click({ timeout: 500 }).catch(() => {});
     }
+  }
+  const rejectByText = page.locator("button, a[role='button'], [role='button']").filter({ hasText: CONSENT_REJECT_WORDS }).first();
+  if (await rejectByText.isVisible({ timeout: 150 }).catch(() => false)) {
+    await rejectByText.click({ timeout: 500 }).catch(() => {});
   }
 }
 
