@@ -426,6 +426,14 @@
 - **후속(도구):** 수집기 경로별 타임아웃(elice·greeting 멈춤), 래퍼 채움 기록(kakaopage), 봇 차단 사이트(ssg·gentlemonster 403) 정책.
 - **결정 (17:40, 오너).** 사이트 반영 GO(28곳 + 카드 UI + 수집기 동의 거부). moreh는 KR 유지 — 모회사 본사 규칙은 본사가 실제로 해외에서 운영될 때 적용한다(메모리·GROWTH_DECISIONS 기록).
 - **반영 진행 (17:45).** main `124ff911`. 커밋을 main에 먼저 푸시해 프로덕션 배포를 걸었고, 배포를 확인하는 중이다.
+- **완료 — 사이트 반영 (17:55, main `124ff911`).** Vercel 프로덕션 배포 6755093844 성공. 라이브 확인: 10개 경로 200, kakaopage `#ffd618`·first-episode-cta, nexon 정정, 3o3 `#fbbd41`, teamblind US, moreh KR.
+- **⚠ 발견·수정 — builder 그리드 대표색 (`74c98aa1`, 브랜치).**
+  - `/api/references`(목록)가 대표색을 토큰 primary → §2 정규식 순으로 읽었다. 정규식은 처음 만나는 hex를 돌려준다. 상세 경로가 쓰는 토큰 brand와 프런트매터 primary_color는 건너뛰었다.
+  - 결과: **45곳의 그리드 카드·색상 필터가 상세와 다른 색이었다.** kakao #111111(실제 #fee500), naver #1C1C1C(#03c75a), stripe #414552(#635bff), 11st #FFFFFF(#ff0038). 오래된 결함이다.
+  - 수정: 상세의 selectPrimaryColor 순서(primary → brand → primary_color)를 그대로 따른다. 로컬에서 대표색이 있는 432곳 전부 목록=상세를 확인했고(불일치 0), 카드 스크린샷과 웹 테스트 1065건도 통과했다. **사이트 반영은 오너 GO가 필요하다.**
+- **완료 — 수집기 시간 제한 (`2d823a78`).** 단계(90초)·경로(300초)·전체(900초) 제한을 둔다. 멈춘 상태 수집 단계만 미측정으로 기록하고 기본 스타일은 살린다. greeting은 100초 만에 표면 3곳을 캡처했지만 coverage 28이라 보류를 유지한다(사유가 정확해졌다). goorm 회귀 테스트는 동일하다.
+- **실수 재발·차단 (18:10).** P4를 띄우며 P3 스크립트(쌍 목록이 코드에 고정)에 args를 넘겨 재실행했다. 즉시 중지했고 피해는 0이다. 재발 방지로, args가 없으면 실행을 거부하는 인자 전용 스크립트 `kr-partial-wave`로 교체했다.
+- **진행 중 — 웨이브 P4 (18:12~):** 42dot·stibee / kbpay·mildang / kyobobook·tabling / airbridge·protopie / shiftup·dealicious / drdiary·codeit.
 - **다음.**
   1. ~~저작 E1~~ (완료).
   2. 오너 GO 대기: 사이트 반영(웨이브 5 + 19곳 + 라이브 정정 4곳 + E2 3곳, 이어서 E1 3곳), /hangul 공개 판단(v2 뒤).
