@@ -143,13 +143,20 @@ export async function GET() {
       const md = readFileSync(join(refDir, e.id, 'DESIGN.md'), 'utf-8');
       // Prefer the reconciled machine-readable token block when present; fall
       // back to the legacy prose-regex extraction for refs without tokens.
+      //
+      // primaryColor follows the detail route's selectPrimaryColor order: token
+      // `primary`, token `brand`, then the frontmatter primary_color. Until
+      // 2026-09-30 this list skipped the last two and fell to a §2 regex, which
+      // returned the first hex it found: the grid painted kakao #111111 and 11st
+      // #FFFFFF while their detail pages showed #fee500 and #ff0038 (45 refs).
+      // The regex now runs only when a reference has no primary_color at all.
       return {
         id: e.id,
         name: e.displayName,
         category: CATEGORY_LABELS[e.category] || e.category,
         country: COUNTRY_LABELS[e.country] || e.country,
         countryCode: e.country, // raw 2-letter for client locale matching
-        primaryColor: e.tokens?.colors?.primary || e.tokens?.color?.primary || extractPrimaryColor(md, e.primaryColor),
+        primaryColor: e.tokens?.colors?.primary || e.tokens?.colors?.brand || e.tokens?.color?.primary || e.primaryColor || extractPrimaryColor(md, e.primaryColor),
         background: e.tokens?.colors?.canvas || e.tokens?.colors?.background || e.tokens?.color?.background || extractBackground(md),
         hot: hotIds.has(e.id),
         pop: popMap.get(e.id) ?? 0,        // select-counter score, for Popular sort + blend
