@@ -353,6 +353,9 @@
   - 대상 100곳 모두 `verification_v2_missing`이다. 빌더 선택 수 합계 9,587. 상위 10곳: naverpay 468, nexon 317, lemonbase 271, hana 244, hwahae 243, goorm 240, kia 238, wrtn 221, furiosaai 207, imweb 196.
   - 도구: 7월 파이프라인 `npm --prefix web run capture:reference -- <id> [--routes a,b]`로 번들을 캡처한다. `--max-routes`나 `config/reference-capture-routes.json`로 경로를 정할 수 있다. 7월 사전 조건: 표면 2곳 이상, coverage 60 이상, 컴포넌트 1개 이상.
   - 파일럿 발견: naverpay 홈(`new.pay.naver.com`)은 비로그인 방문자를 로그인으로 보낸다. 캡처 정책이 로그인 표면을 거부해 표면이 0개였다(빈 번들은 삭제했다). → 레퍼런스마다 로그인 없는 공개 표면을 먼저 찾아야 한다.
+- **진행 중 (08:45).**
+  - KR partial 파일럿 P1(에이전트 3개): naverpay·nexon / lemonbase·hana / hwahae·goorm. 공개 표면 찾기 → 캡처(사전 조건 표면 2·coverage 60·컴포넌트 1) → 공식 근거·국내 출처 2개 이상 → verification_v2 + Proof 저작. 사전 조건에 못 미치면 보류한다.
+  - /hangul 보강: GitHub Actions 임시 브랜치 `ci/hangul-render-check`에서 Windows(맑은 고딕)와 Ubuntu+Noto CJK(Android 대용) 렌더로 표지의 "있어/요." 절단을 확인한다. 이 맥에는 맑은 고딕이 없다. 임시 브랜치는 끝나면 지운다.
 - **다음.**
   1. ~~저작 E1~~ (완료).
   2. 오너 GO 대기: 사이트 반영(웨이브 5 + 19곳 + 라이브 정정 4곳 + E2 3곳, 이어서 E1 3곳), /hangul 공개 판단(v2 뒤).
