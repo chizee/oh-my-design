@@ -1,14 +1,14 @@
 {
   "why": "git에 올리지 않는 로컬 전용 산출물의 보관 증명. 파일은 저장소 밖, 목록과 해시는 저장소 안.",
-  "recordedAt": "2026-09-17",
+  "recordedAt": "2026-09-30",
   "note": "복구는 자동화하지 않는다. 검사가 누락을 알려주면 사람이 백업에서 되돌리거나 재캡쳐한다.",
   "trees": {
     "reference-evidence": {
       "dir": "artifacts/reference-evidence",
       "why": "140개 verified 레퍼런스의 캡쳐 근거. 만료 대응 R트랙 55건의 유일한 입력.",
       "critical": true,
-      "fileCount": 177,
-      "bytes": 151843526,
+      "fileCount": 183,
+      "bytes": 156305271,
       "files": {
         "104.json": {
           "sha256": "006a9edc3a9ee4c87f1189cc315b1b22c0ab769c4a014b50d435a04670c715ae",
@@ -210,9 +210,21 @@
           "sha256": "ad5807fc2f0431f208ad2b2e1beb56151723a24b560b955cbd5876ef1ad9e946",
           "bytes": 518868
         },
+        "goorm.json": {
+          "sha256": "baf97585744761fbbe64c0a9ef3a315623114e50693bfbbc88d64bb347ee0ad5",
+          "bytes": 1778070
+        },
+        "hana.json": {
+          "sha256": "54c33552a056824b9f07a0a38a1f779033901970d80f73dd40a4774526d206f1",
+          "bytes": 648151
+        },
         "hashicorp.json": {
           "sha256": "ba6841f77b8e05abbcc0a9a7ff10ba54e52871e6e74bed0d46d659247adad0e6",
           "bytes": 947036
+        },
+        "hwahae.json": {
+          "sha256": "5c62b180e0f87ee6aa2d2e5de160c47ec647926abfdb719c4587149521901195",
+          "bytes": 471781
         },
         "hyundai.json": {
           "sha256": "2d8b7b262eb819cd45bceb8df9dc56d2cff4df7078fed6e977b5a5debfe7dd11",
@@ -305,6 +317,10 @@
         "lamborghini.json": {
           "sha256": "ed0fd0fdafc0e2adc726666b4418916e9cccac9134c31319d66cef9d3a571f4e",
           "bytes": 995031
+        },
+        "lemonbase.json": {
+          "sha256": "1ea5cf01c72a9ec6c2d000f8cba17c0d4b5a39baf242f1b11d2896f3b6bd8f13",
+          "bytes": 776587
         },
         "lguplus.json": {
           "sha256": "50142808895f4fbff89312512172942b3035ae51ceffa0466578a3c1c7a8c313",
@@ -402,9 +418,17 @@
           "sha256": "9fdbfa04bd7a80e6fb7b922669a2e62c102a1dec50c7639bf56a69d624968213",
           "bytes": 1860933
         },
+        "naverpay.json": {
+          "sha256": "27adf071c6b9d41cf65a83663e8494b8c8223ce30470b3c6682a4df9dc6319e9",
+          "bytes": 348037
+        },
         "naverwebtoon.json": {
           "sha256": "c6bcf7d158bee84225634c5dea8fe157649627981f8ba32cecd7dc36969545de",
           "bytes": 1688767
+        },
+        "nexon.json": {
+          "sha256": "fcb6ae92e777578e0c8590f2605d4a9ef4f8c9a4ff558c39eaa82f2ec353c0a3",
+          "bytes": 439119
         },
         "nhn.json": {
           "sha256": "7d8fb473084a8024565552724f559fe11c06a39fd279d973fe45f5d6a96f7634",
