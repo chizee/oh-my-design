@@ -5,443 +5,439 @@ display_name_kr: 하나은행
 country: KR
 category: fintech
 homepage: "https://www.kebhana.com"
-primary_color: "#00a39f"
+primary_color: "#008485"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=www.kebhana.com&sz=128"
-verified: "2026-06-22"
+verified: "2026-09-30"
 added: "2026-06-22"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: marketing, url: "https://www.kebhana.com/", inspected: "2026-09-30" }
+    - { id: surface-2, kind: product-catalog, url: "https://www.kebhana.com/cont/mall/mall08/mall0805/index.jsp?_menuNo=62608", inspected: "2026-09-30" }
+    - { id: surface-3, kind: news-list, url: "https://www.kebhana.com/cont/news/news01/index.jsp", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://www.kebhana.com/", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://www.kebhana.com/cont/mall/mall08/mall0805/index.jsp?_menuNo=62608", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://www.kebhana.com/cont/news/news01/index.jsp", captured: "2026-09-30" }
+    - { id: pr-about, kind: official-doc, url: "http://pr.kebhana.com/contents/kor/index.jsp", captured: "2026-09-30" }
+    - { id: pr-ci, kind: official-doc, url: "http://pr.kebhana.com/contents/kor/about/corporate/index.jsp", captured: "2026-09-30" }
+    - { id: pr-history, kind: official-doc, url: "http://pr.kebhana.com/contents/kor/about/history/index.jsp", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &mall { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, captured: "2026-09-30" }
+    "tokens.colors.nav-hover": &g8h { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]::state-hover", captured: "2026-09-30" }
+    "tokens.colors.canvas": &g8 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-09-30" }
+    "tokens.colors.ink": *g8
+    "tokens.colors.body": *mall
+    "tokens.colors.body-home": &home { surface_id: home, source_id: surface-home, method: computed-style, captured: "2026-09-30" }
+    "tokens.colors.text-strong": *home
+    "tokens.colors.lnb-muted": &l17 { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]", captured: "2026-09-30" }
+    "tokens.colors.hairline": &f78 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"78\"]", captured: "2026-09-30" }
+    "tokens.colors.surface": &hw82 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"82\"]", captured: "2026-09-30" }
+    "tokens.typography.family.ui": *home
+    "tokens.typography.family.medium": *mall
+    "tokens.typography.family.bold": *home
+    "tokens.typography.hero.size": *home
+    "tokens.typography.hero.weight": *home
+    "tokens.typography.hero.lineHeight": *home
+    "tokens.typography.hero.tracking": *home
+    "tokens.typography.hero.use": *home
+    "tokens.typography.page-title.size": *mall
+    "tokens.typography.page-title.weight": *mall
+    "tokens.typography.page-title.lineHeight": *mall
+    "tokens.typography.page-title.tracking": *mall
+    "tokens.typography.page-title.use": *mall
+    "tokens.typography.section-title.size": *mall
+    "tokens.typography.section-title.weight": *mall
+    "tokens.typography.section-title.lineHeight": *mall
+    "tokens.typography.section-title.tracking": *mall
+    "tokens.typography.section-title.use": *mall
+    "tokens.typography.gnb.size": *g8
+    "tokens.typography.gnb.weight": *g8
+    "tokens.typography.gnb.tracking": *g8
+    "tokens.typography.gnb.use": *g8
+    "tokens.typography.lnb.size": *l17
+    "tokens.typography.lnb.weight": *l17
+    "tokens.typography.lnb.lineHeight": *l17
+    "tokens.typography.lnb.tracking": *l17
+    "tokens.typography.lnb.use": *l17
+    "tokens.typography.body.size": *home
+    "tokens.typography.body.weight": *home
+    "tokens.typography.body.lineHeight": *home
+    "tokens.typography.body.use": *home
+    "tokens.typography.news-title.size": *home
+    "tokens.typography.news-title.weight": *home
+    "tokens.typography.news-title.lineHeight": *home
+    "tokens.typography.news-title.tracking": *home
+    "tokens.typography.news-title.use": *home
+    "tokens.spacing.gnb-x": *g8
+    "tokens.spacing.lnb-top": *l17
+    "tokens.spacing.lnb-right": *l17
+    "tokens.spacing.lnb-bottom": *l17
+    "tokens.spacing.footer-select-x": *f78
+    "tokens.spacing.small-button-x": &b36 { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"36\"]", captured: "2026-09-30" }
+    "tokens.spacing.join-x": &j41 { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"41\"]", captured: "2026-09-30" }
+    "tokens.rounded.control": *hw82
+    "tokens.rounded.pill": &s19 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"19\"]", captured: "2026-09-30" }
+    "tokens.rounded.join": *j41
+    "tokens.rounded.small": *b36
+    "tokens.components.gnb-tab.type": *g8
+    "tokens.components.gnb-tab.bg": *g8
+    "tokens.components.gnb-tab.fg": *g8
+    "tokens.components.gnb-tab.padding": *g8
+    "tokens.components.gnb-tab.height": *g8
+    "tokens.components.gnb-tab.font": *g8
+    "tokens.components.gnb-tab.hover": *g8h
+    "tokens.components.gnb-tab.states": *g8h
+    "tokens.components.gnb-tab.use": *g8
+    "tokens.components.lnb-link.type": *l17
+    "tokens.components.lnb-link.bg": *l17
+    "tokens.components.lnb-link.fg": *l17
+    "tokens.components.lnb-link.padding": *l17
+    "tokens.components.lnb-link.size": *l17
+    "tokens.components.lnb-link.font": *l17
+    "tokens.components.lnb-link.hover": &l17h { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"17\"]::state-hover", captured: "2026-09-30" }
+    "tokens.components.lnb-link.states": *l17h
+    "tokens.components.lnb-link.use": *l17
+    "tokens.components.slide-cta.type": *s19
+    "tokens.components.slide-cta.bg": *s19
+    "tokens.components.slide-cta.fg": *s19
+    "tokens.components.slide-cta.radius": *s19
+    "tokens.components.slide-cta.size": *s19
+    "tokens.components.slide-cta.font": *s19
+    "tokens.components.slide-cta.states": *s19
+    "tokens.components.slide-cta.use": *s19
+    "tokens.components.footer-site-select.type": *f78
+    "tokens.components.footer-site-select.bg": *f78
+    "tokens.components.footer-site-select.fg": *f78
+    "tokens.components.footer-site-select.border": *f78
+    "tokens.components.footer-site-select.radius": *f78
+    "tokens.components.footer-site-select.padding": *f78
+    "tokens.components.footer-site-select.size": *f78
+    "tokens.components.footer-site-select.font": *f78
+    "tokens.components.footer-site-select.states": *f78
+    "tokens.components.footer-site-select.use": *f78
+    "tokens.components.hanaworld-button.type": *hw82
+    "tokens.components.hanaworld-button.bg": *hw82
+    "tokens.components.hanaworld-button.fg": *hw82
+    "tokens.components.hanaworld-button.radius": *hw82
+    "tokens.components.hanaworld-button.size": *hw82
+    "tokens.components.hanaworld-button.font": *hw82
+    "tokens.components.hanaworld-button.states": *hw82
+    "tokens.components.hanaworld-button.use": *hw82
+    "tokens.components.product-join-pill.type": *j41
+    "tokens.components.product-join-pill.bg": *j41
+    "tokens.components.product-join-pill.border": *j41
+    "tokens.components.product-join-pill.radius": *j41
+    "tokens.components.product-join-pill.padding": *j41
+    "tokens.components.product-join-pill.size": *j41
+    "tokens.components.product-join-pill.states": *j41
+    "tokens.components.product-join-pill.use": *j41
+    "tokens.components.outline-small-button.type": *b36
+    "tokens.components.outline-small-button.bg": *b36
+    "tokens.components.outline-small-button.fg": *b36
+    "tokens.components.outline-small-button.border": *b36
+    "tokens.components.outline-small-button.radius": *b36
+    "tokens.components.outline-small-button.padding": *b36
+    "tokens.components.outline-small-button.height": *b36
+    "tokens.components.outline-small-button.font": *b36
+    "tokens.components.outline-small-button.states": *b36
+    "tokens.components.outline-small-button.use": *b36
+    "tokens.components.teal-outline-button.type": &n32 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"32\"]", captured: "2026-09-30" }
+    "tokens.components.teal-outline-button.bg": *n32
+    "tokens.components.teal-outline-button.fg": *n32
+    "tokens.components.teal-outline-button.border": *n32
+    "tokens.components.teal-outline-button.size": *n32
+    "tokens.components.teal-outline-button.font": *n32
+    "tokens.components.teal-outline-button.states": *n32
+    "tokens.components.teal-outline-button.use": *n32
+    "tokens.components.news-search-input.type": &n30 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"30\"]", captured: "2026-09-30" }
+    "tokens.components.news-search-input.bg": *n30
+    "tokens.components.news-search-input.fg": *n30
+    "tokens.components.news-search-input.border": *n30
+    "tokens.components.news-search-input.padding": *n30
+    "tokens.components.news-search-input.size": *n30
+    "tokens.components.news-search-input.font": *n30
+    "tokens.components.news-search-input.states": *n30
+    "tokens.components.news-search-input.use": *n30
+    "tokens.components.news-search-button.type": &n31 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"31\"]", captured: "2026-09-30" }
+    "tokens.components.news-search-button.bg": *n31
+    "tokens.components.news-search-button.fg": *n31
+    "tokens.components.news-search-button.border": *n31
+    "tokens.components.news-search-button.size": *n31
+    "tokens.components.news-search-button.font": *n31
+    "tokens.components.news-search-button.states": *n31
+    "tokens.components.news-search-button.use": *n31
+    "tokens.components.pagination-item.type": &n46 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"46\"]", captured: "2026-09-30" }
+    "tokens.components.pagination-item.bg": *n46
+    "tokens.components.pagination-item.fg": *n46
+    "tokens.components.pagination-item.border": *n46
+    "tokens.components.pagination-item.size": *n46
+    "tokens.components.pagination-item.font": *n46
+    "tokens.components.pagination-item.states": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"45\"]", captured: "2026-09-30" }
+    "tokens.components.pagination-item.use": *n46
 tokens:
-  source: live-extract
-  extracted: "2026-06-22"
-  note: "primary = Hana Mint (#00a39f), live-observed as bg on hero carousel and nav accent; deep teal (#008485) on product cards. Corporate group uses slightly different green (#009178) on hanafn.com. Body font NotoSans_Regular (legacy site) with Pretendard on financial group site."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
-    primary: "#00a39f"
-    primary-deep: "#008485"
-    primary-group: "#009178"
-    primary-light: "#2dc396"
+    primary: "#008485"
+    nav-hover: "#009591"
     canvas: "#ffffff"
-    surface: "#f8f8f8"
-    surface-tint: "#f2f9f9"
-    ink: "#333333"
+    ink: "#000000"
     body: "#555555"
-    muted: "#666666"
-    muted-alt: "#999999"
-    on-primary: "#ffffff"
-    hairline: "#dbdbdb"
-    dark: "#333333"
+    body-home: "#666666"
+    text-strong: "#333333"
+    lnb-muted: "#637079"
+    hairline: "#dddddd"
+    surface: "#f3f3f3"
   typography:
-    family: { primary: "NotoSans", body: "NotoSans_Regular", group: "Pretendard Variable" }
-    heading: { size: 24, weight: 700, use: "Page headings, nav logo text" }
-    nav: { size: 18, weight: 400, lineHeight: 1.56, use: "Main nav tab labels (조회/이체/공과금/외환/금융상품)" }
-    body: { size: 12, weight: 400, lineHeight: 1.5, use: "Standard body and label text" }
-    footer: { size: 12, weight: 400, use: "Footer navigation and legal text" }
-    group-body: { size: 14, weight: 400, lineHeight: 1.4, use: "Hana Financial Group site body text" }
-    group-cta: { size: 16, weight: 700, use: "Group site CTA buttons" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 20, xl: 24, xxl: 40, section: 48 }
-  rounded: { sm: 6, md: 10, lg: 20, full: 9999 }
-  shadow:
-    card: "0px 2px 8px rgba(0,0,0,0.08)"
+    family: { ui: "NotoSans_Regular", medium: "NotoSans_Medium", bold: "NotoSans_Bold" }
+    hero: { size: 38, weight: 800, lineHeight: 1.26, tracking: -0.5, use: "Home carousel headline (p), NotoSans_Bold, #000000" }
+    page-title: { size: 38, weight: 400, lineHeight: 1, tracking: -2, use: "Inner-page title (h3), NotoSans_Medium, #000000" }
+    section-title: { size: 28, weight: 400, lineHeight: 1, tracking: -3, use: "Left-navigation section title (h2), NotoSans_Medium, #008485 over a 3px #008485 rule" }
+    gnb: { size: 18, weight: 400, tracking: -0.5, use: "Main navigation tab label, NotoSans_Regular in a 70px line box" }
+    lnb: { size: 16, weight: 400, lineHeight: 1.88, tracking: -1, use: "Left navigation link, NotoSans_Regular" }
+    body: { size: 12, weight: 400, lineHeight: 1.5, use: "Default body text" }
+    news-title: { size: 14, weight: 400, lineHeight: 1.43, tracking: -0.5, use: "Home news headline (p), NotoSans_Medium, #333333" }
+  spacing: { gnb-x: 40, lnb-top: 10, lnb-right: 25, lnb-bottom: 8, footer-select-x: 16, small-button-x: 13, join-x: 20 }
+  rounded: { control: 10, pill: 50, join: 20, small: 3 }
   components:
-    button-primary: { type: button, bg: "#00a39f", fg: "#ffffff", radius: "6px", font: "12px / 400 NotoSans", use: "Primary CTA and brand-tinted action buttons" }
-    button-secondary: { type: button, bg: "#333333", fg: "#ffffff", radius: "20px", padding: "0px 24px", font: "14px / 400 NotoSans", use: "Dark secondary pill button (하나소비자세상 pattern)" }
-    button-outline: { type: button, bg: "#ffffff", fg: "#555555", border: "1px solid #dbdbdb", radius: "10px", font: "12px / 400 NotoSans", use: "Footer select switcher (브랜드사이트/하나네트워크)" }
-    button-group-cta: { type: button, bg: "#ffffff", fg: "#222222", radius: "27px", padding: "0px 48px 0px 24px", font: "16px / 700 Pretendard", use: "Group site white ghost pill CTA (인재상 알아보기)" }
-    button-group-dark: { type: button, bg: "#292f35", fg: "#ffffff", radius: "27px", padding: "0px 48px 0px 24px", font: "16px / 700 Pretendard", use: "Group site dark pill CTA (채용공고 바로가기)" }
-    card-product: { type: card, bg: "#ffffff", fg: "#555555", border: "2px solid #2dc396", radius: "6px", padding: "20px", use: "Product/loan recommendation card with teal accent border" }
-    card-feature-teal: { type: card, bg: "#008485", fg: "#ffffff", radius: "0px", padding: "25px 15px 25px 30px", use: "Featured product card (고단위 플러스, 부자씨 적금) — teal brand fill" }
-    card-surface: { type: card, bg: "#f8f8f8", fg: "#555555", radius: "0px", use: "Standard light grey card surface for product listings" }
-    badge-teal: { type: badge, bg: "#00a39f", fg: "#ffffff", radius: "4px", use: "Category or status tag in Hana Mint teal" }
-    nav-tab: { type: tab, fg: "#000000", bg: "#ffffff", font: "18px / 400 NotoSans", padding: "0px 40px", active: "text #000000 on #ffffff, 70px height", use: "Main banking nav tabs (조회/이체/공과금/외환/금융상품)" }
+    gnb-tab: { type: tab, bg: "#ffffff", fg: "#000000", padding: "0px 40px", height: "70px", font: "18px / 400 / 70px NotoSans_Regular, -0.5px tracking", hover: "fg #009591, NotoSans_Bold", states: "hover and pressed both record #009591 text in NotoSans_Bold on all five tabs (captures 8-12) on each of the three pages; the two frames hold the same opaque value, so the transition had settled", use: "Main banking navigation tab (a) at home::[data-omd-capture=\"8\"], 112-150 x 70; the served HTML labels the five tabs 조회, 이체, 공과금, 외환, 금융상품" }
+    lnb-link: { type: tab, bg: "transparent", fg: "#637079", padding: "10px 25px 8px 0px", size: "260px x 48px", font: "16px / 400 / 30px NotoSans_Regular, -1px tracking", hover: "fg #008485, NotoSans_Medium", states: "hover and pressed record #008485 in NotoSans_Medium on seven sibling links on the product page (captures 17-23) and five on the news page (captures 16-20); the current item at rest (surface-2 capture 16, surface-3 capture 21) records the same #008485 NotoSans_Medium, but aria-current was not captured, so it is a described variant, not a selected state", use: "Left navigation link at surface-2::[data-omd-capture=\"17\"], 260 x 48" }
+    slide-cta: { type: button, bg: "#333333", fg: "#ffffff", radius: "50px", size: "98px x 40px", font: "14px / 400 / 40px NotoSans_Regular, -0.5px tracking", states: "rest on six carousel slides (odd captures 19-29); the hover and pressed frames on captures 19, 21 and 23 recorded no change", use: "Home carousel action (a) at home::[data-omd-capture=\"19\"]; the served HTML labels it 자세히보기" }
+    footer-site-select: { type: button, bg: "#ffffff", fg: "#555555", border: "1px #dddddd", radius: "10px 0px 0px 10px", padding: "0px 16px", size: "200px x 48px", font: "12px / 400 NotoSans_Regular", states: "rest only: these controls lie beyond the collector's first 24 probed controls on each page, so no hover or pressed frame exists", use: "Segmented footer site selector at home::[data-omd-capture=\"78\"]; three joined buttons (first 10px 0px 0px 10px, middle 0px, last 0px 10px 10px 0px) share 1px 0px 1px 1px edges; identical on all three pages" }
+    hanaworld-button: { type: button, bg: "#f3f3f3", fg: "#000000", radius: "10px", size: "237px x 48px", font: "14px / 400 / 48px NotoSans_Regular, -0.5px tracking", states: "rest only (beyond the probed set)", use: "Footer grey button (button.btn--hanaworld) at home::[data-omd-capture=\"82\"]; identical on all three pages" }
+    product-join-pill: { type: button, bg: "#008485", border: "1px #16959c", radius: "20px", padding: "0px 20px", size: "94px x 33px", states: "rest only (captures 41, 44, 47, beyond the probed set)", use: "Product-list join link (a.link-join) at surface-2::[data-omd-capture=\"41\"]; the label colour is not claimed because the link computes #555555, which would sit on its own #008485 fill, and no separate label node was sampled" }
+    outline-small-button: { type: button, bg: "#ffffff", fg: "#555555", border: "1px #c1c1c1", radius: "3px", padding: "0px 13px", height: "28px", font: "12px / 400 / 25px NotoSans_Regular", states: "rest only (captures 36-38, beyond the probed set)", use: "Small outline link button (a.btn) above the product list at surface-2::[data-omd-capture=\"36\"], 68-121 wide" }
+    teal-outline-button: { type: button, bg: "#ffffff", fg: "#008485", border: "1px #a5d3d4", size: "146px x 38px", font: "14px / 700 / 38px; declared family 돋움, unresolved in the capture environment", states: "rest only (capture 32, beyond the probed set)", use: "Teal outline link (a.btnMiddle) on the news page at surface-3::[data-omd-capture=\"32\"]" }
+    news-search-input: { type: input, bg: "transparent", fg: "#555555", border: "1px #dddddd", padding: "0px 0px 0px 10px", size: "280px x 31px", font: "13.33px / 400 / 29px; declared family 돋움, unresolved in the capture environment", states: "rest only (capture 30, beyond the probed set); nothing was typed", use: "News search field (input.text) at surface-3::[data-omd-capture=\"30\"]" }
+    news-search-button: { type: button, bg: "transparent", fg: "#028389", border: "1px #7cc2c2", size: "98px x 31px", font: "12px / 700 / 30px; declared family dotum, unresolved in the capture environment", states: "rest only (capture 31, beyond the probed set); never clicked", use: "News search button (button.searchBtn) at surface-3::[data-omd-capture=\"31\"]" }
+    pagination-item: { type: button, bg: "transparent", fg: "#6e6e6e", border: "1px #ffffff", size: "27px x 27px", font: "14px / 700 / 27px; declared family 돋움, unresolved in the capture environment", states: "rest only (captures 43-56, beyond the probed set); the current page (a.on, capture 45) records #008486 text with a 1px #7fc0c2 border, a described variant", use: "News-list pagination link at surface-3::[data-omd-capture=\"46\"]" }
   components_harvested: true
 ---
 
 # Design System Inspiration of Hana Bank
 
+> **A full-service Korean bank whose web portal is dense, white and quiet, with Hana teal marking where you are and what you can open.**
+
 ## 1. Visual Theme & Atmosphere
 
-하나은행 (Hana Bank, KEB Hana Bank) presents a mature, institutional fintech aesthetic grounded in a signature **Hana Mint teal** (`#00a39f`) — a medium-dark, slightly warm teal that anchors every brand touchpoint from the homepage hero carousel to product card accents. This is not a saturated neon mint; it's a measured, financially trustworthy blue-green that reads calm and professional. The overall page character is conservative web banking with Korean financial-institution DNA: clean white canvas (`#ffffff`) with cool-grey surfaces (`#f8f8f8`), dense NotoSans body text at modest sizes, and a teal-on-white pattern used to signal primary actions and brand-tier products.
+Hana Bank (하나은행) is the banking company of Hana Financial Group. Its public site's footer links the group's holding-company site (`hanafn.com`) alongside sister companies such as Hana Card, Hana Capital, Hana Life and Hana Savings Bank. The bank's own PR pages still carry the KEB name, from Korea Exchange Bank, that the bank bore after the two combined. The CI page is titled "KEB HANA CI | 하나은행소개", and the e-mail counselling page still ends in "KEB하나은행". The home page and most inner pages now title themselves simply "하나은행". The name itself means "one", and the portal is built as one place for everyday banking. Five main tabs cover 조회, 이체, 공과금, 외환 and 금융상품: inquiry, transfer, bills, foreign exchange, and financial products. A product finder, a news list, English, Japanese, Vietnamese and Chinese "EasyOne" entry pages, and links to the bank's app family (하나원큐) complete it.
 
-Unlike digital-native Korean fintechs (Toss, Kakao Pay) that adopt bold headlines and single saturated accents, Hana Bank's web presence retains the information-dense, accessibility-conscious layout of a full-service bank serving all age groups — including legacy JSP pages and newer redesigned sections side by side. The typography is dominated by **NotoSans / NotoSans_Regular** at `12–18px` with body text in `rgb(85,85,85)` (`#555555`), a neutral dark grey that is softer than pure black yet maintains high contrast for legibility.
+The visual language is institutional and text-dense rather than promotional. Pages sit on white. The main navigation uses black 18px labels in 70px-tall tabs, and body text runs at 12px in `#555555` (inner pages) or `#666666` (home). Hana teal does the orienting work. `#008485` marks inner-page section titles (over a 3px teal rule), the current left-navigation item, and the product-join pills. A lighter `#009591` appears when a main tab is hovered, together with a switch to the bold Noto Sans face. The home carousel pairs a 38px/800 black headline with dark `#333333` pill actions. Type is Noto Sans KR, served from the bank's own domain in five weights.
 
-The product catalog (推奨상품 surface) reveals the brand's color hierarchy most clearly: product cards with `2px solid #2dc396` teal borders, featured savings/deposits in a deep teal `#008485` block, and muted navy-grey cards (`#465e6f`) for housing finance. Hana Financial Group's investor site (hanafn.com) uses a slightly different corporate green (`#009178`) with Pretendard Variable and pill-shaped CTAs, reflecting a more modern design update for institutional audiences.
-
-**Key Characteristics:**
-- Hana Mint Teal (`#00a39f`) as primary brand color — measured, trustworthy blue-green
-- Deep Teal (`#008485`) for featured product cards and brand-weight surfaces
-- NotoSans_Regular at 12px body, 18px nav tabs — information-dense, accessibility-first
-- White canvas with light grey surfaces (`#f8f8f8`, `#f2f9f9`) — flat, minimal depth
-- Product cards with `2px solid #2dc396` teal accent borders and `6px` radius
-- Footer buttons with `10px` rounded corners, `48px` height — comfortable Korean web standard
-- Hana Financial Group site: Pretendard Variable + pill CTAs (`27px` radius) — more modern layer
+The CI page names an official typeface ("CI & 하나서체"), but the live portal renders Noto Sans KR. This reference keeps those two facts separate (see §3).
 
 ## Primary tasks
 
-- Check a balance and move money between accounts.
-- Compare deposit and savings terms side by side before opening one.
-- Check exchange rates before paying an overseas supplier.
-- Transfer money, then print or share the receipt.
-- Narrow the product list, and start over when nothing matches.
+- Check balances and history, and move money (조회 / 이체)
+- Pay utility and public bills (공과금)
+- Check rates and handle foreign exchange (외환)
+- Find a deposit, savings or loan product by name and compare it (금융상품)
+- Read the bank's notices and news
 
-## 2. Color Palette & Roles
+## 2. Layout & Grid
 
-### Primary Brand
-- **Hana Mint** (`#00a39f`): The signature Hana brand teal. Used as primary accent on hero sections, nav highlights, and brand-tier CTAs. Observed at 6× frequency in homepage bg scan. A calm blue-green that signals trust and modernity in the Korean banking context.
-- **Hana Deep Teal** (`#008485`): A darker teal used for featured product card backgrounds ("고단위 플러스", "부자씨 적금"). Appears with white text for maximum brand-on-card impact. The established `#008485` follows the brand's documented "하나 민트색" family.
-- **Hana Accent Green** (`#2dc396`): Lighter, more vibrant teal-green used for product card borders (`2px solid #2dc396`) — creating a fresh, clickable accent on white cards.
+- **Header:** a utility row of 12px links, then the 70px main navigation. Each tab has 40px horizontal padding and ranges from 112px to 150px wide.
+- **Inner pages:** a 260px left navigation with 48px link rows sits beside the content, which opens with a 38px title (`h3`). The left-navigation section title (`h2`) uses 64px top padding over a 3px `#008485` rule.
+- **Home:** a 760 × 440 carousel slide area, quick-action tiles (158 × 120, 10px radius), and a news block with 14px headlines.
+- **Footer:** a segmented three-part site selector (200px × 48px each) and a grey 237px × 48px button.
+- **Boundary:** the capture records a 1440px desktop viewport only. No breakpoint or mobile layout was measured.
 
-### Corporate & Group
-- **Hana Group Green** (`#009178`): Used on hanafn.com (Hana Financial Group) as the corporate primary — a slightly warmer, greener teal distinguishing the holding company surface from the retail bank.
-- **Surface Tint** (`#f2f9f9`): Very light mint tint surface observed on group site cards — a subtle brand-green undertone for the information canvas.
+## 3. Color & Typography
 
-### Neutral & Surface
-- **Canvas** (`#ffffff`): Page background, card surfaces, nav background.
-- **Surface** (`#f8f8f8`): Standard light grey background for alternating content sections.
-- **Ink** (`#333333`): Primary dark text and heavy headings — warm dark grey, not pure black.
-- **Body** (`#555555`): Most frequent text color (highest frequency in fgFreq scan). Standard body copy and nav labels.
-- **Muted** (`#666666`): Secondary text, metadata, captions.
-- **Hairline** (`#dbdbdb`): Border for footer select buttons, dividers.
+### Color tokens
 
-### Error & Contrast
-- **On-Primary** (`#ffffff`): Text on teal primary backgrounds.
-- **Dark Chip** (`#333333`): Near-dark surface for secondary actions.
+- `#008485`: Hana teal. It carries the inner-page section title and rule, the current left-navigation link, the left-navigation hover, the product-join pill fill and the teal outline link. It has 111 property hits in the bundle.
+- `#009591`: main-navigation hover text, recorded on all three pages (60 hits).
+- `#ffffff`: canvas, main-navigation tab fill, footer selector fill, and outline-button fill.
+- `#000000`: main-navigation labels, the home carousel headline and inner-page titles.
+- `#555555`: inner-page body text, footer selector text and small outline buttons.
+- `#666666`: home body text.
+- `#333333`: news headlines and footer links; also the carousel pill fill.
+- `#637079`: left-navigation links at rest.
+- `#dddddd`: footer selector border and news-search border.
+- `#f3f3f3`: the footer's grey button fill.
+- Component-local, recorded in §4 and not promoted to palette roles:
+  - `#16959c`: product-join pill border
+  - `#c1c1c1`: small outline button border
+  - `#a5d3d4`: teal outline link border
+  - `#028389` and `#7cc2c2`: news-search button text and border
+  - `#6e6e6e` and `#008486` with `#7fc0c2`: pagination text, and the current page's text and border
 
-## 3. Typography Rules
+### Typography evidence classes
 
-### Font Family
-- **NotoSans / NotoSans_Regular**: Primary font family on the retail banking site (www.kebhana.com). Used for all nav labels, body text, buttons, and headings. A robust, accessibility-tested Korean web font supporting full hangul range.
-- **Pretendard Variable**: Used on the Hana Financial Group site (www.hanafn.com). The modern standard Korean product font, reflecting an updated design system layer for institutional/investor audiences.
-- **Fallback stack** (hanafn.com): `"Pretendard Variable", "Pretendard JP Variable", -apple-system, "system-ui", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif`
+- **Live computed use, from site-hosted assets:**
+  - NotoSans_Regular: 369 uses across body, buttons, `h1`, `h3`, lists and menus.
+  - NotoSans_Medium: 51 uses across `h2`, `h3` and text.
+  - NotoSans_Bold: 36 uses.
+  - NotoSans_Dl: 16 uses.
+  - NotoSans_Light: 2 uses.
+  - All five load from `https://www.kebhana.com/resource/simple/fonts/` as `NotoSansKR-{Regular,Medium,Bold,DemiLight,Light}.{eot,woff}`. The family names are the site's own aliases for Noto Sans KR files, and the machine tokens keep those computed names.
+- **Unresolved system family:** `돋움` / `dotum` (Dotum) is the declared body default and the family of some inputs, buttons and pagination (71 uses). It did not resolve in the capture environment. It is recorded as declared, never substituted, and it is not a token.
+- **Declared-only asset:** `Roboto-Bold` has two site-hosted sources (`Roboto-Bold.eot`, `.woff`) and zero visible uses.
+- **Official typeface, named but unresolved:** the bank's PR site lists a "CI & 하나서체" section, titled "KEB HANA CI | 하나은행소개". Its body did not render for a non-browser fetch, so this reference records only that the bank names an official typeface. Its design, specimen, distribution and licence are not established, and the live portal does not render it.
+- **Licence:** the Noto Sans KR licence was not opened in this session and is not claimed here.
 
-### Hierarchy (kebhana.com retail site)
+## 4. Components
 
-| Role | Font | Size | Weight | Line Height | Notes |
-|------|------|------|--------|-------------|-------|
-| Page H1 / Logo | NotoSans | 24px | 700 | — | Heading weight |
-| Main Nav Tab | NotoSans | 18px | 400 | 1.56 | 70px tab height, 0px 40px padding |
-| Body / Labels | NotoSans | 12px | 400 | 1.5 | Base body across most UI |
-| Footer / Legal | NotoSans | 12px | 400 | — | Footer links and legal text |
+These are static computed-style observations from three public pages, with selector provenance. Hover and pressed values are declared only when both frames hold the same opaque value across siblings. The collector probes the first 24 interactive elements on each page, so controls beyond that set have rest values only. Focus values are never taken from the bundle.
 
-### Hierarchy (hanafn.com group site)
+### Main navigation tab
 
-| Role | Font | Size | Weight | Notes |
-|------|------|------|--------|-------|
-| Body | Pretendard Variable | 14px | 400 | `line-height: 19.6px` (1.4) |
-| CTA Button | Pretendard Variable | 16px | 700 | Pill-shaped, 27px radius |
-| Secondary Button | Pretendard Variable | 14px | 600 | 40px height, 20px radius |
-
-### Principles
-- **Conservative sizing for legibility**: Body at 12px reflects the bank's commitment to serving all age groups with high-contrast, accessible text.
-- **NotoSans as the accessible Korean anchor**: Comprehensive hangul coverage without rendering quirks on older browsers — a deliberate legacy-friendly choice.
-- **Pretendard for the newer layer**: The financial group site signals modernity with Pretendard, previewing the direction of future Hana Bank digital redesigns.
-
-## 4. Component Stylings
-
-### Buttons
-
-**Primary Teal CTA**
-- Background: `#00a39f`
-- Text: `#ffffff`
-- Radius: 6px
-- Font: 12px NotoSans weight 400
-- Use: Brand-tier primary actions and highlighted CTAs
-
-**Dark Secondary Pill**
-- Background: `#333333`
-- Text: `#ffffff`
-- Radius: 10px
-- Font: 14px NotoSans weight 400
-- Height: 48px
-- Use: Footer brand-site link, secondary navigation launchers
-
-**Outline Footer Select**
+**Default** (`gnb-tab`)
 - Background: `#ffffff`
-- Text: `#555555`
-- Border: 1px solid `#dbdbdb`
-- Radius: 10px
-- Font: 12px NotoSans weight 400
-- Height: 48px
-- Padding: 0px 16px
-- Use: Footer site-switcher buttons (브랜드사이트, 하나네트워크, 하나은행 SNS)
-
-**Group Site White Pill**
-- Background: `#ffffff`
-- Text: `#222222`
-- Radius: 27px
-- Font: 16px Pretendard weight 700
-- Height: 54px
-- Padding: 0px 48px 0px 24px
-- Use: Group site ghost pill CTA (인재상 알아보기)
-
-**Group Site Dark Pill**
-- Background: `#292f35`
-- Text: `#ffffff`
-- Radius: 27px
-- Font: 16px Pretendard weight 700
-- Height: 54px
-- Padding: 0px 48px 0px 24px
-- Use: Group site filled dark pill (채용공고 바로가기)
-
-### Cards & Containers
-
-**Product Card (Teal Border)**
-- Background: `#ffffff`
-- Text: `#555555`
-- Border: 2px solid `#2dc396`
-- Radius: 6px
-- Padding: 20px
-- Height: 234px (observed)
-- Use: Loan/mortgage product recommendation cards (신용대출, 담보대출)
-
-**Featured Product Card (Teal Fill)**
-- Background: `#008485`
-- Text: `#ffffff`
-- Radius: 0px
-- Padding: 25px 15px 25px 30px
-- Height: 245px (observed)
-- Use: Brand-featured savings products (고단위 플러스, 부자씨 적금)
-
-**Standard Surface Card**
-- Background: `#f8f8f8`
-- Text: `#555555`
-- Radius: 0px
-- Padding: 20px
-- Use: Standard grey-background product listings and content containers
-
-### Badges
-
-**Teal Status Badge**
-- Background: `#00a39f`
-- Text: `#ffffff`
-- Radius: 4px
-- Font: 12px NotoSans weight 400
-- Use: Category indicator or status pill in Hana Mint teal
-
-### Navigation
-
-**Main Banking Tab**
-- Background: `#ffffff`
-- Text: `#000000`
-- Font: 18px NotoSans weight 400
+- Text: `#000000`, 18px / 400 NotoSans_Regular, −0.5px, in a 70px line box
+- Padding: `0px 40px`
 - Height: 70px
-- Padding: 0px 40px
-- Use: Primary banking action tabs — 조회/이체/공과금/외환/금융상품
+- Hover: `#009591` text switching to NotoSans_Bold. All five tabs record it on all three pages, and pressed is identical.
+
+### Left navigation link
+
+**Default** (`lnb-link`)
+- Background: transparent
+- Text: `#637079`, 16px / 400 / 30px NotoSans_Regular, −1px
+- Padding: `10px 25px 8px 0px`
+- Size: 260px × 48px
+- Hover: `#008485` text in NotoSans_Medium, on twelve siblings across two pages
+- Current item: at rest it records the same `#008485` NotoSans_Medium. `aria-current` was not captured, so this is a described variant, not a declared selected state.
+
+### Carousel action
+
+**Default** (`slide-cta`)
+- Background: `#333333`
+- Text: `#ffffff`, 14px NotoSans_Regular ("자세히보기")
+- Radius: `50px`
+- Size: 98px × 40px
+- Hover and pressed: no change recorded
+
+### Footer controls
+
+- **Site selector** (`footer-site-select`): `#ffffff` fill, `#555555` 12px text, 1px `#dddddd` border, 200px × 48px, `0px 16px` padding. It is built from three joined buttons, with 10px outer corners only.
+- **Grey button** (`hanaworld-button`): `#f3f3f3` fill, `#000000` 14px text, `10px` radius, 237px × 48px.
+
+### Product page controls
+
+- **Join pill** (`product-join-pill`): `#008485` fill, 1px `#16959c` border, `20px` radius, `0px 20px` padding, 94px × 33px. The label colour is not claimed, because the link computes `#555555` and no separate label node was sampled.
+- **Small outline button** (`outline-small-button`): `#ffffff` fill, `#555555` 12px text, 1px `#c1c1c1` border, `3px` radius, `0px 13px` padding, 28px high.
+
+### News page controls
+
+- **Teal outline link** (`teal-outline-button`): `#ffffff` fill, `#008485` 14px / 700 text, 1px `#a5d3d4` border, 146px × 38px.
+- **Search field** (`news-search-input`): transparent, `#555555` 13.33px text, 1px `#dddddd` border, 280px × 31px. Nothing was typed into it.
+- **Search button** (`news-search-button`): transparent, `#028389` 12px / 700 text, 1px `#7cc2c2` border, 98px × 31px. It was never clicked.
+- **Pagination** (`pagination-item`): `#6e6e6e` 14px / 700 text, 1px `#ffffff` border, 27px × 27px. The current page records `#008486` text with a 1px `#7fc0c2` border.
+- These news-page controls declare the Dotum family, which was unresolved in the capture. Their size and weight are recorded; the family is not.
 
 ---
 
-**Verified:** 2026-06-22 (omd:add-reference CREATE — Tier 1 live inspect)
-**Tier 1 sources:** https://www.kebhana.com/ (Hana Bank official homepage — live computed style extract) | https://www.hanafn.com/ (Hana Financial Group official site — live computed style extract)
-**Tier 2 sources:** getdesign.md/hana — not found; styles.refero.design?q=hana+bank — no matching entries (non-Korean brands returned)
+**Verified:** 2026-09-30
+**Tier 1 sources:** `https://www.kebhana.com/`, `https://www.kebhana.com/cont/mall/mall08/mall0805/index.jsp?_menuNo=62608`, `https://www.kebhana.com/cont/news/news01/index.jsp` (public banking portal, computed styles); `http://pr.kebhana.com/contents/kor/index.jsp`, `http://pr.kebhana.com/contents/kor/about/corporate/index.jsp`, `http://pr.kebhana.com/contents/kor/about/history/index.jsp` (first-party bank introduction; titles only)
+**Tier 2 sources:** not attempted in this session (see `.verification.md`)
 **Conflicts unresolved:** none
 
-## 5. Layout Principles
+The June 2026 snapshot's values are superseded wherever this capture contradicts them or cannot support them. Removed:
+- the Hana Financial Group site's tokens (`#009178`, Pretendard Variable, the 27px pill buttons), which come from a separate domain
+- the unobserved `#00a39f` "mint" primary, the `#2dc396` card border, and the `#f8f8f8`, `#f2f9f9` and `#dbdbdb` values (zero occurrences in the 2026-09-30 bundle)
+- the card shadow
+- the teal feature card, the grey card and the teal badge
+- the invented state, motion, breakpoint and persona material
 
-### Spacing System
-- Base unit: 4px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 40px, 48px
-- Nav tabs: 0px 40px horizontal padding creates generous, tappable 112–144px wide tab zones
-- Product cards: 20px padding, consistent grid alignment
-- Footer: Compact 12px body, 48px touch targets on site-switcher buttons
+## 5. Iconography
 
-### Grid & Container
-- Traditional multi-column Korean banking layout: full-width header, tabbed main nav, content below
-- Product recommendation grid: 4-up cards (recommended) with consistent 234–245px card height
-- Featured product pairs: 2-up side-by-side panels with prominent brand-color fills
+The home quick-action tiles and carousel arrows use image-based icons. The capture records no icon font or catalogue, so no icon token is promoted.
 
-### Whitespace Philosophy
-- **Accessibility-density balance**: Denser than digital-native fintechs, reflecting the full-service bank audience spanning generations
-- **Color separation over shadows**: Section separation via background color shifts (`#f8f8f8` vs `#ffffff`) rather than drop shadows
-- **Teal as spatial anchor**: The `#00a39f`/`#008485` teal creates visual hierarchy without adding depth layers
+## 6. Imagery & Illustration
 
-### Border Radius Scale
-- Small (6px): Product cards, primary buttons — conservative, professional
-- Medium (10px): Footer selectors, secondary buttons
-- Large (20px): Pill-adjacent elements on newer UI sections
-- Full (27px / 9999px): Group site pill CTAs, future-direction rounding
+The home carousel and quick-action tiles use image fills behind white or black text. Their images, ratios and crops were not captured, and no illustration system is derived.
 
-## 6. Depth & Elevation
+## 7. Motion
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Base page, nav, most surfaces |
-| Tint (Level 1) | `#f8f8f8` / `#f2f9f9` background | Section separation, card grouping |
-| Hairline (Level 2) | `1px–2px solid #dbdbdb` or `#2dc396` | Card borders, dividers |
-| Teal Fill | `#008485` background | Featured product emphasis |
+The home carousel exposes stop and view-all controls, which means it moves by itself, but no duration, easing or transition was recorded.
 
-**Shadow philosophy**: The retail banking site (kebhana.com) is predominantly flat — shadows were not observed in the computed-style scan across nav, header, buttons, or product cards. Depth is communicated through background tint shifts and the `2px solid #2dc396` teal border accent on product cards. The financial group site is similarly flat, using soft `rgba` overlays only for modal-like layers.
+## 8. Accessibility
 
-## 7. Do's and Don'ts
+- Main-navigation labels pair `#000000` on `#ffffff`, and body text pairs `#555555` or `#666666` on white at 12px. The small base size should be reviewed against current legibility practice before reuse.
+- The hover change to `#009591` bold is a colour-and-weight cue. No focus-visible styling was taken from the capture, so implementations must supply one.
+- Dotum is declared but was unavailable in the capture environment, so do not assume it renders.
 
-### Do
-- Use Hana Mint (`#00a39f`) as the primary brand accent for CTAs and important highlights
-- Use NotoSans at 12px for body text — the accessible Korean standard for all-audience banking
-- Apply `2px solid #2dc396` teal borders to product/loan recommendation cards
-- Use Deep Teal (`#008485`) for featured product card fills — maximum brand impact
-- Use `#555555` as the primary body text color (softer than pure black, high contrast)
-- Apply 6px radius to cards and primary buttons — a conservative, trustworthy shape
-- Use pill CTAs (27px radius) only on the group-site layer targeting institutional audiences
-- Maintain `48px` height for footer touch targets and site-switcher buttons
+## 9. Content & Voice
 
-### Don't
-- Use pure black (`#000000`) for body text — Hana uses warm grey `#555555` / `#666666`
-- Apply drop shadows on cards or nav — this is a flat, border-driven system
-- Use the Corporate Group Green (`#009178`) on retail banking surfaces — it's a different brand layer
-- Mix NotoSans and Pretendard on the same page section without purposeful context
-- Spread the teal accent to decorative elements — it signals brand trust and action priority
-- Use sharp 0px corners on interactive elements below the featured product card level
-- Over-saturate with teal — the brand's restraint with color is its trustworthiness signal
-
-## 8. Responsive Behavior
-
-### Breakpoints
-
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <768px | Stacked layout, collapsed nav, simplified banking shortcuts |
-| Tablet | 768–1024px | Partial grid, 2-up product cards |
-| Desktop | 1024px+ | Full-width header, 4–5 nav tabs, multi-column product grid |
-
-### Touch Targets
-- Banking nav tabs: 70px height at 1440px — generous enough for all touch contexts
-- Footer site-switcher: 48px height — comfortable on mobile if accessed
-- Product card links: 234–245px full-card hit area
-
-### Collapsing Strategy
-- Main nav tabs collapse to a hamburger or collapsed icon menu on mobile
-- Product cards reflow from 4-up to 2-up to 1-up
-- Featured product pair stacks vertically
-- Teal fills maintain full-width impact at all breakpoints
-
-## 9. Agent Prompt Guide
-
-### Quick Color Reference
-- Primary teal / CTA: Hana Mint (`#00a39f`)
-- Featured product fill: Deep Teal (`#008485`)
-- Product card accent border: Accent Green (`#2dc396`)
-- Canvas: `#ffffff`
-- Standard surface: `#f8f8f8`
-- Primary text: `#555555`
-- Heading text: `#333333`
-- Muted / secondary text: `#666666`
-- Hairline borders: `#dbdbdb`
-
-### Example Component Prompts
-- "Create a banking product card: white background (#ffffff), 2px solid #2dc396 teal border, 6px radius, 20px padding, 234px height. Title in #333333 at 14px NotoSans. Body text #555555 at 12px."
-- "Design a featured savings product card: #008485 teal background, white text (#ffffff), 0px radius, 25px 15px 25px 30px padding, 245px height. Product name in 14px NotoSans weight 700."
-- "Build the main banking nav: white 70px tall tab bar. NotoSans 18px / 400 / #000000 text. Tab items: 조회 / 이체 / 공과금 / 외환 / 금융상품. Horizontal padding 0px 40px each."
-- "Create a CTA button: #00a39f background, white text, 6px radius, NotoSans 12px. Secondary dark pill: #333333 bg, white text, 10px radius, 48px height, 14px NotoSans."
-
-### Iteration Guide
-1. Teal is trust — `#00a39f` for primary brand moments, `#008485` for featured product fills
-2. NotoSans at accessible sizes — 12px body, 18px nav tabs, 24px headings
-3. Product cards with teal border (`2px solid #2dc396`, 6px radius) for browse surfaces
-4. Flat layout: no shadows; background tint (`#f8f8f8`) and hairline borders do the separating
-5. Text hierarchy: `#333333` headings → `#555555` body → `#666666` muted → `#999999` very muted
-6. CTA buttons: small 6px radius for embedded actions; 27px pill for group-site modern layer
-
----
+The portal speaks in short, functional category nouns (조회, 이체, 공과금, 외환, 금융상품) and calm action labels ("자세히보기"). Its product and news areas are information-first, and promotion is carried by imagery rather than urgent copy.
 
 ## 10. Voice & Tone
 
-하나은행's voice is **trustworthy, approachable, and nationally rooted** — the voice of Korea's largest financial holding group presented through a retail banking lens that serves students opening their first accounts, middle-class families managing mortgages, and business clients handling foreign exchange. The brand positioning is grounded in the phrase "the bank that is one" (하나 = one), emphasizing unity, reliability, and full-service breadth.
+**Voice adjectives:** functional · calm · institutional
 
-| Context | Tone |
+| Context | Observed wording (served HTML, 2026-09-30) |
 |---|---|
-| Product headlines | Clear, benefit-first. "하나의 정기예금" — simple noun-form product branding. |
-| Nav labels | Functional, minimal. "조회 / 이체 / 공과금 / 외환 / 금융상품" — plain category labels. |
-| CTA labels | Inviting, non-urgent. "자세히보기" — calm "view details" rather than aggressive "apply now". |
-| Financial product names | Conservative, compound. "고단위 플러스", "부자씨 적금", "급여하나 월복리적금". |
-| Trust / certification | Credential-forward. ISMS, ISO marks visible in footer. |
+| Main navigation | "조회", "이체", "공과금", "외환", "금융상품" |
+| Carousel action | "자세히보기" |
+| Page titles | "상품명으로 찾기 < 상품찾기 & 가입 < 상품 < 하나은행", "새소식(리스트) < 새소식/이벤트 < 하나은행" |
 
-**Voice samples (from live homepage):**
-- "조회 / 이체 / 공과금 / 외환 / 금융상품" — main nav labels. *(verified live 2026-06-22)*
-- "하나의 정기예금" — flagship deposit product name. *(verified live 2026-06-22)*
-- "급여하나 월복리 적금" — flagship savings product with compound-rate promise. *(verified live 2026-06-22)*
-
-**Forbidden register**: alarming credit-risk language, hard-sell urgency, complex jargon left unexplained, overly casual slang inconsistent with institutional trust.
+| Do | Don't |
+|---|---|
+| Name banking tasks with plain nouns. | Add hard-sell urgency to product entry points. |
+| Keep action labels calm ("자세히보기"). | Use casual slang on institutional surfaces. |
+| Let the page title state the path (category < section < bank). | Hide where the user is in the portal. |
 
 ## 11. Brand Narrative
 
-하나은행 traces its origins to 1971 when Korea Investment Finance Corporation (한국투자금융주식회사) was established. In 1991 it became Hana Bank (하나은행), growing through acquisitions to become one of Korea's "Big Four" banks. A landmark 2015 merger with Korea Exchange Bank (KEB, 한국외환은행) created KEB Hana Bank — formally **주식회사 하나은행** — the flagship retail banking subsidiary of Hana Financial Group (하나금융그룹), Korea's second-largest financial holding company by total assets.
+"하나" means "one", and Hana Bank's portal is organized as one place for everyday banking, foreign exchange and products. That proposition runs through the five-tab navigation and the multilingual EasyOne entry points. The KEB label still visible on the bank's own CI and counselling pages records its combination with Korea Exchange Bank, while the site's current titles use "하나은행" alone. The bank sits inside Hana Financial Group, whose affiliates its footer links as one family.
 
-The bank's positioning centers on three pillars: full-service breadth (savings, loans, foreign exchange, funds, insurance under one roof), digital transformation leadership (the Hana1Q mobile banking platform), and genuine financial partnership ("Together, we grow"). The brand name itself — "하나" meaning "one" or "together" — encodes the mission: one bank, one place for all financial needs, one relationship that grows with you.
-
-The design language reflects this conservative-yet-dependable identity: a teal that signals neither the flashy fintech startup nor the stuffy legacy institution, but a mature bank that has earned its place in Korean households over fifty years. The deep institutional green family (`#008485` through `#00a39f`) is the visual embodiment of "steady and growing."
+The bank's introduction pages ("연혁 및 조직", "CI & 하나서체", "비전과 미션") hold its history, identity and mission. Their bodies were not readable for this reference, so dated milestones and the typeface's details are left out rather than taken from memory.
 
 ## 12. Principles
 
-1. **One relationship, complete service.** Hana Bank is a full-service institution, not a niche fintech. *UI implication:* primary navigation exposes all banking verticals (조회/이체/공과금/외환/금융상품) without gatekeeping or artificial upsell architecture.
-2. **Teal signals trust, not hype.** The Hana Mint is not a vivid attention-grabbing accent; it's a measured signal of brand authority. *UI implication:* reserve `#00a39f` and `#008485` for brand-tier moments — product highlights, primary CTAs — not decorative chrome.
-3. **Accessible to all generations.** The bank serves everyone from the elderly to digital natives. *UI implication:* 12px body at high contrast (`#555555` on `#ffffff`), large tap targets (70px nav, 48px footer buttons), conservative radius (6px) that doesn't read as overly modern.
-4. **Flat and stable.** Financial security is communicated through steadiness, not depth tricks. *UI implication:* no drop shadows; teal fills and hairline borders create hierarchy without visual noise.
-5. **Product names are the brand.** The product catalog (정기예금, 적금, 대출) carries the brand promise. *UI implication:* product card typography and teal-fill treatment give each product product-level brand dignity.
+1. **Teal orients.** `#008485` marks location (the current item, section titles) and entry into products; it is not decoration.
+2. **Hover is colour plus weight.** Main tabs gain `#009591` and the bold face together.
+3. **Density with order.** Small base text is organized by a strict header, left-navigation and content structure.
+4. **Keep domains separate.** The group holding site and the bank's portal are different evidence domains.
 
 ## 13. Personas
 
-*These are fictional archetypes informed by Hana Bank's publicly observable product catalog and Korean banking demographics; not individual people.*
+First-party navigation addresses these customer groups; no named personas are invented:
 
-**이미영, 52, 서울.** A longtime Hana Bank customer managing a savings portfolio across 정기예금 and 적금 products. Values the bank's stability and familiarity — has been using 하나원큐 since it launched. Chooses Hana for the breadth of products under one app.
-
-**박정훈, 28, 부산.** A salaried professional opening a "급여하나 월복리적금" to maximize salary savings compound returns. Primarily uses the mobile app but trusts the website for comparing product terms side-by-side. Appreciates the calm, unsales-y interface.
-
-**김상민, 38, 경기.** A small business owner who uses KEB Hana's foreign exchange (외환) services for overseas supplier payments. Relies on the main nav's "외환" tab for quick rate checks. Values the bank's decades of FX expertise from the former KEB heritage.
+- **Everyday banking customers:** inquiry, transfer and bill payment.
+- **Foreign-exchange customers:** the 외환 tab.
+- **Product shoppers:** the product finder and product lists.
+- **Foreign-language customers:** the English, Japanese, Vietnamese and Chinese EasyOne pages.
+- **Business and pension customers:** the portal links separate business (`biz.kebhana.com`) and pension sites.
 
 ## 14. States
 
-| State | Treatment |
-|---|---|
-| **Empty (no products found)** | White canvas. Body grey `#555555` single message with calm tone explaining the filter mismatch. One teal `#00a39f` link to reset criteria. |
-| **Empty (account — no transactions)** | Muted `#666666` text explaining no recent transactions. Teal accent link to first action (이체하기). |
-| **Loading (product list fetch)** | Skeleton card rows on `#f8f8f8` surface at final card height (234px). Consistent with flat system — no shimmer glow. |
-| **Loading (FX rate lookup)** | Inline spinner inside the rate cell; surrounding content stays visible. |
-| **Error (server error)** | "페이지 요청 오류" inline state with `#1, 128, 133`-tinted border, plain Korean explanation and retry link. |
-| **Error (form validation)** | Field-level red underline (or `rgb(255,0,0)` observed in page). Plain-language message: what value is expected. |
-| **Success (transfer complete)** | Brief confirmation message in body text; next-step prompt (print/share receipt). Calm, no excessive celebration. |
-| **Skeleton** | `#f8f8f8` blocks at final dimensions, no radius variation from card (6px). |
-| **Disabled** | `#999999` text; teal fills desaturate to `#c8d4d4` variant. |
-| **Selected tab** | Active banking tab: bold `#000000` text with no additional border — implicit via content visibility. |
+- **Observed:**
+  - main-tab hover (`#009591`, bold)
+  - left-navigation hover (`#008485`, medium)
+- **Described variants:** the current left-navigation item and the current pagination page (not declared as selected states).
+- **Not captured:** focus, error, loading, empty, success and disabled styling for brand controls.
 
 ## 15. Motion & Easing
 
-**Durations**:
+No motion token, duration, easing or reduced-motion behaviour was captured. The carousel's own stop control shows that motion exists, and its timing is not invented here.
 
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 100ms | Tab switch, button press feedback |
-| `motion-standard` | 200ms | Card hover, dropdown reveal, modal entry |
-| `motion-slow` | 300ms | Page-level transition, hero carousel slide |
+## 16. Do's and Don'ts
 
-**Easings**:
+### Do
 
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Content arriving — cards, panels |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals, collapsing menus |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Standard two-way transitions |
+- Use `#008485` for location and product entry, and `#009591` with the bold face for main-tab hover.
+- Keep the 70px main navigation with 18px black labels on white.
+- Use the site's Noto Sans KR faces as captured, and record Dotum only as a declared family.
+- Keep selector provenance from §4 when reusing a component.
 
-**Motion rules**: Motion is institutional-conservative — it confirms user action without distracting from the financial task. The homepage hero runs a carousel at a gentle `motion-slow` pace. Modals and bottom sheets enter with `ease-enter` for trustworthy arrival. No spring physics, no bounce — a bank interface signals stability in every motion. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant while the interface remains fully functional.
+### Don't
 
-<!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
+- Reintroduce `#00a39f`, `#2dc396` or the group site's `#009178` and Pretendard pills as Hana Bank tokens.
+- Render Inter or a system font as though it were 하나서체 or Dotum.
+- Invent focus, error, loading or motion values.
+- Treat the group holding site's styles as the bank's portal styles.
 
-Tier 1 live inspect (2026-06-22) via playwright getComputedStyle:
-- kebhana.com body: font-family NotoSans_Regular; color rgb(102,102,102) #666666; 12px
-- kebhana.com bgFreq: #00a39f (rgb 0,163,159) ×6, #008485 (rgb 0,132,133) ×2, #008491 (rgb 0,149,145) ×1
-- kebhana.com fgFreq: #666666 ×2274, #555555 ×354 (most dominant text colors)
-- Product cards: 2px solid rgb(45,195,150) = #2dc396; radius 6px; padding 20px; height 234px
-- Featured product bg rgb(0,132,133) = #008485; white text; 25px 15px 25px 30px padding; 245px
-- Nav tabs: bg #ffffff; color #000000; 18px NotoSans; 70px h; 0px 40px padding (조회/이체/공과금/외환/금융상품)
-- Footer select buttons: bg #ffffff; radius 10px 0px 0px 10px; 48px; border 1px solid #dddddd
-- hanafn.com body: Pretendard Variable; rgb(34,34,34); 14px; line-height 19.6px
-- hanafn.com CTA pills: bg #ffffff, radius 27px, 54px h, 16px/700 Pretendard (인재상 알아보기)
-- hanafn.com dark pill: bg rgb(41,47,53) = #292f35; white text; 27px radius; 16px/700 Pretendard
-- hanafn.com bgFreq: #009178 (rgb 0,145,120) ×5 = corporate green
-- Error page (kebhana.com): bg rgb(1,128,133) and rgb(46,148,152) — teal tints on error boundary
+---
 
-Brand narrative: Hana Bank (하나은행) founded 1971 as Korea Investment Finance Corp; renamed Hana Bank 1991; merged with KEB (한국외환은행) in 2015 to form KEB Hana Bank. These are public domain historical facts.
-
-Personas are fictional archetypes.
-
-Voice samples sourced verbatim from live homepage elements (verified 2026-06-22).
--->
+**Verified:** 2026-09-30
+**Pipeline:** omd:add-reference UPDATE (deterministic capture + first-party context reconcile)
+**Catalog position:** KR · fintech · retail bank

@@ -9,57 +9,227 @@ primary_color: "#00d5ce"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=hwahae.co.kr&sz=128"
-verified: "2026-06-26"
+verified: "2026-09-30"
 added: "2026-06-26"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: product-web, url: "https://www.hwahae.co.kr/", inspected: "2026-09-30" }
+    - { id: surface-2, kind: product-web-rankings, url: "https://www.hwahae.co.kr/rankings", inspected: "2026-09-30" }
+    - { id: surface-3, kind: product-web-awards, url: "https://www.hwahae.co.kr/awards/home/2026", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://www.hwahae.co.kr/", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://www.hwahae.co.kr/rankings", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://www.hwahae.co.kr/awards/home/2026", captured: "2026-09-30" }
+    - { id: ds-history, kind: official-doc, url: "https://blog.hwahae.co.kr/all/tech/13236", captured: "2026-09-30" }
+    - { id: company-news, kind: official-doc, url: "https://blog.hwahae.co.kr/all/newsroom/news/15569", captured: "2026-09-30" }
+    - { id: pretendard-license, kind: license, url: "https://github.com/orioncactus/pretendard", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.ink": &hbody { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.colors.surface": *hbody
+    "tokens.colors.ink-soft": &hnav9 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.colors.label": &aout { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"14\"]", captured: "2026-09-30" }
+    "tokens.colors.hairline": *aout
+    "tokens.colors.muted": &hp { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.faint": *hp
+    "tokens.colors.placeholder": &hsearch { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-09-30" }
+    "tokens.colors.canvas": &acard { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::div", captured: "2026-09-30" }
+    "tokens.colors.on-media": &hh3 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h3", captured: "2026-09-30" }
+    "tokens.colors.award-accent": &ah2 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h2", captured: "2026-09-30" }
+    "tokens.colors.info-ink": &atint { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"51\"]", captured: "2026-09-30" }
+    "tokens.colors.info-tint": *atint
+    "tokens.typography.family.product": *hbody
+    "tokens.typography.section.size": &hh2 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h2", captured: "2026-09-30" }
+    "tokens.typography.section.weight": *hh2
+    "tokens.typography.section.tracking": *hh2
+    "tokens.typography.section.use": *hh2
+    "tokens.typography.title-large.size": &atitle { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::p", captured: "2026-09-30" }
+    "tokens.typography.title-large.weight": *atitle
+    "tokens.typography.title-large.lineHeight": *atitle
+    "tokens.typography.title-large.tracking": *atitle
+    "tokens.typography.title-large.use": *atitle
+    "tokens.typography.nav.size": &hnav8 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-09-30" }
+    "tokens.typography.nav.weight": *hnav8
+    "tokens.typography.nav.lineHeight": *hnav8
+    "tokens.typography.nav.use": *hnav8
+    "tokens.typography.button.size": *aout
+    "tokens.typography.button.weight": *aout
+    "tokens.typography.button.lineHeight": *aout
+    "tokens.typography.button.use": *aout
+    "tokens.typography.card-title.size": *hh3
+    "tokens.typography.card-title.weight": *hh3
+    "tokens.typography.card-title.lineHeight": *hh3
+    "tokens.typography.card-title.use": *hh3
+    "tokens.typography.body.size": *hbody
+    "tokens.typography.body.weight": *hbody
+    "tokens.typography.body.lineHeight": *hbody
+    "tokens.typography.body.use": *hbody
+    "tokens.typography.label.size": *hsearch
+    "tokens.typography.label.weight": *hsearch
+    "tokens.typography.label.lineHeight": *hsearch
+    "tokens.typography.label.use": *hsearch
+    "tokens.typography.caption.size": &hchip { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"106\"]", captured: "2026-09-30" }
+    "tokens.typography.caption.weight": *hchip
+    "tokens.typography.caption.lineHeight": *hchip
+    "tokens.typography.caption.use": *hchip
+    "tokens.spacing.chip-x": *hchip
+    "tokens.spacing.tile": &atile { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"8\"]", captured: "2026-09-30" }
+    "tokens.spacing.control-x": *aout
+    "tokens.spacing.card": &rcard { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::li", captured: "2026-09-30" }
+    "tokens.spacing.icon-button": &hlang { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-09-30" }
+    "tokens.spacing.header-x": &hbanner { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-09-30" }
+    "tokens.rounded.xs": *hchip
+    "tokens.rounded.sm": *aout
+    "tokens.rounded.tile": *atile
+    "tokens.rounded.md": *acard
+    "tokens.rounded.full": &harrow { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"107\"]", captured: "2026-09-30" }
+    "tokens.shadow.card": *rcard
+    "tokens.components.nav-tab.type": *hnav9
+    "tokens.components.nav-tab.bg": *hnav9
+    "tokens.components.nav-tab.fg": *hnav9
+    "tokens.components.nav-tab.font": *hnav9
+    "tokens.components.nav-tab.selected": *hnav8
+    "tokens.components.nav-tab.states": *hnav9
+    "tokens.components.nav-tab.use": *hnav9
+    "tokens.components.language-button.type": *hlang
+    "tokens.components.language-button.bg": *hlang
+    "tokens.components.language-button.fg": *hlang
+    "tokens.components.language-button.radius": *hlang
+    "tokens.components.language-button.padding": *hlang
+    "tokens.components.language-button.height": *hlang
+    "tokens.components.language-button.font": *hlang
+    "tokens.components.language-button.states": *hlang
+    "tokens.components.language-button.use": *hlang
+    "tokens.components.footer-login-chip.type": *hchip
+    "tokens.components.footer-login-chip.bg": *hchip
+    "tokens.components.footer-login-chip.fg": *hchip
+    "tokens.components.footer-login-chip.border": *hchip
+    "tokens.components.footer-login-chip.radius": *hchip
+    "tokens.components.footer-login-chip.padding": *hchip
+    "tokens.components.footer-login-chip.height": *hchip
+    "tokens.components.footer-login-chip.font": *hchip
+    "tokens.components.footer-login-chip.states": *hchip
+    "tokens.components.footer-login-chip.use": *hchip
+    "tokens.components.footer-info-toggle.type": &hinfo { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"98\"]", captured: "2026-09-30" }
+    "tokens.components.footer-info-toggle.bg": *hinfo
+    "tokens.components.footer-info-toggle.fg": *hinfo
+    "tokens.components.footer-info-toggle.radius": *hinfo
+    "tokens.components.footer-info-toggle.padding": *hinfo
+    "tokens.components.footer-info-toggle.height": *hinfo
+    "tokens.components.footer-info-toggle.font": *hinfo
+    "tokens.components.footer-info-toggle.states": *hinfo
+    "tokens.components.footer-info-toggle.use": *hinfo
+    "tokens.components.dark-block-button.type": &hdark { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"108\"]", captured: "2026-09-30" }
+    "tokens.components.dark-block-button.bg": *hdark
+    "tokens.components.dark-block-button.radius": *hdark
+    "tokens.components.dark-block-button.size": *hdark
+    "tokens.components.dark-block-button.states": *hdark
+    "tokens.components.dark-block-button.use": *hdark
+    "tokens.components.ranking-card.type": *rcard
+    "tokens.components.ranking-card.bg": *rcard
+    "tokens.components.ranking-card.radius": *rcard
+    "tokens.components.ranking-card.padding": *rcard
+    "tokens.components.ranking-card.shadow": *rcard
+    "tokens.components.ranking-card.size": *rcard
+    "tokens.components.ranking-card.use": *rcard
+    "tokens.components.award-card.type": *acard
+    "tokens.components.award-card.bg": *acard
+    "tokens.components.award-card.radius": *acard
+    "tokens.components.award-card.shadow": *acard
+    "tokens.components.award-card.size": *acard
+    "tokens.components.award-card.use": *acard
+    "tokens.components.award-outline-button.type": *aout
+    "tokens.components.award-outline-button.bg": *aout
+    "tokens.components.award-outline-button.fg": *aout
+    "tokens.components.award-outline-button.border": *aout
+    "tokens.components.award-outline-button.radius": *aout
+    "tokens.components.award-outline-button.padding": *aout
+    "tokens.components.award-outline-button.height": *aout
+    "tokens.components.award-outline-button.font": *aout
+    "tokens.components.award-outline-button.hover": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"14\"]::state-hover", captured: "2026-09-30" }
+    "tokens.components.award-outline-button.pressed": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style-state-sample, selector: "surface-3::[data-omd-capture=\"14\"]::state-pressed", captured: "2026-09-30" }
+    "tokens.components.award-outline-button.states": *aout
+    "tokens.components.award-outline-button.use": *aout
+    "tokens.components.award-tint-button.type": *atint
+    "tokens.components.award-tint-button.bg": *atint
+    "tokens.components.award-tint-button.fg": *atint
+    "tokens.components.award-tint-button.radius": *atint
+    "tokens.components.award-tint-button.padding": *atint
+    "tokens.components.award-tint-button.height": *atint
+    "tokens.components.award-tint-button.font": *atint
+    "tokens.components.award-tint-button.states": *atint
+    "tokens.components.award-tint-button.use": *atint
+    "tokens.components.award-category-tile.type": *atile
+    "tokens.components.award-category-tile.bg": *atile
+    "tokens.components.award-category-tile.border": *atile
+    "tokens.components.award-category-tile.radius": *atile
+    "tokens.components.award-category-tile.padding": *atile
+    "tokens.components.award-category-tile.size": *atile
+    "tokens.components.award-category-tile.use": *atile
+    "tokens.components.banner-card.type": &hbnr { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-09-30" }
+    "tokens.components.banner-card.radius": *hbnr
+    "tokens.components.banner-card.size": *hbnr
+    "tokens.components.banner-card.use": *hbnr
+    "tokens.components.product-row.type": &hrow { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::li", captured: "2026-09-30" }
+    "tokens.components.product-row.bg": *hrow
+    "tokens.components.product-row.fg": *hrow
+    "tokens.components.product-row.size": *hrow
+    "tokens.components.product-row.font": *hrow
+    "tokens.components.product-row.use": *hrow
+    "tokens.components.search-field.type": *hsearch
+    "tokens.components.search-field.fg": *hsearch
+    "tokens.components.search-field.height": *hsearch
+    "tokens.components.search-field.font": *hsearch
+    "tokens.components.search-field.states": *hsearch
+    "tokens.components.search-field.use": *hsearch
 tokens:
-  source: live-extract
-  extracted: "2026-06-26"
-  note: "brand = turquoise flower mark (#00d5ce logo / #22d3d6 live blog accent / #00a5aa darker UI teal); amber (#ffaa3c) is the functional rating-star accent and the single most visible hue on the product surface. Product web runs Pretendard Variable on a #f7f7f7 canvas; the official tech blog runs Spoqa Han Sans."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
-    brand: "#00d5ce"
-    brand-bright: "#22d3d6"
-    brand-deep: "#00a5aa"
-    tint: "#eefbfb"
-    rating: "#ffaa3c"
-    info: "#467dff"
-    alert: "#ff5555"
     ink: "#000000"
     ink-soft: "#111111"
-    ink-blog: "#212529"
-    body: "#3d3d3d"
+    label: "#3d3d3d"
     muted: "#666666"
     faint: "#999999"
     placeholder: "#aaaaaa"
-    divider: "#d8d8d8"
     hairline: "#e8e8e8"
     canvas: "#ffffff"
     surface: "#f7f7f7"
-    on-brand: "#ffffff"
+    on-media: "#ffffff"
+    award-accent: "#82e6e6"
+    info-ink: "#3750be"
+    info-tint: "#ebf5ff"
   typography:
-    family: { product: "Pretendard Variable", blog: "Spoqa Han Sans" }
-    blog-display: { size: 32, weight: 700, lineHeight: 1.44, tracking: -1.0, use: "Blog section heads, Spoqa Han Sans Bold" }
-    section:    { size: 18, weight: 600, lineHeight: 1.33, tracking: -0.2, use: "Product section titles, Pretendard SemiBold" }
-    nav:        { size: 15, weight: 600, lineHeight: 1.5, use: "Top nav item (active 600 / inactive 400)" }
-    card-title: { size: 14, weight: 600, lineHeight: 1.5, use: "Card / category labels, Pretendard SemiBold" }
-    body:       { size: 16, weight: 400, lineHeight: 1.5, use: "Standard body text, Pretendard" }
-    label:      { size: 14, weight: 400, lineHeight: 1.5, use: "Search / dense UI text, Pretendard" }
-    caption:    { size: 12, weight: 400, lineHeight: 1.5, use: "Button labels, metadata" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 20, xl: 24, xxl: 32, section: 48 }
-  rounded: { xs: 4, sm: 8, md: 16, lg: 20, full: 99999 }
+    family: { product: "Pretendard Variable" }
+    section: { size: 18, weight: 600, tracking: -0.2, use: "Home section title (h2.hds-text-title-medium, line height computes normal)" }
+    title-large: { size: 20, weight: 600, lineHeight: 1.4, tracking: -0.2, use: "Awards page title text (p.hds-text-title-large)" }
+    nav: { size: 15, weight: 600, lineHeight: 1.53, use: "Top navigation, selected item; unselected items compute 400" }
+    button: { size: 15, weight: 600, lineHeight: 1.53, use: "Awards outline button label" }
+    card-title: { size: 14, weight: 600, lineHeight: 1.5, use: "White label over category imagery on home (h3)" }
+    body: { size: 16, weight: 400, lineHeight: 1.5, use: "Page body text" }
+    label: { size: 14, weight: 400, lineHeight: 1.5, use: "Header search field text" }
+    caption: { size: 12, weight: 400, lineHeight: 1.5, use: "Footer chip and note text" }
+  spacing: { chip-x: 8, tile: 12, control-x: 16, card: 16, icon-button: 10, header-x: 20 }
+  rounded: { xs: 4, sm: 8, tile: 12, md: 16, full: 99999 }
   shadow:
     card: "rgba(0, 0, 0, 0.08) 0px 2px 8px 0px"
-    hairline-ring: "rgb(232, 232, 232) 0px 0px 0px 1px"
-    none: "none"
   components:
-    button-primary: { type: button, bg: "#00d5ce", fg: "#ffffff", radius: "8px", font: "16px / 600", use: "Brand turquoise primary action — app-install / key CTA" }
-    button-outline: { type: button, bg: "#ffffff", fg: "#3d3d3d", border: "1px solid #e8e8e8", radius: "4px", padding: "0 8px", height: "24px", font: "12px / 400", use: "Secondary chip (로그인) — white with hairline" }
-    nav-tab: { type: tab, fg: "#111111", active: "text #111111 weight 600", font: "15px / 400", use: "Top nav (홈 / 랭킹 / 어워드)" }
-    product-card: { type: card, bg: "#ffffff", radius: "16px", shadow: "rgba(0, 0, 0, 0.08) 0px 2px 8px", use: "Product / ranking card — 1px #e8e8e8 hairline ring" }
-    tint-card: { type: card, bg: "#eefbfb", fg: "#000000", radius: "16px", use: "Pale-mint brand tint section / card" }
-    search-input: { type: input, bg: "#ffffff", border: "1px solid #e8e8e8", radius: "8px", fg: "#000000", use: "Header search — #aaaaaa placeholder" }
-    rating-badge: { type: badge, bg: "#ffffff", fg: "#ffaa3c", radius: "4px", font: "12px / 600", use: "Amber star-rating value" }
-    info-chip: { type: badge, bg: "#ffffff", fg: "#467dff", radius: "4px", font: "12px / 600", use: "Blue inline accent / info tag" }
+    nav-tab: { type: tab, bg: "transparent", fg: "#111111", font: "15px / 400 / 23px Pretendard Variable", selected: "15px / 600 on the current section: 홈 on home (capture 8), 어워드 on the awards page (capture 4)", states: "selected variant read from rest values only; no pointer or focus frame was recorded for these links", use: "Top navigation link (홈, 랭킹, 어워드) at home::[data-omd-capture=\"9\"], 26 x 23; the same three links repeat on the awards page" }
+    language-button: { type: button, bg: "transparent", fg: "#111111", radius: "8px", padding: "10px", height: "44px", font: "16px / 400 / 24px Pretendard Variable", states: "hover and pressed frames change only border-color (#e8e8e8 to #111111) while the computed border width stays 0px, so nothing visible changes and no state value is declared", use: "Header language selector (한국어) at home::[data-omd-capture=\"3\"], 108 x 44" }
+    footer-login-chip: { type: button, bg: "#ffffff", fg: "#3d3d3d", border: "1px solid #e8e8e8", radius: "4px", padding: "0px 8px", height: "24px", font: "12px / 400 / 18px Pretendard Variable", states: "rest on home, rankings and awards; no state frame", use: "24px outline chip at the foot of each page (home::[data-omd-capture=\"106\"], 49 x 24); the page text places 로그인 at this position" }
+    footer-info-toggle: { type: button, bg: "transparent", fg: "#3d3d3d", radius: "4px", padding: "0px 8px", height: "24px", font: "12px / 400 / 18px Pretendard Variable", states: "rest on all three pages; no state frame", use: "Footer text button (home::[data-omd-capture=\"98\"], 89 x 24) whose six-character label the page text gives as 사업자 정보" }
+    dark-block-button: { type: button, bg: "#3d3d3d", radius: "8px", size: "344px x 52px", states: "rest only; no state frame", use: "Full-width dark button on home (home::[data-omd-capture=\"108\"], class bg-gray-850); its label sits in a child that was not captured, so no text colour is claimed" }
+    ranking-card: { type: card, bg: "#ffffff", radius: "8px", padding: "16px", shadow: "rgba(0, 0, 0, 0.08) 0px 2px 8px 0px", size: "560px x 112px", use: "Rankings list card (li.shadow-card) on the rankings page" }
+    award-card: { type: card, bg: "#ffffff", radius: "16px", shadow: "rgba(0, 0, 0, 0.08) 0px 2px 8px 0px", size: "560px x 284px", use: "Awards page section card (div.rounded-16.shadow-card, six captured)" }
+    award-outline-button: { type: button, bg: "#ffffff", fg: "#3d3d3d", border: "1px solid #e8e8e8", radius: "8px", padding: "0px 16px", height: "44px", font: "15px / 600 / 23px Pretendard Variable", hover: "bg #f7f7f7", pressed: "bg #f7f7f7", states: "rest, hover and pressed; the hover and pressed frames of both sibling buttons (capture 14, 21) read #f7f7f7; focus is not declared from the capture", use: "Full-width outline button on the awards page (surface-3::[data-omd-capture=\"14\"], 528 x 44)" }
+    award-tint-button: { type: button, bg: "#ebf5ff", fg: "#3750be", radius: "8px", padding: "0px 16px", height: "44px", font: "15px / 600 / 23px Pretendard Variable", states: "rest only; no state frame", use: "Blue-tint full-width button near the end of the awards page (surface-3::[data-omd-capture=\"51\"], 520 x 44)" }
+    award-category-tile: { type: card, bg: "#ffffff", border: "1px solid #e8e8e8", radius: "12px", padding: "12px", size: "88px x 124px", use: "Awards category tile link, ten captured in two rows (surface-3::[data-omd-capture=\"8\"])" }
+    banner-card: { type: card, radius: "16px", size: "560px x 332px", use: "Home carousel banner link (a.rounded-16 at home::[data-omd-capture=\"11\"]); the imagery carries the colour" }
+    product-row: { type: listItem, bg: "#ffffff", fg: "#000000", size: "320px x 80px", font: "16px / 400 / 24px Pretendard Variable", use: "Ranking product row (li.bg-white w-[320px]); 44 captured on home and rankings" }
+    search-field: { type: input, fg: "#aaaaaa", height: "21px", font: "14px / 400 / 21px Pretendard Variable", states: "the home field carries the disabled attribute (it opens /search rather than accepting text); no hover or focus frame", use: "Header search field text (home::[data-omd-capture=\"6\"], 496 x 21) inside a rounded wrapper link whose own styles were not captured" }
   components_harvested: true
 ---
 
@@ -67,395 +237,378 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-Hwahae (화해) is Korea's dominant cosmetics-review and ingredient-analysis platform, and its product web reads like a clean, content-dense beauty index rather than a glossy brand microsite. The canvas is a soft neutral grey (`#f7f7f7`) layered over pure white (`#ffffff`) cards, so the imagery — product shots, ranking thumbnails, brand tiles — carries all the color and the chrome stays quiet. Text sits in pure black (`#000000`) for headings and a softened near-black (`#111111`) for navigation, giving the page an honest, encyclopedic weight. The brand's signature is a vivid turquoise flower mark (`#00d5ce`), echoed live on the engineering blog as `#22d3d6` and in UI accents as the deeper teal `#00a5aa`, all resting on a barely-there pale-mint tint (`#eefbfb`) that appears in hero and section backgrounds.
+Hwahae (화해) is Korea's cosmetics-information platform: ingredient lists, real-user reviews, rankings, an annual awards programme and purchase in one service, operated by Hwahae Global Inc. (화해글로벌). Its product-design team dates the service to 2013, when it set out to fix the information asymmetry of Korean cosmetics — shoppers could not see what was in a product or trust the box — and describes how it grew from ingredient lookup into makeup, inner beauty, sample trials, ingredient look-alikes, reviews and purchase. Its own newsroom now frames it as a K-beauty acceleration platform: in June 2026 it reported 2 million monthly users across Korea and abroad, with the global web (English, Japanese, Chinese, Vietnamese and Spanish) at 1.2 million after growing more than 800% in a year, and over 10 million real-user reviews behind its rankings.
 
-What dominates the live product surface, though, is amber (`#ffaa3c`) — the rating-star color. Because Hwahae is fundamentally a review and ranking service, the amber star appears more than any other accent on the page, training the eye to read it as "score / trust." A small functional palette rounds it out: an action blue (`#467dff`) for inline links and tags, and a coral (`#ff5555`) for sale and wishlist signals. The neutrals run a long, careful ladder — `#3d3d3d` body, `#666666` secondary, `#999999` captions, `#aaaaaa` placeholders, `#d8d8d8` dividers, `#e8e8e8` hairlines — the kind of granular grey scale you only get from a real design system.
+The brand expression is split on purpose. Identity lives in the turquoise flower mark and the photography; the web chrome is a quiet, index-like monochrome. The captured pages set black (`#000000`) text on a soft grey page (`#f7f7f7`), stack white (`#ffffff`) cards and rows on it, and draw the few edges they need with a `#e8e8e8` hairline. Navigation and utility labels soften to `#111111`, chip labels to `#3d3d3d`, and a `#666666` → `#999999` → `#aaaaaa` ladder carries notes and the search field. The only raised surface is one light card shadow, `rgba(0, 0, 0, 0.08) 0px 2px 8px 0px`, used on ranking and award cards. Everything is set in Pretendard Variable, and the whole desktop page is a 560px column centred on the window — the web reads as the app, held in place.
 
-That design system is explicit: utility classes across the site are namespaced `hds-` (Hwahae Design System), and Hwahae's product-design team has publicly documented its construction — a Foundation layer (Color, Typography, Grid, Radius, Spacing) feeding Components and Templates, built in Figma and shipped through Storybook. The geometry is soft and consistent: 8px is the workhorse radius, 16px for cards, 4px for tight chips, full-round (99999px) for pills and 50% for avatars; the blog leans to a rounder 20px. Depth is minimal — a single light card shadow (`rgba(0, 0, 0, 0.08) 0px 2px 8px`) and a 1px `#e8e8e8` hairline ring do almost all the separating. Typography is split by surface: the product web is set in **Pretendard Variable** at a dense, app-like scale (18px section heads, 16px body, 14–15px UI), while the official tech blog is set in **Spoqa Han Sans** at a larger editorial 32px / weight 700.
+The current evolution is systemic. In January 2023 the product-design team committed to a design system — a Foundation of colour, typography, grid, radius and spacing feeding components and templates — and the live DOM still carries its `hds-` utility namespace (for example `hds-rounded-8`, `hds-text-title-medium`). The awards surface (화해 어워드) shows the same system stretched to a campaign: 16px-radius shadow cards, 12px-radius category tiles, a mint `#82e6e6` heading, and a pale-blue `#ebf5ff` action with `#3750be` text. The logo turquoise itself (`#00d5ce`, from the official OG image) is identity rather than a UI token; none of the three captured pages renders it on a sampled element.
 
 **Key Characteristics:**
-- Turquoise flower brand mark (`#00d5ce`) — quiet on chrome, loud as identity; live blog accent `#22d3d6`, deeper UI teal `#00a5aa`
-- Amber (`#ffaa3c`) as the most-present accent — it is the rating-star color of a review-first product
-- Pretendard Variable on the product web; Spoqa Han Sans on the engineering/design blog
-- Pure black (`#000000`) headings, softened `#111111` nav — honest, index-like text
-- Soft neutral `#f7f7f7` canvas with pure-white (`#ffffff`) cards carrying the imagery
-- Pale-mint tint (`#eefbfb`) for hero/section backgrounds — the brand turquoise at 5% presence
-- Granular grey ladder (`#3d3d3d` → `#666666` → `#999999` → `#aaaaaa`) from a real `hds-` design system
-- Minimal depth: one `rgba(0, 0, 0, 0.08)` card shadow + 1px `#e8e8e8` hairline ring
-- Soft radius scale — 8px workhorse, 16px cards, 4px chips, 99999px pills, 20px on the blog
+- Monochrome chrome — `#000000` text, `#111111` navigation, `#3d3d3d` chip labels — on a `#f7f7f7` page with `#ffffff` cards
+- One elevation: `rgba(0, 0, 0, 0.08) 0px 2px 8px 0px` on ranking and award cards; `#e8e8e8` hairlines elsewhere
+- Pretendard Variable everywhere, served as the 1.3.9 variable dynamic subset from cdnjs
+- A dense app scale: 18px / 600 section titles, 16px body, 15px navigation and buttons, 12px notes
+- Radii of 4px (chips), 8px (buttons and ranking cards), 12px (award tiles), 16px (banners and award cards) and full round
+- A 560px centred column on desktop — the web renders the app's layout rather than a wide site
+- `hds-` class namespace from the Hwahae Design System adopted in 2023
+- Turquoise is the logo's colour, not the interface's
 
 ## Primary tasks
 
 - Check a product's ingredient list and rating before buying
-- Find products ranked for your own skin type
+- Find products ranked for your own skin type or age group
 - Browse the rankings that Hwahae users chose themselves
-- Submit a review of a product you have used
-- Save a product to a wishlist to come back to
+- See which products won the season's Hwahae Awards
+- Read Korean users' reviews from abroad through the global web
 
 ## 2. Color Palette & Roles
 
-### Brand
-- **Hwahae Turquoise** (`#00d5ce`): The flower-mark brand color and primary identity hue. Used for the logo, brand moments, and the primary action color.
-- **Turquoise Bright** (`#22d3d6`): The live turquoise measured on the official tech blog — the same brand hue rendered slightly brighter on screen.
-- **Turquoise Deep** (`#00a5aa`): A darker interactive teal used for accent text and small UI elements on the product surface.
-- **Mint Tint** (`#eefbfb`): A near-white pale mint, the brand turquoise at minimal presence — hero and section backgrounds.
+Every token below was read by the deterministic collector on 2026-09-30 from the public home, rankings and awards pages.
 
-### Functional Accents
-- **Rating Amber** (`#ffaa3c`): The star-rating color — the single most-present accent on the product web, signalling score and trust.
-- **Action Blue** (`#467dff`): Inline links, info tags, and interactive accents.
-- **Alert Coral** (`#ff5555`): Sale prices, wishlist/heart, and attention signals.
-
-### Text & Ink
-- **Ink Black** (`#000000`): Primary headings and high-emphasis text.
-- **Ink Soft** (`#111111`): Navigation labels and strong UI text — a softened near-black.
-- **Ink Blog** (`#212529`): The blog body/heading text color (Spoqa Han Sans surface).
-- **Body** (`#3d3d3d`): Secondary body copy and button labels.
-- **Muted** (`#666666`): Tertiary text and descriptions.
-- **Faint** (`#999999`): Captions, metadata, low-emphasis labels.
-- **Placeholder** (`#aaaaaa`): Input placeholder text.
+### Ink & Text
+- **Ink** (`#000000`): Body text and headings; the page body computes it on all three pages.
+- **Ink Soft** (`#111111`): Top navigation links, the language selector and awards title text.
+- **Label** (`#3d3d3d`): Chip and outline-button labels (footer chips, awards outline buttons).
+- **Muted** (`#666666`): Secondary notes (`p.hds-text-gray-secondary`) and awards footer links.
+- **Faint** (`#999999`): Tertiary notes and footer copy (`text-gray-tertiary`).
+- **Placeholder** (`#aaaaaa`): The header search field text and search icon on home.
 
 ### Surface & Lines
-- **Canvas White** (`#ffffff`): Card surfaces, text on brand/dark, and the cleanest backgrounds.
-- **Surface Grey** (`#f7f7f7`): The page background — a soft neutral that lets imagery carry the color.
-- **Divider** (`#d8d8d8`): Heavier separators and segmented controls.
-- **Hairline** (`#e8e8e8`): Card outlines, dividers, and the 1px ring that replaces shadow.
-- **On-Brand** (`#ffffff`): Foreground text/icons on the turquoise brand color.
+- **Surface** (`#f7f7f7`): The page background behind the 560px column; also the hover fill of the awards outline button.
+- **Canvas** (`#ffffff`): Cards, ranking rows, chips and tiles.
+- **On Media** (`#ffffff`): Labels set over category imagery (home `h3`).
+- **Hairline** (`#e8e8e8`): The 1px border on outline buttons, the footer chip and awards tiles.
+
+### Campaign accents (awards page)
+- **Award Accent** (`#82e6e6`): Mint section heading on the awards page (one element) — the closest the captured interface comes to the brand turquoise.
+- **Info Ink** (`#3750be`) on **Info Tint** (`#ebf5ff`): The blue-tint action near the end of the awards page.
+
+### Identity colour outside the token set
+- **Logo turquoise** (`#00d5ce`): The flower mark, pixel-sampled from the official OG image (`static.hwahae.co.kr/og/OG_1200.png`) in the June 2026 record. It is a brand-asset value, kept as the catalogue's `primary_color`, and not a UI token: no sampled element on the three captured pages renders it.
+- The June 2026 inspection also counted rating-star amber (`#ffaa3c`), a teal (`#00a5aa`), a blue (`#467dff`), a coral (`#ff5555`), a pale mint (`#eefbfb`) and a `#d8d8d8` divider on the home page. The 2026-09-30 collector samples block elements, controls and headings rather than every inline span, and did not record any of them, so they are history in `.verification.md`, not tokens.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **Product web**: `Pretendard Variable` (with system fallbacks: `-apple-system`, `Apple SD Gothic Neo`, `Noto Sans KR`, `Roboto`) — the de-facto Korean product font, used for all product-surface text.
-- **Blog**: `Spoqa Han Sans` (with `Roboto`, `Malgun Gothic` fallbacks) — used on the official engineering/design blog at editorial sizes.
+- **Product web, live use**: `Pretendard Variable` — the computed family of body, headings, buttons, inputs and list items on all three pages (352 observed uses), loaded from `cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/variable/woff2-dynamic-subset/`. Fallback stack: `-apple-system`, `system-ui`, `Apple SD Gothic Neo`, `SF pro display`, `Noto Sans KR`, `Roboto`, `sans-serif`.
+- **Declared only**: static `Pretendard` faces from `cdn.jsdelivr.net/npm/pretendard@1.3.9` are declared in the page CSS but no visible text resolves to them.
+- **Licence**: Pretendard is Kil Hyung-jin's typeface, licensed under the SIL Open Font License 1.1 with the Reserved Font Name 'Pretendard' (repository LICENSE). This is licence context, not a Hwahae brand-font claim.
+- **Other domain**: the official blog (`blog.hwahae.co.kr`) was observed in June 2026 in `Spoqa Han Sans`. The blog is a separate evidence domain and was not captured on 2026-09-30, so it contributes no token here.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Blog Display | Spoqa Han Sans | 32px (2.00rem) | 700 | 1.44 (46px) | -1.0px | Blog section heads ("Tech", "추천 아티클") |
-| Section Title | Pretendard Variable | 18px (1.13rem) | 600 | 1.33 | -0.2px | Product section titles ("급상승 랭킹") |
-| Nav Link | Pretendard Variable | 15px (0.94rem) | 600 / 400 | 1.5 | normal | Active 600, inactive 400 |
-| Card Title | Pretendard Variable | 14px (0.88rem) | 600 | 1.5 (21px) | normal | Category / card labels |
-| Body | Pretendard Variable | 16px (1.00rem) | 400 | 1.5 (24px) | normal | Standard reading text |
-| Label | Pretendard Variable | 14px (0.88rem) | 400 | 1.5 | normal | Search, dense UI text |
-| Caption | Pretendard Variable | 12px (0.75rem) | 400 | 1.5 | normal | Button labels, metadata |
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Observed on |
+|------|------|------|--------|-------------|----------------|-------------|
+| Title Large | Pretendard Variable | 20px | 600 | 28px (1.4) | -0.2px | Awards title text (`p.hds-text-title-large`, `#111111`) |
+| Section Title | Pretendard Variable | 18px | 600 | normal | -0.2px | Home section heads (`h2.hds-text-title-medium`) |
+| Nav Link | Pretendard Variable | 15px | 600 selected / 400 | 23px (1.53) | normal | 홈 / 랭킹 / 어워드 |
+| Button | Pretendard Variable | 15px | 600 | 23px (1.53) | normal | Awards outline and tint buttons |
+| Card Title | Pretendard Variable | 14px | 600 | 21px (1.5) | normal | White labels over category imagery |
+| Body | Pretendard Variable | 16px | 400 | 24px (1.5) | normal | Page body, ranking rows |
+| Label | Pretendard Variable | 14px | 400 | 21px (1.5) | normal | Header search field |
+| Caption | Pretendard Variable | 12px | 400 | 18px (1.5) | normal | Footer chips and notes |
 
 ### Principles
-- **Two surfaces, two fonts**: Pretendard Variable owns the product web (dense, app-like); Spoqa Han Sans owns the blog (editorial, larger). They never mix on one surface.
-- **Dense product scale**: The product web tops out at an 18px section head with a 16px body — a deliberately app-native, information-rich scale rather than a marketing-hero scale.
-- **Weight as hierarchy**: SemiBold (600) carries titles and active nav; Regular (400) carries body, inactive nav, and captions. Bold (700) is reserved for blog display.
-- **Tight tracking on heads**: Headings carry slight negative tracking (-0.2px product, -1.0px blog); body stays at normal tracking for hangul legibility.
+- **One family, weight as hierarchy**: 600 marks titles, the selected navigation item and button labels; 400 carries body, unselected navigation and notes. No captured text uses 700.
+- **App-dense scale**: the largest measured product text is 20px; section heads stop at 18px.
+- **Slight negative tracking on titles only**: -0.2px on 18px and 20px titles; body and labels stay at normal tracking.
 
 ## 4. Component Stylings
 
+### Navigation
+
+**Top navigation link**
+- Background: transparent
+- Text: `#111111`
+- Font: 15px / 400 / 23px Pretendard Variable
+- Selected: 15px / 600 (홈 on home, 어워드 on the awards page)
+- States: selected variant from rest values only; no pointer or focus frame was recorded
+- Use: 홈, 랭킹, 어워드 links in the header of every captured page
+
+**Language selector**
+- Background: transparent
+- Text: `#111111`
+- Radius: 8px
+- Padding: 10px
+- Height: 44px
+- Font: 16px / 400 / 24px Pretendard Variable
+- States: the hover and pressed frames change only border-color, `#e8e8e8` to `#111111`, while the computed border width stays 0px — nothing visible changes, so no state value is declared
+- Use: 한국어 selector in the header, 108 × 44
+
 ### Buttons
 
-**Primary (Brand Turquoise)**
-- Background: `#00d5ce`
-- Text: `#ffffff`
+**Awards outline button**
+- Background: `#ffffff`
+- Text: `#3d3d3d`
+- Border: 1px solid `#e8e8e8`
 - Radius: 8px
-- Font: 16px Pretendard weight 600
-- Use: Brand turquoise primary action — app-install and key CTAs (the identity color carried into action)
+- Padding: 0px 16px
+- Height: 44px
+- Font: 15px / 600 / 23px Pretendard Variable
+- Hover: background `#f7f7f7`
+- Pressed: background `#f7f7f7`
+- States: both sibling buttons (capture 14 and 21) settle on `#f7f7f7` in the hover and pressed frames; focus is not declared from the capture
+- Use: full-width outline action on the awards page, 528 × 44
 
-**Secondary Chip (Outline)**
+**Awards tint button**
+- Background: `#ebf5ff`
+- Text: `#3750be`
+- Radius: 8px
+- Padding: 0px 16px
+- Height: 44px
+- Font: 15px / 600 / 23px Pretendard Variable
+- States: rest only; no state frame
+- Use: blue-tint full-width action near the end of the awards page, 520 × 44
+
+**Dark block button**
+- Background: `#3d3d3d`
+- Radius: 8px
+- Size: 344 × 52
+- States: rest only; no state frame
+- Use: full-width dark button on home; its label sits in a child that was not captured, so no text colour is given
+
+**Footer chip**
 - Background: `#ffffff`
 - Text: `#3d3d3d`
 - Border: 1px solid `#e8e8e8`
 - Radius: 4px
 - Padding: 0px 8px
 - Height: 24px
-- Font: 12px Pretendard weight 400
-- Use: Compact secondary action ("로그인") — white with hairline border
+- Font: 12px / 400 / 18px Pretendard Variable
+- States: rest on all three pages; no state frame
+- Use: 24px outline chip at the foot of each page, where the page text reads 로그인
 
-**Language / Icon Button**
+**Footer text button**
 - Background: transparent
-- Text: `#111111`
-- Radius: 8px
-- Padding: 10px
-- Height: 44px
-- Use: Header utility buttons ("한국어", icon toggles) — 44px touch target
+- Text: `#3d3d3d`
+- Radius: 4px
+- Padding: 0px 8px
+- Height: 24px
+- Font: 12px / 400 / 18px Pretendard Variable
+- States: rest on all three pages; no state frame
+- Use: 사업자 정보 toggle in the footer, 89 × 24
 
 ### Inputs & Forms
 
-**Header Search**
-- Background: `#ffffff`
-- Border: 1px solid `#e8e8e8`
-- Radius: 8px
-- Text: `#000000`
-- Placeholder: `#aaaaaa`
-- Font: 14px Pretendard weight 400
-- Use: Top search field
+**Header search field**
+- Text: `#aaaaaa`
+- Height: 21px (the text field inside a rounded wrapper link)
+- Font: 14px / 400 / 21px Pretendard Variable
+- States: the field carries the disabled attribute on home because it opens the search page rather than accepting text; no hover or focus frame
+- Use: header search entry, 496 × 21
 
 ### Cards & Containers
 
-**Product / Ranking Card**
+**Ranking card**
+- Background: `#ffffff`
+- Radius: 8px
+- Padding: 16px
+- Shadow: `rgba(0, 0, 0, 0.08) 0px 2px 8px 0px`
+- Size: 560 × 112
+- Use: list card on the rankings page (`li.shadow-card`)
+
+**Award card**
 - Background: `#ffffff`
 - Radius: 16px
-- Shadow: `rgba(0, 0, 0, 0.08) 0px 2px 8px`
-- Border: 1px solid `#e8e8e8` (hairline ring on shadowless variants)
-- Use: Product, ranking, and brand tiles — imagery carries the color
+- Shadow: `rgba(0, 0, 0, 0.08) 0px 2px 8px 0px`
+- Size: 560 × 284
+- Use: section card on the awards page (six captured)
 
-**Mint Tint Card**
-- Background: `#eefbfb`
+**Award category tile**
+- Background: `#ffffff`
+- Border: 1px solid `#e8e8e8`
+- Radius: 12px
+- Padding: 12px
+- Size: 88 × 124
+- Use: category tile link on the awards page, ten captured in two rows
+
+**Banner card**
+- Radius: 16px
+- Size: 560 × 332
+- Use: home carousel banner link; the photography carries the colour
+
+**Product row**
+- Background: `#ffffff`
 - Text: `#000000`
-- Radius: 16px
-- Use: Pale-mint brand-tinted section / feature card
-
-### Badges
-
-**Rating Star (Amber)**
-- Background: `#ffffff`
-- Text: `#ffaa3c`
-- Radius: 4px
-- Font: 12px Pretendard weight 600
-- Use: Star-rating score value — the product's most-present accent
-
-**Info Chip (Blue)**
-- Background: `#ffffff`
-- Text: `#467dff`
-- Radius: 4px
-- Font: 12px Pretendard weight 600
-- Use: Inline accent / info tag
-
-**Image Count Pill**
-- Background: `rgba(0, 0, 0, 0.4)`
-- Text: `#ffffff`
-- Radius: 4px
-- Padding: 4px 8px
-- Use: Image counter overlay on carousels ("1/10")
-
-### Navigation
-- Background: `#ffffff`
-- Text: `#111111`
-- Font: 15px Pretendard weight 400 (active 600)
-- Active: weight 600, `#111111`
-- Use: Top horizontal nav ("홈", "랭킹", "어워드")
+- Size: 320 × 80
+- Font: 16px / 400 / 24px Pretendard Variable
+- Use: ranking product row, 44 captured on home and rankings
 
 ---
 
-**Verified:** 2026-06-26 (omd:add-reference CREATE — Tier 1 live inspect, 2 brand-owned surfaces)
-**Tier 1 sources:** https://www.hwahae.co.kr ; https://blog.hwahae.co.kr/ ; https://blog.hwahae.co.kr/all/tech/13236
-**Tier 2 sources:** getdesign.md/hwahae — not listed ("No designs found for hwahae"); styles.refero.design — no hwahae-specific match (KR under-coverage)
+**Verified:** 2026-09-30 (deterministic collector capture of three public product-web pages, logged out, plus first-party context)
+**Tier 1 sources:** https://www.hwahae.co.kr/ ; https://www.hwahae.co.kr/rankings ; https://www.hwahae.co.kr/awards/home/2026 ; https://blog.hwahae.co.kr/all/tech/13236 ; https://blog.hwahae.co.kr/all/newsroom/news/15569
+**Tier 2 sources:** getdesign.md/hwahae (HTTP 200; the served page contains no occurrence of the name) and styles.refero.design/?q=hwahae (HTTP 200, the name appears only as the echoed query), requested 2026-09-30; no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: 4px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 48px
-- Notable: Touch-utility buttons land at a 44px height with 10px padding; compact chips drop to 0px 8px
+- Chip inset: 8px horizontal (footer chips)
+- Icon and utility buttons: 10px all round (language selector, a 44 × 44 header icon button)
+- Tiles: 12px (award category tiles)
+- Controls and cards: 16px (outline-button inset, ranking-card padding)
+- Header inset: 20px (the app banner row)
+- The collector's padding census on these pages is led by 16px, then 8px and 12px, then 10px and 20px.
 
 ### Grid & Container
-- Centered, content-first layout: ranking and product cards arranged in horizontally scrolling rows and responsive grids
-- Section bands stack vertically with quiet section titles (18px) introducing each ranking/recommendation block
-- White (`#ffffff`) cards float on the soft `#f7f7f7` canvas; pale-mint (`#eefbfb`) tints mark hero/feature zones
-- Cards use 16px radius and cluster related products, rankings, and brands
+- A single 560px column centred on the 1440px desktop window: ranking cards, award cards, banners and footer notes all measure 560px wide.
+- Product rows run in 320px-wide rows inside horizontally scrolling groups.
+- The grey `#f7f7f7` page frames the white column content.
 
 ### Whitespace Philosophy
-- **Imagery carries color, chrome stays quiet**: the neutral canvas and white cards keep product photography the loudest thing on the page
-- **Dense but breathable**: an app-native information density (many rankings/products) softened by generous card radii and consistent gutters
-- **Flat separation**: sections separate by background tint (`#f7f7f7` vs `#ffffff`) and `#e8e8e8` hairlines more than by elevation
+- **Imagery carries colour, chrome stays quiet**: neutral page, white cards, black text — product photography is the loudest layer.
+- **Dense but held**: an app's information density inside a narrow column, rather than a wide marketing layout.
 
 ### Border Radius Scale
-- Tight (4px): chips, small badges, count pills
-- Workhorse (8px): buttons, inputs, utility controls
-- Card (16px): product/ranking/brand cards — the dominant container radius
-- Blog (20px): editorial cards on the tech blog
-- Full (99999px / 50%): pills and circular avatars
+- 4px: footer chips
+- 8px: outline buttons, the language selector, ranking cards
+- 12px: award category tiles
+- 16px: banner cards and award cards
+- Full (99999px): the round carousel arrow button
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, inline text, tinted sections |
-| Hairline (Level 1) | `1px solid #e8e8e8` / `rgb(232, 232, 232) 0px 0px 0px 1px` ring | White card outlines, dividers |
-| Card (Level 2) | `rgba(0, 0, 0, 0.08) 0px 2px 8px 0px` | Floating product / ranking cards |
+| Flat | No shadow | Page, rows, text, most controls |
+| Hairline | 1px solid `#e8e8e8` border | Outline buttons, footer chip, award tiles |
+| Card | `rgba(0, 0, 0, 0.08) 0px 2px 8px 0px` | Ranking cards and award cards |
 
-**Shadow Philosophy**: Hwahae is a near-flat system. Live inspection found the overwhelming majority of surfaces shadowless; where elevation is needed, a single soft card shadow (`rgba(0, 0, 0, 0.08) 0px 2px 8px`) or a 1px `#e8e8e8` hairline ring does the work. This keeps the review/ranking content scannable and fast, and lets product imagery — not chrome — provide visual interest. Emphasis is reached through color (amber `#ffaa3c` ratings, turquoise `#00d5ce` brand) rather than depth.
+**Shadow Philosophy**: the card shadow computes as three layers — two transparent zero-size ring layers followed by `rgba(0, 0, 0, 0.08) 0px 2px 8px 0px` — so only the last one draws. It is the only elevation on the three pages; everything else separates by the grey page, white fills and hairlines.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Use Pretendard Variable for the product web and Spoqa Han Sans for the blog — keep them per-surface
-- Keep the brand turquoise (`#00d5ce`) for identity and the primary action; let imagery carry color elsewhere
-- Use amber (`#ffaa3c`) for rating stars — it is the product's trust signal
-- Set the canvas to soft grey (`#f7f7f7`) with white (`#ffffff`) cards so photography stays loudest
-- Separate with `#e8e8e8` hairlines and a single soft card shadow, not heavy elevation
-- Use the soft radius scale — 8px controls, 16px cards, 4px chips, full-round pills
-- Use pure black (`#000000`) for headings and softened `#111111` for nav
-- Reserve action blue (`#467dff`) and coral (`#ff5555`) for links and sale/wishlist signals
+- Set the page on `#f7f7f7` with `#ffffff` cards and rows so photography stays loudest
+- Use Pretendard Variable for all product text, with 600 for titles and the selected navigation item
+- Keep text black (`#000000`), navigation `#111111` and chip labels `#3d3d3d`
+- Separate with `#e8e8e8` hairlines and the single `rgba(0, 0, 0, 0.08) 0px 2px 8px 0px` card shadow
+- Use 8px radius on buttons and ranking cards, 16px on banners and award cards, 4px on chips
+- Hold the layout in a narrow centred column, as the live web does
+- Treat the turquoise flower mark as the logo, not as an interface fill
 
 ### Don't
-- Don't spread the turquoise across many elements — it is identity, not decoration
-- Don't stack heavy drop shadows — Hwahae separates with hairlines and tint
-- Don't mix Spoqa Han Sans into the product web or Pretendard into the blog
-- Don't use amber for anything but ratings/scores — it would dilute the trust signal
-- Don't set the canvas pure white edge-to-edge — the `#f7f7f7` grey is what frames the cards
-- Don't use sharp 0px corners on cards or controls — the system is consistently softened
-- Don't introduce a competing saturated accent beyond the functional amber/blue/coral set
-- Don't oversize product-web headings — the scale is deliberately dense and app-native
+- Don't paint controls in the logo turquoise — no captured control uses it
+- Don't stack heavy or coloured shadows; there is one light card shadow
+- Don't use bold 700 in product text; the measured hierarchy stops at 600
+- Don't set the page pure white edge to edge — the grey frame is part of the look
+- Don't mix the blog's Spoqa Han Sans into product screens
+- Don't invent hover colours for controls that recorded none; only the awards outline button has a measured hover
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column, ranking rows scroll horizontally, cards full-bleed |
-| Tablet | 640-1024px | 2-up product grids, moderate gutters |
-| Desktop | 1024-1440px | Centered content, multi-column ranking/recommendation bands |
+Only the 1440 × 900 desktop viewport was captured. At that width the site already renders its mobile-width 560px column; no other breakpoint was measured.
 
 ### Touch Targets
-- Header utility buttons at 44px height (10px padding) — comfortable tap targets
-- Compact chips ("로그인") at 24px height for dense desktop chrome
-- Ranking cards sized for thumb-scroll on mobile, click on desktop
+- Header utility buttons: 44px tall (language selector, a 44 × 44 icon button)
+- Awards outline and tint buttons: 44px tall and full column width
+- Footer chips: 24px tall
 
 ### Collapsing Strategy
-- Section bands maintain their quiet 18px titles; card grids reflow multi-column → single column
-- Horizontal ranking rows convert to swipe-scroll on narrow viewports
-- White/tinted (`#ffffff` / `#eefbfb`) section treatment is preserved across breakpoints
+- The column layout is the same on the three captured pages; how it changes on a phone was not measured.
 
 ### Image Behavior
-- Product and ranking thumbnails keep 16px radius across sizes
-- Cards retain the soft `rgba(0, 0, 0, 0.08)` shadow or `#e8e8e8` hairline at all breakpoints
-- Carousels show an image-count pill overlay (`rgba(0, 0, 0, 0.4)`, white text)
+- Banner imagery sits in 16px-radius, 560 × 332 links; category imagery carries white 14px / 600 labels.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Brand / primary action: Hwahae Turquoise (`#00d5ce`)
-- Rating accent: Amber (`#ffaa3c`)
-- Inline link / info: Action Blue (`#467dff`)
-- Sale / wishlist: Coral (`#ff5555`)
-- Mint tint background: (`#eefbfb`)
-- Canvas: Surface Grey (`#f7f7f7`); cards White (`#ffffff`)
-- Heading text: Ink Black (`#000000`); nav `#111111`
-- Body / labels: `#3d3d3d`; muted `#666666`; faint `#999999`
-- Placeholder: `#aaaaaa`; hairline `#e8e8e8`; divider `#d8d8d8`
+- Page: `#f7f7f7`; cards and rows: `#ffffff`
+- Text: `#000000`; navigation `#111111`; chip labels `#3d3d3d`
+- Notes: `#666666`, `#999999`; search text `#aaaaaa`
+- Hairline: `#e8e8e8`
+- Awards accents: mint heading `#82e6e6`; tint action `#ebf5ff` with `#3750be`
+- Logo only (not a UI fill): `#00d5ce`
 
 ### Example Component Prompts
-- "Create a product-ranking card: white `#ffffff` background, 16px radius, soft shadow `rgba(0, 0, 0, 0.08) 0px 2px 8px`, 1px `#e8e8e8` hairline. Title 14px Pretendard weight 600 `#000000`; an amber `#ffaa3c` star-rating value at 12px weight 600."
-- "Build a header on `#f7f7f7`: white search field, 8px radius, 1px solid `#e8e8e8`, `#aaaaaa` placeholder, 14px Pretendard. Nav links 15px Pretendard `#111111`, active weight 600. A turquoise `#00d5ce` primary button with white text, 8px radius."
-- "Design a mint feature section: `#eefbfb` background. Section title 18px Pretendard weight 600, -0.2px tracking, `#000000`. Cards inside use white `#ffffff` with 16px radius and `#e8e8e8` hairline."
-- "Make a blog article head: Spoqa Han Sans 32px weight 700, line-height 1.44, -1.0px tracking, color `#212529`, on white, in a 20px-radius editorial card."
+- "Create a ranking card: white `#ffffff`, 8px radius, 16px padding, shadow `rgba(0, 0, 0, 0.08) 0px 2px 8px 0px`, 560px wide. Product name in Pretendard Variable 16px / 400 `#000000`."
+- "Build an outline action: `#ffffff` background, 1px solid `#e8e8e8`, 8px radius, 44px tall, 0 16px padding, 15px / 600 `#3d3d3d` label; hover and pressed fill `#f7f7f7`."
+- "Make a header on a `#f7f7f7` page: 15px Pretendard Variable links in `#111111`, the current one at 600, the rest at 400; a 44px language button with 10px padding and 8px radius."
+- "Design an awards tile row: 88 × 124 white tiles, 1px `#e8e8e8` border, 12px radius, 12px padding."
 
 ### Iteration Guide
-1. Pretendard Variable for the product web; Spoqa Han Sans for the blog — never cross them
-2. Turquoise (`#00d5ce`) is identity + primary action; don't spread it
-3. Amber (`#ffaa3c`) means rating/score — keep it to stars and trust signals
-4. Canvas is `#f7f7f7` grey, cards are `#ffffff` white — imagery is the loudest layer
-5. Separate with `#e8e8e8` hairlines and one soft card shadow, not heavy elevation
-6. Radius: 8px controls, 16px cards, 4px chips, full-round pills, 20px on the blog
-7. Headings `#000000`, nav `#111111`, body `#3d3d3d` — a careful neutral ladder
+1. Pretendard Variable only; 600 for titles and selection, 400 for everything else
+2. Grey page, white cards, black text — the palette is monochrome
+3. One card shadow, hairlines otherwise
+4. Radii 4 / 8 / 12 / 16 / full, by role
+5. A narrow centred column, even on desktop
+6. Turquoise stays in the logo
 
 ---
 
 ## 10. Voice & Tone
 
-Hwahae's voice is **trustworthy, plain-spoken, and evidence-first** — a beauty guide that turns an opaque, marketing-heavy category (cosmetics) into transparent ingredients, real reviews, and honest rankings. The product name itself, 화해 ("화장품을 해석하다" — "decoding cosmetics"), sets the register: explanatory, on the user's side, never a sales funnel. Copy leans on real, user-generated data — rankings "화해 고객들이 직접 선택한" (chosen directly by Hwahae users), "급상승 랭킹" (rising ranking), and skin-type and age-tailored recommendations — rather than brand superlatives.
+Hwahae's voice is **trustworthy, plain-spoken and evidence-first** — a guide that turns an opaque, marketing-heavy category into ingredients, real reviews and rankings. Copy leans on user data rather than brand superlatives: rankings are "chosen directly by Hwahae customers", sections are organised by rising products, category, skin type, age and brand, and the rankings page promises daily updates.
 
 | Context | Tone |
 |---|---|
-| Section titles | Plain, functional, data-framed. "급상승 랭킹", "내 피부에 꼭 맞는 제품 랭킹", "나이대별 추천". |
-| Rankings / labels | Neutral and concrete. Category, skin-type, and age labels; amber score values. |
-| CTAs | Low-pressure, helpful. "화해 앱에서 더 편리하게", "검색 페이지로 이동". |
-| Blog (engineering/design) | Reflective, first-person, craft-oriented. "사용 가능한 진짜 디자인 시스템을 만드는 여정". |
-| Trust / data copy | Calm and specific — leans on user-generated rankings and ingredient analysis, not hype. |
+| Section titles | Plain, data-framed. "급상승 랭킹", "내 피부에 꼭 맞는 제품 랭킹", "나이대별 추천", "요즘 뜨는 브랜드". |
+| Rankings | Neutral and concrete: rank, product, score and review count. |
+| CTAs | Low-pressure and helpful. "화해 앱에서 더 편리하게", "전체보기". |
+| Newsroom | Factual, figure-led company news. |
+| Blog (engineering and design) | Reflective, first-person, craft-oriented. |
 
-**Voice samples (verbatim from live surfaces):**
-- "화장품 정보는 화해 — 화장품 성분과 정보, 리뷰 확인하고 구매 하세요" — homepage title (decoding/ingredient-first). *(verified live 2026-06-26)*
-- "화해 고객들이 직접 선택한 랭킹" — homepage section (user-evidence framing). *(verified live 2026-06-26)*
-- "사용 가능한 진짜 디자인 시스템을 만드는 여정" — official tech blog (craft, candor). *(verified live 2026-06-26)*
+**Voice samples (verbatim, opened 2026-09-30):**
+- "화장품 정보는 화해 - 화장품 성분과 정보, 리뷰 확인하고 구매 하세요" — home page title.
+- "화해 고객들이 직접 선택한 랭킹" — home section link.
+- "지금 인기있는 화장품 추천 | 화해는 매일 업데이트" — rankings page title.
+- "사용 가능한 진짜 디자인 시스템을 만드는 여정" — official blog, product-design team.
 
-**Forbidden register**: cosmetic-marketing superlatives, unverifiable efficacy claims, fear-based "your skin is failing" pitches, and undefined jargon left unexplained. Hwahae's whole premise is decoding, so copy explains rather than dazzles.
+**Forbidden register**: cosmetic-marketing superlatives, unverifiable efficacy claims, fear-based skin pitches and unexplained jargon. The service exists to explain, not to dazzle.
 
 ## 11. Brand Narrative
 
-Hwahae (화해) launched in **2013** to solve a uniquely consumer-unfriendly problem in Korean cosmetics: severe **information asymmetry** (화장품 정보 비대칭). Shoppers could not easily see what was actually in a product or trust the marketing on the box. Hwahae's founding act was to make cosmetic **ingredients legible** — surfacing full ingredient lists, safety/grade information, and, crucially, real user **reviews** — so people could choose with evidence rather than advertising. Over its first decade the service grew from an ingredient lookup into a full beauty platform spanning makeup, inner beauty, sample experiences (샘플체험), ingredient analysis, reviews, and direct purchase, becoming the category's dominant review-and-ranking destination in Korea. (Source: Hwahae product-design team, official tech blog, *"사용 가능한 진짜 디자인 시스템을 만드는 여정"*, 2023-08-03.)
+Hwahae began in **2013** as a service to resolve the information asymmetry of Korean cosmetics, making ingredient lists and real reviews readable so people could choose on evidence rather than advertising. Over its first decade it grew into a full beauty platform covering makeup, inner beauty, sample trials, ingredient look-alikes, reviews and purchase. (Source: Hwahae product-design team, "사용 가능한 진짜 디자인 시스템을 만드는 여정", official blog, 2023-08-03.)
 
-That same blog post documents the maturation of Hwahae's design language. After ten years of rapid experimentation, the team found legacy screens and per-page color/layout drift accumulating as design and engineering debt — at odds with Hwahae's "experiment fast, validate" culture. In **January 2023** they committed to a proper design system (the `hds-` namespace seen across the live site = Hwahae Design System), built as a **Foundation** layer (Color, Typography, Grid, Radius, Spacing) feeding reusable **Components** and **Templates**, authored in Figma and shipped to engineers through Storybook and a TestApp QA loop.
+The same post documents the design language's maturation. Ten years of fast experiments had left legacy screens and page-by-page drift in colour and layout; in **January 2023** the team decided to adopt a design system, built as a Foundation layer (colour, typography, grid, radius, spacing) that components and templates build on. The `hds-` classes on the captured pages are that system in production.
 
-What Hwahae's design refuses, visible on the surface: the glossy, color-saturated chrome of beauty-brand marketing, and dark-pattern urgency. What it embraces: a quiet neutral canvas that lets product imagery and user data lead; a single trustworthy turquoise identity; amber rating stars as the honest trust signal; and a real, documented design system that keeps a sprawling, content-heavy product consistent.
+The company, Hwahae Global Inc., now describes Hwahae as a platform that supports K-beauty brands from domestic growth to overseas launch. Its June 2026 newsroom post reports 2 million monthly users, a global web in five languages that overtook domestic app and web users for the first time, more than 10 million real-user reviews, and plans for live commerce and localised content. The half-yearly Hwahae Awards, captured here as the awards page, turn that review data into a campaign surface.
+
+What Hwahae's design refuses, visible on the surface: the glossy, colour-saturated chrome of beauty marketing. What it embraces: a quiet neutral frame that lets product imagery and user data lead, and a documented system that keeps a content-heavy product consistent.
 
 ## 12. Principles
 
-1. **Decode, don't sell.** Hwahae exists to make cosmetics legible — ingredients, grades, and real reviews over marketing claims. *UI implication:* lead with data (rankings, ratings, ingredients); keep chrome neutral so evidence is the loudest element.
-2. **User evidence over brand voice.** Rankings are framed as "chosen by Hwahae users." *UI implication:* surface ratings (amber `#ffaa3c`) and review counts prominently; never visually privilege a brand without disclosure.
-3. **Imagery carries color, chrome stays quiet.** *UI implication:* soft `#f7f7f7` canvas, white cards, restrained accents — product photography is the color layer.
-4. **One identity hue.** Turquoise (`#00d5ce`) is the brand; don't dilute it. *UI implication:* reserve turquoise for identity and the primary action.
-5. **Consistency at scale via a real system.** The `hds-` Foundation→Components→Templates pipeline exists so a content-heavy product stays coherent. *UI implication:* reuse tokens (the granular grey ladder, the 8/16px radius scale) rather than re-inventing per page.
-6. **Flat and fast.** *UI implication:* minimal elevation — hairlines and one soft shadow — to keep dense ranking content quick to scan.
+1. **Decode, don't sell.** Hwahae exists to make cosmetics legible. *UI implication:* lead with data — rank, score, review count, ingredients — and keep chrome neutral.
+2. **User evidence over brand voice.** Rankings are framed as chosen by Hwahae users. *UI implication:* never visually privilege a brand without disclosure; keep product rows uniform (`#ffffff`, 16px / 400 `#000000`).
+3. **Imagery carries colour, chrome stays quiet.** *UI implication:* `#f7f7f7` page, white cards, monochrome text; photography is the colour layer.
+4. **Identity in the mark.** The turquoise belongs to the logo. *UI implication:* do not spread it onto controls.
+5. **Consistency through a real system.** *UI implication:* reuse the radius ladder (4 / 8 / 12 / 16) and the single card shadow rather than inventing per page.
+6. **Flat and fast.** *UI implication:* hairlines and one soft shadow keep dense ranking content quick to scan.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable Hwahae user segments (Korean beauty shoppers comparing ingredients and reviews), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable Hwahae user segments (Korean beauty shoppers comparing ingredients and reviews, and overseas K-beauty shoppers on the global web), not individual people.*
 
-**이서연, 26, 서울.** Checks every new product's ingredient list and Hwahae rating before buying. Distrusts brand marketing; trusts the amber score and the volume of real reviews. Chose Hwahae because it decodes ingredients she can't parse on the box.
+**이서연, 26, 서울.** Checks every new product's ingredient list and Hwahae rating before buying. Distrusts brand marketing; trusts the score and the volume of real reviews.
 
-**박지호, 33, 경기.** Sensitive, acne-prone skin. Relies on skin-type-tailored rankings ("내 피부에 꼭 맞는 제품 랭킹") to avoid trial-and-error. Values that the interface is calm and data-first rather than a hard-sell beauty funnel.
+**박지호, 33, 경기.** Sensitive, acne-prone skin. Relies on skin-type rankings ("내 피부에 꼭 맞는 제품 랭킹") to avoid trial and error, and values a calm, data-first interface.
 
-**최유진, 21, 부산.** A student following age-band recommendations ("나이대별 추천") and rising rankings to find affordable products. Appreciates the fast, scannable card grid and that imagery — not ads — leads the page.
+**Mai, 24, Ho Chi Minh City.** Follows K-beauty and reads Korean users' reviews through the global web before ordering. Needs the ranking and review layout to read without Korean.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed on the three captured pages; nothing else is specified here.
+
+| State | Observation |
 |---|---|
-| **Empty (no ranking / search results)** | Soft `#f7f7f7` canvas. A single Ink (`#000000`) line explaining no matching products, with a quiet path to broaden filters. No illustration clutter. |
-| **Empty (saved / wishlist none yet)** | Faint (`#999999`) single line: nothing saved yet, plus a route back to rankings. Calm and honest. |
-| **Loading (ranking fetch)** | Skeleton cards on white `#ffffff` at final 16px-radius dimensions, soft pulse — no heavy shimmer, consistent with the near-flat system. |
-| **Loading (image carousel)** | Image-count pill (`rgba(0, 0, 0, 0.4)`, white text) holds position while the next image loads. |
-| **Error (load failed)** | Inline message in Ink (`#000000`) with a plain-language explanation and a retry — never a bare "오류가 발생했습니다". |
-| **Error (form validation)** | Field-level message below the input describing what's valid, not just "필수". |
-| **Success (review submitted / saved)** | Brief inline confirmation in a calm tone; next-step detail linked below. No celebratory emoji. |
-| **Skeleton** | White `#ffffff` blocks at final dimensions, 16px radius, soft pulse. |
-| **Disabled** | Faint (`#999999`) text on reduced-opacity surface; turquoise actions fade rather than turn grey, to preserve the brand read. |
+| **Selected navigation** | The current section's link computes 15px / 600; the others 400. Colour stays `#111111`. |
+| **Hover and pressed (awards outline button)** | Background `#ffffff` → `#f7f7f7` on both sibling buttons. |
+| **Language selector hover** | border-color changes to `#111111` while the border width is 0px — no visible change. |
+| **Disabled search field** | The header field is disabled on home and computes `#aaaaaa`; it acts as an entry to search. |
+| **Notice layer** | A dismissible notice (`공지 닫기`) and banner (`배너 닫기`) sat over home at load; the collector closed them before measuring. |
+
+Focus rings, error, empty, loading and success treatments were not captured and are not described.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 120ms | Hover, chip press, focus |
-| `motion-standard` | 200ms | Card / section reveal, carousel slide, sheet |
-| `motion-slow` | 320ms | Page-level transitions |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — cards, sheets, carousels |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions |
-
-**Motion rules**: Motion is functional and quiet — consistent with the near-flat, content-first aesthetic. Cards and ranking rows fade-in from below at `motion-standard / ease-enter`; carousels slide at the same timing; chips respond to press with a subtle scale/opacity shift. No bounce or spring — a trust-and-evidence product signals steadiness, not playfulness. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant; the product stays fully functional.
+The collector reads computed style, not animation, so no duration or easing is measured. Class names hint at motion without timing it: the 29 × 29 home `h1` carries `transition-[top] duration-300`, and the dark block button's class list includes a transition. Treat motion as unspecified rather than borrowing values from elsewhere, and honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-26) via playwright getComputedStyle on two brand-owned surfaces:
-- https://www.hwahae.co.kr — Pretendard Variable; canvas rgb(247,247,247) #f7f7f7 / white cards;
-  black #000000 headings, #111111 nav; amber rgb(255,170,60) #ffaa3c rating stars (most-present accent);
-  teal rgb(0,165,170) #00a5aa; blue rgb(70,125,255) #467dff; coral rgb(255,85,85) #ff5555;
-  pale-mint rgb(238,251,251) #eefbfb; radii 8px/16px/4px/99999px/50%; card shadow rgba(0,0,0,0.08) 0px 2px 8px;
-  hairline ring rgb(232,232,232) 0px 0px 0px 1px; utility classes namespaced hds- (Hwahae Design System).
-- https://blog.hwahae.co.kr/ — Spoqa Han Sans; body rgb(33,37,41) #212529; H3 32px/700/-1px/46px;
-  live brand turquoise rgb(34,211,214) #22d3d6; card radius 20px.
-- Logo/OG (https://static.hwahae.co.kr/og/OG_1200.png) — turquoise flower mark sampled #00d5ce / #00d6cf / #00dad4
-  with black "hwahae" wordmark on pale-mint background.
-
-Token-level claims (§1-9) are sourced from this live inspection.
-
-Voice samples (§10) are verbatim from live surfaces (homepage title/section, official tech blog post title).
-
-Brand narrative (§11) is sourced from Hwahae's official product-design team tech blog post
-"사용 가능한 진짜 디자인 시스템을 만드는 여정" (https://blog.hwahae.co.kr/all/tech/13236, 2023-08-03):
-2013 founding to solve cosmetics information asymmetry; growth into a full beauty platform; January 2023
-design-system adoption (HDS, Foundation→Components→Templates, Figma + Storybook). These are brand-stated facts
-from that post; broader market-position claims are general public knowledge, not separately quoted.
-
-Personas (§13) are fictional archetypes informed by publicly observable Hwahae user segments
-(Korean beauty shoppers comparing ingredients and reviews). Names are illustrative; they do not refer to real people.
-
-Interpretive claims (e.g., "imagery carries color, chrome stays quiet", "amber is the honest trust signal")
-are editorial readings connecting Hwahae's observed design to its decoding-cosmetics positioning, not directly
-quoted Hwahae statements.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/hwahae.json (capturedAt 2026-09-30T06:12:41.923Z), deterministic collector, 1440x900, logged out, three public pages: home, /rankings, /awards/home (redirected to /awards/home/2026).
+- §1 and §11 company facts: blog.hwahae.co.kr/all/tech/13236 (2023-08-03, product-design team) and blog.hwahae.co.kr/all/newsroom/news/15569 (2026-06-09 newsroom). Both opened 2026-09-30.
+- June 2026 values not re-observed are recorded in .verification.md as history, not tokens.
+- Personas are fictional archetypes. Interpretive readings (e.g. "imagery carries colour") are editorial.
 -->

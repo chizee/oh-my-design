@@ -5,456 +5,467 @@ display_name_kr: 레몬베이스
 country: KR
 category: saas
 homepage: "https://www.lemonbase.com"
-primary_color: "#328af6"
+primary_color: "#ffffff"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=lemonbase.com&sz=128"
-verified: "2026-06-26"
+verified: "2026-09-30"
 added: "2026-06-26"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: marketing, url: "https://lemonbase.com/", inspected: "2026-09-30" }
+    - { id: surface-2, kind: marketing-pricing, url: "https://lemonbase.com/pricing", inspected: "2026-09-30" }
+    - { id: surface-3, kind: marketing-inquiry, url: "https://lemonbase.com/products/inquiry", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://lemonbase.com/", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://lemonbase.com/pricing", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://lemonbase.com/products/inquiry", captured: "2026-09-30" }
+    - { id: performance-context, kind: product-surface, url: "https://lemonbase.com/products/performance", captured: "2026-09-30" }
+    - { id: survey-context, kind: product-surface, url: "https://lemonbase.com/products/hr-survey", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &c6 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-09-30" }
+    "tokens.colors.canvas": &home { surface_id: home, source_id: surface-home, method: computed-style, captured: "2026-09-30" }
+    "tokens.colors.on-dark": *home
+    "tokens.colors.action-ink": &c6l { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.muted": *home
+    "tokens.colors.faint": *home
+    "tokens.colors.footer-link": &c18 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"18\"]", captured: "2026-09-30" }
+    "tokens.typography.family.display": *home
+    "tokens.typography.family.body": *home
+    "tokens.typography.family.heading": *home
+    "tokens.typography.hero.size": *home
+    "tokens.typography.hero.weight": *home
+    "tokens.typography.hero.lineHeight": *home
+    "tokens.typography.hero.tracking": *home
+    "tokens.typography.hero.use": *home
+    "tokens.typography.section.size": *home
+    "tokens.typography.section.weight": *home
+    "tokens.typography.section.lineHeight": *home
+    "tokens.typography.section.use": *home
+    "tokens.typography.subsection.size": &pricing { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, captured: "2026-09-30" }
+    "tokens.typography.subsection.weight": *pricing
+    "tokens.typography.subsection.lineHeight": *pricing
+    "tokens.typography.subsection.use": *pricing
+    "tokens.typography.body.size": *home
+    "tokens.typography.body.weight": *home
+    "tokens.typography.body.lineHeight": *home
+    "tokens.typography.body.use": *home
+    "tokens.typography.action-lg.size": *c6l
+    "tokens.typography.action-lg.weight": *c6l
+    "tokens.typography.action-lg.lineHeight": *c6l
+    "tokens.typography.action-lg.use": *c6l
+    "tokens.spacing.action-y": &c5 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-09-30" }
+    "tokens.spacing.action-x": *c5
+    "tokens.spacing.action-lg-y": *c6
+    "tokens.spacing.action-lg-x": *c6
+    "tokens.spacing.pill-y": &c12 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-09-30" }
+    "tokens.spacing.pill-x": *c12
+    "tokens.spacing.nav": &c2 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-09-30" }
+    "tokens.rounded.nav": *c2
+    "tokens.rounded.action": *c5
+    "tokens.rounded.action-lg": *c6
+    "tokens.rounded.pill": *c12
+    "tokens.rounded.circle": &c15 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-09-30" }
+    "tokens.components.hero-primary-action.type": *c6
+    "tokens.components.hero-primary-action.bg": *c6
+    "tokens.components.hero-primary-action.fg": *c6l
+    "tokens.components.hero-primary-action.radius": *c6
+    "tokens.components.hero-primary-action.padding": *c6
+    "tokens.components.hero-primary-action.size": *c6
+    "tokens.components.hero-primary-action.font": *c6l
+    "tokens.components.hero-primary-action.states": *c6
+    "tokens.components.hero-primary-action.use": *c6
+    "tokens.components.hero-ghost-action.type": &c7 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-09-30" }
+    "tokens.components.hero-ghost-action.bg": *c7
+    "tokens.components.hero-ghost-action.fg": *c6l
+    "tokens.components.hero-ghost-action.radius": *c7
+    "tokens.components.hero-ghost-action.padding": *c7
+    "tokens.components.hero-ghost-action.size": *c7
+    "tokens.components.hero-ghost-action.font": *c6l
+    "tokens.components.hero-ghost-action.states": *c7
+    "tokens.components.hero-ghost-action.use": *c7
+    "tokens.components.header-primary-action.type": *c5
+    "tokens.components.header-primary-action.bg": *c5
+    "tokens.components.header-primary-action.fg": *c6l
+    "tokens.components.header-primary-action.radius": *c5
+    "tokens.components.header-primary-action.padding": *c5
+    "tokens.components.header-primary-action.size": *c5
+    "tokens.components.header-primary-action.font": *c6l
+    "tokens.components.header-primary-action.states": *c5
+    "tokens.components.header-primary-action.use": *c5
+    "tokens.components.section-ghost-link.type": &c8 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-09-30" }
+    "tokens.components.section-ghost-link.bg": *c8
+    "tokens.components.section-ghost-link.fg": *c6l
+    "tokens.components.section-ghost-link.radius": *c8
+    "tokens.components.section-ghost-link.padding": *c8
+    "tokens.components.section-ghost-link.size": *c8
+    "tokens.components.section-ghost-link.font": *c6l
+    "tokens.components.section-ghost-link.states": *c8
+    "tokens.components.section-ghost-link.use": *c8
+    "tokens.components.nav-link.type": *c2
+    "tokens.components.nav-link.bg": *c2
+    "tokens.components.nav-link.fg": *c6l
+    "tokens.components.nav-link.radius": *c2
+    "tokens.components.nav-link.padding": *c2
+    "tokens.components.nav-link.size": *c2
+    "tokens.components.nav-link.font": *c6l
+    "tokens.components.nav-link.hover": &c2h { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]::state-hover", captured: "2026-09-30" }
+    "tokens.components.nav-link.states": *c2h
+    "tokens.components.nav-link.use": *c2
+    "tokens.components.pill-segment.type": *c12
+    "tokens.components.pill-segment.bg": *c12
+    "tokens.components.pill-segment.fg": *c6l
+    "tokens.components.pill-segment.radius": *c12
+    "tokens.components.pill-segment.padding": *c12
+    "tokens.components.pill-segment.size": *c12
+    "tokens.components.pill-segment.font": *c6l
+    "tokens.components.pill-segment.states": *c12
+    "tokens.components.pill-segment.use": *c12
+    "tokens.components.carousel-arrow.type": *c15
+    "tokens.components.carousel-arrow.bg": *c15
+    "tokens.components.carousel-arrow.fg": *c15
+    "tokens.components.carousel-arrow.border": *c15
+    "tokens.components.carousel-arrow.radius": *c15
+    "tokens.components.carousel-arrow.size": *c15
+    "tokens.components.carousel-arrow.states": &c14 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"14\"]", captured: "2026-09-30" }
+    "tokens.components.carousel-arrow.use": *c15
+    "tokens.components.footer-link.type": *c18
+    "tokens.components.footer-link.fg": *c18
+    "tokens.components.footer-link.font": *c18
+    "tokens.components.footer-link.height": *c18
+    "tokens.components.footer-link.hover": &c18h { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"18\"]::state-hover", captured: "2026-09-30" }
+    "tokens.components.footer-link.states": *c18h
+    "tokens.components.footer-link.use": *c18
+    "tokens.components.inquiry-text-field.type": &i2 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-09-30" }
+    "tokens.components.inquiry-text-field.bg": *i2
+    "tokens.components.inquiry-text-field.fg": *i2
+    "tokens.components.inquiry-text-field.radius": *i2
+    "tokens.components.inquiry-text-field.padding": *i2
+    "tokens.components.inquiry-text-field.size": *i2
+    "tokens.components.inquiry-text-field.font": *i2
+    "tokens.components.inquiry-text-field.states": &ierr { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-interaction-capture=\"form-error-0-0\"]", captured: "2026-09-30" }
+    "tokens.components.inquiry-text-field.use": *i2
+    "tokens.components.inquiry-select.type": &i3 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-09-30" }
+    "tokens.components.inquiry-select.bg": *i3
+    "tokens.components.inquiry-select.fg": *i3
+    "tokens.components.inquiry-select.radius": *i3
+    "tokens.components.inquiry-select.padding": *i3
+    "tokens.components.inquiry-select.size": *i3
+    "tokens.components.inquiry-select.font": *i3
+    "tokens.components.inquiry-select.states": *ierr
+    "tokens.components.inquiry-select.use": *i3
+    "tokens.components.inquiry-submit.type": &i11 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"11\"]", captured: "2026-09-30" }
+    "tokens.components.inquiry-submit.bg": *i11
+    "tokens.components.inquiry-submit.fg": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::p", captured: "2026-09-30" }
+    "tokens.components.inquiry-submit.radius": *i11
+    "tokens.components.inquiry-submit.padding": *i11
+    "tokens.components.inquiry-submit.size": *i11
+    "tokens.components.inquiry-submit.font": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::p", captured: "2026-09-30" }
+    "tokens.components.inquiry-submit.states": *i11
+    "tokens.components.inquiry-submit.use": *i11
 tokens:
-  source: live-extract
-  extracted: "2026-06-26"
-  note: "primary = live CTA blue (#328af6) used for 도입 문의 across home + pricing; consult-green (#469f68) is the secondary action on pricing; purple/yellow/pink are tinted feature-icon accents only. Headings near-black navy (#1a2128); shadow-light flat system."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
-    primary: "#328af6"
-    primary-tint: "#edf5ff"
-    consult-green: "#469f68"
-    accent-purple: "#5d3dd5"
-    accent-yellow: "#ffd750"
-    accent-pink: "#c7317b"
-    ink: "#1a2128"
-    body: "#4c5967"
+    primary: "#ffffff"
+    canvas: "#111111"
+    on-dark: "#fafafa"
+    action-ink: "#1a2128"
     muted: "#677583"
     faint: "#cfd3d8"
-    hairline: "#e2e5e9"
-    canvas: "#ffffff"
-    surface: "#f1f5f9"
-    surface-alt: "#f9f9f9"
-    dark: "#2c2c38"
-    on-primary: "#ffffff"
+    footer-link: "#858585"
   typography:
-    family: { display: "Pretendard Bold", body: "Pretendard Regular", accent: "Manrope" }
-    display-hero: { size: 48, weight: 700, lineHeight: 1.30, use: "Hero headline, Pretendard Bold" }
-    section:      { size: 44, weight: 700, lineHeight: 1.40, use: "Pricing/section title, Pretendard Bold" }
-    subsection:   { size: 36, weight: 700, lineHeight: 1.44, use: "Feature section heads, Pretendard Bold" }
-    card-head:    { size: 28, weight: 700, lineHeight: 1.40, tracking: -0.56, use: "Card / promo heading, Pretendard" }
-    body:         { size: 16, weight: 400, lineHeight: 1.50, use: "Reading text, links, Pretendard Regular" }
-    ui:           { size: 14, weight: 700, lineHeight: 1.50, use: "Button / CTA label, Pretendard Bold" }
-    caption:      { size: 12, weight: 400, lineHeight: 1.50, use: "Nav items, small UI labels" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 24, xl: 32, xxl: 48, section: 64 }
-  rounded: { xs: 6, sm: 8, md: 12, lg: 16, xl: 24, pill: 36 }
-  shadow:
-    ambient: "rgba(0,0,0,0.08) 0px 8px 36px 0px"
-    soft: "rgba(0,0,0,0.04) 0px 12px 36px 0px"
-    tight: "rgba(0,0,0,0.08) 0px 1px 24px 0px"
+    family: { display: "Onest", body: "Pretendard Regular", heading: "Pretendard Bold" }
+    hero: { size: 56, weight: 700, lineHeight: 1.3, tracking: -1.68, use: "Page headline (h1) on home and pricing, Onest" }
+    section: { size: 42, weight: 700, lineHeight: 1.21, use: "Home feature heading (h2), Pretendard Bold" }
+    subsection: { size: 35, weight: 700, lineHeight: 1.4, use: "Heading (h3) on pricing, home and the inquiry page, Pretendard Bold" }
+    body: { size: 14, weight: 400, lineHeight: 1.57, use: "Running text (p) on all three pages, Pretendard Regular" }
+    action-lg: { size: 18, weight: 700, lineHeight: 1.56, use: "Hero action label, Pretendard Bold" }
+  spacing: { action-y: 16, action-x: 16, action-lg-y: 16, action-lg-x: 20, pill-y: 8, pill-x: 12, nav: 8 }
+  rounded: { nav: 6, action: 8, action-lg: 12, pill: 100, circle: 999 }
   components:
-    button-primary: { type: button, bg: "#328af6", fg: "#ffffff", radius: "8px", padding: "0 16px", height: "40px", font: "14px / 700 Pretendard Bold", use: "Primary CTA 도입 문의, hover darken" }
-    button-consult: { type: button, bg: "#469f68", fg: "#ffffff", radius: "8px", padding: "16px", font: "14px / 700 Pretendard Bold", use: "Secondary consult CTA 상담 문의 on pricing" }
-    button-neutral: { type: button, bg: "#f1f5f9", fg: "#1a2128", radius: "8px", padding: "0 16px", height: "40px", font: "14px / 700 Pretendard Bold", use: "Neutral header button 로그인" }
-    nav-link: { type: tab, fg: "#1a2128", font: "12px / 400 Pretendard", active: "text #328af6", use: "Top nav item 가격 / 제품" }
-    card-elevated: { type: card, bg: "#ffffff", radius: "12px", shadow: "rgba(0,0,0,0.08) 0px 8px 36px", use: "Feature / customer-logo card, soft ambient shadow, no border" }
-    card-tint: { type: card, bg: "#f1f5f9", radius: "24px", use: "Tinted feature container on grey band" }
-    badge-accent: { type: badge, bg: "#edf5ff", fg: "#328af6", radius: "8px", padding: "4px 8px", font: "12px / 700 Pretendard Bold", use: "Label / category chip (e.g. AI TRENDS, report tag)" }
+    hero-primary-action: { type: button, bg: "#ffffff", fg: "#1a2128", radius: "12px", padding: "16px 20px", size: "142px x 60px", font: "18px / 700 / 28.08px Pretendard Bold", states: "rest on home captures 6 and 16 and pricing capture 16; the hover frame recorded no change; the pressed frame's #ff0000 text and border are Chrome's default active-link colour on the a container (the label is a child p that keeps #1a2128) and its 0.996-alpha fill is a transition frame, so no hover or pressed value is declared", use: "White hero and closing-band action (a) at home::[data-omd-capture=\"6\"], 142 x 60; the label is a child p, #1a2128 18px / 700 / 28.08px Pretendard Bold" }
+    hero-ghost-action: { type: button, bg: "transparent", fg: "#fafafa", radius: "12px", padding: "16px", size: "145px x 60px", font: "18px / 700 / 28.08px Pretendard Bold", states: "rest on home captures 7 and 17 and pricing capture 17; hover recorded no change and the pressed frame shows only the container's default active-link colour, so no state value is declared", use: "Transparent companion to the white hero action at home::[data-omd-capture=\"7\"], 145 x 60, label a child p in #fafafa; the computed border is 0px and the served HTML draws a 1px border through Framer border variables outside the captured properties, so no border is claimed" }
+    header-primary-action: { type: button, bg: "#ffffff", fg: "#1a2128", radius: "8px", padding: "16px", size: "114px x 40px", font: "14px / 400 / 21.98px Pretendard Bold", states: "rest on home capture 5 and pricing captures 5 and 6; the home hover frame holds a 0.98-alpha fill (a transition frame) while pricing capture 5 records no hover change, so no hover is declared; pressed shows only the container's default active-link colour", use: "Global navigation white action (a) at home::[data-omd-capture=\"5\"], 114 x 40 (111 x 40 on pricing capture 6); the label is a child p in #1a2128, Pretendard Bold at a computed weight of 400" }
+    section-ghost-link: { type: button, bg: "transparent", fg: "#fafafa", radius: "8px", padding: "16px", size: "96px x 40px", font: "14px / 400 / 21.98px Pretendard Bold", states: "rest on home captures 8-10 and pricing captures 7-10 (123 x 40 and 118 x 40 there); hover recorded no change, and the pressed frame is the container's default active-link colour with a near-transparent alpha tween, so no state is declared", use: "Transparent section link at home::[data-omd-capture=\"8\"], 96 x 40; the label is a child p in #fafafa" }
+    nav-link: { type: tab, bg: "transparent", fg: "#f1f5f9", radius: "6px", padding: "8px", size: "40px x 38px", font: "14px / 400 / 21.98px Pretendard Regular", hover: "bg #1c1c1c", states: "hover fill #1c1c1c recorded on home and on pricing (capture 2 on both, a cross-surface match), and the pressed frame carries the same opaque fill, so the transition had finished before mousedown; the pressed frame's #ff0000 text is the container's default active-link colour, not a label change", use: "Short global navigation link (a) at home::[data-omd-capture=\"2\"], 40 x 38; the label is a child p in #f1f5f9" }
+    pill-segment: { type: button, bg: "transparent", fg: "#677583", radius: "100px", padding: "8px 12px", size: "88px x 38px", font: "14px / 400 / 21.98px Pretendard Bold", states: "three sibling buttons on home and pricing (captures 11-13): capture 11 records a #ffffff fill with a #121412 label while 12 and 13 are transparent with #677583 labels; no aria-selected or aria-pressed was recorded, so the white one is described as a variant, not a selected state; hover and pressed frames recorded no change", use: "Pill segment button at home::[data-omd-capture=\"12\"], 88 x 38 (the white variant is 85 x 38); labels are child p nodes" }
+    carousel-arrow: { type: button, bg: "rgba(20, 20, 20, 0.9)", fg: "#ffffff", border: "1px #2e2e2e", radius: "999px", size: "40px x 40px", states: "rest on capture 15 (home, pricing) and capture 1 (inquiry); capture 14 (and inquiry capture 0) carries the disabled attribute with the same fill, border and colour, and opacity is not among the captured properties; hover and pressed recorded no change", use: "Circular previous/next control (button, icon only) at home::[data-omd-capture=\"15\"], 40 x 40" }
+    footer-link: { type: listItem, fg: "#858585", font: "14px / 400 / 21.98px Pretendard Regular", height: "16px", hover: "fg #fafafa", states: "hover #fafafa on all six probed links (captures 18-23) on home and on pricing, with the identical opaque value in the pressed frame, so the transition had settled; links 24-46 lie beyond the collector's first 24 probed controls and carry no frame", use: "Footer text link (a.framer-text) at home::[data-omd-capture=\"18\"]; 29 links on home and on pricing" }
+    inquiry-text-field: { type: input, bg: "transparent", fg: "#fafafa", radius: "0px", padding: "0px", size: "452px x 24px", font: "14px / 400 / 16.8px Pretendard Regular", states: "rest on four fields (text, text, email, tel: captures 2, 4, 6, 7); the pressed frame shifts padding to 24px 0px 8px because mousedown focuses the field, so it is a focus effect and is not declared; after reportValidity() only the first field shows that shift (it receives focus) and the others record no change, so no error styling is declared", use: "Inquiry form text field at surface-3::[data-omd-capture=\"2\"] on the #111111 page" }
+    inquiry-select: { type: input, bg: "transparent", fg: "#8a8f98", radius: "0px", padding: "14px", size: "466px x 52px", font: "14px / 400 / 16.8px Pretendard Regular", states: "rest on three selects (captures 3, 5, 8); the pressed frame's 24px 14px 8px padding follows focus and is not declared, and the reportValidity() pass recorded no change", use: "Inquiry form select at surface-3::[data-omd-capture=\"3\"]" }
+    inquiry-submit: { type: button, bg: "#ffffff", fg: "#1a2128", radius: "8px", padding: "0px", size: "480px x 48px", font: "14px / 400 / 21.98px Pretendard Bold", states: "rest; hover and pressed recorded no change; the button was never clicked", use: "Full-width inquiry submit button at surface-3::[data-omd-capture=\"11\"]; the label (제품 도입 문의하기) is a child p in #1a2128" }
   components_harvested: true
 ---
 
 # Design System Inspiration of Lemonbase
 
+> **A Korean performance-management platform that now presents itself on a dark canvas, with white actions and record-centred copy.**
+
 ## 1. Visual Theme & Atmosphere
 
-Lemonbase (레몬베이스) is a Korean HR SaaS for performance management — evaluation, goals/OKR, 1:1s, and engagement surveys — and its marketing site reads like a calm, confident enterprise product rather than a noisy growth-hack landing page. The canvas is pure white (`#ffffff`), segmented by a cool slate surface (`#f1f5f9`) and a warmer off-white (`#f9f9f9`) into airy, generously-spaced bands. Text sits in a deep near-black navy (`#1a2128`) for headings, never pure black, dropping through a measured cool-grey ladder — body slate (`#4c5967`), muted slate (`#677583`), faint grey (`#cfd3d8`) — that keeps dense HR copy readable without harshness. The separation device is the hairline (`#e2e5e9`) and flat tint, not heavy chrome.
+Lemonbase (레몬베이스) is a Korean HR platform run by Lemonbase Corp. The site footer names 대표이사 권민석 and an office in Seongdong-gu, Seoul. The product covers performance management, which its own product page frames as "목표부터 평가까지 성과관리를 더 공정하게" (fairer performance management from goals to evaluation), and engagement management, framed as "서베이로 시작하는 구성원 몰입관리" (member engagement that starts with a survey). Expert services sit alongside the software: consulting, leadership assessment, organization assessment and leadership education. There are also industry pages for logistics and mobility, retail, and smart manufacturing. The public story is about records rather than memory. The current home headline is "우리 조직에 지금 필요한 변화" (the change your organization needs now), and the feature headings promise that every performance record gathers in one place automatically and that evaluation and HR decisions rest on records, not recollection.
 
-The single saturated brand action color is a clear, friendly blue (`#328af6`), reserved almost exclusively for the primary "도입 문의" (Contact sales) CTA and active nav state, so the eye is trained to read that one blue as "the next step." On the pricing surface a confident consult-green (`#469f68`) appears as the secondary "상담 문의" action, and the system keeps a small festive accent set — feature-icon purple (`#5d3dd5`), the lemon-yellow signature (`#ffd750`), and a magenta-pink (`#c7317b`) — strictly for decorative tinted icon backgrounds and illustration, never for interactive chrome. Tinted action surfaces like the pale blue card wash (`#edf5ff`) carry labels and report chips. A dark slate (`#2c2c38`) anchors the occasional inverted block; CTA labels are white (`#ffffff` — `on-primary`).
+The current expression is dark and typographic. Every captured page sits on a `#111111` canvas with near-white `#fafafa` text. The page headline is set in Onest at 56px/700 with −1.68px tracking, and Korean feature headings are set in Pretendard Bold. Actions are white rectangles (`#ffffff`) carrying navy `#1a2128` labels: 12px radius at hero size, 8px in the header. Transparent companions sit beside them.
 
-Typographically the system is unmistakably Korean-premium: every headline runs in **Pretendard Bold** (loaded as a named bold family, rendering heavy at large sizes) — 48px on the hero, 44px on the pricing title, 36px on feature heads — with tight negative tracking (around -0.56px at 28px) projecting a steady, declarative confidence. Body and UI text drop to **Pretendard Regular** at a quiet 16px / weight 400, the de-facto Korean product font tuned for dense hangul legibility, with **Manrope** as a Latin/numeral companion. Depth is restrained: there are essentially no hard borders, only soft ambient shadows (`rgba(0,0,0,0.08) 0px 8px 36px`) under feature cards. Geometry is rounded but disciplined — 8px buttons, 12px cards, 24px feature containers, 36px carousel pills.
-
-**Key Characteristics:**
-- Single friendly blue (`#328af6`) reserved for the primary "도입 문의" CTA and active nav — the one "action" color
-- Consult-green (`#469f68`) as the dedicated secondary action on pricing ("상담 문의")
-- Pretendard Bold for all display headlines (heavy, declarative Korean-premium voice); Pretendard Regular 16px for body
-- Near-black navy (`#1a2128`) for headings instead of pure black — warm, trustworthy
-- Flat depth: hairlines (`#e2e5e9`) + tinted surfaces (`#f1f5f9`) + soft ambient `rgba(0,0,0,0.08)` shadows, never hard borders
-- Festive but disciplined accent set — purple (`#5d3dd5`), lemon-yellow (`#ffd750`), magenta-pink (`#c7317b`) — for decorative icon tints only
-- Pale blue wash (`#edf5ff`) for label / report chips on white
-- Disciplined rounded geometry — 8px buttons, 12px cards, 24px containers, 36px pills
+The visual system has recently changed. This catalogue's June 2026 snapshot recorded a white canvas, a `#328af6` blue action and a 48px Pretendard Bold hero. The 2026-09-30 capture records the dark canvas, the Onest headline and the white actions, and the served HTML carries a Framer build stamp of 2026-09-09. This reference records what changed, not why.
 
 ## Primary tasks
 
-- Roll out a structured evaluation cycle instead of spreadsheet reviews
-- Run quarterly 1:1s and goal check-ins in one place
-- Send an engagement survey out and collect what comes back
-- Get expert guidance alongside the software before you adopt it
-- Ask for a consultation from the pricing page
+- Run goal setting and evaluation in one flow, backed by accumulated performance records
+- Send a member-engagement survey and read the organization through its results
+- Compare plans on the pricing page before adopting the product
+- Request an introduction through the public inquiry form
+- Add expert support: consulting, leadership assessment, organization assessment, leadership education
 
-## 2. Color Palette & Roles
+## 2. Layout & Grid
 
-### Primary
-- **Lemonbase Blue** (`#328af6`): Primary brand and action color. The clear blue on the "도입 문의" CTA and active nav state — the system's single primary action.
-- **Blue Tint** (`#edf5ff`): Pale blue wash for label chips, report tags, and tinted cards sitting on white.
-- **Ink Navy** (`#1a2128`): Primary text and heading color. A very dark blue-black carrying warmth and enterprise trust — used instead of pure black.
+- **Canvas:** the page background is `#111111` on all three captured pages. The served HTML declares it outside any colour-scheme query (`html body { background: rgb(17, 17, 17); }`).
+- **Headline hierarchy:** the `h1` measures 56px/700/72.8px Onest in a 1200px-wide box on home. `h2` feature headings measure 42px/700/50.82px Pretendard Bold in 580px columns, and `h3` headings 35px/700/49px Pretendard Bold.
+- **Action spacing:** the header action uses 16px padding in a 40px-high box. The hero action uses 16px 20px in a 60px-high box. These are component measurements, not a general spacing scale.
+- **Boundary:** the capture records a 1440px desktop viewport only. No breakpoint, container rule or logged-in application shell was measured.
 
-### Secondary & Accent
-- **Consult Green** (`#469f68`): Secondary action color for the "상담 문의" CTA on the pricing page; also a tinted feature-icon accent.
-- **Accent Purple** (`#5d3dd5`): Decorative feature-icon accent (tinted backgrounds), never interactive chrome.
-- **Lemon Yellow** (`#ffd750`): The brand's namesake signature accent — illustration and highlight pops.
-- **Accent Pink** (`#c7317b`): Magenta accent for decorative icons and illustration variety.
+## 3. Color & Typography
 
-### Neutral & Surface
-- **Pure White** (`#ffffff`): Page background, white card surfaces, and CTA label text (`on-primary`).
-- **Surface Slate** (`#f1f5f9`): Cool-grey tinted surface for content cards, neutral buttons, and segmented bands.
-- **Surface Alt** (`#f9f9f9`): Warmer off-white for alternating section blocks.
-- **Hairline** (`#e2e5e9`): Thin dividers and card outlines — the primary separation device in the near-shadowless system.
-- **Dark Slate** (`#2c2c38`): Near-black surface for occasional inverted blocks and footers.
+### Color tokens
 
-### Text Hierarchy
-- **Ink Navy** (`#1a2128`): Primary text, headings, nav, strong labels.
-- **Body Slate** (`#4c5967`): Secondary body copy and descriptions.
-- **Muted Slate** (`#677583`): Tertiary text, captions, "더 알아보기" link labels, metadata.
-- **Faint Grey** (`#cfd3d8`): Disabled text, placeholder, lowest-emphasis labels.
+- `#ffffff`: the fill of every primary action (header, hero, inquiry submit). The action colour is white on a dark canvas, so `primary` is white.
+- `#111111`: the page canvas on all three pages.
+- `#fafafa`: dominant text on the dark canvas (feature headings, running text, ghost-action labels) and the footer-link hover colour.
+- `#1a2128`: labels on white actions.
+- `#677583`: secondary running text (38 paragraphs on home, 28 on pricing) and the unselected pill labels.
+- `#cfd3d8`: faint small text on home.
+- `#858585`: footer links at rest.
+- Component-local, recorded in §4 and not promoted to palette roles:
+  - `#1c1c1c`: navigation-link hover fill
+  - `#f1f5f9`: navigation-link label
+  - `#121412`: label of the white pill variant
+  - `#2e2e2e`: carousel-arrow border
+  - `#8a8f98`: select text
 
-## 3. Typography Rules
+Other colours are observed but not promoted. `#328af6` survives only as the text colour of five small paragraphs on home, and no longer fills any action. `#4fae85` (ten paragraphs) and `#f7ce36` (eight paragraphs) are text colours whose role was not established.
 
-### Font Family
-- **Display**: `Pretendard Bold` (with `Pretendard Bold Fallback`) — used for all headlines, CTA labels, and emphasis. Loaded as a named bold cut, it renders heavy even at nominal weight, giving headlines their declarative weight.
-- **Body**: `Pretendard Regular` (with `Pretendard Regular Fallback`) — the document default, used for body copy and dense UI text at weight 400.
-- **Accent**: `Manrope` — Latin/numeral companion for English words and figures.
+### Typography evidence classes
 
-### Hierarchy
+- **Live computed use, backed by loaded FontFaces:**
+  - `Pretendard Regular`: 364 observed uses across body, input, list and text.
+  - `Pretendard Bold`: 103 uses across `h2`, `h3` and action labels.
+  - `Onest`: 5 uses, the `h1` on home and pricing.
+  - `DM Sans` (30 uses, 9–10px text), `Inter` (8 uses, 24px figures on pricing), and `Pretendard Medium`, `SemiBold` and `ExtraBold` (small counts) are also loaded and used.
+  - The machine tokens name only Onest (display), Pretendard Regular (body) and Pretendard Bold (heading).
+- **Computed weight versus cut:** Pretendard is served as named cuts. Several labels compute `font-weight: 400` while rendering the `Pretendard Bold` family, and the tokens report both values as measured.
+- **Declared-only faces:** `Manrope`, `Pretendard Black`, `Inter Display`, `Inter Variable` and Framer's `… Placeholder` metric faces have `@font-face` declarations but zero visible uses. `Manrope` was a token in the June snapshot and is now declared only.
+- **Assets and licences:** the bundle records no font source URL for any face, so hosting and licence terms are not established in this reference.
+- **Product-app fonts:** the authenticated Lemonbase application was not observed, and its fonts are unresolved.
+- **System stack:** `sans-serif` (142 uses) appears on `a` and `button` containers whose visible labels are child `p` nodes. It is not a type choice.
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Hero | Pretendard Bold | 48px (3.00rem) | 700 | 1.30 | tight | Hero headline "고성과를 위한 변화" |
-| Section Heading | Pretendard Bold | 44px (2.75rem) | 700 | 1.40 | tight | Pricing/section title "가격 안내" |
-| Sub-section | Pretendard Bold | 36px (2.25rem) | 700 | 1.44 | tight | Feature section heads |
-| Card / Promo Head | Pretendard | 28px (1.75rem) | 700 | 1.40 | -0.56px | Card and promo headings |
-| Body | Pretendard Regular | 16px (1.00rem) | 400 | 1.50 | normal | Reading text, "더 알아보기" links |
-| Button / CTA | Pretendard Bold | 14px (0.88rem) | 700 | 1.50 | normal | CTA label ("도입 문의") |
-| Caption / Nav | Pretendard | 12px (0.75rem) | 400 | 1.50 | normal | Nav items, small UI labels |
+## 4. Components
 
-### Principles
-- **Bold display, light body**: Pretendard Bold carries every headline; Pretendard Regular 400 carries every paragraph. The weight contrast is the system's primary hierarchy signal.
-- **Tight tracking on headlines**: display sizes compress (around -0.56px at 28px); body text stays at normal tracking.
-- **Hangul-first sizing**: Body sits at a comfortable 16px — generous for hangul legibility, calm for information-rich HR layouts.
-- **Two fonts, two jobs**: Pretendard is the persuasive/branding and reading voice; Manrope handles Latin and numerals. They never swap roles.
+These are static computed-style observations from three public pages, with selector provenance. Labels on Framer links are child `p` nodes, so each label's colour and type come from that child, not the `a` container (which computes the browser default `#0000ee`, 12px). Hover and pressed values are declared only when both frames hold the same opaque value on more than one element or surface. Focus values are never taken from the bundle. The pressed frames' `#ff0000` is Chrome's default active-link colour on the container, and is never a brand state.
 
-## 4. Component Stylings
+### Hero actions
 
-### Buttons
-
-**Primary CTA (도입 문의)**
-- Background: `#328af6`
-- Text: `#ffffff`
-- Radius: 8px
-- Padding: 0px 16px
-- Height: 40px
-- Font: 14px Pretendard Bold weight 700
-- Hover: blue darkens
-- Use: Primary call-to-action across header, hero, and product sections — the system's single primary action
-
-**Consult CTA (상담 문의)**
-- Background: `#469f68`
-- Text: `#ffffff`
-- Radius: 8px
-- Padding: 16px
-- Font: 14px Pretendard Bold weight 700
-- Use: Secondary consult action on the pricing page
-
-**Neutral Button (로그인)**
-- Background: `#f1f5f9`
-- Text: `#1a2128`
-- Radius: 8px
-- Padding: 0px 16px
-- Height: 40px
-- Font: 14px Pretendard Bold weight 700
-- Use: Low-emphasis header action (login)
-
-**Outline CTA (소개서 신청)**
+**White** (`hero-primary-action`)
 - Background: `#ffffff`
-- Text: `#1a2128`
-- Radius: 8px
-- Padding: 16px
-- Use: Tertiary white request action sitting alongside the primary CTA
+- Label: `#1a2128`, 18px / 700 / 28.08px Pretendard Bold
+- Radius: `12px`
+- Padding: `16px 20px`
+- Size: 142px × 60px
+- States: none declared. Hover recorded no change, and pressed shows only the container's active-link colour plus a 0.996-alpha transition frame.
+- Evidence: home captures 6 and 16, pricing capture 16
 
-### Cards & Containers
+**Transparent** (`hero-ghost-action`)
+- Background: transparent
+- Label: `#fafafa`, 18px / 700
+- Radius: `12px`
+- Padding: `16px`
+- Size: 145px × 60px
+- Border: the served HTML draws a 1px border through Framer variables that sit outside the captured properties, so no border is claimed.
 
-**Elevated Feature Card**
+### Header action
+
+**White** (`header-primary-action`)
 - Background: `#ffffff`
-- Radius: 12px
-- Shadow: `rgba(0,0,0,0.08) 0px 8px 36px 0px`
-- Use: Feature and customer-logo cards — soft ambient shadow, no border
+- Label: `#1a2128`, 14px Pretendard Bold (computed weight 400)
+- Radius: `8px`
+- Padding: `16px`
+- Size: 114px × 40px
+- States: hover is not declared. Home holds a 0.98-alpha transition frame while pricing records no change.
 
-**Tinted Container**
-- Background: `#f1f5f9`
-- Radius: 24px
-- Use: Tinted feature container on grey bands
+### Section link
 
-**Tight-Shadow Panel**
-- Background: `#ffffff`
-- Radius: 16px
-- Shadow: `rgba(0,0,0,0.08) 0px 1px 24px 0px`
-- Use: Pricing panel / inline elevated block
+**Transparent** (`section-ghost-link`)
+- Background: transparent
+- Label: `#fafafa`, 14px Pretendard Bold
+- Radius: `8px`
+- Padding: `16px`
+- Size: 96px × 40px
+- Instances: 123px × 40px and 118px × 40px on pricing
 
-### Badges
+### Navigation link
 
-**Accent Label Chip**
-- Background: `#edf5ff`
-- Text: `#328af6`
-- Radius: 8px
-- Padding: 4px 8px
-- Font: 12px Pretendard Bold weight 700
-- Use: Label / category chip (e.g. "AI TRENDS", report tags)
+**Default** (`nav-link`)
+- Background: transparent
+- Label: `#f1f5f9`, 14px / 400 / 21.98px Pretendard Regular
+- Radius: `6px`
+- Padding: `8px`
+- Size: 40px × 38px
+- Hover: background `#1c1c1c`. It was recorded on both home and pricing, and the pressed frame holds the same opaque fill.
 
-### Navigation
-- Background: `#ffffff`
-- Text: `#1a2128`
-- Font: 12px Pretendard weight 400
-- Active: blue `#328af6` text on the active item
-- Use: Top horizontal nav ("성과관리", "몰입관리", "가격", "리더십 진단")
+### Pill segment
 
-### Carousel Controls
-- Background: `rgba(0,0,0,0.2)`
-- Radius: 36px (full circle)
-- Height: 36px
-- Use: Previous/Next controls on the customer-logo and testimonial carousels
+**Default** (`pill-segment`)
+- Background: transparent
+- Label: `#677583`, 14px Pretendard Bold
+- Radius: `100px`
+- Padding: `8px 12px`
+- Size: 88px × 38px
+- Variant: one sibling records a `#ffffff` fill with a `#121412` label. Neither `aria-selected` nor `aria-pressed` was recorded, so it is a described variant, not a selected state.
+
+### Carousel arrow
+
+**Default** (`carousel-arrow`)
+- Background: `rgba(20, 20, 20, 0.9)`
+- Icon colour: `#ffffff`
+- Border: 1px `#2e2e2e`
+- Radius: `999px`
+- Size: 40px × 40px
+- Disabled: the disabled instance records the same fill, border and colour (opacity was not captured). It appears on all three pages.
+
+### Footer link
+
+**Default** (`footer-link`)
+- Text: `#858585`, 14px / 400 / 21.98px Pretendard Regular
+- Height: 16px
+- Hover: `#fafafa` on all six probed links on both home and pricing, with the pressed frame identical.
+- Instances: 29 links per page. Links beyond the first 24 probed controls carry no frame.
+
+### Inquiry form
+
+- **Text field** (`inquiry-text-field`):
+  - Style: transparent, `#fafafa` 14px / 400 / 16.8px Pretendard Regular, 452px × 24px, 0px padding
+  - Scope: four fields (text, text, email, tel)
+- **Select** (`inquiry-select`): transparent, `#8a8f98` text, 14px padding, 466px × 52px.
+- **Submit** (`inquiry-submit`): `#ffffff` fill, `#1a2128` label (제품 도입 문의하기), 8px radius, 480px × 48px. It was never clicked.
+- **No field state is declared.** The padding shift to `24px 0px 8px` happens when a field gains focus, and the `reportValidity()` pass recorded no colour or border change on any field.
 
 ---
 
-**Verified:** 2026-06-26 (omd:add-reference CREATE — Tier 1 live inspect, 2 surfaces)
-**Tier 1 sources:** https://www.lemonbase.com, https://www.lemonbase.com/pricing, https://lemonbase.com/blog/
-**Tier 2 sources:** getdesign.md/lemonbase — "No designs found" (0 files, checked live 2026-06-26); styles.refero.design — Lemonbase not indexed
+**Verified:** 2026-09-30
+**Tier 1 sources:** `https://lemonbase.com/`, `https://lemonbase.com/pricing`, `https://lemonbase.com/products/inquiry` (public marketing, computed styles); `https://lemonbase.com/products/performance`, `https://lemonbase.com/products/hr-survey` (first-party product context)
+**Tier 2 sources:** not attempted in this session (see `.verification.md`)
 **Conflicts unresolved:** none
 
-## 5. Layout Principles
+The June 2026 snapshot's tokens are superseded wherever the 2026-09-30 capture contradicts them or cannot support them. Removed:
+- the white canvas and `#328af6` action
+- `#469f68`, `#edf5ff`, the slate surfaces and the three purple/yellow/pink accents
+- the 48/44/36/28px Pretendard scale
+- the three-step shadow scale
+- Manrope as an accent family
+- the invented hover darkening, loading, empty and error states
+- the motion tokens
 
-### Spacing System
-- Base unit: 8px
-- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 48px, 64px
-- Notable: CTA buttons use a comfortable 16px padding; sections breathe with 48–64px vertical rhythm
+## 5. Iconography
 
-### Grid & Container
-- Centered single-column hero with the 48px Pretendard Bold headline as the anchor
-- Customer logos and testimonials arranged in horizontal carousels with circular prev/next controls
-- Feature sections alternate between white (`#ffffff`), slate (`#f1f5f9`), and off-white (`#f9f9f9`) full-width bands
-- Cards use 12px radius (elevated) and 24px radius (tinted containers) to group related features
+The carousel arrows and navigation carry icon-only controls, but the capture records no icon font, icon catalogue or sizing rule. No icon token is promoted.
 
-### Whitespace Philosophy
-- **Breathing room over density**: despite being an information-rich HR product, the marketing surface is airy with generous vertical rhythm.
-- **Flat segmentation**: sections separate by background tint (`#f1f5f9` / `#f9f9f9` vs `#ffffff`) and hairlines, not by shadow weight.
-- **One action color**: the blue (`#328af6`) is rationed so each band has a single obvious next step.
+## 6. Imagery & Illustration
 
-### Border Radius Scale
-- Extra-small (6px): nav hover pills, small inner elements
-- Small (8px): buttons, badges — the interactive workhorse
-- Medium (12px): elevated feature cards
-- Large (16px): pricing panels
-- Extra-large (24px): tinted feature containers
-- Pill (36px): carousel controls, fully-round circles
+The home page renders product illustrations as HTML layers in the Framer page. The served markup contains layers such as `목표 칩` (goal chip) and small 9–10px text, and the loaded DM Sans and Inter faces appear in that small text. These depict the product rather than the marketing system, so their colours and type are not promoted to tokens.
 
-## 6. Depth & Elevation
+## 7. Motion
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, inline text, most surfaces |
-| Tint (Level 1) | `#f1f5f9` / `#f9f9f9` background shift | Card/section separation without elevation |
-| Hairline (Level 2) | `1px solid #e2e5e9` divider | Dividers and subtle outlines |
-| Ambient (Level 3) | `rgba(0,0,0,0.08) 0px 8px 36px 0px` | Elevated feature cards |
-| Soft (Level 4) | `rgba(0,0,0,0.04) 0px 12px 36px 0px` | Floating illustration panels |
+Some hover and pressed frames hold fractional-alpha fills (0.98 on the header action, 0.996 on the hero action), which shows that those controls animate between values. No duration or easing was recorded.
 
-**Shadow Philosophy**: Lemonbase is a near-flat system. Live inspection found most surfaces carry `box-shadow: none`, with elevation appearing only on feature cards as a soft, wide, low-opacity ambient shadow (`rgba(0,0,0,0.08) 0px 8px 36px`) and a tighter `rgba(0,0,0,0.08) 0px 1px 24px` variant on pricing panels. Depth and grouping are communicated primarily through flat tinted surfaces (`#f1f5f9`, `#f9f9f9`) and thin `#e2e5e9` hairlines. This is a deliberate modern-flat choice that keeps an enterprise HR UI feeling clean and calm rather than heavy. When emphasis is needed, the system reaches for the blue (`#328af6`) or a tinted accent, rarely for elevation.
+## 8. Accessibility
 
-## 7. Do's and Don'ts
+- The primary action pairs `#1a2128` on `#ffffff`, and running text pairs `#fafafa` or `#677583` on `#111111`.
+- The collector recorded no focus-visible, keyboard or screen-reader behaviour, and no field error styling. Implementations should supply an explicit focus indicator and field-level error treatment rather than infer them.
+- `#677583` on `#111111` is a lower-contrast pairing for 14px text and should be checked before reuse.
 
-### Do
-- Use Pretendard Bold for all display headlines — it's the brand's voice
-- Use Pretendard Regular weight 400 at 16px for body and reading text
-- Reserve blue (`#328af6`) for the primary "도입 문의" CTA and active nav — keep it the single "action" color
-- Use consult-green (`#469f68`) only for the secondary consult action on pricing
-- Use near-black navy (`#1a2128`) for headings instead of pure black
-- Separate sections with flat tinted surfaces (`#f1f5f9` / `#f9f9f9`) and `#e2e5e9` hairlines, not heavy borders
-- Use soft wide ambient shadows (`rgba(0,0,0,0.08) 0px 8px 36px`) for elevated feature cards
-- Keep the lemon-yellow (`#ffd750`), purple (`#5d3dd5`), and pink (`#c7317b`) accents for decorative icon tints only
+## 9. Content & Voice
 
-### Don't
-- Spread blue (`#328af6`) across many elements — it dilutes the single-action signal
-- Use the accent purple/yellow/pink for buttons or links — they are decorative only
-- Use pure black (`#000000`) for body text — reserve near-black navy `#1a2128`
-- Use hard 1px borders on cards — separate with hairlines and soft shadow instead
-- Set headlines in a light weight — display is always Pretendard Bold
-- Use Manrope for hangul headlines — Pretendard owns display; Manrope is Latin/numerals only
-- Use heavy dark drop shadows — elevation stays soft, wide, and low-opacity
-
-## 8. Responsive Behavior
-
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column, hero headline compresses, carousels swipe |
-| Tablet | 640-1024px | Moderate padding, 2-up feature cards |
-| Desktop | 1024-1440px | Full layout, centered hero, multi-column feature bands |
-
-### Touch Targets
-- Primary and consult CTAs at 40–44px height for comfortable tapping
-- Carousel controls at 36px circular targets
-- Nav items spaced within a comfortable header band
-
-### Collapsing Strategy
-- Hero: 48px Pretendard Bold headline scales down on mobile, weight maintained
-- Customer/testimonial carousels: swipe on narrow viewports
-- Feature bands: multi-column → stacked single column
-- Tinted/white/off-white alternating sections maintain full-width treatment
-
-### Image Behavior
-- Feature illustrations and screenshots carry soft ambient shadow, consistent across sizes
-- Cards maintain 12px (elevated) / 24px (tinted) radius across breakpoints
-
-## 9. Agent Prompt Guide
-
-### Quick Color Reference
-- Primary CTA: Lemonbase Blue (`#328af6`)
-- Secondary/consult: Consult Green (`#469f68`)
-- Background: Pure White (`#ffffff`)
-- Tinted surface: Surface Slate (`#f1f5f9`) / Surface Alt (`#f9f9f9`)
-- Heading text: Ink Navy (`#1a2128`)
-- Body text: Body Slate (`#4c5967`)
-- Muted text: Muted Slate (`#677583`)
-- Faint / disabled: Faint Grey (`#cfd3d8`)
-- Hairline: `#e2e5e9`
-- Label chip: Blue Tint (`#edf5ff`)
-- Decorative accents: Purple (`#5d3dd5`), Lemon Yellow (`#ffd750`), Pink (`#c7317b`)
-- Dark surface: Dark Slate (`#2c2c38`)
-
-### Example Component Prompts
-- "Create a hero on white background. Headline at 48px Pretendard Bold, line-height 1.30, color #1a2128. Below it a blue primary CTA: #328af6 background, white #ffffff text, 8px radius, 0 16px padding, 40px height, 14px Pretendard Bold — '도입 문의'. Next to it a white outline request CTA with #1a2128 text."
-- "Design a feature card: white #ffffff background, 12px radius, no border, shadow rgba(0,0,0,0.08) 0px 8px 36px. Title 28px Pretendard Bold, letter-spacing -0.56px, #1a2128. Body 16px Pretendard Regular weight 400, #4c5967."
-- "Build a tinted band: #f1f5f9 background, full-width. Section title 36px Pretendard Bold, #1a2128. Tinted feature containers inside use #f1f5f9 with 24px radius. A label chip: #edf5ff background, #328af6 text, 8px radius, 4px 8px padding, 12px Pretendard Bold."
-- "Create top nav: white header. Pretendard 12px links, #1a2128 text, blue #328af6 on active. Blue '도입 문의' CTA right-aligned, 8px radius."
-
-### Iteration Guide
-1. Pretendard Bold for every headline; Pretendard Regular 16px for every paragraph
-2. Blue (`#328af6`) is the single action color — don't spread it; consult-green (`#469f68`) is pricing-only
-3. Near-flat — separate with `#f1f5f9` / `#f9f9f9` tint and `#e2e5e9` hairlines; soft wide shadows only on cards
-4. Rounded geometry — 8px buttons, 12px cards, 24px containers, 36px pills
-5. Text color is `#1a2128` navy, never pure black for body
-6. Tight tracking on headlines, normal on body
-7. Reserve lemon-yellow `#ffd750`, purple `#5d3dd5`, pink `#c7317b` for decorative icon tints
-
----
+The public copy frames HR work around records, fairness and organizational change. Performance is something recorded and analysed, not remembered. Engagement starts with a survey. Adoption is a conversation, with a "제품 도입 문의" (product adoption inquiry) request on every page.
 
 ## 10. Voice & Tone
 
-Lemonbase's voice is **clear, encouraging, and expert** — an HR partner that turns a heavy, politically-charged domain (evaluation, goals, feedback) into confident plain Korean. The hero line "고성과를 위한 변화, 필요한 솔루션을 한번에" ("Change for high performance — every solution you need, in one place") sets the register: outcome-framed, declarative, never gimmicky. Copy treats the reader as a capable HR leader who wants better outcomes, not a target to be pressured.
+**Voice adjectives:** evidence-minded · plain · organization-level
 
-| Context | Tone |
+| Context | Observed wording (served HTML, 2026-09-30) |
 |---|---|
-| Hero headlines | Outcome-framed, declarative. "고성과를 위한 변화, 필요한 솔루션을 한번에." Confident, not hype. |
-| Feature heads | Trust- and benefit-first. "구성원이 신뢰할 수 있는 평가", "어렵기만 한 성과관리, 이제는 쉽게". |
-| CTAs | Direct, low-pressure. "도입 문의", "상담 문의", "소개서 신청", "더 알아보기". |
-| Customer / social proof | Partnership-framed. "레몬베이스와 함께 더 높은 성과를 만들어가는 고객사". |
-| Expert/consulting copy | Calm authority. "신뢰할 수 있는 전문가와 함께 더 나은 성과를 만드세요". |
+| Page headline | "우리 조직에 지금 필요한 변화" |
+| Feature headings | "모든 성과의 기록이 자동으로 한 곳에", "쌓인 기록을 분석하여 사람과 조직이 보이도록", "기억이 아닌, 기록으로 근거있는 평가와 인사 결정", "설계부터 정착까지 하나의 솔루션으로" |
+| Product page titles | "목표부터 평가까지 성과관리를 더 공정하게", "서베이로 시작하는 구성원 몰입관리" |
+| Actions | "제품 도입 문의", "제품 도입 문의하기" |
 
-**Voice samples (verbatim from live surfaces):**
-- "고성과를 위한 변화, 필요한 솔루션을 한번에" — hero headline / page title (outcome-framed). *(verified live 2026-06-26)*
-- "구성원이 신뢰할 수 있는 평가" — feature heading (trust-first). *(verified live 2026-06-26)*
-- "어렵기만 한 성과관리, 이제는 쉽게" — feature heading (simplify promise). *(verified live 2026-06-26)*
-- "신뢰할 수 있는 전문가와 함께 더 나은 성과를 만드세요" — consulting section heading. *(verified live 2026-06-26)*
-
-**Forbidden register**: aggressive sales urgency, fear-based performance-management framing, undefined HR jargon left unexplained, exclamation-heavy hype.
+| Do | Don't |
+|---|---|
+| Ground claims in records and analysis. | Frame evaluation as judgement or surveillance. |
+| Speak to the organization and its members together. | Address only executives or only individual employees. |
+| Keep action labels literal ("도입 문의"). | Add urgency or promotional exclamation. |
 
 ## 11. Brand Narrative
 
-Lemonbase (레몬베이스) is a Korean HR-tech SaaS built around one premise: that performance management — historically an opaque, anxiety-inducing annual ritual — can become a continuous, trusted, and even motivating practice. The product spans evaluation (평가), goal/OKR management (목표관리), 1:1s, and engagement/HR surveys (몰입관리), with consulting services layered on top (leadership assessment 리더십 역량 진단, organization diagnosis 조직 진단, leadership education). The positioning stated across the site — "고성과를 위한 변화, 필요한 솔루션을 한번에" — frames the company as the single place an organization assembles the tools and expertise it needs to raise performance.
+Lemonbase's first-party pages present one platform that runs performance management (goals through evaluation) and engagement management (surveys), with expert services layered on top for organizations that want guidance while adopting it. The current home page puts that promise in three moves. Records collect automatically in one place. Analysis makes people and the organization visible. Evaluation and HR decisions rest on records instead of memory. The closing heading, "설계부터 정착까지 하나의 솔루션으로" (one solution from design to adoption), extends the promise from software to the whole rollout.
 
-The brand's stated promise is trust and ease: "구성원이 신뢰할 수 있는 평가" (evaluation employees can trust) and "어렵기만 한 성과관리, 이제는 쉽게" (performance management that was only ever hard — now made easy). Lemonbase positions itself as the customer's advocate inside a domain historically tilted toward top-down, compliance-driven HR, pairing software with "신뢰할 수 있는 전문가" (trusted experts) to help teams actually act on the data.
-
-What Lemonbase refuses, visible in its design: the heavy, intimidating chrome of legacy enterprise HR (no shadow-stacked cards, no institutional grey-on-grey density), and the fear-based framing of evaluation as judgment. What it embraces: a flat, calm, mobile-friendly interface; a single trustworthy blue; bold Pretendard headlines that speak plainly; and a small, friendly accent set — led by the lemon-yellow namesake — that keeps an HR product feeling approachable rather than punitive.
+The September 2026 site pairs that message with a quieter, darker frame than the June snapshot: a near-black canvas, white actions and large headline type.
 
 ## 12. Principles
 
-1. **Trust over judgment.** Evaluation should feel fair and transparent, not punitive. *UI implication:* calm navy text, generous spacing, and plain-language headings ("구성원이 신뢰할 수 있는 평가"); never alarmist red or dense compliance chrome.
-2. **One place, one next step.** The product consolidates scattered HR tools; the UI mirrors that with a single action color. *UI implication:* reserve the saturated blue (`#328af6`) for the primary CTA so the next step is never ambiguous.
-3. **Make the hard thing easy.** Performance management is intimidating; the interface decodes it. *UI implication:* simplify, label plainly, and keep surfaces airy and uncluttered.
-4. **Flat and calm.** Enterprise clarity beats decorative depth. *UI implication:* no hard borders; separate with tint and hairlines; reach for soft wide shadows only when a card must lift.
-5. **Bold where it persuades, calm where it informs.** *UI implication:* Pretendard Bold for headlines that motivate; Pretendard Regular 16px for content that explains.
-6. **Friendly, not frivolous.** The lemon-yellow and accent set add warmth, disciplined to decorative icon tints. *UI implication:* never let accent color leak into interactive chrome.
+1. **Let the canvas recede.** The measured system is dark (`#111111`) with near-white text, and colour is not used for emphasis.
+2. **White is the action.** Every primary action is a white fill with a navy label; transparent actions accompany it rather than compete.
+3. **Headlines carry the hierarchy.** A 56px Onest headline and 42px Pretendard Bold feature headings do the structural work.
+4. **Keep depicted product UI separate.** Colours and faces inside the page's HTML product illustrations are not marketing tokens.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable Lemonbase user segments (Korean HR leaders, people-team managers, team leads running evaluations), not individual people.*
+First-party pages address organizations and their people rather than named individuals. The stakeholder groups retained are:
 
-**한지영, 38, 서울.** People-team lead at a 300-person scale-up rolling out its first structured evaluation cycle. Distrusts spreadsheet-based reviews; values that employees can see the process as fair. Chose Lemonbase because the evaluation felt trustworthy ("신뢰할 수 있는 평가"), not like a top-down verdict.
+- **Organizations adopting the platform:** the inquiry and pricing pages address teams deciding on adoption.
+- **Leaders:** the leadership assessment and leadership education services address them directly.
+- **Members (구성원):** the engagement page title names them as the subject of engagement management.
+- **Industry teams:** logistics and mobility, retail, and smart-manufacturing pages address sector-specific buyers.
 
-**이도현, 34, 경기.** A team lead who runs quarterly 1:1s and goal check-ins. Appreciates that goal management and feedback live in one place instead of scattered across docs and chat. Likes that the interface is calm and quick rather than a dense HR console.
-
-**최수민, 45, 부산.** Head of HR at a manufacturing company exploring engagement surveys (몰입관리) and leadership assessment. Wants expert guidance alongside the software and a non-intimidating tool her managers will actually adopt. Trusts the brand's plain, partnership-framed tone.
+No named or demographic personas are invented.
 
 ## 14. States
 
-| State | Treatment |
-|---|---|
-| **Empty (no evaluations yet)** | White canvas. Single Ink Navy (`#1a2128`) line at body size explaining nothing has been set up, with one blue CTA to start. No illustration clutter. |
-| **Empty (no survey responses)** | Muted Slate (`#677583`) single line: nothing collected yet, plus a path to send the survey. Honest, calm. |
-| **Loading (dashboard fetch)** | Skeleton blocks on `#f1f5f9` tinted surface at final card dimensions, 12px radius. Soft pulse consistent with the near-flat system. |
-| **Loading (in-place refresh)** | Subtle blue (`#328af6`) progress affordance; previous values stay visible. |
-| **Error (action failed)** | Inline message in Ink Navy with a plain-language explanation and a retry. No bare "오류가 발생했습니다" — states what to do next. |
-| **Error (form validation)** | Field-level message below the input in a calm error tone; describes what's valid, not just "필수". |
-| **Success (cycle published)** | Brief inline confirmation in calm tone; next-step detail linked immediately below. No celebratory emoji. |
-| **Skeleton** | `#f1f5f9` blocks at final dimensions, 12px radius, soft pulse. |
-| **Disabled** | Faint Grey (`#cfd3d8`) text on reduced-opacity surface; blue actions fade rather than turn grey to preserve brand read. |
+- **Observed:**
+  - navigation-link hover (`#1c1c1c` background)
+  - footer-link hover (`#fafafa` text)
+  - the carousel arrow's `disabled` attribute, with unchanged fill, border and colour
+- **Not declared:**
+  - focus values (never taken from the bundle)
+  - field error styling (the validation pass recorded no change)
+  - the pressed frames' `#ff0000` browser default
+- **Not captured:** loading, empty, success and selected states.
 
 ## 15. Motion & Easing
 
-**Durations**:
+No duration, easing curve or reduced-motion behaviour was captured. The fractional-alpha frames in §7 show that transitions exist, and this reference does not invent their timing.
 
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 120ms | Hover, button press, focus |
-| `motion-standard` | 200ms | Card/section reveal, carousel slide, dropdown |
-| `motion-slow` | 320ms | Page-level transitions, hero reveal |
+## 16. Do's and Don'ts
 
-**Easings**:
+### Do
 
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — cards, sheets, carousel |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions |
+- Set actions as `#ffffff` fills with `#1a2128` labels on the `#111111` canvas.
+- Use Onest only for the page headline and Pretendard Regular/Bold for Korean text, as captured.
+- Keep hover declarations to the two measured cases (navigation fill `#1c1c1c`, footer text `#fafafa`).
+- Preserve the surface and selector provenance recorded in §4.
 
-**Motion rules**: Motion is functional and quiet — consistent with the calm, flat aesthetic. Customer-logo and testimonial carousels advance with a smooth `motion-standard / ease-standard` slide; cards fade-in from below at `motion-standard / ease-enter`. No bounce or spring — an enterprise HR product signals steadiness and trust, not playfulness. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant and carousels pause; the product remains fully functional.
+### Don't
 
-<!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
+- Reintroduce the June white canvas, the `#328af6` action, the accent trio or the shadow scale.
+- Treat the pressed frames' `#ff0000` as a brand pressed colour.
+- Promote colours or faces from the HTML product illustrations to marketing tokens.
+- Invent focus, error, loading or empty states.
 
-Tier 1 live inspect (2026-06-26) via global playwright getComputedStyle on:
-- https://www.lemonbase.com (homepage) — hero H1 "고성과를 위한 변화 / 필요한 솔루션을 한번에"
-  Pretendard Bold 48px color rgb(26,33,40) #1a2128; primary CTA "도입 문의" bg rgb(50,138,246)
-  #328af6 / white label rgb(255,255,255) Pretendard Bold 14px / radius 8px; H3 section heads 36px;
-  feature cards radius 12px shadow rgba(0,0,0,0.08) 0px 8px 36px; carousel controls bg rgba(0,0,0,0.2)
-  radius 36px. Accent set purple rgb(93,61,213) #5d3dd5, green rgb(70,159,104) #469f68, yellow
-  rgb(255,215,80) #ffd750, pink rgb(199,49,123) #c7317b; surface rgb(241,245,249) #f1f5f9.
-- https://www.lemonbase.com/pricing — H2 "가격 안내" 44px #1a2128; consult CTA "상담 문의" bg
-  rgb(70,159,104) #469f68; tight-shadow panel rgba(0,0,0,0.08) 0px 1px 24px; blue-tint card
-  rgb(237,245,255) #edf5ff.
-- https://lemonbase.com/blog/ — corroborated heading ink #1a2128, body #4c5967, muted #677583, and
-  primary blue #328af6; note the blog runs a separate CMS template (Ant Design rgb(24,144,255)), so
-  brand tokens are anchored on the marketing site + pricing only, NOT the blog CMS chrome.
+---
 
-Token-level claims (§1-9) are sourced from this live inspection (homepage + pricing).
-
-Voice samples (§10) are verbatim from the live homepage and consulting/feature sections
-(hero H1, feature H3s, page title meta).
-
-Brand narrative (§11): Lemonbase (레몬베이스) is a Korean HR-tech SaaS for performance management
-(평가 / 목표관리 / 1:1 / 몰입관리) plus consulting services (리더십 역량 진단 / 조직 진단 /
-리더십 교육). Product scope and positioning are directly observable from the live site nav and
-section copy; no specific founder names or founding dates are asserted here to avoid unverified
-claims.
-
-Personas (§13) are fictional archetypes informed by publicly observable Lemonbase user segments
-(Korean HR leaders, people-team managers, team leads). Names are illustrative; they do not refer
-to real people.
-
-Interpretive claims (e.g., "trust over judgment", "one place, one next step", "flat and calm as a
-rejection of legacy enterprise HR chrome") are editorial readings connecting Lemonbase's observed
-design and copy to its positioning, not directly sourced Lemonbase statements.
--->
+**Verified:** 2026-09-30
+**Pipeline:** omd:add-reference UPDATE (deterministic capture + first-party context reconcile)
+**Catalog position:** KR · saas · HR performance management

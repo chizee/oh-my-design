@@ -5,12 +5,12 @@
   "highlight": {
     "type": "palette",
     "tokens": {
-      "primary": "#00a39f",
-      "primary-deep": "#008485",
-      "primary-light": "#2dc396",
+      "primary": "#008485",
+      "nav-hover": "#009591",
       "canvas": "#ffffff",
-      "body": "#555555"
+      "body": "#555555",
+      "text-strong": "#333333"
     },
-    "label": "Hana Mint teal family — measured blue-green of Korea's trust banking"
+    "label": "Hana teal on a white, text-dense banking portal"
   }
 }

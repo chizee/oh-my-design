@@ -2,13 +2,13 @@
   "schema_version": 1,
   "purpose": "Freeze what each reference claims to have observed, and when, so that relabelling a source kind, deleting an expired source, or rewriting a capture date appears as a reviewable diff.",
   "generator": "web/scripts/build-evidence-ledger.mjs",
-  "references_with_verification_v2": 227,
-  "sources": 1308,
+  "references_with_verification_v2": 233,
+  "sources": 1344,
   "sources_by_kind": {
-    "brand-asset": 75,
-    "license": 76,
-    "official-doc": 543,
-    "product-surface": 614
+    "brand-asset": 78,
+    "license": 78,
+    "official-doc": 555,
+    "product-surface": 633
   },
   "references": {
     "104": {
@@ -2921,6 +2921,60 @@
         }
       ]
     },
+    "goorm": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "arkain-symbol",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "blog.goorm.io"
+        },
+        {
+          "id": "brand-award-news",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "blog.goorm.io"
+        },
+        {
+          "id": "brand-guideline",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.goorm.io"
+        },
+        {
+          "id": "goorm-sans",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "www.goorm.io"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.goorm.io"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.goorm.io"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "edu.goorm.io"
+        },
+        {
+          "id": "vapor-ui",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "vapor-ui.goorm.io"
+        }
+      ]
+    },
     "gousto": {
       "checked": "2026-09-26",
       "claims": 0,
@@ -2942,6 +2996,48 @@
           "kind": "product-surface",
           "captured": "2026-09-26",
           "host": "www.gousto.co.uk"
+        }
+      ]
+    },
+    "hana": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "pr-about",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "pr.kebhana.com"
+        },
+        {
+          "id": "pr-ci",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "pr.kebhana.com"
+        },
+        {
+          "id": "pr-history",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "pr.kebhana.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.kebhana.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.kebhana.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.kebhana.com"
         }
       ]
     },
@@ -3086,6 +3182,48 @@
           "kind": "product-surface",
           "captured": "2026-09-22",
           "host": "www.huawei.com"
+        }
+      ]
+    },
+    "hwahae": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "company-news",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "blog.hwahae.co.kr"
+        },
+        {
+          "id": "ds-history",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "blog.hwahae.co.kr"
+        },
+        {
+          "id": "pretendard-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "github.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.hwahae.co.kr"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.hwahae.co.kr"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.hwahae.co.kr"
         }
       ]
     },
@@ -4154,6 +4292,42 @@
           "kind": "product-surface",
           "captured": "2026-09-26",
           "host": "www.lego.com"
+        }
+      ]
+    },
+    "lemonbase": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "performance-context",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "lemonbase.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "lemonbase.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "lemonbase.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "lemonbase.com"
+        },
+        {
+          "id": "survey-context",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "lemonbase.com"
         }
       ]
     },
@@ -5261,6 +5435,48 @@
         }
       ]
     },
+    "naverpay": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "bridge-spec",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "developers.pay.naver.com"
+        },
+        {
+          "id": "company-intro",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.naverfincorp.com"
+        },
+        {
+          "id": "logo-guide",
+          "kind": "brand-asset",
+          "captured": "2026-09-30",
+          "host": "developers.pay.naver.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "developers.pay.naver.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "developers.pay.naver.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.naverfincorp.com"
+        }
+      ]
+    },
     "naverwebtoon": {
       "checked": "2026-07-13",
       "claims": 0,
@@ -5324,6 +5540,42 @@
           "kind": "product-surface",
           "captured": "2026-09-22",
           "host": "newspicks.com"
+        }
+      ]
+    },
+    "nexon": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "brand-identity",
+          "kind": "brand-asset",
+          "captured": "2026-09-30",
+          "host": "brand.nexon.com"
+        },
+        {
+          "id": "company-history",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "company.nexon.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.nexon.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "brand.nexon.com"
+        },
+        {
+          "id": "typeface-guide",
+          "kind": "brand-asset",
+          "captured": "2026-09-30",
+          "host": "brand.nexon.com"
         }
       ]
     },

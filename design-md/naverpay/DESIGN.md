@@ -9,53 +9,217 @@ primary_color: "#09aa5c"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=pay.naver.com&sz=128"
-verified: "2026-06-22"
+verified: "2026-09-30"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: developer-center, url: "https://developers.pay.naver.com/", inspected: "2026-09-30" }
+    - { id: surface-2, kind: design-guide, url: "https://developers.pay.naver.com/design/bridge", inspected: "2026-09-30" }
+    - { id: surface-3, kind: corporate, url: "https://www.naverfincorp.com/", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://developers.pay.naver.com/", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://developers.pay.naver.com/design/bridge", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://www.naverfincorp.com/", captured: "2026-09-30" }
+    - { id: bridge-spec, kind: official-doc, url: "https://developers.pay.naver.com/design/bridge", captured: "2026-09-30" }
+    - { id: logo-guide, kind: brand-asset, url: "https://developers.pay.naver.com/design/brand/logo", captured: "2026-09-30" }
+    - { id: company-intro, kind: official-doc, url: "https://www.naverfincorp.com/introduce/introduceView", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.body": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.colors.canvas": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.colors.chip": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::div', captured: "2026-09-30" }
+    "tokens.colors.corporate-ink": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::body', captured: "2026-09-30" }
+    "tokens.colors.corporate-link": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.colors.corporate-muted": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="30"]', captured: "2026-09-30" }
+    "tokens.colors.error-text": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::p', captured: "2026-09-30" }
+    "tokens.colors.ink": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h3', captured: "2026-09-30" }
+    "tokens.colors.muted": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.colors.nav-idle": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.colors.primary": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="5"]', captured: "2026-09-30" }
+    "tokens.colors.subtle": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="8"]', captured: "2026-09-30" }
+    "tokens.colors.surface": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]::state-hover', captured: "2026-09-30" }
+    "tokens.colors.surface-strong": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]::state-hover', captured: "2026-09-30" }
+    "tokens.components.corporate-family-site-toggle.border": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="30"]', captured: "2026-09-30" }
+    "tokens.components.corporate-family-site-toggle.fg": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="30"]', captured: "2026-09-30" }
+    "tokens.components.corporate-family-site-toggle.font": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="30"]', captured: "2026-09-30" }
+    "tokens.components.corporate-family-site-toggle.height": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="30"]', captured: "2026-09-30" }
+    "tokens.components.corporate-family-site-toggle.padding": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="30"]', captured: "2026-09-30" }
+    "tokens.components.corporate-family-site-toggle.radius": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="30"]', captured: "2026-09-30" }
+    "tokens.components.corporate-family-site-toggle.states": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-interaction-capture="menu-0-0"]', captured: "2026-09-30" }
+    "tokens.components.corporate-family-site-toggle.type": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="30"]', captured: "2026-09-30" }
+    "tokens.components.corporate-family-site-toggle.use": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="30"]', captured: "2026-09-30" }
+    "tokens.components.corporate-gnb-link.fg": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.corporate-gnb-link.font": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.corporate-gnb-link.height": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.corporate-gnb-link.padding": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.corporate-gnb-link.states": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.corporate-gnb-link.type": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.corporate-gnb-link.use": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.corporate-more-link.fg": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.corporate-more-link.font": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.corporate-more-link.height": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.corporate-more-link.states": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.corporate-more-link.type": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.corporate-more-link.use": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.developer-link-card.bg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.components.developer-link-card.border": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.components.developer-link-card.hover": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]::state-hover', captured: "2026-09-30" }
+    "tokens.components.developer-link-card.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.components.developer-link-card.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.components.developer-link-card.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.components.developer-link-card.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.components.developer-link-card.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.components.developer-link-card.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.components.footer-policy-link.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.footer-policy-link.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.footer-policy-link.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.footer-policy-link.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.footer-policy-link.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.footer-policy-link.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.footer-sitemap-link.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.footer-sitemap-link.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.footer-sitemap-link.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.footer-sitemap-link.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.footer-sitemap-link.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.footer-sitemap-link.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.guide-nav-link.fg": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.components.guide-nav-link.font": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.components.guide-nav-link.height": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.components.guide-nav-link.hover": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]::state-hover', captured: "2026-09-30" }
+    "tokens.components.guide-nav-link.padding": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.components.guide-nav-link.pressed": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]::state-pressed', captured: "2026-09-30" }
+    "tokens.components.guide-nav-link.radius": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.components.guide-nav-link.states": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.components.guide-nav-link.type": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.components.guide-nav-link.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.components.language-select.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="8"]', captured: "2026-09-30" }
+    "tokens.components.language-select.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="8"]', captured: "2026-09-30" }
+    "tokens.components.language-select.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="8"]', captured: "2026-09-30" }
+    "tokens.components.language-select.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="8"]', captured: "2026-09-30" }
+    "tokens.components.language-select.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="8"]', captured: "2026-09-30" }
+    "tokens.components.language-select.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="8"]', captured: "2026-09-30" }
+    "tokens.components.language-select.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="8"]', captured: "2026-09-30" }
+    "tokens.components.language-select.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="8"]', captured: "2026-09-30" }
+    "tokens.components.prompt-chip.bg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::div', captured: "2026-09-30" }
+    "tokens.components.prompt-chip.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::div', captured: "2026-09-30" }
+    "tokens.components.prompt-chip.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::div', captured: "2026-09-30" }
+    "tokens.components.prompt-chip.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::div', captured: "2026-09-30" }
+    "tokens.components.prompt-chip.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::div', captured: "2026-09-30" }
+    "tokens.components.prompt-chip.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::div', captured: "2026-09-30" }
+    "tokens.components.top-nav-link.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.components.top-nav-link.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.components.top-nav-link.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.components.top-nav-link.hover": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]::state-hover', captured: "2026-09-30" }
+    "tokens.components.top-nav-link.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.components.top-nav-link.pressed": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]::state-pressed', captured: "2026-09-30" }
+    "tokens.components.top-nav-link.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.components.top-nav-link.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.components.top-nav-link.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.components.top-nav-link.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.rounded.chip": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::div', captured: "2026-09-30" }
+    "tokens.rounded.hover-pill": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]::state-hover', captured: "2026-09-30" }
+    "tokens.rounded.link-card": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.spacing.chip-x": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::div', captured: "2026-09-30" }
+    "tokens.spacing.chip-y": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::div', captured: "2026-09-30" }
+    "tokens.spacing.guide-nav-x": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.spacing.guide-nav-y": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.spacing.link-card-x": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.spacing.link-card-y": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="14"]', captured: "2026-09-30" }
+    "tokens.spacing.top-nav-x": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.typography.corporate-hero.lineHeight": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::h2', captured: "2026-09-30" }
+    "tokens.typography.corporate-hero.size": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::h2', captured: "2026-09-30" }
+    "tokens.typography.corporate-hero.tracking": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::h2', captured: "2026-09-30" }
+    "tokens.typography.corporate-hero.use": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::h2', captured: "2026-09-30" }
+    "tokens.typography.corporate-hero.weight": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::h2', captured: "2026-09-30" }
+    "tokens.typography.corporate-lede.lineHeight": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::p', captured: "2026-09-30" }
+    "tokens.typography.corporate-lede.size": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::p', captured: "2026-09-30" }
+    "tokens.typography.corporate-lede.tracking": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::p', captured: "2026-09-30" }
+    "tokens.typography.corporate-lede.use": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::p', captured: "2026-09-30" }
+    "tokens.typography.corporate-lede.weight": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::p', captured: "2026-09-30" }
+    "tokens.typography.corporate-section.lineHeight": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::h3', captured: "2026-09-30" }
+    "tokens.typography.corporate-section.size": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::h3', captured: "2026-09-30" }
+    "tokens.typography.corporate-section.use": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::h3', captured: "2026-09-30" }
+    "tokens.typography.corporate-section.weight": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::h3', captured: "2026-09-30" }
+    "tokens.typography.family.corporate": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: 'surface-3::body', captured: "2026-09-30" }
+    "tokens.typography.footer-link.lineHeight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.typography.footer-link.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.typography.footer-link.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.typography.footer-link.weight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.typography.guide-lede.lineHeight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::p', captured: "2026-09-30" }
+    "tokens.typography.guide-lede.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::p', captured: "2026-09-30" }
+    "tokens.typography.guide-lede.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::p', captured: "2026-09-30" }
+    "tokens.typography.guide-lede.weight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::p', captured: "2026-09-30" }
+    "tokens.typography.guide-nav.lineHeight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.typography.guide-nav.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.typography.guide-nav.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.typography.guide-nav.weight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.typography.guide-note.lineHeight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::p', captured: "2026-09-30" }
+    "tokens.typography.guide-note.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::p', captured: "2026-09-30" }
+    "tokens.typography.guide-note.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::p', captured: "2026-09-30" }
+    "tokens.typography.guide-note.weight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::p', captured: "2026-09-30" }
+    "tokens.typography.guide-subtitle.lineHeight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h4', captured: "2026-09-30" }
+    "tokens.typography.guide-subtitle.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h4', captured: "2026-09-30" }
+    "tokens.typography.guide-subtitle.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h4', captured: "2026-09-30" }
+    "tokens.typography.guide-subtitle.weight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h4', captured: "2026-09-30" }
+    "tokens.typography.guide-title.lineHeight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h3', captured: "2026-09-30" }
+    "tokens.typography.guide-title.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h3', captured: "2026-09-30" }
+    "tokens.typography.guide-title.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h3', captured: "2026-09-30" }
+    "tokens.typography.guide-title.weight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h3', captured: "2026-09-30" }
+    "tokens.typography.prompt-title.lineHeight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::h3', captured: "2026-09-30" }
+    "tokens.typography.prompt-title.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::h3', captured: "2026-09-30" }
+    "tokens.typography.prompt-title.tracking": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::h3', captured: "2026-09-30" }
+    "tokens.typography.prompt-title.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::h3', captured: "2026-09-30" }
+    "tokens.typography.prompt-title.weight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::h3', captured: "2026-09-30" }
+    "tokens.typography.top-nav.lineHeight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.typography.top-nav.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.typography.top-nav.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
+    "tokens.typography.top-nav.weight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="3"]', captured: "2026-09-30" }
 tokens:
-  source: live-extract
-  extracted: "2026-06-22"
-  note: "primary = live Green 500 (#09aa5c) from official bridge UI guide (developers.pay.naver.com/design/bridge); brand logo bg = Naver Pay Green (#00de5a) from logo guide. Merchant center main surface (admin.pay.naver.com) and official developer design guide are the two brand-owned Tier 1 sources. Web app (new.pay.naver.com) is fully login-gated — tokens from pre-auth surfaces and official design spec."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
     primary: "#09aa5c"
-    primary-hover: "#0b9552"
-    brand-green: "#00de5a"
-    green-tint-100: "#eef9f3"
-    green-tint-200: "#e3f6ed"
-    canvas: "#ffffff"
-    surface: "#f6f8fa"
-    surface-alt: "#f3f5f7"
     ink: "#1e1e23"
     body: "#404048"
     muted: "#767678"
-    muted-light: "#aaaaac"
-    hairline: "#dcdee0"
-    hairline-alt: "#c8cacc"
-    on-primary: "#ffffff"
-    link: "#007eff"
+    nav-idle: "#aaaaac"
+    subtle: "#929294"
+    surface: "#f6f8fa"
+    surface-strong: "#edeff2"
+    chip: "#eef0f2"
+    canvas: "#ffffff"
+    error-text: "#ff5252"
+    corporate-ink: "#121212"
+    corporate-muted: "#878890"
+    corporate-link: "#03c75a"
   typography:
-    family: { display: "NanumSquareNeo", body: "Pretendard" }
-    display-hero: { size: 42, weight: 700, lineHeight: 1.33, use: "Hero headline — NanumSquareNeo Bold, merchant center H2" }
-    section:      { size: 40, weight: 700, lineHeight: 1.25, use: "Section title — Pretendard Bold" }
-    subsection:   { size: 28, weight: 600, lineHeight: 1.50, use: "Feature card header — Pretendard SemiBold" }
-    nav:          { size: 16, weight: 400, lineHeight: 1.50, use: "Nav link — Pretendard Regular" }
-    body:         { size: 14, weight: 400, lineHeight: 1.50, use: "Body copy — Pretendard Regular" }
-    caption:      { size: 13, weight: 400, lineHeight: 1.46, use: "Footer link — Pretendard Regular" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 20, xl: 28, xxl: 40, section: 60 }
-  rounded: { sm: 6, md: 8, lg: 20, xl: 28, full: 9999 }
-  shadow:
-    none: "none"
+    family: { corporate: "NanumSquare" }
+    guide-title: { size: 32, weight: 700, lineHeight: 1.19, use: "Design-guide page title (h3.title, #1e1e23, 38px line)" }
+    guide-subtitle: { size: 22, weight: 700, lineHeight: 1.27, use: "Design-guide section title (h4.sub_title, #1e1e23, 28px line)" }
+    guide-lede: { size: 15, weight: 400, lineHeight: 1.4, use: "Design-guide description paragraph (p.description, #1e1e23, 21px line)" }
+    guide-nav: { size: 18, weight: 500, lineHeight: 1.33, use: "Design-guide side navigation link (24px line); the current item is 700" }
+    top-nav: { size: 15, weight: 400, lineHeight: 1.4, use: "Developer-center top navigation link (21px line); hover and current are 700" }
+    guide-note: { size: 13, weight: 400, lineHeight: 1.46, use: "Bridge-guide annotation text (p.bridge_guide_text, #404048, 19px line)" }
+    footer-link: { size: 14, weight: 400, lineHeight: 1.43, use: "Developer-center footer sitemap link (#767678, 20px line)" }
+    prompt-title: { size: 22, weight: 700, lineHeight: 1.36, tracking: -0.5, use: "Developer-center home prompt heading (h3.title_prompt, 30px line)" }
+    corporate-hero: { size: 53, weight: 900, lineHeight: 1.11, tracking: -1, use: "Naver Financial corporate hero headline in NanumSquare (59px line)" }
+    corporate-lede: { size: 20, weight: 600, lineHeight: 1.6, tracking: -0.5, use: "Naver Financial corporate hero sub-line in NanumSquare (32px line)" }
+    corporate-section: { size: 18, weight: 900, lineHeight: 1.39, use: "Naver Financial corporate section title in NanumSquare (25px line)" }
+  spacing: { top-nav-x: 15, guide-nav-y: 12, guide-nav-x: 10, link-card-y: 37, link-card-x: 29, chip-y: 12, chip-x: 16 }
+  rounded: { hover-pill: 8, chip: 10, link-card: 12 }
   components:
-    button-primary: { type: button, bg: "#1e1e23", fg: "#ffffff", radius: "8px", padding: "18px 24px", font: "20px / 700 NanumSquareNeo", use: "Primary hero CTA (가맹점 가입하기)" }
-    button-secondary: { type: button, bg: "#ffffff", fg: "#1e1e23", radius: "6px", padding: "10px 13px", font: "16px / 500 Pretendard", border: "1px solid #dcdee0", use: "Secondary action (로그인)" }
-    button-green: { type: button, bg: "#09aa5c", fg: "#ffffff", radius: "8px", font: "16px / 700 Pretendard", use: "Green payment CTA — primary pay action in checkout" }
-    card-surface: { type: card, bg: "#f6f8fa", radius: "20px", use: "Feature content card on grey surface (no shadow)" }
-    card-benefit: { type: card, bg: "#f6f8fa", radius: "28px", use: "Benefit/feature showcase card — larger radius" }
-    card-green-tint: { type: card, bg: "#eef9f3", fg: "#404048", radius: "12px", padding: "40px 26px", use: "Guide/help card on green-tinted surface" }
-    badge-green: { type: badge, bg: "#eef9f3", fg: "#09aa5c", radius: "9999px", font: "12px / 400 Pretendard", use: "Naver Pay point/benefit badge" }
-    badge-ink: { type: badge, bg: "#1e1e23", fg: "#ffffff", radius: "9999px", font: "12px / 400 Pretendard", use: "Dark label badge" }
-    input-default: { type: input, bg: "#ffffff", fg: "#1e1e23", border: "1px solid #dcdee0", radius: "6px", font: "16px / 400 Pretendard", use: "Default text input (from bridge UI spec)" }
-    input-focus: { type: input, bg: "#ffffff", fg: "#1e1e23", border: "1px solid #09aa5c", radius: "6px", font: "16px / 400 Pretendard", use: "Focused text input — green border" }
-    nav-link: { type: tab, fg: "#767678", font: "16px / 400 Pretendard", radius: "8px", use: "Top nav item", active: "text #09aa5c on active" }
+    top-nav-link: { type: tab, fg: "#aaaaac", radius: "0px", padding: "13px 15px 10px", height: "44px", font: "15px / 400 / 21px", hover: "bg #edeff2, fg #1e1e23, 15px / 700, radius 8px", pressed: "bg #edeff2, fg #1e1e23, 15px / 700, radius 8px", states: "hover and pressed are settled frames: four sibling links (captures 3-6) on home and on surface-2 record identical values on published grey steps; the current-section link (class on, surface-2 capture 5) rests at fg #09aa5c, 15px / 700 and keeps #09aa5c over the #edeff2 hover fill; that variant is described, not declared as a state, because the bundle records no aria-current or aria-selected", use: "Developer-center top navigation link (a.link_lnb) at home::[data-omd-capture=\"3\"], 95 x 44; text renders the OS system stack (-apple-system first), no webfont is loaded" }
+    guide-nav-link: { type: tab, fg: "#404048", radius: "0px", padding: "12px 10px", height: "48px", font: "18px / 500 / 24px", hover: "bg #f6f8fa, radius 8px, fg unchanged", pressed: "bg #edeff2, radius 8px, fg unchanged", states: "settled frames on three sibling links (captures 9, 10, 12) and on the current link (capture 11), which takes the same fills; the current item (class on) rests at fg #09aa5c, 18px / 700, a described variant rather than a declared state (no aria-current or aria-selected recorded)", use: "Design-guide side navigation link (a.link_guide) at surface-2::[data-omd-capture=\"9\"], 230 x 48" }
+    developer-link-card: { type: card, bg: "#ffffff", border: "1px #edeff2", radius: "12px", padding: "37px 29px", size: "400px x 156px", hover: "box-shadow rgba(0, 0, 0, 0.1) 0px 4px 16px 0px; bg and border unchanged", states: "hover shadow on both sibling cards (captures 14, 15); the pressed frame keeps the same shadow; the anchor's own text colour is the browser default link blue, so no label colour is claimed", use: "Developer-center link card (a.item_link) at home::[data-omd-capture=\"14\"]" }
+    prompt-chip: { type: card, bg: "#eef0f2", radius: "10px", padding: "12px 16px", height: "42px", use: "Developer-center home prompt chip (div.card): fourteen captured in one row, seven widths each twice; its 12px / 400 black text equals the body's inherited values, so no label style is claimed" }
+    language-select: { type: input, fg: "#929294", radius: "0px", padding: "0px 11px 0px 20px", height: "19px", font: "13px / 400 / 19px", states: "rest on home and surface-2 (capture 8 on each); the bundle holds no state frame for this select", use: "Header language select (select.select_language), 65 x 19, no fill or border" }
+    footer-sitemap-link: { type: listItem, fg: "#767678", height: "17px", font: "14px / 400 / 20px", states: "rest on thirteen links (captures 16-28); no state frame", use: "Developer-center footer sitemap link (a.link) at home::[data-omd-capture=\"16\"]" }
+    footer-policy-link: { type: listItem, fg: "#404048", height: "15px", font: "12px / 400 / 18px", states: "rest on three links (captures 29-31); no state frame", use: "Developer-center footer policy link at home::[data-omd-capture=\"29\"], beside a #404048 12px / 400 / 24px copyright line" }
+    corporate-gnb-link: { type: tab, fg: "#000000", padding: "6px 0px", height: "34px", font: "18px / 400 / 21.6px NanumSquare", states: "rest on five links (captures 1-5); the collector recorded no pseudo-state frame on surface-3", use: "Naver Financial corporate top navigation link (a.lk_item) at surface-3::[data-omd-capture=\"1\"]" }
+    corporate-more-link: { type: button, fg: "#03c75a", height: "18px", font: "15px / 700 / 18px NanumSquare", states: "rest on two links (captures 6, 19); a third green link (capture 22, a.lk_view) records 15px / 600 / 24px; no pseudo-state frame on surface-3", use: "Naver Financial corporate section 'more' text link (a.lk_more) at surface-3::[data-omd-capture=\"6\"], 69 x 18, no fill" }
+    corporate-family-site-toggle: { type: button, fg: "#878890", border: "1px #c9c9c9", radius: "0px", padding: "0px 31px 0px 12px", height: "35px", font: "13px / 400 / 35px NanumSquare", states: "the collector's menu interaction opened it into a 168 x 106 list (ul.select_list) with a #ffffff fill, 1px #c9c9c9 top and side borders and #878890 15px / 400 / 18px items; no pseudo-state frame", use: "Naver Financial corporate footer family-site select (button.btn_toggle) at surface-3::[data-omd-capture=\"30\"], 168 x 35, letter-spacing -0.3px" }
   components_harvested: true
 ---
 
@@ -63,424 +227,301 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-Naver Pay (네이버페이) is Korea's dominant payment platform, embedded across the Naver super-app ecosystem — spanning shopping, booking, banking, and loyalty. Its visual language reflects that scale: a system engineered to be instantly recognizable in every merchant checkout context while remaining calm and trustworthy. The merchant-facing landing at `admin.pay.naver.com` opens on a clean white canvas (`#ffffff`) with a cool blue-grey surface (`#f6f8fa`) that organizes content into ordered, airy zones. Primary text is near-black ink (`#1e1e23`) rather than pure black — a subtle premium move. The single "action" color, Naver Pay Green (`#09aa5c`), carries the weight of every purchase interaction: it's bright, unambiguous, and instantly associated with Naver's broader brand identity.
+Naver Pay (네이버페이) is the payments and finance brand of Naver Financial (네이버파이낸셜), the Naver company that has run it since the financial business was incorporated as its own entity in November 2019. It began in June 2015 as a simple-payment service stitched into Naver search and shopping, grew a points economy, quick settlement for sellers and deferred payment around it, and now presents itself on the corporate site as "금융을 넓히는 기술, 네이버페이" — technology that widens finance, from payments through loans, insurance, cards, securities and real estate. The recent history is one of expansion from checkout into a full financial platform: a standalone Naver Pay app in 2021, a 2023 mobile overhaul that put assets, payments, financial products, securities and real estate in one place, and in 2024 overseas QR payment, a wallet beta, a mobile transit card and face-sign payment.
 
-The typographic personality is split across two registers. Hero headlines use **NanumSquareNeo Bold (weight 700)** at 42px — the typeface native to the Naver ecosystem, with its distinctly Korean-optimized geometric strokes — delivering declarative Korean fintech confidence ("매출을 만드는 가장 쉬운 방법"). Section and body text drop to **Pretendard**, Korea's refined system font, at weights 400–700, keeping dense information legible and neutral. This is a two-font system where the display font persuades and the body font explains — a pattern common to Korean fintech products (Toss, Finda, Naver) that must serve both mobile-first consumers and information-heavy transaction contexts.
+The brand mark is governed tightly. The official logo guide calls the Naver Pay logo "the brand image that stands for the whole service", reserves it for Naver Pay partners, and sets the normal case as a Naver Pay Black logo on Naver Pay Green (`#00DE5A`), with Naver Green (`#03C75A`) allowed only as an exception on white when legibility demands it. That signature green lives on the logo, not in the interface.
 
-What distinguishes Naver Pay visually is its **shadow-free flatness**. Depth is achieved through flat `#f6f8fa` surface tints rather than elevation — cards exist as tinted rectangles (border-radius 20–28px) against white or grey bands, with no drop shadows detected across the merchant surface. The generous rounded corners (20px–28px) on cards give the system a soft, approachable character without the pill extremes of some payment apps. The green color system uses a careful four-step ramp: brand logo green (`#00de5a`) for signature logomark contexts, primary interactive green (`#09aa5c`), hover green (`#0b9552`), and two tinted surfaces (`#eef9f3`, `#e3f6ed`) for benefit badges and help cards.
+The interface that merchants and developers actually work in is calmer. The developer center and its design guide sit on white with a cool grey ladder that the bridge guide publishes as numbered steps — near-black ink `#1e1e23`, body grey `#404048`, meta grey `#767678`, idle `#aaaaac`, down to the `#f6f8fa` and `#edeff2` tints — and one working green, `#09aa5c` (the guide's Green 500), which marks where you are in the navigation. Hover never underlines or recolours in a loud way: links settle into soft 8px grey pills. Cards are flat white with a 1px `#edeff2` edge and lift only on hover. The corporate site (Naver Financial) speaks in a different, louder register — NanumSquare at weight 900 and 53px, tightly tracked, with Naver green `#03c75a` on its "more" links. The consumer app itself sits behind Naver login, so this reference reads the brand through its public developer, design-guide and corporate faces.
 
 **Key Characteristics:**
-- NanumSquareNeo Bold at hero scale — Naver ecosystem's native display voice
-- Pretendard 400–700 for body and dense UI — clean, hangul-optimized
-- Naver Pay Green (`#09aa5c`) as the single payment-action color
-- Logo brand color (`#00de5a`) reserved for logomark and brand surface contexts
-- Shadow-free flat system — tinted `#f6f8fa` surfaces + `#dcdee0` hairlines for separation
-- Large-radius cards (20–28px) for warmth and approachability
-- Near-black ink (`#1e1e23`) instead of pure black for premium feel
-- Grayscale ladder from `#f6f8fa` to `#1e1e23` — eight defined steps
+- One working green, `#09aa5c`, used as the current-location marker in navigation
+- Signature Naver Pay Green `#00DE5A` reserved for the logo by the official guide
+- A published grey ladder (`#1e1e23` → `#f6f8fa`) that the live developer center is built from
+- Hover as a soft 8px grey pill (`#edeff2` or `#f6f8fa`), never an underline
+- Flat white cards with a 1px `#edeff2` edge; the only shadow appears on hover
+- No webfont on the developer surfaces — the OS system stack carries the UI
+- NanumSquare 900 at display size on the Naver Financial corporate site
 
 ## Primary tasks
 
-- Pay across merchant sites without re-entering credentials
-- Pay for a convenience store or delivery order by QR
-- Earn and spend points inside the Naver ecosystem
-- Set up payment for a store you run yourself
-- Build a checkout page that complies with the payment spec
+- Pay across Naver and partner merchants without re-entering card details
+- Earn and spend Naver Pay points inside the Naver ecosystem
+- Integrate Naver Pay checkout as a merchant or developer, following the official guides
+- Use the logo and benefit badges correctly on a partner surface
 
 ## 2. Color Palette & Roles
 
-### Primary
-- **Naver Pay Green** (`#09aa5c`): Primary interactive color — payment CTAs, focus rings on inputs, active nav states, and all payment-action elements. Live-confirmed as Green 500 in the official bridge UI color system.
-- **Green Hover** (`#0b9552`): Green 600 — darker shade for hover/pressed states on green interactive elements.
-- **Brand Green** (`#00de5a`): The signature Naver Pay logomark background color. Brighter and more saturated than the interactive green — used exclusively for logo/brand surface contexts per the official logo guide.
+### Interface (developer center and design guide, captured)
+- **Working Green** (`#09aa5c`): the current-section colour on the top navigation and the design-guide side navigation. The bridge guide publishes the same value as Green 500.
+- **Ink** (`#1e1e23`): design-guide titles, section titles and description text; also the text colour a top-navigation link takes on hover. Published as grey step 900.
+- **Body** (`#404048`): design-guide side-navigation links, bridge-guide annotations, footer policy links and the copyright line. Step 800.
+- **Muted** (`#767678`): footer sitemap links. Step 700.
+- **Nav Idle** (`#aaaaac`): resting top-navigation links. Step 500.
+- **Subtle** (`#929294`): the header language select. Step 600.
+- **Surface** (`#f6f8fa`): hover fill of design-guide side-navigation links.
+- **Surface Strong** (`#edeff2`): hover and pressed fill of top-navigation links, pressed fill of side-navigation links, and the 1px edge of link cards.
+- **Chip** (`#eef0f2`): fill of the prompt chips on the developer-center home.
+- **Canvas** (`#ffffff`): link-card fill and the page ground.
+- **Error Text** (`#ff5252`): the error line in the bridge guide's live input example.
 
-### Green Tint
-- **Green Tint 100** (`#eef9f3`): Soft green surface for benefit badges, guide cards, and success-state backgrounds.
-- **Green Tint 200** (`#e3f6ed`): Slightly deeper green tint for secondary success surfaces.
+### Corporate (Naver Financial site, captured)
+- **Corporate Ink** (`#121212`): body text and section titles.
+- **Corporate Muted** (`#878890`): footer text and the family-site select; its open list sits on `#ffffff` with a 1px `#c9c9c9` border.
+- **Corporate Link** (`#03c75a`): the green "more" links beside each section title. The logo guide names this exact value Naver Green.
+- **Navigation Black** (`#000000`): corporate top-navigation links.
 
-### Neutral & Surface
-- **Canvas** (`#ffffff`): Page background, white card surfaces, button text on dark backgrounds.
-- **Surface** (`#f6f8fa`): Grayscale 100 — cool-grey tinted surface for feature cards and content bands.
-- **Surface Alt** (`#f3f5f7`): Grayscale 150 — slightly deeper surface variant.
-- **Hairline** (`#dcdee0`): Grayscale 250 — primary border color for inputs, dividers, secondary button outlines.
-- **Hairline Alt** (`#c8cacc`): Grayscale 300 — stronger divider for prominent separation.
-
-### Text Hierarchy
-- **Ink** (`#1e1e23`): Grayscale 900 — primary heading and body text; near-black with warmth.
-- **Body** (`#404048`): Grayscale 800 — secondary text and card descriptions.
-- **Muted** (`#767678`): Grayscale 700 — nav links, tertiary text, metadata.
-- **Muted Light** (`#aaaaac`): Grayscale 500 — placeholder text, disabled labels.
-
-### Interactive
-- **Link Blue** (`#007eff`): Accent link color for inline anchors in merchant context (e.g., "취급불가상품안내", "내 사업에 맞는 가입 유형 확인하기").
+### Declared by the official guides (not captured as computed style)
+- **Naver Pay Green** `#00DE5A` and **Naver Pay Black** `#000000` — the logo colours in the logo guide; Naver Green `#03C75A` is its white-background exception.
+- The bridge guide also publishes `#0B9552` (Green 600), `#EEF9F3` (Green 100), `#E3F6ED` (Green 200) and the grey steps `#BBBBBD`, `#C8CACC`, `#DCDEE0`, `#EFEFF0`, `#F3F5F7`. They belong to the partner-facing bridge specification; none of them appears as a computed value on the three captured surfaces, so they stay out of the token set.
 
 ## 3. Typography Rules
 
-### Font Family
-- **Display**: `NanumSquareNeo` — Naver's own typeface, used for hero-level headlines and primary CTAs at the largest scale. Bold (700) exclusively.
-- **Body**: `Pretendard` — the Korean fintech standard, used for all navigation, body copy, UI labels, buttons, and secondary headings. Weights 400, 500, 600, 700.
+### Font evidence by class
+- **Live surface-use:** NanumSquare is loaded on the Naver Financial corporate site from its own server (woff, eot and OTF files under /font/) and renders every text role there — navigation, hero, section titles, links and footer. It is scoped to that corporate surface and is not the developer surfaces' face.
+- **Developer center and design guide:** no webfont is loaded. Text computes to the operating system's own stack (Apple's system face first, then Apple SD Gothic Neo, Nanum Gothic and Malgun Gothic), so these surfaces have no brand face to specimen; their sizes and weights are still recorded below.
+- **Official product-use:** none of the pages opened in this pass names a UI typeface for Naver Pay.
+- **Official distributed font assets:** none opened in this pass; no Naver Pay font download or licence page was read.
+- **Declared-only:** NotoSans (Light and Regular faces declared on the corporate site, no visible use) and swiper-icons (the carousel library's embedded icon font).
+- **Unresolved:** a June 2026 reading of the merchant center reported NanumSquareNeo for hero headlines and Pretendard for UI text. That host is outside the capture policy and was not re-observed, so neither face is promoted. NanumSquare's licence was not opened in this pass.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Notes |
-|------|------|------|--------|-------------|-------|
-| Display Hero | NanumSquareNeo | 42px | 700 | 1.33 | Merchant center hero H2 |
-| Section Large | Pretendard | 40px | 700 | 1.25 | "내 사업에는 어떤 방식이 맞을까?" |
-| Sub-section | Pretendard | 28px | 600 | 1.50 | Feature card headers |
-| Nav Link | Pretendard | 16px | 400 | 1.50 | Top nav items, muted gray |
-| Button Primary | NanumSquareNeo | 20px | 700 | 1.00 | Hero CTA "가맹점 가입하기" |
-| Button Default | Pretendard | 16px | 500 | 1.50 | Secondary/outlined buttons |
-| Body | Pretendard | 14px | 400 | 1.50 | Card body, descriptions |
-| Caption / Footer | Pretendard | 13px | 400 | 1.46 | Footer links, fine print |
+| Role | Surface | Size | Weight | Line height | Notes |
+|------|---------|------|--------|-------------|-------|
+| Guide title | Design guide | 32px | 700 | 38px | `#1e1e23` |
+| Guide section | Design guide | 22px | 700 | 28px | `#1e1e23` |
+| Guide description | Design guide | 15px | 400 | 21px | `#1e1e23` |
+| Guide side nav | Design guide | 18px | 500 (current 700) | 24px | `#404048`, current `#09aa5c` |
+| Top nav | Developer center | 15px | 400 (hover/current 700) | 21px | `#aaaaac` |
+| Guide annotation | Design guide | 13px | 400 | 19px | `#404048` |
+| Prompt heading | Developer center | 22px | 700 | 30px | tracking -0.5px |
+| Footer link | Developer center | 14px | 400 | 20px | `#767678` |
+| Corporate hero | Corporate | 53px | 900 | 59px | NanumSquare, tracking -1px |
+| Corporate sub-line | Corporate | 20px | 600 | 32px | NanumSquare, tracking -0.5px |
+| Corporate section | Corporate | 18px | 900 | 25px | NanumSquare |
 
 ### Principles
-- **Two fonts, two registers**: NanumSquareNeo owns the persuasive hero layer; Pretendard owns every functional UI text layer. They do not swap.
-- **Bold for action**: CTA labels run at 700 weight; body text at 400. The weight contrast is the clearest hierarchy signal.
-- **Hangul-first sizing**: 14px body is deliberate — the sweet spot for dense hangul legibility in data-heavy financial layouts.
-- **Display restraint**: Large headlines are in Korean ("매출을 만드는 가장 쉬운 방법"), never in English — the brand speaks to Korean merchants in their language.
+- **Weight carries state.** A navigation link moves from 400 to 700 when hovered or current; colour and fill do the rest.
+- **Quiet UI, loud corporate.** The developer surfaces stay on system text at 13–32px; the corporate site is the one place that sets heavy 900 display type.
+- **Hangul first.** Every captured heading and label is Korean; sizes are tuned for dense Korean text rather than Latin display.
 
 ## 4. Component Stylings
 
-### Buttons
-
-**Primary CTA (Hero)**
-- Background: `#1e1e23`
-- Text: `#ffffff`
-- Radius: 8px
-- Padding: 18px 24px
-- Font: 20px NanumSquareNeo weight 700
-- Height: 62px
-- Use: Main landing page action — "가맹점 가입하기" (merchant signup)
-
-**Secondary (Outlined)**
-- Background: `#ffffff`
-- Text: `#1e1e23`
-- Radius: 6px
-- Padding: 10px 13px
-- Font: 16px Pretendard weight 500
-- Border: 1px solid `#dcdee0`
-- Height: 44px
-- Use: "로그인" — secondary nav-level action
-
-**Green Payment Button**
-- Background: `#09aa5c`
-- Text: `#ffffff`
-- Radius: 8px
-- Font: 16px Pretendard weight 700
-- Use: Primary payment/checkout CTA — the green pay button that appears in merchant checkout contexts
-
-### Cards & Containers
-
-**Surface Feature Card**
-- Background: `#f6f8fa`
-- Radius: 20px
-- Use: Merchant type info cards and step info cards — shadow-free flat surface
-
-**Benefit Showcase Card**
-- Background: `#f6f8fa`
-- Radius: 28px
-- Use: Larger benefit showcase panels with more corner radius — consistent shadow-free flatness
-
-**Green Tint Guide Card**
-- Background: `#eef9f3`
-- Text: `#404048`
-- Radius: 12px
-- Padding: 40px 26px
-- Use: Help/guide cards — the green tint marks Naver Pay branded informational surfaces
-
-### Badges
-
-**Benefit Badge (Green)**
-- Background: `#eef9f3`
-- Text: `#09aa5c`
-- Radius: 9999px (full pill)
-- Font: 12px Pretendard weight 400
-- Use: Naver Pay point/benefit highlight tag
-
-**Dark Label Badge**
-- Background: `#1e1e23`
-- Text: `#ffffff`
-- Radius: 9999px (full pill)
-- Font: 12px Pretendard weight 400
-- Use: Dark label — partner tags, count badges
-
-### Inputs & Forms
-
-**Default Input**
-- Background: `#ffffff`
-- Text: `#1e1e23`
-- Border: 1px solid `#dcdee0`
-- Radius: 6px
-- Font: 16px Pretendard weight 400
-- Use: Default text field state (휴대폰 번호 입력, bridge UI pattern)
-
-**Focus Input**
-- Background: `#ffffff`
-- Text: `#1e1e23`
-- Border: 1px solid `#09aa5c`
-- Radius: 6px
-- Font: 16px Pretendard weight 400
-- Use: Active/focused text field — green border is the pay brand's focus signal
-
-**Error Input**
-- Border: 1px solid `#e53935` (error red, standard; not green-system)
-- Use: Validation error state per bridge UI spec
-
 ### Navigation
 
-**Top Nav**
-- Background: `#ffffff`
-- Text: `#767678` (nav links), `#1e1e23` (logo)
-- Font: 16px Pretendard weight 400
-- Radius on items: 8px
+**Top navigation link** (developer center, `a.link_lnb`)
+- Text: `#aaaaac`
+- Font: 15px, weight 400, line height 21px
+- Padding: 13px 15px 10px
 - Height: 44px
-- Active: green `#09aa5c` text on active item
-- Use: Horizontal top navigation with logo left-aligned
+- Hover: fill `#edeff2`, text `#1e1e23`, weight 700, radius 8px
+- Pressed: identical to hover
+- Current section: text `#09aa5c`, weight 700, and the same `#edeff2` pill on hover
+
+**Design-guide side navigation link** (`a.link_guide`)
+- Text: `#404048`
+- Font: 18px, weight 500, line height 24px
+- Padding: 12px 10px
+- Height: 48px
+- Hover: fill `#f6f8fa`, radius 8px
+- Pressed: fill `#edeff2`, radius 8px
+- Current item: text `#09aa5c`, weight 700
+
+**Corporate top navigation link** (Naver Financial, `a.lk_item`)
+- Text: `#000000`
+- Font: 18px NanumSquare, weight 400, line height 21.6px
+- Padding: 6px 0px
+- Height: 34px
+
+### Cards
+
+**Developer link card** (`a.item_link`)
+- Background: `#ffffff`
+- Border: 1px `#edeff2`
+- Radius: 12px
+- Padding: 37px 29px
+- Size: 400 x 156
+- Hover: shadow `rgba(0, 0, 0, 0.1) 0px 4px 16px 0px`, fill and edge unchanged
+
+**Prompt chip** (`div.card`)
+- Background: `#eef0f2`
+- Radius: 10px
+- Padding: 12px 16px
+- Height: 42px
+
+### Links & Inputs
+
+**Language select** (`select.select_language`)
+- Text: `#929294`
+- Font: 13px, weight 400, line height 19px
+- Padding: 0px 11px 0px 20px
+- Border: none
+
+**Footer sitemap link**
+- Text: `#767678`
+- Font: 14px, weight 400, line height 20px
+
+**Footer policy link**
+- Text: `#404048`
+- Font: 12px, weight 400, line height 18px
+
+**Corporate "more" link** (`a.lk_more`)
+- Text: `#03c75a`
+- Font: 15px NanumSquare, weight 700, line height 18px
+- Background: none
+
+**Corporate family-site select** (`button.btn_toggle`)
+- Text: `#878890`
+- Border: 1px `#c9c9c9`
+- Padding: 0px 31px 0px 12px
+- Height: 35px
+- Font: 13px NanumSquare, weight 400, line height 35px, tracking -0.3px
+- Open: a 168 x 106 list on `#ffffff` with 1px `#c9c9c9` top and side borders and `#878890` 15px items
+
+### State evidence
+Hover and pressed values above come from settled frames in the capture bundle: four sibling top-navigation links on two surfaces, four side-navigation links, and both link cards record identical values on the published grey steps. No focus value is declared. Several developer-center anchors keep the browser's default link colours on the anchor itself (their visible labels are child elements), so no label colour or pressed colour is taken from them.
 
 ---
 
-**Verified:** 2026-06-22 (omd:add-reference CREATE — Tier 1 live inspect)
-**Tier 1 sources:** https://admin.pay.naver.com/front/m/v2, https://developers.pay.naver.com/design/bridge, https://developers.pay.naver.com/design/brand/logo
-**Tier 2 sources:** getdesign.md/naverpay — not found (404); refero — no results for "naver pay"
-**Conflicts unresolved:** none — core green palette cross-confirmed between merchant center live DOM and official bridge UI spec (#09aa5c = Green 500 in both); brand logo green (#00de5a) is separate from interactive green (#09aa5c) per official logo guide, not a conflict
+**Verified:** 2026-09-30 (deterministic evidence capture of three public first-party surfaces, reconciled with the official guides and corporate pages)
+**Tier 1 sources:** https://developers.pay.naver.com/, https://developers.pay.naver.com/design/bridge, https://www.naverfincorp.com/, https://developers.pay.naver.com/design/brand/logo, https://www.naverfincorp.com/introduce/introduceView
+**Tier 2 sources:** getdesign.md/naverpay returned a page with no Naver Pay content; styles.refero.design search for "naver pay" returned no usable result
+**Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
-### Spacing System
-- Base unit: 4px
-- Scale: 4px, 8px, 12px, 16px, 20px, 28px, 40px, 60px
-- Notable: Hero CTA uses 18px vertical padding for a commanding 62px hit height on the main "가맹점 가입하기" button; card padding tends to 35–40px vertical for generous content breathing room
+### Spacing
+- Top-navigation links pad 13px 15px 10px inside a 44px row; side-navigation rows are 48px with 12px 10px padding in a 230px column.
+- The design-guide content column is 1000px wide.
+- Link cards pad 37px 29px; prompt chips pad 12px 16px at 42px high.
+- Corporate content cards run 335px wide in rows.
 
-### Grid & Container
-- Centered single-column hero with 42px NanumSquareNeo headline as the anchor
-- Feature cards arranged in horizontal scroll/wrap rows (merchant benefit cards, type selector cards)
-- Full-width grey surface bands (`#f6f8fa`) alternate with white sections for content rhythm
-- Feature cards sit at fixed heights (420px showcase cards, 208px step cards, 480px type info cards)
+### Radius
+- 0px on almost everything at rest (200 of 248 radius readings).
+- 8px for the hover pill on navigation links.
+- 10px for prompt chips, 12px for link cards.
 
-### Whitespace Philosophy
-- **Generous card padding**: Cards breathe — 35–40px vertical internal padding on showcase cards
-- **Flat segmentation**: sections separate by `#f6f8fa` vs `#ffffff` tint, never shadows
-- **Large radius creates warmth**: 20–28px card radius softens what could be a cold financial layout
-
-### Border Radius Scale
-- Small (6px): inputs, secondary buttons — tight, utilitarian
-- Medium (8px): primary buttons, nav items — moderate, action-oriented
-- Large (20px): standard content cards — the workhorse
-- XLarge (28px): showcase/benefit cards — generous, consumer-friendly
-- Full (9999px): badges, pill chips — fully round
+### Whitespace
+- Separation comes from white space, grey steps and a 1px `#edeff2` edge rather than rules or shadows.
 
 ## 6. Depth & Elevation
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, inline text, nav |
-| Surface (Level 1) | `#f6f8fa` background shift | Card/section separation |
-| Hairline (Level 2) | `1px solid #dcdee0` border | Input outlines, secondary button borders |
+| Level | Treatment | Where |
+|-------|-----------|-------|
+| Flat | no shadow | every captured element at rest |
+| Tint | `#f6f8fa` / `#edeff2` fill | hover and pressed navigation pills |
+| Edge | 1px `#edeff2` | link cards |
+| Lift | `rgba(0, 0, 0, 0.1) 0px 4px 16px 0px` | link card on hover only |
 
-**Shadow Philosophy**: Naver Pay's merchant and developer surfaces are entirely shadow-free — `box-shadow: none` was confirmed across nav, hero, cards, buttons, and chips across both inspected surfaces. Depth is communicated via flat color bands and hairlines. This is consistent with modern Korean fintech (Finda, Toss mobile-web, KakaoBank) and keeps the surface feeling fast, clean, and mobile-native. The green color system does the work that shadows do elsewhere: a green focus ring on an input creates more depth signal than a soft shadow could.
+Resting shadows are absent across all three surfaces; the one shadow in the bundle is the link card's hover lift.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Use NanumSquareNeo Bold (700) for hero-level Korean headlines — it carries the Naver ecosystem voice
-- Use Pretendard 400–700 for all body, nav, and button labels
-- Reserve Naver Pay Green (`#09aa5c`) for payment/purchase action elements — keep it the single action color
-- Use `#00de5a` brand green only on the logo and brand surface contexts — not for UI buttons
-- Separate sections with flat `#f6f8fa` tint bands and `#dcdee0` hairlines, not shadows
-- Apply green focus rings on inputs — `#09aa5c` border signals the Naver Pay checkout context
-- Use large border-radius (20–28px) on cards — warmth matters in a payment context
-- Use near-black `#1e1e23` for primary text instead of pure black
+- Mark the current location with `#09aa5c` text and weight 700
+- Build text hierarchy from the published greys: `#1e1e23`, `#404048`, `#767678`, `#aaaaac`
+- Show hover as an 8px `#edeff2` or `#f6f8fa` pill
+- Keep cards flat white with a 1px `#edeff2` edge and lift them only on hover
+- Keep the Naver Pay Green `#00DE5A` for the logo, as the logo guide requires
 
 ### Don't
-- Use drop shadows on any surface — the system is flat-first
-- Apply `#00de5a` brand green to interactive buttons or links — it's a logo color, not a UI color
-- Use a second saturated accent alongside green — the system is monochromatic except for the blue link color
-- Set headlines in Pretendard — NanumSquareNeo owns the hero display register
-- Use pure black (`#000000`) for body text — the system uses warm near-black `#1e1e23`
-- Create pill-shaped buttons for primary actions — the system uses moderate 8px radius buttons, not full-round
-- Use the green colors for error states — errors use a separate red signal independent of the green system
+- Don't use the logo green `#00DE5A` as an interface fill or text colour
+- Don't add resting drop shadows
+- Don't substitute a webfont on the developer surfaces as though it were Naver Pay's own
+- Don't underline navigation on hover
+- Don't recolour or recompose the logo; the guide forbids arbitrary changes
 
 ## 8. Responsive Behavior
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column, hero headline compresses, cards stack |
-| Tablet | 640-1024px | 2-column card grids, moderate padding |
-| Desktop | 1024-1440px | Full layout, multi-column feature cards, centered hero |
-
-### Touch Targets
-- Primary CTA at 62px height — very comfortable tap target
-- Secondary nav buttons at 44px height — standard Korean mobile minimum
-- Input fields at 44px height with clear focus ring (green border)
-
-### Collapsing Strategy
-- Hero: 42px NanumSquareNeo headline compresses on mobile, weight 700 maintained
-- Feature cards: horizontal multi-card → single-column stacked
-- Tinted surface bands: maintain full-width treatment at all sizes
-- Nav: horizontal links collapse to condensed top navigation on mobile
-
-### Image Behavior
-- Product illustrations and screenshots carry no shadow at any size — consistent with flat system
-- Cards maintain 20–28px radius across breakpoints
+All three surfaces were captured at a 1440 x 900 desktop viewport. No breakpoint behaviour was measured, so none is specified here. The measured touch-relevant sizes are the 44px top-navigation row and the 48px side-navigation row.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary payment CTA: Naver Pay Green (`#09aa5c`)
-- Green hover: `#0b9552`
-- Logo brand green: `#00de5a`
-- Green tint surface: `#eef9f3`
-- Dark hero CTA: Ink (`#1e1e23`)
-- Background: Canvas (`#ffffff`)
-- Surface / card bg: `#f6f8fa`
-- Primary text: Ink (`#1e1e23`)
-- Secondary text: Body (`#404048`)
-- Muted / nav: `#767678`
-- Border / hairline: `#dcdee0`
-- Inline link: `#007eff`
+- Current-location green: `#09aa5c`
+- Ink: `#1e1e23`
+- Body: `#404048`
+- Muted: `#767678`
+- Idle navigation: `#aaaaac`
+- Hover pill: `#edeff2` (top navigation) or `#f6f8fa` (side navigation)
+- Card: `#ffffff` with a 1px `#edeff2` edge
+- Chip: `#eef0f2`
+- Error line: `#ff5252`
 
 ### Example Component Prompts
-- "Create a hero on white background. Headline at 42px NanumSquareNeo weight 700, color #1e1e23. Black CTA button: #1e1e23 background, white text, 8px radius, 18px 24px padding, 20px NanumSquareNeo. Green link: #007eff text. Subtitle 28px Pretendard 600, color #1e1e23."
-- "Design a feature card: #f6f8fa background, 20px radius, no shadow. Title 28px Pretendard weight 600, color #1e1e23. Body 14px Pretendard weight 400, color #404048."
-- "Build a tinted section: #f6f8fa background full-width. Section title 40px Pretendard weight 700, #1e1e23. Cards inside: #f6f8fa bg, 20px radius, no shadow."
-- "Create a checkout payment button: #09aa5c background, white text, 8px radius, Pretendard 16px/700."
-- "Build a benefit badge: #eef9f3 background, #09aa5c text, full pill radius, 12px Pretendard."
+- "Top navigation on white: links 15px weight 400 in `#aaaaac`, padding 13px 15px 10px, 44px high. On hover the link becomes `#1e1e23` weight 700 on an `#edeff2` pill with 8px radius. The current page's link is `#09aa5c` weight 700."
+- "Documentation side navigation, 230px wide: 48px rows, 18px weight 500 `#404048`, padding 12px 10px; hover fill `#f6f8fa`, pressed fill `#edeff2`, both 8px radius; current item `#09aa5c` weight 700."
+- "Link card: `#ffffff`, 1px `#edeff2` border, 12px radius, 37px 29px padding, no shadow; on hover add `rgba(0, 0, 0, 0.1) 0px 4px 16px 0px`."
 
 ### Iteration Guide
-1. NanumSquareNeo Bold (700) for hero Korean copy only; Pretendard for everything else
-2. Green (`#09aa5c`) = payment action; avoid spreading to non-payment UI elements
-3. No shadows — separate content bands with `#f6f8fa` and hairlines
-4. Cards at 20–28px radius, inputs and buttons at 6–8px
-5. Text color is `#1e1e23`, never pure black for body
-6. Green focus ring on inputs: `1px solid #09aa5c` is the checkout context signal
-7. Secondary buttons use white bg + `1px solid #dcdee0` + `#1e1e23` text
-
----
+1. Green marks location, not decoration
+2. Greys come from the published ladder
+3. Hover is a soft pill, never an underline
+4. Flat by default; lift only on hover
+5. No brand webfont on the developer surfaces — do not invent one
 
 ## 10. Voice & Tone
 
-Naver Pay's voice is **practical, merchant-friendly, and confidence-instilling** — a platform that speaks to Korean business owners in plain, efficient Korean. The merchant center headline "매출을 만드는 가장 쉬운 방법" ("The easiest way to generate revenue") sets the register: direct, benefit-first, zero hype. Copy is grounded in concrete outcomes (매출, 정산, 포인트 혜택) and treats the merchant as a capable operator who wants clear answers, not marketing language.
+Naver Pay writes plainly and in full Korean sentences. Guides state the rule and the reason in the same breath, the corporate site speaks in broad declarative lines about widening finance, and nothing leans on exclamation or urgency.
 
 | Context | Tone |
 |---|---|
-| Hero headlines | Declarative, benefit-first. "매출을 만드는 가장 쉬운 방법." Confident without superlatives. |
-| Feature descriptions | Outcome-framed. "Npay 포인트 혜택으로 고객의 구매를 더 쉽게" (Make it easier for customers to buy). |
-| CTAs | Direct, specific. "가맹점 가입하기", "내 사업에 맞는 가입 유형 확인하기". |
-| Design guide text | Matter-of-fact spec language. "로고 사이의 간격 길이를 사용하여 로고 바깥쪽에 최소 여백을 둡니다." |
-| Error / guidance | Calm, actionable. "잘못된 사용은 브랜드 이미지를 왜곡하거나 커뮤니케이션 효과를 약화하므로 사용상 주의를 필요로 합니다." |
+| Corporate headline | Broad and declarative — "금융을 넓히는 기술, 네이버페이" |
+| Service scope | A plain list — "결제 · 대출 · 보험 · 카드 · 증권 · 부동산까지" |
+| Developer support | Helpful and direct — "네이버페이 개발자센터를 통해 쉽고 빠르게 결제 연동을 지원해 드립니다." |
+| Brand rules | Firm, with the reason given — "가이드라인을 따라 사용해야 하고 임의로 변경하여 사용할 수 없습니다." |
 
-**Voice samples (verbatim from live surfaces):**
-- "매출을 만드는 가장 쉬운 방법" — hero H2 (merchant center). *(verified live 2026-06-22)*
-- "Npay 포인트 혜택으로 고객의 구매를 더 쉽게" — benefit H3 (merchant center). *(verified live 2026-06-22)*
-- "사업자라면 누구나 쉽게 시작할 수 있어요" — onboarding H3 (merchant center). *(verified live 2026-06-22)*
+**Voice samples (verbatim, read 2026-09-30):**
+- "금융을 넓히는 기술, 네이버페이" — corporate home hero
+- "이제 네이버페이는 간편결제를 넘어, 종합 금융플랫폼으로 거듭나고 있습니다." — corporate introduction
+- "네이버페이 로고는 서비스 전체를 의미하는 브랜드 이미지로 네이버페이 협력사에 한하여 사용할 수 있습니다." — logo guide
+- "잘못된 사용은 브랜드 이미지를 왜곡하거나 커뮤니케이션 효과를 약화하므로 사용상 주의를 필요로 합니다." — logo guide
 
-**Forbidden register**: technical payment jargon left unexplained, aggressive urgency cues, English-language hero copy, exclamation-heavy sales tone.
+**Forbidden register:** unexplained payment jargon, urgency cues, exclamation-heavy sales copy.
 
 ## 11. Brand Narrative
 
-Naver Pay (네이버페이) launched in **2015** as Naver Corporation's integrated payment and financial services product, initially embedded within Naver Shopping and gradually expanding across the Naver super-app ecosystem. Part of **Naver Financial Corp** (네이버파이낸셜), a Naver subsidiary established in 2019 to house the company's financial infrastructure, Naver Pay benefits from Naver's dominant position in Korean search and content — making it one of the highest-reach payment touchpoints in Korea without requiring standalone acquisition.
+Naver Pay launched its simple-payment service in June 2015. The Naver Financial history page traces what followed: convenience-store change top-ups and bank-partnered check cards in 2016, a Samsung credit card and a K-Bank check card in 2017, offline QR payment with Zero Pay in December 2018, and in November 2019 the incorporation of Naver Financial as a separate company. From 2020 the list turns financial — on-site payment and quick settlement for SmartStore sellers, deferred payment pilots and credit management in 2021, the standalone Naver Pay app in August 2021, loan and insurance comparison from 2022, a June 2023 mobile overhaul that brought assets, payments, financial products, securities and real estate together, overseas QR payment in 65 countries by December 2023, and in 2024 Weixin Pay and PayPay acceptance, a Naver Pay wallet beta, a mobile transit card and face-sign payment.
 
-The product's positioning is built on the Naver ecosystem advantage: users who are already logged into Naver for search, news, blogs, and webtoons can pay across millions of merchant integrations without re-entering credentials. The loyalty layer — Naver Pay Points — creates a closed-loop reward system that keeps spending within the Naver ecosystem. The merchant-facing pitch ("매출을 만드는 가장 쉬운 방법") leans on this reach: integration with Naver Pay means exposure to Korea's most-used digital platform.
-
-What Naver Pay refuses: the cold institutional chrome of legacy Korean banking (no navy-and-gold, no heavy corporate formality). What it embraces: a clean, almost editorial layout; a Naver-green that signals trust and familiarity to tens of millions of daily Naver users; and a merchant experience that makes onboarding feel achievable even for a solo business operator.
+The company describes the arc in its own words: a simple payment connected seamlessly from search to shopping, a strong points ecosystem, and services built on mutual growth with sellers, now becoming "a comprehensive financial platform beyond simple payment". Naver Financial is based at NAVER 1784 in Seongnam.
 
 ## 12. Principles
 
-1. **Ecosystem trust as the product.** Naver Pay's strongest design signal is the green — Koreans associate Naver green with search results, map pins, and webtoon bookmarks. Bringing that color into the payment button creates an instant trust transfer. *UI implication:* the green pay button must be unambiguous and undiluted — no secondary greens competing for attention.
-2. **Flat and fast for mobile commerce.** Korea's mobile-first commerce context demands surfaces that load fast and render cleanly. *UI implication:* shadow-free flatness with surface tints is the right call — it keeps file sizes small and rendering sharp on Korean mobile networks.
-3. **Benefit before process.** The merchant center leads with outcomes (revenue, settlement, points) rather than technical setup steps. *UI implication:* feature cards lead with benefit headlines, not feature names; the CTA is "시작하기" not "설치하기".
-4. **Clear hierarchy through weight contrast.** Two fonts at many weights means the hierarchy must be clear — NanumSquareNeo Bold for hero scale, Pretendard for everything else. *UI implication:* do not mix NanumSquareNeo with body text; the contrast between the two fonts IS the hierarchy.
-5. **Design guide as brand protection.** The official Naver Pay design guide (logo guide, bridge UI, benefit badge) is unusually explicit — color steps are named (Green 500, Grayscale 900), spacing is measured. *UI implication:* these specs should be treated as hard constraints by any integration using Naver Pay branding.
+*Editorial readings of the captured surfaces and official guides, not Naver statements.*
+
+1. **The mark is protected, the interface is quiet.** The logo guide fixes the signature green and limits the logo to partners; the working interface uses a softer green only to show location.
+2. **Greys are specified, not improvised.** The live developer center uses the same grey steps the bridge guide publishes, so partner pages and Naver Pay's own pages can match.
+3. **State through weight and tint.** Hover and current states change weight and add a soft grey pill instead of adding colour.
+4. **Flat until touched.** Cards carry an edge, not a shadow, and lift only under the pointer.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable Naver Pay user segments (Korean online merchants, small business operators, everyday shoppers using Naver Pay in checkout), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable Naver Pay user segments, not individual people.*
 
-**이준혁, 38, 서울.** Online clothing reseller on SmartStore (네이버 스마트스토어). Chose to integrate Naver Pay because his customers already have Naver accounts and points. Doesn't write code — followed the merchant center guide to set up the payment integration himself in under a day. Values quick settlement so he can reinvest in inventory. Trusts Naver because he uses Naver Search, Maps, and Pay Points daily.
+**이준혁, 38, 서울.** Sells clothing online and added Naver Pay because his customers already carry Naver points. He reads the logo guide once to place the payment button correctly and wants settlement to be quick.
 
-**박미경, 44, 부산.** Runs a small restaurant listed on Naver Maps. Added Naver Pay QR as a payment option after seeing other restaurants use it. Pays attention to her Naver Pay Point accumulation because she shops online herself and knows the value of the point system from the consumer side.
+**김태우, 29, 경기.** A freelance developer who builds checkout pages for small merchants. He lives in the developer center's guides and relies on the published colour steps to make partner pages look native.
 
-**김태우, 29, 경기.** A freelance web developer who builds SmartStore sites for small businesses. Uses the Naver Pay developer docs frequently and reads the bridge UI spec to implement compliant checkout pages. Cares about the design guide because non-compliant logo usage can fail the Naver Pay integration review.
+**최수아, 25, 서울.** Pays for convenience stores, delivery and online shopping with Naver Pay and follows her points balance; she recognises the green logo at checkout instantly.
 
-**최수아, 25, 서울.** A daily Naver Pay user — pays for convenience stores, online shopping, and food delivery using Naver Pay QR and the app. Values points accumulation and the seamless checkout (no re-entering card details). Trusts the green button — when she sees it, she knows how to complete the payment.
+**박미경, 44, 부산.** Runs a small restaurant and accepts Naver Pay QR; she cares about fees and settlement dates more than design, and expects plain Korean in every notice.
 
 ## 14. States
 
-| State | Treatment |
+| State | Treatment (observed) |
 |---|---|
-| **Empty (no merchant transactions)** | White canvas. Ink Navy (`#1e1e23`) single line at body size with plain Korean explanation. One green CTA to set up payment. No illustration clutter. |
-| **Loading (merchant dashboard first paint)** | Skeleton blocks on `#f6f8fa` surface at final card dimensions, 20px radius. No shimmer shadow — flat pulse consistent with the shadow-free system. |
-| **Loading (transaction list refresh)** | Flat inline progress indicator; previous data stays visible. No full-page block. |
-| **Error (payment failed)** | Inline message in near-black ink with plain Korean explanation and a retry action. No generic "오류가 발생했습니다" alone — states what went wrong and next step. |
-| **Error (form validation — bridge UI)** | Field-level message below the input in red; describes what's valid, not just "필수". Green focus ring switches to red border on error field. |
-| **Success (payment complete)** | Brief inline confirmation. Green tint (`#eef9f3`) background with `#09aa5c` text confirmation. Transaction reference shown immediately. No confetti. |
-| **Success (merchant onboarded)** | Calm confirmation page in Pretendard. Next-step action highlighted with green CTA. |
-| **Skeleton** | `#f6f8fa` blocks at final dimensions, 20–28px radius, flat pulse. Consistent with card shapes. |
-| **Disabled** | Muted Light (`#aaaaac`) text; surfaces reduce opacity. Green elements fade to muted grey rather than disappear — avoids losing the brand signal entirely. |
-| **Benefit badge (active)** | Green tint `#eef9f3` surface with `#09aa5c` text, full-pill shape — "N% 적립" or similar. Activates when merchant has configured point benefits. |
+| Hover — top navigation | `#edeff2` pill, 8px radius, text `#1e1e23`, weight 700 |
+| Pressed — top navigation | same as hover |
+| Current — top navigation | text `#09aa5c`, weight 700 |
+| Hover — side navigation | `#f6f8fa` pill, 8px radius |
+| Pressed — side navigation | `#edeff2` pill, 8px radius |
+| Current — side navigation | text `#09aa5c`, weight 700 |
+| Hover — link card | shadow `rgba(0, 0, 0, 0.1) 0px 4px 16px 0px` |
+| Error — bridge example | error line in `#ff5252`, 14px / 20px |
+| Open — corporate family-site select | 168 x 106 list, `#ffffff` fill, 1px `#c9c9c9` border |
+
+Focus, disabled, loading and empty states did not occur on these public surfaces and are not specified.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 100ms | Button press, badge tap, checkbox check |
-| `motion-standard` | 200ms | Card enter, modal open, dropdown reveal |
-| `motion-slow` | 300ms | Page-level transitions, hero reveal |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — cards, modals, dropdowns |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions |
-
-**Motion rules**: Motion is minimal and purposeful — consistent with the flat, fast payment context. Green CTAs respond to press with a brief `#0b9552` color shift at `motion-fast`. Cards entering the viewport fade in from below at `motion-standard / ease-enter`. No bounce, spring, or overshoot — a payment interface signals reliability, not playfulness. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant; the checkout flow remains fully functional without any animation.
-
-<!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-22) via playwright getComputedStyle on:
-- https://admin.pay.naver.com/front/m/v2 (Naver Pay merchant center — brand-owned, pre-login public landing)
-  - Hero H2 "매출을 만드는 가장 쉬운 방법" — NanumSquareNeo 42px/700/color #1e1e23
-  - H3s "Npay 포인트 혜택으로 고객의 구매를 더 쉽게" etc — Pretendard 28px/600
-  - Primary CTA "가맹점 가입하기" — bg #1e1e23 / 8px radius / NanumSquareNeo 20px/700
-  - Secondary btn "로그인" — bg #ffffff / border 1px solid #dcdee0 / 6px radius
-  - Cards — bg #f6f8fa / radius 20–28px / shadow none
-  - Link color — rgb(0,126,255) = #007eff (merchant type link, "취급불가상품안내")
-  - Color frequency: #f6f8fa ×13, #ffffff ×5, #1e1e23 ×2, #eef9f3 ×1
-  - Nav font: Pretendard, 16px/400, color #767678
-
-- https://developers.pay.naver.com/design/bridge (official Naver Pay bridge UI design spec — Tier 1)
-  - Official color palette confirmed: Green 500 = #09AA5C, Green 600 = #0B9552
-  - Green tints: Green 100 = #EEF9F3, Green 200 = #E3F6ED
-  - Grayscale 900 = #1E1E23 (primary dark), 800 = #404048, 700 = #767678, 500 = #AAAAAC, 250 = #DCDEE0
-  - Surface/card colors: Grayscale 100 = #F6F8FA
-  - Input field spec: default 1px #dcdee0 border, focus 1px #09aa5c border, error state documented
-  - Button spec: primary 60% width / secondary 40% (payment completion flow)
-  - box-shadow: none across all components
-
-- https://developers.pay.naver.com/design/brand/logo (official logo guide — Tier 1)
-  - Logo background green = #00de5a (live DOM: rgb(0,222,90)) — brand logomark context ONLY
-  - Naver green (secondary logo context) = #09aa5c (same as interactive Green 500)
-  - Login page (nid.naver.com redirect): rgb(9,170,92) = #09aa5c confirmed on sign-in button
-
-Token-level claims (§1-9) are sourced from these three live inspections.
-
-Voice samples (§10) are verbatim from the live merchant center (admin.pay.naver.com 2026-06-22).
-
-Brand narrative (§11): Naver Pay launched 2015, Naver Financial Corp established 2019.
-These are widely documented public facts about the company; specific founding details 
-are general public knowledge about the Naver ecosystem.
-
-Personas (§13) are fictional archetypes informed by publicly observable Naver Pay user 
-segments (Korean merchants, everyday Naver app users). Names are illustrative; they do 
-not refer to real people.
-
-Interpretive claims (e.g., "ecosystem trust as the product", "shadow-free for mobile commerce") 
-are editorial readings connecting Naver Pay's observed design to its market positioning,
-not directly sourced Naver statements.
--->
+The evidence collector records computed colours, sizes and state endpoints, not transition or animation properties, so no duration or easing is declared for Naver Pay here. What is known is the endpoint of each change: navigation settles into its grey pill and weight 700, and the link card gains its hover shadow. Choose motion that keeps those endpoints intact and collapses to instant under `prefers-reduced-motion: reduce`.

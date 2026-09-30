@@ -4,52 +4,213 @@ name: Nexon
 country: KR
 category: consumer-tech
 homepage: "https://www.nexon.com"
-primary_color: "#00de5a"
+primary_color: "#0077ff"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=www.nexon.com&sz=128"
-verified: "2026-06-09"
+verified: "2026-09-30"
 added: "2026-06-09"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: game-portal, url: "https://www.nexon.com/Home/Game", inspected: "2026-09-30" }
+    - { id: surface-2, kind: brand-guide, url: "https://brand.nexon.com/ko", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://www.nexon.com/Home/Game", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://brand.nexon.com/ko", captured: "2026-09-30" }
+    - { id: brand-identity, kind: brand-asset, url: "https://brand.nexon.com/ko/ci-brand-guidelines/primary-identity", captured: "2026-09-30" }
+    - { id: typeface-guide, kind: brand-asset, url: "https://brand.nexon.com/ko/ci-brand-guidelines/typeface", captured: "2026-09-30" }
+    - { id: company-history, kind: official-doc, url: "https://company.nexon.com/ko/company", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.canvas": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.colors.guide-disabled": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.colors.guide-ink": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="10"]', captured: "2026-09-30" }
+    "tokens.colors.guide-meta": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.colors.helper": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::p', captured: "2026-09-30" }
+    "tokens.colors.ink": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.colors.input-ink": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.colors.input-line": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.colors.label": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="39"]', captured: "2026-09-30" }
+    "tokens.colors.muted": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::body', captured: "2026-09-30" }
+    "tokens.colors.pill-ink": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.colors.primary": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="2"]::state-hover', captured: "2026-09-30" }
+    "tokens.components.game-card.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="42"]', captured: "2026-09-30" }
+    "tokens.components.game-card.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="42"]', captured: "2026-09-30" }
+    "tokens.components.game-card.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="42"]', captured: "2026-09-30" }
+    "tokens.components.game-card.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="42"]', captured: "2026-09-30" }
+    "tokens.components.game-card.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="42"]', captured: "2026-09-30" }
+    "tokens.components.game-card.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="42"]', captured: "2026-09-30" }
+    "tokens.components.game-tile.bg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.game-tile.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.game-tile.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.game-tile.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]::state-hover', captured: "2026-09-30" }
+    "tokens.components.game-tile.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.game-tile.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="16"]', captured: "2026-09-30" }
+    "tokens.components.gnb-badge.bg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::span', captured: "2026-09-30" }
+    "tokens.components.gnb-badge.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::span', captured: "2026-09-30" }
+    "tokens.components.gnb-badge.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::span', captured: "2026-09-30" }
+    "tokens.components.gnb-badge.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::span', captured: "2026-09-30" }
+    "tokens.components.gnb-badge.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::span', captured: "2026-09-30" }
+    "tokens.components.gnb-badge.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::span', captured: "2026-09-30" }
+    "tokens.components.gnb-badge.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::span', captured: "2026-09-30" }
+    "tokens.components.gnb-badge.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::span', captured: "2026-09-30" }
+    "tokens.components.gnb-icon-link.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="2"]', captured: "2026-09-30" }
+    "tokens.components.gnb-icon-link.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="2"]', captured: "2026-09-30" }
+    "tokens.components.gnb-icon-link.hover": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="2"]::state-hover', captured: "2026-09-30" }
+    "tokens.components.gnb-icon-link.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="2"]', captured: "2026-09-30" }
+    "tokens.components.gnb-icon-link.pressed": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="2"]::state-pressed', captured: "2026-09-30" }
+    "tokens.components.gnb-icon-link.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="2"]', captured: "2026-09-30" }
+    "tokens.components.gnb-icon-link.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="2"]', captured: "2026-09-30" }
+    "tokens.components.gnb-icon-link.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="2"]', captured: "2026-09-30" }
+    "tokens.components.gnb-icon-link.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="2"]', captured: "2026-09-30" }
+    "tokens.components.gnb-link.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.gnb-link.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.gnb-link.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.gnb-link.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.gnb-link.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.gnb-link.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.gnb-link.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.components.gnb-pill-link.border": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.gnb-pill-link.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.gnb-pill-link.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.gnb-pill-link.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.gnb-pill-link.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.gnb-pill-link.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.gnb-pill-link.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]::state-hover', captured: "2026-09-30" }
+    "tokens.components.gnb-pill-link.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.gnb-pill-link.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.components.guide-arrow-button.bg": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="10"]', captured: "2026-09-30" }
+    "tokens.components.guide-arrow-button.border": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="10"]', captured: "2026-09-30" }
+    "tokens.components.guide-arrow-button.disabled": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="9"]', captured: "2026-09-30" }
+    "tokens.components.guide-arrow-button.radius": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="10"]', captured: "2026-09-30" }
+    "tokens.components.guide-arrow-button.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="10"]', captured: "2026-09-30" }
+    "tokens.components.guide-arrow-button.states": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="10"]::state-hover', captured: "2026-09-30" }
+    "tokens.components.guide-arrow-button.type": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="10"]', captured: "2026-09-30" }
+    "tokens.components.guide-arrow-button.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="10"]', captured: "2026-09-30" }
+    "tokens.components.guide-article-card.radius": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="11"]', captured: "2026-09-30" }
+    "tokens.components.guide-article-card.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="11"]', captured: "2026-09-30" }
+    "tokens.components.guide-article-card.type": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="11"]', captured: "2026-09-30" }
+    "tokens.components.guide-article-card.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="11"]', captured: "2026-09-30" }
+    "tokens.components.guide-family-site-select.bg": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="17"]', captured: "2026-09-30" }
+    "tokens.components.guide-family-site-select.border": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="17"]', captured: "2026-09-30" }
+    "tokens.components.guide-family-site-select.fg": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="17"]', captured: "2026-09-30" }
+    "tokens.components.guide-family-site-select.font": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="17"]', captured: "2026-09-30" }
+    "tokens.components.guide-family-site-select.height": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="17"]', captured: "2026-09-30" }
+    "tokens.components.guide-family-site-select.padding": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="17"]', captured: "2026-09-30" }
+    "tokens.components.guide-family-site-select.states": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-interaction-capture="menu-0-0"]', captured: "2026-09-30" }
+    "tokens.components.guide-family-site-select.type": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="17"]', captured: "2026-09-30" }
+    "tokens.components.guide-family-site-select.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="17"]', captured: "2026-09-30" }
+    "tokens.components.guide-language-button.bg": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="4"]', captured: "2026-09-30" }
+    "tokens.components.guide-language-button.border": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="4"]', captured: "2026-09-30" }
+    "tokens.components.guide-language-button.fg": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="4"]', captured: "2026-09-30" }
+    "tokens.components.guide-language-button.font": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="4"]', captured: "2026-09-30" }
+    "tokens.components.guide-language-button.radius": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="4"]', captured: "2026-09-30" }
+    "tokens.components.guide-language-button.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="4"]', captured: "2026-09-30" }
+    "tokens.components.guide-language-button.states": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="4"]::state-pressed', captured: "2026-09-30" }
+    "tokens.components.guide-language-button.type": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="4"]', captured: "2026-09-30" }
+    "tokens.components.guide-language-button.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="4"]', captured: "2026-09-30" }
+    "tokens.components.login-box-action.bg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.login-box-action.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.login-box-action.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.login-box-action.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.login-box-action.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.login-box-action.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.login-box-action.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.login-box-action.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.login-box-action.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="29"]', captured: "2026-09-30" }
+    "tokens.components.search-input.border": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.components.search-input.fg": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.components.search-input.font": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.components.search-input.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.components.search-input.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.components.search-input.radius": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.components.search-input.states": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.components.search-input.type": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.components.search-input.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="40"]', captured: "2026-09-30" }
+    "tokens.rounded.badge": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::span', captured: "2026-09-30" }
+    "tokens.rounded.guide-button": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::[data-omd-capture="4"]', captured: "2026-09-30" }
+    "tokens.rounded.pill": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.spacing.game-card-media": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="42"]', captured: "2026-09-30" }
+    "tokens.spacing.gnb-top": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.spacing.gnb-x": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.spacing.pill-x": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="6"]', captured: "2026-09-30" }
+    "tokens.typography.body.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::body', captured: "2026-09-30" }
+    "tokens.typography.body.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::body', captured: "2026-09-30" }
+    "tokens.typography.body.weight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::body', captured: "2026-09-30" }
+    "tokens.typography.card-title.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="42"]', captured: "2026-09-30" }
+    "tokens.typography.card-title.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="42"]', captured: "2026-09-30" }
+    "tokens.typography.card-title.weight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="42"]', captured: "2026-09-30" }
+    "tokens.typography.family.identity": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.family.ui": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.typography.gnb.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.typography.gnb.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.typography.gnb.weight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="1"]', captured: "2026-09-30" }
+    "tokens.typography.guide-article-text.lineHeight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-article-text.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-article-text.tracking": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-article-text.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-article-text.weight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-article-title.lineHeight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-article-title.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-article-title.tracking": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-article-title.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-article-title.weight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-display.lineHeight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-display.size": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-display.tracking": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-display.use": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.guide-display.weight": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: 'surface-2::h1', captured: "2026-09-30" }
+    "tokens.typography.section.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::h2', captured: "2026-09-30" }
+    "tokens.typography.section.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::h2', captured: "2026-09-30" }
+    "tokens.typography.section.weight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::h2', captured: "2026-09-30" }
+    "tokens.typography.utility.size": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="12"]', captured: "2026-09-30" }
+    "tokens.typography.utility.tracking": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="12"]', captured: "2026-09-30" }
+    "tokens.typography.utility.use": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="12"]', captured: "2026-09-30" }
+    "tokens.typography.utility.weight": { surface_id: home, source_id: surface-home, method: computed-style, selector: 'home::[data-omd-capture="12"]', captured: "2026-09-30" }
 tokens:
-  source: live-extract
-  extracted: "2026-06-09"
-  note: "primary = live Nexon brand green (#00de5a, rgb(0,222,90)) measured on the home-page CTA with black label; chrome built on near-black #17191d text over white"
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
-    primary: "#00de5a"
-    on-primary: "#000000"
-    canvas: "#ffffff"
+    primary: "#0077ff"
     ink: "#17191d"
-    near-black: "#080410"
-    body: "#737881"
+    muted: "#737881"
     label: "#4a4e57"
-    muted: "#919191"
-    disabled: "#9fa1a7"
-    pure-black: "#000000"
+    helper: "#9fa1a7"
+    pill-ink: "#080410"
+    canvas: "#ffffff"
+    input-ink: "#222426"
+    input-line: "#dde1e5"
+    guide-ink: "#222222"
+    guide-meta: "#51555d"
+    guide-disabled: "#a1a7b5"
   typography:
-    family: { sans: "NEXON Gothic Bold", fallback: "malgun gothic" }
-    nav-link:   { size: 16, weight: 400, lineHeight: 1.20, use: "Primary GNB navigation link, ink color" }
-    menu-link:  { size: 14, weight: 400, lineHeight: 1.20, use: "Secondary nav / sub-menu link" }
-    cta:        { size: 14, weight: 700, lineHeight: 1.20, use: "Primary green CTA label, NEXON Gothic Bold" }
-    body:       { size: 12, weight: 400, lineHeight: 1.20, use: "Standard reading text, footer copy" }
-    label:      { size: 12, weight: 400, lineHeight: 1.20, tracking: -0.3, use: "Muted utility labels" }
-    caption:    { size: 12, weight: 700, lineHeight: 1.20, use: "Bold footer / emphasis caption" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 20, xl: 24, xxl: 36, section: 48 }
-  rounded: { sm: 0, md: 4, lg: 8, full: 9999 }
-  shadow:
-    flat: "none"
-    ambient: "rgba(0,0,0,0.08) 0px 2px 8px"
-    elevated: "rgba(0,0,0,0.16) 0px 8px 24px"
+    family: { ui: "NEXON Gothic", identity: "KlavikaNX" }
+    gnb: { size: 16, weight: 400, use: "Portal GNB menu link in NEXON Gothic (the portal's name for NEXON Lv.1 Gothic), #17191d" }
+    section: { size: 24, weight: 400, use: "Portal section heading (h2) set in the NEXON Gothic Bold family, which registers the Lv.1 Gothic Bold cut at weight 400" }
+    card-title: { size: 16, weight: 400, use: "Portal game-card title in the NEXON Gothic Bold family" }
+    utility: { size: 14, weight: 400, tracking: -0.4, use: "Portal utility links (보안센터, PC방 찾기) in NEXON Gothic" }
+    body: { size: 12, weight: 400, use: "Portal body and small print; declares the system face malgun gothic, so no brand face is claimed for it" }
+    guide-display: { size: 52, weight: 600, lineHeight: 1.1, tracking: -0.52, use: "Brand-guide section display (Brand Articles) in KlavikaNX, 57.2px line" }
+    guide-article-title: { size: 18, weight: 500, lineHeight: 1.6, tracking: -0.18, use: "Brand-guide article card title in Pretendard, 28.8px line" }
+    guide-article-text: { size: 16, weight: 400, lineHeight: 1.7, tracking: -0.16, use: "Brand-guide article excerpt in Pretendard, 27.2px line" }
+  spacing: { gnb-top: 23, gnb-x: 23, pill-x: 18, game-card-media: 224 }
+  rounded: { pill: 19, badge: 7, guide-button: 4 }
   components:
-    button-primary: { type: button, bg: "#00de5a", fg: "#000000", radius: "0px", padding: "12px 24px", font: "14px / 700", use: "Primary green CTA, black label, NEXON Gothic Bold, sharp corners" }
-    button-disabled: { type: button, bg: "#9fa1a7", fg: "#ffffff", radius: "0px", padding: "12px 24px", font: "14px / 400", use: "Inactive / disabled CTA, muted gray fill" }
-    button-ghost: { type: button, bg: "#ffffff", fg: "#17191d", radius: "0px", padding: "10px 20px", font: "14px / 400", use: "Secondary text action, no fill, ink label" }
-    nav-link: { type: tab, fg: "#17191d", radius: "0px", padding: "0px 16px", font: "16px / 400", use: "GNB top navigation item", active: "Nx bottom border #00de5a" }
-    menu-item: { type: listItem, bg: "#ffffff", fg: "#17191d", radius: "0px", padding: "8px 16px", font: "14px / 400", use: "Dropdown / sub-nav list row" }
-    card: { type: card, bg: "#ffffff", fg: "#17191d", radius: "4px", padding: "16px", use: "Game promo card on white canvas, ambient shadow" }
-    badge: { type: badge, bg: "#00de5a", fg: "#000000", radius: "4px", padding: "2px 8px", font: "12px / 700", use: "NEW / event badge, brand green fill" }
-    footer-label: { type: badge, fg: "#9fa1a7", radius: "0px", font: "12px / 700", use: "Bold footer label, muted gray" }
-    input-text: { type: input, bg: "#ffffff", fg: "#17191d", radius: "4px", padding: "8px 12px", font: "14px / 400", use: "Search / login field, muted #919191 placeholder" }
+    gnb-link: { type: tab, fg: "#17191d", padding: "23px 23px 21px", height: "62px", font: "16px / 400 NEXON Gothic", states: "rest only; the bundle holds no state frame for this link (capture 1)", use: "Portal GNB menu link at home::[data-omd-capture=\"1\"], 107 x 62" }
+    gnb-icon-link: { type: tab, fg: "#17191d", padding: "21px 0px 0px", size: "22px x 62px", font: "14px / 400 NEXON Gothic", hover: "fg #0077ff on the anchor; the icon span's own hover value is outside the capture", pressed: "fg #0077ff on the anchor, the same frame as hover", states: "settled frames: four sibling GNB links (captures 2-5) record the identical #0077ff for hover and pressed; focus is not declared", use: "Portal GNB icon link at home::[data-omd-capture=\"2\"], 22 x 62; its visible glyph is a 22 x 22 span (one records bg #191919), the label text is hidden" }
+    gnb-pill-link: { type: button, fg: "#080410", border: "2px #17191d", radius: "19px", padding: "7px 18px 0px", height: "36px", font: "15px / 400 NEXON Gothic Bold", states: "a single element, so sibling agreement is unavailable; its hover and pressed frames both record bg #0077ff, fg #ffffff and a 2px #0077ff border, exact values equal to the blue the four GNB icon links settle on; kept as a recorded frame rather than declared hover or pressed keys", use: "Portal GNB outline pill link (three-character label) at home::[data-omd-capture=\"6\"], 85 x 36" }
+    gnb-badge: { type: badge, bg: "#0077ff", fg: "#ffffff", radius: "7px", padding: "0px 3px 0px 4px", size: "14px x 14px", font: "10px / 400", use: "Portal GNB notification count badge (span.gnbBadge) at home::span, set on a GNB icon" }
+    login-box-action: { type: button, bg: "#17191d", fg: "#ffffff", radius: "0px", padding: "22px 0px 0px", height: "60px", font: "15px / 400 NEXON Gothic Bold", states: "rest only; the bundle holds no state frame for capture 29", use: "Portal login-box primary link, a 353 x 60 dark block at home::[data-omd-capture=\"29\"]; the green button below it (a.naver-login-btn, 네이버 로그인) is Naver's sign-in and is excluded as a third-party brand element" }
+    search-input: { type: input, fg: "#222426", border: "bottom 1px #dde1e5", radius: "0px", padding: "0px 3px", height: "44px", font: "12px / 400", states: "rest only; the bundle holds no state frame for capture 40", use: "Portal game search field at home::[data-omd-capture=\"40\"], 302 x 44, underline only, letter-spacing -0.3px; its text declares the system face malgun gothic" }
+    game-card: { type: card, fg: "#17191d", padding: "224px 0px 0px", size: "302px x 320px", font: "16px / 400 NEXON Gothic Bold", use: "Portal game grid card (a) at home::[data-omd-capture=\"42\"]: a 224px image area above the title; 39 cards in the grid, each with a 20 x 20 #737881 icon link beside it" }
+    game-tile: { type: card, bg: "#ffffff", radius: "0px", size: "153px x 342px", states: "hover and pressed frames record box-shadow rgba(0, 0, 0, 0) 0px 0px 0px 0px while other frames record blur values that differ tile to tile (1.3332px to 1.33992px): the collector sampled a shadow transition in flight, so the settled hover is unmeasured and none is declared", use: "Portal featured-game carousel tile (a) at home::[data-omd-capture=\"16\"], eleven tiles; the first (capture 15) carries a 2px #f78029 bottom border" }
+    guide-arrow-button: { type: button, bg: "#222222", border: "1px #222222", radius: "0px", size: "40px x 40px", disabled: "bg #a1a7b5, 1px #a1a7b5 border, icon #adb5bd (capture 9, disabled at capture time)", states: "the enabled button is a single element, so sibling agreement is unavailable; its hover and pressed frames both record bg #ffffff with the 1px #222222 border kept, recorded here rather than declared as hover or pressed keys", use: "Brand-guide carousel arrow button at surface-2::[data-omd-capture=\"10\"]" }
+    guide-language-button: { type: button, bg: "#ffffff", fg: "#2e2e2e", border: "1px transparent", radius: "4px", size: "44px x 42px", font: "16px / 600 / 16px Pretendard", states: "the pressed frame records the rest values in every captured property; no hover frame", use: "Brand-guide header language button (KO) at surface-2::[data-omd-capture=\"4\"]" }
+    guide-family-site-select: { type: button, bg: "#000000", fg: "#ffffff", border: "bottom 1px #a1a7b5", padding: "11px 0px", height: "43px", font: "16px / 400 / 24.8px Pretendard", states: "the collector's menu interaction opened a 250 x 298 dropdown: bg #000000, 1px #e9ecef border, 8px 0px padding, items 248 x 40 in #ffffff 16px / 400 / 24.8px with 0px 12px padding", use: "Brand-guide footer family-site select at surface-2::[data-omd-capture=\"17\"], 248 x 43" }
+    guide-article-card: { type: card, radius: "0px", size: "342px x 521px", use: "Brand-guide article card (a) at surface-2::[data-omd-capture=\"11\"], five in a row: a 342 x 342 image over a #51555d 15px / 400 / 15px date, a #000000 18px / 500 / 28.8px title and a 16px / 400 / 27.2px excerpt; the anchor's own 16px / 400 black equals the body's inherited text, so no card-level label style is claimed" }
   components_harvested: true
 ---
 
@@ -57,340 +218,302 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-Nexon's website is the digital storefront of one of Korea's largest game publishers, and its design reflects a deliberate split personality: an editorial, almost corporate calm in the chrome, broken by sudden bursts of high-voltage brand green. The page sits on a clean white canvas (`#ffffff`) with near-black ink (`#17191d`) for headings and navigation, but the moment a primary call-to-action appears, the system detonates its signature `#00de5a` -- an electric, arcade-bright green that reads as "press start." This is the green of a power-up, of a glowing console button, and it is used with restraint precisely so that each appearance lands like a hit.
+Nexon (넥슨) is the Korean game company that, in its own brand team's words, was founded in 1994 and went on to serve the world's first internet graphic online game. Thirty years later it describes itself as becoming a global entertainment company built on strong IP, solid development and more than three decades of running online games. The portfolio spans MapleStory, KartRider and its successor KartRider: Drift, Dungeon&Fighter from Neople, Mabinogi from devCAT, V4, Sudden Attack and Blue Archive from Nexon Games, and Mintrocket's Dave the Diver; in 2026 it also took on Korean publishing of Overwatch and saw ARC Raiders win at the D.I.C.E. and BAFTA awards. The company marked its 30th anniversary in 2024 with a commemorative logo from its in-house brand design team, and in May 2026 reopened its computer museum under the Nexon Museum name.
 
-The typographic backbone is **NEXON Gothic Bold**, the company's proprietary typeface, which carries the brand voice on every CTA and emphasis element. It falls back to `malgun gothic` for body copy, giving the running text a familiar, highly legible Korean-web baseline. The result is a hierarchy where the custom face does the shouting and the system face does the reading. Black text (`#000000`) sits directly on the green CTA -- a high-contrast, almost industrial pairing that refuses the soft white-on-color convention most consumer sites default to. The black-on-green combination is the single most identifiable Nexon design signal.
+The identity is managed from a public brand guide. Its symbol mark is described as a "gate" — a doorway of communication into an imagined world of new fun, the passage through which more players reach satisfying play. The guide pairs a vertical signature for emphasising the visual identity with a horizontal one for the verbal identity, and names **KlavikaNX** as Nexon's exclusive typeface, a paid face licensed only for Nexon works. For Korean text Nexon ships its own families: **NEXON Lv.1 Gothic**, a young, readable body face made for mobile, web and print, and the more mature **NEXON Lv.2 Gothic**, alongside game-born faces such as Bazzi, Football Gothic, MapleStory and Warhaven.
 
-Geometry is sharp and confident. Buttons and nav items use zero or minimal corner radius, echoing the rectangular, pixel-grid heritage of game UI rather than the soft pill shapes of modern SaaS. Shadows are light and functional -- elevation exists to separate cards from the canvas, not to create atmosphere. The overall impression is of a company that takes its games' energy seriously but frames it inside a disciplined, grown-up corporate shell.
+The game portal at nexon.com is deliberately plain so the game art can be loud. Navigation and headings run in NEXON Gothic (the portal's name for Lv.1 Gothic) in near-black `#17191d` on white; dense detail drops to 12px system text in grey `#737881`; corners stay square almost everywhere. One colour does the interactive work: `#0077ff`, the blue that GNB links turn on hover, that fills the outline pill on hover and that carries the notification badge. The brand guide shows the identity side of the same company — KlavikaNX display at 52px, black and white panels, Pretendard for reading.
 
 **Key Characteristics:**
-- Signature arcade-green `#00de5a` reserved for primary CTAs and brand accents -- used sparingly for maximum impact
-- Black label (`#000000`) directly on green -- the defining high-contrast Nexon pairing
-- Proprietary **NEXON Gothic Bold** for CTAs and emphasis; `malgun gothic` fallback for body
-- Near-black ink (`#17191d`) instead of pure black for headings and navigation
-- Sharp, low-radius geometry (0-4px) echoing game-UI heritage
-- Restrained, functional shadows -- elevation, not atmosphere
-- Muted gray scale (`#737881`, `#4a4e57`, `#919191`, `#9fa1a7`) for hierarchy and utility text
+- White canvas, near-black `#17191d` navigation and headings in NEXON Gothic
+- A single interaction blue, `#0077ff`, on hover states and the notification badge
+- Dense 12px system text in `#737881` for the portal's detail and legal lines
+- Square geometry: 330 of 336 captured radii are 0px; the 19px outline pill is the exception
+- Game art supplies the colour; the chrome stays grey
+- KlavikaNX as the exclusive identity typeface, NEXON Lv.1 and Lv.2 Gothic for Korean text
 
 ## Primary tasks
 
-- Check which events are running before you play
-- Download a game and start playing from the storefront
-- Scan the game lineup for something worth coming back to
-- Review the publisher as a listed company on its investor pages
+- Check which events and updates are running before playing
+- Find and launch a game from the portal's game grid
+- Look up Nexon's brand assets, CI rules and typefaces
+- Read company news, history and affiliate information
 
 ## 2. Color Palette & Roles
 
-### Primary
-- **Nexon Green** (`#00de5a`): The signature brand color. Primary CTA backgrounds, brand accents, active-state underlines, event badges. An electric arcade green measured live as `rgb(0,222,90)` on the home-page CTA.
-- **On-Primary Black** (`#000000`): Label color that sits directly on Nexon Green. The black-on-green pairing is the brand's most identifiable signal.
-- **Pure White** (`#ffffff`): Page background, card surfaces, nav background.
+### Portal (captured on nexon.com)
+- **Interaction Blue** (`#0077ff`): the hover and pressed colour of the GNB icon links, the hover fill of the GNB outline pill and the fill of the notification badge. No captured page names it as a CI colour; it is the portal's working accent.
+- **Ink** (`#17191d`): GNB menu links, section headings, game-card titles, the outline pill's 2px border and the dark login-box block.
+- **Muted** (`#737881`): the body text colour — small links, footer and detail lines, the icon links beside game cards.
+- **Label** (`#4a4e57`): secondary heading-side links at 13px.
+- **Helper** (`#9fa1a7`): 12px helper text in the login box and the border of carousel arrows.
+- **Pill Ink** (`#080410`): the outline pill's label.
+- **Canvas** (`#ffffff`): page ground, carousel tiles, and the text on the dark login block and the badge.
+- **Input Ink** (`#222426`) and **Input Line** (`#dde1e5`): the search field's text and its 1px underline.
+- **Tile marker** (`#f78029`): a 2px bottom border on the first carousel tile.
 
-### Ink & Text
-- **Ink** (`#17191d`): Primary heading, navigation, and link text. A near-black that reads cleaner than pure black on white.
-- **Near-Black Link** (`#080410`): Deepest link/text tone for high-emphasis inline links.
-- **Body Gray** (`#737881`): Default body and secondary text color, measured on `body`.
-- **Label Gray** (`#4a4e57`): Stronger secondary labels and sub-headings.
-- **Muted Gray** (`#919191`): Utility labels and placeholder-adjacent text, often with -0.3px tracking.
-- **Disabled Gray** (`#9fa1a7`): Inactive CTA fills and disabled control text.
+### Brand guide (captured on brand.nexon.com)
+- **Guide Ink** (`#222222`): the carousel arrow fill and the "MORE" control.
+- **Guide Meta** (`#51555d`): article dates.
+- **Guide Disabled** (`#a1a7b5`): the disabled arrow fill and the footer select's underline; the disabled arrow's icon is `#adb5bd`.
+- **Black** (`#000000`) and **White** (`#ffffff`): the guide's text, the footer select and its dropdown (1px `#e9ecef` border); the language button's text is `#2e2e2e`.
 
-### Pure Black
-- **Pure Black** (`#000000`): CTA label on green, maximum-contrast utility.
+### Not Nexon's
+- `#00de5a` appears once on the portal: the "네이버 로그인" button in the login box, which is Naver's sign-in. It is a third-party brand element and is not part of Nexon's palette.
 
 ## 3. Typography Rules
 
-### Font Family
-- **Primary**: `NEXON Gothic Bold` -- the proprietary brand face, used on CTAs, emphasis, and bold captions.
-- **Fallback / Body**: `malgun gothic`, then `sans-serif` -- the running-text face for body copy and most navigation.
+### Font evidence by class
+- **Official product-use (brand guide):** KlavikaNX is named Nexon's exclusive typeface, chosen to sit with the identity elements; its licence is paid and limited to Nexon works (print and websites allowed, game embedding and video subtitles not). NEXON Lv.1 Gothic is described as the readable body face for games across mobile, web and print, with a low-capacity "Low" version; NEXON Lv.2 Gothic is its more mature sibling. The guide lists further faces: 넥슨 배찌체, 넥슨 풋볼 고딕, 넥슨 메이플스토리, 던파 비트비트 v2, 던파 연단된 칼날, 넥슨 워헤이븐체, 넥슨 카트 고딕 and 마비옛체.
+- **Live surface-use:** on the portal, `NEXON Gothic` and `NEXON Gothic Bold` are loaded from `rs.nxfs.nexon.com/home/fonts/` (files named `NEXON Lv1 Gothic OTF` and `… OTF Bold`); the Bold cut is registered as its own family at weight 400. On the brand guide, `KlavikaNX` (from `brand.nexon.com/font/KlavikaNX/`) sets display and card titles and `Pretendard` (from `brand.nexon.com/font/Pretendard/`) sets reading text.
+- **Official distributed font assets:** the brand guide stylesheet declares Nexon's own faces from `brand.nexon.com/font/` — NexonLv1Gothic, NexonLv2Gothic, NexonBazzi, NexonFootballGothic, NexonMapleStory, NexonWarhaven, NexonKartGothic, MabinogiClassic, DNFBitBitv2 and DNFForgedBlade — none of which renders visible text on the captured pages.
+- **Declared-only:** `Noto Sans KR` on the brand guide; `LatoWeb`, `Pretendard Variable` and `Pretendard Bold` from the shared GNB component; the `slick` and `swiper-icons` icon fonts.
+- **System, not brand:** the portal's body text declares `"malgun gothic", "sans serif"`; it is an OS face and gets no family token or specimen.
+- **Unresolved:** the licence of NEXON Lv.1 Gothic and the other in-house faces sits in a collapsed FAQ on the typeface page whose answers were not read in this pass.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Nav Link | NEXON Gothic Bold / malgun | 16px | 400 | 1.20 | normal | Primary GNB items, `#17191d` |
-| Menu Link | malgun gothic | 14px | 400 | 1.20 | normal | Sub-nav, dropdown rows |
-| CTA | NEXON Gothic Bold | 14px | 700 | 1.20 | normal | Green CTA label, black text |
-| Body | malgun gothic | 12px | 400 | 1.20 | normal | Standard reading text |
-| Label | malgun gothic | 12px | 400 | 1.20 | -0.3px | Muted utility labels |
-| Caption Bold | NEXON Gothic Bold | 12px | 700 | 1.20 | normal | Bold footer labels, `#9fa1a7` |
+| Role | Surface | Family | Size | Weight | Line height | Notes |
+|------|---------|--------|------|--------|-------------|-------|
+| GNB link | Portal | NEXON Gothic | 16px | 400 | normal | `#17191d` |
+| Section heading | Portal | NEXON Gothic Bold | 24px | 400 (bold cut) | normal | `#17191d` |
+| Game-card title | Portal | NEXON Gothic Bold | 16px | 400 (bold cut) | normal | `#17191d` |
+| Utility link | Portal | NEXON Gothic | 14px | 400 | normal | tracking -0.4px |
+| Body / detail | Portal | system (malgun gothic) | 12px | 400 | normal | `#737881` |
+| Guide display | Brand guide | KlavikaNX | 52px | 600 | 57.2px | tracking -0.52px |
+| Guide article title | Brand guide | Pretendard | 18px | 500 | 28.8px | tracking -0.18px |
+| Guide article text | Brand guide | Pretendard | 16px | 400 | 27.2px | tracking -0.16px |
 
 ### Principles
-- **Two-face system**: NEXON Gothic Bold for shouting (CTAs, emphasis), `malgun gothic` for reading (body, most nav). The custom face is a deliberate brand stamp.
-- **Weight as emphasis**: 700 is reserved for CTAs and key labels; 400 carries everything else. The contrast between the two is the primary typographic signal.
-- **Tight line-height**: Compact ~1.2 line-heights keep dense Korean-web layouts legible without wasted vertical space.
-- **Small base size**: 12px body reflects the information-dense Korean portal convention; emphasis is created by weight and color, not large type.
+- **Bold as a separate cut.** The portal switches to the NEXON Gothic Bold family for headings and titles instead of raising the weight number.
+- **Brand face for navigation, system face for density.** NEXON Gothic carries menus, headings and titles; 12px system text carries the long tail of detail.
+- **Latin identity in KlavikaNX.** Section display on the brand guide is Latin (Brand Articles) and set in the exclusive typeface.
 
 ## 4. Component Stylings
 
-### Buttons
-
-**Primary Green CTA**
-- Background: `#00de5a`
-- Text: `#000000`
-- Padding: 12px 24px
-- Radius: 0px (sharp)
-- Font: 14px NEXON Gothic Bold, weight 700
-- Use: Primary action -- "다운로드", "게임 시작", "지금 플레이"
-
-**Disabled CTA**
-- Background: `#9fa1a7`
-- Text: `#ffffff`
-- Padding: 12px 24px
-- Radius: 0px
-- Font: 14px weight 400
-- Use: Inactive / unavailable action
-
-**Ghost / Text Action**
-- Background: `#ffffff`
-- Text: `#17191d`
-- Padding: 10px 20px
-- Radius: 0px
-- Use: Secondary text-only actions
-
 ### Navigation
-- Clean horizontal GNB on white (`#ffffff`)
-- Links: 16px, `#17191d` ink, NEXON Gothic Bold / malgun fallback
-- Active item: Nexon Green (`#00de5a`) bottom border underline
-- Sub-menu rows: 14px `malgun gothic`, `#17191d` on white
 
-### Cards & Containers
-- Background: `#ffffff`
-- Radius: 4px
-- Shadow (ambient): `rgba(0,0,0,0.08) 0px 2px 8px`
-- Shadow (elevated): `rgba(0,0,0,0.16) 0px 8px 24px`
-- Use: Game promo cards, event tiles on white canvas
-
-### Badges
-- Background: `#00de5a`
-- Text: `#000000`
-- Padding: 2px 8px
-- Radius: 4px
-- Font: 12px NEXON Gothic Bold, weight 700
-- Use: NEW / event markers
-
-### Inputs & Forms
-- Background: `#ffffff`
-- Border radius: 4px
+**GNB menu link**
 - Text: `#17191d`
-- Placeholder: `#919191` muted gray
-- Padding: 8px 12px
+- Font: 16px NEXON Gothic, weight 400
+- Padding: 23px 23px 21px
+- Height: 62px
+
+**GNB icon link**
+- Text: `#17191d`
+- Size: 22 x 62
+- Padding: 21px 0px 0px
+- Hover: anchor colour `#0077ff`
+- Pressed: anchor colour `#0077ff`
+
+**GNB outline pill**
+- Text: `#080410`
+- Border: 2px `#17191d`
+- Radius: 19px
+- Padding: 7px 18px 0px
+- Height: 36px
+- Font: 15px NEXON Gothic Bold
+- Recorded hover frame: fill `#0077ff`, text `#ffffff`, border 2px `#0077ff`
+
+**GNB notification badge**
+- Background: `#0077ff`
+- Text: `#ffffff`
+- Radius: 7px
+- Size: 14 x 14
+- Font: 10px, weight 400
+
+### Actions & Inputs
+
+**Login-box action**
+- Background: `#17191d`
+- Text: `#ffffff`
+- Size: 353 x 60
+- Padding: 22px 0px 0px
+- Font: 15px NEXON Gothic Bold
+
+**Game search field**
+- Text: `#222426`
+- Border: bottom 1px `#dde1e5`
+- Height: 44px
+- Padding: 0px 3px
+- Font: 12px, weight 400, tracking -0.3px
+
+### Cards
+
+**Game grid card**
+- Title: `#17191d`, 16px NEXON Gothic Bold
+- Size: 302 x 320
+- Media: a 224px image area above the title
+
+**Featured carousel tile**
+- Background: `#ffffff`
+- Size: 153 x 342
+- Radius: 0px
+- First tile: 2px `#f78029` bottom border
+
+### Brand guide
+
+**Carousel arrow**
+- Background: `#222222`
+- Border: 1px `#222222`
+- Size: 40 x 40
+- Disabled: fill `#a1a7b5`, border `#a1a7b5`, icon `#adb5bd`
+- Recorded hover frame: fill `#ffffff`, border 1px `#222222`
+
+**Language button**
+- Background: `#ffffff`
+- Text: `#2e2e2e`
+- Radius: 4px
+- Size: 44 x 42
+- Font: 16px Pretendard, weight 600
+
+**Family-site select**
+- Background: `#000000`
+- Text: `#ffffff`
+- Border: bottom 1px `#a1a7b5`
+- Height: 43px
+- Open: a 250 x 298 dropdown on `#000000` with a 1px `#e9ecef` border and 248 x 40 `#ffffff` items
+
+**Article card**
+- Size: 342 x 521
+- Image: 342 x 342
+- Date: `#51555d`, 15px Pretendard
+- Title: `#000000`, 18px Pretendard, weight 500
+
+### State evidence
+Only the GNB icon links carry declared hover and pressed values: four siblings settle on the identical `#0077ff`. The outline pill and the guide's enabled arrow are single elements, so their hover frames are recorded but not declared. The carousel tiles' hover was caught mid-transition and is unmeasured. No focus value is declared.
 
 ---
 
-**Verified:** 2026-06-09 (omd-add-reference live inspect)
-**Tier 1 sources:** https://www.nexon.com, https://www.nexon.com/Main/Index (Korean home + main surface, live DOM)
+**Verified:** 2026-09-30 (deterministic evidence capture of the game portal and the brand guide, reconciled with the brand guide's identity and typeface pages and the company site)
+**Tier 1 sources:** https://www.nexon.com/Home/Game, https://brand.nexon.com/ko, https://brand.nexon.com/ko/ci-brand-guidelines/primary-identity, https://brand.nexon.com/ko/ci-brand-guidelines/typeface, https://company.nexon.com/ko/company
+**Tier 2 sources:** getdesign.md/nexon returned a page with no Nexon content; styles.refero.design search for "nexon" returned no usable result
+**Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
-### Spacing System
-- Base unit: 8px (with dense 4px micro-steps)
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 36px, 48px
-- Notable: Dense spacing reflects the Korean game-portal convention of fitting many entry points (games, events, community) above the fold.
+### Spacing
+- The GNB row is 62px; menu links pad 23px 23px 21px, the outline pill 7px 18px 0px.
+- The login box is 353px wide with a 60px dark action.
+- Game grid cards are 302 x 320 with a 224px media area; section headings span a 1304px content width.
+- Carousel tiles are 153 x 342.
 
-### Grid & Container
-- Full-width hero banner for the featured game, edge-to-edge
-- Below the hero: multi-column game grids and event tiles
-- Centered content column for corporate/IR pages
-- White canvas throughout, with cards as the primary content unit
+### Radius
+- 0px on 330 of 336 captured radii.
+- 19px on the GNB outline pill, 7px on the notification badge, 4px on the guide's language button.
 
-### Whitespace Philosophy
-- **Functional density**: Nexon packs many games and entry points into the layout; whitespace separates groups, not individual items.
-- **Green as the spotlight**: In a dense gray-and-white field, the green CTA is the deliberate focal point that pulls the eye.
-
-### Border Radius Scale
-- Sharp (0px): Buttons, nav items, GNB -- the game-UI default
-- Small (4px): Cards, badges, inputs
-- Large (8px): Larger feature containers
+### Whitespace
+- The portal is dense: many entry points above the fold, grouped by headings rather than by cards with padding.
 
 ## 6. Depth & Elevation
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | `none` | Page background, nav, inline text |
-| Ambient (Level 1) | `rgba(0,0,0,0.08) 0px 2px 8px` | Cards, hover lift |
-| Elevated (Level 2) | `rgba(0,0,0,0.16) 0px 8px 24px` | Dropdowns, modals, featured tiles |
+| Level | Treatment | Where |
+|-------|-----------|-------|
+| Flat | no shadow | every captured portal and guide element at rest |
+| Block | `#17191d` fill | the login-box action |
+| Transition (unmeasured) | a shadow the carousel tiles animate on hover | settled value not captured |
 
-**Shadow Philosophy**: Nexon's elevation is purely functional. Shadows are neutral black at low alpha -- they exist to lift a card off the white canvas, not to add brand atmosphere. The brand energy comes entirely from color (`#00de5a`) and typography (NEXON Gothic Bold), never from decorative depth. This keeps the chrome calm so the game content and the green CTA carry all the visual voltage.
+Neither surface carries a resting shadow in the capture. The carousel tiles do animate a shadow on hover, but the collector caught it in flight, so no elevation value is declared.
 
-## 7. Responsive Behavior
-
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <768px | Single column, hamburger GNB, full-width CTAs |
-| Tablet | 768-1024px | 2-column game grids |
-| Desktop | >1024px | Full multi-column portal layout |
-
-### Touch Targets
-- CTAs use comfortable 12px vertical padding
-- Nav items spaced for tap on mobile GNB
-- Green CTA scales to full-width on mobile for thumb reach
-
-### Collapsing Strategy
-- GNB: horizontal links collapse to hamburger
-- Game grids: multi-column reduce to 2-column then single
-- Hero banner: maintains full-width, reduces internal padding
-- Body type holds at 12-14px; emphasis stays weight-driven
-
-## 8. Do's and Don'ts
+## 7. Do's and Don'ts
 
 ### Do
-- Reserve Nexon Green (`#00de5a`) for primary CTAs, active states, and brand accents -- scarcity is what makes it land
-- Pair black (`#000000`) text directly on the green -- the high-contrast combo is the brand signal
-- Use NEXON Gothic Bold for CTAs and emphasis; `malgun gothic` for body
-- Use near-black ink (`#17191d`) for headings and nav instead of pure black
-- Keep geometry sharp (0-4px radius) -- it echoes the game-UI heritage
-- Keep shadows neutral and functional -- elevation, not atmosphere
-- Use the gray scale (`#737881`, `#4a4e57`, `#919191`, `#9fa1a7`) for hierarchy
+- Set navigation, headings and titles in NEXON Gothic, switching to its Bold cut for headings
+- Keep the chrome white and `#17191d`, with `#737881` for dense detail
+- Use `#0077ff` for hover emphasis and notification counts
+- Keep corners square; reserve the 19px pill for the one outline action
+- Let game art carry colour
 
 ### Don't
-- Don't overuse the green -- a page full of `#00de5a` kills its power-up impact
-- Don't put white text on the green CTA -- black is the brand-correct label
-- Don't use large pill radii on buttons -- Nexon's geometry is sharp and rectangular
-- Don't add colored or heavy decorative shadows -- elevation is functional only
-- Don't replace NEXON Gothic Bold on CTAs with a generic bold -- the proprietary face is the stamp
-- Don't use pure black (`#000000`) for body headings -- `#17191d` reads cleaner
+- Don't treat `#00de5a` as a Nexon colour; it belongs to Naver's sign-in button
+- Don't set KlavikaNX outside Nexon's own works; its licence forbids it
+- Don't render a substitute font as though it were NEXON Gothic
+- Don't add resting drop shadows to cards or tiles
+- Don't distort or recolour the symbol mark; the guide requires its specified colours and angles
+
+## 8. Responsive Behavior
+
+Both surfaces were captured at a 1440 x 900 desktop viewport. No breakpoint behaviour was measured, so none is specified here. The measured interactive sizes are the 62px GNB row, the 36px outline pill, the 44px search field and the 60px login-box action.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary CTA: Nexon Green (`#00de5a`) with black (`#000000`) label
-- Background: Pure White (`#ffffff`)
-- Heading / nav text: Ink (`#17191d`)
-- Body text: Body Gray (`#737881`)
-- Secondary label: Label Gray (`#4a4e57`)
-- Muted / placeholder: Muted Gray (`#919191`)
-- Disabled: Disabled Gray (`#9fa1a7`)
+- Interaction blue: `#0077ff`
+- Ink: `#17191d`
+- Detail text: `#737881`
+- Secondary label: `#4a4e57`
+- Helper text: `#9fa1a7`
+- Canvas: `#ffffff`
+- Search underline: `#dde1e5`
 
 ### Example Component Prompts
-- "Create a primary CTA: `#00de5a` background, `#000000` text, 0px radius, 12px 24px padding, 14px NEXON Gothic Bold weight 700. Label '지금 플레이'."
-- "Design a game promo card: white background, 4px radius, shadow `rgba(0,0,0,0.08) 0px 2px 8px`. Title 16px `#17191d`, body 12px `#737881`. Green `#00de5a` NEW badge with black text, 4px radius."
-- "Build a GNB nav bar: white background, 16px `#17191d` links, active item with `#00de5a` bottom border underline."
+- "GNB on white, 62px tall: menu links 16px NEXON Gothic in `#17191d`, padding 23px 23px 21px; icon links turn `#0077ff` on hover; a 14 x 14 `#0077ff` badge with white 10px count and 7px radius sits on an icon."
+- "Outline pill action: 2px `#17191d` border, 19px radius, 36px tall, 15px NEXON Gothic Bold label in `#080410`."
+- "Game grid: cards 302 x 320 with a 224px image area and a 16px NEXON Gothic Bold title in `#17191d`, square corners, no shadow."
 
 ### Iteration Guide
-1. Green (`#00de5a`) is precious -- one or two appearances per viewport maximum
-2. Black on green, always -- never white-on-color
-3. NEXON Gothic Bold for CTAs/emphasis; malgun gothic for body
-4. Headings are `#17191d`, body is `#737881`, labels step through `#4a4e57` / `#919191`
-5. Sharp corners (0-4px); no pills
-6. Shadows are neutral black, low alpha, functional only
-
----
+1. One accent — `#0077ff` — and only for interaction
+2. Square by default
+3. NEXON Gothic for navigation and headings, system text for 12px detail
+4. The game art is the colour; keep the frame grey
 
 ## 10. Voice & Tone
 
-Nexon's voice is that of an established game publisher speaking to two audiences at once: players, with energy and immediacy, and the market and partners, with measured corporate confidence. On player-facing surfaces the register is direct and inviting -- "지금 플레이", "다운로드", short imperative verbs that map to the green "press start" CTA. On corporate, IR, and careers surfaces the same brand restraint applies, but the tone shifts to the steady, factual register of a major listed company.
+Nexon talks in two registers. The company and brand pages are warm and first-person-plural, often in the soft "~해요" ending ("안녕하세요, 넥슨코리아 브랜드디자인팀입니다."), explaining why a design decision was made. The CI rules are firm and prescriptive. Player-facing copy on the portal is short and functional.
 
 | Context | Tone |
 |---|---|
-| Game CTAs | Direct imperatives -- "지금 플레이", "사전등록", "다운로드". |
-| Game/event copy | Energetic, benefit-forward, but not hype-stacked. |
-| Corporate / IR | Measured, factual, the register of a publicly listed company. |
-| Careers / About | Confident, mission-oriented, talent-focused. |
+| Company mission | Aspirational, plural — "도전과 변화를 즐기는 모험가들이 재미의 진화를 이끌어갑니다." |
+| Social responsibility | Warm — "게임으로 더 재미있고 더 따뜻한 세상을 만듭니다." |
+| Brand rules | Prescriptive — "지정된 컬러와 각도 등 형태의 원칙을 반드시 준수하여 왜곡, 변형이 없도록 해야 합니다." |
+| Brand articles | Conversational, explanatory, "~해요" endings |
+
+**Voice samples (verbatim, read 2026-09-30):**
+- "넥슨은 우수한 IP와 탄탄한 개발력, 30년 이상의 온라인게임 서비스 경험을 바탕으로 글로벌 종합 엔터테인먼트 기업으로 거듭나고 있습니다." — company site description
+- "도전과 변화를 즐기는 모험가들이 재미의 진화를 이끌어갑니다." — company site, PEOPLE
+- "넥슨 Lv.1 고딕은 넥슨이 추구하는 젊음, 즐거운 세상에 전하는 서체입니다." — brand guide, typeface
 
 ## 11. Brand Narrative
 
-Nexon was founded in **1994** in Seoul by **Jake Kim (Kim Jung-ju)** and is widely credited with pioneering the **massively multiplayer online (MMO) graphical game** and the **free-to-play, item-based business model** that reshaped global game monetization. Its 1996 title *Nexus: The Kingdom of the Winds* (바람의나라) is recognized as one of the world's first commercially successful graphical MMORPGs. Over three decades Nexon grew into one of the largest game publishers in Asia, operating franchises such as *MapleStory*, *Dungeon&Fighter*, *KartRider*, *FIFA Online*, and *The Finals*, and is publicly listed (Nexon Co., Ltd. on the Tokyo Stock Exchange).
+Nexon was founded in 1994 and, as its brand design team writes in the 30th-anniversary article, began by serving the world's first internet graphic online game, releasing new genres ever since with the goal of giving players fun. KartRider's league, run by Nexon from 2005 to 2021, was the longest-running regular e-sports league it operated; when KartRider closed after 18 years and returned as KartRider: Drift, the league restarted as the KartRider: Drift League with a new visual identity. MapleStory, one of the company's best-loved IPs, stages a showcase every half-year, and the brand design team produced the graphics for several of them (IGNITION, SAVIOR, NEW AGE), and its characters have moved into digital goods such as KakaoTalk themes.
 
-The brand identity is built around a single, confident gesture: the electric green "go" signal. In a category crowded with dark, fantasy-heavy game branding, Nexon's bright `#00de5a` on white reads as energetic, accessible, and modern -- a publisher's mark rather than a single game's skin. The proprietary **NEXON Gothic** typeface (released as a free public font family) reinforces a corporate identity that is consistent across dozens of game brands while remaining recognizably Nexon.
-
-What the brand refuses: a single dominant game aesthetic imposed on the corporate shell. The white canvas and disciplined gray-and-green system act as a neutral frame so that each game's own art can shine through, while the green CTA and NEXON Gothic stamp keep the publisher's identity present on every screen.
+The company today is a group: Nexon Games, Neople (creator of Dungeon&Fighter), devCAT (Mabinogi), Nexon Networks for game service and QA, Nexon Communications in Busan, Mintrocket for casual games, the investment arm Nexon Partners and others. The 2026 history lists Korean publishing of Overwatch, awards for ARC Raiders, the rebranded Nexon Museum and a 250-billion-won public-private fund for next-generation Korean games. The brand guide exists so that, across many game IPs and affiliates, Nexon's corporate identity stays consistent in the market — its brand assets are the CI, colour, typefaces and application examples.
 
 ## 12. Principles
 
-1. **Green is the spark, not the field.** The brand green works because it is scarce. Used as the CTA and accent only, it stays a power-up; used everywhere, it would become wallpaper.
-2. **Black on green, by design.** The high-contrast label pairing is intentional and industrial -- it signals confidence and refuses the soft default of white-on-color.
-3. **A neutral frame for vivid games.** The white-and-gray chrome is deliberately calm so that diverse game art can carry the color. The publisher's restraint is what lets the products be loud.
-4. **The typeface is the constant.** NEXON Gothic Bold appears across every game brand and every CTA -- one consistent voice unifying a varied portfolio.
-5. **Sharp geometry signals games.** The low-radius, rectangular forms tie the corporate site back to the pixel-grid heritage of the medium.
-6. **Energy without hype.** Player copy is immediate and direct; corporate copy is measured. Both avoid stacked superlatives.
+*Editorial readings of the captured surfaces and the brand guide, not Nexon statements.*
+
+1. **The frame is quiet so the games can be loud.** White, near-black and grey chrome with square corners leaves colour to game art.
+2. **One accent for interaction.** `#0077ff` marks what responds to the pointer and what needs attention, and nothing else.
+3. **Own the letters.** Navigation and headings are set in Nexon's own Lv.1 Gothic and the identity in the exclusive KlavikaNX.
+4. **Identity is a doorway.** The symbol's "gate" framing — a passage to new fun — is the story the CI tells.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable Nexon audience segments (Korean and global players, returning veterans, prospective partners/investors), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable Nexon audience segments, not individual people.*
 
-**Min-jun Park, 24, Seoul.** University student and lifelong MapleStory player. Visits nexon.com to check events and download the launcher. Recognizes the green CTA instantly -- to him it means "the new event is live." Would be confused by a redesign that buried the play button under decorative chrome.
+**박민준, 24, 서울.** A long-time MapleStory player who opens nexon.com to check events and jump into the game; he scans the grid by title and expects the menu to answer his pointer instantly.
 
-**Soo-yeon Lee, 33, Busan.** Returning player who quit years ago and is curious about a remaster. Scans the game grid quickly, trusts the clean corporate frame as a sign the company is stable and still investing. Values that the site loads fast and information is dense.
+**이수연, 33, 부산.** A returning player curious about KartRider: Drift; she likes that the portal is dense and fast and does not bury games under decoration.
 
-**David Chen, 41, Singapore.** Mid-market investor reviewing Nexon as a listed company. Lands on the IR/corporate surface, expects and finds a measured, factual register. The disciplined brand system reads to him as a sign of operational maturity.
+**정하나, 28, 서울.** A designer at a partner studio who uses the brand guide to place the Nexon signature correctly and checks the typeface licences before using them.
 
-**Hana Kim, 28, Seoul.** Designer evaluating Nexon for a job. Notices the proprietary NEXON Gothic typeface and the restraint of the green-on-white system, and reads it as a brand team that understands scarcity and consistency.
+**김도윤, 41, 대전.** Follows Nexon's company news and affiliates; the calm, factual company pages are what he reads.
 
 ## 14. States
 
-| State | Treatment |
+| State | Treatment (observed) |
 |---|---|
-| **Empty (no events)** | White canvas, single line in `#737881` body gray: "예정된 이벤트가 없습니다." No illustration. |
-| **Loading** | Neutral skeleton blocks in light gray at final dimensions, subtle shimmer. |
-| **Error** | Inline message in muted gray with a clear retry text action. Plain, factual wording. |
-| **Success (action done)** | Brief inline confirmation, no emoji. The green accent marks completion sparingly. |
-| **Disabled (CTA)** | Green fill switches to disabled gray (`#9fa1a7`) with white text -- clearly inert, brand color withheld. |
-| **Active (nav)** | Nexon Green (`#00de5a`) bottom-border underline on the current GNB item. |
+| Hover — GNB icon link | anchor colour `#0077ff` (four siblings agree) |
+| Pressed — GNB icon link | anchor colour `#0077ff` |
+| Hover frame — GNB outline pill | fill `#0077ff`, text `#ffffff`, border 2px `#0077ff` (single element; recorded) |
+| Hover frame — guide arrow | fill `#ffffff`, border 1px `#222222` (single element; recorded) |
+| Disabled — guide arrow | fill `#a1a7b5`, icon `#adb5bd` |
+| Hover — carousel tile | caught mid-transition; unmeasured |
+| Open — guide family-site select | 250 x 298 dropdown on `#000000`, 1px `#e9ecef` border |
+
+Focus is not declared from the capture. Loading, empty and error states did not occur on these public pages and are not specified.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 120ms | Hover, focus, button press |
-| `motion-standard` | 240ms | Dropdown, menu, card hover lift |
-| `motion-slow` | 360ms | Hero banner carousel transitions |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Menus, hover, two-way transitions |
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Dropdowns, banner arrivals |
-
-**Signature motions.**
-
-1. **CTA hover.** The green CTA brightens slightly on hover using `motion-fast / ease-standard` -- a quick, responsive "ready" signal, no scale bounce.
-2. **Hero banner carousel.** The featured-game banner crossfades or slides at `motion-slow`, giving each game a moment to register.
-3. **Reduce motion.** Under `prefers-reduced-motion: reduce`, carousel auto-advance pauses and transitions collapse to near-instant; the site stays fully functional.
-
-## 16. Do's and Don'ts
-
-### Do
-- Use Nexon Green (`#00de5a`) as the scarce, high-impact CTA and accent color
-- Pair black (`#000000`) on the green; near-black ink (`#17191d`) for headings
-- Apply NEXON Gothic Bold on CTAs and emphasis, `malgun gothic` for body
-- Keep corners sharp (0-4px) and shadows neutral/functional
-- Step text hierarchy through the gray scale (`#737881`, `#4a4e57`, `#919191`, `#9fa1a7`)
-- Let the white-and-gray frame stay calm so game art and the green CTA carry the energy
-
-### Don't
-- Don't flood the layout with green -- scarcity is the whole point
-- Don't use white text on the green CTA
-- Don't use pill/large radii or colored decorative shadows
-- Don't swap NEXON Gothic Bold for a generic bold on CTAs
-- Don't use pure black (`#000000`) for body headings -- prefer `#17191d`
-
-<!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Token-level claims (sections 1–9) are sourced from a live Playwright
-getComputedStyle inspection of https://www.nexon.com (2026-06-09):
-  - Primary CTA: background rgb(0,222,90) = #00de5a, label rgb(0,0,0) = #000000,
-    font "NEXON Gothic Bold" 14px weight 700.
-  - Disabled CTA: background rgb(159,161,167) = #9fa1a7, white text.
-  - Heading/link ink: rgb(23,25,29) = #17191d; near-black link rgb(8,4,16) = #080410.
-  - Body: rgb(115,120,129) = #737881; label rgb(74,78,87) = #4a4e57;
-    muted rgb(145,145,145) = #919191 (tracking -0.3px).
-  - Body font fallback: "malgun gothic", "sans-serif".
-
-Brand narrative (§11) uses widely documented public facts:
-  - Nexon founded 1994 in Seoul by Jake Kim (Kim Jung-ju).
-  - Nexus: The Kingdom of the Winds (1996) among the first graphical MMORPGs.
-  - Pioneer of the free-to-play / item-based monetization model.
-  - Franchises: MapleStory, Dungeon&Fighter, KartRider, FIFA Online, The Finals.
-  - NEXON Gothic released as a free public typeface family.
-
-Personas (§13) are fictional archetypes informed by publicly observable
-Nexon audience segments, not real individuals. Interpretive claims about
-brand intent ("green as scarce power-up", "neutral frame for vivid games")
-are editorial readings connecting the measured design tokens to Nexon's
-publicly visible positioning, not official Nexon statements.
--->
+The evidence collector records colours, sizes and state endpoints, not transition or animation properties, so no duration or easing is declared for Nexon here. The one motion the capture proves exists is the carousel tile's hover shadow, whose in-flight frames were recorded; its settled value, duration and curve were not. Keep interaction feedback on the `#0077ff` endpoint and collapse motion to instant under `prefers-reduced-motion: reduce`.

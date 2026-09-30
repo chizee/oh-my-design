@@ -131,7 +131,9 @@ describe("evidence integrity — the cheap paths back to green stay closed", () 
     // without rewriting the sentences around them.
     //
     // This number should fall only as that rewriting lands, never by loosening a check.
-    expect(flagged.length).toBe(261);
+    // 261 -> 255 (2026-09-30): the six KR references promoted from live captures
+    // (naverpay, nexon, lemonbase, hana, hwahae, goorm) dropped their invented motion tables.
+    expect(flagged.length).toBe(255);
 
     // The two references that handle this correctly must stay off the worklist,
     // otherwise the advisory punishes the behaviour it is meant to produce.
