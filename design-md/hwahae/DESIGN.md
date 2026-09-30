@@ -5,7 +5,7 @@ display_name_kr: 화해
 country: KR
 category: consumer-tech
 homepage: "https://www.hwahae.co.kr"
-primary_color: "#00d5ce"
+primary_color: "#3d3d3d"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=hwahae.co.kr&sz=128"
@@ -284,7 +284,7 @@ Every token below was read by the deterministic collector on 2026-09-30 from the
 - **Info Ink** (`#3750be`) on **Info Tint** (`#ebf5ff`): The blue-tint action near the end of the awards page.
 
 ### Identity colour outside the token set
-- **Logo turquoise** (`#00d5ce`): The flower mark, pixel-sampled from the official OG image (`static.hwahae.co.kr/og/OG_1200.png`) in the June 2026 record. It is a brand-asset value, kept as the catalogue's `primary_color`, and not a UI token: no sampled element on the three captured pages renders it.
+- **Logo turquoise** (`#00d5ce`): The flower mark, pixel-sampled from the official OG image (`static.hwahae.co.kr/og/OG_1200.png`) in the June 2026 record. It is a brand-asset value and not a UI token: no sampled element on the three captured pages renders it. Under the catalogue rule of 2026-09-30, `primary_color` must be a colour the product surface renders in a primary role, so the catalogue's primary is the home page's full-width dark action `#3d3d3d` (344 × 52, 8px radius, `home::[data-omd-capture="108"]`), and the turquoise stays here as the logo's colour.
 - The June 2026 inspection also counted rating-star amber (`#ffaa3c`), a teal (`#00a5aa`), a blue (`#467dff`), a coral (`#ff5555`), a pale mint (`#eefbfb`) and a `#d8d8d8` divider on the home page. The 2026-09-30 collector samples block elements, controls and headings rather than every inline span, and did not record any of them, so they are history in `.verification.md`, not tokens.
 
 ## 3. Typography Rules

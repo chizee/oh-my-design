@@ -194,6 +194,94 @@
         "https://www.goorm.io/solution/ai-dev",
         "https://edu.goorm.io/"
       ]
+    },
+    "kia": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.kia.com/kr",
+        "https://www.kia.com/kr/vehicles/ev",
+        "https://www.kia.com/kr/vehicles/ev6/features"
+      ]
+    },
+    "wrtn": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://wrtn.ai/",
+        "https://wrtn.ai/tools",
+        "https://wrtn.io/"
+      ]
+    },
+    "furiosaai": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://furiosa.ai/",
+        "https://lp.furiosa.ai/furiosa-access-program",
+        "https://furiosa.ai/about"
+      ]
+    },
+    "imweb": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://imweb.me/",
+        "https://imweb.me/theme",
+        "https://imweb.me/price"
+      ]
+    },
+    "tmap": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.tmapmobility.com/",
+        "https://www.tmapmobility.com/service/drive/navigation",
+        "https://www.tmapmobility.com/people/about"
+      ]
+    },
+    "stayfolio": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.stayfolio.com/",
+        "https://www.stayfolio.com/findstay?check_in=2026-12-09&check_out=2026-12-10&adult_cnt=2",
+        "https://www.stayfolio.com/journal/magazines"
+      ]
+    },
+    "kakaopage": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://page.kakao.com/",
+        "https://page.kakao.com/menu/10010/",
+        "https://page.kakao.com/content/57668776/"
+      ]
+    },
+    "hyperconnect": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://hyperconnect.com/ko/",
+        "https://hyperconnect.com/en/business/",
+        "https://hyperconnect.com/en/news/"
+      ]
+    },
+    "ncsoft": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://about.ncsoft.com/play",
+        "https://www.nc.com/",
+        "https://about.ncsoft.com/news"
+      ]
+    },
+    "modusign": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://modusign.co.kr/",
+        "https://modusign.co.kr/pricing",
+        "https://modusign.co.kr/features"
+      ]
+    },
+    "scatterlab": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.scatterlab.co.kr/ko/intro",
+        "https://www.scatterlab.co.kr/ko/ethos",
+        "https://blog.scatterlab.co.kr/"
+      ]
     }
   }
 }

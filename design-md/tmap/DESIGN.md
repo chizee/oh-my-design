@@ -9,50 +9,258 @@ primary_color: "#0064ff"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=tmapmobility.com&sz=128"
-verified: "2026-06-17"
+verified: "2026-09-30"
 added: "2026-06-17"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: marketing, url: "https://www.tmapmobility.com/", inspected: "2026-09-30" }
+    - { id: surface-2, kind: marketing-product, url: "https://www.tmapmobility.com/service/drive/navigation", inspected: "2026-09-30" }
+    - { id: surface-3, kind: marketing, url: "https://www.tmapmobility.com/people/about", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://www.tmapmobility.com/", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://www.tmapmobility.com/service/drive/navigation", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://www.tmapmobility.com/people/about", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &navsel { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"5\"]", captured: "2026-09-30" }
+    "tokens.colors.ink": &body { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.colors.canvas": *body
+    "tokens.colors.menu-link": &mlink { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"13\"]", captured: "2026-09-30" }
+    "tokens.colors.chip-label": &chip { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"57\"]", captured: "2026-09-30" }
+    "tokens.colors.footer": &footer { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"78\"]", captured: "2026-09-30" }
+    "tokens.colors.surface-blue": &panel { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::li", captured: "2026-09-30" }
+    "tokens.colors.hairline": *chip
+    "tokens.colors.search-border": &search { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"56\"]", captured: "2026-09-30" }
+    "tokens.colors.badge-border": &badge { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::span", captured: "2026-09-30" }
+    "tokens.colors.on-image": &hero { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h2", captured: "2026-09-30" }
+    "tokens.typography.family.sans": *body
+    "tokens.typography.display.size": &way { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h3", captured: "2026-09-30" }
+    "tokens.typography.display.weight": *way
+    "tokens.typography.display.lineHeight": *way
+    "tokens.typography.display.tracking": *way
+    "tokens.typography.display.use": *way
+    "tokens.typography.hero.size": *hero
+    "tokens.typography.hero.weight": *hero
+    "tokens.typography.hero.lineHeight": *hero
+    "tokens.typography.hero.tracking": *hero
+    "tokens.typography.hero.use": *hero
+    "tokens.typography.page-title.size": &h1 { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h1", captured: "2026-09-30" }
+    "tokens.typography.page-title.weight": *h1
+    "tokens.typography.page-title.lineHeight": *h1
+    "tokens.typography.page-title.tracking": *h1
+    "tokens.typography.page-title.use": *h1
+    "tokens.typography.section.size": &h4s { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h4", captured: "2026-09-30" }
+    "tokens.typography.section.weight": *h4s
+    "tokens.typography.section.lineHeight": *h4s
+    "tokens.typography.section.tracking": *h4s
+    "tokens.typography.section.use": *h4s
+    "tokens.typography.card-title.size": &h4c { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h4", captured: "2026-09-30" }
+    "tokens.typography.card-title.weight": *h4c
+    "tokens.typography.card-title.lineHeight": *h4c
+    "tokens.typography.card-title.tracking": *h4c
+    "tokens.typography.card-title.use": *h4c
+    "tokens.typography.eyebrow.size": &eyebrow { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h2", captured: "2026-09-30" }
+    "tokens.typography.eyebrow.weight": *eyebrow
+    "tokens.typography.eyebrow.lineHeight": *eyebrow
+    "tokens.typography.eyebrow.tracking": *eyebrow
+    "tokens.typography.eyebrow.use": *eyebrow
+    "tokens.typography.nav.size": &nav { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-09-30" }
+    "tokens.typography.nav.weight": *nav
+    "tokens.typography.nav.lineHeight": *nav
+    "tokens.typography.nav.use": *nav
+    "tokens.typography.menu-title.size": &mtitle { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.typography.menu-title.weight": *mtitle
+    "tokens.typography.menu-title.lineHeight": *mtitle
+    "tokens.typography.menu-title.use": *mtitle
+    "tokens.typography.menu-link.size": *mlink
+    "tokens.typography.menu-link.weight": *mlink
+    "tokens.typography.menu-link.lineHeight": *mlink
+    "tokens.typography.menu-link.use": *mlink
+    "tokens.typography.chip.size": *chip
+    "tokens.typography.chip.weight": *chip
+    "tokens.typography.chip.lineHeight": *chip
+    "tokens.typography.chip.tracking": *chip
+    "tokens.typography.chip.use": *chip
+    "tokens.typography.body.size": *body
+    "tokens.typography.body.weight": *body
+    "tokens.typography.body.lineHeight": *body
+    "tokens.typography.body.tracking": *body
+    "tokens.typography.body.use": *body
+    "tokens.typography.footer-nav.size": *footer
+    "tokens.typography.footer-nav.weight": *footer
+    "tokens.typography.footer-nav.lineHeight": *footer
+    "tokens.typography.footer-nav.use": *footer
+    "tokens.spacing.nav-x": *nav
+    "tokens.spacing.menu-y": *mtitle
+    "tokens.spacing.menu-x": *mtitle
+    "tokens.spacing.search-y": *search
+    "tokens.spacing.search-x": *search
+    "tokens.spacing.chip": *chip
+    "tokens.spacing.badge": *badge
+    "tokens.spacing.pill-y": &pill { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"52\"]", captured: "2026-09-30" }
+    "tokens.spacing.pill-x": *pill
+    "tokens.spacing.panel": &panelart { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::article", captured: "2026-09-30" }
+    "tokens.spacing.news-row": &news { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::li", captured: "2026-09-30" }
+    "tokens.rounded.sm": *mtitle
+    "tokens.rounded.md": *chip
+    "tokens.rounded.lg": *panel
+    "tokens.rounded.search": *search
+    "tokens.rounded.pill": &pillbox { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.rounded.full": *pillbox
+    "tokens.shadow.search": *search
+    "tokens.components.header-nav-link.type": *nav
+    "tokens.components.header-nav-link.bg": *nav
+    "tokens.components.header-nav-link.fg": *nav
+    "tokens.components.header-nav-link.padding": *nav
+    "tokens.components.header-nav-link.height": *nav
+    "tokens.components.header-nav-link.font": *nav
+    "tokens.components.header-nav-link.selected": *navsel
+    "tokens.components.header-nav-link.states": *nav
+    "tokens.components.header-nav-link.use": *nav
+    "tokens.components.mega-menu-title.type": *mtitle
+    "tokens.components.mega-menu-title.bg": *mtitle
+    "tokens.components.mega-menu-title.fg": *mtitle
+    "tokens.components.mega-menu-title.radius": *mtitle
+    "tokens.components.mega-menu-title.padding": *mtitle
+    "tokens.components.mega-menu-title.height": *mtitle
+    "tokens.components.mega-menu-title.font": *mtitle
+    "tokens.components.mega-menu-title.hover": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"12\"]::state-hover", captured: "2026-09-30" }
+    "tokens.components.mega-menu-title.pressed": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style-state-sample, selector: "surface-2::[data-omd-capture=\"12\"]::state-pressed", captured: "2026-09-30" }
+    "tokens.components.mega-menu-title.states": *mtitle
+    "tokens.components.mega-menu-title.use": *mtitle
+    "tokens.components.mega-menu-link.type": *mlink
+    "tokens.components.mega-menu-link.bg": *mlink
+    "tokens.components.mega-menu-link.fg": *mlink
+    "tokens.components.mega-menu-link.radius": *mlink
+    "tokens.components.mega-menu-link.padding": *mlink
+    "tokens.components.mega-menu-link.height": *mlink
+    "tokens.components.mega-menu-link.font": *mlink
+    "tokens.components.mega-menu-link.states": *mlink
+    "tokens.components.mega-menu-link.use": *mlink
+    "tokens.components.search-pill.type": *search
+    "tokens.components.search-pill.bg": *search
+    "tokens.components.search-pill.fg": *search
+    "tokens.components.search-pill.border": *search
+    "tokens.components.search-pill.radius": *search
+    "tokens.components.search-pill.padding": *search
+    "tokens.components.search-pill.height": *search
+    "tokens.components.search-pill.font": *search
+    "tokens.components.search-pill.shadow": *search
+    "tokens.components.search-pill.states": *search
+    "tokens.components.search-pill.use": *search
+    "tokens.components.category-chip.type": *chip
+    "tokens.components.category-chip.bg": *chip
+    "tokens.components.category-chip.fg": *chip
+    "tokens.components.category-chip.border": *chip
+    "tokens.components.category-chip.radius": *chip
+    "tokens.components.category-chip.padding": *chip
+    "tokens.components.category-chip.height": *chip
+    "tokens.components.category-chip.font": *chip
+    "tokens.components.category-chip.states": *chip
+    "tokens.components.category-chip.use": *chip
+    "tokens.components.outline-pill.type": *pillbox
+    "tokens.components.outline-pill.bg": *pillbox
+    "tokens.components.outline-pill.fg": *pill
+    "tokens.components.outline-pill.border": *pillbox
+    "tokens.components.outline-pill.radius": *pillbox
+    "tokens.components.outline-pill.padding": *pill
+    "tokens.components.outline-pill.height": *pillbox
+    "tokens.components.outline-pill.font": &plabel { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::span", captured: "2026-09-30" }
+    "tokens.components.outline-pill.states": *pillbox
+    "tokens.components.outline-pill.use": *pillbox
+    "tokens.components.outline-pill-dark.type": *pillbox
+    "tokens.components.outline-pill-dark.bg": *pillbox
+    "tokens.components.outline-pill-dark.fg": &dark { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"72\"]", captured: "2026-09-30" }
+    "tokens.components.outline-pill-dark.border": *pillbox
+    "tokens.components.outline-pill-dark.radius": *pillbox
+    "tokens.components.outline-pill-dark.padding": *dark
+    "tokens.components.outline-pill-dark.height": *pillbox
+    "tokens.components.outline-pill-dark.font": *plabel
+    "tokens.components.outline-pill-dark.states": *pillbox
+    "tokens.components.outline-pill-dark.use": *dark
+    "tokens.components.image-badge.type": *badge
+    "tokens.components.image-badge.bg": *badge
+    "tokens.components.image-badge.fg": *badge
+    "tokens.components.image-badge.border": *badge
+    "tokens.components.image-badge.radius": *badge
+    "tokens.components.image-badge.padding": *badge
+    "tokens.components.image-badge.height": *badge
+    "tokens.components.image-badge.font": *badge
+    "tokens.components.image-badge.use": *badge
+    "tokens.components.service-panel.type": *panel
+    "tokens.components.service-panel.bg": *panel
+    "tokens.components.service-panel.radius": *panel
+    "tokens.components.service-panel.padding": *panelart
+    "tokens.components.service-panel.size": *panel
+    "tokens.components.service-panel.use": *panel
+    "tokens.components.interview-banner.type": *news
+    "tokens.components.interview-banner.fg": *news
+    "tokens.components.interview-banner.radius": *news
+    "tokens.components.interview-banner.size": *news
+    "tokens.components.interview-banner.use": *news
+    "tokens.components.news-row.type": *news
+    "tokens.components.news-row.fg": *news
+    "tokens.components.news-row.border": *news
+    "tokens.components.news-row.padding": *news
+    "tokens.components.news-row.size": *news
+    "tokens.components.news-row.use": *news
+    "tokens.components.history-year.type": &year { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"70\"]", captured: "2026-09-30" }
+    "tokens.components.history-year.bg": *year
+    "tokens.components.history-year.fg": *year
+    "tokens.components.history-year.height": *year
+    "tokens.components.history-year.font": *year
+    "tokens.components.history-year.selected": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"69\"]", captured: "2026-09-30" }
+    "tokens.components.history-year.states": *year
+    "tokens.components.history-year.use": *year
 tokens:
-  source: live-extract
-  extracted: "2026-06-17"
-  note: "primary = live brand blue (#0064ff) used for section eyebrows, accent links, the active-nav 4px underline, and filled blue panels; blue-alt (#0061fd) on indicator dots and solid blue blocks. Editorial mono-on-white system: pure black headings, three-step grey ladder, near-shadowless, light-blue tinted product surfaces (#f1f8ff → #d3e8ff gradient)."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
     primary: "#0064ff"
-    primary-alt: "#0061fd"
     ink: "#000000"
-    body: "#464646"
-    muted: "#585858"
-    muted-alt: "#777777"
     canvas: "#ffffff"
-    surface: "#f3f5f7"
+    menu-link: "#585858"
+    chip-label: "#464646"
+    footer: "#777777"
     surface-blue: "#f1f8ff"
-    surface-blue-deep: "#d3e8ff"
-    surface-grey: "#efefef"
-    hairline: "#e2e2e2"
-    hairline-alt: "#e5e5e5"
-    on-primary: "#ffffff"
+    hairline: "#e5e5e5"
+    search-border: "#f2f0f0"
+    badge-border: "#dbdbdb"
+    on-image: "#ffffff"
   typography:
     family: { sans: "Pretendard" }
-    display-xl:   { size: 61, weight: 700, lineHeight: 1.40, tracking: -2, use: "Big feature/value headline, Pretendard Bold" }
-    display-hero: { size: 44, weight: 700, lineHeight: 1.40, tracking: -0.32, use: "Hero / section headline" }
-    section:      { size: 35, weight: 700, lineHeight: 1.40, tracking: -0.32, use: "Feature block heading (H4)" }
-    eyebrow:      { size: 23, weight: 700, lineHeight: 1.40, tracking: -0.32, use: "Section eyebrow / sub-head (H2/H3)" }
-    body:         { size: 16, weight: 400, lineHeight: 1.40, use: "Standard reading text, Pretendard" }
-    nav:          { size: 15, weight: 700, lineHeight: 1.40, use: "Top nav item, Pretendard Bold" }
-    subnav:       { size: 13, weight: 800, lineHeight: 1.40, use: "Sub-nav item, Pretendard ExtraBold" }
-  spacing: { xs: 4, sm: 8, base: 16, md: 20, lg: 23, xl: 29, xxl: 48, section: 64 }
-  rounded: { sm: 4, card: 19, pill: 35, full: 9999 }
+    display: { size: 61.44, weight: 700, lineHeight: 1.4, tracking: -0.32, use: "Company value headline (h3) on the about page" }
+    hero: { size: 44.16, weight: 700, lineHeight: 1.4, tracking: -0.32, use: "Home hero headline (h2), white over photography" }
+    page-title: { size: 44.16, weight: 700, lineHeight: 1.39, tracking: -0.32, use: "Service page title (h1) on the navigation page" }
+    section: { size: 34.56, weight: 700, lineHeight: 1.43, tracking: -0.32, use: "Feature section heading (h4) on the navigation page" }
+    card-title: { size: 28.8, weight: 700, lineHeight: 1.4, tracking: -0.32, use: "Article card heading (h4) on home" }
+    eyebrow: { size: 23.04, weight: 700, lineHeight: 1.4, tracking: -0.32, use: "Blue section eyebrow (h2) on the about page; the first one is set at 600" }
+    nav: { size: 15.36, weight: 700, lineHeight: 1.4, use: "Top navigation item" }
+    menu-title: { size: 15.36, weight: 700, lineHeight: 1.2, use: "Mega-menu section title" }
+    menu-link: { size: 13.44, weight: 800, lineHeight: 1.2, use: "Mega-menu service link" }
+    chip: { size: 13.44, weight: 800, lineHeight: 1.2, tracking: -0.32, use: "Home quick-link chip and image badge label" }
+    body: { size: 16, weight: 400, lineHeight: 1.4, tracking: -0.32, use: "Body text" }
+    footer-nav: { size: 15.36, weight: 700, lineHeight: 1.2, use: "Footer navigation (letter-spacing computes as -2%)" }
+  spacing: { nav-x: 20.16, menu-y: 7.68, menu-x: 23.04, search-y: 23.04, search-x: 28.8, chip: 11.52, badge: 10.56, pill-y: 8.64, pill-x: 21.12, panel: 67.2, news-row: 33.6 }
+  rounded: { sm: 4, md: 9.6, lg: 19.2, search: 34.56, pill: 43.2, full: 100 }
   shadow:
-    none: "none"
+    search: "rgba(0, 0, 0, 0.08) 0px 3px 5px 0px"
   components:
-    nav-link: { type: tab, fg: "#000000", font: "15px / 700 Pretendard", active: "blue #0064ff text + 4px bottom border #0064ff", use: "Top navigation item" }
-    subnav-link: { type: tab, fg: "#585858", font: "13px / 800 Pretendard", active: "text #000000", use: "Secondary nav row under main nav" }
-    cta-pill: { type: button, bg: "#ffffff", fg: "#000000", radius: "35px", padding: "23px 29px", border: "1px solid #e2e2e2", font: "16px / 400 Pretendard", use: "Hero search/launch pill — '어디로 갈까요?'" }
-    blue-eyebrow: { type: badge, fg: "#0064ff", font: "23px / 700 Pretendard", use: "Section eyebrow label — 'TMAP MOBILITY VISION'" }
-    blue-panel: { type: card, bg: "#0061fd", fg: "#ffffff", radius: "19px", use: "Solid blue service/value panel" }
-    article-card: { type: card, bg: "#ffffff", fg: "#000000", radius: "19px", use: "Story/content article card (image-led, no shadow)" }
-    surface-card: { type: card, bg: "#f3f5f7", fg: "#000000", radius: "19px", use: "Tinted grey content card" }
-    indicator-dot: { type: badge, bg: "#0061fd", radius: "9999px", use: "Active carousel/step indicator dot" }
+    header-nav-link: { type: tab, bg: "transparent", fg: "#000000", padding: "0px 20.16px", height: "22px", font: "15.36px / 700 / 21.5px Pretendard", selected: "fg #0064ff on the item of the current section", states: "selected variant read from rest values (surface-2 capture 5, 티맵 서비스, and surface-3 capture 4, 티맵 피플, against their black siblings); no pointer frame; focus is not declared from the capture", use: "Top navigation item (티맵 피플, 티맵 서비스, 티맵 이야기, 지속가능경영, 고객지원) at home::[data-omd-capture=\"4\"], in a 93px header" }
+    mega-menu-title: { type: tab, bg: "transparent", fg: "#000000", radius: "4px", padding: "7.68px 23.04px", height: "34px", font: "15.36px / 700 / 18.4px Pretendard", hover: "bg rgba(0, 100, 255, 0.1)", pressed: "bg rgba(0, 100, 255, 0.1)", states: "rest, hover and pressed; two elements on two pages (surface-2 capture 12, surface-3 capture 10) read the same 10% blue tint in both frames; focus is not declared from the capture", use: "Section title in the header mega menu (e.g. 회사소개, 장소, 운전) at home::[data-omd-capture=\"9\"]" }
+    mega-menu-link: { type: tab, bg: "transparent", fg: "#585858", radius: "4px", padding: "7.68px 23.04px", height: "31px", font: "13.44px / 800 / 16.1px Pretendard", states: "rest only; no state frame", use: "Service link under a mega-menu title (e.g. 내비게이션, 주차, 대중교통) at home::[data-omd-capture=\"13\"]; 23 per page" }
+    search-pill: { type: button, bg: "#ffffff", fg: "#000000", border: "1px solid #f2f0f0", radius: "34.56px", padding: "23.04px 28.8px", height: "69px", font: "16px / 400 / 22.4px Pretendard", shadow: "rgba(0, 0, 0, 0.08) 0px 3px 5px 0px", states: "rest only; no state frame", use: "Home search launcher (어디로 갈까요?) at home::[data-omd-capture=\"56\"], 467 x 69" }
+    category-chip: { type: button, bg: "transparent", fg: "#464646", border: "2px solid #e5e5e5", radius: "9.6px", padding: "11.52px", height: "43px", font: "13.44px / 800 / 16.1px Pretendard", states: "rest only on six siblings (capture 57 to 62); no state frame", use: "Quick-link chips on home (회사소개, 조직문화, 내비게이션, 운전점수/보험혜택(UBI), 어디갈까, 대리운전) at home::[data-omd-capture=\"57\"]" }
+    outline-pill: { type: button, bg: "rgba(0, 0, 0, 0.1)", fg: "#ffffff", border: "2px solid #ffffff", radius: "43.2px", padding: "8.64px 21.12px", height: "46px", font: "15.36px / 700 / 25px Pretendard", states: "rest only; no state frame", use: "Outline action over photography (티맵 서비스 on the home hero, 채용 공고 확인하기 on the about page); the 2px edge and 10% black fill sit on the container, the padding on its inner link (home::[data-omd-capture=\"52\"]), the label on a 15.36px / 700 child" }
+    outline-pill-dark: { type: button, bg: "transparent", fg: "#000000", border: "2px solid #000000", radius: "100px", padding: "8.64px 21.12px", height: "46px", font: "15.36px / 700 / 25px Pretendard", states: "rest only; no state frame", use: "Black outline action on white beside the home news list at home::[data-omd-capture=\"72\"], 169 x 46; its inner link keeps a 43.2px radius" }
+    image-badge: { type: badge, bg: "transparent", fg: "#ffffff", border: "2px solid #ffffff", radius: "9.6px", padding: "10.56px", height: "41px", font: "13.44px / 800 / 16.1px Pretendard", use: "Category badge over article photographs on home (seven captured); on a white card the same badge is black text with a 2px #dbdbdb edge, and on the navigation page it carries a 2px #777777 edge" }
+    service-panel: { type: card, bg: "#f1f8ff", radius: "19.2px", padding: "67.2px", size: "1056px x 487px", use: "Feature panel on the navigation page (five li.ServiceInfoSection items); the inner article carries the 67.2px padding, a 34.56px / 700 title and 23.04px / 400 copy" }
+    interview-banner: { type: card, fg: "#ffffff", radius: "19.2px", size: "1056px x 697px", use: "Image-led interview banner on home and the about page with a 44.16px / 700 white heading; its background is imagery, so no fill is claimed" }
+    news-row: { type: listItem, fg: "#000000", border: "1px solid #000000 (bottom only)", padding: "33.6px 0px", size: "691px wide", use: "Press row in the home news list; rows are divided by a 1px black bottom rule" }
+    history-year: { type: tab, bg: "transparent", fg: "#000000", height: "25px", font: "15.36px / 700 / 25px Pretendard", selected: "fg #0064ff (2002 at rest, capture 69)", states: "selected variant read from rest values (capture 69 against 21 siblings from capture 70); no pointer frame; the collector recorded a disabled attribute on part of the set, which is not declared as a state", use: "Year selector of the history timeline on the about page at surface-3::[data-omd-capture=\"70\"]" }
   components_harvested: true
 ---
 
@@ -60,371 +268,368 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-TMAP Mobility (티맵모빌리티) is Korea's dominant navigation and mobility super-app, and its corporate brand site reads like a confident editorial magazine rather than a busy utility. The canvas is pure white (`#ffffff`) and the system is overwhelmingly monochrome: headlines and most text sit in pure black (`#000000`), softened down a three-step grey ladder (`#464646` → `#585858` → `#777777`) for supporting copy. Against this near-greyscale field, a single saturated brand blue (`#0064ff`) does all the signalling — section eyebrows ("TMAP MOBILITY VISION", "TMAP MOBILITY WAY"), accent links, the 4px underline under the active nav item, and solid blue value-panels. The effect is calm, premium, and engineered: a mobility company that wants to read as trustworthy infrastructure, not a playful consumer toy.
+TMAP Mobility (티맵모빌리티㈜) runs TMAP, Korea's long-running navigation service, from SK-C Tower in Jung-gu, Seoul. Its own history page traces the product to 2002, when Nate Drive launched as what the company calls the world's first mobile navigation service to reflect real-time traffic. From there the page walks through the TMAP brand (2007), the smartphone app bundled free with mobile plans (2010), in-car TMAP starting with Renault Samsung and extending to SsangYong, Kia, Jaguar and Land Rover (2012), TMAP OPEN API (2012), opening the service free to every carrier (2016), the TMAP X NUGU AI driving assistant (2017), V2X alerts (2018) and aerial high-resolution maps (2019). In June 2021 the whole brand logo was replaced; that December TMAP added designated driving, parking, EV charging and kick-scooter verticals; a truck navigation followed in 2022, and in September 2023 version 10.0 folded public-transit guidance into one integrated mobility app. The company now frames itself as "더 가치 있는 길을 찾는 모빌리티 파트너" — a mobility partner that looks past the fastest route (Route) for a better way to move (Way).
 
-The typographic personality is pure Korean-modern: the entire site runs on **Pretendard**, the de-facto hangul product font, with weight **700 (Bold)** carrying every headline. Display scales are large and declarative — a 61px feature headline with a notably tight `-2%` tracking, 44px hero/section heads, and 34.5px feature-block titles — all at line-height 1.40 with `-0.32px` tracking. Body and UI drop to a quiet 16px / weight 400. There is no second display typeface and no light-weight flourish; hierarchy is built almost entirely from size and the Bold/Regular weight split. This single-font, weight-driven discipline is what gives TMAP its clean, fast, slightly corporate feel.
-
-What distinguishes TMAP from flashier fintech or commerce peers is its restraint with depth and color. Live inspection found `box-shadow: none` across the hero, nav, and content cards — separation comes from large 19px-radius image cards, flat tinted surfaces, and thin `#e2e2e2` hairlines, never elevation. Color is deployed in two registers: the assertive `#0064ff` brand blue for action and emphasis, and a soft light-blue product atmosphere on service pages — a `#f1f8ff` tint and a gentle `linear-gradient(#f1f8ff → #d3e8ff)` hero wash that evokes open sky and roads. The geometry mixes a sharp 4px nav-pill radius with generous 19px content-card rounding and a fully-rounded 35px search pill, signalling "precise where it's functional, friendly where it invites."
+The public site reads like a calm corporate magazine. Pages sit on white `#ffffff` with pure black `#000000` text, set entirely in Pretendard with 700-weight headlines — 44.16px heroes and 61.44px value statements, tracked at -0.32px. TMAP blue `#0064ff` is used as text, never as a fill: it marks the header item of the section you are in, the selected year of the history timeline and the blue eyebrows above sections, and it tints the mega menu's section titles at 10% under the pointer. Around that, the page is carried by photography: image-led article cards with 2px white outline badges, 43.2px outline pills over images, a pale `#f1f8ff` 19.2px panel for each navigation feature, and one soft shadow, on the home search pill.
 
 **Key Characteristics:**
-- Single typeface — Pretendard — with weight 700 (Bold) on every headline; 400 for body
-- Monochrome-on-white base: pure black (`#000000`) text on white (`#ffffff`), greyed down a `#464646`/`#585858`/`#777777` ladder
-- One saturated brand blue (`#0064ff`) reserved for eyebrows, accent links, the active-nav underline, and value panels
-- Large declarative display scale — 61px / 44px / 34.5px — with tight tracking (`-2%` at 61px, `-0.32px` elsewhere)
-- Near-shadowless: `box-shadow: none`; depth comes from 19px-radius cards, tinted surfaces, and `#e2e2e2` hairlines
-- Soft light-blue product atmosphere — `#f1f8ff` tint + `#f1f8ff → #d3e8ff` gradient — on service pages
-- Mixed radius register: 4px nav pills, 19px content cards, 35px search pill, full-round indicator dots
-- Cool neutral surfaces (`#f3f5f7`, `#efefef`) for alternating content bands
+- Pretendard throughout, self-hosted as a variable font; 700 for every headline and navigation label
+- White `#ffffff` canvas, pure black `#000000` text and headings, body tracked at -0.32px
+- TMAP blue `#0064ff` as selected-state and eyebrow text, plus a 10% `#0064ff` hover tint on mega-menu titles — no blue fills
+- Photography-led cards with 2px outline badges (9.6px radius) and 2px outline pills (43.2px radius)
+- Pale blue `#f1f8ff` feature panels at 19.2px radius on the navigation page
+- A single elevated element: the 69px search pill with `rgba(0, 0, 0, 0.08) 0px 3px 5px 0px`
+- Grey only for secondary navigation: `#585858` mega-menu links, `#464646` chips, `#777777` footer
 
 ## Primary tasks
 
-- Get the fastest route to work with a trusted arrival time
-- Improve driving habits using a safe-driving score and insurance benefit
-- Browse driver, public-transit, and business services on offer
-- Evaluate mobility data and APIs for routing a vehicle fleet
+- Find the service for a trip: navigation, designated driving, parking, EV charging, rental cars, public transit
+- Check what TMAP navigation does before installing the app
+- Read company news, driving tips and theme courses (티맵 이야기)
+- Learn about the company, its culture and open roles (티맵 피플)
+- Evaluate TMAP AUTO, TMAP API & DATA and advertising for a business
 
 ## 2. Color Palette & Roles
 
-### Primary
-- **TMAP Blue** (`#0064ff`): Primary brand color. The single saturated accent — section eyebrows, accent links, the active-nav 4px underline bar, and emphasis. The system's "this matters / this is the action" color.
-- **Blue Alt** (`#0061fd`): A near-identical companion blue used as the fill on solid blue value-panels and active indicator dots. Functionally interchangeable with the primary; the tiny shift is a render artifact of the same brand blue.
-- **Ink Black** (`#000000`): Primary text and heading color — pure black, used directly on white for maximum editorial contrast.
+Every value below was read on 2026-09-30 from the home page, the TMAP navigation page and the company page.
 
-### Neutral & Surface
-- **Pure White** (`#ffffff`): Page background, card surfaces, and text on blue/dark panels.
-- **Surface Cool** (`#f3f5f7`): Cool-grey tinted surface for alternating content bands and tinted cards.
-- **Surface Grey** (`#efefef`): A flatter neutral grey for secondary blocks and media placeholders.
-- **Hairline** (`#e2e2e2`): Thin borders, dividers, and the outline on the white search pill — the primary separation device in this shadow-free system.
-- **Hairline Alt** (`#e5e5e5`): Secondary hairline for fine dividers.
+### Blue
+- **TMAP Blue** (`#0064ff`): the primary. The captured pages render it in two primary roles: the selected state — the top-navigation item of the current section (티맵 서비스 on the navigation page, 티맵 피플 on the about page; the other four stay `#000000`) and the selected year (2002) of the history timeline — and accent text on the about page's eyebrows (TMAP MOBILITY VISION, TMAP MOBILITY WAY, TMAP MOBILITY 히스토리) and the five WAY slogans. The mega menu's section titles take it as a 10% tint, `rgba(0, 100, 255, 0.1)`, under hover and press. It never appears as a solid fill on the captured pages.
 
-### Product Atmosphere (Blue Tints)
-- **Surface Blue** (`#f1f8ff`): Very light blue tint for service/product feature sections — the calm "TMAP product" backdrop.
-- **Surface Blue Deep** (`#d3e8ff`): The deeper stop of the hero gradient (`#f1f8ff → #d3e8ff`), evoking open sky and roads.
+### Ink & Text
+- **Ink** (`#000000`): body text, headings, navigation labels and the news-row rules.
+- **Menu Link** (`#585858`): service links inside the mega menu, 13.44px / 800.
+- **Chip Label** (`#464646`): labels of the home quick-link chips.
+- **Footer** (`#777777`): footer navigation and legal links; also the edge of the category badge on the navigation page.
+- **On Image** (`#ffffff`): hero and banner headings, outline pills and badges over photography.
 
-### Text Hierarchy
-- **Ink Black** (`#000000`): Headings, primary text, nav labels.
-- **Body Grey** (`#464646`): Secondary body copy and descriptions.
-- **Muted Grey** (`#585858`): Tertiary text, sub-nav labels, metadata.
-- **Faint Grey** (`#777777`): Lowest-emphasis captions and fine print.
+### Surface & Lines
+- **Canvas** (`#ffffff`): page background and the search pill.
+- **Surface Blue** (`#f1f8ff`): the feature panels on the navigation page.
+- **Hairline** (`#e5e5e5`): the 2px edge of the quick-link chips.
+- **Search Border** (`#f2f0f0`): the 1px edge of the search pill.
+- **Badge Border** (`#dbdbdb`): the 2px edge of a category badge on a white card.
+
+### Not carried forward
+- The June record's `#0061fd` blue panels and indicator dots, the `#f3f5f7` and `#efefef` grey bands, the `#e2e2e2` hairline and the `#f1f8ff` to `#d3e8ff` hero gradient were not present in the 2026-09-30 capture, so none is a token. The about page's white-text columns sit on imagery the collector does not read as a colour.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **Primary**: `Pretendard` (with `sans-serif` fallback) — the single typeface for the entire site, headlines through body. ExtraBold (800) appears on dense sub-nav, Bold (700) on headlines and main nav, Regular (400) on body.
+- **Live surface use**: `Pretendard`, self-hosted by TMAP as a variable font (`https://www.tmapmobility.com/asset/font/PretendardVariable.woff2`), loaded and used by 763 captured elements across all three pages — headings, navigation, buttons, cards, badges and body text.
+- **Official brand typeface**: none was found on the captured pages, so none is claimed.
+- **Declared only / unresolved**: none; Pretendard is the only face the pages declare.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display XL | Pretendard | 61px (3.84rem) | 700 | 1.40 (86px) | -2% | Big feature/value headline |
-| Hero / Section | Pretendard | 44px (2.76rem) | 700 | 1.40 (62px) | -0.32px | Hero & section headlines |
-| Feature Block | Pretendard | 35px (2.16rem) | 700 | 1.40 (48px) | -0.32px | H4 feature-block titles |
-| Eyebrow / Sub-head | Pretendard | 23px (1.44rem) | 600-700 | 1.40 (32px) | -0.32px | Blue eyebrows, sub-heads |
-| Nav | Pretendard | 15px (0.96rem) | 700 | 1.40 (22px) | normal | Top navigation items |
-| Body | Pretendard | 16px (1.00rem) | 400 | 1.40 (22px) | normal | Standard reading text |
-| Sub-nav | Pretendard | 13px (0.84rem) | 800 | 1.40 | normal | Secondary nav row |
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Observed on |
+|------|------|------|--------|-------------|----------------|-------------|
+| Display | Pretendard | 61.44px | 700 | 86px (1.4) | -0.32px | WAY value headlines (고객중심, 프로답게 …) |
+| Hero | Pretendard | 44.16px | 700 | 61.8px (1.4) | -0.32px | Home hero, white |
+| Page Title | Pretendard | 44.16px | 700 | 61.4px (1.39) | -0.32px | Navigation page h1 |
+| Section | Pretendard | 34.56px | 700 | 49.6px (1.43) | -0.32px | Navigation feature heading |
+| Card Title | Pretendard | 28.8px | 700 | 40.3px (1.4) | -0.32px | Home article cards |
+| Eyebrow | Pretendard | 23.04px | 700 | 32.3px (1.4) | -0.32px | Blue eyebrows (first one at 600) |
+| Body | Pretendard | 16px | 400 | 22.4px (1.4) | -0.32px | Body text |
+| Nav | Pretendard | 15.36px | 700 | 21.5px (1.4) | normal | Top navigation |
+| Menu Title | Pretendard | 15.36px | 700 | 18.4px (1.2) | normal | Mega-menu titles |
+| Footer Nav | Pretendard | 15.36px | 700 | 18.4px (1.2) | -2% | Footer navigation |
+| Menu Link | Pretendard | 13.44px | 800 | 16.1px (1.2) | normal | Mega-menu links |
+| Chip | Pretendard | 13.44px | 800 | 16.1px (1.2) | -0.32px | Quick-link chips, badges |
+
+The navigation page's 61.44px h2 computes its letter-spacing as `-2%` rather than -0.32px.
 
 ### Principles
-- **One font, weight does the work**: Pretendard everywhere; hierarchy is built from size and the Bold (700) / Regular (400) split, not from multiple families.
-- **Bold display, quiet body**: Every headline is weight 700; body stays at 400. There is no light-weight headline treatment.
-- **Tight tracking on display**: `-2%` at the 61px feature size and `-0.32px` across the rest of the display scale; body sits at normal tracking.
-- **Large, declarative heads**: Display sizes (61px / 44px / 34.5px) are big and confident, consistent with the editorial, infrastructure-grade tone.
+- **Weight carries the hierarchy**: 700 for headings and navigation, 800 for small dense labels, 400 for body.
+- **One tracking value**: -0.32px on body and headings; `-2%` only on the navigation page's largest headline and the footer.
+- **Computed sizes, as measured**: 13.44, 15.36, 23.04, 28.8, 34.56, 44.16 and 61.44px at a 1440px viewport; use them as given rather than rounding.
 
 ## 4. Component Stylings
 
-### Buttons
-
-**Hero Search Pill**
-- Background: `#ffffff`
-- Text: `#000000`
-- Border: 1px solid `#e2e2e2`
-- Radius: 35px
-- Padding: 23px 29px
-- Font: 16px Pretendard weight 400
-- Height: 69px
-- Use: Hero search/launch pill — "어디로 갈까요?" (Where to?)
-
 ### Navigation
 
-**Top Nav Item**
+**Top navigation item**
+- Background: transparent
 - Text: `#000000`
-- Font: 15px Pretendard weight 700
-- Radius: 4px
-- Padding: 8px 23px
-- Active: blue `#0064ff` text with a 4px bottom border `#0064ff`
-- Use: Primary horizontal nav ("티맵 서비스", "티맵 이야기", "회사소개")
+- Padding: 0 20.16px
+- Height: 22px (inside a 93px header)
+- Font: 15.36px / 700 / 21.5px Pretendard
+- Selected: text `#0064ff` on the current section
+- States: selected read from rest values on two pages; no pointer frame
+- Use: 티맵 피플, 티맵 서비스, 티맵 이야기, 지속가능경영, 고객지원
 
-**Sub-nav Item**
-- Text: `#585858`
-- Font: 13px Pretendard weight 800
+**Mega-menu section title**
+- Background: transparent
+- Text: `#000000`
 - Radius: 4px
-- Padding: 8px 23px
-- Active: text shifts to `#000000`
-- Use: Secondary nav row beneath the main nav
+- Padding: 7.68px 23.04px
+- Height: 34px
+- Font: 15.36px / 700 / 18.4px Pretendard
+- Hover: background `rgba(0, 100, 255, 0.1)`
+- Pressed: background `rgba(0, 100, 255, 0.1)`
+- States: two titles on two pages read the same tint in both frames; focus is not declared
+- Use: section titles of the header mega menu
+
+**Mega-menu link**
+- Background: transparent
+- Text: `#585858`
+- Radius: 4px
+- Padding: 7.68px 23.04px
+- Height: 31px
+- Font: 13.44px / 800 / 16.1px Pretendard
+- Use: service links (내비게이션, 주차, 대중교통 …)
+
+**History year**
+- Background: transparent
+- Text: `#000000`
+- Height: 25px
+- Font: 15.36px / 700 / 25px Pretendard
+- Selected: text `#0064ff` (2002 at rest)
+- Use: year selector of the company history timeline, 22 years
+
+### Buttons
+
+**Search pill**
+- Background: `#ffffff`
+- Text: `#000000`
+- Border: 1px solid `#f2f0f0`
+- Radius: 34.56px
+- Padding: 23.04px 28.8px
+- Height: 69px (467px wide)
+- Font: 16px / 400 / 22.4px Pretendard
+- Shadow: `rgba(0, 0, 0, 0.08) 0px 3px 5px 0px`
+- Use: "어디로 갈까요?" search launcher on home
+
+**Quick-link chip**
+- Background: transparent
+- Text: `#464646`
+- Border: 2px solid `#e5e5e5`
+- Radius: 9.6px
+- Padding: 11.52px
+- Height: 43px
+- Font: 13.44px / 800 / 16.1px Pretendard
+- Use: 회사소개, 조직문화, 내비게이션, 운전점수/보험혜택(UBI), 어디갈까, 대리운전
+
+**Outline pill over imagery**
+- Background: `rgba(0, 0, 0, 0.1)`
+- Text: `#ffffff`
+- Border: 2px solid `#ffffff`
+- Radius: 43.2px
+- Padding: 8.64px 21.12px
+- Height: 46px
+- Font: 15.36px / 700 / 25px Pretendard
+- Use: 티맵 서비스 on the home hero, 채용 공고 확인하기 on the about page
+
+**Outline pill on white**
+- Background: transparent
+- Text: `#000000`
+- Border: 2px solid `#000000`
+- Radius: 100px
+- Padding: 8.64px 21.12px
+- Height: 46px
+- Use: the action beside the home news list
 
 ### Cards & Containers
 
-**Article Card**
-- Background: `#ffffff`
-- Text: `#000000`
-- Radius: 19px
-- Use: Story/content article card (image-led, no shadow)
-
-**Tinted Surface Card**
-- Background: `#f3f5f7`
-- Text: `#000000`
-- Radius: 19px
-- Use: Cool-grey tinted content card
-
-**Solid Blue Panel**
-- Background: `#0061fd`
+**Image badge**
+- Background: transparent
 - Text: `#ffffff`
-- Radius: 19px
-- Use: Service/value panel (운전자 서비스, 대중교통 이용 서비스, 기업고객 서비스)
+- Border: 2px solid `#ffffff`
+- Radius: 9.6px
+- Padding: 10.56px
+- Height: 41px
+- Font: 13.44px / 800 / 16.1px Pretendard
+- Use: category label over article photographs; on a white card it turns black with a `#dbdbdb` edge, on the navigation page it takes a `#777777` edge
 
-### Badges
+**Feature panel**
+- Background: `#f1f8ff`
+- Radius: 19.2px
+- Padding: 67.2px
+- Size: 1056 × 487
+- Use: the five TMAP navigation features, each with a 34.56px / 700 title
 
-**Blue Eyebrow Label**
-- Text: `#0064ff`
-- Font: 23px Pretendard weight 700
-- Use: Section eyebrow above a headline ("TMAP MOBILITY VISION", "TMAP MOBILITY WAY")
+**Interview banner**
+- Text: `#ffffff`
+- Radius: 19.2px
+- Size: 1056 × 697
+- Use: image-led people story on home and the about page
 
-**Indicator Dot**
-- Background: `#0061fd`
-- Radius: 9999px (full)
-- Use: Active carousel/step indicator dot
+**News row**
+- Text: `#000000`
+- Border: 1px solid `#000000`, bottom only
+- Padding: 33.6px 0
+- Use: press list on home, 691px wide
 
 ---
 
-**Verified:** 2026-06-17 (omd:add-reference CREATE — Tier 1 live inspect, 3 brand-owned surfaces)
+**Verified:** 2026-09-30 (deterministic collector capture of three public pages, logged out, plus first-party context from the company page)
 **Tier 1 sources:** https://www.tmapmobility.com/ ; https://www.tmapmobility.com/service/drive/navigation ; https://www.tmapmobility.com/people/about
-**Tier 2 sources:** getdesign.md/tmap — not listed (no entry) ; styles.refero.design/?q=tmap — no TMAP-specific style (Western-biased catalog under-covers KR brands)
+**Tier 2 sources:** getdesign.md/tmap (HTTP 200; the served page contains no occurrence of the name) and styles.refero.design/?q=tmap (HTTP 200; the name appears only as the echoed query), requested 2026-09-30; no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: ~4px
-- Scale: 4px, 8px, 16px, 20px, 23px, 29px, 48px, 64px
-- Notable: Nav items carry ~23px horizontal padding; the hero search pill uses a generous 23px×29px pad for a large, tappable target
+- Navigation: 0 20.16px on top items; 7.68px 23.04px on mega-menu titles and links
+- Search pill: 23.04px 28.8px; chips 11.52px; badges 10.56px
+- Outline pills: 8.64px 21.12px on the inner link
+- Feature panels: 67.2px; news rows 33.6px vertical
 
 ### Grid & Container
-- Centered single-column hero with a large Pretendard Bold headline and the rounded search pill as the anchor
-- Content laid out as wide ~509px-width image-led article cards (19px radius) in multi-column rows
-- Feature/service sections alternate white (`#ffffff`), cool grey (`#f3f5f7`), and light-blue (`#f1f8ff`) full-width bands
-- Service product pages open on a `#f1f8ff → #d3e8ff` gradient hero wash
+- Content runs in a 1056px column (feature panels, banners, section headings) under a full-width 93px header.
+- Home article cards are 509px wide in two columns; the news list is 691px wide beside a 326px heading.
+- The about page lays out 326px columns for its service groups and history items.
 
 ### Whitespace Philosophy
-- **Editorial breathing room**: large headlines with generous vertical rhythm; the page reads like a magazine spread, not a dense dashboard.
-- **Flat segmentation**: sections separate by background tint (`#f3f5f7` / `#f1f8ff` vs `#ffffff`) and hairlines, never by shadow.
-- **Color as punctuation**: long monochrome passages are punctuated by `#0064ff` eyebrows and the occasional solid blue panel.
+- **Magazine rhythm**: large headlines, photography and generous section gaps rather than dense widgets.
+- **Colour for position, not decoration**: blue text tells you where you are (current section, selected year); everything else stays black and white.
 
 ### Border Radius Scale
-- Sharp (4px): nav-item pills — precise, functional
-- Card (19px): content/article cards and blue panels — the workhorse rounding
-- Pill (35px): the hero search/launch pill
-- Full (9999px / 100%): indicator dots
+- 4px: mega-menu titles and links
+- 9.6px: chips and badges
+- 19.2px: feature panels and banners
+- 34.56px: the search pill
+- 43.2px and 100px: outline pills
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, inline text, most surfaces |
-| Tint (Level 1) | `#f3f5f7` / `#f1f8ff` background shift | Card/section separation without elevation |
-| Hairline (Level 2) | `1px solid #e2e2e2` border | Search-pill outline, dividers |
+| Flat | No shadow | Page, navigation, cards, panels, pills |
+| Tint | `#f1f8ff` fill | Navigation feature panels |
+| Outline | 2px solid edge | Chips, badges, outline pills |
+| Rule | 1px solid `#000000` bottom | News rows |
+| Raised | `rgba(0, 0, 0, 0.08) 0px 3px 5px 0px` | The home search pill only |
 
-**Shadow Philosophy**: TMAP's corporate site is a near-shadowless system. Live inspection found `box-shadow: none` across the hero, nav, headings, and content cards. Depth and grouping are communicated entirely through flat tinted surfaces (`#f3f5f7`, `#f1f8ff`), large 19px card radii, and thin `#e2e2e2` hairlines. This is a deliberate modern-flat choice consistent with the editorial register — it keeps the brand reading as clean, fast infrastructure rather than a heavy, card-stacked app. When emphasis is needed the system reaches for the brand blue (`#0064ff`) or a solid blue panel (`#0061fd`), never elevation.
+**Shadow Philosophy**: depth is almost absent. Structure comes from photography, 2px outlines and the pale blue panels; the one shadow lifts the search pill, the page's main entry into the product.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Use Pretendard for everything — headlines at weight 700, body at 400
-- Keep the base monochrome: pure black (`#000000`) text on white (`#ffffff`)
-- Reserve TMAP Blue (`#0064ff`) for eyebrows, accent links, the active-nav underline, and value panels
-- Grey down supporting text along the `#464646` → `#585858` → `#777777` ladder
-- Separate sections with flat tints (`#f3f5f7`, `#f1f8ff`) and `#e2e2e2` hairlines, not shadows
-- Use the light-blue product atmosphere (`#f1f8ff`, `#f1f8ff → #d3e8ff` gradient) on service/product pages
-- Round content cards at 19px and the search pill fully (35px); keep nav pills sharp at 4px
-- Apply tight tracking on display headlines (`-2%` at 61px, `-0.32px` elsewhere)
+- Set everything in Pretendard, headings and navigation at 700, body at 400 with -0.32px tracking
+- Keep text `#000000` on `#ffffff`
+- Use `#0064ff` for the selected item and for eyebrows — as text
+- Use `rgba(0, 100, 255, 0.1)` as the hover fill of menu titles
+- Put outline badges (2px, 9.6px) and outline pills (2px, 43.2px) over photography
+- Use `#f1f8ff` panels at 19.2px for product features
+- Keep one shadow for the search entry point
 
 ### Don't
-- Use drop shadows for elevation — TMAP is a flat, shadow-free system
-- Spread the brand blue across many elements — it dilutes the single-accent signal
-- Introduce a second display typeface — Pretendard owns the whole system
-- Use a light weight for headlines — display is always Bold (700)
-- Mix in a second saturated accent color — blue is the only brand hue
-- Use pure black backgrounds for whole sections — the base is white, with tints for variety
-- Set display headlines with loose/positive tracking — TMAP tracks tight
+- Fill buttons or panels with solid `#0064ff` — the captured pages never do
+- Add drop shadows to cards or panels
+- Introduce a second typeface
+- Use grey for body text; grey belongs to secondary navigation and the footer
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column, hero headline compresses, article cards stack |
-| Tablet | 640-1024px | 2-up article cards, moderate padding |
-| Desktop | 1024-1440px | Full layout, centered hero, multi-column article/service rows |
+Only the 1440px desktop layout was captured; no breakpoint values are claimed.
 
 ### Touch Targets
-- Hero search pill at 69px height, full 35px radius — an unmistakable, generous target
-- Nav items with ~23px horizontal padding for comfortable spacing
-- Sub-nav row spaced for touch beneath the main nav
+- The search pill is 69px tall; outline pills 46px; chips 43px.
+- Top navigation labels are 22px tall inside a 93px header bar.
 
 ### Collapsing Strategy
-- Hero: large Pretendard Bold headline scales down on mobile, weight 700 maintained
-- Article-card rows: multi-column → 2-up → single stacked column
-- White / cool-grey / light-blue alternating bands maintain full-width treatment
-- Service-page gradient hero (`#f1f8ff → #d3e8ff`) persists across breakpoints
+Not captured.
 
 ### Image Behavior
-- Image-led article cards keep their 19px radius and carry no shadow at any size, consistent with the flat system
-- Service-page illustrations sit on the light-blue tint without elevation
+- Article cards, banners and the hero are image-led; text and outlines over them are white.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary accent: TMAP Blue (`#0064ff`)
-- Blue panel fill: Blue Alt (`#0061fd`)
-- Background: Pure White (`#ffffff`)
-- Tinted surface: Surface Cool (`#f3f5f7`)
-- Product atmosphere: Surface Blue (`#f1f8ff`), gradient to (`#d3e8ff`)
-- Heading / primary text: Ink Black (`#000000`)
-- Body text: Body Grey (`#464646`)
-- Muted text: Muted Grey (`#585858`)
-- Faint text: Faint Grey (`#777777`)
-- Hairline: `#e2e2e2`
+- Primary (selected / eyebrow text): TMAP Blue `#0064ff`
+- Hover tint: `rgba(0, 100, 255, 0.1)`
+- Text and headings: `#000000`
+- Background: `#ffffff`
+- Feature panel: `#f1f8ff`
+- Mega-menu link: `#585858`
+- Chip label / edge: `#464646` / `#e5e5e5`
+- Footer: `#777777`
 
 ### Example Component Prompts
-- "Create a hero on white background. Headline at 44px Pretendard weight 700, line-height 1.40, letter-spacing -0.32px, color #000000. Below it a white rounded search pill: #ffffff background, 1px solid #e2e2e2 border, 35px radius, 23px 29px padding, 16px Pretendard — 'Where to?'. No shadow."
-- "Design a feature-block heading: 35px Pretendard weight 700, letter-spacing -0.32px, #000000, preceded by a blue eyebrow label in #0064ff at 23px Pretendard weight 700."
-- "Build a service section on light blue: #f1f8ff background (or #f1f8ff → #d3e8ff gradient). Solid blue value panel: #0061fd background, white text, 19px radius. Article cards: white #ffffff, 19px radius, no shadow."
-- "Create top nav: white header, Pretendard 15px weight 700 items in #000000, 4px radius. Active item gets #0064ff text and a 4px bottom border #0064ff."
+- "Create a top navigation on white: five Pretendard 15.36px / 700 items in #000000 with 0 20.16px padding; the current section's label is #0064ff. No underline, no fill."
+- "Create a search launcher: #ffffff pill, 1px solid #f2f0f0, 34.56px radius, 23.04px 28.8px padding, 69px tall, 16px / 400 Pretendard placeholder '어디로 갈까요?', shadow rgba(0, 0, 0, 0.08) 0px 3px 5px 0px."
+- "Build an image card: full photograph, a 2px white outline badge (9.6px radius, 10.56px padding, 13.44px / 800 white) and a 28.8px / 700 white heading with -0.32px tracking."
+- "Build a feature panel: #f1f8ff, 19.2px radius, 67.2px padding, 34.56px / 700 #000000 title, 23.04px / 400 copy."
 
 ### Iteration Guide
-1. Pretendard for every element; weight 700 for headlines, 400 for body
-2. Brand blue (`#0064ff`) is the single accent — reserve it for eyebrows, links, the active-nav underline, and panels
-3. No shadows — separate with `#f3f5f7` / `#f1f8ff` tints and `#e2e2e2` hairlines
-4. Mixed radius: 4px nav pills, 19px cards, 35px search pill
-5. Text color is `#000000`, greyed to `#464646` / `#585858` / `#777777` for hierarchy
-6. Tight tracking on display headlines (-2% at 61px, -0.32px elsewhere)
-7. Use the light-blue atmosphere only on service/product pages, not the corporate chrome
+1. Pretendard only; 700 headings, 400 body, -0.32px tracking
+2. Black on white; blue only as selected or eyebrow text
+3. Hover on menu titles is a 10% blue tint
+4. Outlines (2px) instead of fills for badges and pills over imagery
+5. Radii: 4 / 9.6 / 19.2 / 34.56 / 43.2px
+6. One shadow, on the search pill
 
 ---
 
 ## 10. Voice & Tone
 
-TMAP Mobility's voice is **clear, confident, and reassuring** — a mobility leader that speaks plainly about getting people where they're going with the least friction. The navigation product page leads with "가장 빠르고 정확한 길안내 / 국내 1위 티맵 내비" ("The fastest, most accurate route guidance — Korea's #1 TMAP Navi"), a register that states a category-leading claim without hype. Corporate copy ("스마트한 이동 생활의 시작" / "The start of a smart mobility life") frames the brand around everyday peace of mind. The tone trusts the reader: it explains capability, not adjectives.
+TMAP's voice is plain and reassuring: it names a destination, a capability or a value, and trusts the reader. The navigation page leads with a leadership claim stated flatly, the company page talks about the route and the way, and the product entry point is a single question.
 
 | Context | Tone |
 |---|---|
-| Hero headlines | Declarative, leadership-framed. "국내 1위 티맵 내비." Confident, not boastful. |
-| Section eyebrows | Brand-formal, English-cased. "TMAP MOBILITY VISION", "TMAP MOBILITY WAY". |
-| Feature descriptions | Benefit-first, capability-led. Explains what the navigation does and why it's accurate. |
-| Value statements | Single concrete virtues. "고객중심", "프로답게", "열린소통" (customer-first, professional, open communication). |
-| CTAs | Direct, low-pressure. "어디로 갈까요?" — an invitation, not a sales push. |
+| Hero headlines | Everyday, calm. "스마트한 이동 생활의 시작" |
+| Product claims | Direct and factual. "가장 빠르고 정확한 길안내 국내 1위 티맵 내비" |
+| Section eyebrows | Brand-formal English caps. "TMAP MOBILITY VISION", "TMAP MOBILITY WAY" |
+| Values | A word plus a proverb-like line. "고객중심 — 열길 물속은 몰라도 백길 고객 속은 알아야 한다." |
+| Entry points | A question, not a command. "어디로 갈까요?" |
 
-**Voice samples (verbatim from live surfaces):**
-- "스마트한 이동 생활의 시작" — corporate homepage hero (mission-framed). *(verified live 2026-06-17)*
-- "가장 빠르고 정확한 길안내 국내 1위 티맵 내비" — navigation product H1 (leadership claim). *(verified live 2026-06-17)*
-- "가장 빠른 길을 넘어, 가장 나다운 길을 찾는 법" — homepage section H2 (beyond-speed framing). *(verified live 2026-06-17)*
+**Voice samples (read on 2026-09-30):**
+- "스마트한 이동 생활의 시작 티맵과 함께 언제나 마음 편한 이동과 일상" — home hero heading.
+- "가장 빠르고 정확한 길안내 국내 1위 티맵 내비" — navigation page h1.
+- "더 가치 있는 길을 찾는 모빌리티 파트너" — company vision.
+- "실패할 수 있는 용기가 없다면 허들을 넘어설 수 없다" — the 한계없이 value.
+- "어디로 갈까요?" — the home search pill.
 
-**Forbidden register**: aggressive sales urgency, undefined jargon, exclamation-heavy hype, second saturated accent colors that compete with the brand blue.
+**Forbidden register**: pressure-selling urgency, unexplained jargon, exclamation-heavy hype, playful slang that undercuts a safety-critical product.
 
 ## 11. Brand Narrative
 
-TMAP Mobility (티맵모빌리티) was established in **December 2020** as a spin-off from **SK Telecom**, carving the long-running TMAP navigation service — Korea's most-used driving-navigation app — into an independent mobility company. The founding premise was to evolve from a single navigation app into a comprehensive **mobility platform**: driving, public transit, parking, EV charging, car rental, and B2B mobility data and APIs all under one roof. The 2021 super-app rebrand introduced the current brand identity — a clean, blue-accented, Pretendard-driven system that signals infrastructure-grade trust over consumer playfulness.
+TMAP's story, as the company tells it on its own history page, is twenty years of widening what "finding the way" means. It began in 2002 with Nate Drive, a mobile navigation service that reflected live traffic; the TMAP name arrived in 2007, the smartphone app in 2010, and TMAP moved into cars, APIs and — from 2016 — every Korean carrier's phones. The late-2010s additions were about the drive itself: an AI assistant with NUGU, V2X warnings, aerial high-resolution maps. The 2020s are about everything around the drive: a new logo in June 2021, designated driving, parking, EV charging and scooters that December, truck navigation in 2022, and in 2023 a single app that also guides public transit.
 
-The product positions itself around being the user's most accurate, most-trusted way to move. The navigation page's "국내 1위" (Korea's #1) claim rests on TMAP's scale advantage — its "압도적 운전자 데이터" (overwhelming driver-data) — which feeds route accuracy, arrival-time prediction, and safe-driving scoring (UBI). The brand frames this data not as surveillance but as the engine of better, safer guidance.
+The company's vision statement names that shift directly: having spent twenty years finding the fastest and safest Route, TMAP now wants to find a better Way to move — for daily life, for future generations and for its own people. Its WAY values read like a working culture rather than slogans: 고객중심 (customer first), 프로답게 (work like a pro), 열린소통 (open communication), 한계없이 (without limits, with the courage to fail fast) and 함께성장 (grow together). The footer links to SK's ethics reporting channel, the only group affiliation the captured pages show.
 
-What TMAP refuses, visible in its design: the heavy, busy chrome of legacy portal-style Korean services (no shadow-stacked widgets, no rainbow of competing accents), and the gimmicky playfulness of consumer apps chasing engagement. What it embraces: a calm monochrome-on-white editorial base, a single confident brand blue, large declarative Pretendard headlines, and a soft light-blue product atmosphere that evokes open roads and sky — a company that wants to read as dependable mobility infrastructure for everyday life.
+What the design refuses, as an editorial reading of the captured pages: loud promotional chrome and competing accent colours. What it embraces: black-and-white type, photography, outlines instead of fills, and one blue that tells you where you are.
 
 ## 12. Principles
 
-1. **Accuracy is the product.** TMAP's claim to leadership is precision — fastest, most accurate guidance from the largest driver dataset. *UI implication:* present data and capability plainly; let real numbers and clear feature copy carry weight, not decoration.
-2. **One accent, used sparingly.** The brand blue (`#0064ff`) means "this matters." *UI implication:* reserve blue for eyebrows, links, the active-nav underline, and value panels; keep everything else monochrome so the accent always reads.
-3. **Calm over busy.** Mobility infrastructure should feel steady, not frantic. *UI implication:* flat surfaces, no shadows, generous editorial whitespace; emphasis via color, never elevation.
-4. **One voice, one typeface.** Pretendard carries the whole system. *UI implication:* build hierarchy from size and the Bold/Regular split, not from extra families or weights.
-5. **Friendly where it invites, precise where it functions.** *UI implication:* round the search pill and content cards generously (35px / 19px) to feel approachable; keep nav pills sharp (4px) where precision reads as competence.
+1. **Show where the user is.** *UI implication:* the current section and the selected year turn `#0064ff`; nothing else is blue.
+2. **Route, then Way.** From the company vision. *UI implication:* lead with the destination question ("어디로 갈까요?") and put the service catalogue one step away.
+3. **Let photography carry the mood.** *UI implication:* white outline badges and pills over images instead of filled buttons.
+4. **Flat and quiet.** *UI implication:* no card shadows; pale `#f1f8ff` panels and 2px outlines for grouping.
+5. **Weight, not colour, for hierarchy.** *UI implication:* 700 and 800 Pretendard for structure, 400 for reading.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable TMAP Mobility user segments (Korean drivers, commuters, fleet/business customers), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable TMAP user segments (daily drivers, public-transit riders, business customers of TMAP AUTO and TMAP API), not individual people.*
 
-**김도현, 38, 서울.** A daily commuter who relies on TMAP Navi for the fastest route to work and trusts its arrival-time prediction over rivals. Values that the app feels accurate and uncluttered; would be put off by a navigation UI that buried the route under ads or playful clutter.
+**김도현, 38, 서울.** A daily commuter who checks the navigation page before trying new features. Wants the fastest route and plain explanations, not promotions.
 
-**이서연, 29, 경기.** A new driver who uses TMAP's safe-driving score and insurance benefit (UBI) to build better habits. Appreciates that the brand frames driver data as helping her, explained in plain Korean rather than fine print.
+**이서연, 29, 경기.** A newer driver interested in the driving score and insurance benefit. Reads the service pages to understand what the app measures.
 
-**박준호, 45, 부산.** A logistics operations manager evaluating TMAP's B2B mobility data and APIs for fleet routing. Trusts the brand because the corporate site reads as serious infrastructure — calm, data-led, leadership-claimed — not a consumer gimmick.
+**박준호, 45, 부산.** A fleet manager comparing TMAP API & DATA and route optimisation for a logistics team. Trusts the calm, data-first presentation.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed on the three captured pages.
+
+| State | Observation |
 |---|---|
-| **Empty (no saved places / history)** | White canvas. Single Ink Black (`#000000`) line at body size explaining nothing's saved yet, with one blue (`#0064ff`) accent path to start. No illustration clutter. |
-| **Empty (search, no results)** | Muted Grey (`#585858`) single line stating no match, with a prompt to adjust the query. Calm and plain. |
-| **Loading (route / content fetch)** | Skeleton blocks on `#f3f5f7` tinted surface at final card dimensions, 19px radius. Flat pulse, no shadow shimmer — consistent with the shadowless system. |
-| **Loading (in-place refresh)** | Subtle blue (`#0064ff`) progress indicator; previous content stays visible. |
-| **Error (request failed)** | Inline message in Ink Black with a plain-language explanation and a retry. No bare "오류가 발생했습니다" — states what to do next. |
-| **Error (form validation)** | Field-level message below the input describing what's valid, not just "필수". |
-| **Success (action saved / submitted)** | Brief inline confirmation in calm tone; next-step detail linked immediately below. No celebratory emoji. |
-| **Skeleton** | `#f3f5f7` blocks at final dimensions, 19px radius, flat pulse. |
-| **Disabled** | Faint Grey (`#777777`) text on reduced-opacity surface; blue actions fade rather than turn grey to preserve the brand read. |
+| **Selected (top navigation)** | The current section's label is `#0064ff`; the others stay `#000000`. |
+| **Selected (history year)** | The selected year (2002 at rest) is `#0064ff` among 21 black siblings. |
+| **Hover and pressed (mega-menu title)** | Background transparent → `rgba(0, 100, 255, 0.1)`, the same on two titles on two pages. |
+
+Focus rings, disabled, loading, empty, error and success treatments were not captured and are not described.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 120ms | Hover, nav-underline shift, focus |
-| `motion-standard` | 220ms | Card/section reveal, carousel step, dropdown |
-| `motion-slow` | 340ms | Page-level transitions, hero reveal |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — cards, panels, carousel slides |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions |
-
-**Motion rules**: Motion is functional and steady — consistent with the calm, infrastructure-grade aesthetic. The active-nav 4px underline slides smoothly between items; carousel/article rows advance at `motion-standard / ease-enter` with a quiet fade-and-rise; indicator dots cross-fade. No bounce or spring — a mobility-leadership brand signals dependability, not playfulness. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant; the product remains fully functional.
+The collector reads computed style, not animation. A same-day headless read of the declared `transition` values found: quick-link chips transition colour, background and border over 0.4s; the outline pills transition their background over 0.5s; the search pill and the history year buttons transition a filter over 0.2s. No easing curve is claimed beyond those declarations. Honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-17) via playwright getComputedStyle on three brand-owned surfaces:
-- https://www.tmapmobility.com/ (corporate homepage) — Pretendard 700 headlines at 44.16px / -0.32px;
-  body Pretendard 16px / weight 400 / color rgb(0,0,0); brand blue rgb(0,100,255) #0064ff on NEW labels +
-  indicator dots rgb(0,97,253) #0061fd; nav items 15.36px/700 rgb(0,0,0), sub-nav 13.44px/800 rgb(88,88,88);
-  hero search pill rgb(255,255,255) bg / radius 34.56px / 1px solid rgb(242,240,240) / 23.04px 28.8px pad;
-  content cards radius 19.2px; box-shadow none across hero/nav/cards.
-- https://www.tmapmobility.com/service/drive/navigation (navigation product page) — H1 "국내 1위 티맵 내비"
-  Pretendard 44.16px/700/-0.32px rgb(0,0,0); big H2 61.44px/700/-2% rgb(0,0,0); feature H4 34.56px/700;
-  brand blue rgb(0,100,255) as fg accent + active-nav 4px underline bar; tinted surface rgb(241,248,255)
-  #f1f8ff; hero gradient linear-gradient(rgb(241,248,255) → rgb(211,232,255)) = #f1f8ff → #d3e8ff.
-- https://www.tmapmobility.com/people/about (company-intro page) — eyebrows "TMAP MOBILITY VISION" /
-  "TMAP MOBILITY WAY" in rgb(0,100,255) #0064ff at 23.04px/600-700; WAY value words "고객중심"/"프로답게"/
-  "열린소통" at 61.44px/700 rgb(0,0,0); solid blue service panels bg rgb(0,100,255)/rgb(0,97,253) white text;
-  grey ladder rgb(70,70,70)/rgb(88,88,88)/rgb(119,119,119); hairlines rgb(226,226,226)/rgb(229,229,229).
-
-Token-level claims (§1-9) are sourced from this live inspection.
-
-Voice samples (§10) are verbatim from the live surfaces (homepage hero, navigation H1, homepage section H2).
-
-Brand narrative (§11): TMAP Mobility (티맵모빌리티) was established December 2020 as a spin-off of SK Telecom,
-building the TMAP navigation service into an independent mobility platform; 2021 super-app rebrand. These are
-widely documented public facts about the company; specific details beyond the live surfaces are general public
-knowledge, not directly quoted from a verified TMAP statement in this turn.
-
-Personas (§13) are fictional archetypes informed by publicly observable TMAP user segments (Korean drivers,
-commuters, fleet/business customers). Names are illustrative; they do not refer to real people.
-
-Interpretive claims (e.g., "one accent used sparingly", "calm over busy as a rejection of legacy portal chrome")
-are editorial readings connecting TMAP's observed design to its positioning, not directly sourced TMAP statements.
-
-Tier 2: getdesign.md/tmap and getdesign.md/tmapmobility return "No designs found" (not listed);
-styles.refero.design/?q=tmap returns no TMAP-specific style (Western-biased catalog under-covers KR brands).
-Per spec/regional-sources.yaml, KR refs rely on >= 2 brand-owned Tier-1 surfaces, satisfied by the three
-tmapmobility.com surfaces above.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/tmap.json (capturedAt 2026-09-30), deterministic collector, 1440x900, logged out: www.tmapmobility.com, /service/drive/navigation, /people/about. www.tmap.co.kr redirects to www.tmapmobility.com.
+- §1, §10, §11: the company page's vision, WAY and history text and the site footer, read 2026-09-30; home and navigation headings read headless the same day.
+- The June record's statement that the company was spun off from SK Telecom in December 2020 was not found on any page opened this session and has been removed.
+- Personas are fictional archetypes. Interpretive readings are editorial.
 -->

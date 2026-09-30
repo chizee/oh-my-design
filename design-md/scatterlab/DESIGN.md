@@ -5,57 +5,192 @@ display_name_kr: 스캐터랩
 country: KR
 category: ai
 homepage: "https://www.scatterlab.co.kr/"
-primary_color: "#212529"
+primary_color: "#fbb401"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=scatterlab.co.kr&sz=128"
-verified: "2026-07-02"
+verified: "2026-09-30"
 added: "2026-07-02"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: corporate, url: "https://www.scatterlab.co.kr/ko/intro", inspected: "2026-09-30" }
+    - { id: surface-2, kind: corporate-culture, url: "https://www.scatterlab.co.kr/ko/ethos", inspected: "2026-09-30" }
+    - { id: surface-3, kind: blog, url: "https://blog.scatterlab.co.kr/", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://www.scatterlab.co.kr/ko/intro", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://www.scatterlab.co.kr/ko/ethos", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://blog.scatterlab.co.kr/", captured: "2026-09-30" }
+    - { id: ai-ethics, kind: official-doc, url: "https://ethics.scatterlab.co.kr/", captured: "2026-09-30" }
+    - { id: zeta-letter, kind: official-doc, url: "https://blog.scatterlab.co.kr/zeta-intro-2506", captured: "2026-09-30" }
+    - { id: pretendard-license, kind: license, url: "https://raw.githubusercontent.com/orioncactus/pretendard/main/LICENSE", captured: "2026-09-30" }
+    - { id: plex-license, kind: license, url: "https://raw.githubusercontent.com/IBM/plex/master/LICENSE.txt", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &scta { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"3\"]", captured: "2026-09-30" }
+    "tokens.colors.on-primary": *scta
+    "tokens.colors.ink": &sp { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.nav-ink": &snav { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-09-30" }
+    "tokens.colors.black": &ssub { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"5\"]", captured: "2026-09-30" }
+    "tokens.colors.muted": &sfoot { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"17\"]", captured: "2026-09-30" }
+    "tokens.colors.canvas": &sbody { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::body", captured: "2026-09-30" }
+    "tokens.colors.blog-ink": *sbody
+    "tokens.colors.blog-muted": &stab { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-09-30" }
+    "tokens.colors.blog-meta": &smeta { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"67\"]", captured: "2026-09-30" }
+    "tokens.colors.blog-strong": &stabsel { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"6\"]", captured: "2026-09-30" }
+    "tokens.colors.blog-tab-fill": *stabsel
+    "tokens.typography.family.sans": *sp
+    "tokens.typography.family.blog": *sbody
+    "tokens.typography.display.size": &sh1 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::#\\39 536e2e9-0d58-4e3d-beec-c4c130e1d5df", captured: "2026-09-30" }
+    "tokens.typography.display.weight": *sh1
+    "tokens.typography.display.lineHeight": *sh1
+    "tokens.typography.display.use": *sh1
+    "tokens.typography.section.size": &sh2 { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::#\\35 5ca25f9-f290-400d-b04c-00913f723bc1", captured: "2026-09-30" }
+    "tokens.typography.section.weight": *sh2
+    "tokens.typography.section.lineHeight": *sh2
+    "tokens.typography.section.use": *sh2
+    "tokens.typography.subhead.size": &sh3 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::#c6236200-bfb0-4c83-9df2-013c4a462bf6", captured: "2026-09-30" }
+    "tokens.typography.subhead.weight": *sh3
+    "tokens.typography.subhead.lineHeight": *sh3
+    "tokens.typography.subhead.use": *sh3
+    "tokens.typography.body.size": *sp
+    "tokens.typography.body.weight": *sp
+    "tokens.typography.body.lineHeight": *sp
+    "tokens.typography.body.use": *sp
+    "tokens.typography.caption.size": *sfoot
+    "tokens.typography.caption.weight": *sfoot
+    "tokens.typography.caption.lineHeight": *sfoot
+    "tokens.typography.caption.use": *sfoot
+    "tokens.typography.blog-hero.size": &sbh1 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h1", captured: "2026-09-30" }
+    "tokens.typography.blog-hero.weight": *sbh1
+    "tokens.typography.blog-hero.lineHeight": *sbh1
+    "tokens.typography.blog-hero.use": *sbh1
+    "tokens.typography.blog-feature.size": &sbh2 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h2", captured: "2026-09-30" }
+    "tokens.typography.blog-feature.weight": *sbh2
+    "tokens.typography.blog-feature.lineHeight": *sbh2
+    "tokens.typography.blog-feature.use": *sbh2
+    "tokens.typography.blog-card-title.size": *sbh2
+    "tokens.typography.blog-card-title.weight": *sbh2
+    "tokens.typography.blog-card-title.lineHeight": *sbh2
+    "tokens.typography.blog-card-title.use": *sbh2
+    "tokens.typography.blog-body.size": *sbody
+    "tokens.typography.blog-body.weight": *sbody
+    "tokens.typography.blog-body.lineHeight": *sbody
+    "tokens.typography.blog-body.use": *sbody
+    "tokens.typography.blog-button.size": *ssub
+    "tokens.typography.blog-button.weight": *ssub
+    "tokens.typography.blog-button.lineHeight": *ssub
+    "tokens.typography.blog-button.use": *ssub
+    "tokens.spacing.nav-y": *snav
+    "tokens.spacing.nav-x": *snav
+    "tokens.spacing.cta-y": *scta
+    "tokens.spacing.cta-x": *scta
+    "tokens.spacing.tab-y": *stab
+    "tokens.spacing.tab-x": *stab
+    "tokens.rounded.sm": *snav
+    "tokens.rounded.md": *scta
+    "tokens.shadow.cta": *scta
+    "tokens.components.nav-button.type": *snav
+    "tokens.components.nav-button.bg": *snav
+    "tokens.components.nav-button.fg": *snav
+    "tokens.components.nav-button.radius": *snav
+    "tokens.components.nav-button.padding": *snav
+    "tokens.components.nav-button.height": *snav
+    "tokens.components.nav-button.font": *snav
+    "tokens.components.nav-button.states": *snav
+    "tokens.components.nav-button.use": *snav
+    "tokens.components.blog-header-cta.type": *scta
+    "tokens.components.blog-header-cta.bg": *scta
+    "tokens.components.blog-header-cta.fg": *scta
+    "tokens.components.blog-header-cta.radius": *scta
+    "tokens.components.blog-header-cta.padding": *scta
+    "tokens.components.blog-header-cta.height": *scta
+    "tokens.components.blog-header-cta.font": *scta
+    "tokens.components.blog-header-cta.shadow": *scta
+    "tokens.components.blog-header-cta.states": *scta
+    "tokens.components.blog-header-cta.use": *scta
+    "tokens.components.blog-subscribe-button.type": *ssub
+    "tokens.components.blog-subscribe-button.bg": *ssub
+    "tokens.components.blog-subscribe-button.fg": *ssub
+    "tokens.components.blog-subscribe-button.radius": *ssub
+    "tokens.components.blog-subscribe-button.padding": *ssub
+    "tokens.components.blog-subscribe-button.height": *ssub
+    "tokens.components.blog-subscribe-button.font": *ssub
+    "tokens.components.blog-subscribe-button.shadow": *ssub
+    "tokens.components.blog-subscribe-button.states": *ssub
+    "tokens.components.blog-subscribe-button.use": *ssub
+    "tokens.components.blog-email-input.type": &sin { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-09-30" }
+    "tokens.components.blog-email-input.bg": *sin
+    "tokens.components.blog-email-input.fg": *sin
+    "tokens.components.blog-email-input.radius": *sin
+    "tokens.components.blog-email-input.padding": *sin
+    "tokens.components.blog-email-input.height": *sin
+    "tokens.components.blog-email-input.font": *sin
+    "tokens.components.blog-email-input.states": *sin
+    "tokens.components.blog-email-input.use": *sin
+    "tokens.components.blog-category-tab.type": *stab
+    "tokens.components.blog-category-tab.bg": *stab
+    "tokens.components.blog-category-tab.fg": *stab
+    "tokens.components.blog-category-tab.radius": *stab
+    "tokens.components.blog-category-tab.padding": *stab
+    "tokens.components.blog-category-tab.height": *stab
+    "tokens.components.blog-category-tab.font": *stab
+    "tokens.components.blog-category-tab.selected": *stabsel
+    "tokens.components.blog-category-tab.states": *stab
+    "tokens.components.blog-category-tab.use": *stab
+    "tokens.components.blog-icon-button.type": &sicon { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-09-30" }
+    "tokens.components.blog-icon-button.bg": *sicon
+    "tokens.components.blog-icon-button.fg": *sicon
+    "tokens.components.blog-icon-button.radius": *sicon
+    "tokens.components.blog-icon-button.size": *sicon
+    "tokens.components.blog-icon-button.states": *sicon
+    "tokens.components.blog-icon-button.use": *sicon
+    "tokens.components.culture-slide-card.type": &scard { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.components.culture-slide-card.bg": *scard
+    "tokens.components.culture-slide-card.size": *scard
+    "tokens.components.culture-slide-card.use": *scard
 tokens:
-  source: live-extract
-  extracted: "2026-07-02"
-  note: "Monochrome, typography-forward identity. Primary = near-black charcoal (#212529) carrying the homepage's dark filled action; the blog surface pushes to pure black (#000000). No saturated brand hue — restraint is the signal. Two type stacks: Pretendard (marketing site, styled-components) + IBM Plex Sans (blog, Tailwind zinc/gray)."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
-    primary: "#212529"
-    ink: "#000000"
-    ink-alt: "#09090b"
-    heading: "#222222"
-    heading-blog: "#292929"
-    body: "#242424"
-    nav: "#212429"
-    muted: "#71717a"
-    muted-warm: "#8c8c8c"
-    muted-deep: "#595959"
-    tag-text: "#4b5563"
-    faint: "#a1a1aa"
+    primary: "#fbb401"
+    on-primary: "#ffffff"
+    ink: "#222222"
+    nav-ink: "#212429"
+    black: "#000000"
+    muted: "#8c8c8c"
     canvas: "#ffffff"
-    surface: "#f3f4f6"
-    surface-alt: "#fafafa"
-    band: "#ebebeb"
-    chip: "#e5e7eb"
-    hairline: "#e4e4e7"
+    blog-ink: "#09090b"
+    blog-muted: "#646470"
+    blog-meta: "#71717a"
+    blog-strong: "#020a0f"
+    blog-tab-fill: "#f4f4f5"
   typography:
-    family: { sans: "Pretendard", blog: "IBM Plex Sans", var: "Pretendard Variable" }
-    display-hero:  { size: 52, weight: 700, use: "Homepage hero headline, Pretendard Bold" }
-    section:       { size: 23, weight: 700, use: "Homepage section / feature headings" }
-    headline-blog: { size: 44, weight: 600, lineHeight: 1.30, use: "Blog article H1, IBM Plex Sans SemiBold" }
-    subhead-blog:  { size: 24, weight: 600, use: "Blog section H3" }
-    body-blog:     { size: 19, weight: 400, use: "Blog article paragraph" }
-    body:          { size: 16, weight: 400, lineHeight: 1.50, use: "Base body, nav, UI text" }
-    caption:       { size: 14, weight: 400, use: "Category chips, meta labels" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 24, xl: 32 }
-  rounded: { sm: 4, md: 6, lg: 24, full: 9999 }
+    family: { sans: "Pretendard", blog: "IBM Plex Sans" }
+    display: { size: 52, weight: 700, lineHeight: 1.35, use: "Page headline (h1) on the intro and ethos pages" }
+    section: { size: 38, weight: 700, lineHeight: 1.35, use: "Section heading (h2) on the ethos page" }
+    subhead: { size: 23, weight: 700, lineHeight: 1.35, use: "Chapter heading (h3) in the intro letter and carousel card titles" }
+    body: { size: 16, weight: 400, lineHeight: 1.5, use: "Company-site paragraph and list text" }
+    caption: { size: 12, weight: 400, lineHeight: 1.5, use: "Footer links on the company site" }
+    blog-hero: { size: 48, weight: 600, lineHeight: 1, use: "Blog header title (h1), set in white" }
+    blog-feature: { size: 32, weight: 600, lineHeight: 1.25, use: "Featured post title (h2) on the blog home" }
+    blog-card-title: { size: 22, weight: 600, lineHeight: 1.375, use: "Post card title (h2) on the blog home" }
+    blog-body: { size: 16, weight: 400, lineHeight: 1.5, use: "Blog body text" }
+    blog-button: { size: 14, weight: 500, lineHeight: 1.43, use: "Blog subscribe button label" }
+  spacing: { nav-y: 5.5, nav-x: 12, cta-y: 8, cta-x: 16, tab-y: 6, tab-x: 14 }
+  rounded: { sm: 4, md: 6 }
   shadow:
-    none: "none"
-    soft: "rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.06) 0px 8px 16px"
+    cta: "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px"
   components:
-    button-primary:    { type: button, bg: "#000000", fg: "#ffffff", radius: "6px", height: "36px", padding: "8px 16px", font: "16px / 500 IBM Plex Sans", use: "Primary black CTA on blog (e.g. 채용공고)" }
-    button-nav:        { type: button, bg: "#ffffff", fg: "#212429", radius: "4px", height: "32px", padding: "5.5px 12px", font: "16px / 400 Pretendard", use: "Header nav menu item (homepage)" }
-    button-scroll-top: { type: button, bg: "#212529", fg: "#ffffff", radius: "24px", height: "48px", shadow: "rgba(0,0,0,0.04) 0px 1px 2px · rgba(0,0,0,0.06) 0px 8px 16px", use: "Floating circular scroll-to-top action" }
-    category-chip:     { type: badge, bg: "#e5e7eb", fg: "#4b5563", radius: "6px", height: "26px", padding: "3px 12px", font: "14px / 400", use: "Blog post category chip — Product / Business" }
-    card-white:        { type: card, bg: "#ffffff", border: "1px solid #e4e4e7", radius: "6px", use: "White content/list card, thin hairline, no shadow" }
-    card-band:         { type: card, bg: "#f3f4f6", radius: "6px", use: "Tinted grey band segmenting sections" }
+    nav-button: { type: button, bg: "#ffffff", fg: "#212429", radius: "4px", padding: "5.5px 12px", height: "32px", font: "16px / 400 / normal Pretendard", states: "rest on the intro and ethos pages; no state frame was recorded and the collector expanded no menus", use: "Header navigation item (제타 소개, 문화, 블로그, 채용, AI 윤리, English, 日本語) at home::[data-omd-capture=\"2\"], 76 x 32; each sits inside a link whose own colour is #000000" }
+    blog-header-cta: { type: button, bg: "#fbb401", fg: "#ffffff", radius: "6px", padding: "8px 16px", height: "36px", font: "16px / 500 / 24px IBM Plex Sans", shadow: "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px", states: "hover and pressed frames match rest in every compared property (the inline background overrides the hover:bg-primary/90 class); the class list also names a hover lift (hover:-translate-y-0.5) that the collector does not measure, so no state is declared", use: "채용공고 in the blog header, linking to www.scatterlab.co.kr/ko/recruiting, at surface-3::[data-omd-capture=\"3\"], 87 x 36" }
+    blog-subscribe-button: { type: button, bg: "#000000", fg: "#ffffff", radius: "6px", padding: "8px 16px", height: "36px", font: "14px / 500 / 20px IBM Plex Sans", shadow: "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px", states: "rest only; no state frame was recorded", use: "구독하기 beside the newsletter field at surface-3::[data-omd-capture=\"5\"], 80 x 36; read without submitting" }
+    blog-email-input: { type: input, bg: "transparent", fg: "#000000", radius: "6px", padding: "4px 12px", height: "36px", font: "14px / 400 / 20px IBM Plex Sans", states: "rest captured; the pressed frame adds only zero-width ring layers, a transition frame, so no pressed value is declared; focus is not declared from the capture", use: "Newsletter email field on the blog home at surface-3::[data-omd-capture=\"4\"], 262 x 36; never filled or submitted" }
+    blog-category-tab: { type: tab, bg: "transparent", fg: "#646470", radius: "6px", padding: "6px 14px", height: "36px", font: "14px / 500 / 20px IBM Plex Sans", selected: "bg #f4f4f5, fg #020a0f, weight 600 (capture 6)", states: "selected variant read from rest values (capture 6 against 7); no pointer frame", use: "Post-category filter on the blog home at surface-3::[data-omd-capture=\"7\"], 86 x 36, with -0.4px tracking" }
+    blog-icon-button: { type: button, bg: "transparent", fg: "#020a0f", radius: "6px", size: "36px x 36px", states: "rest only; no state frame was recorded", use: "Icon-only button at the left of the blog header at surface-3::[data-omd-capture=\"2\"]" }
+    culture-slide-card: { type: card, bg: "transparent", size: "456px x 383px", use: "Slide in the intro page's closing carousel (div.slider__Card); title 23px / 700 / 31.05px #222222, text 16px / 400 / 24px #222222, stepped by 40 x 40 arrow buttons" }
   components_harvested: true
 ---
 
@@ -63,357 +198,320 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-Scatter Lab (스캐터랩) is the Korean AI company behind Zeta (제타), and its web presence reads less like a consumer product and more like a serious research house presenting its work. The identity is aggressively monochrome — pure white canvas (`#ffffff`), near-black text, and not a single saturated brand hue anywhere on either the marketing site or the engineering blog. That restraint is itself the statement: a company that builds AI people spend hours talking to chooses to describe itself in black-and-white, letting the typography and the numbers do the persuading.
+Scatter Lab (스캐터랩; 주식회사 스캐터랩, Scatter Lab, Inc.) is a Seoul AI company, based in Seongsu-dong under CEO 김종윤, that builds products around conversation and relationships. Its culture document lists the line in order: 텍스트앳, an app that reads KakaoTalk chats to guess whether someone likes you; 진저, an AI that helps with dating; 연애의 과학, dating content grounded in psychology papers; 블림프, content for peace of mind; 이루다, "당신의 AI 친구"; and 제타, AI-based entertainment that combines interaction with narrative. The company's AI ethics site records the turn that shaped it: 이루다 1.0 launched on 22 December 2020 and was shut down after about three weeks over its data-consent process and discriminatory expressions; the team spent 2021 on privacy protection and abuse models, drew up an AI chatbot ethics checklist with KISDI, reopened 이루다 2.0 as a closed beta in January 2022, and names the CEO as chief ethics officer.
 
-The homepage (Pretendard, styled-components) is built around big declarative headlines — a 52px weight-700 hero ("zeta: 엔터테인먼트의 새로운 패러다임") over 23px weight-700 section heads, all set in a warm near-black (`#222222`) rather than pure black. Interactive chrome is deliberately quiet: ghost nav buttons on white with a tiny 4px radius, and a single dark charcoal (`#212529`) circular scroll-to-top button that is the only filled action in the default viewport. The engineering blog (IBM Plex Sans + Pretendard Variable, Tailwind zinc/gray) shifts register slightly toward editorial long-form: a 44px weight-600 article H1 (`#292929`), 19px reading paragraphs (`#242424`), grey category chips, and a single pure-black (`#000000`) CTA. Two surfaces, two type stacks, one shared conviction — that seriousness looks like restraint.
+Today the company presents itself through Zeta. Its home page is the CEO's April 2025 letter for Zeta's first anniversary — "zeta: 엔터테인먼트의 새로운 패러다임" — reporting that the service, launched on 1 April 2024, reached two million sign-ups and 800,000 monthly users in a year, averages 2 hours 40 minutes of use a day, runs on the company's own model Spotwrite-1 tuned for fun rather than accuracy, and has been profitable for six straight months since the fourth quarter of 2024. The culture page states the ambition as "많은 유저에게 사랑받는 우리만의 제품".
 
-What distinguishes Scatter Lab is its near-total rejection of decoration. Depth is essentially flat: box-shadow is `none` across headers, headings, cards, and chips, and the only measured shadow is a two-layer soft lift (`rgba(0,0,0,0.04) 0px 1px 2px`) on the floating scroll-top button. Separation comes from tinted grey surfaces (`#f3f4f6`, `#fafafa`, `#ebebeb`) and hairline borders (`#e4e4e7`), never from elevation. The neutral ladder is deep and carefully graded — from `#09090b` and `#242424` for text down through `#595959`, `#71717a`, `#8c8c8c`, and `#a1a1aa` for progressively quieter meta — giving the pages a precise, editorial greyscale that feels engineered rather than styled.
+The captured company pages read as a letter, not a storefront: `#222222` Pretendard text on white, bold 52px, 38px and 23px headings in a 960px column, white header buttons with `#212429` labels and a 4px corner, and no chromatic colour at all. The site is built with Greeting, a hosted career-site builder ("made with Greeting" in its footer; job pages live at /ko/o/<id>). The blog, blog.scatterlab.co.kr, runs on the inblog platform in IBM Plex Sans with zinc greys (`#09090b` text); Scatter Lab's own choice there is a primary colour its page data names "scatter yellow", `#fbb401`, which fills the header's 채용공고 action. Zeta itself lives on its own domain (zeta-ai.io) and was not captured, so nothing here describes the Zeta app.
 
 **Key Characteristics:**
-- Monochrome by conviction — no saturated brand hue on either surface; black, near-black, greys, white only
-- Near-black charcoal (`#212529`) as the homepage's single filled-action color; pure black (`#000000`) as the blog CTA
-- Warm near-black headings (`#222222` homepage, `#292929`/`#09090b` blog) instead of pure black for body-scale reading text
-- Two type stacks by surface: Pretendard weight-700 display on the marketing site, IBM Plex Sans weight-600 on the blog
-- Flat depth — `box-shadow: none` almost everywhere; separation via `#f3f4f6` tint and `#e4e4e7` hairlines
-- Tiny, conservative radii — 4px nav buttons, 6px blog buttons/chips/cards, 24px only on the circular scroll-top
-- A long, precisely graded neutral ladder (`#242424` → `#595959` → `#71717a` → `#8c8c8c` → `#a1a1aa`) for text hierarchy
-- Metric-forward, editorial copy ("하루 2시간 40분", "매월 80만 명") — numbers as persuasion, not superlatives
+- A monochrome, text-first company site: `#222222` on `#ffffff`, bold Pretendard headings, no coloured controls
+- White header buttons with `#212429` labels, 4px corners and 5.5px 12px padding
+- One saturated colour on the captured surfaces: "scatter yellow" `#fbb401` on the blog's 채용공고 action
+- A black `#000000` subscribe button and 6px corners on the blog's controls
+- Two type stacks by surface: Pretendard on the company site, IBM Plex Sans on the blog
+- Flat pages; the only shadow is a small two-layer shadow on the blog's two buttons
+- Metric-led, first-person copy from the CEO's letter
 
 ## Primary tasks
 
-- Read what Zeta is on the company homepage
-- Read the engineering blog to judge how the team reasons
-- Check how the company handles AI ethics before trusting it
-- Open the 채용공고 recruitment posting from the blog
+- Read what Zeta is and why the company calls it a new kind of entertainment
+- Read the culture document (Ethos) before applying
+- Check how the company handles AI ethics after 이루다
+- Browse engineering and product posts on the blog and open the job postings (채용공고)
 
 ## 2. Color Palette & Roles
 
-### Primary / Action
-- **Charcoal** (`#212529`): The homepage's single filled-action color — the circular scroll-to-top button and dark chrome. The system's `primary_color`, a near-black with a faint cool undertone.
-- **Pure Black** (`#000000`): The blog's primary CTA fill (e.g. the "채용공고" recruitment button) and maximum-contrast accents.
-- **Nav Charcoal** (`#212429`): Text color of the homepage's ghost nav menu buttons — a hair warmer than the primary charcoal.
+Every token below was read by the deterministic collector on 2026-09-30 from www.scatterlab.co.kr/ko/intro, /ko/ethos and blog.scatterlab.co.kr.
 
-### Ink / Text
-- **Ink** (`#09090b`): Blog body and heading ink (Tailwind zinc-950) — the darkest reading color, near-black with a cool cast.
-- **Heading (Home)** (`#222222`): Homepage headline color — a warm near-black used for the 52px/23px weight-700 heads.
-- **Heading (Blog)** (`#292929`): Blog article H1 color at 44px weight-600.
-- **Body** (`#242424`): Blog reading paragraph color at 19px.
-- **Muted** (`#71717a`): Blog secondary/meta text (zinc-500).
-- **Muted Warm** (`#8c8c8c`): Homepage muted labels and captions.
-- **Muted Deep** (`#595959`): Alternate mid-grey for secondary blog text.
-- **Tag Text** (`#4b5563`): Category chip label color (gray-600).
-- **Faint** (`#a1a1aa`): Lowest-emphasis labels, timestamps, disabled text (zinc-400).
+**Why `#fbb401` is the primary.** It is the only colour any captured surface renders in a primary role: the fill of the blog header's 채용공고 action (surface-3 capture 3, white label), recorded in its rest, hover and pressed frames — the three `#fbb401` backgrounds in the bundle's census. The blog's own served page names the same value as its primary preset ("scatter yellow", `is_primary: true`), which confirms the choice is Scatter Lab's rather than the platform's. The company site renders no filled action and no chromatic colour. The scope is narrow — one control on one surface — and the token should be read that way.
 
-### Surface / Neutral
-- **Canvas** (`#ffffff`): Page background, card surfaces, text on dark actions.
-- **Surface** (`#f3f4f6`): Cool-grey tinted band for section separation (blog gray-100).
-- **Surface Alt** (`#fafafa`): Lightest homepage grey for subtle alternating blocks.
-- **Band** (`#ebebeb`): Homepage grey band / divider surface.
-- **Chip** (`#e5e7eb`): Category-chip background (gray-200).
-- **Hairline** (`#e4e4e7`): Thin card outlines and dividers (zinc-200) — the primary separation device in a shadow-free system.
+### Action
+- **Scatter Yellow** (`#fbb401`): Fill of the blog header's 채용공고 action.
+- **On Primary** (`#ffffff`): The white label on it.
+- **Black** (`#000000`): Fill of the blog's 구독하기 button and the text of the newsletter field; also the own colour of the company site's header links, whose visible labels are the `#212429` buttons inside them.
+
+### Company site
+- **Ink** (`#222222`): Headings, paragraphs and lists on the intro and ethos pages.
+- **Nav Ink** (`#212429`): Labels of the header buttons.
+- **Muted** (`#8c8c8c`): Footer links.
+- **Canvas** (`#ffffff`): Page background and the header buttons' fill.
+
+### Blog (inblog platform chrome)
+- **Blog Ink** (`#09090b`): Body text and post titles.
+- **Blog Muted** (`#646470`): Unselected category filters.
+- **Blog Meta** (`#71717a`): Footer and meta links.
+- **Blog Strong** (`#020a0f`): The selected category filter and the header icon button.
+- **Tab Fill** (`#f4f4f5`): Background of the selected category filter.
+
+### Not carried forward
+- `#212529` (the July record's floating scroll-to-top button) does not appear in this capture; the nearest value, `#212429`, is the header button label.
+- The July blog-article palette and chrome — `#292929`, `#242424`, `#595959`, `#4b5563`, `#a1a1aa`, surfaces `#f3f4f6`, `#fafafa`, `#ebebeb`, chip `#e5e7eb` — came from an article page and older chrome; none was observed on the three captured pages.
+- `#e4e4e7` is present only as the border colour of elements whose border width is 0 (the blog platform's inherited default), so no hairline is drawn with it and none is claimed.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **Marketing site**: `Pretendard` (with `-apple-system`, `Apple SD Gothic Neo`, `Noto Sans KR` fallbacks) — the de-facto Korean product font. Display headlines run at weight 700.
-- **Blog**: `IBM Plex Sans` with `Pretendard Variable` / `Pretendard` companions — an editorial, engineering-flavored stack for long-form article reading. Headlines run at weight 600.
+- **Company site, live use**: `Pretendard` — loaded, 204 observed uses, served as static files from jsDelivr (`cdn.jsdelivr.net/gh/orioncactus/pretendard/…/static/woff2/`). Pretendard is Kil Hyung-jin's open typeface under the SIL Open Font License 1.1.
+- **Blog, live use**: `IBM Plex Sans` — loaded, 128 observed uses as the first computed family, served by the platform from `inblog.ai/fonts/ibm-plex-sans/`. IBM's licence file releases it under the SIL Open Font License 1.1 (Reserved Font Name "Plex"). Which face draws the blog's Korean text was not resolved.
+- **Declared only (no observed use)**: `Pretendard Variable` (dynamic subsets on inblog.ai), twelve `KaTeX_*` math families (inblog.ai) and `slick` (a carousel icon font on the company site).
+- **Official brand typeface**: none was found on the captured or context pages, so none is claimed.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Notes |
-|------|------|------|--------|-------------|-------|
-| Display Hero | Pretendard | 52px (3.25rem) | 700 | ~1.35 | Homepage hero headline |
-| Section Head | Pretendard | 23px (1.44rem) | 700 | ~1.35 | Homepage feature/section titles |
-| Blog H1 | IBM Plex Sans | 44px (2.75rem) | 600 | 1.30 | Article headline |
-| Blog H3 | IBM Plex Sans | 24px (1.50rem) | 600 | 1.50 | Article section heads |
-| Blog Body | IBM Plex Sans | 19px (1.19rem) | 400 | ~1.70 | Article reading paragraph |
-| Base / Nav | Pretendard | 16px (1.00rem) | 400 | 1.50 | Nav items, base UI text |
-| Caption / Tag | IBM Plex Sans | 14px (0.88rem) | 400 | 1.50 | Category chips, meta labels |
+| Role | Font | Size | Weight | Line Height | Observed on |
+|------|------|------|--------|-------------|-------------|
+| Display | Pretendard | 52px | 700 | 70.2px (1.35) | Intro and ethos h1 |
+| Blog Hero | IBM Plex Sans | 48px | 600 | 48px (1.0) | Blog header title, white |
+| Section | Pretendard | 38px | 700 | 51.3px (1.35) | Ethos h2 |
+| Blog Feature | IBM Plex Sans | 32px | 600 | 40px (1.25) | Featured post title |
+| Subhead | Pretendard | 23px | 700 | 31.05px (1.35) | Letter chapter heads, carousel titles |
+| Blog Card Title | IBM Plex Sans | 22px | 600 | 30.25px (1.375) | Post card titles |
+| Body | Pretendard | 16px | 400 | 24px (1.5) | Company-site text |
+| Blog Body | IBM Plex Sans | 16px | 400 | 24px (1.5) | Blog text |
+| Blog Button | IBM Plex Sans | 14px | 500 | 20px | Subscribe button |
+| Caption | Pretendard | 12px | 400 | 18px (1.5) | Company footer links |
 
 ### Principles
-- **Weight, not color, is the hierarchy signal.** With the palette locked to greyscale, emphasis is carried entirely by size and weight (700 display / 600 blog heads / 400 body) plus the deep-to-faint neutral ladder.
-- **Two stacks, two jobs.** Pretendard owns the persuasive marketing surface; IBM Plex Sans owns the editorial blog. They never swap roles across a surface.
-- **Near-black, never pure black, for reading text.** Body and headings sit at `#222222` / `#242424` / `#09090b` — warm near-blacks that soften the greyscale without introducing hue.
-- **Generous body sizing for long-form.** The blog reads at a deliberate 19px — larger than typical UI body — signaling that the writing is the product.
+- **Bold, not big, on the company site**: every heading is 700 with a 1.35 line height; hierarchy steps 52 → 38 → 23 → 16px with no colour change.
+- **Semibold on the blog**: post titles run at 600 from 48px down to 22px.
+- **Letter spacing stays normal** except the blog's category filters, which tighten to -0.4px.
 
 ## 4. Component Stylings
 
-### Buttons
+### Navigation
 
-**Primary (Black CTA)**
-- Background: `#000000`
-- Text: `#ffffff`
-- Radius: 6px
-- Padding: 8px 16px
-- Height: 36px
-- Font: 16px / 500 / IBM Plex Sans
-- Use: Primary call-to-action on the blog surface (e.g. "채용공고")
-
-**Nav Menu Item (Ghost)**
+**Company header button**
 - Background: `#ffffff`
 - Text: `#212429`
 - Radius: 4px
 - Padding: 5.5px 12px
 - Height: 32px
-- Font: 16px / 400 / Pretendard
-- Use: Homepage header navigation items (제타 소개, 문화, 블로그, 채용, AI 윤리)
+- Font: 16px / 400 / normal Pretendard
+- States: rest on the intro and ethos pages; no state frame was recorded and no menu was expanded
+- Use: 제타 소개, 문화, 블로그, 채용, AI 윤리, English, 日本語
 
-**Scroll-to-Top (Dark Circle)**
-- Background: `#212529`
+**Blog category filter**
+- Background: transparent
+- Text: `#646470`
+- Radius: 6px
+- Padding: 6px 14px
+- Height: 36px
+- Font: 14px / 500 / 20px IBM Plex Sans, -0.4px
+- Selected: background `#f4f4f5`, text `#020a0f` at 600
+- States: selected variant read from rest values; no pointer frame
+- Use: post categories on the blog home
+
+### Buttons
+
+**Blog header action (채용공고)**
+- Background: `#fbb401`
 - Text: `#ffffff`
-- Radius: 24px
-- Height: 48px
-- Shadow: `rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.06) 0px 8px 16px`
-- Use: Floating circular scroll-to-top button — the only shadowed element measured
+- Radius: 6px
+- Padding: 8px 16px
+- Height: 36px
+- Font: 16px / 500 / 24px IBM Plex Sans
+- Shadow: `rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px`, after two transparent zero-width layers
+- States: hover and pressed frames match rest in every compared property; a hover lift named in its classes is outside what the collector measures, so no state is declared
+- Use: links to the company's recruiting page, 87 × 36
+
+**Blog subscribe button (구독하기)**
+- Background: `#000000`
+- Text: `#ffffff`
+- Radius: 6px
+- Padding: 8px 16px
+- Height: 36px
+- Font: 14px / 500 / 20px IBM Plex Sans
+- Shadow: the same two visible layers as the header action
+- States: rest only; no state frame was recorded
+- Use: newsletter subscription, 80 × 36; read without submitting
+
+**Blog header icon button**
+- Background: transparent
+- Text: `#020a0f`
+- Radius: 6px
+- Size: 36 × 36
+- States: rest only; no state frame was recorded
+- Use: icon-only button at the left of the blog header
+
+### Inputs & Forms
+
+**Blog newsletter field**
+- Background: transparent
+- Text: `#000000`
+- Radius: 6px
+- Padding: 4px 12px
+- Height: 36px
+- Font: 14px / 400 / 20px IBM Plex Sans
+- States: rest captured; the pressed frame adds only zero-width ring layers, so nothing is declared; focus is not declared from the capture
+- Use: email field beside 구독하기, 262 × 36; never filled
 
 ### Cards & Containers
 
-**White Content Card**
-- Background: `#ffffff`
-- Border: 1px solid `#e4e4e7`
-- Radius: 6px
-- Use: White article/list card outlined by a thin hairline (no shadow)
-
-**Tinted Section Band**
-- Background: `#f3f4f6`
-- Radius: 6px
-- Use: Cool-grey band that segments content sections without elevation
-
-### Badges / Tags
-
-**Category Chip**
-- Background: `#e5e7eb`
-- Text: `#4b5563`
-- Radius: 6px
-- Padding: 3px 12px
-- Height: 26px
-- Font: 14px / 400
-- Use: Blog post category chips ("Product", "Business")
-
-### Navigation
-- Background: `#ffffff`
-- Text: `#212429`
-- Font: 16px / 400 / Pretendard
-- Height: 32px per item
-- Use: Top horizontal nav (제타 소개, 문화, 블로그, 채용, AI 윤리, English, 日本語)
+**Culture carousel card**
+- Background: transparent
+- Size: 456 × 383
+- Use: slides at the foot of the intro page; title 23px / 700 `#222222`, text 16px / 400 `#222222`, stepped by 40 × 40 arrow buttons
 
 ---
 
-**Verified:** 2026-07-02 (omd:add-reference CREATE — Tier 1 live inspect)
-**Tier 1 sources:** https://www.scatterlab.co.kr/ ; https://blog.scatterlab.co.kr/zeta-intro-2506
-**Tier 2 sources:** getdesign.md/scatterlab — "0 DESIGN.md files" (not listed); styles.refero.design/?q=scatterlab — no Scatter Lab entry (generic browse results only)
+**Verified:** 2026-09-30 (deterministic collector capture of three public pages, logged out, plus first-party context)
+**Tier 1 sources:** https://www.scatterlab.co.kr/ko/intro ; https://www.scatterlab.co.kr/ko/ethos ; https://blog.scatterlab.co.kr/ ; https://ethics.scatterlab.co.kr/ ; https://blog.scatterlab.co.kr/zeta-intro-2506
+**Tier 2 sources:** getdesign.md/scatterlab (HTTP 200; the served page contains no occurrence of the name) and styles.refero.design/?q=scatterlab (HTTP 200, the name appears only as the echoed query), requested 2026-09-30; no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: ~4px
-- Scale: 4px, 8px, 12px, 16px, 24px, 32px
-- Notable: Button padding lands tight (8px 16px on the blog CTA, 5.5px 12px on ghost nav items); chips at 3px 12px — compact, editorial density rather than roomy consumer padding
+- Company header buttons: 5.5px vertical, 12px horizontal
+- Blog actions: 8px 16px at 36px height; category filters 6px 14px; the newsletter field 4px 12px
 
 ### Grid & Container
-- Homepage: centered single-column with the 52px Pretendard hero as anchor, then stacked feature/section blocks
-- Blog: a narrow, editorial single-column measure (long-form reading width) with the 44px H1, category chips above, and generous vertical rhythm between paragraphs
-- Sections separate by grey tint (`#f3f4f6`, `#fafafa`, `#ebebeb`) full-width bands rather than boxed cards
+- The intro and ethos pages set everything in a single 960px column under a full-width header: the letter's headings, paragraphs and lists (lists indent to 936px).
+- The intro page closes with a carousel of 456px slide cards stepped by 40 × 40 buttons.
+- The blog home stacks a white-titled header, a newsletter row (262px field and a button), category filters and a grid of posts titled at 32px (featured) and 22px.
 
 ### Whitespace Philosophy
-- **Editorial breathing room**: despite being content-dense, both surfaces are airy, with large vertical gaps between sections and paragraphs.
-- **Flat segmentation**: sections separate by background tint and `#e4e4e7` hairlines, never by shadow or heavy borders.
-- **Numbers get room**: metric statements ("하루 2시간 40분", "매월 80만 명") are given their own headline-scale lines rather than buried in prose.
+- **Read like a letter**: long paragraphs at 16px / 24px with bold chapter heads, and no interface chrome between them.
+- **Nothing decorative**: no cards, fills or rules on the company pages beyond the header buttons.
 
 ### Border Radius Scale
-- Small (4px): homepage ghost nav buttons — barely rounded
-- Standard (6px): blog buttons, category chips, content cards — the workhorse
-- Circle (24px): the floating scroll-to-top button (only fully-round element)
-- Full (9999px): reserved; not used on the marketing/blog surfaces
+- 0px: almost everything on the company site
+- 4px: company header buttons
+- 6px: every blog control — actions, the field, category filters, the icon button
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (Level 0) | `box-shadow: none` | Page background, headings, nav, cards, chips — nearly everything |
-| Tint (Level 1) | `#f3f4f6` / `#fafafa` / `#ebebeb` background shift | Section/band separation without elevation |
-| Hairline (Level 2) | `1px solid #e4e4e7` border | White card outlines, dividers |
-| Soft Lift (Level 3) | `rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.06) 0px 8px 16px` | The single floating scroll-to-top button |
+| Flat | No shadow | Company pages, blog text, filters, the field |
+| Small | `rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px` | The blog's two buttons |
 
-**Shadow Philosophy**: Scatter Lab is a near-shadowless system. Live inspection found `box-shadow: none` across the homepage hero, nav, headings, and the blog's cards and chips. Depth and grouping are communicated through flat tinted surfaces (`#f3f4f6`) and thin `#e4e4e7` hairlines. The only measured elevation is a soft two-layer lift on the floating scroll-to-top control — an affordance, not decoration. When emphasis is needed, the system reaches for weight, size, and the dark action fills (`#212529` / `#000000`), never for a drop shadow.
+**Shadow Philosophy**: the captured pages are flat. The company site uses no shadow, border or fill to group content; the blog's platform gives its two buttons a faint two-layer shadow and nothing else.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Keep the palette monochrome — black, near-black, greys, and white; let type and layout carry the design
-- Use near-black (`#222222`, `#242424`, `#09090b`) for reading text instead of pure black
-- Reserve the dark fills (`#212529` charcoal on the homepage, `#000000` on the blog) for the single primary action
-- Carry hierarchy with weight and size (700 display / 600 blog heads / 400 body), not color
-- Separate sections with grey tint (`#f3f4f6`, `#fafafa`, `#ebebeb`) and `#e4e4e7` hairlines
-- Keep depth flat — `box-shadow: none` by default; only the floating control lifts
-- Keep radii tiny (4px nav, 6px blog components); reserve the 24px round only for the circular scroll-top
-- Set marketing headlines in Pretendard weight 700 and blog headlines in IBM Plex Sans weight 600
-- Give metrics headline-scale room ("하루 2시간 40분") — numbers persuade
+- Keep company pages monochrome: `#222222` text on `#ffffff`, bold Pretendard headings
+- Use white header buttons with `#212429` labels, 4px corners and 5.5px 12px padding
+- Reserve "scatter yellow" `#fbb401` with a white label for the one action that matters — on the blog, 채용공고
+- Keep blog controls at 6px corners and 36px height
+- Set company pages in Pretendard and the blog in IBM Plex Sans
+- Let long-form text carry the page, as the CEO's letter does
 
 ### Don't
-- Introduce a saturated brand hue — the monochrome restraint is the identity
-- Use pure black (`#000000`) for large bodies of reading text — near-blacks are warmer
-- Spread the dark action fill across many elements — it dilutes the single-action signal
-- Add drop shadows for elevation — this is a flat, tint-and-hairline system
-- Use large or pill radii on buttons and cards — geometry stays conservative (4–6px)
-- Mix the two type stacks within a single surface — Pretendard for marketing, IBM Plex Sans for blog
-- Lean on exclamation-heavy hype — copy is measured, metric-backed, and editorial
-- Use color to signal hierarchy — weight and size do that job
+- Don't spread `#fbb401` across the company site; the captured company pages carry no colour
+- Don't add cards, hairlines or shadows to the company pages; none were observed
+- Don't revive the July scroll-to-top `#212529` or the grey chips and bands; they are not on the current pages
+- Don't describe the Zeta app from these pages; it lives on another domain and was not captured
+- Don't invent hover or focus values the capture did not settle
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column; hero headline compresses; nav collapses to a toggle |
-| Tablet | 640-1024px | Moderate padding; blog measure stays narrow for readability |
-| Desktop | 1024-1440px | Full layout; centered hero; full-width tinted section bands |
+Only the 1440 × 900 desktop viewport was captured; no breakpoint was measured.
 
 ### Touch Targets
-- Blog primary CTA at 36px height with 8px 16px padding — comfortably tappable
-- Homepage ghost nav items at 32px height
-- Floating scroll-to-top at 48px circular — an unmistakable target
+- Company header buttons: 32px tall
+- Blog actions, the field and category filters: 36px tall
+- Carousel arrow buttons: 40 × 40
 
 ### Collapsing Strategy
-- Homepage hero: 52px Pretendard headline scales down on mobile, weight 700 maintained
-- Blog: 44px H1 compresses; the single-column reading measure holds
-- Feature/section bands: multi-block → stacked single column
-- Tinted/white alternating sections maintain full-width treatment
+- Not measured.
 
 ### Image Behavior
-- Product/feature imagery carries no shadow at any size, consistent with the flat system
-- Cards keep their 6px radius and `#e4e4e7` hairline across breakpoints
+- The blog header sets its title in white over a background that the collector did not record as a colour.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary action (home): Charcoal (`#212529`)
-- Primary action (blog): Pure Black (`#000000`)
-- Nav text: Nav Charcoal (`#212429`)
-- Heading (home / blog): `#222222` / `#292929`
-- Blog ink / body: `#09090b` / `#242424`
-- Muted text: `#71717a`, `#8c8c8c`, `#595959`
-- Faint / disabled: `#a1a1aa`
-- Tag text: `#4b5563`
-- Background: White (`#ffffff`)
-- Tinted surfaces: `#f3f4f6`, `#fafafa`, `#ebebeb`
-- Chip: `#e5e7eb`
-- Hairline: `#e4e4e7`
+- Company text `#222222`; header labels `#212429`; footer `#8c8c8c`; canvas `#ffffff`
+- Blog text `#09090b`; filters `#646470` (selected `#020a0f` on `#f4f4f5`); meta `#71717a`
+- Primary action: `#fbb401` with `#ffffff` label; secondary action `#000000`
 
 ### Example Component Prompts
-- "Create a homepage hero on white. Headline at 52px Pretendard weight 700, color #222222. Below it a section head at 23px weight 700. Ghost nav buttons on white: #212429 text, 4px radius, 5.5px 12px padding, 16px Pretendard. One floating circular scroll-to-top: #212529 background, white icon, 24px radius, 48px, soft two-layer shadow."
-- "Design a blog article header: IBM Plex Sans H1 at 44px weight 600, color #292929, line-height 1.3. Category chips above: #e5e7eb background, #4b5563 text, 6px radius, 3px 12px padding, 14px. Body paragraphs at 19px weight 400, #242424. One black CTA: #000000 background, white text, 6px radius, 8px 16px padding."
-- "Build a white content card: #ffffff background, 1px solid #e4e4e7 border, 6px radius, no shadow. Place it on a #f3f4f6 tinted band. Title 24px IBM Plex Sans weight 600, #09090b; meta text 14px #71717a."
-- "Create top nav: white header. Pretendard 16px weight 400 ghost items, #212429 text, 4px radius on hover. Items: 제타 소개, 문화, 블로그, 채용, AI 윤리, plus English / 日本語 language links."
+- "Create a company page header: white buttons with #212429 16px / 400 Pretendard labels, 4px radius, 5.5px 12px padding, 32px tall, no shadow."
+- "Set a letter-style page: a 960px column, 52px / 700 Pretendard headline in #222222 with 1.35 line height, 23px / 700 chapter heads and 16px / 400 / 24px paragraphs."
+- "Build a blog header action: #fbb401 fill, white 16px / 500 IBM Plex Sans label, 6px radius, 8px 16px padding, 36px tall, with a faint rgba(0, 0, 0, 0.1) 0 1px 3px shadow."
+- "Make category filters: 14px / 500 IBM Plex Sans in #646470 with -0.4px tracking, 6px radius, 6px 14px padding; the selected one #020a0f at 600 on #f4f4f5."
 
 ### Iteration Guide
-1. Stay monochrome — never add a saturated accent; hierarchy comes from weight and size
-2. Dark fills (`#212529` home, `#000000` blog) are the single action color — don't spread them
-3. No shadows by default — separate with `#f3f4f6` tint and `#e4e4e7` hairlines; only the scroll-top lifts
-4. Radii stay tiny — 4px nav, 6px blog components, 24px only on the circle
-5. Reading text is near-black (`#222222` / `#242424` / `#09090b`), never pure black
-6. Pretendard weight 700 for marketing headlines; IBM Plex Sans weight 600 for blog headlines
-7. Give numbers headline-scale room — Scatter Lab persuades with metrics
+1. Monochrome on the company site; hierarchy by size and weight only
+2. One yellow action with a white label, nowhere else
+3. Pretendard for the company, IBM Plex Sans for the blog
+4. 4px corners on the company header, 6px on blog controls
+5. No shadows except the blog buttons' faint one
 
 ---
 
 ## 10. Voice & Tone
 
-Scatter Lab's voice is **earnest, research-grounded, and metric-backed** — a company that talks about a playful entertainment product ("보는 엔터테인먼트를 넘어 함께하는 엔터테인먼트로") in the measured register of a lab reporting results. Copy leans on concrete numbers rather than adjectives: the hero and blog foreground usage metrics ("하루 2시간 40분", "매월 80만 명이 넘는 사용자") as the argument itself. The nav's dedicated "AI 윤리" (AI ethics) item signals a company that treats responsibility as a first-class topic, not a footnote. The tone is confident but never hype-driven — it reads as a serious team explaining a new paradigm, not a startup shouting about one.
+Scatter Lab's voice is **earnest, first-person and metric-backed** — a team explaining a new category in the register of a letter. The home page opens with a declarative frame, then argues with numbers: 2 hours 40 minutes a day, 800,000 monthly users, six months of profit. The culture page is candid to the point of warning applicants off, and the ethics site speaks plainly about 이루다's failure.
 
 | Context | Tone |
 |---|---|
-| Hero headlines | Declarative, paradigm-framed. "zeta: 엔터테인먼트의 새로운 패러다임." Confident, not superlative. |
-| Metric statements | Concrete and numeric. "일주일에 12시간을 사용하는 AI 엔터테인먼트 서비스." Numbers carry the claim. |
-| Blog / editorial | Explanatory, long-form, first-person where it earns trust. Explains the "why" before the "what". |
-| Culture / careers | Warm and candid. "스캐터랩 에토스: 우리가 일하는 방식", "티타임 신청하기." Invites, doesn't pitch. |
-| AI ethics | Plain, responsible, unhedged. Treated as a named part of the brand, not a disclaimer. |
+| Headline | Declarative, category-framing. "zeta: 엔터테인먼트의 새로운 패러다임." |
+| Evidence | Numbers as the argument. "제타의 특별함은 '사용 시간'으로 드러납니다." |
+| Culture | Candid and demanding. "스캐터랩 Ethos: 우리가 일하는 방식." |
+| Ethics | Plain accountability, with dates and specifics. |
+| Recruiting | Direct invitation. "채용공고". |
 
-**Voice samples (verbatim from live surfaces):**
-- "zeta: 엔터테인먼트의 새로운 패러다임" — homepage hero headline (paradigm framing). *(verified live 2026-07-02)*
-- "일주일에 12시간을 사용하는 AI 엔터테인먼트 서비스" — homepage subhead (metric as proof). *(verified live 2026-07-02)*
-- "제타의 특별함은 '사용 시간'으로 드러납니다." — blog article (metric-first argument). *(verified live 2026-07-02)*
-- "스캐터랩 에토스: 우리가 일하는 방식" — homepage culture section (candid, inviting). *(verified live 2026-07-02)*
+**Voice samples (verbatim, opened 2026-09-30):**
+- "zeta: 엔터테인먼트의 새로운 패러다임" — intro page headline and blog post title.
+- "일주일에 12시간을 사용하는 AI 엔터테인먼트 서비스" — intro page subhead.
+- "제타의 특별함은 '사용 시간'으로 드러납니다." — the CEO's letter.
+- "우리는 많은 유저에게 사랑받는 우리만의 제품을 만들기 위해 모였다." — Ethos 1.
 
-**Forbidden register**: exclamation-heavy hype, superlative stacking, vague "revolutionary/game-changing" claims, and — given the company's history — any register that treats AI ethics or user trust as marketing garnish rather than substance.
+**Forbidden register**: exclamation-heavy hype, superlative stacking, vague "revolutionary" claims, and any register that treats AI ethics or user trust as garnish.
 
 ## 11. Brand Narrative
 
-Scatter Lab (스캐터랩) was founded in **2011** by **김종윤 (Kim Jong-yoon, CEO)** and co-founders, beginning with relationship-analytics services (텍스트앳, then 연애의 과학 / "Science of Love") that mined conversational data to help people understand their relationships. That early work — building machines that read the texture of human conversation — set the company's north star: AI that people form genuine relationships with, not merely query. *(Founding year and founder are widely documented public facts; the framing here is an editorial reading of the company's stated direction.)*
+Scatter Lab's products have always been about conversation. The early apps read the texture of real chats to help people understand relationships (텍스트앳, 진저, 연애의 과학); 이루다 turned that into an AI friend; 제타 turns it into entertainment, where the user plays out a story with AI characters instead of watching one. The ethos page describes each product as something "스캐터랩만이 만들 수 있는" — a product that would not exist if the team had not made it.
 
-The company's defining chapter was **Luda (이루다)**, a Korean conversational AI released in 2020 that drew enormous engagement — and then a serious 2021 controversy over privacy and offensive outputs that led to Luda 1.0 being taken down. Scatter Lab's response reshaped the brand: a public, sustained investment in **AI ethics** (now a standing "AI 윤리" section of the site), a relaunched, safer Luda, and eventually **Zeta (제타)**, an AI-character entertainment platform launched **April 1, 2024** that the company frames as "a new entertainment paradigm" — moving from *watching* content to *co-creating* it with AI characters.
+The defining chapter was 이루다. Its 2020 launch drew intense attachment and then a privacy and discrimination failure that closed it within weeks. The company's own account, on its AI ethics site, is specific: a year of rebuilding its data and abuse safeguards, a correction order from the personal-information regulator carried out, a checklist written with KISDI, a relaunch in 2022, and the CEO as chief ethics officer. "AI 윤리" is now an item in the company site's main navigation.
 
-What Scatter Lab refuses, visible in its design: the loud, saturated, consumer-hype aesthetic that a viral AI-companion app might reach for. What it embraces instead: a monochrome, typography-forward presentation; metric-backed, editorial copy; and an explicit, front-of-house treatment of ethics. The restraint is not timidity — it is a company that has been through a public reckoning choosing to look like it takes itself, and its responsibilities, seriously.
+The CEO's April 2025 letter marks where the company stands: Zeta as "AI-native" entertainment, a model (Spotwrite-1) trained for fun rather than correctness, a business that is already profitable, and users in Japan who spend even longer in it than users in Korea. The design of the company's own pages stays deliberately plain — a letter in black and white, set in Pretendard — and the only brand colour it chose to show on the captured surfaces is the yellow on its blog's call to join.
 
 ## 12. Principles
 
-1. **Restraint signals seriousness.** A monochrome palette on an entertainment product is a deliberate choice. *UI implication:* keep the palette greyscale; never introduce a saturated accent to chase attention.
-2. **Metrics over adjectives.** The product's value is argued with numbers ("하루 2시간 40분"), not superlatives. *UI implication:* give metrics headline-scale typographic room; treat data as a first-class content type.
-3. **Ethics is front-of-house.** After the Luda reckoning, AI ethics became a named part of the brand. *UI implication:* surface responsibility and transparency as primary navigation, never as a buried disclaimer.
-4. **One action, one dark fill.** Emphasis is scarce and intentional. *UI implication:* reserve the dark fill (`#212529` / `#000000`) for the single primary action so the next step is unambiguous.
-5. **Flat and editorial.** Depth is nearly absent; the writing is the product. *UI implication:* no shadows; separate with tint and hairlines; size body text generously for long-form reading.
+1. **A product only we could make.** From Ethos 1. *UI implication:* favour distinctive content over generic chrome; let the writing lead.
+2. **Numbers over adjectives.** *UI implication:* give metrics their own line and plain type.
+3. **Ethics in the open.** *UI implication:* surface responsibility in primary navigation, not a footer.
+4. **One colour for one action.** *UI implication:* `#fbb401` marks the single call to act; everything else stays monochrome.
+5. **Flat and quiet.** *UI implication:* no shadows or cards on reading pages; hierarchy by size and weight.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable Scatter Lab / Zeta user and stakeholder segments (Korean AI-entertainment users, AI engineers, ethics-conscious observers), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable Scatter Lab / Zeta stakeholder segments (AI-entertainment users, engineers considering the company, ethics-conscious observers), not individual people.*
 
-**이서연, 22, 서울.** A university student and heavy Zeta user who plays out story scenarios with AI characters daily. Values that the experience feels co-created rather than consumed, and that the brand talks about safety openly rather than hiding it.
+**이서연, 22, 서울.** A university student who plays story scenarios on Zeta daily. Reads the company's letter to understand what the team thinks it is building.
 
-**김도현, 34, 판교.** An ML engineer evaluating Scatter Lab's careers page. Reads the engineering blog for the substance — model and product reasoning — and reads the "AI 윤리" section as a signal of whether the team is serious about responsible deployment.
+**김도현, 34, 판교.** An ML engineer weighing an application. Reads the Ethos page end to end and the blog's engineering posts for how the team reasons.
 
-**박지은, 41, 서울.** A policy-minded observer who followed the Luda controversy and now checks how Korean AI companies handle ethics. Trusts Scatter Lab more for putting ethics in the nav and speaking about it plainly, in the same restrained tone as the rest of the site.
+**박지은, 41, 서울.** A policy-minded reader who followed the 이루다 controversy and checks how Korean AI companies handle ethics; trusts the dated, specific account on the ethics site more than slogans.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed on the three captured pages; nothing else is specified here.
+
+| State | Observation |
 |---|---|
-| **Empty (no content / results)** | White canvas. Single near-black (`#242424`) line explaining the empty state, with one dark CTA to take the next step. No illustration clutter. |
-| **Empty (saved / history, none yet)** | Muted (`#71717a`) single line: nothing here yet, plus a calm path forward. Honest, low-key. |
-| **Loading (content fetch)** | Skeleton blocks on `#f3f4f6` tinted surface at final dimensions, 6px radius. Flat pulse — no shadow shimmer, consistent with the shadowless system. |
-| **Loading (in-place refresh)** | Previous content stays visible; a subtle progress indicator rather than a blocking spinner. |
-| **Error (request failed)** | Inline message in near-black with a plain-language explanation and a retry. No bare "오류가 발생했습니다" — states what to do next. |
-| **Error (form validation)** | Field-level message below the input describing what's valid, not just "필수". |
-| **Success (action complete)** | Brief inline confirmation in a calm, non-celebratory tone; next-step detail linked immediately below. |
-| **Skeleton** | `#f3f4f6` blocks at final dimensions, 6px radius, flat pulse, `#e4e4e7` hairlines preserved. |
-| **Disabled** | Faint (`#a1a1aa`) text on reduced-opacity surface; dark actions fade rather than switch hue, preserving the monochrome read. |
+| **Selected (blog category filter)** | Background `#f4f4f5`, text `#020a0f` at 600, against `#646470` at 500. |
+| **Disabled (carousel arrows)** | The intro page's 40 × 40 arrow buttons carry a recorded disabled state at capture. |
+| **Hover and pressed (blog header action)** | No change in the compared properties; not declared. |
+| **Transition frames (not declared)** | The newsletter field's pressed and focus frames carry zero-width ring layers. |
+
+Focus rings, hover values, error, empty, loading and success treatments were not captured and are not described.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 120ms | Hover, focus, button press |
-| `motion-standard` | 200ms | Card/section reveal, dropdown, scroll-top appear |
-| `motion-slow` | 320ms | Page-level transitions |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — cards, floating scroll-top |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions |
-
-**Motion rules**: Motion is functional and quiet — consistent with the flat, editorial aesthetic. The floating scroll-to-top button fades/rises in at `motion-standard / ease-enter` once the user scrolls; hover states are subtle opacity/weight shifts. No bounce, no spring — a company presenting AI research and ethics signals steadiness, not playful delight. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant and the product remains fully functional.
+The collector reads computed style, not animation, so no duration or easing is measured. The blog's header action names a transform transition and a small hover lift in its utility classes, which shows motion exists there without timing it. Treat motion as unspecified rather than borrowing values, and honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-07-02) via playwright getComputedStyle:
-- https://www.scatterlab.co.kr/ — hero H1 "zeta: 엔터테인먼트의 새로운 패러다임" Pretendard 52px/700 rgb(34,34,34) #222222; section H3 23px/700; ghost nav buttons white bg / rgb(33,36,41) #212429 text / 4px radius / 5.5px 12px padding / 32px; scroll-top button rgb(33,37,41) #212529 / white / 24px radius / 48px / two-layer soft shadow; grey surfaces #ebebeb #fafafa; muted #8c8c8c #767676; box-shadow none across chrome.
-- https://blog.scatterlab.co.kr/zeta-intro-2506 — IBM Plex Sans + Pretendard Variable; body rgb(9,9,11) #09090b / 16px; H1 44px/600 rgb(41,41,41) #292929 leading 1.3; H3 24px/600 #09090b; paragraph 19px/400 rgb(36,36,36) #242424; primary CTA "채용공고" rgb(0,0,0) #000000 / white / 6px radius / 8px 16px / 36px / weight 500; category chips bg rgba(229,231,235,0.6) (gray-200) #e5e7eb / rgb(75,85,99) #4b5563 / 6px radius / 3px 12px; muted #71717a #595959 #a1a1aa; hairline rgb(228,228,231) #e4e4e7; surfaces #f3f4f6 #f6f6f6.
-
-Token-level claims (§1–9) are sourced from this live inspection.
-
-Voice samples (§10) are verbatim from the live homepage (hero H1, subhead H3, culture section H3) and the live Zeta-intro blog post.
-
-Brand narrative (§11): Scatter Lab (스캐터랩) founded 2011 by CEO 김종윤 (Kim Jong-yoon); early products 텍스트앳 / 연애의 과학; Luda (이루다) conversational AI (2020) and its 2021 privacy/ethics controversy; Zeta (제타) AI-character entertainment platform launched 2024-04-01 (date stated verbatim on the blog: "2024년 4월 1일 세상에 첫선을 보인 제타"). Founding year/founder and the Luda controversy are widely documented public facts; the editorial framing connecting them to the design is interpretation, not a directly quoted Scatter Lab statement.
-
-Personas (§13) are fictional archetypes informed by publicly observable Scatter Lab / Zeta user and stakeholder segments. Names are illustrative; they do not refer to real people.
-
-Interpretive claims (e.g., "restraint signals seriousness", "ethics front-of-house as a response to the Luda reckoning") are editorial readings connecting Scatter Lab's observed design and history to its positioning, not directly sourced Scatter Lab statements.
-
-Tier 2: getdesign.md/scatterlab returned "scatterlab — 0 DESIGN.md files / No designs found"; styles.refero.design/?q=scatterlab returned only generic browse results (no Scatter Lab entry). KR brand — Tier 1 (two brand-owned surfaces) carries the proof per spec/regional-sources.yaml.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/scatterlab.json (capturedAt 2026-09-30T07:00:45.657Z), deterministic collector, 1440x900, logged out: www.scatterlab.co.kr/ko/intro (www.scatterlab.co.kr/ redirects there), /ko/ethos, blog.scatterlab.co.kr.
+- "scatter yellow" preset (#FBB401, is_primary true, created 2026-07-29) and the 채용공고 inline style: served HTML of blog.scatterlab.co.kr, 2026-09-30.
+- §1, §10, §11 context: www.scatterlab.co.kr/ko/intro (CEO letter, April 2025), /ko/ethos, ethics.scatterlab.co.kr, blog.scatterlab.co.kr/zeta-intro-2506, company footer (주식회사 스캐터랩, 대표이사 김종윤, 성동구 왕십리로 125). All opened 2026-09-30.
+- zeta-ai.io (Zeta) returned HTTP 200 and was not captured; no value comes from it.
+- Personas are fictional archetypes. Interpretive readings are editorial.
 -->

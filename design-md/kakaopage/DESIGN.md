@@ -9,51 +9,154 @@ primary_color: "#ffd618"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=page.kakao.com&sz=128"
-verified: "2026-06-22"
+verified: "2026-09-30"
 added: "2026-06-22"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: product-web, url: "https://page.kakao.com/", inspected: "2026-09-30" }
+    - { id: surface-2, kind: product-web, url: "https://page.kakao.com/menu/10010/", inspected: "2026-09-30" }
+    - { id: surface-3, kind: product-web, url: "https://page.kakao.com/content/57668776/", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://page.kakao.com/", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://page.kakao.com/menu/10010/", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://page.kakao.com/content/57668776/", captured: "2026-09-30" }
+    - { id: kakaopage-probe-content, kind: product-surface, url: "https://page.kakao.com/content/57668776/", captured: "2026-09-30" }
+    - { id: kakaocorp-service, kind: official-doc, url: "https://www.kakaocorp.com/page/service/service/KakaoPage", captured: "2026-09-30" }
+    - { id: notice, kind: official-doc, url: "https://page.kakao.com/notice/", captured: "2026-09-30" }
+    - { id: pretendard-license, kind: license, url: "https://raw.githubusercontent.com/orioncactus/pretendard/main/LICENSE", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": { surface_id: surface-3, source_id: kakaopage-probe-content, method: live-state-probe, selector: "button 첫 화 보기 (272 x 56, own fill transparent) -> ancestor level 2 div.flex.items-center, bg rgb(255, 214, 24)", captured: "2026-09-30" }
+    "tokens.colors.ink": &kbody { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.colors.canvas": *kbody
+    "tokens.colors.cta-label": &kcta { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-09-30" }
+    "tokens.colors.muted": &kfoot { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"81\"]", captured: "2026-09-30" }
+    "tokens.colors.on-media": &kcover { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::span", captured: "2026-09-30" }
+    "tokens.typography.body.size": *kbody
+    "tokens.typography.body.weight": *kbody
+    "tokens.typography.body.lineHeight": *kbody
+    "tokens.typography.body.use": *kbody
+    "tokens.typography.section-title.size": &kh2 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h2", captured: "2026-09-30" }
+    "tokens.typography.section-title.weight": *kh2
+    "tokens.typography.section-title.lineHeight": *kh2
+    "tokens.typography.section-title.use": *kh2
+    "tokens.typography.cover-title.size": *kcover
+    "tokens.typography.cover-title.weight": *kcover
+    "tokens.typography.cover-title.lineHeight": *kcover
+    "tokens.typography.cover-title.use": *kcover
+    "tokens.typography.cta.size": *kcta
+    "tokens.typography.cta.weight": *kcta
+    "tokens.typography.cta.lineHeight": *kcta
+    "tokens.typography.cta.use": *kcta
+    "tokens.typography.small-heading.size": &kmeta { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h2", captured: "2026-09-30" }
+    "tokens.typography.small-heading.weight": *kmeta
+    "tokens.typography.small-heading.lineHeight": *kmeta
+    "tokens.typography.small-heading.use": *kmeta
+    "tokens.typography.search.size": &ksearch { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-09-30" }
+    "tokens.typography.search.weight": *ksearch
+    "tokens.typography.search.lineHeight": *ksearch
+    "tokens.typography.search.use": *ksearch
+    "tokens.typography.footer-link.size": *kfoot
+    "tokens.typography.footer-link.weight": *kfoot
+    "tokens.typography.footer-link.lineHeight": *kfoot
+    "tokens.typography.footer-link.use": *kfoot
+    "tokens.spacing.menu-gap": &kmenu { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::li", captured: "2026-09-30" }
+    "tokens.spacing.chip-x": &kchip { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"47\"]", captured: "2026-09-30" }
+    "tokens.spacing.chip-gap": *kchip
+    "tokens.spacing.cta-x": *kcta
+    "tokens.rounded.md": &kcard { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.components.main-menu-item.type": *kmenu
+    "tokens.components.main-menu-item.bg": *kmenu
+    "tokens.components.main-menu-item.fg": *kmenu
+    "tokens.components.main-menu-item.height": *kmenu
+    "tokens.components.main-menu-item.font": *kmenu
+    "tokens.components.main-menu-item.states": *kmenu
+    "tokens.components.main-menu-item.use": *kmenu
+    "tokens.components.primary-cta.type": *kcta
+    "tokens.components.primary-cta.fg": *kcta
+    "tokens.components.primary-cta.padding": *kcta
+    "tokens.components.primary-cta.height": *kcta
+    "tokens.components.primary-cta.font": *kcta
+    "tokens.components.primary-cta.states": *kcta
+    "tokens.components.primary-cta.use": *kcta
+    "tokens.components.carousel-button-lg.type": &karrowlg { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"43\"]", captured: "2026-09-30" }
+    "tokens.components.carousel-button-lg.bg": *karrowlg
+    "tokens.components.carousel-button-lg.radius": *karrowlg
+    "tokens.components.carousel-button-lg.size": *karrowlg
+    "tokens.components.carousel-button-lg.states": *karrowlg
+    "tokens.components.carousel-button-lg.use": *karrowlg
+    "tokens.components.carousel-button.type": &karrow { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"61\"]", captured: "2026-09-30" }
+    "tokens.components.carousel-button.bg": *karrow
+    "tokens.components.carousel-button.radius": *karrow
+    "tokens.components.carousel-button.size": *karrow
+    "tokens.components.carousel-button.states": *karrow
+    "tokens.components.carousel-button.use": *karrow
+    "tokens.components.reaction-chip.type": *kchip
+    "tokens.components.reaction-chip.bg": *kchip
+    "tokens.components.reaction-chip.fg": *kchip
+    "tokens.components.reaction-chip.radius": *kchip
+    "tokens.components.reaction-chip.padding": *kchip
+    "tokens.components.reaction-chip.height": *kchip
+    "tokens.components.reaction-chip.states": *kchip
+    "tokens.components.reaction-chip.use": *kchip
+    "tokens.components.search-input.type": *ksearch
+    "tokens.components.search-input.bg": *ksearch
+    "tokens.components.search-input.fg": *ksearch
+    "tokens.components.search-input.height": *ksearch
+    "tokens.components.search-input.font": *ksearch
+    "tokens.components.search-input.states": *ksearch
+    "tokens.components.search-input.use": *ksearch
+    "tokens.components.cover-card.type": *kcard
+    "tokens.components.cover-card.radius": *kcard
+    "tokens.components.cover-card.size": *kcard
+    "tokens.components.cover-card.use": *kcard
+    "tokens.components.content-row.type": &krow { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::li", captured: "2026-09-30" }
+    "tokens.components.content-row.fg": *krow
+    "tokens.components.content-row.size": *krow
+    "tokens.components.content-row.font": *krow
+    "tokens.components.content-row.use": *krow
+    "tokens.components.first-episode-cta.type": { surface_id: surface-3, source_id: kakaopage-probe-content, method: live-state-probe, selector: "button 첫 화 보기 (fill painted by ancestor level 2 div.flex.items-center)", captured: "2026-09-30" }
+    "tokens.components.first-episode-cta.bg": { surface_id: surface-3, source_id: kakaopage-probe-content, method: live-state-probe, selector: "button 첫 화 보기 (fill painted by ancestor level 2 div.flex.items-center)", captured: "2026-09-30" }
+    "tokens.components.first-episode-cta.fg": { surface_id: surface-3, source_id: kakaopage-probe-content, method: live-state-probe, selector: "button 첫 화 보기 (fill painted by ancestor level 2 div.flex.items-center)", captured: "2026-09-30" }
+    "tokens.components.first-episode-cta.size": { surface_id: surface-3, source_id: kakaopage-probe-content, method: live-state-probe, selector: "button 첫 화 보기 (fill painted by ancestor level 2 div.flex.items-center)", captured: "2026-09-30" }
+    "tokens.components.first-episode-cta.font": { surface_id: surface-3, source_id: kakaopage-probe-content, method: live-state-probe, selector: "button 첫 화 보기 (fill painted by ancestor level 2 div.flex.items-center)", captured: "2026-09-30" }
+    "tokens.components.first-episode-cta.hover": { surface_id: surface-3, source_id: kakaopage-probe-content, method: live-state-probe, selector: "button 첫 화 보기 (fill painted by ancestor level 2 div.flex.items-center)", captured: "2026-09-30" }
+    "tokens.components.first-episode-cta.pressed": { surface_id: surface-3, source_id: kakaopage-probe-content, method: live-state-probe, selector: "button 첫 화 보기 (fill painted by ancestor level 2 div.flex.items-center)", captured: "2026-09-30" }
+    "tokens.components.first-episode-cta.states": { surface_id: surface-3, source_id: kakaopage-probe-content, method: live-state-probe, selector: "button 첫 화 보기 (fill painted by ancestor level 2 div.flex.items-center)", captured: "2026-09-30" }
+    "tokens.components.first-episode-cta.use": { surface_id: surface-3, source_id: kakaopage-probe-content, method: live-state-probe, selector: "button 첫 화 보기 (fill painted by ancestor level 2 div.flex.items-center)", captured: "2026-09-30" }
 tokens:
-  source: live-extract
-  extracted: "2026-06-22"
-  note: "primary = live content CTA yellow (#ffd618); canvas = white; ink = pure black (#000000) for all text; surface = #eeeeee for content cards; error/best-badge = #ff3042."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
     primary: "#ffd618"
     ink: "#000000"
-    ink-dark: "#222222"
     canvas: "#ffffff"
-    surface: "#eeeeee"
-    muted: "#666666"
-    tertiary: "#999999"
-    on-primary: "#222222"
-    error: "#ff3042"
-    on-error: "#ffffff"
+    cta-label: "#222222"
+    muted: "#999999"
+    on-media: "#ffffff"
   typography:
-    family: { display: "Pretendard Variable", body: "Pretendard" }
-    content-title: { size: 21, weight: 700, lineHeight: 1.24, use: "Content item title (e.g. webtoon/novel title)" }
-    body:          { size: 16, weight: 400, lineHeight: 1.40, use: "Default body text, tab labels" }
-    tab-active:    { size: 16, weight: 700, lineHeight: 1.38, use: "Active category tab text" }
-    list-item:     { size: 14, weight: 400, lineHeight: 1.43, use: "Episode list rows, secondary info" }
-    sub-label:     { size: 13, weight: 400, lineHeight: 1.38, use: "Tab sub-labels, inactive section tabs" }
-    caption:       { size: 12, weight: 400, lineHeight: 1.33, use: "Genre tags, author names, metadata" }
-    cta-label:     { size: 12, weight: 700, lineHeight: 1.33, use: "Primary CTA button label" }
-    date:          { size: 11, weight: 400, lineHeight: 1.45, use: "Episode date metadata" }
-    badge:         { size: 11, weight: 700, lineHeight: 1.45, use: "BEST badge, rank overlay" }
-  spacing: { xs: 3, sm: 7, md: 14, base: 16, lg: 20, xl: 32, section: 48 }
-  rounded: { xs: 2, sm: 5, md: 8, lg: 12, pill: 16, full: 100 }
-  shadow:
-    none: "none"
+    body: { size: 16, weight: 400, lineHeight: 1.4, use: "Default text on all three pages (body)" }
+    section-title: { size: 16, weight: 700, lineHeight: 1.38, use: "Shelf heading on home and the webtoon page (h2)" }
+    cover-title: { size: 16, weight: 700, lineHeight: 1.25, use: "Title overlaid on a cover card, white" }
+    cta: { size: 16, weight: 700, lineHeight: 1.38, use: "첫 화 보기 label on the content page" }
+    small-heading: { size: 12, weight: 700, lineHeight: 1.33, use: "Small bold heading on the content page (h2)" }
+    search: { size: 13, weight: 400, lineHeight: 1.38, use: "Header search field" }
+    footer-link: { size: 13, weight: 400, lineHeight: 1.4, use: "Underlined footer link" }
+  spacing: { menu-gap: 6, chip-x: 12, chip-gap: 8, cta-x: 15 }
+  rounded: { md: 8 }
   components:
-    button-primary: { type: button, bg: "#ffd618", fg: "#222222", radius: "8px", height: "56px", font: "12px / 700 Pretendard", use: "Primary CTA — '첫 화 보기' / '이어보기'" }
-    button-back: { type: button, bg: "#000000", fg: "#ffffff", radius: "100px", height: "54px", padding: "0px 20px", font: "16px / 700 Pretendard", use: "Error/empty-state 'Go Home' full pill" }
-    tab-active-pill: { type: tab, bg: "#000000", fg: "#ffffff", radius: "16px", height: "32px", padding: "7px 14px", font: "13px / 700 Pretendard", active: "black pill #000000 / white text #ffffff", use: "Active content-category tab (홈/정보/소식)" }
-    tab-nav-pill: { type: tab, bg: "#000000", fg: "#ffffff", radius: "100px", height: "36px", padding: "0px 14px", font: "16px / 400 Pretendard", active: "black pill #000000 / white text #ffffff", use: "Active main section tab (지금핫한/실시간 랭킹)" }
-    card-content: { type: card, bg: "#eeeeee", radius: "12px", use: "Content discovery card (thumbnail + metadata overlay)" }
-    card-skeleton: { type: card, bg: "#eeeeee", radius: "8px", use: "Lazy-load skeleton placeholder for content thumbnails (live: translucent rgba(153,153,153,0.15) over white ≈ #eeeeee)" }
-    badge-best: { type: badge, bg: "#ff3042", fg: "#ffffff", radius: "5px", padding: "0px 3px", font: "11px / 700 Pretendard", use: "Top-ranking badge on episode rows" }
-    badge-coin: { type: badge, bg: "#ffd618", fg: "#000000", radius: "2px", padding: "3px 8px", font: "16px / 400 Pretendard", use: "'충전' (coin recharge) label badge" }
-    badge-free: { type: badge, bg: "#000000", fg: "#ffffff", radius: "2px", padding: "0px 4px", font: "10px / 700 Pretendard", use: "'무료' (free episode) overlay on rank counter" }
-    comment-chip: { type: badge, bg: "rgba(0,0,0,0.05)", fg: "#000000", radius: "8px", height: "28px", font: "16px / 400 Pretendard", use: "Comment count / interaction chip on episode rows" }
-    search-input: { type: input, fg: "#000000", font: "13px Pretendard", use: "Search bar — placeholder '제목, 작가를 입력하세요.'" }
+    main-menu-item: { type: tab, bg: "transparent", fg: "#000000", height: "56px", font: "16px / 400 / 22.4px", states: "rest only in the capture; a same-day supplementary probe found the current menu marked aria-current=page and set bold, which the bundle does not record, so no selected value is declared", use: "Top menu item (추천, 웹툰, 웹소설 and the rest) at home::li, 64-97 x 56 with a 6px right margin; the webtoon page repeats it" }
+    primary-cta: { type: button, fg: "#222222", padding: "0px 15px", height: "56px", font: "16px / 700 / 22px", states: "the pressed frame reads the label at rgba(34, 34, 34, 0.3), matching the authored class active:text-[rgb(var(--colors-static-mono-90)_/_30%)]; one element with no sibling, so no pressed value is declared", use: "첫 화 보기 on the content page at surface-3::[data-omd-capture=\"12\"], 272 x 56. The button's own background is transparent; the visible fill is painted by a wrapper div the collector does not record (see §2), so no bg or radius is declared" }
+    carousel-button-lg: { type: button, bg: "#000000", radius: "3.35544e+07px", size: "44px x 44px", states: "rest only; no state frame", use: "Hero carousel previous and next buttons (bg-static-mono-black, class opacity-80) at home::[data-omd-capture=\"43\"] and 44; the webtoon page repeats the pair" }
+    carousel-button: { type: button, bg: "#000000", radius: "3.35544e+07px", size: "36px x 36px", states: "rest only; no state frame", use: "Shelf carousel button (bg-static-mono-black, class opacity-80) at home::[data-omd-capture=\"61\"]; also on the webtoon page and twice on the content page" }
+    reaction-chip: { type: button, bg: "rgba(0, 0, 0, 0.05)", fg: "#000000", radius: "8px", padding: "0px 12px", height: "28px", states: "rest only; no state frame", use: "Comment reaction chip (bg-theme-transparent-10) on the content page at surface-3::[data-omd-capture=\"47\"], 55-75 x 28 with an 8px right margin; icon-only variants are 28 x 28; 77 captured. The label sits in a child the collector did not record, so no font is declared" }
+    search-input: { type: input, bg: "transparent", fg: "#000000", height: "18px", font: "13px / 400 / 18px", states: "rest only; no state frame", use: "Header search field at home::[data-omd-capture=\"6\"], 150 x 18, identical on all three pages; no border or fill of its own" }
+    cover-card: { type: card, radius: "8px", size: "152px x 274px", use: "Cover card (rounded-8pxr overflow-hidden) at home::div on home and the webtoon page, 24 captured; the cover image fills it and its title overlays in 16px / 700 / 20px #ffffff" }
+    content-row: { type: listItem, fg: "#000000", size: "632px x 88px", font: "16px / 400 / 22.4px", use: "List row on the content page at surface-3::li, six captured" }
+    first-episode-cta: { type: button, bg: "#ffd618", fg: "#222222", size: "272px x 56px", font: "12px / 700 (label span)", hover: "no change across self, 1 descendant and 3 ancestor levels (live probe)", pressed: "label fg rgba(34, 34, 34, 0.3), opacity 1 -> 0.3; the yellow wrapper is unchanged", states: "hover and pressed measured by the live keyboard probe on 2026-09-30; focus not measured (--no-focus)", use: "Work-page 첫 화 보기 call-to-action on surface-3; the button is transparent and the point-yellow fill is its grandparent div (bg-static-point-yellow)" }
   components_harvested: true
 ---
 
@@ -61,375 +164,302 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-카카오페이지 (KakaoPage) is Kakao Entertainment's flagship webtoon and web-novel platform, and its interface is built around one governing tension: immersive visual content deserves a near-invisible UI frame. The canvas is pure white (`#ffffff`) with pure black (`#000000`) text — no off-whites, no warm navies, no grey tints on the base layer. Color is used surgically: a single vivid brand yellow (`#ffd618`) for the primary call-to-action, a confident red (`#ff3042`) for best-rank badges, and nothing else.
+카카오페이지 (KakaoPage) is Kakao Entertainment's webtoon and web-novel service; the web footer links to kakaoent.com, and its privacy policy is served from kakaoent.com with `service=kakaopage`. Kakao's own service page introduces it as "세상 모든 이야기를 담다" — original webtoons and web novels serialised exclusively, popular Daum Webtoon originals alongside them, chat-style 톡드립 stories, films and broadcast replays. Its signature mechanism is 기다리면 무료: works marked with a clock icon give one free episode, and a new free pass recharges a set time after you read. A daily 오늘의 선물 box hands out passes for new works. The web page's own description says the same in two sentences: "오리지널 독점 웹툰, 웹소설 부터 책 까지 한 곳에서 즐기세요. 인기 콘텐츠가 기다리면 무료!"
 
-This constraint-first palette makes the content thumbnails — illustrated cover art, dramatic character spreads — the undisputed heroes of every screen. The platform hosts hundreds of webtoon and web-novel IPs, each with its own rich visual identity, and the system never competes with them. The navigation chrome is monochrome; the active selection state uses a black pill rather than a colored accent; the cards are light grey (`#eeeeee`) placeholders that vanish once the cover image loads.
+The captured web product is almost entirely black and white. Body text is `#000000` on a `#ffffff` canvas on all three pages, and one colour carries the reading action: the 첫 화 보기 call-to-action sits on a `#ffd618` point-yellow panel. Otherwise the only filled controls are black, fully round carousel buttons drawn at 80% opacity. Colour arrives with the cover art. Cover cards are 152 × 274 with an 8px radius, filled by the image, with titles overlaid in bold white. The current menu is marked by weight, not a pill or a colour: the supplementary probe found 추천 set bold and marked `aria-current=page`.
 
-The result is a look that reads as **dark-adjacent without being dark**: all surfaces are white, but the dominant typographic color is black-on-white, and the interactive vocabulary (black pills, black/yellow CTAs) anchors the experience in a high-contrast editorial register. The yellow `#ffd618` — close to Kakao's brand golden-yellow across its ecosystem — appears exactly once per content detail page, on the primary "Start Reading" button, making it unmistakable.
+Type is compact and flat. Almost everything is 16px Pretendard, and hierarchy comes from moving between 400 and 700 rather than from size. Only the small meta layer drops to 12–13px.
+
+The current web build shows how the look is organised. It is a Next.js app (its CSS is served from `page.kakaocdn.net/pageweb/csr/real/2.43.0/`), and its utility classes use a named colour vocabulary. *Static* colours stay fixed: `static-mono-black`, `static-mono-white`, `static-mono-90`, `static-point-yellow`. *Theme* colours follow the `light` class on `<body>`: `theme-solid-100`, `theme-transparent-10`. The reading call-to-action's yellow belongs to that static "point" set. It is documented in §2 but kept out of the machine palette, because the capture did not record it.
 
 **Key Characteristics:**
-- Pure-black/pure-white palette — content cover art is the only color
-- Brand yellow (`#ffd618`) reserved exclusively for the primary "Start Reading" CTA
-- Active selection state uses a black pill with white text, not a colored accent
-- Pretendard Variable for all text — the Korean web standard, optimized for hangul at small sizes
-- Light grey (`#eeeeee`) card surface and `rgba(153,153,153,0.15)` skeleton placeholders
-- High-contrast editorial density: small type (11–14px), generous imagery
-- `#ff3042` hot-red for BEST rank badges — the only accent besides yellow
+- Monochrome chrome: `#000000` ink on `#ffffff`, and no hue on any captured control
+- Cover art supplies the colour; 8px-radius portrait cover cards with bold white overlay titles
+- Black, fully round carousel buttons (44px in the hero, 36px on shelves) at class `opacity-80`
+- Weight, not colour, marks the current menu and headings: 16px at 400 and 700
+- Translucent `rgba(0, 0, 0, 0.05)` reaction chips on the content page
+- No box shadow on any of the 447 captured elements
 
 ## Primary tasks
 
-- Start reading a webtoon or novel from its detail page
-- Wait a set interval to open the next episode free
-- Pay for early access to a series you cannot wait for
-- Find something new through the recommendation tab
-- Search for a series by title or author name
+- Start reading a webtoon or web novel from its content page (첫 화 보기)
+- Read the next episode free after the 기다리면 무료 wait
+- Collect the daily 오늘의 선물 passes
+- Browse by menu (추천, 웹툰, 웹소설 and the rest) and by shelf
+- Search for a work by title or author
 
 ## 2. Color Palette & Roles
 
-### Primary Action
-- **KakaoPage Yellow** (`#ffd618`): The single primary action color. Used for the "첫 화 보기" (Start Reading) and "이어보기" (Continue) CTA buttons and for the coin-recharge label badge. Unmistakably derived from Kakao's brand golden-yellow, adapted for content-platform assertiveness.
+### Why the primary is point yellow
+
+The product's primary action on a work page is 첫 화 보기 (read the first episode), and the product paints it point yellow: `#ffd618`. The button itself is transparent (272 × 56); the yellow comes from its grandparent `div.flex.items-center` (class `bg-static-point-yellow`). The capture collector records the button and not the wrapper, so the bundle holds four colours only (`#000000`, `#ffffff`, `#999999`, `#222222`). The live keyboard probe of 2026-09-30 compares three ancestor levels and recorded the fill at level 2, `rgb(255, 214, 24)` (`raw/kakaopage-states-content.json`). Under the catalogue rule of 2026-09-30, `primary` is the colour the product renders in its primary-action role, so it is `#ffd618`. The eight black carousel buttons (`bg-static-mono-black`) stay component values.
 
 ### Ink & Canvas
-- **Ink Black** (`#000000`): Primary text color for all headings, body copy, nav labels, and interactive elements. Also used as the active pill background (reversing to white text). A true zero — no near-black offset.
-- **Dark Label** (`#222222`): Button label text on yellow CTA. Near-black with just enough warmth to avoid pure-black on yellow harshness.
-- **Canvas White** (`#ffffff`): Page background and navigation header. The absolute base layer.
+- **Ink** (`#000000`): body text on every page, headings, menu labels, the search field, list rows and the reaction chip labels.
+- **Canvas** (`#ffffff`): page background (`body`).
+- **CTA label** (`#222222`): the 첫 화 보기 label (`text-static-mono-90`).
+- **Muted** (`#999999`): 13px underlined footer links.
+- **On media** (`#ffffff`): bold titles overlaid on cover cards (`text-static-mono-white`).
 
-### Surface & Skeleton
-- **Surface Grey** (`#eeeeee`): Content card background; the resting state of a thumbnail card before the image loads. Also used as section-tab bar background, episode list row backgrounds.
-- **Skeleton Ghost** (`rgba(153,153,153,0.15)`): Lazy-load skeleton placeholder at exactly the cover thumbnail's aspect ratio. Flat, no shimmer — consistent with the no-decoration ethos.
+### Tint
+- **Chip tint** (`rgba(0, 0, 0, 0.05)`): reaction chips on the content page (`bg-theme-transparent-10`), 77 captured.
 
-### Text Hierarchy
-- **Muted Grey** (`#666666`): Secondary text — author names, date metadata at 11px, secondary captions.
-- **Tertiary Grey** (`#999999`): Lowest-emphasis labels, placeholder behavior.
+### Documented but not tokenised
+- **Point yellow** (`#ffd618`): now the machine `primary` (see *Why the primary is point yellow*). The June record saw the same value.
 
-### Status
-- **Hot Red** (`#ff3042`): "BEST" rank badge on top-performing episodes. High-contrast, attention-forcing — the only warm saturated accent alongside yellow.
-- **On-error White** (`#ffffff`): Text on the red badge.
+### Not carried forward
+- `#eeeeee` card surface, `rgba(153,153,153,0.15)` skeleton, `#666666` date text, `#ff3042` BEST badge and its white label. None of them appears in the 2026-09-30 bundle or probe.
+- `oklch(0.928 0.006 264.531)` appears 358 times, but only as the border colour of elements whose border width is 0px (a framework default), so nothing is drawn. It is excluded.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **Primary**: `Pretendard Variable` with fallback to `Pretendard` — the Korean web standard. Chosen for its multi-weight variable axis and exceptional hangul legibility at display and small sizes alike.
-- **Fallbacks**: `-apple-system`, `system-ui`, `Segoe UI`, `Noto Sans KR`, `Malgun Gothic`
+- **Declared stack:** `"Pretendard Variable", Pretendard, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, …` on every captured element.
+- **Served face:** Pretendard (static cut) from `page.kakaocdn.net/pageweb/pretendard/web/static/`, Thin to Black, woff2 and woff. No face named "Pretendard Variable" is declared.
+- **Why there is no family token:** the collector's font census marks "Pretendard Variable" as unresolved and "Pretendard" as declared but unobserved, because it credits usage to the first family in the stack. So the bundle cannot confirm which face renders, and no family token is emitted. A same-day supplementary probe read Pretendard 400 and 700 as loaded on home and the content page. That reading is recorded in the verification file, not as a token.
+- **Evidence class:** Pretendard is a third-party typeface, not a KakaoPage brand font. Its repository licence credits Kil Hyung-jin, with Reserved Font Name "Pretendard". None of the sources opened for this reference names a KakaoPage-specific typeface.
 
 ### Hierarchy
 
-| Role | Size | Weight | Line Height | Color | Use |
-|------|------|--------|-------------|-------|-----|
-| Content Title | 21px | 700 | 26px (1.24) | `#000000` | Webtoon / novel item title |
-| Body / Tab | 16px | 400 | 22.4px (1.40) | `#000000` | Default body, nav tab labels |
-| Tab Active | 16px | 700 | 22px (1.38) | `#000000` | Active main tab emphasis |
-| List Row | 14px | 400 | 20px (1.43) | `#000000` | Episode list rows, secondary info |
-| Section Tab | 13px | 400 | 18px (1.38) | `#000000` | Inactive section tab (홈/정보/소식) |
-| Caption | 12px | 400 | 16px (1.33) | `#000000` | Genre tags, author, metadata |
-| CTA Label | 12px | 700 | 16px | `#222222` | "첫 화 보기" button label |
-| Date / Meta | 11px | 400 | 16px (1.45) | `#666666` | Episode publish date |
-| BEST Badge | 11px | 700 | 16px | `#ffffff` | BEST rank badge |
+| Role | Size | Weight | Line height | Colour | Where |
+|------|------|--------|-------------|--------|-------|
+| Body | 16px | 400 | 22.4px | `#000000` | Default text, menu items, list rows |
+| Shelf heading | 16px | 700 | 22px | `#000000` | `h2` on home and the webtoon page |
+| Cover title | 16px | 700 | 20px | `#ffffff` | Overlay on cover cards |
+| CTA label | 16px | 700 | 22px | `#222222` | 첫 화 보기 |
+| Small heading | 12px | 700 | 16px | `#000000` | `h2` on the content page |
+| Search | 13px | 400 | 18px | `#000000` | Header search field |
+| Footer link | 13px | 400 | 18.2px | `#999999` | Underlined footer links |
 
 ### Principles
-- **Content-first sizing**: all chrome text runs at 11–16px; large type belongs to the content artwork, not the interface.
-- **Weight as the only signal**: active states use bold (700) on the same text — no color change, no underline. The system trusts weight contrast over hue.
-- **Pretendard for everything**: a single typeface across all weights and roles. No display/body split.
-- **Line-height discipline**: tight at display (1.24 for titles), standard at body (1.40–1.43), compact for badge/caption (1.33).
+- **One size, two weights.** Nearly all captured text is 16px; 700 marks headings, titles and the reading action.
+- **Small type is for meta only.** 12–13px appears only on the small content-page heading, the search field and footer links.
+- **Letter spacing is normal throughout.**
 
 ## 4. Component Stylings
 
+### Navigation
+
+**Main menu item**
+- Background: transparent
+- Text: `#000000`
+- Height: 56px
+- Font: 16px / 400 / 22.4px
+- Spacing: 6px right margin between items
+- Use: top menu (추천, 웹툰, 웹소설 and the rest), 64–97px wide. The current item is bold with `aria-current=page` (supplementary probe; not in the bundle)
+
 ### Buttons
 
-**Primary CTA (첫 화 보기 / 이어보기)**
-- Background: `#ffd618`
+**Reading CTA (첫 화 보기)**
 - Text: `#222222`
-- Radius: 8px
 - Height: 56px
-- Font: 12px / 700 / Pretendard
-- Use: "Start Reading" / "Continue Reading" — the platform's singular primary action per content detail page
+- Padding: 0px 15px
+- Font: 16px / 700 / 22px
+- Size: 272 × 56
+- Fill: painted by a wrapper `div` the collector does not record; see §2 for the documented `#ffd618`
+- Use: the content page's reading action
 
-**Back/Error CTA**
-- Background: `#000000`
-- Text: `#ffffff`
-- Radius: 100px
-- Height: 54px
-- Padding: 0px 20px
-- Font: 16px / 700 / Pretendard
-- Use: Error state "홈으로 가기" (Go Home) full-pill button
+**Carousel button (hero)**
+- Background: `#000000`, class `opacity-80`
+- Radius: fully round (computed `3.35544e+07px`)
+- Size: 44 × 44
+- Use: previous and next on the hero carousel, home and the webtoon page
 
-### Tabs
+**Carousel button (shelf)**
+- Background: `#000000`, class `opacity-80`
+- Radius: fully round (computed `3.35544e+07px`)
+- Size: 36 × 36
+- Use: shelf carousels on all three pages
 
-**Active Section Tab (Pill)**
-- Background: `#000000`
-- Text: `#ffffff`
-- Radius: 16px
-- Height: 32px
-- Padding: 7px 14px
-- Font: 13px / 700 / Pretendard
-- Use: Active content sub-category tab (홈/정보/소식 on detail page)
+**Reaction chip**
+- Background: `rgba(0, 0, 0, 0.05)`
+- Text: `#000000`
+- Radius: 8px
+- Height: 28px
+- Padding: 0px 12px
+- Spacing: 8px right margin
+- Use: comment reactions on the content page; icon-only chips are 28 × 28
 
-**Active Main Nav Tab (Pill)**
-- Background: `#000000`
-- Text: `#ffffff`
-- Radius: 100px
-- Height: 36px
-- Padding: 0px 14px
-- Font: 16px / 400 / Pretendard
-- Use: Active main recommendation tab (지금핫한/실시간 랭킹 etc.)
+### Inputs & Forms
+
+**Header search field**
+- Background: transparent
+- Text: `#000000`
+- Height: 18px
+- Font: 13px / 400 / 18px
+- Size: 150 × 18
+- Use: title and author search in the header on every page; no border or fill of its own
 
 ### Cards & Containers
 
-**Content Card**
-- Background: `#eeeeee`
-- Radius: 12px
-- Use: Base layer for content cover art; grey shows before the image loads; cover fills the card once loaded
-
-**Skeleton Card**
-- Background: `rgba(153,153,153,0.15)`
+**Cover card**
 - Radius: 8px
-- Use: Lazy-load placeholder rendered at thumbnail dimensions during content fetch; flat, no pulse shimmer
+- Size: 152 × 274
+- Title overlay: 16px / 700 / 20px `#ffffff`
+- Use: portrait cover shelves on home and the webtoon page; the image fills the card
 
-### Badges
-
-**BEST Rank Badge**
-- Background: `#ff3042`
-- Text: `#ffffff`
-- Radius: 5px
-- Padding: 0px 3px
-- Font: 11px / 700 / Pretendard
-- Use: "BEST" overlay on top-ranked episode rows in comment/reply sections
-
-**Coin Recharge Badge**
-- Background: `#ffd618`
+**Content-page list row**
 - Text: `#000000`
-- Radius: 2px
-- Padding: 3px 8px
-- Font: 16px / 400 / Pretendard
-- Use: "충전" (coin recharge) shortcut label in the nav header
-
-**Free Episode Badge**
-- Background: `#000000`
-- Text: `#ffffff`
-- Radius: 2px
-- Padding: 0px 4px
-- Font: 10px / 700 / Pretendard
-- Use: "무료" (free) count overlay on rank indicators
-
-### Inputs
-
-**Search Bar**
-- Background: transparent
-- Text: `#000000`
-- Border: none (borderless, integrated into nav header)
-- Font: 13px / Pretendard
-- Placeholder: "제목, 작가를 입력하세요." (`#999999`)
-- Height: 18px (inline; nav-embedded)
-- Use: Title / author search
+- Size: 632 × 88
+- Font: 16px / 400 / 22.4px
+- Use: list rows on the content page, six captured
 
 ---
 
-**Verified:** 2026-06-22 (omd:add-reference CREATE — Tier 1 live inspect)
-**Tier 1 sources:** https://page.kakao.com/, https://page.kakao.com/content/57668776
-**Tier 2 sources:** getdesign.md/kakaopage — not found; styles.refero.design/?q=kakaopage — not found
+**Verified:** 2026-09-30 (deterministic collector capture of three public pages, logged out, plus first-party context and a supplementary headless probe)
+**Tier 1 sources:** https://page.kakao.com/ ; https://page.kakao.com/menu/10010/ ; https://page.kakao.com/content/57668776/ ; https://page.kakao.com/notice/ ; https://www.kakaocorp.com/page/service/service/KakaoPage
+**Tier 2 sources:** not attempted on 2026-09-30 (the June 2026 record found no getdesign.md or refero entry); no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: ~4px
-- Scale: 3px, 7px, 14px, 16px, 20px, 32px, 48px
-- Navigation header: 96px total height (top-nav 40px + sub-category tabs 56px)
-- Content card thumbnail: 152×274px aspect ratio (confirmed from skeleton dimensions, portrait orientation)
+- Captured spacing values, by frequency: 12px (50), 8px (43), 6px (26), 4px (23), 16px (15), 32px (12), 24px (6).
+- Named in tokens: 6px between menu items, 12px chip padding, 8px between chips, 15px inside the reading CTA.
 
 ### Grid & Container
-- Max content width: 1200px centered
-- Content catalog: fluid card grid — multiple columns, portrait-orientation thumbnails
-- Category sub-tabs: horizontal scroll strip at 56px height, full-width
-- Episode list: full-width stacked rows at 84px height with title/date/badge
+- Captured at 1440 wide. The header search sits near the top (y ≈ 39), the menu strip starts at y = 96 with 56px items, the hero carousel's buttons sit at y = 448, and cover shelves begin near y = 704.
+- Shelves are horizontal rows of 152px-wide cover cards with carousel buttons at the edge.
 
 ### Whitespace Philosophy
-- **Content fills, chrome recedes**: minimal padding around content cards; cover art occupies as much visual real estate as possible.
-- **List density over breathing room**: episode rows run at 84px with compressed typography; this is a catalog-browsing surface that values information density.
-- **Zero decoration**: no gradients, no textures, no shadows between elements — only solid fills and transparent backgrounds.
+- **The art fills, the chrome recedes.** Cover cards carry no border or shadow, and the image runs to the 8px corners.
+- **Flat rows.** List rows and chips separate by position and a 5% tint, not by rules or elevation.
 
 ### Border Radius Scale
-- Tiny (2px): coin/free badges — near-square for a label feel
-- Small (5px): BEST rank badges
-- Medium (8px): primary CTA button, skeleton placeholders
-- Large (12px): content cards, recommendation carousels
-- Pill (16px): section sub-tab pills
-- Full (100px): main navigation active tab pills, error CTA
+- 8px: cover cards and reaction chips (99 captured elements)
+- Fully round: carousel buttons
+- 2px: the reading CTA's transparent inner button only
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (0) | No shadow | Page background, all card surfaces |
-| Ghost (1) | `rgba(0,0,0,0.05)` background | Comment count chips, interaction counters |
-| Dimmed (2) | `rgba(0,0,0,0.4)` overlay | Content carousel pager indicator |
+| Flat | `box-shadow: none` | All 447 captured elements |
+| Tint | `rgba(0, 0, 0, 0.05)` fill | Reaction chips |
+| Overlay control | `#000000` at class `opacity-80` | Carousel buttons over cover art |
 
-**Shadow Philosophy**: KakaoPage uses no box shadows anywhere in the inspected surfaces. The system is rigorously flat — separation is achieved by the content artwork itself (which carries its own visual weight), by the `#eeeeee` surface color on cards, and by structural containment (tabs, headers). This reflects both a performance-conscious (mobile-heavy audience) and content-first design philosophy: shadows compete with the content's own visual complexity.
+KakaoPage's captured pages use no shadow at all. Separation comes from the cover art itself, from white space and from one 5% black tint.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Use `#ffd618` yellow exclusively for the primary "Start Reading" CTA — it should appear once per content detail page
-- Use the black pill with white text for all active selection states — tabs, active categories
-- Keep all UI text in Pretendard; lean on weight (400/700) to create hierarchy
-- Use pure black `#000000` for all primary text — no navy, no near-black variants
-- Use `#eeeeee` as the neutral card surface — it harmonizes with any cover art color
-- Reserve `#ff3042` for rank/status signals only (BEST, etc.)
-- Design for portrait-oriented thumbnail grids — content is always taller than wide
+- Keep chrome monochrome: `#000000` text on `#ffffff`, and let cover art carry colour
+- Mark the current menu item and headings with weight (700), not with a fill
+- Use 8px-radius portrait cover cards with bold white overlay titles
+- Use black, fully round carousel buttons at reduced opacity over art
+- Use the `rgba(0, 0, 0, 0.05)` tint for small reaction chips
+- Keep elevation flat; no shadows
 
 ### Don't
-- Introduce additional accent colors — yellow and red are the complete palette of saturated hues
-- Use shadows for elevation — this system is entirely flat
-- Place colored overlays on cover art — the artwork owns its space
-- Use any sans-serif typeface other than Pretendard; it's the brand's Korean system font
-- Use large type sizes for UI labels — chrome text stays at 11–16px; display sizes belong to content titles
-- Use the black pill shape for non-interactive decorative elements — it signals "currently selected/active"
-- Deviate from `#ffd618` toward any other yellow — this specific value ties back to Kakao's brand identity
+- Don't add accent hues to navigation or chips; the captured chrome has none
+- Don't promote the documented point yellow (`#ffd618`) into a machine palette until a capture records it
+- Don't reintroduce the June `#eeeeee` card surface, `#666666` date text or `#ff3042` badge as tokens; the current capture does not show them
+- Don't render another font as if it were Pretendard; if Pretendard is unavailable, say so
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <768px | Single-column content grid, condensed nav |
-| Tablet | 768-1024px | 2-3 column grid, sub-tabs scroll horizontally |
-| Desktop | 1024-1200px | Full multi-column grid, all tabs visible |
+Only the 1440px desktop layout was captured; no breakpoint values were measured, so none are specified.
 
 ### Touch Targets
-- Primary CTA: 56px height — generous tap target
-- Section tabs: 32px pill — adequate for touch
-- Nav pills: 36px — comfortable
-- Episode rows: 84px — easy to tap the correct row
+- Reading CTA: 56px tall
+- Hero carousel buttons: 44 × 44; shelf carousel buttons: 36 × 36
+- Reaction chips: 28px tall — below common touch-target minimums, desktop-captured
 
 ### Collapsing Strategy
-- Content grid compresses from multi-column to 2-column to single-column on mobile
-- Category sub-tabs scroll horizontally (scrollable overflow) on narrow viewports
-- Navigation header condenses but maintains the yellow coin badge and search icon
+Not captured.
+
+### Image Behavior
+Cover images fill 152 × 274 cards with 8px corners (`overflow-hidden`); titles overlay the art in white.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary CTA: KakaoPage Yellow (`#ffd618`)
-- Primary text / active pill: Ink Black (`#000000`)
-- CTA label text: Dark Label (`#222222`)
-- Page background: Canvas White (`#ffffff`)
-- Card surface: Surface Grey (`#eeeeee`)
-- Secondary text: Muted Grey (`#666666`)
-- Rank badge: Hot Red (`#ff3042`)
+- Primary / ink: `#000000`
+- Canvas: `#ffffff`
+- CTA label: `#222222`
+- Muted footer link: `#999999`
+- On cover art: `#ffffff`
+- Chip tint: `rgba(0, 0, 0, 0.05)`
+- Documented reading-action fill (not a token): `#ffd618`
 
 ### Example Component Prompts
-- "Create a content detail page header. White background. Title in 21px Pretendard weight 700 #000000. Below: two CTAs side by side — primary 'Start Reading' at #ffd618 / #222222 / 8px radius / 56px height. Secondary 'Subscribe' as black outline pill."
-- "Design an episode list row: #eeeeee background, 84px height. Title 14px Pretendard 400 #000000. Date 11px 400 #666666. BEST badge #ff3042 / white / 5px radius / 11px bold, top-right of thumbnail."
-- "Build category nav tabs: horizontal scrolling strip. Inactive: transparent bg, #000000 text, 16px Pretendard 400. Active: black pill #000000 / white text / 100px radius / 36px height."
-- "Create skeleton loading state: series of portrait cards at 152×274px, bg rgba(153,153,153,0.15), radius 8px. Flat — no pulse animation."
+- "A shelf of portrait cover cards: 152 × 274, 8px radius, the cover image filling each card, title overlaid in 16px Pretendard 700 #ffffff. A 36px black, fully round carousel button at 80% opacity sits at the right edge. Shelf heading above in 16px 700 #000000."
+- "A top menu strip on white: items 56px tall, 16px Pretendard 400 #000000, 6px apart; the current item set bold."
+- "Comment reaction chips: 28px tall, 8px radius, 0 12px padding, background rgba(0, 0, 0, 0.05), black label, 8px apart."
 
 ### Iteration Guide
-1. Yellow `#ffd618` = one CTA per page — don't repeat
-2. All hierarchy via weight 400/700 in Pretendard, not color or size variation
-3. Active selection = black pill; do not use colored indicators
-4. Cards = `#eeeeee` base; the art takes over once loaded
-5. No shadows anywhere — separate by containment and flat fills
-6. Red `#ff3042` only for rank/urgency signals
-7. Content art owns the color; UI defers to black/white/yellow
+1. Monochrome chrome; colour comes from the art
+2. 16px everywhere; hierarchy by 400/700
+3. 8px radius for cards and chips; fully round for carousel buttons
+4. No shadows
+5. Treat the reading action's yellow as documented, not tokenised
 
 ---
 
 ## 10. Voice & Tone
 
-KakaoPage's voice is **immersive, fan-fluent, and quietly epic** — a platform that takes its IP catalog as seriously as the readers who love it. The interface copy is sparse to the point of near-invisibility: navigation labels are single-word nouns (추천, 웹툰, 웹소설, 책), CTAs are concrete action verbs (첫 화 보기, 이어보기), and status labels are abbreviations (무료, BEST). The brand never editorializes about the content — it steps aside and lets "지금핫한" (Hot Right Now) speak for itself.
+KakaoPage's voice is short and service-plain. Menu labels are single nouns (추천, 웹툰, 웹소설), the reading action is a direct verb phrase (첫 화 보기), and the service copy explains its benefit model in a clause: 기다리면 무료.
 
 | Context | Tone |
 |---|---|
-| Main navigation tabs | Minimal noun labels — 추천, 웹툰, 웹소설, 책, 요일연재 |
-| Sub-category tabs | Populist discovery framing — 지금핫한, 실시간 랭킹, 완결추천 |
-| Primary CTA | Direct action — 첫 화 보기, 이어보기 |
-| Rank signals | Prestige shorthand — BEST |
-| Free access | Clear benefit statement — 무료, 기다리면 무료 |
-| Error/empty states | Calm redirect — 홈으로 가기 |
+| Menus | Single nouns — 추천, 웹툰, 웹소설 |
+| Reading action | Direct — 첫 화 보기 |
+| Benefit model | Plain promise — 기다리면 무료 |
+| Service introduction | Warm, inclusive — "세상 모든 이야기를 담다" |
 
-**Voice samples (verified live 2026-06-22):**
-- "기다리면 무료 웹툰" — section header (access model explained in four words). *(verified live 2026-06-22)*
-- "지금핫한" — primary recommendation tab (portmanteau energy, platform-native shorthand). *(verified live 2026-06-22)*
-- "오리지널 독점 웹툰, 웹소설 부터 책 까지 한 곳에서 즐기세요. 인기 콘텐츠가 기다리면 무료!" — meta description (complete brand promise in two sentences). *(verified live 2026-06-22)*
+**Voice samples (read 2026-09-30):**
+- "오리지널 독점 웹툰, 웹소설 부터 책 까지 한 곳에서 즐기세요. 인기 콘텐츠가 기다리면 무료!" — page.kakao.com meta description.
+- "추천 - 지금핫한 | 카카오페이지" — home page title in the headless session.
+- "오직 카카오페이지에만 볼 수 있는 오리지널, 인기 작품을 기다리면 무료로 즐겨보세요!" — Kakao's service page.
+- "첫 화 보기" — the content page's reading action.
 
-**Forbidden register**: genre-describing spoilers in UI chrome, overly promotional adjectives on titles, urgency dark patterns ("마지막 기회!" for paid content), English loanwords where Korean serves better.
+**Forbidden register**: spoilers or genre hype in chrome, urgency dark patterns on paid episodes, decoration that competes with cover art.
 
 ## 11. Brand Narrative
 
-카카오페이지 (KakaoPage) launched in 2013 as Kakao's digital content marketplace for Korea's mobile-first era, initially selling novels and comics in small paid installments. It pioneered the "기다리면 무료" (Wait for Free) model — readers who wait a set interval can access episodes without purchase — which became the structural engine that built one of Korea's largest paid-content audiences. The model proved that patience, not piracy, was the viable alternative to payment: it created massive top-of-funnel reader acquisition while monetizing through impatience.
+Kakao's service page frames KakaoPage as the place that holds every story: exclusive, advance-serialised webtoons and web novels, Daum Webtoon's popular originals, chat-style 톡드립 stories, and films and broadcast replays that can be watched in parts. The page's differentiator is its access model. 기다리면 무료 recharges a free pass a set time after each free read, and 오늘의 선물 adds daily passes, so waiting is a first-class way to read.
 
-Over the decade, KakaoPage evolved from a marketplace into Kakao Entertainment's IP pipeline. Platform-native webtoons and web novels — many originating on Kakao's own creator tools — became the source material for K-drama adaptations, animated series, and global distribution through Tapas (English-language) and Piccoma (Japan). The design system reflects this vertical integration: the platform positions itself not as a mere reader app but as the origin point of Korean popular culture.
+The web product carries that promise with very little chrome. The captured pages leave colour to the cover art, and they keep the interface in black and white with weight-based emphasis. They reserve a single static "point" yellow for the reading action; the capture could not record that yellow, so it is documented rather than tokenised. The build's split between fixed static colours and theme colours that follow a `light` body class shows a product organised around a small token set, not around page-by-page styling.
 
-The 2021 merger between Kakao M and Kakao Page to form Kakao Entertainment consolidated the media-tech stack. Today KakaoPage is the web/desktop face of a content empire that spans webtoon creation, talent management, drama production, and international licensing. The design — clean, content-first, IP-respectful — is engineered to serve hundreds of distinct visual identities without diluting any of them.
+The June record's launch year, merger history and overseas-platform claims were not re-verified from a first-party page this session and are omitted.
 
 ## 12. Principles
 
-1. **Content is the design.** The platform's visual identity defers entirely to the IP it hosts. *UI implication:* monochrome chrome (black/white/grey) so that cover art at any color temperature feels at home. Never introduce competing accent colors.
-2. **Wait or pay — the system is transparent.** The 기다리면 무료 model means readers always know when free access opens. *UI implication:* "무료" labels are permanent, prominent, and never buried; the time cost is disclosed at the episode row.
-3. **One action per surface.** Each content detail page has a single yellow CTA — not a CTA hierarchy, not three equal buttons. *UI implication:* one `#ffd618` button per screen; secondary actions use neutral/ghost styling.
-4. **Rank signals create urgency, not noise.** BEST badges appear only where they reflect genuine ranking data. *UI implication:* hot red `#ff3042` appears on the BEST badge alone; it's never reused for promotions or marketing.
-5. **Mobile density is a feature.** The target audience reads on smartphones; compressed episode rows and small badge text are intentional. *UI implication:* 11–14px episode metadata; portrait-oriented thumbnails optimized for vertical scroll rather than widescreen browsing.
+1. **The art is the colour.** *UI implication:* monochrome chrome; no hue on navigation, chips or shelves.
+2. **Waiting is a way to read.** *UI implication:* the free-by-waiting model is stated plainly in copy, not hidden in fine print.
+3. **Weight before colour.** *UI implication:* the current menu and headings are bold; nothing turns blue or gets a pill.
+4. **One reading action per work.** *UI implication:* the content page's 56px 첫 화 보기 is the single large action.
+5. **Flat and fast.** *UI implication:* no shadows; overlay controls are black at reduced opacity.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable KakaoPage user segments (Korean webtoon and web-novel readers), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable KakaoPage reader segments, not individual people.*
 
-**이하나, 22, 서울.** A university student who discovered KakaoPage through a webtoon-to-drama adaptation. She uses 기다리면 무료 to catch up on ongoing series and pays for impatient access on her three to five top titles. She values the BEST ranking to discover which episodes other readers found significant.
+**이하나, 22, 서울.** A university student who found a series through its drama adaptation. She reads on the wait-for-free cycle and pays only for the few titles she cannot wait for.
 
-**박민준, 31, 부산.** A commuter who reads web novels on the subway. He has 12 series in his 보관함 (library), half of which are waiting for free episodes. He appreciates the episode row format — quick scan, tap, read — and finds the sparse UI lets him focus on the story.
+**박민준, 31, 부산.** A commuter who reads web novels on the subway. He wants to open a work, tap 첫 화 보기 and be reading, with nothing in the way.
 
-**김서연, 38, 대전.** A working parent who started reading KakaoPage after her daughter recommended a romance webtoon. She buys coins for titles she loves, uses the recommend tab to find new content, and would not use the platform if it felt visually overwhelming. The clean white interface signals trustworthiness.
+**김서연, 38, 대전.** A working parent who started with a romance webtoon her daughter recommended. The plain black-and-white pages feel calm and trustworthy to her.
 
 ## 14. States
 
-| State | Treatment |
+Only these were captured or probed; nothing else is specified.
+
+| State | Observation |
 |---|---|
-| **Empty (library, nothing saved)** | White canvas, black body text explaining the empty state, single yellow CTA to the recommendation feed. No illustration. |
-| **Empty (no search results)** | Muted grey `#999999` message: no titles matched. Suggestion to try shorter keywords. |
-| **Loading (catalog)** | Grid of `rgba(153,153,153,0.15)` skeleton cards at thumbnail dimensions, 8px radius. Flat — no pulse. Episode rows under headings hold their grey background while content loads. |
-| **Loading (content detail)** | Header area: `#eeeeee` block at cover art dimensions. Episode list rows: same grey, no skeleton text. |
-| **Error (content not found)** | White canvas, brief black message in 16px Pretendard 400, one black full-pill button "홈으로 가기" (bg `#000000`, text `#ffffff`, radius 100px, height 54px). |
-| **Error (network failure)** | Inline message below the failed section; retry link in plain black text. No modal. |
-| **Success (episode unlocked)** | The episode begins immediately. No celebration screen — immersion over acknowledgment. |
-| **Skeleton (card)** | `rgba(153,153,153,0.15)` at exact cover art aspect ratio (portrait). Remains until image fully loaded. |
-| **Disabled (locked episode, not free yet)** | Row remains visible, date and title shown normally. No greying-out — the wait time is the only signal that it's not yet accessible. |
-| **Free-unlocked (episode)** | "무료" badge in black/white over the rank counter overlay. Quiet — not a celebratory state, just a status flag. |
+| **Pressed frame (reading CTA)** | The label reads `rgba(34, 34, 34, 0.3)`, matching the authored `active:` class; one element with no sibling, so it is not declared as a pressed value. |
+| **Current menu (supplementary probe)** | 추천 marked `aria-current=page` and set bold; not in the bundle. |
+| **No other state frames** | The bundle holds no hover, focus, expanded or selected frames (`interactionCount: 0`). That means none were recorded, not that the product has none. |
 
 ## 15. Motion & Easing
 
-**No motion duration or easing token is promoted.** The capture bundle for this
-reference records no transition or animation property, and no official source consulted
-publishes a motion scale. The behaviour described below was observed; treat any exact
-duration or curve as a local extension until a component-level official source verifies it.
-
-**Motion rules**: The platform's primary motion vocabulary is **minimal and structural** — transitions mark navigation changes, not content moments. Cover art never animates into view (the skeleton-to-image swap is instant, not faded); adding a fade would create visual noise across dozens of simultaneously loading thumbnails. The active tab pill snaps or slides, not bounces — a reading-focused audience expects the UI to get out of the way. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant; the reading flow is unaffected.
+The collector reads computed style, not animation, so no duration or easing is measured. The supplementary probe read the computed `transition` of the reading CTA and its wrappers as the bare shorthand `all`, which declares no timing. Treat motion as unspecified rather than borrowing values, and honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-22) via playwright getComputedStyle on:
-- https://page.kakao.com/ (homepage)
-- https://page.kakao.com/content/57668776 (content detail page — web novel "마법학교 마법사로 살아가는 법")
-
-Key observations used:
-- body: Pretendard Variable, 16px, rgb(0,0,0), bg rgb(255,255,255)
-- nav header: bg rgb(255,255,255), h 96px, 16px Pretendard
-- primary CTA "첫 화 보기": bg rgb(255,214,24) = #ffd618; color rgb(34,34,34); radius 8px; h 56px
-- coin badge "충전": bg rgb(255,214,24); radius 2px; padding 3px 8px
-- BEST badge: bg rgb(255,48,66) = #ff3042; white text; radius 5px; 11px/700
-- active section tab pill: bg rgb(0,0,0); white text; radius 16px; h 32px; padding 7px 14px
-- active main nav tab pill: bg rgb(0,0,0); white text; radius 100px; h 36px
-- content card: bg rgb(238,238,238) = #eeeeee; radius 12px
-- skeleton card: bg rgba(153,153,153,0.15); radius 8px
-- comment chip: bg rgba(0,0,0,0.05); radius 8px; h 28px
-- error/back CTA: bg rgb(0,0,0); white text; radius 100px; h 54px; 16px/700
-- typography: 21px/700 (content title), 16px/400 (body), 16px/700 (tab active), 14px/400 (list), 13px/400 (sub-tabs), 12px/400 (caption), 12px/700 (CTA label), 11px/400/#666666 (date), 11px/700 (BEST badge)
-- body bgFreq: rgba(153,153,153,0.15)×131, rgb(255,255,255)×19, rgb(0,0,0)×5, rgb(238,238,238)×2, rgb(255,214,24)×1
-
-Brand narrative: KakaoPage (카카오페이지) launched 2013; 기다리면 무료 model; Kakao Entertainment merger 2021.
-These are widely documented public facts. Specific founding details are general public knowledge.
-
-Voice samples (§10) verified live on page.kakao.com homepage on 2026-06-22 (meta description, section headers, tab labels).
-
-Personas (§13) are fictional archetypes. Names are illustrative and do not refer to real people.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/kakaopage.json (capturedAt 2026-09-30T07:01:42Z), deterministic collector, 1440x900, logged out: page.kakao.com, page.kakao.com/menu/10010/, page.kakao.com/content/57668776/.
+- Supplementary (not tokens): headless playwright-core probe the same day of the content page and home — CTA ancestor chain, loaded fonts, aria-current.
+- §1, §10, §11 context: www.kakaocorp.com/page/service/service/KakaoPage, page.kakao.com meta description, page.kakao.com/notice/ (title only). All opened 2026-09-30.
+- Personas are fictional archetypes. Interpretive readings are editorial.
 -->

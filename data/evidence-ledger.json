@@ -2,13 +2,13 @@
   "schema_version": 1,
   "purpose": "Freeze what each reference claims to have observed, and when, so that relabelling a source kind, deleting an expired source, or rewriting a capture date appears as a reviewable diff.",
   "generator": "web/scripts/build-evidence-ledger.mjs",
-  "references_with_verification_v2": 233,
-  "sources": 1344,
+  "references_with_verification_v2": 244,
+  "sources": 1412,
   "sources_by_kind": {
     "brand-asset": 78,
-    "license": 78,
-    "official-doc": 555,
-    "product-surface": 633
+    "license": 83,
+    "official-doc": 584,
+    "product-surface": 667
   },
   "references": {
     "104": {
@@ -2789,6 +2789,54 @@
         }
       ]
     },
+    "furiosaai": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "careers",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "furiosa.ai"
+        },
+        {
+          "id": "favorit-foundry",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "abcdinamo.com"
+        },
+        {
+          "id": "newsroom",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "furiosa.ai"
+        },
+        {
+          "id": "rngd",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "furiosa.ai"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "furiosa.ai"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "lp.furiosa.ai"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "furiosa.ai"
+        }
+      ]
+    },
     "gangnamunni": {
       "checked": "2026-07-13",
       "claims": 0,
@@ -3227,6 +3275,60 @@
         }
       ]
     },
+    "hyperconnect": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "career",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "career.hyperconnect.com"
+        },
+        {
+          "id": "history",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "hyperconnect.com"
+        },
+        {
+          "id": "history-ko",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "hyperconnect.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "hyperconnect.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "hyperconnect.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "hyperconnect.com"
+        },
+        {
+          "id": "tech",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "hyperconnect.com"
+        },
+        {
+          "id": "tech-blog",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "hyperconnect.github.io"
+        }
+      ]
+    },
     "hyundai": {
       "checked": "2026-09-21",
       "claims": 0,
@@ -3392,6 +3494,54 @@
           "kind": "official-doc",
           "captured": "2026-09-26",
           "host": "www.ikea.com"
+        }
+      ]
+    },
+    "imweb": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "blog",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "imweb.me"
+        },
+        {
+          "id": "brand-guideline",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "design.imweb.me"
+        },
+        {
+          "id": "company",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "team.imweb.me"
+        },
+        {
+          "id": "newsroom",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "team.imweb.me"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "imweb.me"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "imweb.me"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "imweb.me"
         }
       ]
     },
@@ -3719,6 +3869,54 @@
         }
       ]
     },
+    "kakaopage": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "kakaocorp-service",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.kakaocorp.com"
+        },
+        {
+          "id": "kakaopage-probe-content",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "page.kakao.com"
+        },
+        {
+          "id": "notice",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "page.kakao.com"
+        },
+        {
+          "id": "pretendard-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "raw.githubusercontent.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "page.kakao.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "page.kakao.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "page.kakao.com"
+        }
+      ]
+    },
     "kakaopay": {
       "checked": "2026-07-13",
       "claims": 0,
@@ -3932,6 +4130,54 @@
           "kind": "product-surface",
           "captured": "2026-07-13",
           "host": "www.kbanknow.com"
+        }
+      ]
+    },
+    "kia": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "brand-logo-story",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "worldwide.kia.com"
+        },
+        {
+          "id": "heritage",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "worldwide.kia.com"
+        },
+        {
+          "id": "opposites-united",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "worldwide.kia.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.kia.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.kia.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.kia.com"
+        },
+        {
+          "id": "who-we-are",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "worldwide.kia.com"
         }
       ]
     },
@@ -5195,6 +5441,54 @@
         }
       ]
     },
+    "modusign": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "blog-clm-2412",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "blog.modusign.co.kr"
+        },
+        {
+          "id": "official-blog",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "blog.modusign.co.kr"
+        },
+        {
+          "id": "pretendard-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "raw.githubusercontent.com"
+        },
+        {
+          "id": "recruit-intro",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "recruit.modusign.co.kr"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "modusign.co.kr"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "modusign.co.kr"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "modusign.co.kr"
+        }
+      ]
+    },
     "mongodb": {
       "checked": "2026-09-19",
       "claims": 0,
@@ -5522,6 +5816,36 @@
           "kind": "product-surface",
           "captured": "2026-07-13",
           "host": "comic.naver.com"
+        }
+      ]
+    },
+    "ncsoft": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "ci-renewal",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "about.ncsoft.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "about.ncsoft.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.nc.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "about.ncsoft.com"
         }
       ]
     },
@@ -6947,6 +7271,54 @@
         }
       ]
     },
+    "scatterlab": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "ai-ethics",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "ethics.scatterlab.co.kr"
+        },
+        {
+          "id": "plex-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "raw.githubusercontent.com"
+        },
+        {
+          "id": "pretendard-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "raw.githubusercontent.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.scatterlab.co.kr"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.scatterlab.co.kr"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "blog.scatterlab.co.kr"
+        },
+        {
+          "id": "zeta-letter",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "blog.scatterlab.co.kr"
+        }
+      ]
+    },
     "sendbird": {
       "checked": "2026-09-22",
       "claims": 0,
@@ -7589,6 +7961,42 @@
         }
       ]
     },
+    "stayfolio": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "business-site",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "business.stayfolio.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.stayfolio.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.stayfolio.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.stayfolio.com"
+        },
+        {
+          "id": "terms",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "stayfolio.notion.site"
+        }
+      ]
+    },
     "storytel": {
       "checked": "2026-09-26",
       "claims": 0,
@@ -8066,6 +8474,30 @@
           "kind": "official-doc",
           "captured": "2026-09-21",
           "host": "thumbprint.design"
+        }
+      ]
+    },
+    "tmap": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.tmapmobility.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.tmapmobility.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.tmapmobility.com"
         }
       ]
     },
@@ -9074,6 +9506,48 @@
           "kind": "product-surface",
           "captured": "2026-09-22",
           "host": "www.kdocs.cn"
+        }
+      ]
+    },
+    "wrtn": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "company",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "wrtn.io"
+        },
+        {
+          "id": "news",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "wrtn.io"
+        },
+        {
+          "id": "service-wrtn",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "wrtn.io"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "wrtn.ai"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "wrtn.ai"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "wrtn.io"
         }
       ]
     },
