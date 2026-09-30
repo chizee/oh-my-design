@@ -374,6 +374,17 @@
     - evidence-integrity 모션 고정값 261을 실제 감소분으로 내린다. 테스트 주석이 "재작성으로만 내려간다"고 한 의도대로다.
     - local-store 매니페스트를 갱신하고 iCloud 백업을 한다.
     - `config/reference-capture-routes.json`에 파일럿 경로를 등록한다(naverpay 로그인 우회 경로).
+- **완료 — KR partial 파일럿 6/6 (15:50, `24eb1a17`).**
+  - 대상: naverpay·nexon·lemonbase·hana·hwahae·goorm → Verified v2. 합계 227→233.
+  - 모션 고정값 261→255(허위 모션 표 제거분).
+  - 캡처 도구의 동의 수락 클릭을 거부로 바꿨다(`4e5edf62`). 파일럿 경로는 routes config에 등록했다.
+  - 번들 6개: 매니페스트와 iCloud 백업(`a7ea3da4`).
+  - builder 확인: 레몬베이스 카드→preview 정상. H1을 "— Design Reference"로 바꾼 탓에 렌더러가 "Reference Reference"를 만들던 문제는 규칙("# Design System Inspiration of X")으로 되돌렸다.
+- **완료 — /hangul 교차 플랫폼 렌더 (15:45, CI run 36678418179).**
+  - Windows(맑은 고딕): 390·412px에서 끊긴다. Android 대용(Noto CJK): 360px에서 "있/어요."로 끊긴다. macOS: 360px에서만 끊긴다.
+  - CSS 한 줄로 전 플랫폼 해소된다. `v2-cover-android.png`(실기기 아님 표기)를 만들었고 임시 브랜치는 삭제했다.
+  - 새 발견: HG-1 After(Pretendard)를 360px로 보면 "+"가 혼자 줄바꿈된다 → 스킬 후속.
+- **결정 (16:00, 오너):** primary_color는 제품 화면 실측으로 정하고, 흰·검 카드는 UI에서 보완한다(GROWTH_DECISIONS).
 - **다음.**
   1. ~~저작 E1~~ (완료).
   2. 오너 GO 대기: 사이트 반영(웨이브 5 + 19곳 + 라이브 정정 4곳 + E2 3곳, 이어서 E1 3곳), /hangul 공개 판단(v2 뒤).
