@@ -9,53 +9,289 @@ primary_color: "#5c46ff"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=zepeto.me&sz=128"
-verified: "2026-06-17"
+verified: "2026-09-30"
 added: "2026-06-17"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: product, url: "https://web.zepeto.me/ko", inspected: "2026-09-30" }
+    - { id: surface-2, kind: marketing-product, url: "https://studio.zepeto.me/ko", inspected: "2026-09-30" }
+    - { id: surface-3, kind: marketing-product, url: "https://studio.zepeto.me/ko/products/world", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://web.zepeto.me/ko", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://studio.zepeto.me/ko", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://studio.zepeto.me/ko/products/world", captured: "2026-09-30" }
+    - { id: about, kind: official-doc, url: "https://web.zepeto.me/ko/about", captured: "2026-09-30" }
+    - { id: blog, kind: official-doc, url: "https://blog.zepeto.me/ko", captured: "2026-09-30" }
+    - { id: naverz, kind: official-doc, url: "https://www.naverz-corp.com/", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &zmore { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"10\"]", captured: "2026-09-30" }
+    "tokens.colors.on-primary": *zmore
+    "tokens.colors.ink": &zsvcname { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h3", captured: "2026-09-30" }
+    "tokens.colors.web-ink": &zwname { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.colors.body": &zsvcdesc { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::p", captured: "2026-09-30" }
+    "tokens.colors.muted": &zenter { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"5\"]", captured: "2026-09-30" }
+    "tokens.colors.black": &zzem { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-09-30" }
+    "tokens.colors.canvas": &zsvc { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::li", captured: "2026-09-30" }
+    "tokens.colors.surface": *zzem
+    "tokens.colors.surface-alt": &zguide { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::li", captured: "2026-09-30" }
+    "tokens.colors.hairline": &zdrop { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"35\"]", captured: "2026-09-30" }
+    "tokens.typography.family.sans": &zsbody { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::body", captured: "2026-09-30" }
+    "tokens.typography.family.web": &zwbody { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.typography.display-hero.size": &zh2 { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h2", captured: "2026-09-30" }
+    "tokens.typography.display-hero.weight": *zh2
+    "tokens.typography.display-hero.lineHeight": *zh2
+    "tokens.typography.display-hero.use": *zh2
+    "tokens.typography.card-title.size": &zdt { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::dt", captured: "2026-09-30" }
+    "tokens.typography.card-title.weight": *zdt
+    "tokens.typography.card-title.lineHeight": *zdt
+    "tokens.typography.card-title.use": *zdt
+    "tokens.typography.service-name.size": *zsvcname
+    "tokens.typography.service-name.weight": *zsvcname
+    "tokens.typography.service-name.lineHeight": *zsvcname
+    "tokens.typography.service-name.use": *zsvcname
+    "tokens.typography.guide-title.size": &zgh3 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h3", captured: "2026-09-30" }
+    "tokens.typography.guide-title.weight": *zgh3
+    "tokens.typography.guide-title.lineHeight": *zgh3
+    "tokens.typography.guide-title.use": *zgh3
+    "tokens.typography.hero-button.size": &zpill { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.typography.hero-button.weight": *zpill
+    "tokens.typography.hero-button.lineHeight": *zpill
+    "tokens.typography.hero-button.use": *zpill
+    "tokens.typography.link-lg.size": &zglink { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-09-30" }
+    "tokens.typography.link-lg.weight": *zglink
+    "tokens.typography.link-lg.lineHeight": *zglink
+    "tokens.typography.link-lg.use": *zglink
+    "tokens.typography.nav.size": &znav { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]", captured: "2026-09-30" }
+    "tokens.typography.nav.weight": *znav
+    "tokens.typography.nav.lineHeight": *znav
+    "tokens.typography.nav.use": *znav
+    "tokens.typography.button.size": *zmore
+    "tokens.typography.button.weight": *zmore
+    "tokens.typography.button.lineHeight": *zmore
+    "tokens.typography.button.use": *zmore
+    "tokens.typography.entry-button.size": *zenter
+    "tokens.typography.entry-button.weight": *zenter
+    "tokens.typography.entry-button.lineHeight": *zenter
+    "tokens.typography.entry-button.use": *zenter
+    "tokens.typography.body.size": &zdd { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::dd", captured: "2026-09-30" }
+    "tokens.typography.body.weight": *zdd
+    "tokens.typography.body.lineHeight": *zdd
+    "tokens.typography.body.use": *zdd
+    "tokens.typography.body-sm.size": *zsvcdesc
+    "tokens.typography.body-sm.weight": *zsvcdesc
+    "tokens.typography.body-sm.lineHeight": *zsvcdesc
+    "tokens.typography.body-sm.use": *zsvcdesc
+    "tokens.typography.world-name.size": *zwname
+    "tokens.typography.world-name.weight": *zwname
+    "tokens.typography.world-name.lineHeight": *zwname
+    "tokens.typography.world-name.use": *zwname
+    "tokens.typography.web-body.size": *zwbody
+    "tokens.typography.web-body.weight": *zwbody
+    "tokens.typography.web-body.lineHeight": *zwbody
+    "tokens.typography.web-body.use": *zwbody
+    "tokens.typography.utility-button.size": &zmanage { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"2\"]", captured: "2026-09-30" }
+    "tokens.typography.utility-button.weight": *zmanage
+    "tokens.typography.utility-button.lineHeight": *zmanage
+    "tokens.typography.utility-button.use": *zmanage
+    "tokens.typography.menu.size": &zopt { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-1\"]", captured: "2026-09-30" }
+    "tokens.typography.menu.weight": *zopt
+    "tokens.typography.menu.lineHeight": *zopt
+    "tokens.typography.menu.use": *zopt
+    "tokens.spacing.button-y": &zlogin { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-09-30" }
+    "tokens.spacing.button-x": *zlogin
+    "tokens.spacing.entry-y": *zenter
+    "tokens.spacing.entry-x": *zenter
+    "tokens.spacing.pill-x": *zpill
+    "tokens.spacing.card-pad": *zsvc
+    "tokens.spacing.guide-pad": *zguide
+    "tokens.spacing.option-y": *zopt
+    "tokens.spacing.option-x": *zopt
+    "tokens.rounded.none": *zwname
+    "tokens.rounded.button": *zlogin
+    "tokens.rounded.thumbnail": &zthumb { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::img", captured: "2026-09-30" }
+    "tokens.rounded.card": *zsvc
+    "tokens.rounded.pill": *zmore
+    "tokens.rounded.hero-pill": *zpill
+    "tokens.shadow.hero-pill": *zpill
+    "tokens.shadow.card": &zcard { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::li", captured: "2026-09-30" }
+    "tokens.shadow.menu": &zmenu { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-09-30" }
+    "tokens.components.web-login-button.type": *zlogin
+    "tokens.components.web-login-button.bg": *zlogin
+    "tokens.components.web-login-button.fg": *zlogin
+    "tokens.components.web-login-button.radius": *zlogin
+    "tokens.components.web-login-button.padding": *zlogin
+    "tokens.components.web-login-button.height": *zlogin
+    "tokens.components.web-login-button.font": *zlogin
+    "tokens.components.web-login-button.states": *zlogin
+    "tokens.components.web-login-button.use": *zlogin
+    "tokens.components.zem-button.type": *zzem
+    "tokens.components.zem-button.bg": *zzem
+    "tokens.components.zem-button.fg": *zzem
+    "tokens.components.zem-button.radius": *zzem
+    "tokens.components.zem-button.padding": *zzem
+    "tokens.components.zem-button.height": *zzem
+    "tokens.components.zem-button.font": *zzem
+    "tokens.components.zem-button.states": *zzem
+    "tokens.components.zem-button.use": *zzem
+    "tokens.components.world-entry-button.type": *zenter
+    "tokens.components.world-entry-button.bg": *zenter
+    "tokens.components.world-entry-button.fg": *zenter
+    "tokens.components.world-entry-button.radius": *zenter
+    "tokens.components.world-entry-button.padding": *zenter
+    "tokens.components.world-entry-button.height": *zenter
+    "tokens.components.world-entry-button.font": *zenter
+    "tokens.components.world-entry-button.states": *zenter
+    "tokens.components.world-entry-button.use": *zenter
+    "tokens.components.carousel-control.type": &zctrl { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-09-30" }
+    "tokens.components.carousel-control.bg": *zctrl
+    "tokens.components.carousel-control.radius": *zctrl
+    "tokens.components.carousel-control.size": *zctrl
+    "tokens.components.carousel-control.states": *zctrl
+    "tokens.components.carousel-control.use": *zctrl
+    "tokens.components.world-card.type": *zthumb
+    "tokens.components.world-card.bg": *zthumb
+    "tokens.components.world-card.fg": *zwname
+    "tokens.components.world-card.radius": *zthumb
+    "tokens.components.world-card.size": *zthumb
+    "tokens.components.world-card.font": *zwname
+    "tokens.components.world-card.use": *zthumb
+    "tokens.components.studio-primary-button.type": *zmore
+    "tokens.components.studio-primary-button.bg": *zmore
+    "tokens.components.studio-primary-button.fg": *zmore
+    "tokens.components.studio-primary-button.radius": *zmore
+    "tokens.components.studio-primary-button.padding": *zmore
+    "tokens.components.studio-primary-button.height": *zmore
+    "tokens.components.studio-primary-button.font": *zmore
+    "tokens.components.studio-primary-button.states": *zmore
+    "tokens.components.studio-primary-button.use": *zmore
+    "tokens.components.hero-pill-button.type": *zpill
+    "tokens.components.hero-pill-button.bg": *zpill
+    "tokens.components.hero-pill-button.fg": *zpill
+    "tokens.components.hero-pill-button.radius": *zpill
+    "tokens.components.hero-pill-button.padding": *zpill
+    "tokens.components.hero-pill-button.height": *zpill
+    "tokens.components.hero-pill-button.font": *zpill
+    "tokens.components.hero-pill-button.shadow": *zpill
+    "tokens.components.hero-pill-button.states": *zpill
+    "tokens.components.hero-pill-button.use": *zpill
+    "tokens.components.my-content-button.type": *zmanage
+    "tokens.components.my-content-button.bg": *zmanage
+    "tokens.components.my-content-button.fg": *zmanage
+    "tokens.components.my-content-button.radius": *zmanage
+    "tokens.components.my-content-button.padding": *zmanage
+    "tokens.components.my-content-button.height": *zmanage
+    "tokens.components.my-content-button.font": *zmanage
+    "tokens.components.my-content-button.states": *zmanage
+    "tokens.components.my-content-button.use": *zmanage
+    "tokens.components.studio-nav-link.type": *znav
+    "tokens.components.studio-nav-link.bg": *znav
+    "tokens.components.studio-nav-link.fg": *znav
+    "tokens.components.studio-nav-link.padding": *znav
+    "tokens.components.studio-nav-link.height": *znav
+    "tokens.components.studio-nav-link.font": *znav
+    "tokens.components.studio-nav-link.hover": &znavhov { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]::state-hover", captured: "2026-09-30" }
+    "tokens.components.studio-nav-link.pressed": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"4\"]::state-pressed", captured: "2026-09-30" }
+    "tokens.components.studio-nav-link.selected": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"4\"]", captured: "2026-09-30" }
+    "tokens.components.studio-nav-link.states": *znavhov
+    "tokens.components.studio-nav-link.use": *znav
+    "tokens.components.language-dropdown.type": *zmenu
+    "tokens.components.language-dropdown.bg": *zmenu
+    "tokens.components.language-dropdown.fg": *zmenu
+    "tokens.components.language-dropdown.border": *zdrop
+    "tokens.components.language-dropdown.radius": *zmenu
+    "tokens.components.language-dropdown.padding": *zmenu
+    "tokens.components.language-dropdown.height": *zdrop
+    "tokens.components.language-dropdown.font": *zopt
+    "tokens.components.language-dropdown.shadow": *zmenu
+    "tokens.components.language-dropdown.selected": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-interaction-capture=\"menu-0-2\"]", captured: "2026-09-30" }
+    "tokens.components.language-dropdown.states": *zmenu
+    "tokens.components.language-dropdown.use": *zdrop
+    "tokens.components.service-card.type": *zsvc
+    "tokens.components.service-card.bg": *zsvc
+    "tokens.components.service-card.fg": *zsvc
+    "tokens.components.service-card.radius": *zsvc
+    "tokens.components.service-card.padding": *zsvc
+    "tokens.components.service-card.size": *zsvc
+    "tokens.components.service-card.use": *zsvc
+    "tokens.components.world-feature-card.type": *zcard
+    "tokens.components.world-feature-card.fg": *zdt
+    "tokens.components.world-feature-card.radius": *zcard
+    "tokens.components.world-feature-card.size": *zcard
+    "tokens.components.world-feature-card.shadow": *zcard
+    "tokens.components.world-feature-card.font": *zdt
+    "tokens.components.world-feature-card.use": *zcard
+    "tokens.components.guide-card.type": *zguide
+    "tokens.components.guide-card.bg": *zguide
+    "tokens.components.guide-card.fg": *zguide
+    "tokens.components.guide-card.radius": *zguide
+    "tokens.components.guide-card.padding": *zguide
+    "tokens.components.guide-card.size": *zguide
+    "tokens.components.guide-card.use": *zguide
+    "tokens.components.guide-link.type": *zglink
+    "tokens.components.guide-link.bg": *zglink
+    "tokens.components.guide-link.fg": *zglink
+    "tokens.components.guide-link.padding": *zglink
+    "tokens.components.guide-link.height": *zglink
+    "tokens.components.guide-link.font": *zglink
+    "tokens.components.guide-link.states": *zglink
+    "tokens.components.guide-link.use": *zglink
 tokens:
-  source: live-extract
-  extracted: "2026-06-17"
-  note: "primary = signature ZEPETO violet (#5c46ff) — the brand/CTA hue on studio.zepeto.me (pill buttons) and the link/accent color on web.zepeto.me. Magenta (#f323ff) is a decorative accent swatch. Dark near-black (#292930) drives the web login button + heading text; near-black body text (#000008); grey surfaces (#f5f5f6 / #f8f8fa)."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
     primary: "#5c46ff"
-    accent-magenta: "#f323ff"
+    on-primary: "#ffffff"
     ink: "#292930"
-    ink-pure: "#000008"
-    black: "#000000"
+    web-ink: "#000008"
     body: "#5c5c61"
-    muted: "#75757a"
-    muted-alt: "#47474d"
-    faint: "#c7c7c9"
+    muted: "#47474d"
+    black: "#000000"
     canvas: "#ffffff"
     surface: "#f5f5f6"
     surface-alt: "#f8f8fa"
     hairline: "#e0e0e1"
-    on-primary: "#ffffff"
   typography:
-    family: { sans: "ui-sans-serif", body: "-apple-system" }
-    display-hero:  { size: 64, weight: 800, lineHeight: 1.09, use: "Studio hero headline, ExtraBold" }
-    display:       { size: 48, weight: 700, lineHeight: 1.25, use: "Web carousel hero / studio section titles" }
-    section:       { size: 28, weight: 700, lineHeight: 1.29, use: "Section / banner headings" }
-    feature-title: { size: 24, weight: 700, lineHeight: 1.33, use: "Feature card / studio pillar titles" }
-    subtitle:      { size: 22, weight: 700, lineHeight: 1.36, use: "Step / FAQ sub-headings" }
-    lead:          { size: 20, weight: 500, lineHeight: 1.40, use: "Hero supporting copy, emphasized list title" }
-    nav:           { size: 17, weight: 500, lineHeight: 1.40, use: "Studio top-nav item" }
-    button:        { size: 15, weight: 500, lineHeight: 1.40, use: "Header login / studio button label" }
-    body:          { size: 16, weight: 400, lineHeight: 1.15, use: "Standard reading text" }
-  spacing: { xs: 4, sm: 8, md: 10, base: 16, lg: 24, xl: 34, xxl: 48, section: 64 }
-  rounded: { sm: 8, md: 24, lg: 34, pill: 9999 }
+    family: { sans: "-apple-system", web: "ui-sans-serif" }
+    display-hero: { size: 64, weight: 800, lineHeight: 1.09, use: "Hero headline on both Studio pages (h2.content-title), white, -apple-system stack" }
+    card-title: { size: 28, weight: 700, lineHeight: 1.29, use: "Feature card titles and service names on the Studio world page" }
+    service-name: { size: 24, weight: 700, lineHeight: 1.33, use: "Service names on Studio home (아이템, 월드, 라이브)" }
+    guide-title: { size: 22, weight: 700, lineHeight: 1.36, use: "Guide card titles on the Studio world page" }
+    hero-button: { size: 22, weight: 700, lineHeight: 3.09, use: "Hero pill label (시작하기, 월드 만들기), set on a 68px line box" }
+    link-lg: { size: 20, weight: 500, lineHeight: 1.4, use: "더 알아보기 links on the Studio guide cards" }
+    nav: { size: 17, weight: 500, lineHeight: 1.15, use: "Studio top navigation; the current item steps to 700" }
+    button: { size: 17, weight: 500, lineHeight: 2.82, use: "Violet Studio action label (더 알아보기), set on a 48px line box" }
+    entry-button: { size: 17, weight: 500, lineHeight: 1.29, use: "입장하기 on the web lobby's hero world banners, ui-sans-serif stack" }
+    body: { size: 17, weight: 400, lineHeight: 1.41, use: "Descriptions on the Studio world page" }
+    body-sm: { size: 15, weight: 400, lineHeight: 1.33, use: "Service descriptions on Studio home (letter-spacing -0.2px)" }
+    world-name: { size: 15, weight: 500, lineHeight: 1.47, use: "World names under the web lobby's world tiles, ui-sans-serif stack" }
+    web-body: { size: 16, weight: 400, lineHeight: 1.15, use: "Web lobby body text, ui-sans-serif stack" }
+    utility-button: { size: 15, weight: 600, lineHeight: 1.33, use: "내 콘텐츠 in the Studio header; the web lobby's 로그인 uses 15px / 500 / 20px" }
+    menu: { size: 14, weight: 500, lineHeight: 1.43, use: "Options in the Studio language dropdown" }
+  spacing: { button-y: 10, button-x: 16, entry-y: 14, entry-x: 34, pill-x: 34, card-pad: 32, guide-pad: 36, option-y: 8, option-x: 24 }
+  rounded: { none: 0, button: 8, thumbnail: 12, card: 16, pill: 24, hero-pill: 34 }
   shadow:
-    soft: "rgba(0,0,0,0.2) 0px 0px 20px 0px"
-    none: "none"
+    hero-pill: "rgba(0, 0, 0, 0.2) 0px 0px 20px 0px"
+    card: "rgba(0, 0, 0, 0.05) 0px 2px 12px 0px"
+    menu: "rgba(0, 0, 0, 0.08) 0px 2px 6px 0px"
   components:
-    button-primary: { type: button, bg: "#5c46ff", fg: "#ffffff", radius: "28px", padding: "0 34px", height: "56px", font: "20px / 500", use: "Studio primary CTA — Get Started / Learn more, pill" }
-    button-login: { type: button, bg: "#292930", fg: "#ffffff", radius: "8px", padding: "10px 16px", height: "40px", font: "15px / 500", use: "Web header Login button — dark near-black" }
-    button-secondary: { type: button, bg: "#f5f5f6", fg: "#292930", radius: "8px", padding: "10px 16px", height: "40px", font: "16px / 400", use: "Web header Buy ZEMs / soft grey utility button" }
-    button-invert: { type: button, bg: "#ffffff", fg: "#5c46ff", radius: "34px", padding: "0 34px", height: "68px", font: "22px / 700", shadow: "rgba(0,0,0,0.2) 0px 0px 20px 0px", use: "Studio hero Get Started on violet band — white pill, violet label" }
-    nav-link: { type: tab, fg: "#5c5c61", active: "text #292930", use: "Studio top-nav item (Contents / Guides / Support)" }
-    card-feature: { type: card, bg: "#f8f8fa", fg: "#292930", radius: "24px", use: "Studio pillar card (Items / World / Live) on lighter grey surface" }
-    badge-accent: { type: badge, bg: "#5c46ff", fg: "#ffffff", radius: "9999px", font: "15px / 500", use: "Violet emphasis pill / tag" }
-    avatar-circle: { type: avatar, radius: "9999px", use: "Circular carousel control / creator avatar" }
+    web-login-button: { type: button, bg: "#292930", fg: "#ffffff", radius: "8px", padding: "10px 16px", height: "40px", font: "15px / 500 / 20px ui-sans-serif stack", states: "rest only; no pointer frame was recorded", use: "로그인 in the web lobby header, 80 x 40 (read, never followed)" }
+    zem-button: { type: button, bg: "#f5f5f6", fg: "#000000", radius: "8px", padding: "10px 16px", height: "40px", font: "16px / 400 / 18.4px ui-sans-serif stack", states: "rest only; no pointer frame", use: "ZEM 구매 in the web lobby header, 114 x 40 (not opened)" }
+    world-entry-button: { type: button, bg: "#f5f5f6", fg: "#47474d", radius: "8px", padding: "14px 34px", height: "56px", font: "17px / 500 / 22px ui-sans-serif stack", states: "rest on three instances; no pointer frame", use: "입장하기 on the three hero world banners of the web lobby, 182 x 56" }
+    carousel-control: { type: button, bg: "rgba(199, 199, 201, 0.5)", radius: "50%", size: "36px x 36px", states: "rest only", use: "Left and right arrows of the web lobby's hero carousel" }
+    world-card: { type: card, bg: "rgba(248, 248, 250, 0.5)", fg: "#000008", radius: "12px", size: "152px x 152px", font: "15px / 500 / 22px ui-sans-serif stack", use: "World tiles in the web lobby grid (157 tiles): a 12px-radius thumbnail on a translucent #f8f8fa ground over the world name" }
+    studio-primary-button: { type: button, bg: "#5c46ff", fg: "#ffffff", radius: "24px", padding: "0px", height: "48px", font: "17px / 500 / 48px -apple-system stack", states: "rest on three instances; no pointer frame", use: "더 알아보기 under each Studio service card (아이템, 월드, 라이브), 200 x 48" }
+    hero-pill-button: { type: button, bg: "#ffffff", fg: "#5c46ff", radius: "34px", padding: "0px 34px", height: "68px", font: "22px / 700 / 68px -apple-system stack", shadow: "rgba(0, 0, 0, 0.2) 0px 0px 20px 0px", states: "rest on both Studio pages; no pointer frame", use: "시작하기 on the Studio home hero (144 x 68) and 월드 만들기 on the world page hero (168 x 68)" }
+    my-content-button: { type: button, bg: "#ffffff", fg: "#292930", radius: "8px", padding: "10px 16px", height: "40px", font: "15px / 600 / 20px -apple-system stack", states: "rest on both Studio pages; no pointer frame", use: "내 콘텐츠 in the Studio header, 88 x 40 (not followed)" }
+    studio-nav-link: { type: tab, bg: "transparent", fg: "rgba(255, 255, 255, 0.6)", padding: "15px 16px", height: "50px", font: "17px / 500 / 19.55px -apple-system stack", hover: "fg #ffffff", pressed: "fg #ffffff", selected: "fg #ffffff at weight 700 on the current section's item (world page)", states: "hover and pressed frames read opaque #ffffff on all five items on Studio home and all four inactive items on the world page", use: "Studio top navigation over the dark hero (five items on Studio home)" }
+    language-dropdown: { type: input, bg: "#ffffff", fg: "#292930", border: "1px solid #e0e0e1 (trigger)", radius: "8px", padding: "8px 0px (list); 8px 24px (option)", height: "36px (trigger)", font: "14px / 500 / 20px -apple-system stack", shadow: "rgba(0, 0, 0, 0.08) 0px 2px 6px 0px", selected: "bg #f8f8fa on the aria-selected option", states: "opened by the collector's expansion pass on both Studio pages (expanded, menu-open)", use: "한국어 language switcher in the Studio footer: a 74 x 36 trigger opening a 180-wide list of seven languages" }
+    service-card: { type: card, bg: "#ffffff", fg: "#292930", radius: "16px", padding: "42px 32px 32px", size: "320px x 416px", use: "아이템, 월드, 라이브 cards on Studio home, each ending in the violet 더 알아보기" }
+    world-feature-card: { type: card, fg: "#292930", radius: "16px", size: "320px x 438px", shadow: "rgba(0, 0, 0, 0.05) 0px 2px 12px 0px", font: "28px / 700 / 36px title; 17px / 400 / 24px text", use: "모험, 소통, 도전 cards on the Studio world page: image above, title and #5c5c61 text below" }
+    guide-card: { type: card, bg: "#f8f8fa", fg: "#292930", radius: "16px", padding: "36px 36px 64px", size: "368px x 244px", use: "개발 가이드, 출시 가이드, 수익 창출 가이드 cards on the Studio world page" }
+    guide-link: { type: button, bg: "transparent", fg: "#5c46ff", padding: "0px 16px 0px 0px", height: "28px", font: "20px / 500 / 28px -apple-system stack", states: "rest on three instances; no pointer frame", use: "더 알아보기 link at the foot of each guide card" }
   components_harvested: true
 ---
 
@@ -63,408 +299,388 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-ZEPETO (제페토) is the 3D-avatar metaverse social platform built by Naver Z — a place where hundreds of millions of users style avatars, build virtual worlds, watch live shows, and trade creator-made items. Its surfaces split into two registers that share one DNA: a clean, almost utilitarian web product (`web.zepeto.me`) wrapped around a vivid, youthful brand world, and a polished marketing-grade creator studio (`studio.zepeto.me`) that leans all the way into the brand color. The connective tissue is a single saturated electric violet (`#5c46ff`) that functions as the brand anchor — the primary CTA fill on Studio and the link/accent hue on the web app — paired with a playful magenta accent (`#f323ff`) reserved for decorative swatches and gradients.
+ZEPETO (제페토) is a 3D-avatar social platform run by NAVER Z Corp. Its own About page describes it as a place where anyone can express themselves creatively and connect with users around the world: "제페토는 3D 아바타 기반 소셜 플랫폼으로, 누구나 쉽게 창의적으로 자신을 표현하고 전 세계 사용자들과 소통할 수 있는 기회를 제공하고자 합니다." NAVER Z's corporate site puts the ambition in one line — "현실의 한계를 넘어 상상 이상의 세상으로", beyond the limits of reality into a world past imagination. ZEPETO is two products under one name. The web lobby at web.zepeto.me lets people browse and enter worlds. ZEPETO Studio lets creators make items, Unity-built worlds and live content and sell them. Studio's counters read 6,800만 item sales, 230만 creators and 3억 ZEPETO members; a September 2025 post on ZEPETO's blog speaks of more than 4억 members. The platform keeps evolving: in 2026 the blog introduced ZEPETO's first AI streamer, 나미, and then two more, 제야 and 김여주.
 
-The web product surface is intentionally quiet: a near-white canvas (`#ffffff`) with soft cool-grey surfaces (`#f5f5f6`, `#f8f8fa`), body text in a near-black (`#000008`) and muted grey (`#75757a`), and a dark near-black (`#292930`) login button. This is the "tool" mode — readable, dense, content-forward, letting the avatars, worlds, and item thumbnails carry the color. The Studio surface is the "brand" mode: full-bleed violet (`#5c46ff`) hero bands with 64px ExtraBold white headlines, large pill buttons, and a confident editorial cadence ("All you've imagined, At ZEPETO Studio.", "ZEPETO is for the Creators.").
+The two products look different, and the captures show it. The web lobby is quiet and monochrome: a white header with a dark `#292930` 로그인 button and a light-grey `#f5f5f6` ZEM 구매 button, 8px-radius controls, and a grid of 12px-radius world tiles whose thumbnails supply the colour. Studio is where the brand colour lives. Its heroes carry 64px / 800 white headlines ("상상하는 모든 것. 제페토 스튜디오에서.") and a white 68px pill with a violet `#5c46ff` label and a soft glow. Its service cards end in violet `#5c46ff` pill actions, and its guide cards use violet links on `#f8f8fa`. Text runs in `#292930`, descriptions in `#5c5c61`, and sections alternate between white and `#f8f8fa`.
 
-Geometry tells the two-register story precisely. The web product uses tight 8px-radius utility buttons (Login, Buy ZEMs) — efficient, app-like. The Studio reaches for the pill: 24px, 28px, and 34px radius CTAs ("Get Started", "Learn more") and fully circular controls. Depth is mostly flat — `box-shadow: none` dominates both surfaces — with one signature exception: the white "Get Started" pill on the violet hero band lifts on a soft glow shadow (`rgba(0,0,0,0.2) 0px 0px 20px 0px`). The type stack is a system UI sans (`ui-sans-serif` / `-apple-system`) run heavy: 700–800 weight for every headline, 400–500 for body and UI.
+Neither surface loads a web font. The web lobby declares the platform UI stack (`ui-sans-serif, system-ui, -apple-system, …`) and Studio declares `-apple-system, "system-ui", AppleSDGothicNeo, …`, so type renders in each viewer's system face, and hierarchy comes from weight: 800 and 700 for headlines, 500 for navigation and actions, 400 for reading.
 
 **Key Characteristics:**
-- Signature electric violet (`#5c46ff`) — brand anchor: Studio CTA fill, web link/accent
-- Playful magenta (`#f323ff`) accent for decorative swatches and gradients
-- Two registers: quiet grey web product vs. full-violet marketing studio, one shared palette
-- Heavy headline weight — 800 ExtraBold at 64px, 700 Bold at 48px — youthful, declarative
-- System UI sans (`ui-sans-serif` / `-apple-system`) for everything; no custom display font
-- Dark near-black (`#292930`) for the web login button and heading text — not pure black
-- Two-radius story: 8px tight utility buttons on web, 24–34px pills on Studio
-- Mostly flat (`box-shadow: none`); one soft glow (`rgba(0,0,0,0.2) 0px 0px 20px`) on the hero pill
-- Cool-grey neutral ladder (`#5c5c61` → `#75757a` → `#c7c7c9`) for text/UI hierarchy
+- One brand violet, `#5c46ff`: Studio's filled actions, the hero pill label and guide links
+- A monochrome web lobby: `#292930` 로그인, `#f5f5f6` utility buttons, world thumbnails for colour
+- 64px / 800 white hero headlines on Studio; 700 for every other headline
+- Two geometries: 8px utility buttons and 12px world tiles; 16px cards and 24px / 34px pills on Studio
+- Mostly flat, with three soft shadows: the hero pill's glow, a light card shadow, the dropdown menu
+- System UI type throughout; no brand typeface is served
+- Studio sections alternate white and `#f8f8fa`
 
 ## Primary tasks
 
-- Style an avatar and enter a world with friends.
-- Top up ZEMs and wait for the purchase to confirm.
-- Design an avatar item and sell it to players.
-- Publish an interactive world you built in Studio.
+- Browse worlds in the web lobby and enter one (입장하기)
+- Top up ZEM from the web lobby header
+- Learn how to make items, worlds and live content in ZEPETO Studio
+- Start as a creator (시작하기) and read the world development guides
 
 ## 2. Color Palette & Roles
 
+Every token below was read by the deterministic collector on 2026-09-30 from web.zepeto.me/ko, studio.zepeto.me/ko and the Studio world page.
+
 ### Primary
-- **ZEPETO Violet** (`#5c46ff`): The signature brand color. Primary CTA fill on Studio ("Get Started", "Learn more"), the link/accent color on the web product ("More", "Privacy Policy"), and emphasis pills. The system's single "action/brand" hue.
-- **Accent Magenta** (`#f323ff`): A vivid pink-magenta used as a decorative swatch and in gradient accents — the playful counterpart to the violet, never used for plain text.
+- **ZEPETO Violet** (`#5c46ff`): The fill of the three 더 알아보기 actions on Studio home (200 × 48, 24px radius), the label colour of the white hero pills (시작하기, 월드 만들기), and the colour of the 더 알아보기 links on the world page's guide cards. It is the primary because it is the only saturated action fill on any captured product surface. The web lobby's own main action, 로그인, is dark `#292930`; the lobby is otherwise monochrome, and violet appears only on Studio.
+- **On Primary** (`#ffffff`): Labels on the violet actions.
 
-### Ink & Text
-- **Ink** (`#292930`): Dark near-black for the web header Login button fill and for Studio headings/labels. Carries weight without the harshness of pure black.
-- **Ink Pure** (`#000008`): The near-black used for primary body and label text on the web product — a whisper away from black with a faint blue cast.
-- **Pure Black** (`#000000`): Occasional maximum-contrast text on the web canvas.
-- **Body Grey** (`#5c5c61`): Secondary text and inactive nav labels on Studio.
-- **Muted Grey** (`#75757a`): Tertiary text, captions, metadata on the web product.
-- **Muted Alt** (`#47474d`): Disabled/low-emphasis button label (the grey "Enter" button text) and fine print.
-- **Faint Grey** (`#c7c7c9`): Lowest-emphasis labels, disabled glyphs, circular control tint.
+### Text
+- **Ink** (`#292930`): Studio headings, card titles and body text; also the fill of the web lobby's 로그인 and the label of 내 콘텐츠.
+- **Web Ink** (`#000008`): World names and body text in the web lobby.
+- **Body Grey** (`#5c5c61`): Descriptions on Studio's service, feature and guide cards.
+- **Muted** (`#47474d`): The 입장하기 label on the web lobby's hero banners.
+- **Black** (`#000000`): The ZEM 구매 label and header icon buttons in the web lobby.
 
-### Neutral & Surface
-- **Canvas** (`#ffffff`): Page background, white cards, text on violet/dark.
-- **Surface** (`#f5f5f6`): Soft cool-grey fill for utility buttons (Buy ZEMs, Enter) and segmented surfaces.
-- **Surface Alt** (`#f8f8fa`): A slightly lighter grey for feature cards and alternating bands.
-- **Hairline** (`#e0e0e1`): Thin 1px borders and dividers (language switcher, inputs).
+### Surface
+- **Canvas** (`#ffffff`): Pages set no body fill and render on the browser's white; white is set explicitly on Studio's service cards, the hero pills, 내 콘텐츠 and the dropdown menu.
+- **Surface** (`#f5f5f6`): The ZEM 구매 and 입장하기 buttons.
+- **Surface Alt** (`#f8f8fa`): Studio's alternating sections, the guide cards and the selected dropdown option; at 50% it is the ground behind world thumbnails.
+- **Hairline** (`#e0e0e1`): The 1px border of the language dropdown trigger.
 
-### On-color
-- **On Primary** (`#ffffff`): White text/icons on violet and dark surfaces.
+### Translucent values (not tokens)
+- The hero carousel arrows are `rgba(199, 199, 201, 0.5)`, and the Studio navigation is white at 60% (`rgba(255, 255, 255, 0.6)`) at rest. Both are recorded on their components.
+
+### Brand assets, not tokens
+- No logo colour was measured. The June record's decorative magenta was not rendered on any captured page and is no longer listed.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **Web product**: `ui-sans-serif, system-ui, -apple-system` — the platform UI sans stack; no custom webfont is loaded on `web.zepeto.me`.
-- **Studio**: `-apple-system, system-ui, AppleSDGothicNeo` — system sans with a Korean fallback for hangul.
-- The system relies on weight (400 → 800) rather than a distinctive typeface for personality.
+- **Live surface use**: the viewer's system UI face. web.zepeto.me declares `ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif` plus emoji fallbacks (500 observed uses); Studio declares `-apple-system, "system-ui", AppleSDGothicNeo, "Helvetica Neue", "Noto Sans KR", Helvetica, sans-serif` (216 observed uses). No font file is loaded for either; the collector classes both as system faces.
+- **Declared only (no visible use)**: `Noto Sans KR`, `Noto Sans JP` and `Noto Sans SC` — declared, 0 observed uses, no file loaded.
+- **Excluded**: `swiper-icons`, the Swiper carousel library's inline icon font.
+- **No brand typeface**: none of the pages opened names or serves a ZEPETO typeface, and none is claimed.
 
 ### Hierarchy
 
-| Role | Size | Weight | Line Height | Notes |
-|------|------|--------|-------------|-------|
-| Display Hero | 64px (4.00rem) | 800 | 1.09 (70px) | Studio hero "All you've imagined, At ZEPETO Studio." |
-| Display | 48px (3.00rem) | 700 | 1.25 (60px) | Web carousel hero, Studio section titles |
-| Section | 28px (1.75rem) | 700 | 1.29 (36px) | Banner / section headings ("Now download the ZEPETO mobile app!") |
-| Feature Title | 24px (1.50rem) | 700 | 1.33 (32px) | Studio pillar titles (Items / World / Live) |
-| Subtitle | 22px (1.38rem) | 700 | 1.36 (30px) | Step / FAQ sub-headings |
-| Lead | 20px (1.25rem) | 500 | 1.40 (28px) | Hero supporting copy, emphasized list title |
-| Nav | 17px (1.06rem) | 500 | 1.40 (25px) | Studio top-nav item |
-| Button | 15px (0.94rem) | 500 | 1.40 (21px) | Header Login / Studio button label |
-| Body | 16px (1.00rem) | 400 | 1.15 (18.4px) | Standard reading text |
+| Role | Size | Weight | Line Height | Observed on |
+|------|------|--------|-------------|-------------|
+| Display Hero | 64px | 800 | 70px (1.09) | Studio heroes, white |
+| Card Title | 28px | 700 | 36px (1.29) | World page feature and service cards |
+| Service Name | 24px | 700 | 32px (1.33) | Studio home service cards |
+| Guide Title | 22px | 700 | 30px (1.36) | World page guide cards |
+| Hero Button | 22px | 700 | 68px box | 시작하기, 월드 만들기 |
+| Link Large | 20px | 500 | 28px (1.4) | Guide card links |
+| Nav | 17px | 500 | 19.55px (1.15) | Studio navigation; 700 when current |
+| Button | 17px | 500 | 48px box | 더 알아보기 |
+| Entry Button | 17px | 500 | 22px (1.29) | 입장하기 (web) |
+| Body | 17px | 400 | 24px (1.41) | World page descriptions |
+| Body Small | 15px | 400 | 20px (1.33) | Studio home service descriptions |
+| World Name | 15px | 500 | 22px (1.47) | Web lobby world tiles |
+| Web Body | 16px | 400 | 18.4px (1.15) | Web lobby text |
+| Utility Button | 15px | 600 | 20px (1.33) | 내 콘텐츠; 로그인 at 500 |
+| Menu | 14px | 500 | 20px (1.43) | Language dropdown options |
 
 ### Principles
-- **Weight is the hierarchy**: 800 ExtraBold for the top hero, 700 Bold for every other headline, 500 medium for nav/buttons, 400 for body. There is no custom display face — emphasis comes entirely from weight and scale.
-- **Big, declarative headlines**: 48–64px hero type with tight line-height (1.09–1.25) reads as confident and youthful, suited to a Gen-Z avatar platform.
-- **System sans throughout**: A `ui-sans-serif` / `-apple-system` stack keeps rendering fast and native across web and the embedded mobile webviews; the brand personality lives in color and avatars, not letterforms.
-- **Quiet body, loud headers**: Body sits at 16px / 400 in muted grey; headers jump to 700–800 — the contrast is the system's primary rhythm.
+- **Weight carries the hierarchy**: 800 for the hero, 700 for every other headline, 500 for navigation and actions, 400 for reading.
+- **Big, short headlines**: Studio heroes set 64px on a 70px line.
+- **System faces by declaration**: both surfaces ask for the platform face rather than a brand font; the brand lives in violet and in the avatars.
 
 ## 4. Component Stylings
 
 ### Buttons
 
-**Studio Primary CTA**
+**Studio action (primary)**
 - Background: `#5c46ff`
 - Text: `#ffffff`
-- Radius: 28px
-- Padding: 0px 34px
-- Height: 56px
-- Font: 20px weight 500
-- Use: Studio primary call-to-action ("Get Started", "Learn more") — full pill on white
+- Radius: 24px
+- Padding: 0px (fixed 200px width)
+- Height: 48px
+- Font: 17px / 500 / 48px, -apple-system stack
+- States: rest on three instances; no pointer frame
+- Use: 더 알아보기 under the 아이템, 월드 and 라이브 cards on Studio home
 
-**Studio Invert CTA (on violet band)**
+**Hero pill**
 - Background: `#ffffff`
 - Text: `#5c46ff`
 - Radius: 34px
 - Padding: 0px 34px
 - Height: 68px
-- Font: 22px weight 700
-- Shadow: `rgba(0,0,0,0.2) 0px 0px 20px 0px`
-- Use: Hero "Get Started" on the full-violet band — white pill, violet label, soft glow lift
+- Font: 22px / 700 / 68px, -apple-system stack
+- Shadow: `rgba(0, 0, 0, 0.2) 0px 0px 20px 0px`
+- States: rest only
+- Use: 시작하기 (Studio home) and 월드 만들기 (world page) over the dark heroes
 
-**Web Login (Primary, dark)**
+**Web 로그인**
 - Background: `#292930`
 - Text: `#ffffff`
 - Radius: 8px
 - Padding: 10px 16px
 - Height: 40px
-- Font: 15px weight 500
-- Use: Web header Login button — tight near-black utility CTA
+- Font: 15px / 500 / 20px, ui-sans-serif stack
+- States: rest only
+- Use: web lobby header (read, never followed)
 
-**Web Secondary (soft grey)**
+**ZEM 구매**
 - Background: `#f5f5f6`
-- Text: `#292930`
+- Text: `#000000`
 - Radius: 8px
 - Padding: 10px 16px
 - Height: 40px
-- Font: 16px weight 400
-- Use: Web header "Buy ZEMs" / low-emphasis utility action
+- Font: 16px / 400 / 18.4px, ui-sans-serif stack
+- States: rest only
+- Use: web lobby header, beside 로그인
 
-**Enter (grey, disabled-look)**
+**입장하기**
 - Background: `#f5f5f6`
 - Text: `#47474d`
 - Radius: 8px
 - Padding: 14px 34px
 - Height: 56px
-- Font: 17px weight 500
-- Use: "Enter" world/room buttons in the web product list
+- Font: 17px / 500 / 22px, ui-sans-serif stack
+- States: rest only
+- Use: the three hero world banners of the web lobby
 
-### Cards & Containers
-
-**Studio Pillar Card**
-- Background: `#f8f8fa`
-- Text: `#292930`
-- Radius: 24px
-- Use: Studio creation pillar card (Items / World / Live) on the lighter grey surface
-
-**White Feature Card**
+**내 콘텐츠**
 - Background: `#ffffff`
 - Text: `#292930`
-- Radius: 24px
-- Use: White feature/content card; flat, no shadow (separation by tint)
+- Radius: 8px
+- Padding: 10px 16px
+- Height: 40px
+- Font: 15px / 600 / 20px, -apple-system stack
+- States: rest only
+- Use: Studio header (not followed)
 
-### Badges
+**Guide link**
+- Background: transparent
+- Text: `#5c46ff`
+- Padding: 0px 16px 0px 0px
+- Height: 28px
+- Font: 20px / 500 / 28px
+- States: rest only
+- Use: 더 알아보기 at the foot of each guide card
 
-**Violet Emphasis Pill**
-- Background: `#5c46ff`
-- Text: `#ffffff`
-- Radius: 9999px (full)
-- Font: 15px weight 500
-- Use: Emphasis tag / status pill in the brand violet
+**Carousel arrows**
+- Background: `rgba(199, 199, 201, 0.5)`
+- Radius: 50%
+- Size: 36 × 36
+- Use: web lobby hero carousel
 
 ### Navigation
-- Background: transparent over violet hero band
-- Text: `#5c5c61` (inactive) on light, `rgba(255,255,255,0.6)` on dark hero
-- Active: `#292930` text on light surfaces
-- Padding: 15px 16px per item
-- Height: 50px nav items
-- Font: 17px weight 500
-- Use: Studio top nav ("Contents", "Creator Program", "Business", "Guides", "Support")
 
-### Avatars & Controls
-- Shape: circular (9999px / 50%) for carousel prev/next controls and creator avatars
-- Control background: `rgba(199, 199, 201, 0.5)` (translucent faint grey, `#c7c7c9` base)
-- Use: Hero carousel left/right controls; round creator thumbnails
+**Studio navigation**
+- Background: transparent
+- Text: `rgba(255, 255, 255, 0.6)`
+- Padding: 15px 16px
+- Height: 50px
+- Font: 17px / 500 / 19.55px
+- Hover: text `#ffffff`
+- Pressed: text `#ffffff`
+- Selected: text `#ffffff` at weight 700 on the current section's item (world page)
+- Use: Studio top navigation over the dark hero, five items on Studio home
+
+**Language dropdown**
+- Trigger: 1px solid `#e0e0e1`, radius 8px, 74 × 36, text `#292930`
+- Menu: `#ffffff`, radius 8px, padding 8px 0px, shadow `rgba(0, 0, 0, 0.08) 0px 2px 6px 0px`, 180 wide
+- Option: 14px / 500 / 20px, padding 8px 24px
+- Selected: option background `#f8f8fa`
+- Use: 한국어 switcher on both Studio pages, opened by the collector's expansion pass
+
+### Cards
+
+**Service card (Studio home)**
+- Background: `#ffffff`
+- Text: `#292930`
+- Radius: 16px
+- Padding: 42px 32px 32px
+- Size: 320 × 416
+- Use: 아이템, 월드, 라이브, each ending in a violet action
+
+**Feature card (world page)**
+- Text: `#292930` title at 28px / 700 / 36px; `#5c5c61` text at 17px / 400 / 24px
+- Radius: 16px
+- Shadow: `rgba(0, 0, 0, 0.05) 0px 2px 12px 0px`
+- Size: 320 × 438
+- Use: 모험, 소통, 도전
+
+**Guide card (world page)**
+- Background: `#f8f8fa`
+- Text: `#292930`
+- Radius: 16px
+- Padding: 36px 36px 64px
+- Size: 368 × 244
+- Use: 개발 가이드, 출시 가이드, 수익 창출 가이드
+
+**World tile (web lobby)**
+- Thumbnail: 152 × 152, radius 12px, on `rgba(248, 248, 250, 0.5)`
+- Name: `#000008`, 15px / 500 / 22px
+- Use: the lobby's world grid (157 tiles)
 
 ---
 
-**Verified:** 2026-06-17 (omd:add-reference CREATE — Tier 1 live inspect, 2 brand-owned surfaces)
-**Tier 1 sources:** https://web.zepeto.me/ (product, live computed-style), https://studio.zepeto.me/ (creator studio, live computed-style), https://docs.zepeto.me/studio-guide/facecode-guidelines (creator design guidelines, live)
-**Tier 2 sources:** getdesign.md/zepeto — NOT FOUND (no entry); styles.refero.design/?q=zepeto — no ZEPETO match (only fuzzy alphabetical neighbors: Zed/Zelt/Mezmo/Zapier). KR Tier-2 gap as expected; Tier 1 carries the proof.
+**Verified:** 2026-09-30 (deterministic collector capture of three public, logged-out pages — the web lobby and two ZEPETO Studio pages — plus first-party context)
+**Tier 1 sources:** https://web.zepeto.me/ko ; https://studio.zepeto.me/ko ; https://studio.zepeto.me/ko/products/world ; https://web.zepeto.me/ko/about ; https://blog.zepeto.me/ko ; https://www.naverz-corp.com/
+**Tier 2 sources:** getdesign.md/zepeto (HTTP 200, "zepeto — 0 DESIGN.md files") and styles.refero.design/?q=zepeto (HTTP 200, no ZEPETO style entry), requested 2026-09-30; no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: ~8px
-- Scale: 4px, 8px, 10px, 16px, 24px, 34px, 48px, 64px
-- Notable: Studio CTAs use a generous 34px horizontal pad; web utility buttons use a tighter 10px/16px pad — the spacing itself reinforces the product/brand register split.
+- Utility buttons: 10px vertical, 16px horizontal
+- 입장하기: 14px vertical, 34px horizontal
+- Hero pills: 34px horizontal
+- Service cards: 42px top, 32px sides and foot
+- Guide cards: 36px, with 64px at the foot
+- Dropdown options: 8px vertical, 24px horizontal
 
 ### Grid & Container
-- Web product: a centered content column with a full-bleed hero carousel; thumbnail grids for worlds/items
-- Studio: full-width alternating bands — violet hero band, then white/grey feature sections
-- Feature pillars (Items / World / Live) arranged as a 3-up card row on Studio
-- Cards group related creator tools and content
+- The web lobby stacks a white header (로그인, ZEM 구매), a hero carousel of world banners with 입장하기, and a grid of 152px world tiles.
+- Studio pages open on a dark full-width hero with a 64px / 800 white headline and a white pill, then alternate white and `#f8f8fa` sections: three 320px service or feature cards, creator highlights, three guide cards, and a closing call to start.
 
 ### Whitespace Philosophy
-- **Let the avatars carry color**: the web product stays neutral grey/white so 3D avatar and item imagery provides the visual energy.
-- **Brand bands for emphasis**: Studio punctuates white sections with full-violet (`#5c46ff`) bands to mark conversion moments.
-- **Flat segmentation**: sections separate by background tint (`#f5f5f6` / `#f8f8fa` vs `#ffffff`), not shadow stacks.
+- **Content leads in the lobby**: world thumbnails carry the colour; the chrome stays grey and white.
+- **Studio breathes**: 16px-radius cards with 32–42px padding and large headlines.
 
 ### Border Radius Scale
-- Small (8px): web utility buttons, language switcher, inputs
-- Medium (24px): feature/pillar cards, mid-size pill buttons
-- Large (28–34px): Studio primary CTAs, hero pills
-- Full (9999px / 50%): badges, circular avatars and carousel controls
+- 0px: text blocks and links
+- 8px: web buttons, 내 콘텐츠, the dropdown
+- 12px: world thumbnails
+- 16px: Studio cards
+- 24px: violet Studio actions
+- 34px: hero pills
+- 50%: carousel arrows
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (Level 0) | No shadow | Most surfaces — page background, cards, nav, headings |
-| Tint (Level 1) | `#f5f5f6` / `#f8f8fa` background shift | Card/section separation without elevation |
-| Soft Glow (Level 2) | `rgba(0,0,0,0.2) 0px 0px 20px 0px` | The white "Get Started" pill on the violet hero band |
+| Flat | No shadow | Web lobby controls, service and guide cards, navigation |
+| Tint | `#f8f8fa` sections and cards | Studio alternation, guide cards |
+| Card | `rgba(0, 0, 0, 0.05) 0px 2px 12px 0px` | World page feature cards |
+| Menu | `rgba(0, 0, 0, 0.08) 0px 2px 6px 0px` | Language dropdown |
+| Glow | `rgba(0, 0, 0, 0.2) 0px 0px 20px 0px` | Hero pills |
 
-**Shadow Philosophy**: ZEPETO is a near-flat system. Live inspection found `box-shadow: none` across nearly every button, card, nav, and heading on both `web.zepeto.me` and `studio.zepeto.me`. Depth and grouping come from flat tinted surfaces (`#f5f5f6`, `#f8f8fa`) and the strong violet brand bands rather than elevation. The single deliberate exception is a soft, even glow (`rgba(0,0,0,0.2) 0px 0px 20px 0px`) on the white hero CTA pill — a subtle lift that makes the conversion button float just above the violet field. When emphasis is needed elsewhere, the system reaches for color (`#5c46ff`) or the dark ink (`#292930`), never a heavier shadow.
+**Shadow Philosophy**: shadows are soft and rare. The strongest one belongs to the hero pill, the action Studio most wants pressed.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Use ZEPETO Violet (`#5c46ff`) as the single brand/action color — Studio CTA fill and web link accent
-- Run headlines heavy — 800 ExtraBold at 64px, 700 Bold at 48px — declarative and youthful
-- Use the dark ink (`#292930`) for the primary utility button and headings, not pure black
-- Keep the web product surface quiet (grey/white) so avatars and items carry the color
-- Use full-violet bands on marketing surfaces to mark conversion moments
-- Reach for the pill (24–34px) on brand/marketing CTAs and full-round on avatars
-- Keep utility buttons tight (8px radius) in the web product
-- Stay flat — separate with tint (`#f5f5f6` / `#f8f8fa`), reserve the soft glow for the hero pill
+- Use `#5c46ff` for Studio actions and links, and as the label on a white hero pill
+- Keep the web lobby monochrome: `#292930` for the main action, `#f5f5f6` for utility buttons
+- Set heroes at 64px / 800 and other headlines at 700
+- Use 16px radii for Studio cards and 24px / 34px for pills
+- Alternate white and `#f8f8fa` sections on marketing pages
+- Declare the system UI stack rather than substituting a named font
 
 ### Don't
-- Spread the violet across many UI chrome elements — keep it the single action/brand hue
-- Use the magenta (`#f323ff`) for text or plain buttons — it's a decorative/gradient accent only
-- Use pure black for body text — reserve near-black `#000008` / ink `#292930`
-- Stack heavy drop shadows — the system is near-flat; only the hero pill lifts
-- Set headlines in a light weight — display is always 700–800
-- Mix square sharp corners into brand CTAs — those are pills
-- Add a second saturated accent hue beyond violet + the magenta decorative swatch
-- Let the web product surface compete with avatar/item imagery for color attention
+- Don't use violet in the web lobby's chrome; none was captured there
+- Don't bring back the June record's decorative magenta; it was not rendered
+- Don't stack heavy shadows; the strongest is a 20px, 20% glow
+- Don't invent hover colours for buttons; none were recorded
+- Don't present a system face as a ZEPETO brand typeface
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column; hero carousel full-width; pillar cards stack; embedded app webview |
-| Tablet | 640-1024px | 2-up feature cards, moderate padding |
-| Desktop | 1024-1440px | Full layout, 3-up pillar row, full-violet hero band |
+Only the 1440-pixel desktop viewport was captured; no breakpoint was measured.
 
 ### Touch Targets
-- Studio CTAs at 56–68px height with 34px horizontal padding — large, unmistakable
-- Web utility buttons at 40px height — comfortably tappable in dense chrome
-- Circular carousel controls at 36px diameter
-- Nav items at 50px height for touch
+- 로그인, ZEM 구매, 내 콘텐츠: 40px tall
+- 입장하기: 56px; hero pills: 68px; violet actions: 48px
+- Studio navigation items: 50px; carousel arrows: 36 × 36
 
 ### Collapsing Strategy
-- Hero: 64px ExtraBold headline scales down on mobile, weight 800 maintained
-- Pillar cards: 3-up → stacked single column
-- Violet brand bands maintain full-width treatment, reduce internal padding
-- Web product is mobile-first (the platform is primarily a mobile app); the web surface mirrors app layouts
+- Not measured.
 
 ### Image Behavior
-- 3D avatar, world, and item thumbnails carry the visual color load at all sizes
-- Cards maintain 24px radius across breakpoints
-- Circular avatars stay fully round on every viewport
+- World thumbnails are square with a 12px radius; feature cards place an image above the text.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary / brand CTA: ZEPETO Violet (`#5c46ff`)
-- Decorative accent: Magenta (`#f323ff`)
-- Dark utility button / heading: Ink (`#292930`)
-- Body text: Near-black (`#000008`), muted (`#75757a`)
-- Secondary nav text: Body Grey (`#5c5c61`)
-- Background: Pure White (`#ffffff`)
-- Surface: Cool Grey (`#f5f5f6`), Lighter Grey (`#f8f8fa`)
-- Hairline: `#e0e0e1`
-- On violet/dark: White (`#ffffff`)
+- Brand action: `#5c46ff` with `#ffffff` text
+- Text: `#292930` (Studio), `#000008` (web lobby); descriptions `#5c5c61`; muted label `#47474d`
+- Surfaces: `#ffffff`, `#f5f5f6` (utility buttons), `#f8f8fa` (sections, guide cards)
+- Border: `#e0e0e1`
 
 ### Example Component Prompts
-- "Create a Studio hero on a full `#5c46ff` violet band. Headline 64px system-sans weight 800, line-height 1.09, white. A white pill CTA: `#ffffff` background, `#5c46ff` text, 34px radius, 0 34px padding, 68px height, 22px weight 700, soft glow shadow `rgba(0,0,0,0.2) 0px 0px 20px 0px` — 'Get Started'."
-- "Build a web product header on white. Dark Login button: `#292930` background, white text, 8px radius, 10px 16px padding, 40px height, 15px weight 500. Soft grey 'Buy ZEMs' button: `#f5f5f6` background, `#292930` text, 8px radius."
-- "Design a Studio pillar card: `#f8f8fa` background, 24px radius, no shadow. Title 24px weight 700, `#292930`. Three across (Items / World / Live)."
-- "Create a violet emphasis badge: `#5c46ff` background, white text, full-round (9999px), 15px weight 500."
+- "Create a ZEPETO Studio action: `#5c46ff` pill, 24px radius, 200 × 48, `#ffffff` 17px / 500 label, no shadow, at the foot of a white 320 × 416 card with 16px radius and 42px 32px 32px padding."
+- "Create a hero pill for a dark hero: white, 34px radius, 68px tall, 0 34px padding, `#5c46ff` 22px / 700 label, shadow `rgba(0, 0, 0, 0.2) 0px 0px 20px 0px`."
+- "Create a web lobby header: white bar with a `#f5f5f6` ZEM 구매 button (`#000000` 16px text) and a `#292930` 로그인 button (`#ffffff` 15px / 500 text), both 40px tall with 8px radius and 10px 16px padding."
+- "Create a guide card: `#f8f8fa`, 16px radius, 36px 36px 64px padding, 22px / 700 `#292930` title, 17px `#5c5c61` text, and a `#5c46ff` 20px / 500 더 알아보기 link."
 
 ### Iteration Guide
-1. Violet (`#5c46ff`) is the single brand/action color — Studio CTA fill, web link accent; don't spread it
-2. Headlines are heavy (700–800); body is 400 in muted grey — weight is the hierarchy
-3. Two radius registers: 8px tight utility buttons on web, 24–34px pills on Studio/brand
-4. Stay flat — separate with `#f5f5f6` / `#f8f8fa` tint; only the hero pill carries the soft glow
-5. Dark ink `#292930` for the utility button and headings, near-black `#000008` for body — never pure black
-6. Magenta `#f323ff` is decorative/gradient only — never text or plain buttons
-7. Keep the web product quiet so avatars and items provide the color energy
+1. Violet only for Studio actions and links
+2. A monochrome lobby where content carries the colour
+3. Weight, not typeface, for hierarchy
+4. 8px utility, 16px cards, 24–34px pills
+5. Soft, rare shadows
 
 ---
 
 ## 10. Voice & Tone
 
-ZEPETO's voice is **playful, inviting, and creator-empowering** — a youthful, global-first tone that treats the user as both a player and a maker. The web product speaks in short, direct app labels ("Login", "Buy ZEMs", "Enter", "More"), while the Studio shifts to an aspirational, encouraging register aimed at creators ("All you've imagined, At ZEPETO Studio.", "ZEPETO is for the Creators.", "Limitless possibilities in the palm of my hand."). The platform invites participation — "Would you like to join?" — rather than hard-selling.
+ZEPETO's voice is inviting and creator-first. The web lobby speaks in short Korean labels ("로그인", "ZEM 구매", "입장하기"); Studio speaks in short declarative sentences that end with a full stop and cast the reader as a creator.
 
 | Context | Tone |
 |---|---|
-| Web product CTAs | Short, direct app labels. "Login", "Buy ZEMs", "Enter", "More". |
-| World / show banners | Inviting, fun, slightly cinematic. "Become a contestant on the popular show...", "3, 2, 1, JUMP!". |
-| Studio hero / creator copy | Aspirational, empowering. "All you've imagined, At ZEPETO Studio.", "ZEPETO is for the Creators." |
-| Onboarding prompts | Friendly invitations. "Would you like to join?" |
-| Commerce / currency | Plain and functional. "Buy ZEMs", "Easily top up with ZEM Auto Recharge". |
+| Web lobby actions | Short and functional: "로그인", "ZEM 구매", "입장하기". |
+| Studio headlines | Declarative, aspirational: "상상하는 모든 것. 제페토 스튜디오에서." |
+| Creator invitations | Encouraging: "이제 나도 제페토 크리에이터.", "크리에이터의 상상은 월드가 된다." |
+| Guidance | Plain and helpful: "개발자 가이드 확인은 필수." |
+| Company | Big-picture: "현실의 한계를 넘어 상상 이상의 세상으로". |
 
-**Voice samples (verbatim from live surfaces):**
-- "Would you like to join?" — web hero invitation. *(verified live web.zepeto.me 2026-06-17)*
-- "All you've imagined, At ZEPETO Studio." — Studio hero headline. *(verified live studio.zepeto.me 2026-06-17)*
-- "ZEPETO is for the Creators." — Studio section headline. *(verified live studio.zepeto.me 2026-06-17)*
+**Voice samples (verbatim, opened 2026-09-30):**
+- "상상하는 모든 것. 제페토 스튜디오에서." — Studio home hero.
+- "크리에이터를 위한 제페토." — Studio home section headline.
+- "크리에이터의 상상은 월드가 된다." — Studio world page hero.
+- "제페토는 3D 아바타 기반 소셜 플랫폼으로, …" — web.zepeto.me About page.
 
-**Forbidden register**: corporate stiffness, fear/scarcity sales urgency, jargon-heavy enterprise copy, anything that frames creation as difficult rather than playful.
+**Forbidden register**: corporate stiffness, scarcity pressure, jargon that makes creating sound hard.
 
 ## 11. Brand Narrative
 
-ZEPETO (제페토) launched in **2018** and is operated by **Naver Z Corporation**, a subsidiary of Korea's Naver, built on the premise that anyone should be able to express themselves as a 3D avatar and build, share, and monetize virtual experiences. The platform pairs an avatar-creation engine with social worlds, live shows, and a creator economy denominated in its in-app currency, **ZEM**. It grew into one of the world's largest metaverse platforms, especially popular with Gen-Z users across Asia and globally.
+ZEPETO's About page defines the product in a sentence: a 3D-avatar social platform that gives anyone an easy, creative way to express themselves and to connect with people around the world. Every page opened carries "NAVER Z Corp. All rights reserved.", and NAVER Z's own site frames the company's work as going "beyond the limits of reality" and making "새로운 경험" for everyone's enjoyment.
 
-The product is deliberately two-sided. On the consumer side (`web.zepeto.me`), users style avatars, enter worlds and rooms, buy ZEMs, and join live shows — a quiet, content-forward surface that lets the avatars and worlds supply the color. On the creator side (`studio.zepeto.me`, with design guidelines at `docs.zepeto.me`), ZEPETO Studio invites anyone to make items, build worlds, and create facecodes — "ZEPETO is for the Creators." — and sell them to the global player base.
+The platform is built around a creator economy. ZEPETO Studio says creators can make everything in the ZEPETO world — fashion items, worlds and live broadcasts — and earn from them. Worlds are built with Unity, the world-building APIs are free, and anyone with a ZEPETO account can join Studio in three steps: sign up, create, and pass review. Studio's counters show 6,800만 item sales, 230만 creators and 3억 members; the world page says millions of users visit ZEPETO worlds every day.
 
-What the design refuses, visible in its surfaces: the cold, corporate chrome of enterprise software and the heavy shadow-stacked look of legacy apps. What it embraces: a single confident brand violet (`#5c46ff`), big heavy youthful headlines, a near-flat aesthetic, and a clear split between a neutral product surface that showcases user-generated avatars and a vivid, encouraging studio that markets creation itself.
+The blog shows where the platform is heading. A September 2025 post describes ZEPETO as a global avatar platform with more than 4억 members, in a collaboration marking the Porsche Carrera GT's 25th anniversary. In July 2025 ZEPETO took billboards in New York's Times Square, and in November 2025 it opened a Hall of Fame for creators. In 2026 it debuted its first official AI streamer, 나미, on ZEPETO LIVE, and then added two more, 제야 and 김여주.
+
+The design follows the split. The web lobby stays neutral so avatars and worlds supply the colour; Studio turns violet to sell creation itself.
 
 ## 12. Principles
 
-1. **Avatars carry the color.** The product surface stays neutral so user-generated avatars, worlds, and items provide the visual energy. *UI implication:* keep web chrome grey/white; reserve saturated hue for brand bands and CTAs.
-2. **One brand hue, two registers.** Violet (`#5c46ff`) means "ZEPETO" and "do this" across both a quiet product and a vivid studio. *UI implication:* fill brand CTAs and link accents with `#5c46ff`; never dilute it across chrome.
-3. **Creation should feel limitless, not difficult.** The Studio voice is aspirational and encouraging. *UI implication:* large pills, inviting copy, generous padding — making the "Get Started" path feel effortless.
-4. **Flat and fast.** Mobile-native clarity beats decorative depth. *UI implication:* near-zero shadows; separate by tint; reserve the one soft glow for the hero conversion pill.
-5. **Weight, not typeface, signals importance.** A system sans run at 400–800 carries the whole hierarchy. *UI implication:* express emphasis through weight and scale, not a custom display font.
+1. **Avatars and worlds carry the colour.** *UI implication:* keep the lobby's chrome white and grey; let thumbnails lead.
+2. **One brand hue for creation.** *UI implication:* `#5c46ff` marks Studio's actions and links, nothing else.
+3. **Creation should feel open.** Studio promises free tools and a three-step start. *UI implication:* large pills, generous card padding, plain guide links.
+4. **Weight, not typeface.** *UI implication:* hierarchy from 800 / 700 / 500 / 400 on the system face.
+5. **Soft depth, used sparingly.** *UI implication:* one glow on the hero pill, a light card shadow, a menu shadow; everything else flat. (An editorial reading of the captured pages, not a ZEPETO statement.)
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable ZEPETO user segments (Gen-Z avatar/social users, virtual-world players, UGC creators selling items), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable ZEPETO user segments (avatar and social users, world visitors, item and world creators), not individual people.*
 
-**민서, 17, 서울.** A high-schooler who styles her avatar daily, hangs out in worlds with friends, and watches live shows. Buys ZEMs occasionally for new outfits. Chose ZEPETO because it feels expressive and social, not like a corporate app.
+**민서, 17, 서울.** Styles her avatar daily, hangs out in worlds with friends and watches live shows. Tops up ZEM now and then for new outfits.
 
-**Diego, 22, São Paulo.** A hobbyist 3D creator who designs and sells avatar items through ZEPETO Studio. Reads the Studio guides and facecode guidelines closely. Values that the studio makes "Get Started" feel approachable and that there's a real global audience to sell to.
+**Diego, 22, São Paulo.** A hobbyist 3D creator who sells avatar items through ZEPETO Studio and follows the Studio guides closely.
 
-**지훈, 28, 경기.** A small-team world builder who uses ZEPETO Studio to publish interactive worlds. Cares about clear creator documentation and a fast, flat UI that doesn't get in the way of building.
+**지훈, 28, 경기.** A small-team world builder who uses Unity and the world guides to publish and monetise worlds.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed on the three captured pages; nothing else is specified here.
+
+| State | Observation |
 |---|---|
-| **Empty (no worlds / items yet)** | White canvas. Single Ink (`#292930`) line explaining nothing is here yet, with one violet (`#5c46ff`) CTA to create or explore. Avatar/illustration may anchor it. |
-| **Empty (creator dashboard, no content)** | Muted (`#75757a`) line inviting the first creation, plus a violet "Get Started" path. Encouraging, never scolding. |
-| **Loading (world / feed fetch)** | Flat grey skeleton blocks on `#f5f5f6` / `#f8f8fa` at final card dimensions, 24px radius. No shadow shimmer — consistent with the flat system. |
-| **Loading (ZEM purchase)** | Inline progress within the button; previous state stays visible until the transaction confirms. |
-| **Error (load failed)** | Inline message in Ink (`#292930`) with a plain-language explanation and a retry. No generic dead-end. |
-| **Error (form / purchase validation)** | Field-level message below the input in a clear tone; describes what's valid, not just "Required". |
-| **Success (purchase / publish)** | Brief inline confirmation in a friendly tone; next step linked immediately below. |
-| **Skeleton** | `#f5f5f6` / `#f8f8fa` blocks at final dimensions, 24px radius, flat pulse. |
-| **Disabled** | Faint Grey (`#c7c7c9`) text on a reduced-opacity surface; grey utility buttons (`#f5f5f6` with `#47474d` label) read as low-emphasis rather than broken. |
+| **Hover / pressed (Studio navigation)** | Text goes from `rgba(255, 255, 255, 0.6)` to opaque `#ffffff`, on all five items on Studio home and all four inactive items on the world page. |
+| **Selected (Studio navigation)** | The current section is `#ffffff` at weight 700. |
+| **Open (language dropdown)** | A white 8px-radius menu with a `rgba(0, 0, 0, 0.08) 0px 2px 6px 0px` shadow; the selected option is `#f8f8fa`. |
+
+No pointer frame was recorded for any button, so button hover, pressed and focus are unmeasured, not absent. The Studio logo link's pressed frame shows only the browser's default active colour, which is not a brand value. Error, empty, loading and success states were not captured.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 120ms | Hover, button press, focus |
-| `motion-standard` | 220ms | Card/section reveal, carousel slide, sheet |
-| `motion-slow` | 360ms | Page-level transitions, hero band reveal |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — cards, sheets, carousel slides |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions |
-
-**Motion rules**: Motion is lively but controlled — fitting a youthful avatar platform without feeling chaotic. Hero carousels slide horizontally at `motion-standard / ease-enter`; the white "Get Started" pill responds to hover with a subtle scale and its soft glow intensifying. Pillar cards fade-in-from-below on scroll. The brand leans playful (avatar animations carry the delight) while keeping UI chrome transitions quick and steady. Under `prefers-reduced-motion: reduce`, all UI transitions collapse to instant and the product remains fully functional.
+The collector reads computed style, not animation, so no duration or easing is measured. Studio's hero headline and pill carry a `fade-up` class, which shows entrance motion exists without timing it. Treat motion as unspecified rather than borrowing values, and honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-17) via global playwright getComputedStyle:
-- https://web.zepeto.me/ (product surface):
-  - Login button — bg rgb(41,41,48) #292930 / color rgb(255,255,255) / radius 8px / padding 10px 16px / 40px / 15px / weight 500
-  - "Buy ZEMs" button — bg rgb(245,245,246) #f5f5f6 / color rgb(0,0,0) / radius 8px / 40px
-  - "Enter" buttons — bg rgb(245,245,246) #f5f5f6 / color rgb(71,71,77) #47474d / radius 8px / padding 14px 34px / 56px
-  - Hero headlines — 48px weight 700 white "Would you like to join?", "3, 2, 1, JUMP!"; section 28px/700 "Now download the ZEPETO mobile app!"
-  - Link/accent color rgb(92,70,255) #5c46ff on "More" / "Privacy Policy" links
-  - Decorative swatch bg rgb(243,35,255) #f323ff
-  - Body text rgb(0,0,8) #000008 (4084 hits), muted rgb(117,117,122) #75757a (2104 hits)
-  - Surfaces rgb(248,248,250) #f8f8fa, rgb(245,245,246) #f5f5f6; font stack ui-sans-serif/system-ui/-apple-system
-- https://studio.zepeto.me/ (creator studio surface):
-  - Primary CTA — bg rgb(92,70,255) #5c46ff / white text / radius 24–28px / padding 0 34px / 48–56px / 17–20px / 500 ("Get Started", "Learn more")
-  - Hero invert CTA — bg #ffffff / color rgb(92,70,255) #5c46ff / radius 34px / 68px / 22px / 700 / shadow rgba(0,0,0,0.2) 0px 0px 20px 0px
-  - Hero H2 — 64px weight 800 white "All you've imagined, At ZEPETO Studio."
-  - Section H2 — 48px weight 700 rgb(41,41,48) #292930 "ZEPETO is for the Creators."
-  - Pillar H3 (Items/World/Live) — 24px weight 700 #292930
-  - Nav items — color rgba(255,255,255,0.6) on dark / rgb(92,92,97) #5c5c61 inactive / padding 15px 16px / 50px / 17px / 500
-  - body color rgb(41,41,48) #292930; surfaces #f8f8fa, rgb(240,240,240); box-shadow none dominant
-- https://docs.zepeto.me/studio-guide/facecode-guidelines (creator design guidelines, fetched live):
-  - Confirms ZEPETO Studio creator design-guideline content (facecodes, items, worlds);
-    "a new customization category composed of blend shapes and color values of an avatar's face"
-
-Token-level claims (§1-9) are sourced from this live inspection.
-
-Voice samples (§10) are verbatim from the live web/studio surfaces (hero headlines, section
-headlines, web invitation).
-
-Brand narrative (§11): ZEPETO (제페토) launched 2018, operated by Naver Z Corporation (Naver
-subsidiary); 3D avatar metaverse social platform with in-app currency ZEM and a creator studio.
-These are widely documented public facts; specific details beyond the live surfaces are general
-public knowledge, not directly quoted from a verified ZEPETO statement in this turn.
-
-Personas (§13) are fictional archetypes informed by publicly observable ZEPETO user segments
-(Gen-Z avatar/social users, UGC creators). Names are illustrative; they do not refer to real people.
-
-Tier 2 (getdesign.md/zepeto, styles.refero.design/?q=zepeto) returned no genuine ZEPETO coverage
-— the expected KR Tier-2 gap. Tier 1 (2 brand-owned surfaces) carries the proof.
-
-Interpretive claims (e.g., "avatars carry the color", "one brand hue, two registers", "flat and
-fast as a rejection of legacy app chrome") are editorial readings connecting ZEPETO's observed
-design to its positioning, not directly sourced ZEPETO statements.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/zepeto.json (capturedAt 2026-09-30T07:52:37Z), deterministic collector, 1440 wide, logged out: web.zepeto.me/ko (the frontmatter homepage web.zepeto.me/ lands there), studio.zepeto.me/ko and studio.zepeto.me/ko/products/world.
+- Labels (로그인, ZEM 구매, 입장하기, 더 알아보기, 시작하기, 월드 만들기, 내 콘텐츠) were read headless on the same pages on 2026-09-30 and from Studio's server HTML.
+- §1, §10, §11: web.zepeto.me/ko/about, blog.zepeto.me/ko and www.naverz-corp.com, opened 2026-09-30, plus the Studio pages' own copy. The June body's launch year, parent-company description and regional audience claims were not on any page opened and were removed.
+- Personas are fictional archetypes. Interpretive readings are editorial.
 -->

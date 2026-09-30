@@ -9,49 +9,171 @@ primary_color: "#111111"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=gentlemonster.com&sz=128"
-verified: "2026-06-17"
+verified: "2026-09-30"
 added: "2026-06-17"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: product-home, url: "https://www.gentlemonster.com/kr/ko", inspected: "2026-09-30" }
+    - { id: surface-2, kind: product, url: "https://www.gentlemonster.com/kr/ko/category/sunglasses/view-all", inspected: "2026-09-30" }
+    - { id: surface-3, kind: product, url: "https://www.gentlemonster.com/kr/ko/item/0PEEZ0A8AASR8/velom01", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://www.gentlemonster.com/kr/ko", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://www.gentlemonster.com/kr/ko/category/sunglasses/view-all", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://www.gentlemonster.com/kr/ko/item/0PEEZ0A8AASR8/velom01", captured: "2026-09-30" }
+    - { id: iicombined-probe-home, kind: product-surface, url: "https://www.gentlemonster.com/kr/ko", captured: "2026-09-30" }
+    - { id: iicombined-about, kind: official-doc, url: "https://www.iicombined.com/about", captured: "2026-09-30" }
+    - { id: tamburins-legal-footer, kind: official-doc, url: "https://www.tamburins.com/kr/", captured: "2026-09-30" }
+    - { id: nudake-legal-footer, kind: official-doc, url: "https://www.nudake.com/kr/", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.ink": &ibody { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.colors.canvas": *ibody
+    "tokens.colors.primary": &ibtn { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"59\"]", captured: "2026-09-30" }
+    "tokens.colors.on-primary": *ibtn
+    "tokens.colors.ink-pure": &inav { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"0\"]", captured: "2026-09-30" }
+    "tokens.colors.on-image": &ihomenav { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"0\"]", captured: "2026-09-30" }
+    "tokens.colors.muted": &imeta { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.chip-selected": &ichipon { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"56\"]", captured: "2026-09-30" }
+    "tokens.colors.outline": &imore { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"196\"]", captured: "2026-09-30" }
+    "tokens.typography.family.display": &ih2 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h2", captured: "2026-09-30" }
+    "tokens.typography.family.body": *ibody
+    "tokens.typography.family.light": &ih3 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h3", captured: "2026-09-30" }
+    "tokens.typography.family.serif-bold": &ih1b { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h1", captured: "2026-09-30" }
+    "tokens.typography.campaign.size": *ih2
+    "tokens.typography.campaign.weight": *ih2
+    "tokens.typography.campaign.lineHeight": *ih2
+    "tokens.typography.campaign.use": *ih2
+    "tokens.typography.collection-title.size": &ih1a { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h1", captured: "2026-09-30" }
+    "tokens.typography.collection-title.weight": *ih1a
+    "tokens.typography.collection-title.lineHeight": *ih1a
+    "tokens.typography.collection-title.use": *ih1a
+    "tokens.typography.product-title.size": *ih1b
+    "tokens.typography.product-title.weight": *ih1b
+    "tokens.typography.product-title.lineHeight": *ih1b
+    "tokens.typography.product-title.use": *ih1b
+    "tokens.typography.section.size": &ih2b { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h2", captured: "2026-09-30" }
+    "tokens.typography.section.weight": *ih2b
+    "tokens.typography.section.lineHeight": *ih2b
+    "tokens.typography.section.use": *ih2b
+    "tokens.typography.body.size": *ibody
+    "tokens.typography.body.weight": *ibody
+    "tokens.typography.body.lineHeight": *ibody
+    "tokens.typography.body.use": *ibody
+    "tokens.typography.nav.size": *inav
+    "tokens.typography.nav.weight": *inav
+    "tokens.typography.nav.lineHeight": *inav
+    "tokens.typography.nav.use": *inav
+    "tokens.typography.product-name.size": *ih3
+    "tokens.typography.product-name.weight": *ih3
+    "tokens.typography.product-name.lineHeight": *ih3
+    "tokens.typography.product-name.use": *ih3
+    "tokens.typography.meta.size": *imeta
+    "tokens.typography.meta.weight": *imeta
+    "tokens.typography.meta.lineHeight": *imeta
+    "tokens.typography.meta.use": *imeta
+    "tokens.typography.button.size": *ibtn
+    "tokens.typography.button.weight": *ibtn
+    "tokens.typography.button.lineHeight": *ibtn
+    "tokens.typography.button.use": *ibtn
+    "tokens.typography.footer.size": &ifoot { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"197\"]", captured: "2026-09-30" }
+    "tokens.typography.footer.weight": *ifoot
+    "tokens.typography.footer.lineHeight": *ifoot
+    "tokens.typography.footer.use": *ifoot
+    "tokens.spacing.pill-x": &ipill { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"56\"]", captured: "2026-09-30" }
+    "tokens.spacing.button-x": *ibtn
+    "tokens.spacing.chip-y": *ichipon
+    "tokens.spacing.chip-x": *ichipon
+    "tokens.rounded.button": *ibtn
+    "tokens.rounded.pill": *ipill
+    "tokens.rounded.chip": *ichipon
+    "tokens.components.primary-button.type": *ibtn
+    "tokens.components.primary-button.bg": *ibtn
+    "tokens.components.primary-button.fg": *ibtn
+    "tokens.components.primary-button.radius": *ibtn
+    "tokens.components.primary-button.padding": *ibtn
+    "tokens.components.primary-button.height": *ibtn
+    "tokens.components.primary-button.font": *ibtn
+    "tokens.components.primary-button.states": *ibtn
+    "tokens.components.primary-button.use": *ibtn
+    "tokens.components.campaign-pill.type": *ipill
+    "tokens.components.campaign-pill.bg": *ipill
+    "tokens.components.campaign-pill.fg": &iprobe { surface_id: home, source_id: iicombined-probe-home, method: live-state-probe, selector: "a 구매하기 (88.5 x 36; own color rgb(17, 17, 17), 16px) -> label child span.link-area, fg rgb(255, 255, 255), 11px/400", captured: "2026-09-30" }
+    "tokens.components.campaign-pill.border": *ipill
+    "tokens.components.campaign-pill.radius": *ipill
+    "tokens.components.campaign-pill.padding": *ipill
+    "tokens.components.campaign-pill.height": *ipill
+    "tokens.components.campaign-pill.font": *iprobe
+    "tokens.components.campaign-pill.states": *iprobe
+    "tokens.components.campaign-pill.use": *ipill
+    "tokens.components.load-more-button.type": *imore
+    "tokens.components.load-more-button.bg": *imore
+    "tokens.components.load-more-button.fg": *imore
+    "tokens.components.load-more-button.border": *imore
+    "tokens.components.load-more-button.radius": *imore
+    "tokens.components.load-more-button.height": *imore
+    "tokens.components.load-more-button.font": *imore
+    "tokens.components.load-more-button.states": *imore
+    "tokens.components.load-more-button.use": *imore
+    "tokens.components.filter-chip.type": &ichipoff { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"57\"]", captured: "2026-09-30" }
+    "tokens.components.filter-chip.bg": *ichipoff
+    "tokens.components.filter-chip.border": *ichipoff
+    "tokens.components.filter-chip.radius": *ichipoff
+    "tokens.components.filter-chip.padding": *ichipoff
+    "tokens.components.filter-chip.height": *ichipoff
+    "tokens.components.filter-chip.selected": *ichipon
+    "tokens.components.filter-chip.states": *ichipoff
+    "tokens.components.filter-chip.use": *ichipoff
+    "tokens.components.header-menu-item.type": *inav
+    "tokens.components.header-menu-item.bg": *inav
+    "tokens.components.header-menu-item.fg": *inav
+    "tokens.components.header-menu-item.height": *inav
+    "tokens.components.header-menu-item.font": *inav
+    "tokens.components.header-menu-item.states": *ihomenav
+    "tokens.components.header-menu-item.use": *inav
+    "tokens.components.underlined-text-action.type": &iul { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"72\"]", captured: "2026-09-30" }
+    "tokens.components.underlined-text-action.bg": *iul
+    "tokens.components.underlined-text-action.fg": *iul
+    "tokens.components.underlined-text-action.height": *iul
+    "tokens.components.underlined-text-action.font": *iul
+    "tokens.components.underlined-text-action.states": *iul
+    "tokens.components.underlined-text-action.use": *iul
 tokens:
-  source: live-extract
-  extracted: "2026-06-17"
-  note: "House design language of IICOMBINED (parent of Gentle Monster, Tamburins, Nudake). primary = near-black ink (#111111) used as text and the solid-button fill on gentlemonster.com; Tamburins runs a parallel near-black ink (#1d1d1d). Achromatic black/white system — no chromatic brand hue. Display voice = custom Gentle Monster Serif; UI = GentleSans (Light 350 / Regular 400) on GM, Pretendard on Tamburins."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
+    ink: "#111111"
     primary: "#111111"
-    ink-alt: "#1d1d1d"
+    on-primary: "#ffffff"
     ink-pure: "#000000"
-    canvas: "#ffffff"
-    surface: "#f3f4f6"
-    surface-alt: "#f2f4f5"
-    on-dark: "#ffffff"
+    canvas: "#f3f4f6"
+    on-image: "#ffffff"
     muted: "#858585"
-    muted-deep: "#343434"
-    muted-mid: "#555555"
-    navy-accent: "#27455c"
-    alert: "#d12b2b"
+    chip-selected: "#dfe3e8"
+    outline: "#ababab"
   typography:
-    family: { display: "Gentle Monster Serif", sans: "GentleSans", sans-alt: "Pretendard" }
-    campaign-serif: { size: 24, weight: 400, lineHeight: 1.17, tracking: 0, use: "Editorial campaign H1 over imagery, Gentle Monster Serif" }
-    section-heading: { size: 24, weight: 500, lineHeight: 1.00, use: "Section / campaign H2, uppercase, Pretendard (Tamburins)" }
-    subhead: { size: 18, weight: 500, lineHeight: 1.57, use: "Collection subhead, Pretendard (Tamburins)" }
-    product-title: { size: 18, weight: 400, lineHeight: 1.50, use: "Product / item heading, GentleSans / Pretendard" }
-    body: { size: 16, weight: 400, lineHeight: 1.50, use: "Standard reading text, GentleSans Regular" }
-    nav: { size: 16, weight: 350, lineHeight: 1.00, use: "Top nav label, GentleSans Light" }
-    meta: { size: 13, weight: 350, lineHeight: 1.38, use: "Menu / overlay label, GentleSans Light" }
-    caption: { size: 12, weight: 350, lineHeight: 1.42, use: "Product name / fine label, GentleSans Light" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 23, xl: 32, xxl: 48, section: 64 }
-  rounded: { sm: 8, md: 25, lg: 45, full: 9999 }
-  shadow:
-    none: "none"
+    family: { display: "gentleMonsterSerif", body: "gentleSansRegularKo", light: "gentleSansLightKo", serif-bold: "gentleSerifBoldKo" }
+    campaign: { size: 24, weight: 400, lineHeight: 1.17, use: "Campaign slide titles over the home hero, white, gentleMonsterSerif" }
+    collection-title: { size: 20, weight: 400, lineHeight: 1.2, use: "Listing title at the head of the sunglasses listing (h1), gentleMonsterSerif" }
+    product-title: { size: 17, weight: 400, lineHeight: 1.29, use: "Product name on the product page (h1), gentleSerifBoldKo" }
+    section: { size: 17, weight: 350, lineHeight: 1.29, use: "Section headings lower on the product page (h2.title), gentleSansLightKo" }
+    body: { size: 16, weight: 400, lineHeight: 1.5, use: "Page body text on all three pages, gentleSansRegularKo" }
+    nav: { size: 13, weight: 350, lineHeight: 1.38, use: "Top menu items in the header, gentleSansLightKo" }
+    product-name: { size: 12, weight: 350, lineHeight: 1.42, use: "Product names under product images (h3), gentleSansLightKo" }
+    meta: { size: 11, weight: 400, lineHeight: 1.45, use: "Grey secondary lines under products on home, gentleSansRegularKo" }
+    button: { size: 12, weight: 400, lineHeight: 1.67, use: "Label of the filled product-page action, gentleSansRegularKo" }
+    footer: { size: 12, weight: 350, lineHeight: 1.42, use: "Footer links, gentleSansLightKo" }
+  spacing: { pill-x: 23, button-x: 10, chip-y: 7, chip-x: 12 }
+  rounded: { button: 8, pill: 25, chip: 35 }
   components:
-    button-outline: { type: button, fg: "#111111", radius: "25px", padding: "0px 23px", height: "36px", font: "16px / 400 GentleSans", border: "1px solid #ffffff", use: "Primary CTA over imagery — 구매하기 / 캠페인 보기, transparent fill, hairline pill" }
-    button-solid: { type: button, bg: "#111111", fg: "#ffffff", radius: "8px", height: "48px", font: "13px / 400 GentleSans", use: "Solid consent / commit action — uppercase, near-black fill" }
-    button-pill-dark: { type: button, fg: "#1d1d1d", radius: "9999px", height: "45px", font: "10px / 400 Pretendard", border: "1px solid #000000", use: "Tamburins outlined pill — full-round, hairline black on white" }
-    nav-link: { type: tab, fg: "#111111", font: "16px / 350 GentleSans", use: "Top nav item", active: "white #ffffff label when over dark hero imagery" }
-    product-card: { type: card, bg: "#ffffff", fg: "#111111", radius: "0px", use: "Full-bleed product / campaign tile — no border, no shadow, image-led" }
-    surface-card: { type: card, bg: "#f3f4f6", fg: "#111111", radius: "0px", use: "Tinted grey content band on canvas" }
-    overlay-label: { type: badge, fg: "#ffffff", font: "13px / 350 GentleSans", use: "White uppercase label set over campaign imagery" }
-    footer-link: { type: listItem, fg: "#111111", font: "16px / 400 GentleSans", use: "Footer / menu navigation link" }
+    primary-button: { type: button, bg: "#111111", fg: "#ffffff", radius: "8px", padding: "0px 10px", height: "48px", font: "12px / 400 / 20px gentleSansRegularKo", states: "rest only; the collector recorded no state frame, and it was not pointer-probed because it is the filled action in the product page's purchase area, where a press could add the item to the bag", use: "The one filled action on the product page at surface-3::[data-omd-capture=\"59\"] (button.btn-common), 327 x 48; its label was not read" }
+    campaign-pill: { type: button, bg: "transparent", fg: "#ffffff", border: "1px solid #ffffff", radius: "25px", padding: "0px 23px", height: "36px", font: "11px / 400 gentleSansRegularKo (label span)", states: "구매하기: hover and pressed show no change within the probe's compared scope (self, its one label span, three ancestor levels; transitions compute 0s); 캠페인 보기: hover and pressed unmeasured because :hover did not match; focus not measured", use: "구매하기 / 캠페인 보기 pair on the home hero slides at home::[data-omd-capture=\"56\"] (88 x 36) and 57 (101 x 36); the anchor itself computes #111111 at 16px, but the visible label is its child span in #ffffff at 11px (fixed probe)" }
+    load-more-button: { type: button, bg: "transparent", fg: "#111111", border: "1px solid #ababab", radius: "8px", height: "44px", font: "12px / 350 gentleSansLightKo", states: "rest only; no state frame", use: "Load-more control under the product grid of the sunglasses listing at surface-2::[data-omd-capture=\"196\"] (button.btn-more), 184 x 44" }
+    filter-chip: { type: tab, bg: "transparent", border: "1px solid #dfe3e8", radius: "35px", padding: "7px 12px", height: "33px", selected: "bg #dfe3e8 with a 1px #dfe3e8 border on the item carrying class on (capture 56)", states: "selected variant read from rest values (capture 56 against 57); no pointer frame", use: "Filter chips at the top of the sunglasses listing at surface-2::[data-omd-capture=\"57\"], 59 x 33; the anchors compute font-size 0px, so their labels sit in children that were not captured and no label colour or font is claimed" }
+    header-menu-item: { type: tab, bg: "transparent", fg: "#000000", height: "18px", font: "13px / 350 / 18px gentleSansLightKo", states: "rest only; over the home hero the same items read #ffffff (home::[data-omd-capture=\"0\"]), so the header recolours with the page", use: "Top menu items in the header of the listing and product pages at surface-2::[data-omd-capture=\"0\"], 48 x 18" }
+    underlined-text-action: { type: button, bg: "transparent", fg: "#111111", height: "16px", font: "11px / 400 / 16px gentleSansRegularKo, uppercase, underlined with a 3px offset", states: "rest only; no state frame", use: "Underlined uppercase text actions repeated 47 times on home at home::[data-omd-capture=\"72\"], 104 x 16; labels were not read" }
   components_harvested: true
 ---
 
@@ -59,370 +181,306 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-IICOMBINED (아이아이컴바인드) is the Korean creative house behind Gentle Monster (eyewear), Tamburins (fragrance), and Nudake (dessert art), and its shared design language reads less like an e-commerce site and more like an installation-grade gallery that happens to sell products. The house aesthetic is rigorously achromatic: a stark canvas of pure white (`#ffffff`) and near-black ink (`#111111` on Gentle Monster, `#1d1d1d` on Tamburins) with no chromatic brand hue at all. Color, when it appears, belongs to the campaign photography and full-bleed video — never to the chrome. The UI deliberately recedes so the imagery can perform, which is the opposite of conventional retail UI that competes for attention with saturated buttons and badges.
+IICOMBINED (아이아이컴바인드) is the Korean company behind the eyewear brand Gentle Monster. Its own site introduces it as "the innovative global company which has fundamentally different paradigm for retailing business", under the line "Unexpected Wonder. High-end Valueness." and the promise of "Brands, made of experimental differentiation." It says Gentle Monster, launched in 2011, was the first brand it made, and that, "frustrated by lack of remarkable brand store", it set out to build retail spaces never seen before. It sums up its brand identity as PSSCS: Product, Space, Styling, Culture & Campaign and Service. The same company — ㈜아이아이컴바인드, business registration 119-86-38589, CEO 김한국 — is named in the legal footers of gentlemonster.com, tamburins.com and nudake.com, so the fragrance brand Tamburins and the dessert brand Nudake belong to the same house, each on its own domain.
 
-The typographic identity is the house's signature flex. Gentle Monster ships a **custom "Gentle Monster Serif"** used exclusively for editorial campaign headlines (24px, weight 400) set in white over dark imagery — a high-fashion, magazine-cover register that signals art-direction over merchandising. Underneath sits the bespoke **GentleSans** family at two quiet weights — Light (350) and Regular (400) — handling navigation, menus, and product labels in a whispered 12–16px. Tamburins runs the parallel structure with **Pretendard** as its functional sans and uppercase section heads. Across both surfaces the principle is identical: one expressive display voice for the campaign, one near-silent sans for the machinery.
+This reference measures the domain it declares, www.gentlemonster.com: Gentle Monster's official online store ("젠틀몬스터 공식 온라인 스토어"). The store's structured data names Hankook Kim as founder and IICOMBINED CO., LTD. as parent organisation. Its navigation shows where the brand is now: a 2026 collection, the Veggie Collection, collaborations with Prada, Maison Margiela and Tekken 8, a Pocket Collection and a page for intelligent eyewear. When the home was probed, the active hero slide was a PRADA GENTLE campaign.
 
-What distinguishes IICOMBINED from other premium retail is its total commitment to flatness and restraint. Live inspection found `box-shadow: none` across nav, hero, and product tiles on both brands — depth comes from full-bleed imagery and tinted grey bands (`#f3f4f6`), never elevation. Interactive chrome is reduced to the hairline pill: a transparent `25px`-radius outlined button on Gentle Monster ("구매하기", "캠페인 보기") and a fully-rounded `9999px` outlined pill on Tamburins, both rendered as a single `1px` stroke. The only solid button in the system is the near-black consent action (`#111111`, 8px radius). The result is a gallery-grade, editorial commerce experience — confident, monochrome, and image-first.
+The captured pages read as an image-led gallery with very little chrome. The page is a pale cool grey (`#f3f4f6`), not white, and every text is near-black `#111111`. Campaign slides carry white serif titles (Gentle Monster Serif, 24px) above a pair of transparent 25px pills drawn only with a 1px white stroke and white 11px labels. The header menu is white over the hero and turns `#000000` on the listing and product pages. On the listing, products are captioned in 12px GentleSans Light with grey `#858585` meta lines, and 35px-radius chips filter the grid, the selected one filled with pale grey `#dfe3e8`. The product page is the only place with a filled action: a full-width `#111111` block with 8px corners and a white label.
 
 **Key Characteristics:**
-- Achromatic system — pure white (`#ffffff`) + near-black ink (`#111111` / `#1d1d1d`), no chromatic brand color
-- Custom "Gentle Monster Serif" for editorial campaign H1 — white over imagery, high-fashion register
-- Bespoke GentleSans at Light (350) and Regular (400); Pretendard on Tamburins — quiet 12–16px UI
-- Hairline outlined pills — 25px-radius transparent CTA (GM), 9999px full pill (Tamburins), 1px stroke
-- Single solid button only — near-black (`#111111`) consent/commit action at 8px radius
-- Flat depth — `box-shadow: none` everywhere; tinted grey bands (`#f3f4f6`) separate, not elevation
-- Full-bleed image and video tiles with zero border — the imagery is the interface
-- Cool neutral text ladder (`#343434` → `#555555` → `#858585`) for secondary hierarchy
+- Pale grey canvas `#f3f4f6` with near-black `#111111` text; white only over imagery
+- A house serif (Gentle Monster Serif) for campaign and listing titles, and a serif bold for product names
+- GentleSans Regular (400) and Light (350) for everything functional, at small sizes: 11–13px labels, 16px body
+- Transparent 25px campaign pills with a 1px white stroke; 35px filter chips; 8px on the few rectangular actions
+- One filled action, `#111111` with white text, on the product page
+- A header that recolours with the page: white over the hero, `#000000` on white pages
+- No shadows on product UI; photography carries depth and colour
 
 ## Primary tasks
 
-- Buy a pair of eyewear straight from the campaign page
-- Browse sunglasses, glasses, bestsellers and gifts from the top navigation
-- Scan the product grid and pick an item by its photo
-- Find a new fragrance collection on the Tamburins storefront
+- Buy a pair straight from a campaign slide
+- Browse sunglasses and glasses, bestsellers and collections from the top menu
+- Filter a listing and load more products
+- Open a product and act on it from the purchase area
+- Find a Gentle Monster store
 
 ## 2. Color Palette & Roles
 
-### Primary (Achromatic)
-- **Ink Black** (`#111111`): The house primary. Gentle Monster's text color (the dominant foreground), the solid-button fill, and the system's single "ink". Near-black rather than pure black for a softer, premium read.
-- **Ink Alt** (`#1d1d1d`): Tamburins' parallel primary ink — the near-black used for body text and outlined-pill labels on the fragrance surface.
-- **Pure White** (`#ffffff`): Page background, product-tile surface, and the label/CTA color when set over dark campaign imagery.
+Every token below was read by the deterministic collector on 2026-09-30 from the Gentle Monster home, the sunglasses listing and a product page, or by the fixed keyboard probe on the home the same day.
+
+### Primary
+- **Ink Black** (`#111111`): The fill of the product page's one filled action (`button.btn-common`, 327 × 48, `rgb(17, 17, 17)`) and the colour of all body text, product names and footer links. It is the primary because it is the measured fill of the primary action, and the pages are otherwise monochrome: the campaign pills are transparent with white strokes, the load-more control is outlined, and the selected filter chip is pale grey. The OneTrust consent dialog's accept button renders the same `#111111` fill, but it is consent chrome, not a product action, and is not used as evidence.
+- **On Primary** (`#ffffff`): The label of the filled action.
 
 ### Neutral & Surface
-- **Pure Black** (`#000000`): Maximum-contrast accent — Tamburins' pill borders and occasional hero text.
-- **Surface Grey** (`#f3f4f6`): Cool light-grey content band that segments sections on the canvas without a border.
-- **Surface Alt** (`#f2f4f5`): A near-identical secondary grey for alternating blocks and menu overlays.
+- **Canvas** (`#f3f4f6`): The body background on all three pages.
+- **Chip Selected** (`#dfe3e8`): The fill and 1px border of the selected filter chip; the unselected chips keep the border only.
+- **Outline** (`#ababab`): The 1px border of the load-more control.
 
-### Text Hierarchy
-- **Ink Black** (`#111111`): Primary text, headings, nav, strong labels.
-- **Muted Deep** (`#343434`): Secondary copy and sub-labels.
-- **Muted Mid** (`#555555`): Tertiary text and metadata.
-- **Muted Grey** (`#858585`): Lowest-emphasis labels, disabled/placeholder text.
-- **On-Dark White** (`#ffffff`): All text and labels set over campaign imagery or dark sections.
+### Text
+- **Ink Black** (`#111111`): Body, product names, footer.
+- **Pure Black** (`#000000`): The header menu on the listing and product pages.
+- **On Image** (`#ffffff`): The header menu over the home hero, campaign titles, and the stroke and labels of the campaign pills.
+- **Muted Grey** (`#858585`): Secondary lines under products on home; also the computed colour of the unselected filter chips' anchors.
 
-### Rare Accents (campaign-scoped, not chrome)
-- **Navy Accent** (`#27455c`): A muted slate-navy that appears only inside campaign artwork/section blocks — never on interactive chrome.
-- **Alert Red** (`#d12b2b`): A sharp editorial red seen sparingly on Tamburins (e.g. notice/error or a single accent mark) — the one warm note in an otherwise monochrome system.
+### Brand assets, not tokens
+- The Gentle Monster logo and campaign imagery were not measured; colour in the photography belongs to the campaigns, and no image colour is a token here.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **Display**: `Gentle Monster Serif` (custom) — used exclusively for Gentle Monster's editorial campaign headlines; a `Times`-class serif fallback covers Latin glyphs. This is the house's expressive, art-directed voice.
-- **Sans (Gentle Monster)**: `GentleSans` — bespoke sans in two weights: Light (350) for nav/menus/captions and Regular (400) for body and product titles.
-- **Sans (Tamburins)**: `Pretendard` — the de-facto Korean product sans, used for all Tamburins UI and uppercase section heads.
+- **Live surface use**: four faces, all loaded and self-hosted by the store through Next.js under `www.gentlemonster.com/kr/_next/static/media/` — `gentleSansRegularKo` (870 observed uses: body, labels, buttons), `gentleSansLightKo` (268: menu items, product names, footer), `gentleMonsterSerif` (5: campaign titles and the listing title) and `gentleSerifBoldKo` (2: the product-page title). The browser reports them under hashed local-font names such as `__gentleSansRegularKo_ca70b3`; the tokens use the face names without the hash.
+- **Official product use**: these faces are named for the brand and are served only by its own store; no distribution or licence page for them was found or opened, so no licence is stated.
+- **Declared only (no visible use)**: `gentleSansLightCn`, `gentleSansLightEn` and `gentleSansLightJp`, plus the generated fallback faces, are declared in `@font-face` with 0 observed uses.
+- **Stack fallbacks**: the body stack continues with `"Sandoll GothicNeo1 Md", Arial, sans-serif`. None of these was loaded, and none is a token.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Notes |
-|------|------|------|--------|-------------|-------|
-| Campaign Headline | Gentle Monster Serif | 24px (1.50rem) | 400 | 1.17 (28px) | Editorial H1 over imagery, white |
-| Section Heading | Pretendard | 24px (1.50rem) | 500 | 1.00 | Uppercase campaign H2 (Tamburins) |
-| Collection Subhead | Pretendard | 18px (1.13rem) | 500 | 1.57 (28.2px) | Collection / feature subhead |
-| Product Title | GentleSans / Pretendard | 18px (1.13rem) | 400 | 1.50 (27px) | Product / item heading |
-| Body | GentleSans | 16px (1.00rem) | 400 | 1.50 (24px) | Standard reading text |
-| Nav Label | GentleSans | 16px (1.00rem) | 350 | 1.00 | Top navigation items |
-| Menu / Overlay | GentleSans | 13px (0.81rem) | 350 | 1.38 (18px) | Overlay menu labels |
-| Caption / Product Name | GentleSans | 12px (0.75rem) | 350 | 1.42 (17px) | Product names, fine labels |
+| Role | Font | Size | Weight | Line Height | Observed on |
+|------|------|------|--------|-------------|-------------|
+| Campaign | gentleMonsterSerif | 24px | 400 | 28px (1.17) | Home hero slide titles, white |
+| Listing title | gentleMonsterSerif | 20px | 400 | 24px (1.2) | Sunglasses listing h1 |
+| Product title | gentleSerifBoldKo | 17px | 400 | 22px (1.29) | Product page h1 |
+| Section | gentleSansLightKo | 17px | 350 | 22px (1.29) | Product page section headings |
+| Body | gentleSansRegularKo | 16px | 400 | 24px (1.5) | Page body |
+| Nav | gentleSansLightKo | 13px | 350 | 18px (1.38) | Header menu |
+| Button | gentleSansRegularKo | 12px | 400 | 20px (1.67) | Filled product-page action |
+| Product name | gentleSansLightKo | 12px | 350 | 17px (1.42) | Captions under product images |
+| Footer | gentleSansLightKo | 12px | 350 | 17px (1.42) | Footer links |
+| Meta | gentleSansRegularKo | 11px | 400 | 16px (1.45) | Grey lines under products |
+| Pill label | gentleSansRegularKo | 11px | 400 | — | Campaign pill labels (probe) |
 
 ### Principles
-- **One serif for art, one sans for machinery**: the custom Gentle Monster Serif carries every campaign headline; GentleSans / Pretendard carry every functional label. They never swap roles.
-- **Whisper-weight UI**: navigation and labels run at weight 350 (GentleSans Light) — an unusually light UI weight that keeps the chrome quiet and the imagery loud.
-- **Small, dense labels**: product names and menu items sit at 12–13px, treating the storefront like a printed catalog index rather than a clickable button grid.
-- **Uppercase for campaign register**: section heads and overlay labels lean on uppercase + letter-spacing to read as editorial titling, not UI copy.
+- **Serif for titles, sans for machinery**: the serifs appear only on campaign, listing and product titles; GentleSans carries every label and control.
+- **Light weights, small sizes**: menu items and product names run at weight 350 and 12–13px; nothing in the captured UI is heavier than 400.
+- **Normal tracking**: no captured product text sets letter-spacing (only the consent dialog does, at 0.13px).
+- **Computed sizes run one pixel under the class names**: `text-13-ko` computes 12px and `text-12-ko` 11px; the values above are the computed ones.
 
 ## 4. Component Stylings
 
 ### Buttons
 
-**Outlined CTA (Primary)**
-- Text: `#111111`
-- Border: 1px solid `#ffffff`
-- Radius: 25px
-- Padding: 0px 23px
-- Font: 16px GentleSans weight 400
-- Height: 36px
-- Use: Primary call-to-action over campaign imagery — "구매하기" (Buy), "캠페인 보기" (View campaign); transparent fill, hairline pill
-
-**Solid Consent**
+**Filled action (product page)**
 - Background: `#111111`
 - Text: `#ffffff`
 - Radius: 8px
-- Font: 13px GentleSans weight 400
-- Height: 48px
-- Use: The system's only solid button — uppercase consent / commit action ("ACCEPT ALL COOKIES")
+- Padding: 0px 10px
+- Height: 48px (327px wide)
+- Font: 12px / 400 / 20px gentleSansRegularKo
+- States: rest only; not pointer-probed, because a press in the purchase area could add the item to the bag
+- Use: the one filled action on the product page
 
-**Tamburins Outlined Pill**
-- Text: `#1d1d1d`
-- Border: 1px solid `#000000`
-- Radius: 9999px
-- Font: 10px Pretendard weight 400
-- Height: 45px
-- Use: Tamburins' fully-rounded outlined pill — hairline black stroke on white
+**Campaign pill**
+- Background: transparent
+- Border: 1px solid `#ffffff`
+- Text: `#ffffff` (the label span; the anchor itself computes `#111111` at 16px)
+- Radius: 25px
+- Padding: 0px 23px
+- Height: 36px
+- Font: 11px / 400 gentleSansRegularKo
+- States: on 구매하기, hover and pressed showed no change within the probe's compared scope; on 캠페인 보기 they were unmeasured
+- Use: the 구매하기 / 캠페인 보기 pair on each home hero slide
 
-### Cards & Containers
-
-**Product / Campaign Tile**
-- Background: `#ffffff`
+**Load-more control**
+- Background: transparent
+- Border: 1px solid `#ababab`
 - Text: `#111111`
-- Radius: 0px
-- Use: Full-bleed product / campaign tile — no border, no shadow, image is the surface
+- Radius: 8px
+- Height: 44px (184px wide)
+- Font: 12px / 350 gentleSansLightKo
+- States: rest only
+- Use: under the product grid of the sunglasses listing
 
-**Tinted Surface Band**
-- Background: `#f3f4f6`
-- Text: `#111111`
-- Radius: 0px
-- Use: Cool-grey content band segmenting sections on the white canvas
+**Underlined text action**
+- Background: transparent
+- Text: `#111111`, uppercase, underlined with a 3px offset
+- Height: 16px
+- Font: 11px / 400 / 16px gentleSansRegularKo
+- Use: repeated 47 times on home; labels were not read
 
-### Badges
+### Navigation & Filters
 
-**Overlay Label**
-- Text: `#ffffff`
-- Font: 13px GentleSans weight 350
-- Use: White uppercase label set over campaign imagery (collection names, tags)
+**Header menu**
+- Background: transparent
+- Text: `#000000` on the listing and product pages; `#ffffff` over the home hero
+- Height: 18px items
+- Font: 13px / 350 / 18px gentleSansLightKo
 
-### Navigation
-- Background: transparent over imagery
-- Text: `#111111` on light, `#ffffff` over dark hero
-- Font: 16px GentleSans weight 350
-- Height: 90px header
-- Active: white `#ffffff` label when nav sits over dark campaign imagery
-- Use: Top horizontal nav ("선글라스", "안경", "베스트셀러", "2026 컬렉션", "선물")
+**Filter chips**
+- Border: 1px solid `#dfe3e8`, background transparent
+- Selected: background `#dfe3e8`
+- Radius: 35px
+- Padding: 7px 12px
+- Height: 33px
+- Labels sit in uncaptured children (the anchors compute font-size 0px), so no label colour or font is specified; the anchors compute `#111111` when selected and `#858585` otherwise
 
-### Footer
-- Links: `#111111`, 16px GentleSans weight 400
-- Use: Footer / menu navigation links
+### Product listing
+- Products are captioned by a 12px / 350 gentleSansLightKo name in `#111111` and 11px `#858585` meta lines. Product images sit directly on the grey canvas with no card fill, border or shadow observed.
 
 ---
 
-**Verified:** 2026-06-17 (omd:add-reference CREATE — Tier 1 live inspect, two brand-owned surfaces)
-**Tier 1 sources:** https://www.gentlemonster.com, https://www.tamburins.com
-**Tier 2 sources:** getdesign.md/gentlemonster — SPA shell, no token content (directory-only); styles.refero.design/?q=gentle+monster — no IICOMBINED-specific style entry (generic catalog grid only)
+**Verified:** 2026-09-30 (deterministic collector capture of three public pages of www.gentlemonster.com, logged out, plus the fixed keyboard probe on the home and first-party company context)
+**Tier 1 sources:** https://www.gentlemonster.com/kr/ko ; https://www.gentlemonster.com/kr/ko/category/sunglasses/view-all ; https://www.gentlemonster.com/kr/ko/item/0PEEZ0A8AASR8/velom01 ; https://www.iicombined.com/about ; https://www.tamburins.com/kr/ ; https://www.nudake.com/kr/
+**Tier 2 sources:** getdesign.md/gentlemonster and getdesign.md/iicombined ("0 DESIGN.md files") and styles.refero.design/?q=gentle%20monster (the query appears only in the search box), requested 2026-09-30; no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: ~8px
-- Scale: 4px, 8px, 12px, 16px, 23px, 32px, 48px, 64px
-- Notable: CTA horizontal padding lands at a measured 23px, giving the hairline pill a generous, gallery-label hit area
+- Campaign pills: 0px 23px padding at 36px height
+- Filter chips: 7px 12px padding at 33px height
+- Filled action: 0px 10px padding at 48px height, full width of the purchase column (327px)
+- The collector's spacing census is led by 12px (168 uses), then 8px (72) and 60px (48)
 
 ### Grid & Container
-- Full-bleed campaign hero — edge-to-edge imagery/video with the serif headline and outlined CTA overlaid
-- Product grids run as borderless image tiles with the product name caption beneath (12px GentleSans)
-- Sections alternate between white (`#ffffff`) canvas and tinted grey (`#f3f4f6`) bands, full-width
-- Tall 90px header floating transparent over the hero, switching label color from ink to white over dark imagery
+- Home: full-bleed hero slides with a serif title and a pill pair near the bottom, then product rails with small captions.
+- Listing: a row of filter chips above a product grid, closed by a centred load-more control.
+- Product page: images beside a 327px purchase column with the serif product title and the filled action.
 
 ### Whitespace Philosophy
-- **Imagery over chrome**: the page is mostly photography and video; UI is a thin layer that never competes with the campaign.
-- **Flat segmentation**: sections separate by background tint (`#f3f4f6` vs `#ffffff`) and full-bleed image edges, never by shadow or heavy border.
-- **Gallery rhythm**: generous vertical breathing room between campaign blocks, like rooms in an exhibition.
+- **Imagery first**: the chrome is thin, light-weight and small so that photography leads.
+- **Grey, not white**: the `#f3f4f6` canvas softens the page behind product photography.
 
 ### Border Radius Scale
-- Sharp (0px): product tiles, surface bands, imagery — the default
-- Small (8px): the solid consent button
-- Pill (25px): the outlined CTA on Gentle Monster
-- Full (45px / 9999px): Tamburins' fully-rounded outlined pill
+- 0px: almost everything (1,120 captured elements)
+- 8px: the filled action and the load-more control
+- 25px: campaign pills
+- 35px: filter chips
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, product tiles, nav — nearly everything |
-| Tint (Level 1) | `#f3f4f6` background shift | Section / band separation without elevation |
-| Image (Level 2) | Full-bleed photography/video | The primary depth device — the imagery itself |
+| Flat | No shadow | Page, header, pills, chips, actions, product images |
+| Tint | `#dfe3e8` fill | Selected filter chip |
+| Stroke | 1px `#ffffff` / `#dfe3e8` / `#ababab` | Pills, chips, load-more |
+| Fill | `#111111` | The product page's filled action |
 
-**Shadow Philosophy**: IICOMBINED is a shadowless house system. Live inspection found `box-shadow: none` across nav, hero, headings, and product tiles on both Gentle Monster and Tamburins. Depth and focus are created entirely by full-bleed imagery, tinted grey bands (`#f3f4f6`), and the contrast of near-black ink (`#111111`) on white. This is a deliberate gallery-grade choice — elevation and card-stacking would read as conventional retail; the house wants the surface to feel like an exhibition wall where the artwork (the product photography) carries all the depth.
+**Shadow Philosophy**: no product element computed a box-shadow. The only layered element on the captured pages is the OneTrust consent dialog with its `rgba(31, 30, 29, 0.6)` scrim, which is third-party consent chrome and not part of the store's design.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Keep the palette achromatic — pure white (`#ffffff`) and near-black ink (`#111111` / `#1d1d1d`) only for chrome
-- Reserve color for the campaign imagery and video, never for buttons or labels
-- Use the custom Gentle Monster Serif for editorial campaign headlines set over imagery
-- Run UI labels at whisper weight (GentleSans Light 350) in small 12–16px sizes
-- Use hairline outlined pills for CTAs — 25px-radius transparent (GM), 9999px full pill (Tamburins)
-- Reserve the single solid button (`#111111`, 8px radius) for consent / commit actions only
-- Separate sections with tinted grey bands (`#f3f4f6`) and full-bleed image edges, not shadows
-- Let product tiles run borderless and full-bleed — the imagery is the interface
+- Use the pale grey `#f3f4f6` canvas and near-black `#111111` text
+- Keep actions quiet: transparent 25px pills with a 1px white stroke over imagery, a 1px `#ababab` outline on white
+- Reserve the filled `#111111` block for the main product action
+- Mark the selected filter with a `#dfe3e8` fill on a 35px chip
+- Set titles in the house serif and everything else in GentleSans at 350–400
+- Recolour the header: white over imagery, black on white pages
 
 ### Don't
-- Introduce a chromatic brand hue into the chrome — the system is monochrome by design
-- Use drop shadows or card elevation — IICOMBINED is a flat, shadowless house
-- Set body or UI text at heavy weights — UI is whisper-weight (350) GentleSans Light
-- Wrap product tiles in borders or rounded corners — they are sharp, borderless image surfaces
-- Spread solid fills across buttons — only the consent action is solid; CTAs are hairline outlines
-- Use pure black (`#000000`) for large text where near-black ink (`#111111`) is the house tone
-- Let UI compete with the imagery — chrome recedes so the campaign performs
+- Don't add a chromatic accent to the chrome; the captured pages have none
+- Don't make the page white; the store's canvas is `#f3f4f6`
+- Don't add shadows to products, pills or actions
+- Don't substitute Arial or a system face and present it as the Gentle Monster faces
+- Don't set labels heavier than 400
+- Don't reuse the consent dialog's styling as a product component
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column, full-bleed hero, nav collapses to menu |
-| Tablet | 640-1024px | 2-up product tiles, moderate padding |
-| Desktop | 1024-1440px | Full layout, floating transparent header, multi-column tile grid |
+Only the 1440 × 900 desktop viewport was captured. Class names such as `desktop:block` and `mobile:flex` show separate mobile layouts; no breakpoint was measured.
 
 ### Touch Targets
-- Outlined CTA at 36px height with 23px horizontal padding — comfortably tappable
-- Tamburins pill at 45px height — generous full-round target
-- Nav labels spaced within the tall 90px header
+- Filled action: 48px tall
+- Load-more control: 44px
+- Campaign pills: 36px
+- Filter chips: 33px
 
 ### Collapsing Strategy
-- Hero: full-bleed campaign imagery maintained at all sizes; serif headline scales down
-- Product grid: multi-column image tiles → 2-up → single column, captions preserved
-- Tinted/white alternating bands maintain full-width treatment
-- Floating header collapses nav items into a menu overlay on mobile
+- Not measured.
 
 ### Image Behavior
-- Campaign imagery and video run full-bleed and borderless at every breakpoint — the core of the system
-- Product tiles maintain sharp 0px corners across breakpoints
-- No shadow on any image at any size, consistent with the flat house language
+- Product and campaign images sit flat on the canvas, without borders or shadows.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary ink / text: Ink Black (`#111111`)
-- Tamburins ink: Ink Alt (`#1d1d1d`)
-- Background: Pure White (`#ffffff`)
-- Tinted band: Surface Grey (`#f3f4f6`)
-- Over-imagery text / label: On-Dark White (`#ffffff`)
-- Secondary text: Muted Deep (`#343434`)
-- Tertiary text: Muted Mid (`#555555`)
-- Faint / disabled: Muted Grey (`#858585`)
-- Solid button fill: Ink Black (`#111111`)
-- Rare accent (campaign only): Navy Accent (`#27455c`), Alert Red (`#d12b2b`)
+- Canvas `#f3f4f6`; text and filled action `#111111`; label on it `#ffffff`
+- Header on white pages `#000000`; over imagery `#ffffff`
+- Secondary text `#858585`
+- Selected chip `#dfe3e8`; outline `#ababab`
 
 ### Example Component Prompts
-- "Create a full-bleed campaign hero: edge-to-edge image, white serif headline at 24px (Gentle Monster Serif / Times fallback), line-height 1.17. Overlay a hairline pill CTA: transparent fill, 1px solid #ffffff border, #111111 text, 25px radius, 0 23px padding, 36px tall, 16px GentleSans — 'Buy' / 'View campaign'."
-- "Design a product tile: white #ffffff background, 0px radius, no border, no shadow. Full-bleed product image with a 12px GentleSans weight 350 product-name caption (#111111) beneath."
-- "Build a tinted section band: #f3f4f6 background, full-width, 0px radius. Uppercase section heading 24px Pretendard weight 500, #111111. No shadow anywhere."
-- "Create the only solid button — consent / commit: #111111 background, #ffffff text, 8px radius, 13px GentleSans, 48px tall, uppercase."
-- "Create a Tamburins outlined pill: transparent fill, 1px solid #000000 border, #1d1d1d text, 9999px radius, 45px tall, 10px Pretendard."
+- "Create the product action: `#111111` background, `#ffffff` 12px label (weight 400, line height 20px), 8px radius, 48px tall, full width of a 327px column, no shadow."
+- "Create a campaign pill over a photo: transparent background, 1px solid `#ffffff` border, `#ffffff` 11px label, 25px radius, 0 23px padding, 36px tall; pair two of them."
+- "Build filter chips: 35px radius, 7px 12px padding, 33px tall, 1px `#dfe3e8` border; the selected chip also fills `#dfe3e8`."
+- "Add a load-more control: transparent, 1px solid `#ababab`, 8px radius, 184 × 44, 12px light label in `#111111`."
 
 ### Iteration Guide
-1. Keep chrome achromatic — white + near-black ink (`#111111`); color lives only in imagery
-2. Gentle Monster Serif for campaign headlines; GentleSans / Pretendard 350–400 for all UI
-3. No shadows — separate with `#f3f4f6` tint and full-bleed image edges
-4. CTAs are hairline outlined pills (25px GM / 9999px Tamburins); only consent is solid `#111111`
-5. Product tiles are sharp (0px), borderless, image-led
-6. UI weight is light (350) and small (12–16px) — the chrome whispers
-7. Let the campaign imagery carry all depth and color
+1. Grey `#f3f4f6` page, `#111111` text
+2. One filled action; everything else transparent, stroked or tinted
+3. Serif for titles, GentleSans 350–400 for UI
+4. 25px pills, 35px chips, 8px rectangles, 0px elsewhere
+5. No shadows; let photography carry colour and depth
 
 ---
 
 ## 10. Voice & Tone
 
-IICOMBINED's voice is **editorial, restrained, and art-directed** — it speaks like an exhibition wall text, not a retail banner. Copy is sparse and confident: campaign titles ("2026 Veggie Collection", "BOLD COLLECTION", "SUMMER TAILS") read as gallery show names, and CTAs are minimal imperatives ("구매하기" / Buy, "캠페인 보기" / View campaign). The house treats the visitor as someone visiting an exhibition who will be moved by the imagery first and informed second — there is no hard sell, no urgency, no discount-driven shouting.
+IICOMBINED's own voice is declarative and aspirational; the Gentle Monster store speaks in very few words and lets campaigns do the talking.
 
 | Context | Tone |
 |---|---|
-| Campaign titles | Editorial, exhibition-named. "2026 Veggie Collection", "BOLD COLLECTION". Title-cased or uppercase, never salesy. |
-| CTAs | Minimal imperatives. "구매하기" (Buy), "캠페인 보기" (View campaign). Two words, no urgency. |
-| Product names | Short, coined, catalog-style. "토피 02", "베르 02", "아덴 02" — product as named object. |
-| Collection copy | Concept-first. "새로운 헤어 퍼퓸 컬렉션" (a new hair-perfume collection) — states the idea plainly. |
-| Consent / system | Functional and quiet. "모두 수락 - ACCEPT ALL COOKIES" — uppercase, no flourish. |
+| Company | Manifesto-like. "Unexpected Wonder. High-end Valueness." |
+| Campaign actions | Two plain Korean verbs. "구매하기", "캠페인 보기". |
+| Store | Descriptive and official. "젠틀몬스터 공식 온라인 스토어". |
+| Collections | Named like shows or projects: "2026 Collection", "Veggie Collection", "Pocket Collection". |
 
-**Voice samples (verbatim from live homepages):**
-- "2026 Veggie Collection" — Gentle Monster campaign H1 (exhibition-named collection). *(verified live 2026-06-17, gentlemonster.com)*
-- "캠페인 보기" — Gentle Monster CTA (view-the-campaign, art-first framing). *(verified live 2026-06-17, gentlemonster.com)*
-- "새로운 헤어 퍼퓸 컬렉션" — Tamburins section heading (concept-first collection copy). *(verified live 2026-06-17, tamburins.com)*
+**Voice samples (verbatim, opened 2026-09-30):**
+- "Unexpected Wonder. High-end Valueness." — iicombined.com.
+- "Brands, made of experimental differentiation." — iicombined.com.
+- "구매하기" / "캠페인 보기" — home campaign pills (fixed probe).
+- "Home | 젠틀몬스터 공식 온라인 스토어" — gentlemonster.com page title.
 
-**Forbidden register**: discount urgency ("SALE!", countdown timers), exclamation-heavy hype, hard-sell upselling, anything that competes with the campaign imagery for attention.
+**Forbidden register**: discount urgency, countdowns, stacked exclamation marks, copy that competes with the campaign imagery.
 
 ## 11. Brand Narrative
 
-IICOMBINED (아이아이컴바인드) is the Korean creative house founded by **Hankook Kim (김한국)** that operates a portfolio of experiential brands — **Gentle Monster** (eyewear, launched 2011), **Tamburins** (fragrance and body care), and **Nudake** ("make a new dream", a conceptual dessert/art brand). The house's founding premise rejects the convention that a retail brand is a catalog of products: instead, each brand is run as an art-and-space practice, where flagship stores are rotating installations and the product is the artifact left behind by an exhibition.
+IICOMBINED describes itself as a company that approaches retail with "fundamentally different paradigm", creating brands, products and projects and "evolving it in our own way over the limit". Its first brand was Gentle Monster, a luxury eyewear brand launched in 2011. The about page explains the store strategy in the company's own words: frustrated by the lack of remarkable brand stores, it decided to make "a never seen before specialty retail space", and it built each brand's identity across five parts it calls PSSCS — Product, Space, Styling, Culture & Campaign and Service. It ends by saying its brands and members work "in creativity and humanity for the people who feels the unexpected wonder".
 
-That installation-first thinking shapes everything in the digital experience. The Gentle Monster site is built like a gallery — full-bleed campaign video, a custom serif used the way a museum uses titling, and a UI so quiet it nearly disappears. Tamburins extends the same monochrome, sculptural sensibility to fragrance, with stark white space and editorial photography. The house treats commerce and art direction as the same discipline; the storefront is a continuation of the physical installation, not a separate marketing channel.
+The house now spans several brands that share one legal entity: the footers of Gentle Monster, Tamburins and Nudake all name ㈜아이아이컴바인드 with the same registration number and CEO, 김한국, and Tamburins and Nudake give the same address, 서울특별시 성동구 뚝섬로 433. Each brand keeps its own site and design; this reference covers Gentle Monster's store only.
 
-What IICOMBINED refuses, visible in its design: the saturated, badge-heavy urgency of conventional e-commerce; chromatic brand palettes that fight the product photography; and decorative depth (shadows, card stacks) that would make the surface feel like a shop rather than a space. What it embraces: an achromatic black-and-white system, custom typography as identity, full-bleed imagery as the primary medium, and a restraint that signals art over merchandising.
+On gentlemonster.com that philosophy reads as restraint. The interface is a thin layer of small, light type over campaign photography; the serif is kept for titles; colour is left to the pictures. The collection and collaboration pages in the navigation (Prada, Maison Margiela, Tekken 8) show a brand that treats each release as a campaign. (The last two sentences are editorial readings of the captured pages, not company statements.)
 
 ## 12. Principles
 
-1. **The imagery is the interface.** Campaign photography and video carry the experience; the UI is a thin overlay. *UI implication:* keep chrome minimal and achromatic so it never competes with full-bleed imagery.
-2. **Monochrome by conviction.** No chromatic brand hue exists in the chrome. *UI implication:* white and near-black ink (`#111111`) only for buttons, text, and structure — color belongs to the campaign.
-3. **Custom type is the identity.** The Gentle Monster Serif and GentleSans are bespoke and non-substitutable. *UI implication:* one expressive serif for campaign headlines, one whisper-weight sans for everything functional.
-4. **Flat as a gallery wall.** Elevation reads as retail; flatness reads as exhibition. *UI implication:* no shadows; separate with tinted bands and image edges.
-5. **Restraint signals premium.** Fewer elements, quieter weights, sharper geometry. *UI implication:* small light labels, one solid button, hairline outlined pills — nothing shouts.
+1. **Unexpected wonder.** The company line. *UI implication:* let campaign imagery surprise; keep the interface out of its way.
+2. **Space as part of the brand.** Space and Styling are two of the five PSSCS parts. *UI implication:* treat the page like a room — a grey canvas, thin chrome, few objects.
+3. **Experimental differentiation.** *UI implication:* distinctive house typefaces instead of a generic sans; serifs only where a title needs a voice.
+4. **One action at a time.** *UI implication:* a single filled `#111111` action on the product page; everything else is a stroke or a text link. (An editorial reading of the captured pages.)
+5. **Quiet type.** *UI implication:* 350–400 weights and 11–13px labels.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable IICOMBINED audience segments (design-aware fashion buyers, fragrance enthusiasts, art-and-retail followers), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable Gentle Monster customer segments (design-aware eyewear buyers, collaboration collectors, visitors to the flagship stores), not individual people.*
 
-**정유진, 27, 서울.** A design-aware shopper who follows Gentle Monster's flagship installations on social. Visits the site to experience the campaign as much as to buy; values that the interface feels like a gallery, not a sale. Would be put off by discount banners or badge clutter.
+**정유진, 27, 서울.** A design-aware shopper who follows Gentle Monster's campaigns. Opens a campaign slide, taps 캠페인 보기, and buys from the product page if the collection lands.
 
-**Marcus Lee, 33, 싱가포르.** A fragrance collector drawn to Tamburins' sculptural bottles and editorial photography. Appreciates the stark monochrome presentation and reads the product as an art object. Distrusts brands whose sites feel like conventional e-commerce.
+**Marcus Lee, 33, Singapore.** A collector of collaboration releases. Goes straight to the Prada and Maison Margiela collections from the menu and filters the listing by chip.
 
-**한소희, 41, 서울.** A creative director who studies IICOMBINED as a case study in retail-as-art. Notices the custom serif, the shadowless flatness, and the whisper-weight UI; cites the house when arguing that restraint and bespoke type signal premium more than ornament does.
+**한소희, 41, 서울.** A creative director who studies the brand's retail spaces. Uses the store to check a new collection before visiting a store listed on the stores page.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed on the three captured pages; nothing else is specified here.
+
+| State | Observation |
 |---|---|
-| **Empty (no products / sold out)** | White canvas. A single near-black ink (`#111111`) line in GentleSans stating the collection is unavailable, with a quiet link back to the campaign. No illustration, no clutter. |
-| **Empty (cart / wishlist, none yet)** | Muted Grey (`#858585`) single line, calm and editorial — nothing saved yet, with a path back to browsing. |
-| **Loading (campaign / imagery)** | Full-bleed neutral placeholder block (`#f3f4f6`) at final dimensions, flat fade-in. No shadow shimmer — consistent with the shadowless system. |
-| **Loading (product grid)** | Sharp 0px-radius `#f3f4f6` tile placeholders at final dimensions, flat pulse. |
-| **Error (load failed)** | Inline near-black (`#111111`) message in GentleSans with a plain retry; if a warm signal is needed, the rare Alert Red (`#d12b2b`) marks it. No generic dialog. |
-| **Error (form validation)** | Field-level message below the input, quiet and specific; describes what is valid, not just "required". |
-| **Success (added / submitted)** | Brief inline confirmation in calm ink tone; next-step detail linked immediately below. No celebratory emoji or color burst. |
-| **Skeleton** | `#f3f4f6` blocks at final dimensions, 0px radius, flat pulse — matches the borderless tile geometry. |
-| **Disabled** | Muted Grey (`#858585`) text on reduced-opacity surface; outlined pills fade their stroke rather than fill grey. |
+| **Selected (filter chip)** | The selected chip fills `#dfe3e8`; unselected chips are transparent with a 1px `#dfe3e8` border. |
+| **Header over imagery** | Menu items are `#ffffff` over the home hero and `#000000` on the listing and product pages. |
+| **Campaign pill hover / pressed** | On 구매하기, the fixed probe found no change within its compared scope (self, the label span, three ancestor levels; transitions 0s). On 캠페인 보기, hover did not match, so it is unmeasured. |
+
+The collector recorded no hover, pressed or focus frame and no interaction event, so those treatments are unmeasured rather than absent. Error, empty, loading and success states were not captured and are not described.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 150ms | Hover, pill press, focus |
-| `motion-standard` | 280ms | Image cross-fade, tile reveal, overlay open |
-| `motion-slow` | 500ms | Full-bleed campaign transitions, hero reveals |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — overlays, tiles, campaign reveals |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions, cross-fades |
-
-**Motion rules**: Motion is cinematic but disciplined — consistent with the gallery aesthetic. Campaign imagery and video cross-fade slowly (`motion-slow / ease-enter`) so transitions feel like scene changes in an exhibition; product tiles fade in flat from neutral placeholders; hairline pills respond to press with a subtle opacity shift, never a bounce. No spring, no overshoot — the house signals art-direction and steadiness, not consumer-app playfulness. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant and ambient campaign motion freezes; the storefront remains fully functional.
+The collector reads computed style, not animation, so no duration or easing is measured. The home hero is a carousel (Swiper slides), which shows that motion exists without timing it. The campaign pills compute `transition: all 0s`. Treat motion as unspecified rather than borrowing values, and honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-17) via playwright getComputedStyle on two IICOMBINED brand-owned surfaces:
-- https://www.gentlemonster.com (redirects to /kr/ko) — body text rgb(17,17,17) #111111 (1438× foreground),
-  custom fonts __gentleSansRegularKo (400) / __gentleSansLightKo (350) / __gentleMonsterSerif (campaign H1),
-  campaign H1 "2026 Veggie Collection" 24px serif white, outlined CTA "구매하기"/"캠페인 보기"
-  (transparent, 1px solid #ffffff, 25px radius, 0 23px padding, 36px), solid consent button #111111 8px radius 48px,
-  body bg #f3f4f6, box-shadow none throughout, doc title "Home | 젠틀몬스터 공식 온라인 스토어"
-- https://www.tamburins.com (redirects to /kr/) — body text rgb(29,29,29) #1d1d1d (494× foreground),
-  Pretendard sans, outlined pill button (transparent, 1px solid #000000, 9999px radius, 45px), uppercase H2
-  "SUMMER TAILS" 24px white, "새로운 헤어 퍼퓸 컬렉션" 18px, rare accent rgb(209,43,43) #d12b2b,
-  box-shadow none, doc title "TAMBURINS 탬버린즈 공식 온라인 스토어"
-
-Token-level claims (§1-9) are sourced from this live inspection of the two brand-owned surfaces.
-
-Voice samples (§10) are verbatim from the live homepages (Gentle Monster campaign H1 + CTA, Tamburins section H2).
-
-Brand narrative (§11): IICOMBINED (아이아이컴바인드) is the parent house of Gentle Monster (eyewear, 2011),
-Tamburins (fragrance), and Nudake (dessert/art), founded by Hankook Kim (김한국). These are widely documented
-public facts about the company; the installation-first creative practice is observable across the brands' flagship
-stores and campaigns. Founding details beyond the live surfaces are general public knowledge, not directly quoted
-from a verified IICOMBINED statement in this turn.
-
-Personas (§13) are fictional archetypes informed by publicly observable IICOMBINED audience segments. Names are
-illustrative; they do not refer to real people.
-
-Interpretive claims (e.g., "the imagery is the interface", "flat as a gallery wall", "monochrome by conviction")
-are editorial readings connecting the house's observed design to its installation-first positioning, not directly
-sourced IICOMBINED statements.
-
-Tier 2: getdesign.md/gentlemonster returns an empty SPA shell (no token content); styles.refero.design has no
-IICOMBINED-specific style entry (search returns the generic catalog grid). Consistent with the documented KR
-coverage gap in spec/regional-sources.yaml — Tier 1 (two brand-owned live inspects) carries the proof.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/iicombined.json (capturedAt 2026-09-30T07:52:34Z), deterministic collector, 1440x900, logged out: www.gentlemonster.com/kr/ko (the frontmatter homepage www.gentlemonster.com lands there), /kr/ko/category/sunglasses/view-all, /kr/ko/item/0PEEZ0A8AASR8/velom01.
+- Campaign pill label colour and states: docs/research/2026-09-29-growth/raw/iicombined-states-home.json (fixed keyboard probe, 2026-09-30T08:06Z, --no-focus --hide-overlays; the OneTrust overlay was hidden, not accepted).
+- §1, §10, §11 context: www.iicombined.com/about and home; the legal footers and structured data of gentlemonster.com, tamburins.com and nudake.com, all opened 2026-09-30. Tamburins and Nudake are cited for company facts only; their sites were not measured and supply no token.
+- Personas are fictional archetypes. Interpretive readings are marked as editorial.
 -->

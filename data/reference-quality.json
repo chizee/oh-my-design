@@ -4,8 +4,8 @@
   "generator": "scripts/build-reference-quality-data.mjs",
   "count": 521,
   "counts": {
-    "verified_v2": 244,
-    "partial": 164,
+    "verified_v2": 255,
+    "partial": 153,
     "legacy_snapshot": 113,
     "total": 521
   },
@@ -60,16 +60,14 @@
     },
     {
       "id": "3o3",
-      "status": "partial",
-      "verified_at": "2026-06-10",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 2,
+      "source_count": 6,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "42dot",
@@ -1458,16 +1456,14 @@
     },
     {
       "id": "elice",
-      "status": "partial",
-      "verified_at": "2026-06-26",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 2,
+      "source_count": 7,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "epidemicsound",
@@ -1600,16 +1596,14 @@
     },
     {
       "id": "finda",
-      "status": "partial",
-      "verified_at": "2026-06-09",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 3,
+      "source_count": 9,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "firstory",
@@ -2128,16 +2122,14 @@
     },
     {
       "id": "heydealer",
-      "status": "partial",
-      "verified_at": "2026-07-02",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 3,
+      "source_count": 7,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "hm",
@@ -2327,16 +2319,14 @@
     },
     {
       "id": "iicombined",
-      "status": "partial",
-      "verified_at": "2026-06-17",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 3,
+      "source_count": 7,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "ikala",
@@ -2988,16 +2978,14 @@
     },
     {
       "id": "liner",
-      "status": "partial",
-      "verified_at": "2026-06-22",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 3,
+      "source_count": 6,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "loglass",
@@ -3426,16 +3414,14 @@
     },
     {
       "id": "moreh",
-      "status": "partial",
-      "verified_at": "2026-06-26",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 3,
+      "source_count": 7,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "moze",
@@ -4004,16 +3990,14 @@
     },
     {
       "id": "payhere",
-      "status": "partial",
-      "verified_at": "2026-07-02",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 3,
+      "source_count": 7,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "paypal",
@@ -5485,16 +5469,14 @@
     },
     {
       "id": "teamblind",
-      "status": "partial",
-      "verified_at": "2026-06-10",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 3,
+      "source_count": 7,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "teamlab",
@@ -6135,16 +6117,14 @@
     },
     {
       "id": "weverse",
-      "status": "partial",
-      "verified_at": "2026-06-26",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 3,
+      "source_count": 6,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "wired",
@@ -6391,16 +6371,14 @@
     },
     {
       "id": "zepeto",
-      "status": "partial",
-      "verified_at": "2026-06-17",
-      "next_reverify_at": null,
-      "evidence_coverage": 0,
-      "surface_count": 0,
-      "source_count": 0,
+      "status": "verified_v2",
+      "verified_at": "2026-09-30",
+      "next_reverify_at": "2027-03-29",
+      "evidence_coverage": 1,
+      "surface_count": 3,
+      "source_count": 6,
       "conflict_count": 0,
-      "reason_codes": [
-        "verification_v2_missing"
-      ]
+      "reason_codes": []
     },
     {
       "id": "zhihu",

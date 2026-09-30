@@ -9,52 +9,220 @@ primary_color: "#00cbd5"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=weverse.io&sz=128"
-verified: "2026-06-26"
+verified: "2026-09-30"
 added: "2026-06-26"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: product-home, url: "https://weverse.io/", inspected: "2026-09-30" }
+    - { id: surface-2, kind: product, url: "https://shop.weverse.io/ko/home", inspected: "2026-09-30" }
+    - { id: surface-3, kind: product, url: "https://shop.weverse.io/ko/shop/KRW/artists/2", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://weverse.io/", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://shop.weverse.io/ko/home", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://shop.weverse.io/ko/shop/KRW/artists/2", captured: "2026-09-30" }
+    - { id: hybe-business, kind: official-doc, url: "https://hybecorp.com/ko/company/business/", captured: "2026-09-30" }
+    - { id: hybe-company, kind: official-doc, url: "https://hybecorp.com/ko/company/info/", captured: "2026-09-30" }
+    - { id: pretendard-license, kind: license, url: "https://github.com/orioncactus/pretendard", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &wlogin { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-09-30" }
+    "tokens.colors.primary-text": *wlogin
+    "tokens.colors.ink": &wbody { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.colors.canvas": *wbody
+    "tokens.colors.shop-ink": &wsbody { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::body", captured: "2026-09-30" }
+    "tokens.colors.shop-heading": &wsh2 { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h2", captured: "2026-09-30" }
+    "tokens.colors.shop-body": &wsmeta { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::p", captured: "2026-09-30" }
+    "tokens.colors.muted": &wsign { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.hairline": &wtab { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"171\"]", captured: "2026-09-30" }
+    "tokens.typography.family.sans": *wbody
+    "tokens.typography.banner-title.size": &wbanner { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::p", captured: "2026-09-30" }
+    "tokens.typography.banner-title.weight": *wbanner
+    "tokens.typography.banner-title.lineHeight": *wbanner
+    "tokens.typography.banner-title.use": *wbanner
+    "tokens.typography.artist-name.size": &wartist { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h3", captured: "2026-09-30" }
+    "tokens.typography.artist-name.weight": *wartist
+    "tokens.typography.artist-name.lineHeight": *wartist
+    "tokens.typography.artist-name.use": *wartist
+    "tokens.typography.section.size": *wsh2
+    "tokens.typography.section.weight": *wsh2
+    "tokens.typography.section.lineHeight": *wsh2
+    "tokens.typography.section.use": *wsh2
+    "tokens.typography.list-title.size": &wlist { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h3", captured: "2026-09-30" }
+    "tokens.typography.list-title.weight": *wlist
+    "tokens.typography.list-title.lineHeight": *wlist
+    "tokens.typography.list-title.use": *wlist
+    "tokens.typography.shop-body.size": *wsbody
+    "tokens.typography.shop-body.weight": *wsbody
+    "tokens.typography.shop-body.lineHeight": *wsbody
+    "tokens.typography.shop-body.use": *wsbody
+    "tokens.typography.tab.size": *wtab
+    "tokens.typography.tab.weight": *wtab
+    "tokens.typography.tab.lineHeight": *wtab
+    "tokens.typography.tab.use": *wtab
+    "tokens.typography.button.size": *wlogin
+    "tokens.typography.button.weight": *wlogin
+    "tokens.typography.button.lineHeight": *wlogin
+    "tokens.typography.button.use": *wlogin
+    "tokens.typography.prompt.size": *wsign
+    "tokens.typography.prompt.weight": *wsign
+    "tokens.typography.prompt.lineHeight": *wsign
+    "tokens.typography.prompt.use": *wsign
+    "tokens.typography.meta.size": *wsmeta
+    "tokens.typography.meta.weight": *wsmeta
+    "tokens.typography.meta.lineHeight": *wsmeta
+    "tokens.typography.meta.use": *wsmeta
+    "tokens.typography.body.size": *wbody
+    "tokens.typography.body.weight": *wbody
+    "tokens.typography.body.use": *wbody
+    "tokens.typography.badge.size": &wbadge { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.typography.badge.weight": *wbadge
+    "tokens.typography.badge.lineHeight": *wbadge
+    "tokens.typography.badge.use": *wbadge
+    "tokens.spacing.control-x": *wlogin
+    "tokens.spacing.menu-y": &wmenu { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]", captured: "2026-09-30" }
+    "tokens.spacing.menu-x": *wmenu
+    "tokens.spacing.card": &wcard { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::article", captured: "2026-09-30" }
+    "tokens.rounded.control": *wlogin
+    "tokens.rounded.card": *wcard
+    "tokens.rounded.float": &wfloat { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"180\"]", captured: "2026-09-30" }
+    "tokens.rounded.pill": *wtab
+    "tokens.shadow.card": *wcard
+    "tokens.shadow.float": *wfloat
+    "tokens.shadow.chip-ring": &wchip { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::span", captured: "2026-09-30" }
+    "tokens.components.login-button.type": *wlogin
+    "tokens.components.login-button.bg": *wlogin
+    "tokens.components.login-button.fg": *wlogin
+    "tokens.components.login-button.border": *wlogin
+    "tokens.components.login-button.radius": *wlogin
+    "tokens.components.login-button.padding": *wlogin
+    "tokens.components.login-button.height": *wlogin
+    "tokens.components.login-button.font": *wlogin
+    "tokens.components.login-button.states": *wlogin
+    "tokens.components.login-button.use": *wlogin
+    "tokens.components.global-menu-item.type": *wmenu
+    "tokens.components.global-menu-item.bg": *wmenu
+    "tokens.components.global-menu-item.fg": *wmenu
+    "tokens.components.global-menu-item.radius": *wmenu
+    "tokens.components.global-menu-item.padding": *wmenu
+    "tokens.components.global-menu-item.height": *wmenu
+    "tokens.components.global-menu-item.font": *wmenu
+    "tokens.components.global-menu-item.hover": &wmenuh { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]::state-hover", captured: "2026-09-30" }
+    "tokens.components.global-menu-item.pressed": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"4\"]::state-pressed", captured: "2026-09-30" }
+    "tokens.components.global-menu-item.states": *wmenuh
+    "tokens.components.global-menu-item.use": *wmenu
+    "tokens.components.shop-tab.type": *wtab
+    "tokens.components.shop-tab.bg": *wtab
+    "tokens.components.shop-tab.fg": *wtab
+    "tokens.components.shop-tab.border": *wtab
+    "tokens.components.shop-tab.radius": *wtab
+    "tokens.components.shop-tab.padding": *wtab
+    "tokens.components.shop-tab.height": *wtab
+    "tokens.components.shop-tab.font": *wtab
+    "tokens.components.shop-tab.selected": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"170\"]", captured: "2026-09-30" }
+    "tokens.components.shop-tab.states": *wtab
+    "tokens.components.shop-tab.use": *wtab
+    "tokens.components.shop-carousel-arrow.type": &warrow { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"49\"]", captured: "2026-09-30" }
+    "tokens.components.shop-carousel-arrow.bg": *warrow
+    "tokens.components.shop-carousel-arrow.fg": *warrow
+    "tokens.components.shop-carousel-arrow.border": *warrow
+    "tokens.components.shop-carousel-arrow.radius": *warrow
+    "tokens.components.shop-carousel-arrow.height": *warrow
+    "tokens.components.shop-carousel-arrow.disabled": *warrow
+    "tokens.components.shop-carousel-arrow.states": *warrow
+    "tokens.components.shop-carousel-arrow.use": *warrow
+    "tokens.components.banner-arrow.type": &wbarrow { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-09-30" }
+    "tokens.components.banner-arrow.bg": *wbarrow
+    "tokens.components.banner-arrow.fg": *wbarrow
+    "tokens.components.banner-arrow.border": *wbarrow
+    "tokens.components.banner-arrow.radius": *wbarrow
+    "tokens.components.banner-arrow.height": *wbarrow
+    "tokens.components.banner-arrow.states": *wbarrow
+    "tokens.components.banner-arrow.use": *wbarrow
+    "tokens.components.community-badge.type": *wbadge
+    "tokens.components.community-badge.bg": *wbadge
+    "tokens.components.community-badge.fg": *wbadge
+    "tokens.components.community-badge.border": *wbadge
+    "tokens.components.community-badge.radius": *wbadge
+    "tokens.components.community-badge.padding": *wbadge
+    "tokens.components.community-badge.height": *wbadge
+    "tokens.components.community-badge.font": *wbadge
+    "tokens.components.community-badge.use": *wbadge
+    "tokens.components.dm-chip.type": *wchip
+    "tokens.components.dm-chip.bg": *wchip
+    "tokens.components.dm-chip.fg": *wchip
+    "tokens.components.dm-chip.radius": *wchip
+    "tokens.components.dm-chip.padding": *wchip
+    "tokens.components.dm-chip.height": *wchip
+    "tokens.components.dm-chip.font": *wchip
+    "tokens.components.dm-chip.shadow": *wchip
+    "tokens.components.dm-chip.use": *wchip
+    "tokens.components.community-row.type": &wcomm { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"35\"]", captured: "2026-09-30" }
+    "tokens.components.community-row.fg": *wcomm
+    "tokens.components.community-row.height": *wcomm
+    "tokens.components.community-row.use": *wcomm
+    "tokens.components.shop-card.type": *wcard
+    "tokens.components.shop-card.bg": *wcard
+    "tokens.components.shop-card.fg": *wcard
+    "tokens.components.shop-card.radius": *wcard
+    "tokens.components.shop-card.padding": *wcard
+    "tokens.components.shop-card.shadow": *wcard
+    "tokens.components.shop-card.use": *wcard
+    "tokens.components.shop-outline-button.type": &wwide { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"37\"]", captured: "2026-09-30" }
+    "tokens.components.shop-outline-button.bg": *wwide
+    "tokens.components.shop-outline-button.fg": *wwide
+    "tokens.components.shop-outline-button.border": *wwide
+    "tokens.components.shop-outline-button.radius": *wwide
+    "tokens.components.shop-outline-button.padding": *wwide
+    "tokens.components.shop-outline-button.height": *wwide
+    "tokens.components.shop-outline-button.font": *wwide
+    "tokens.components.shop-outline-button.states": *wwide
+    "tokens.components.shop-outline-button.use": *wwide
 tokens:
-  source: live-extract
-  extracted: "2026-06-26"
-  note: "primary = signature Weverse teal (#00cbd5) — dominant accent on Weverse Shop (links/prices) and the login outline border; login CTA text reads slightly darker (#00b8c1); bright teal (#08ccca) on consent accents and a lighter editorial teal (#2bd9d0) on Weverse Magazine. Body ink #202429; pure black #000000 carries the homepage chrome."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
     primary: "#00cbd5"
     primary-text: "#00b8c1"
-    primary-bright: "#08ccca"
-    primary-magazine: "#2bd9d0"
-    ink: "#202429"
-    ink-pure: "#000000"
-    heading: "#111111"
-    body: "#484848"
-    muted: "#8e8e8e"
-    faint: "#aeaeae"
-    hairline: "#e4e4e4"
+    ink: "#000000"
     canvas: "#ffffff"
-    surface-dark: "#3a3a3a"
-    accent-blue: "#5989fe"
-    accent-pink: "#f65895"
-    accent-green: "#00d284"
+    shop-ink: "#202429"
+    shop-heading: "#111111"
+    shop-body: "#484848"
+    muted: "#8e8e8e"
+    hairline: "#ebedf2"
   typography:
     family: { sans: "Pretendard" }
-    display:  { size: 24, weight: 800, lineHeight: 1.29, use: "Artist-card heading on Weverse Shop, Pretendard ExtraBold" }
-    title:    { size: 26, weight: 700, lineHeight: 1.20, use: "Homepage Weverse wordmark / primary page title" }
-    heading:  { size: 18, weight: 700, lineHeight: 1.28, use: "Shop section headings (Best, Notice, Recommended Artist)" }
-    nav:      { size: 15, weight: 500, lineHeight: 1.30, use: "Top-nav menu buttons" }
-    button:   { size: 14, weight: 700, lineHeight: 1.30, use: "Login CTA / filter-pill label" }
-    body:     { size: 16, weight: 400, lineHeight: 1.50, use: "Shop / Magazine reading body" }
-    body-sm:  { size: 13, weight: 400, lineHeight: 1.50, use: "Homepage list rows, captions" }
-    caption:  { size: 12, weight: 700, lineHeight: 1.30, use: "Consent buttons, small chips" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 24, xl: 32, xxl: 48 }
-  rounded: { xs: 4, sm: 8, md: 16, pill: 100, full: 9999 }
+    banner-title: { size: 28, weight: 800, lineHeight: 1.29, use: "Headline on the Weverse Shop home's banner slides, white over imagery or black on light slides" }
+    artist-name: { size: 24, weight: 800, lineHeight: 1.29, use: "Artist names over artist cards on the Weverse Shop home, white" }
+    section: { size: 18, weight: 700, lineHeight: 1.28, use: "Section headings on the Weverse Shop home" }
+    list-title: { size: 16, weight: 700, lineHeight: 1.38, use: "Titles of the recommended DM and featured-community lists on weverse.io" }
+    shop-body: { size: 16, weight: 400, lineHeight: 1.0, use: "Body text on Weverse Shop (line height computes 16px)" }
+    tab: { size: 14, weight: 500, lineHeight: 1.29, use: "Category tabs on Weverse Shop and DM chips on weverse.io" }
+    button: { size: 14, weight: 700, lineHeight: 1.29, use: "로그인 label on weverse.io and the full-width outlined pill on Weverse Shop" }
+    prompt: { size: 14, weight: 500, lineHeight: 1.29, use: "Sign-in prompt in the global menu on weverse.io, grey" }
+    meta: { size: 13, weight: 400, lineHeight: 1.31, use: "Product meta lines under Weverse Shop products" }
+    body: { size: 13, weight: 400, use: "Body text on weverse.io (line height computes normal)" }
+    badge: { size: 11, weight: 700, lineHeight: 1.27, use: "Artist-name badge on weverse.io banner slides" }
+  spacing: { control-x: 16, menu-y: 12, menu-x: 16, card: 16 }
+  rounded: { control: 8, card: 16, float: 18, pill: 100 }
   shadow:
-    none: "none"
+    card: "rgba(0, 0, 0, 0.12) 0px 4px 28px 0px"
+    float: "rgba(0, 0, 0, 0.08) 0px 2px 12px 0px"
+    chip-ring: "rgb(235, 237, 242) 0px 0px 0px 1px inset"
   components:
-    button-login: { type: button, bg: "#ffffff", fg: "#00b8c1", border: "1px solid #00cbd5", radius: "8px", padding: "0px 16px", height: "36px", font: "14px / 700", use: "Header login outline CTA" }
-    button-filter: { type: button, bg: "#000000", fg: "#ffffff", radius: "100px", padding: "0px 16px", height: "36px", font: "14px / 500", use: "Selected artist filter pill on Weverse Shop" }
-    button-consent: { type: button, bg: "#3a3a3a", fg: "#08ccca", radius: "16px", padding: "0px 16px", height: "32px", font: "12px / 700", use: "Cookie-consent accept-all accent button" }
-    card-product: { type: card, bg: "#ffffff", border: "1px solid #e4e4e4", radius: "4px", use: "Weverse Shop product / content card" }
-    badge-price: { type: badge, bg: "#ffffff", fg: "#f65895", radius: "4px", font: "13px / 700", use: "Sale-price / discount highlight" }
-    tab-nav: { type: tab, fg: "#8e8e8e", active: "text #00cbd5", use: "Shop category / nav tab — teal active state" }
-    list-community: { type: listItem, fg: "#000000", height: "48px", font: "13px / 400", use: "Community-finder list row" }
+    login-button: { type: button, bg: "#ffffff", fg: "#00b8c1", border: "1px solid #00cbd5", radius: "8px", padding: "0px 16px", height: "36px", font: "14px / 700 / 18px Pretendard", states: "rest only; not probed, because a press opens sign-in; the collector recorded no state frame for it", use: "로그인 in the global menu's sign-in block under the prompt 로그인하고 나만의 아티스트를 만나보세요! at home::[data-omd-capture=\"3\"], 70 x 36; the label span also computes #00b8c1; its own class is button-_--secondary1; the only teal on a product action across the three captured pages (the artist shop's cookie bar renders a separate teal, #08ccca, on its 전체 동의 label)" }
+    global-menu-item: { type: button, bg: "transparent", fg: "#000000", radius: "8px", padding: "12px 16px", height: "48px", font: "13px / 400 Pretendard", hover: "bg #ffffff", pressed: "bg #ffffff", states: "hover and pressed both read bg #ffffff on all seven sibling items (captures 4-10), a full step from transparent to a clean value, so both are declared; focus is not declared", use: "Items of the global menu on weverse.io at home::[data-omd-capture=\"4\"], 225 x 48; labels were not read" }
+    shop-tab: { type: tab, bg: "#ffffff", fg: "#000000", border: "1px solid #ebedf2", radius: "100px", padding: "0px 16px", height: "36px", font: "14px / 500 / 18px Pretendard", selected: "bg #000000, fg #ffffff, border 1px solid #000000 (capture 170, aria-selected true)", states: "selected read from rest values; the collector's interaction pass activated three tabs (captures 171-173) and each became selected; no pointer frame", use: "Category tabs on Weverse Shop at surface-2::[data-omd-capture=\"171\"]; on the BTS artist shop they read NEW, Merch, Tour Merch, BT21, Album and Global Membership" }
+    shop-carousel-arrow: { type: button, bg: "#ffffff", fg: "#202429", border: "1px solid rgba(0, 0, 0, 0.1)", radius: "100px", height: "36px", disabled: "the collector recorded a disabled state in this group of 18 instances; no separate disabled colour was isolated", states: "rest and disabled at capture; no pointer frame", use: "Previous and next arrows of the carousels on the Weverse Shop home at surface-2::[data-omd-capture=\"49\"], 36 x 36" }
+    banner-arrow: { type: button, bg: "rgba(0, 0, 0, 0.2)", fg: "#ffffff", border: "1px solid rgba(0, 0, 0, 0.04)", radius: "100px", height: "36px", states: "rest only; the collector recorded no state frame for it", use: "Round controls of the weverse.io banner carousel at home::[data-omd-capture=\"22\"], 36 x 36" }
+    community-badge: { type: badge, bg: "rgba(255, 255, 255, 0.04)", fg: "#ffffff", border: "1px solid rgba(255, 255, 255, 0.2)", radius: "100px", padding: "0px 8px", height: "24px", font: "11px / 700 / 14px Pretendard", use: "Artist-name badge on dark weverse.io banner slides (home::div, 81 x 24); a second variant reads rgba(0, 0, 0, 0.04) fill, #000000 text and a rgba(0, 0, 0, 0.2) border" }
+    dm-chip: { type: badge, bg: "transparent", fg: "#000000", radius: "100px", padding: "0px 20px 0px 6px", height: "44px", font: "14px / 500 / 18px Pretendard", shadow: "rgb(235, 237, 242) 0px 0px 0px 1px inset", use: "Recommended Weverse DM chips on weverse.io (home::span, chips-_-wrapper), 133 x 44, a 32px round avatar followed by the artist name" }
+    community-row: { type: listItem, fg: "#000000", height: "76px", use: "Featured-community rows on weverse.io at home::[data-omd-capture=\"35\"], 516 x 76, each led by a 72 x 72 avatar" }
+    shop-card: { type: card, bg: "#ffffff", fg: "#202429", radius: "16px", padding: "16px", shadow: "rgba(0, 0, 0, 0.12) 0px 4px 28px 0px", use: "Raised white panel on the Weverse Shop home (surface-2::article, 1080 x 202) and the artist shop's side panels (713 and 347 wide)" }
+    shop-outline-button: { type: button, bg: "#ffffff", fg: "#000000", border: "1px solid rgba(0, 0, 0, 0.2)", radius: "100px", padding: "0px 16px", height: "36px", font: "14px / 700 / 18px Pretendard", states: "rest only; no state frame", use: "Full-width outlined pill on the Weverse Shop home at surface-2::[data-omd-capture=\"37\"], 1048 x 36; its label was not read" }
   components_harvested: true
 ---
 
@@ -62,383 +230,339 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-Weverse (위버스) is HYBE's global fandom platform, and its surfaces read like a quiet, gallery-white stage built to put artist imagery in the spotlight — the interface itself deliberately recedes. Across the homepage, Weverse Shop, and Weverse Magazine the canvas is pure white (`#ffffff`), and text sits in near-black: pure `#000000` for the homepage chrome and a warmer ink `#202429` for Shop and Magazine reading copy. Chrome is almost monochrome by design; the only saturated voice in the room is a single signature teal — `#00cbd5` — which appears on the login outline, on Shop links and prices, and as the brand's one unmistakable "action" cue. Photography (album art, tour key visuals, artist portraits) does the emotional work; the system supplies a calm neutral frame so fan content never competes with UI.
+Weverse (위버스) is the fan platform that calls itself a "Global Fandom Platform". It is run by Weverse Company Inc. ((주)위버스컴퍼니), whose footer on weverse.io gives a Pangyo address in Seongnam and names two affiliates, Weverse Japan Inc. and Weverse America Inc. HYBE's business page lists WEVERSE COMPANY under a promise to reinvent fandom culture with IT: "모든 팬이 즐겁고 행복할 수 있는 공간, 팬과 아티스트가 더 가깝게 연결되는 세상을 만듭니다." — a space where every fan can be happy, and a world where fans and artists are more closely connected. HYBE describes itself as a global entertainment lifestyle platform company based on music and technology.
 
-The typographic personality is restrained and Korean-product-native: everything is set in **Pretendard**, the de-facto hangul/latin product font, and hierarchy is carried by weight rather than by typeface switching. Headlines on Weverse Shop run heavy — artist names at 24px Pretendard ExtraBold (weight 800) — while section labels sit at 18px / 700, navigation at 15px / 500, and dense body text drops to 13–16px / 400. The login CTA and small chips push to weight 700 at 12–14px. There is no decorative display face; the bold-vs-regular Pretendard ladder is the whole hierarchy.
+Logged out, weverse.io is a front door rather than a feed. A banner carousel carries artist news (SEVENTEEN, &TEAM, BTS, ENHYPEN, TOMORROW X TOGETHER, CORTIS and others), with 추천 커뮤니티, recommended Weverse DM and "서비스 바로가기" links to Shop and Jelly Shop. The communities themselves are for members: a logged-out visit to an artist's feed shows "커뮤니티 멤버만 이용 가능합니다." Weverse Shop, the service linked from that home, calls itself "전 세계 모든 팬들을 위한 No.1 Official Merch Store!", selling everything from global official fan-club memberships to Shop-exclusive goods. Weverse Magazine runs at magazine.weverse.io. The product is still growing: the home was promoting a web subscription offer for Weverse DM when it was captured, and the footer states that Weverse Shop includes items from independent sellers.
 
-What distinguishes Weverse from louder commerce sites is its restraint with both color and depth. The teal never floods the page — its companions are a slightly darker text teal `#00b8c1`, a brighter consent teal `#08ccca`, and a lighter editorial teal `#2bd9d0` on Magazine — and a small functional accent set (info blue `#5989fe`, sale pink `#f65895`, success green `#00d284`) appears only where Shop genuinely needs status color. Depth is essentially flat: separation comes from hairlines (`#e4e4e4`) and a cool dark surface (`#3a3a3a`) for the consent banner rather than drop shadows. Geometry leans into the pill — filter chips and carousel controls at 100px radius, consent buttons at 16px, cards and buttons at a tight 4–8px. The neutral text ladder runs `#111111` → `#484848` → `#8e8e8e` → `#aeaeae` for heading-to-faint hierarchy. The result is a flat, photo-forward, mobile-native aesthetic: a stage, not a storefront.
+The captured pages read as a white stage for artist imagery. weverse.io is white `#ffffff` with pure black `#000000` text, set entirely in Pretendard. The one colour the product adds is a teal: the 로그인 call-to-action in the global menu is a white 8px button with a 1px `#00cbd5` outline and a `#00b8c1` label. Communities appear as rows of round-square 72px avatars, and recommended DMs as 44px pill chips drawn with a 1px `#ebedf2` inset ring. Weverse Shop keeps the same family but warms the ink to `#202429`, heads sections in 18px/700, sets banner headlines in 28px ExtraBold (800), and marks the selected category tab with a black `#000000` pill. Shop panels are the only raised surfaces: white 16px cards with a soft `rgba(0, 0, 0, 0.12) 0px 4px 28px` shadow.
 
 **Key Characteristics:**
-- Pretendard everywhere — weight (800 / 700 / 500 / 400) carries the entire hierarchy, no second display face
-- Single signature teal (`#00cbd5`) reserved as the brand's one "action" color; text teal `#00b8c1` on the login CTA label
-- Gallery-white canvas (`#ffffff`) with near-black text — pure `#000000` chrome on the homepage, warm ink `#202429` for Shop/Magazine body
-- Photo-forward: artist key visuals carry emotion; UI stays neutral so fan content leads
-- Flat depth — hairlines (`#e4e4e4`) and a dark `#3a3a3a` consent surface instead of shadows
-- Pill-leaning geometry — 100px chips, 16px consent buttons, 4–8px cards/buttons
-- Functional accent set (info `#5989fe`, sale `#f65895`, success `#00d284`) used sparingly on Shop status
-- Cool neutral ladder `#111111` → `#484848` → `#8e8e8e` → `#aeaeae`; bright `#08ccca` and editorial `#2bd9d0` as teal variants
+- Pretendard everywhere; weight carries the hierarchy (800 banner and artist names, 700 headings and actions, 500 tabs, 400 body)
+- One accent, the teal `#00cbd5` outline with a `#00b8c1` label, on the 로그인 call-to-action
+- White canvas with pure black text on weverse.io; warmer ink `#202429` on Weverse Shop
+- Pill geometry for tabs, chips, badges and carousel controls (100px); 8px for the login button and menu items; 16px for Shop cards
+- Selection on Shop by a black `#000000` pill with white text
+- Flat home; raised white cards and round floating controls on Shop
+- Artist photography carries the colour of the banners
 
 ## Primary tasks
 
-- Find an artist community and join it
-- Follow posts and livestreams from a favorite group
-- Buy official albums that are hard to find locally
-- Read editorial coverage of K-pop and artist culture
+- Find an artist community and sign in to join it
+- Subscribe to an artist's Weverse DM
+- Buy official albums, merch and memberships on Weverse Shop
+- Browse an artist's shop by category (NEW, Merch, Tour Merch, Album, Global Membership)
 
 ## 2. Color Palette & Roles
 
+Every token below was read by the deterministic collector on 2026-09-30 from weverse.io, the Weverse Shop home and the BTS artist shop.
+
 ### Primary
-- **Weverse Teal** (`#00cbd5`): The signature brand color. Login outline border, Weverse Shop links/prices, and the system's single "action" accent. A clean cyan-teal that is the one saturated voice in an otherwise monochrome UI.
-- **Teal Text** (`#00b8c1`): A slightly darker teal used as the login CTA *text* color against white — the readable companion to the brighter border teal.
-- **Teal Bright** (`#08ccca`): A vivid teal used on consent accents (the "전체 동의 / accept-all" affordance) where extra pop is wanted on the dark surface.
-- **Teal Magazine** (`#2bd9d0`): A lighter editorial teal that appears as the accent on Weverse Magazine.
+- **Weverse Teal** (`#00cbd5`): The 1px outline of the 로그인 call-to-action in the global menu's sign-in block (`home::[data-omd-capture="3"]`, `border: 1px rgb(0, 203, 213)`, 70 × 36). It is the primary because it is the one chromatic colour the product renders on an action, and that action is the one a logged-out visitor is asked to take, under the prompt "로그인하고 나만의 아티스트를 만나보세요!". Every other captured action is neutral, and the two Weverse Shop pages captured today render no teal: Shop marks selection with black. The button's own class is `button-_--secondary1`, so Weverse's component library calls this outlined style a secondary variant; no filled teal button appeared on these pages, and none is specified.
+- **Teal Text** (`#00b8c1`): The label of the same button (the button and its label span both compute `rgb(0, 184, 193)`).
 
 ### Ink & Neutral
-- **Ink** (`#202429`): Primary body/reading text on Weverse Shop and Magazine — a warm near-black.
-- **Pure Black** (`#000000`): Homepage chrome, wordmark, headings, and the selected-filter pill background.
-- **Heading** (`#111111`): Shop section heading text (Best, Notice, Recommended Artist).
-- **Body Slate** (`#484848`): Secondary body copy on Shop.
-- **Muted** (`#8e8e8e`): Tertiary text, metadata, inactive tab labels.
-- **Faint** (`#aeaeae`): Lowest-emphasis labels, placeholders, disabled text.
-- **Hairline** (`#e4e4e4`): Thin borders, dividers, and card outlines — the primary separation device in the shadow-light system.
+- **Ink** (`#000000`): Body text on weverse.io, menu items, chips and community rows; also the fill of the selected Shop tab.
+- **Shop Ink** (`#202429`): Body text on Weverse Shop.
+- **Shop Heading** (`#111111`): Section headings on the Weverse Shop home.
+- **Shop Body** (`#484848`): Product meta lines on Weverse Shop.
+- **Muted** (`#8e8e8e`): The sign-in prompt in the global menu.
+- **Hairline** (`#ebedf2`): The 1px border of unselected Shop tabs and the inset ring of DM chips.
 
 ### Surface
-- **Canvas White** (`#ffffff`): Page background, card surfaces, button/text on teal or dark.
-- **Surface Dark** (`#3a3a3a`): Near-black background for the cookie-consent banner and its chips.
+- **Canvas** (`#ffffff`): Page background on weverse.io, Shop tabs and cards.
 
-### Functional Accents (Shop status)
-- **Info Blue** (`#5989fe`): Links and informational highlights on Weverse Shop.
-- **Sale Pink** (`#f65895`): Discount / sale-price highlight.
-- **Success Green** (`#00d284`): Positive status (in-stock, completed) on Shop.
+### Brand assets, not tokens
+- The Weverse logo and wordmark were not measured, and no logo colour is a token here. A blue `#5989fe` marks "예약판매" (pre-order) labels on Shop products, but only two captured elements carry it, so it stays out of the tokens.
+- Weverse's cookie bar, which appeared on the artist shop, renders its 전체 동의 label in teal `#08ccca` on `#3a3a3a`. It is consent chrome, not a product action, and supplies no token.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **Sans (all roles)**: `Pretendard` (with system fallbacks `-apple-system`, `system-ui`, Helvetica, Arial). One family across homepage, Shop, and Magazine; hierarchy is weight-driven.
+- **Live surface use**: `Pretendard` (1,221 observed uses across all three pages), self-hosted by Weverse as v1.3.9 subsets from `cdn-v2pstatic.weverse.io/wev_web_fe/assets/fonts/pretendard/v1.3.9/` (woff2 with woff companions).
+- **Licence**: Pretendard is an open typeface by Kil Hyung-jin, distributed under the SIL Open Font License 1.1 (the LICENSE file in github.com/orioncactus/pretendard, read 2026-09-30). It is not a Weverse-owned face.
+- **Declared only (no visible use)**: `Circular` (Circular XX web files on the same Weverse CDN), `Noto Sans JP` (same CDN) and `Open Sans` (fonts.gstatic.com) — 0 observed uses. No licence is claimed for Circular XX.
+- **Third-party**: `swiper-icons`, the carousel library's icon font, is excluded.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Notes |
-|------|------|------|--------|-------------|-------|
-| Display (artist card) | Pretendard | 24px (1.50rem) | 800 | 1.29 | Shop artist-card name, ExtraBold |
-| Title / Wordmark | Pretendard | 26px (1.63rem) | 700 | 1.20 | Homepage Weverse wordmark, page title |
-| Section Heading | Pretendard | 18px (1.13rem) | 700 | 1.28 | Shop section labels |
-| Nav | Pretendard | 15px (0.94rem) | 500 | 1.30 | Top-nav menu buttons |
-| Button | Pretendard | 14px (0.88rem) | 700 | 1.30 | Login CTA, filter-pill label |
-| Body | Pretendard | 16px (1.00rem) | 400 | 1.50 | Shop / Magazine reading text |
-| Body Small | Pretendard | 13px (0.81rem) | 400 | 1.50 | Homepage list rows, captions |
-| Caption | Pretendard | 12px (0.75rem) | 700 | 1.30 | Consent buttons, small chips |
+| Role | Font | Size | Weight | Line Height | Observed on |
+|------|------|------|--------|-------------|-------------|
+| Banner title | Pretendard | 28px | 800 | 36px (1.29) | Weverse Shop home banners |
+| Artist name | Pretendard | 24px | 800 | 31px (1.29) | Shop artist cards, white |
+| Section | Pretendard | 18px | 700 | 23px (1.28) | Shop section headings |
+| List title | Pretendard | 16px | 700 | 22px (1.38) | weverse.io list titles |
+| Shop body | Pretendard | 16px | 400 | 16px (1.0) | Weverse Shop body |
+| Tab | Pretendard | 14px | 500 | 18px (1.29) | Shop tabs, DM chips |
+| Button | Pretendard | 14px | 700 | 18px (1.29) | 로그인, Shop outlined pill |
+| Prompt | Pretendard | 14px | 500 | 18px (1.29) | Sign-in prompt, grey |
+| Meta | Pretendard | 13px | 400 | 17px (1.31) | Shop product meta |
+| Body | Pretendard | 13px | 400 | normal | weverse.io body |
+| Badge | Pretendard | 11px | 700 | 14px (1.27) | Banner artist badges |
 
 ### Principles
-- **One family, weight-led hierarchy**: Pretendard does every job; the jump from 800 (artist headlines) to 400 (body) is the system's primary signal. No serif, no secondary display face.
-- **Heavy where it identifies, calm where it informs**: ExtraBold 800 sits on artist names and hero content; 400 carries dense reading and list copy.
-- **Hangul-first sizing**: Body lands at 13–16px — generous for hangul legibility while staying dense enough for content-rich fan feeds and shop grids.
-- **Small UI runs bold**: Login CTA (14/700) and consent chips (12/700) lean heavier than body so interactive labels read clearly at small sizes.
+- **One family, weight-led hierarchy**: every captured text is Pretendard; 800 names artists and banners, 700 heads sections and labels actions, 500 sets tabs, 400 reads.
+- **Small, dense base**: weverse.io body text is 13px; Shop reading text is 16px.
+- **Normal tracking**: no captured product text sets letter-spacing.
 
 ## 4. Component Stylings
 
 ### Buttons
 
-**Login (Outline)**
+**Sign-in call-to-action**
 - Background: `#ffffff`
 - Text: `#00b8c1`
 - Border: 1px solid `#00cbd5`
 - Radius: 8px
 - Padding: 0px 16px
 - Height: 36px
-- Font: 14px Pretendard weight 700
-- Use: Header login call-to-action — the teal-outlined entry point
+- Font: 14px / 700 / 18px Pretendard
+- States: rest only; not probed, because a press opens sign-in
+- Use: 로그인 in the global menu, under the grey prompt "로그인하고 나만의 아티스트를 만나보세요!"
 
-**Artist Filter Pill (Selected)**
-- Background: `#000000`
-- Text: `#ffffff`
+**Global menu item**
+- Background: transparent
+- Text: `#000000`
+- Radius: 8px
+- Padding: 12px 16px
+- Height: 48px (225px wide)
+- Font: 13px / 400 Pretendard
+- Hover and pressed: background `#ffffff` (all seven items agree)
+- Use: items of the global menu on weverse.io
+
+**Shop outlined pill**
+- Background: `#ffffff`
+- Text: `#000000`
+- Border: 1px solid rgba(0, 0, 0, 0.2)
 - Radius: 100px
 - Padding: 0px 16px
-- Height: 36px
-- Font: 14px Pretendard weight 500
-- Use: Selected artist filter chip on Weverse Shop
+- Height: 36px (full width, 1048px)
+- Font: 14px / 700 / 18px Pretendard
+- States: rest only
+- Use: a full-width action on the Weverse Shop home
 
-**Consent Accept-All (Accent)**
-- Background: `#3a3a3a`
-- Text: `#08ccca`
-- Radius: 16px
-- Padding: 0px 16px
-- Height: 32px
-- Font: 12px Pretendard weight 700
-- Use: Cookie-consent accept-all button (teal accent on the dark banner)
-
-**Consent Select (Secondary)**
-- Background: `#3a3a3a`
-- Text: `#e4e4e4`
-- Radius: 16px
-- Padding: 0px 16px
-- Height: 32px
-- Font: 12px Pretendard weight 700
-- Use: Cookie-consent partial-agree button
-
-**Carousel Nav**
-- Background: rgba(0,0,0,0.2)
-- Text: `#ffffff`
-- Border: 1px solid rgba(0,0,0,0.04)
-- Radius: 100px
-- Height: 36px
-- Use: Previous/next banner controls on the homepage hero carousel
-
-### Cards & Containers
-
-**Product / Content Card**
-- Background: `#ffffff`
-- Border: 1px solid `#e4e4e4`
-- Radius: 4px
-- Use: Weverse Shop product and content cards — flat, hairline-outlined, no shadow
-
-### Badges
-
-**Sale Price Highlight**
-- Background: `#ffffff`
-- Text: `#f65895`
-- Radius: 4px
-- Font: 13px Pretendard weight 700
-- Use: Discount / sale-price emphasis on Shop
+**Carousel controls**
+- Shop arrows: `#ffffff`, computed colour `#202429`, 1px rgba(0, 0, 0, 0.1) border, radius 100px, 36 × 36; a disabled state was recorded in the group
+- weverse.io banner controls: rgba(0, 0, 0, 0.2) fill, `#ffffff` computed colour, 1px rgba(0, 0, 0, 0.04) border, radius 100px, 36 × 36
 
 ### Tabs
 
-**Category / Nav Tab**
-- Text (inactive): `#8e8e8e`
-- Active: teal `#00cbd5` text
-- Use: Shop category and section tabs — muted label that turns teal when active
-
-### List Items
-
-**Community Row**
+**Shop category tab**
+- Background: `#ffffff`
 - Text: `#000000`
-- Height: 48px
-- Padding: 12px 16px
-- Radius: 8px
-- Font: 13px Pretendard weight 400
-- Use: Community-finder list row on the homepage ("커뮤니티 찾기")
+- Border: 1px solid `#ebedf2`
+- Radius: 100px
+- Padding: 0px 16px
+- Height: 36px
+- Font: 14px / 500 / 18px Pretendard
+- Selected: background `#000000`, text `#ffffff`, border 1px solid `#000000`
+- Use: NEW, Merch, Tour Merch, BT21, Album, Global Membership on an artist shop, and the category tabs on the Shop home
+
+### Chips & Badges
+
+**DM chip**
+- Background: transparent, with a 1px inset ring `rgb(235, 237, 242) 0px 0px 0px 1px inset`
+- Text: `#000000`
+- Radius: 100px
+- Padding: 0px 20px 0px 6px
+- Height: 44px
+- Font: 14px / 500 / 18px Pretendard
+- Use: recommended Weverse DM on weverse.io, a 32px round avatar and the artist's name
+
+**Banner artist badge**
+- Background: rgba(255, 255, 255, 0.04)
+- Text: `#ffffff`
+- Border: 1px solid rgba(255, 255, 255, 0.2)
+- Radius: 100px
+- Padding: 0px 8px
+- Height: 24px
+- Font: 11px / 700 / 14px Pretendard
+- Second variant: rgba(0, 0, 0, 0.04) fill, `#000000` text, rgba(0, 0, 0, 0.2) border
+
+### Cards & Lists
+
+**Shop card**
+- Background: `#ffffff`
+- Text: `#202429`
+- Radius: 16px
+- Padding: 16px
+- Shadow: rgba(0, 0, 0, 0.12) 0px 4px 28px 0px
+- Use: raised panels on the Shop home and the artist shop's side panels
+
+**Community row**
+- Text: `#000000`
+- Height: 76px (516px wide), led by a 72 × 72 avatar
+- Use: featured communities on weverse.io
 
 ---
 
-**Verified:** 2026-06-26 (omd:add-reference CREATE — Tier 1 live inspect, 3 brand-owned surfaces)
-**Tier 1 sources:** https://weverse.io, https://shop.weverse.io, https://magazine.weverse.io
-**Tier 2 sources:** getdesign.md/weverse — 0 DESIGN.md files (not listed); styles.refero.design/?q=weverse — no Weverse result (not listed)
+**Verified:** 2026-09-30 (deterministic collector capture of weverse.io and two Weverse Shop pages, logged out, plus first-party company context)
+**Tier 1 sources:** https://weverse.io/ ; https://shop.weverse.io/ko/home ; https://shop.weverse.io/ko/shop/KRW/artists/2 ; https://hybecorp.com/ko/company/business/ ; https://hybecorp.com/ko/company/info/
+**Tier 2 sources:** getdesign.md/weverse ("weverse — 0 DESIGN.md files") and styles.refero.design/?q=weverse (the query appears only in the search box), requested 2026-09-30; no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: 4px
-- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 48px
-- Notable: Interactive chrome uses a consistent 16px horizontal padding (login, filter pills, consent buttons); list rows use 12px 16px
+- Controls: 16px horizontal padding (login button, Shop tabs, Shop pill)
+- Menu items: 12px 16px
+- Shop cards: 16px
+- DM chips: 6px before the avatar, 20px after the name
+- The collector's spacing census is led by 12px (123 uses), then 6px (72), 16px (64) and 8px (62)
 
 ### Grid & Container
-- Photo-forward hero: full-bleed banner carousel of artist/tour key visuals, with 100px-radius prev/next controls
-- Weverse Shop: responsive card grid of artist/product tiles on a gallery-white canvas
-- Section bands labelled by 18px / 700 headings (Recommended Artist, Best, Notice)
-- Community-finder presented as a scrollable list of 48px rows
+- weverse.io: a left global menu (sign-in block, then 48px items) beside a banner carousel, a row of recommended DM chips and a two-column list of featured communities.
+- Weverse Shop home: full-width banner slides with 28px headlines, artist cards with white 24px names, product rails in 253px columns, and 16px cards.
+- Artist shop: a row of category tabs above the product grid, with raised side panels.
 
 ### Whitespace Philosophy
-- **Photo leads, UI recedes**: generous neutral space frames artist imagery; chrome is intentionally quiet so fan content carries the page.
-- **Flat segmentation**: sections separate by hairline (`#e4e4e4`) and white space, not by elevation or heavy dividers.
-- **Pill rhythm**: repeated 100px chips (filters, carousel controls) create a soft, consistent horizontal cadence.
+- **Artist first**: banners and avatars carry the colour; the chrome stays black, white and grey.
+- **Pills for choices**: tabs, chips and carousel controls share the 100px pill.
 
 ### Border Radius Scale
-- Extra-small (4px): cards, product tiles, price badges — the workhorse
-- Small (8px): login button, list rows
-- Medium (16px): consent buttons
-- Pill (100px): filter chips, carousel controls
-- Full (9999px): fully-round avatars/dots
+- 0px: most elements (983 captured)
+- 8px: login button and menu items
+- 16px: Shop cards
+- 18px: 32px round Shop controls
+- 100px: tabs, chips, badges, carousel controls
+- 50%: avatars
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, most surfaces |
-| Hairline (Level 1) | `1px solid #e4e4e4` border | Card outlines, dividers |
-| Dark surface (Level 2) | `#3a3a3a` background | Cookie-consent banner / overlay chrome |
+| Flat | No shadow | weverse.io page, menu, rows, login button |
+| Ring | `rgb(235, 237, 242) 0px 0px 0px 1px inset` | DM chips |
+| Hairline | 1px `#ebedf2` / rgba(0, 0, 0, 0.1–0.2) | Tabs, arrows, outlined pill |
+| Float | `rgba(0, 0, 0, 0.08) 0px 2px 12px 0px` | 32px round Shop controls |
+| Card | `rgba(0, 0, 0, 0.12) 0px 4px 28px 0px` | Shop cards |
 
-**Shadow Philosophy**: Weverse is a near-shadowless, flat system. Live inspection found `box-shadow: none` across the homepage hero, nav, and headings; separation is communicated through hairlines (`#e4e4e4`), white space, and — where an overlay needs to sit above content — a solid dark surface (`#3a3a3a`) rather than elevation. This keeps the interface feeling clean and photo-forward, letting artist imagery (not UI chrome) provide visual depth. When emphasis is needed, the system reaches for the teal (`#00cbd5`) or a functional accent, never a drop shadow.
+**Shadow Philosophy**: weverse.io is flat; its chips use an inset ring instead of a border. Weverse Shop lifts its panels with one soft, wide shadow and gives its small round controls a lighter one.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Set everything in Pretendard and drive hierarchy by weight (800 → 700 → 500 → 400)
-- Reserve the teal (`#00cbd5`) as the single "action" color — login, active tabs, key links
-- Keep the canvas gallery-white (`#ffffff`) and let artist photography lead
-- Use near-black text — pure `#000000` for chrome, warm ink `#202429` for reading copy
-- Separate with hairlines (`#e4e4e4`) and white space instead of shadows
-- Use pill geometry for filters and carousel controls (100px), 4–8px for cards/buttons
-- Reserve functional accents (info `#5989fe`, sale `#f65895`, success `#00d284`) for Shop status only
-- Use the dark surface (`#3a3a3a`) for overlay/consent chrome, with `#08ccca` teal as its accent
+- Set everything in Pretendard and carry hierarchy with weight (800 / 700 / 500 / 400)
+- Keep the teal for the one call-to-action: 1px `#00cbd5` outline, `#00b8c1` label, 8px radius
+- Use black `#000000` pills with white text for the selected Shop tab, and white pills with a 1px `#ebedf2` border for the rest
+- Use 100px pills for chips, badges and carousel controls
+- Raise Shop panels with `rgba(0, 0, 0, 0.12) 0px 4px 28px 0px` on 16px cards
+- Let artist photography colour the banners
 
 ### Don't
-- Introduce a second display typeface — Pretendard weight is the whole hierarchy
-- Spread the teal across many elements — it dilutes the single-action signal
-- Add drop shadows for elevation — Weverse separates with hairlines and tint
-- Let UI chrome compete with artist imagery — keep chrome monochrome and quiet
-- Use the Shop status accents (pink/blue/green) as decorative brand color
-- Use heavy borders or boxed cards — a 1px `#e4e4e4` hairline is enough
-- Set body text in pure black where warm ink `#202429` reads softer on Shop/Magazine
+- Don't spread the teal across the page; it appears on one action
+- Don't invent a filled teal button; none was observed
+- Don't mix in a second typeface
+- Don't use the cookie banner's dark bar and teal label as product components
+- Don't use grey for body text; use `#000000` on weverse.io and `#202429` on Shop
+- Don't treat the two `#5989fe` pre-order labels as a brand colour
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single-column feed, full-bleed banner, chips scroll horizontally |
-| Tablet | 640-1024px | 2-3 column card grid, moderate padding |
-| Desktop | 1024-1440px | Full multi-column Shop grid, centered content |
+Only the 1440 × 900 desktop viewport was captured. Class names such as `featured-community-list-view-on-non-mobile` and `home-banner-on-desktop-view` show separate mobile layouts; no breakpoint was measured.
 
 ### Touch Targets
-- Login CTA at 36px height, full 16px horizontal padding
-- Filter pills and carousel controls at 36px with 100px radius — large, unmistakable targets
-- Community-finder rows at 48px height for comfortable tapping
-- Consent buttons at 32px height
+- Global menu items: 48px
+- DM chips: 44px
+- Login button, tabs, carousel controls, outlined pill: 36px
+- Round Shop controls: 32px
 
 ### Collapsing Strategy
-- Banner carousel: full-bleed at all sizes, controls shrink-wrap on mobile
-- Shop card grid: multi-column → 2-up → single column stacked
-- Filter chip row: horizontal scroll on narrow viewports
-- Section headings (18/700) persist across breakpoints
+- Not measured.
 
 ### Image Behavior
-- Artist key visuals and album art are the hero content — full-bleed, no shadow, at every size
-- Product/content cards keep the 4px radius and `#e4e4e4` hairline across breakpoints
+- Artist imagery fills the banner slides and cards; avatars are round (DM chips) or round-square (community rows).
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary / action: Weverse Teal (`#00cbd5`)
-- Login CTA text: Teal Text (`#00b8c1`)
-- Consent accent: Teal Bright (`#08ccca`)
-- Magazine accent: Teal Magazine (`#2bd9d0`)
-- Body ink: Ink (`#202429`); chrome: Pure Black (`#000000`)
-- Heading: `#111111`; body slate `#484848`; muted `#8e8e8e`; faint `#aeaeae`
-- Background: Canvas White (`#ffffff`); dark surface `#3a3a3a`; hairline `#e4e4e4`
-- Shop status: info `#5989fe`, sale `#f65895`, success `#00d284`
+- Call-to-action: outline `#00cbd5`, label `#00b8c1`, fill `#ffffff`
+- weverse.io text `#000000` on `#ffffff`; sign-in prompt `#8e8e8e`
+- Shop ink `#202429`; headings `#111111`; meta `#484848`
+- Hairline `#ebedf2`; selected tab `#000000` with `#ffffff` text
 
 ### Example Component Prompts
-- "Create a header on white background. Pretendard wordmark at 26px weight 700, color #000000. Login button: white background, #00b8c1 text, 1px solid #00cbd5 border, 8px radius, 0 16px padding, 36px height, 14px Pretendard weight 700."
-- "Design a Weverse Shop card grid: white #ffffff cards with 1px solid #e4e4e4 hairline, 4px radius, no shadow. Artist name 24px Pretendard weight 800 over the key visual. Selected filter pill: #000000 background, white text, 100px radius."
-- "Build a cookie-consent banner on a #3a3a3a dark surface. Accept-all button: #08ccca teal text, 16px radius, 32px height, 12px weight 700. Select button: #e4e4e4 text, same shape."
-- "Create category tabs: inactive labels #8e8e8e, active label teal #00cbd5. Body text 16px Pretendard 400 in ink #202429."
+- "Create a Weverse sign-in button: `#ffffff` background, 1px solid `#00cbd5` border, `#00b8c1` 14px Pretendard label at weight 700 (line height 18px), 8px radius, 0 16px padding, 36px tall."
+- "Build Shop category tabs: 36px pills (100px radius), 0 16px padding, 14px / 500 Pretendard; unselected `#ffffff` with `#000000` text and a 1px `#ebedf2` border; selected `#000000` with `#ffffff` text."
+- "Make a recommended-DM chip: 44px pill, 0 20px 0 6px padding, a 32px round avatar, 14px / 500 `#000000` name, and a 1px inset ring `rgb(235, 237, 242)`."
+- "Create a Shop panel: `#ffffff` card, 16px radius, 16px padding, shadow `rgba(0, 0, 0, 0.12) 0px 4px 28px 0px`, `#202429` text."
 
 ### Iteration Guide
-1. Pretendard for everything; weight is the hierarchy (800 / 700 / 500 / 400)
-2. Teal (`#00cbd5`) is the single action color — don't spread it
-3. No shadows — separate with `#e4e4e4` hairlines and white space
-4. Pill geometry for chips/controls (100px), 4–8px for cards/buttons
-5. Text is `#000000` chrome / `#202429` reading ink, never gray for primary copy
-6. Functional accents (pink/blue/green) only for Shop status, never as brand color
-7. Dark overlay chrome uses `#3a3a3a` with `#08ccca` teal accents
+1. Pretendard only; weight is the hierarchy
+2. Teal on one action; black for selection
+3. 100px pills for choices, 8px for the login button and menu items, 16px for cards
+4. Flat home, raised Shop panels
+5. Artist imagery carries colour
 
 ---
 
 ## 10. Voice & Tone
 
-Weverse's voice is **warm, inclusive, and fan-first** — a platform that frames itself as the place where artists and fans meet, globally and directly. The register is plain and welcoming rather than corporate or hype-driven: the homepage simply says it is a "Global Fandom Platform," and the Shop calls itself the place for "All Things for Fans." Copy treats the fan as a member of a community, not a transaction, and treats the artist relationship as the product.
+Weverse speaks to fans plainly and warmly, in Korean first with English product names. It invites rather than sells: the home asks visitors to sign in and meet their artist, and Shop frames itself as the store for fans everywhere.
 
 | Context | Tone |
 |---|---|
-| Platform positioning | Plain, welcoming, global. "Global Fandom Platform." Inclusive, never exclusive. |
-| Shop | Fan-centric and friendly. "All Things for Fans!" — celebratory, not salesy. |
-| Magazine | Editorial, knowledgeable, culture-forward. "Everything K-POP and More!" |
-| Calls-to-action | Direct and low-pressure. "커뮤니티 찾기" (Find community), "로그인" (Log in). |
-| Community surfaces | Conversational, member-to-member; artist and fan share one space. |
+| Platform | Short and global. "Global Fandom Platform". |
+| Sign-in | An invitation. "로그인하고 나만의 아티스트를 만나보세요!" |
+| Community access | Clear and polite. "커뮤니티 멤버만 이용 가능합니다." |
+| Shop | Celebratory and inclusive. "전 세계 모든 팬들을 위한 No.1 Official Merch Store!" |
+| Banners | Artist first, then the offer. "위버스샵에서 예약 판매 중!" |
 
-**Voice samples (verbatim from live surfaces):**
-- "Global Fandom Platform - Weverse" — homepage page title (positioning). *(verified live 2026-06-26)*
-- "Weverse Shop - All Things for Fans!" — Shop page title (fan-first framing). *(verified live 2026-06-26)*
-- "Weverse Magazine - Everything K-POP and More!" — Magazine page title (editorial scope). *(verified live 2026-06-26)*
-- "커뮤니티 찾기" — homepage community-finder CTA (low-pressure invitation). *(verified live 2026-06-26)*
+**Voice samples (verbatim, opened 2026-09-30):**
+- "Global Fandom Platform - Weverse" — weverse.io page title.
+- "로그인하고 나만의 아티스트를 만나보세요!" — sign-in prompt in the global menu.
+- "Weverse Shop - All Things for Fans!" — Weverse Shop page title.
+- "전 세계 모든 팬들을 위한 No.1 Official Merch Store!" — Weverse Shop home.
+- "커뮤니티 멤버만 이용 가능합니다." — a community page, logged out.
 
-**Forbidden register**: exclusionary or gatekeeping language, hard-sell urgency, hype superlatives that overshadow the artist, anything that frames fans as mere buyers rather than community members.
+**Forbidden register**: gatekeeping language, hard-sell urgency, hype that overshadows the artist, copy that treats fans as buyers only.
 
 ## 11. Brand Narrative
 
-Weverse (위버스) is the global fandom platform operated by **Weverse Company** (formerly beNX), a subsidiary of **HYBE** — the Korean entertainment company behind BTS and a roster of K-pop artists. Launched in **2019** by Big Hit Entertainment (now HYBE), Weverse was created to solve a problem global K-pop fandom felt acutely: fan communities, official content, livestreams, and merchandise were scattered across many disconnected channels and languages. Weverse consolidated them into one place where an artist and their worldwide fanbase could meet directly.
+Weverse belongs to HYBE's technology business. HYBE's business page places WEVERSE COMPANY under a statement of purpose: HYBE uses IT to innovate fandom culture and extend the customer experience, making "모든 팬이 즐겁고 행복할 수 있는 공간" and a world where "팬과 아티스트가 더 가깝게 연결되는" — fans and artists more closely connected. HYBE's own mission is "DISCOVER A NEW UNIVERSE, UNLOCK AN IMMERSIVE JOURNEY", and its vision a "음악과 기술에 기반한 글로벌 엔터테인먼트 라이프스타일 플랫폼 기업".
 
-The platform grew into a three-part ecosystem visible across its surfaces: the **Weverse** community app and site (artist-to-fan communication, posts, livestreams, memberships), **Weverse Shop** ("All Things for Fans" — official albums and merchandise), and **Weverse Magazine** (editorial coverage of K-pop and artist culture). In 2021 HYBE and Naver brought their fan-platform efforts together — folding Naver's V Live into Weverse — reinforcing Weverse's position as the leading global home for K-pop fandom, hosting communities for both HYBE and non-HYBE artists.
+The platform has grown into a family of services under one company. weverse.io hosts artist communities and Weverse DM, and links from its home to Weverse Shop and Jelly Shop. Weverse Shop sells official merchandise and global fan-club memberships and also lists products from independent sellers, and Weverse Magazine publishes at magazine.weverse.io. The company operates from Pangyo with Japanese and American affiliates, which fits the platform's global audience.
 
-What Weverse refuses, visible in its design: a loud, transactional storefront aesthetic that would compete with artist imagery, and the fragmentation it was built to replace. What it embraces: a gallery-white, photo-forward stage; a single trustworthy teal; Pretendard set in confident weights; and copy that consistently frames the experience around fans and the artists they follow — "for fans," globally.
+The interface follows that purpose: the home is organised around communities, DM and artist news rather than products, and the single teal is spent on the invitation to sign in. (This reading of the design is editorial, not a Weverse statement.)
 
 ## 12. Principles
 
-1. **Fans first, artists at the center.** Weverse exists to connect artists and their global fandom. *UI implication:* keep chrome quiet and monochrome so artist photography and fan content lead every screen.
-2. **One stage, one accent.** A single teal (`#00cbd5`) signals "action." *UI implication:* reserve the teal for the primary affordance (login, active tab, key link); let the rest stay neutral.
-3. **Photo leads, UI recedes.** The interface is a frame, not the subject. *UI implication:* use gallery-white space and hairlines, not heavy chrome or shadows, so imagery carries the emotion.
-4. **Global by default.** Fandom is worldwide and multilingual. *UI implication:* plain, translatable copy and inclusive framing ("Global Fandom Platform"); never region-locked tone.
-5. **Calm commerce.** Shop is celebratory, not pushy. *UI implication:* status color (sale pink, success green) is functional and sparing; merchandising never overwhelms the fan experience.
+1. **Fans and artists, closer.** HYBE's stated purpose for the platform. *UI implication:* lead with communities, DMs and artist news; keep chrome quiet.
+2. **One invitation.** *UI implication:* spend the teal on the sign-in action and nowhere else. (Editorial, from the captured pages.)
+3. **Artists carry the colour.** *UI implication:* black, white and grey chrome; colour comes from banners and avatars.
+4. **For fans everywhere.** Shop addresses "전 세계 모든 팬들" and the company runs Japanese and American affiliates. *UI implication:* short, plain copy that travels; currency and language selectors on Shop (KO, KRW, KR in the header).
+5. **Choices as pills.** *UI implication:* tabs, chips and carousel controls share the 100px pill; selection turns the pill black.
 
 ## 13. Personas
 
 *Personas below are fictional archetypes informed by publicly observable Weverse user segments (global K-pop fans, community members, merchandise buyers), not individual people.*
 
-**Mina, 19, Seoul.** A daily community user who follows posts and livestreams from her favorite group. Values that the artist and fans share one space, and that the interface stays out of the way so the content shines.
+**Mina, 19, Seoul.** A daily community user. Signs in from the home, follows her group's posts and subscribes to a member's Weverse DM.
 
-**Sofia, 24, São Paulo.** A global fan who relies on Weverse for official, translatable updates and for Weverse Shop to buy albums that are otherwise hard to get locally. Trusts the platform because it feels official and fan-first, not like a reseller.
+**Sofia, 24, São Paulo.** A global fan who buys albums and a fan-club membership on Weverse Shop because they are official and ship abroad.
 
-**Jae, 28, Los Angeles.** A long-time K-pop listener who reads Weverse Magazine for editorial depth and uses memberships to access exclusive content. Appreciates the calm, photo-forward design that treats fandom as culture, not just commerce.
+**Jae, 28, Los Angeles.** Reads Weverse Magazine and checks an artist's shop for new tour merch under the Tour Merch tab.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed on the three captured pages; nothing else is specified here.
+
+| State | Observation |
 |---|---|
-| **Empty (no communities joined)** | Gallery-white canvas. Single near-black (`#000000`) line inviting the user to find a community, with one teal (`#00cbd5`) CTA ("커뮤니티 찾기"). No clutter. |
-| **Empty (Shop cart / no orders)** | Muted (`#8e8e8e`) single line stating nothing yet, plus a path back to browsing. Calm, fan-friendly. |
-| **Loading (feed / shop grid)** | Skeleton cards at final dimensions with 4px radius on white; flat pulse consistent with the shadowless system — no shadow shimmer. |
-| **Loading (in-place refresh)** | Subtle teal (`#00cbd5`) progress indicator; previous content stays visible. |
-| **Error (content failed to load)** | Inline message in ink (`#202429`) with a plain explanation and a retry — never a bare error code. |
-| **Error (form validation)** | Field-level message below the input describing what is valid, not just "required." |
-| **Success (order placed / post sent)** | Brief inline confirmation, optionally with success green (`#00d284`); next-step detail linked below. No celebratory emoji overload. |
-| **Skeleton** | White blocks at final dimensions, 4px radius, flat pulse. |
-| **Disabled** | Faint (`#aeaeae`) text on reduced-opacity surface; teal actions fade rather than turn gray to preserve brand read. |
+| **Selected (Shop tab)** | Black `#000000` pill with `#ffffff` text and a black border; unselected tabs are white with a 1px `#ebedf2` border. The collector activated three tabs and each became selected. |
+| **Hover / pressed (global menu item)** | Background turns `#ffffff` from transparent on all seven items. |
+| **Disabled (Shop carousel arrow)** | The collector recorded a disabled state in the arrow group; no separate colour was isolated. |
+| **Members only** | Logged out, community pages show "커뮤니티 멤버만 이용 가능합니다." with a 로그인 후 계속 action. |
+
+A hover frame on a Shop header control read `rgba(0, 0, 0, 0.004)`, a mid-transition value, so it is not declared; no focus value is declared from the bundle. The login button was not probed. Error, empty, loading and success states were not captured and are not described.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 120ms | Hover, chip press, focus |
-| `motion-standard` | 220ms | Card/section reveal, banner carousel transition, sheet |
-| `motion-slow` | 360ms | Page-level transitions, hero reveal |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — cards, sheets, banners |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions |
-
-**Motion rules**: Motion is quiet and functional, consistent with the flat, photo-forward aesthetic. The homepage banner carousel advances with a smooth `motion-standard / ease-standard` crossfade so artist key visuals transition gracefully; pill chips respond to press with a subtle scale/opacity shift; cards fade-in from below at `motion-standard / ease-enter`. No bounce or spring — the platform signals a calm, premium stage, not playful UI. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant and the carousel stops auto-advancing; the experience remains fully functional.
+The collector reads computed style, not animation, so no duration or easing is measured. The home banner and the Shop rails are carousels, which shows motion exists without timing it. Treat motion as unspecified rather than borrowing values, and honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-26) via playwright getComputedStyle on three brand-owned surfaces:
-- https://weverse.io — homepage: Pretendard body; signature teal login (#00b8c1 text, #00cbd5 border);
-  pure black #000000 chrome; pill (100px) carousel controls; consent teal #08ccca; box-shadow none.
-- https://shop.weverse.io — Weverse Shop: ink #202429 body; teal #00cbd5 (dominant accent, 61 occurrences);
-  artist headings 24px/800; section headings 18px/700; black filter pills (100px); functional accents
-  info #5989fe, sale #f65895, success #00d284; radii 4px workhorse / 8px / 16px / 100px.
-- https://magazine.weverse.io — Weverse Magazine: editorial teal #2bd9d0; Pretendard headings.
-
-Token-level claims (§1-9) are sourced from this live inspection (see .verification.md Raw samples).
-
-Voice samples (§10) are verbatim from the live page titles and CTA labels of the three surfaces.
-
-Brand narrative (§11): Weverse is HYBE's global fandom platform, operated by Weverse Company
-(formerly beNX); launched 2019 by Big Hit Entertainment (now HYBE); V Live folded into Weverse
-via the 2021 HYBE-Naver fan-platform combination. These are widely documented public facts about
-the company; they are not quoted from a single verified Weverse statement in this turn.
-
-Personas (§13) are fictional archetypes informed by publicly observable Weverse user segments
-(global K-pop fans, community members, merchandise buyers). Names are illustrative; they do not
-refer to real people.
-
-Interpretive claims (e.g., "photo leads, UI recedes", "one stage, one accent") are editorial
-readings connecting Weverse's observed design to its positioning, not directly sourced statements.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/weverse.json (capturedAt 2026-09-30T07:57:22Z), deterministic collector, 1440x900, logged out: weverse.io (the frontmatter homepage), shop.weverse.io/ko/home (shop.weverse.io redirects there; linked from the weverse.io home under 서비스 바로가기 and named in the weverse.io footer), shop.weverse.io/ko/shop/KRW/artists/2.
+- §1, §10, §11 context: the weverse.io footer and home, Weverse Shop home, logged-out community pages (weverse.io/bts/feed and others), hybecorp.com company and business pages, magazine.weverse.io (title only), all opened 2026-09-30. Pretendard licence: github.com/orioncactus/pretendard LICENSE.
+- Personas are fictional archetypes. Interpretive readings are marked as editorial.
 -->

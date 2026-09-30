@@ -5,57 +5,286 @@ display_name_kr: 엘리스
 country: KR
 category: education
 homepage: "https://elice.io"
-primary_color: "#7353ea"
+primary_color: "#212121"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=elice.io&sz=128"
-verified: "2026-06-26"
+verified: "2026-09-30"
 added: "2026-06-26"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: marketing, url: "https://elice.io/ko", inspected: "2026-09-30" }
+    - { id: surface-2, kind: marketing-product, url: "https://elice.io/ko/cloud/pricing/ai-cloud", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://elice.io/ko", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://elice.io/ko/cloud/pricing/ai-cloud", captured: "2026-09-30" }
+    - { id: brand-page, kind: official-doc, url: "https://elice.io/ko/resources/brand", captured: "2026-09-30" }
+    - { id: newsroom-ipo, kind: official-doc, url: "https://elice.io/ko/resources/newsroom/elice-kosdaq-ipo-submission", captured: "2026-09-30" }
+    - { id: license-dx-neolli, kind: official-doc, url: "https://font.elice.io/static/downloads/EliceDXNeolli_License.pdf", captured: "2026-09-30" }
+    - { id: license-digital-baeum, kind: official-doc, url: "https://font.elice.io/static/downloads/EliceDigitalBaeum_License.pdf", captured: "2026-09-30" }
+    - { id: license-digital-coding, kind: official-doc, url: "https://font.elice.io/static/downloads/EliceDigitalCoding_License.pdf", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &ecta { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-09-30" }
+    "tokens.colors.on-primary": *ecta
+    "tokens.colors.ink": &ebody { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.colors.canvas": *ebody
+    "tokens.colors.slate": &etaboff { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"10\"]", captured: "2026-09-30" }
+    "tokens.colors.muted": &edesc { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.accent": &etabon { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.colors.hairline": &ecard { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.colors.success-tint": &echip { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.colors.success-deep": *echip
+    "tokens.colors.tile-blue": &etileblue { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.colors.tile-magenta": &etilemag { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.colors.tile-sky": &etilesky { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.typography.family.display": &eh3 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h3", captured: "2026-09-30" }
+    "tokens.typography.family.body": *ebody
+    "tokens.typography.display.size": &eh2 { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h2", captured: "2026-09-30" }
+    "tokens.typography.display.weight": *eh2
+    "tokens.typography.display.lineHeight": *eh2
+    "tokens.typography.display.use": *eh2
+    "tokens.typography.section.size": *eh3
+    "tokens.typography.section.weight": *eh3
+    "tokens.typography.section.lineHeight": *eh3
+    "tokens.typography.section.use": *eh3
+    "tokens.typography.subsection.size": &eh4 { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h4", captured: "2026-09-30" }
+    "tokens.typography.subsection.weight": *eh4
+    "tokens.typography.subsection.lineHeight": *eh4
+    "tokens.typography.subsection.use": *eh4
+    "tokens.typography.product-label.size": &eplabel { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.typography.product-label.weight": *eplabel
+    "tokens.typography.product-label.lineHeight": *eplabel
+    "tokens.typography.product-label.use": *eplabel
+    "tokens.typography.body.size": *ebody
+    "tokens.typography.body.weight": *ebody
+    "tokens.typography.body.lineHeight": *ebody
+    "tokens.typography.body.use": *ebody
+    "tokens.typography.button.size": *ecta
+    "tokens.typography.button.weight": *ecta
+    "tokens.typography.button.lineHeight": *ecta
+    "tokens.typography.button.use": *ecta
+    "tokens.typography.button-large.size": &elgcta { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"28\"]", captured: "2026-09-30" }
+    "tokens.typography.button-large.weight": *elgcta
+    "tokens.typography.button-large.lineHeight": *elgcta
+    "tokens.typography.button-large.use": *elgcta
+    "tokens.typography.button-small.size": &esmall { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"23\"]", captured: "2026-09-30" }
+    "tokens.typography.button-small.weight": *esmall
+    "tokens.typography.button-small.lineHeight": *esmall
+    "tokens.typography.button-small.use": *esmall
+    "tokens.typography.tab.size": *etaboff
+    "tokens.typography.tab.weight": *etaboff
+    "tokens.typography.tab.lineHeight": *etaboff
+    "tokens.typography.tab.use": *etaboff
+    "tokens.typography.toggle.size": &etogon { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"11\"]", captured: "2026-09-30" }
+    "tokens.typography.toggle.weight": *etogon
+    "tokens.typography.toggle.lineHeight": *etogon
+    "tokens.typography.toggle.use": *etogon
+    "tokens.typography.link.size": &elink { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"14\"]", captured: "2026-09-30" }
+    "tokens.typography.link.weight": *elink
+    "tokens.typography.link.lineHeight": *elink
+    "tokens.typography.link.use": *elink
+    "tokens.typography.menu-label.size": &emenulabel { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"89\"]", captured: "2026-09-30" }
+    "tokens.typography.menu-label.weight": *emenulabel
+    "tokens.typography.menu-label.lineHeight": *emenulabel
+    "tokens.typography.menu-label.use": *emenulabel
+    "tokens.typography.badge.size": *echip
+    "tokens.typography.badge.weight": *echip
+    "tokens.typography.badge.lineHeight": *echip
+    "tokens.typography.badge.use": *echip
+    "tokens.spacing.button-y": *ecta
+    "tokens.spacing.button-x": *ecta
+    "tokens.spacing.card": &ecardbody { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.spacing.menu-x": &emenu { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"90\"]", captured: "2026-09-30" }
+    "tokens.spacing.logo-gap": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::li", captured: "2026-09-30" }
+    "tokens.rounded.button": *ecta
+    "tokens.rounded.button-large": *elgcta
+    "tokens.rounded.small": *esmall
+    "tokens.rounded.tag": *echip
+    "tokens.rounded.card": *ecard
+    "tokens.rounded.tile": &etile { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.shadow.toggle": *etogon
+    "tokens.components.primary-button.type": *ecta
+    "tokens.components.primary-button.bg": *ecta
+    "tokens.components.primary-button.fg": *ecta
+    "tokens.components.primary-button.radius": *ecta
+    "tokens.components.primary-button.padding": *ecta
+    "tokens.components.primary-button.height": *ecta
+    "tokens.components.primary-button.font": *ecta
+    "tokens.components.primary-button.states": *ecta
+    "tokens.components.primary-button.use": *ecta
+    "tokens.components.hero-primary-button.type": &eherocta { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.components.hero-primary-button.bg": *eherocta
+    "tokens.components.hero-primary-button.fg": *eherocta
+    "tokens.components.hero-primary-button.radius": *eherocta
+    "tokens.components.hero-primary-button.padding": *eherocta
+    "tokens.components.hero-primary-button.height": *eherocta
+    "tokens.components.hero-primary-button.font": *eherocta
+    "tokens.components.hero-primary-button.states": *eherocta
+    "tokens.components.hero-primary-button.use": *eherocta
+    "tokens.components.outline-button.type": &eout { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-09-30" }
+    "tokens.components.outline-button.bg": *eout
+    "tokens.components.outline-button.fg": *eout
+    "tokens.components.outline-button.border": *eout
+    "tokens.components.outline-button.radius": *eout
+    "tokens.components.outline-button.padding": *eout
+    "tokens.components.outline-button.height": *eout
+    "tokens.components.outline-button.font": *eout
+    "tokens.components.outline-button.states": *eout
+    "tokens.components.outline-button.use": *eout
+    "tokens.components.hero-outline-button.type": &eheroout { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-09-30" }
+    "tokens.components.hero-outline-button.bg": *eheroout
+    "tokens.components.hero-outline-button.fg": *eheroout
+    "tokens.components.hero-outline-button.border": *eheroout
+    "tokens.components.hero-outline-button.radius": *eheroout
+    "tokens.components.hero-outline-button.padding": *eheroout
+    "tokens.components.hero-outline-button.height": *eheroout
+    "tokens.components.hero-outline-button.font": *eheroout
+    "tokens.components.hero-outline-button.states": *eheroout
+    "tokens.components.hero-outline-button.use": *eheroout
+    "tokens.components.nav-button.type": &enav { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-09-30" }
+    "tokens.components.nav-button.bg": *enav
+    "tokens.components.nav-button.fg": *enav
+    "tokens.components.nav-button.radius": *enav
+    "tokens.components.nav-button.padding": *enav
+    "tokens.components.nav-button.height": *enav
+    "tokens.components.nav-button.font": *enav
+    "tokens.components.nav-button.states": *enav
+    "tokens.components.nav-button.use": *enav
+    "tokens.components.small-text-button.type": *esmall
+    "tokens.components.small-text-button.bg": *esmall
+    "tokens.components.small-text-button.fg": *esmall
+    "tokens.components.small-text-button.radius": *esmall
+    "tokens.components.small-text-button.padding": *esmall
+    "tokens.components.small-text-button.height": *esmall
+    "tokens.components.small-text-button.font": *esmall
+    "tokens.components.small-text-button.states": *esmall
+    "tokens.components.small-text-button.use": *esmall
+    "tokens.components.large-primary-button.type": *elgcta
+    "tokens.components.large-primary-button.bg": *elgcta
+    "tokens.components.large-primary-button.fg": *elgcta
+    "tokens.components.large-primary-button.radius": *elgcta
+    "tokens.components.large-primary-button.padding": *elgcta
+    "tokens.components.large-primary-button.height": *elgcta
+    "tokens.components.large-primary-button.font": *elgcta
+    "tokens.components.large-primary-button.states": *elgcta
+    "tokens.components.large-primary-button.use": *elgcta
+    "tokens.components.large-outline-button.type": &elgout { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"29\"]", captured: "2026-09-30" }
+    "tokens.components.large-outline-button.bg": *elgout
+    "tokens.components.large-outline-button.fg": *elgout
+    "tokens.components.large-outline-button.border": *elgout
+    "tokens.components.large-outline-button.radius": *elgout
+    "tokens.components.large-outline-button.padding": *elgout
+    "tokens.components.large-outline-button.height": *elgout
+    "tokens.components.large-outline-button.font": *elgout
+    "tokens.components.large-outline-button.states": *elgout
+    "tokens.components.large-outline-button.use": *elgout
+    "tokens.components.product-tab.type": *etaboff
+    "tokens.components.product-tab.bg": *etaboff
+    "tokens.components.product-tab.fg": *etaboff
+    "tokens.components.product-tab.radius": *etaboff
+    "tokens.components.product-tab.padding": *etaboff
+    "tokens.components.product-tab.height": *etaboff
+    "tokens.components.product-tab.font": *etaboff
+    "tokens.components.product-tab.selected": *etabon
+    "tokens.components.product-tab.states": *etaboff
+    "tokens.components.product-tab.use": *etaboff
+    "tokens.components.segmented-toggle.type": &etogoff { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-09-30" }
+    "tokens.components.segmented-toggle.bg": *etogoff
+    "tokens.components.segmented-toggle.fg": *etogoff
+    "tokens.components.segmented-toggle.radius": *etogoff
+    "tokens.components.segmented-toggle.padding": *etogoff
+    "tokens.components.segmented-toggle.height": *etogoff
+    "tokens.components.segmented-toggle.font": *etogoff
+    "tokens.components.segmented-toggle.selected": *etogon
+    "tokens.components.segmented-toggle.shadow": *etogon
+    "tokens.components.segmented-toggle.states": *etogoff
+    "tokens.components.segmented-toggle.use": *etogoff
+    "tokens.components.status-chip.type": *echip
+    "tokens.components.status-chip.bg": *echip
+    "tokens.components.status-chip.fg": *echip
+    "tokens.components.status-chip.radius": *echip
+    "tokens.components.status-chip.padding": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::span", captured: "2026-09-30" }
+    "tokens.components.status-chip.height": *echip
+    "tokens.components.status-chip.font": *echip
+    "tokens.components.status-chip.use": *echip
+    "tokens.components.feature-card.type": *ecard
+    "tokens.components.feature-card.bg": *ecard
+    "tokens.components.feature-card.fg": *ecard
+    "tokens.components.feature-card.border": *ecard
+    "tokens.components.feature-card.radius": *ecard
+    "tokens.components.feature-card.padding": *ecardbody
+    "tokens.components.feature-card.size": *ecard
+    "tokens.components.feature-card.use": *ecard
+    "tokens.components.product-icon-tile.type": *etile
+    "tokens.components.product-icon-tile.bg": *etile
+    "tokens.components.product-icon-tile.fg": *etile
+    "tokens.components.product-icon-tile.radius": *etile
+    "tokens.components.product-icon-tile.size": *etile
+    "tokens.components.product-icon-tile.use": *etile
+    "tokens.components.footer-menu-item.type": *emenu
+    "tokens.components.footer-menu-item.bg": *emenu
+    "tokens.components.footer-menu-item.fg": *emenu
+    "tokens.components.footer-menu-item.radius": *emenu
+    "tokens.components.footer-menu-item.padding": *emenu
+    "tokens.components.footer-menu-item.height": *emenu
+    "tokens.components.footer-menu-item.font": *emenu
+    "tokens.components.footer-menu-item.states": *emenu
+    "tokens.components.footer-menu-item.use": *emenu
 tokens:
-  source: live-extract
-  extracted: "2026-06-26"
-  note: "Two-surface system. Corporate elice.io runs a monochrome marketing chrome (dark #212121 primary CTA on white, Elice DX Neolli display font) with a violet→blue→magenta gradient accent set. The product surface 엘카데미/academy.elice.io uses brand violet #7353ea as the primary action. primary = brand violet #7353ea (product primary action + corporate accent + logo); #524fa1 is the classic deep-indigo brand mark."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
-    primary: "#7353ea"
-    primary-deep: "#524fa1"
-    primary-light: "#7875c8"
+    primary: "#212121"
+    on-primary: "#ffffff"
     ink: "#191f28"
-    ink-strong: "#212121"
-    body: "#222222"
+    canvas: "#ffffff"
     slate: "#343e4b"
     muted: "#66717e"
-    accent-blue: "#2f5efb"
-    accent-sky: "#00a6ff"
-    accent-magenta: "#b853ea"
-    success: "#00ab53"
-    success-deep: "#1b5e20"
-    success-tint: "#dfebe0"
-    danger: "#fa466a"
-    canvas: "#ffffff"
-    surface: "#f0f1f3"
+    accent: "#7353ea"
     hairline: "#e9ebf0"
+    success-tint: "#dfebe0"
+    success-deep: "#1b5e20"
+    tile-blue: "#2f5efb"
+    tile-magenta: "#b853ea"
+    tile-sky: "#03a9f4"
   typography:
-    family: { display: "Elice DX Neolli", body: "Pretendard Variable" }
-    display-hero: { size: 40, weight: 500, lineHeight: 1.2, tracking: -2.4, use: "Hero headline + section heads + stats, Elice DX Neolli" }
-    body:    { size: 16, weight: 400, lineHeight: 1.5, use: "Standard reading text, Pretendard" }
-    nav:     { size: 14, weight: 600, lineHeight: 1.5, use: "Top-nav items + button labels, Pretendard" }
-    nav-alt: { size: 14, weight: 500, lineHeight: 1.5, use: "Product nav items, Pretendard" }
-    badge:   { size: 11, weight: 500, use: "Status pill label" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 24, xl: 32, section: 48 }
-  rounded: { sm: 4, md: 8, lg: 16, xl: 24, pill: 500 }
+    family: { display: "Elice DX Neolli", body: "Pretendard" }
+    display: { size: 48, weight: 500, lineHeight: 1.2, use: "Page title on the Cloud pricing page (h2 엘리스클라우드 요금제), Elice DX Neolli, tracking -2.4%" }
+    section: { size: 40, weight: 500, lineHeight: 1.2, use: "Home statistics and section heads (h3), Elice DX Neolli, tracking -2.4%" }
+    subsection: { size: 32, weight: 500, lineHeight: 1.24, use: "Pricing sub-heading (h4 Storage 요금제), Elice DX Neolli, tracking -1%" }
+    product-label: { size: 16, weight: 500, lineHeight: 1.5, use: "Product names beside the icon tiles on home, Elice DX Neolli" }
+    body: { size: 16, weight: 500, lineHeight: 1.5, use: "Page body, card copy and footer menu links, Pretendard" }
+    button: { size: 14, weight: 600, lineHeight: 1.71, use: "Header and hero action labels, Pretendard (24px line)" }
+    button-large: { size: 15, weight: 700, lineHeight: 1.6, use: "Closing-band action labels, Pretendard (24px line)" }
+    button-small: { size: 13, weight: 600, lineHeight: 1.69, use: "더 보기 on the case-study cards, Pretendard (22px line)" }
+    tab: { size: 14, weight: 600, lineHeight: 1.25, use: "Product tabs on the pricing page, Pretendard (17.5px line)" }
+    toggle: { size: 13, weight: 700, lineHeight: 1.75, use: "Selected option of the GPU, NPU and CPU switch, Pretendard; unselected options compute 500 (22.75px line)" }
+    link: { size: 14, weight: 500, lineHeight: 1.71, use: "가격 문의 links in the pricing table, Pretendard (23.94px line)" }
+    menu-label: { size: 14, weight: 400, lineHeight: 1.4, use: "Footer menu group labels (AI 교육, AI 전환), Pretendard (19.6px line)" }
+    badge: { size: 11, weight: 500, lineHeight: 1.5, use: "Status tags (모집 중, 채용 중), Pretendard (16.5px line)" }
+  spacing: { button-y: 8, button-x: 16, card: 32, menu-x: 12, logo-gap: 32 }
+  rounded: { button: 8, button-large: 10, small: 6, tag: 4, card: 24, tile: 12 }
   shadow:
-    none: "none"
+    toggle: "rgba(0, 0, 0, 0.04) 0px 4px 5px 0px, rgba(0, 0, 0, 0.04) 0px 4px 24px 0px"
   components:
-    button-cta-dark: { type: button, bg: "#212121", fg: "#ffffff", radius: "8px", padding: "8px 16px", height: "40px", font: "14px / 600", use: "Corporate primary CTA — Try Free Trial / Start with Elice" }
-    button-cta-violet: { type: button, bg: "#7353ea", fg: "#ffffff", radius: "8px", padding: "8px 16px", height: "40px", font: "14px / 600", use: "Product (엘카데미) primary action — 로그인 / sign-in" }
-    button-outline: { type: button, fg: "#212121", radius: "8px", padding: "7px 15px", border: "1px solid rgba(33,33,33,0.5)", font: "14px / 600", use: "Secondary outline button — Contact" }
-    button-soft: { type: button, bg: "#e9ebf0", fg: "#222222", radius: "8px", padding: "8px 16px", height: "40px", font: "14px / 600", use: "Tertiary soft button — 회원가입 / sign-up" }
-    nav-tab: { type: tab, fg: "#212121", radius: "4px", padding: "8px 12px", font: "14px / 500", active: "rgba(115,83,234,0.08) tint + #7353ea label", use: "Product top-nav item, active = violet tint" }
-    card-feature: { type: card, bg: "#ffffff", border: "1px solid #e9ebf0", radius: "24px", use: "Bordered feature card, hairline separation, no shadow" }
-    card-tinted: { type: card, bg: "rgba(102,113,126,0.04)", radius: "16px", padding: "32px", use: "Tinted content card on white" }
-    input-underline: { type: input, fg: "#191f28", radius: "0px", padding: "16px 12px", border: "1px solid #e9ebf0", font: "14px", use: "Underline auth field (accounts.elice.io) — Email / Password" }
-    badge-recruiting: { type: badge, bg: "#dfebe0", fg: "#1b5e20", radius: "4px", font: "11px / 500", use: "Hiring / Recruiting status pill" }
+    primary-button: { type: button, bg: "#212121", fg: "#ffffff", radius: "8px", padding: "8px 16px", height: "40px", font: "14px / 600 / 24px Pretendard", states: "rest on all three captured pages; the collector recorded no hover, pressed or focus frame for this control, so no state value is declared", use: "무료로 시작하기 in the header of home and the pricing page at home::[data-omd-capture=\"8\"], 120 x 40 (MuiButton-contained, colorSecondary)" }
+    hero-primary-button: { type: button, bg: "#ffffff", fg: "#191f28", radius: "8px", padding: "8px 16px", height: "40px", font: "14px / 600 / 24px Pretendard", states: "rest; the recorded hover and pressed frames were read while the background was still changing, so no state value is declared", use: "무료로 시작하기 in the home hero at home::[data-omd-capture=\"9\"], 120 x 40 (MuiButton-contained, colorPrimary)" }
+    outline-button: { type: button, bg: "transparent", fg: "#212121", border: "1px rgba(33,33,33,0.5)", radius: "8px", padding: "7px 15px", height: "40px", font: "14px / 600 / 24px Pretendard", states: "rest; the recorded hover and pressed frames were read mid-change, so no state value is declared", use: "도입문의 in the header at home::[data-omd-capture=\"7\"], 80 x 40 (MuiButton-outlined, colorSecondary)" }
+    hero-outline-button: { type: button, bg: "transparent", fg: "#ffffff", border: "1px #ffffff", radius: "8px", padding: "7px 15px", height: "40px", font: "14px / 600 / 24px Pretendard", states: "rest only; no hover or pressed frame was recorded", use: "도입문의 beside the hero action at home::[data-omd-capture=\"10\"], 80 x 40" }
+    nav-button: { type: button, bg: "transparent", fg: "#212121", radius: "8px", padding: "8px 16px", height: "40px", font: "14px / 600 / 24px Pretendard", states: "rest; the recorded hover and pressed frames were read at the start of the background change, so no state value is declared", use: "Header menu buttons (엘리스AX, 엘리스클라우드, 리소스) plus 블로그 and 로그인 at home::[data-omd-capture=\"1\"], 103 x 40; the same style carries 더 알아보기 on home" }
+    small-text-button: { type: button, bg: "transparent", fg: "#212121", radius: "6px", padding: "5px 12px", height: "32px", font: "13px / 600 / 22px Pretendard", states: "rest only; no state frame", use: "더 보기 on the case-study cards on home at home::[data-omd-capture=\"23\"], 79 x 32" }
+    large-primary-button: { type: button, bg: "#212121", fg: "#ffffff", radius: "10px", padding: "11px 20px", height: "46px", font: "15px / 700 / 24px Pretendard", states: "rest only; no state frame", use: "무료로 시작하기 in the closing band of the pricing page at surface-2::[data-omd-capture=\"28\"], 134 x 46; the home closing band repeats it with a #ffffff fill and #191f28 label" }
+    large-outline-button: { type: button, bg: "transparent", fg: "#212121", border: "1px rgba(33,33,33,0.5)", radius: "10px", padding: "10px 19px", height: "46px", font: "15px / 700 / 24px Pretendard", states: "rest only; no state frame", use: "도입문의 beside it at surface-2::[data-omd-capture=\"29\"], 92 x 46; white-bordered with a white label on the home closing band" }
+    product-tab: { type: tab, bg: "transparent", fg: "#343e4b", radius: "8px", padding: "10px 8px", height: "44px", font: "14px / 600 / 17.5px Pretendard", selected: "fg #7353ea on the Mui-selected tab (capture 9)", states: "selected read from rest values (capture 9 against 10); the recorded hover and pressed frames are not declared because their settling was not confirmed", use: "Product tabs on the pricing page (엘리스AI클라우드, ECI) at surface-2::[data-omd-capture=\"10\"]" }
+    segmented-toggle: { type: toggle, bg: "transparent", fg: "rgba(0,0,0,0.54)", radius: "6px", padding: "6px", height: "35px", font: "13px / 500 / 22.75px Pretendard", selected: "bg #ffffff, fg #191f28, weight 700 (capture 11)", shadow: "rgba(0, 0, 0, 0.04) 0px 4px 5px 0px, rgba(0, 0, 0, 0.04) 0px 4px 24px 0px on the selected option", states: "selected read from rest values (capture 11 against 12); no hover frame", use: "GPU, NPU and CPU switch on the pricing page at surface-2::[data-omd-capture=\"12\"], 128 x 35 per option" }
+    status-chip: { type: badge, bg: "#dfebe0", fg: "#1b5e20", radius: "4px", padding: "0px 4px (label)", height: "20px", font: "11px / 500 / 16.5px Pretendard", use: "모집 중 and 채용 중 tags in the footer menu (MuiChip colorSuccess), 39 x 20; the label span computes 11px / 700" }
+    feature-card: { type: card, bg: "#ffffff", fg: "#191f28", border: "1px #e9ebf0", radius: "24px", padding: "32px (content block)", size: "522px x 353px", use: "Outlined cards near the top of home (MuiCard on an outlined Paper), no shadow" }
+    product-icon-tile: { type: avatar, bg: "#7353ea", fg: "#ffffff", radius: "12px", size: "32px x 32px", use: "Square product icon tiles beside product names on home (MuiAvatar); fills are #7353ea, #2f5efb, #b853ea and #03a9f4 by product, and the footer menu repeats them at 24 x 24 with a 6px radius" }
+    footer-menu-item: { type: listItem, bg: "transparent", fg: "#191f28", radius: "4px", padding: "8px 12px", height: "40px", font: "16px / 500 / 24px Pretendard", states: "rest only; no state frame", use: "Footer menu links (엘리스LXP, 엘리스테스트, 런박스 and the rest) at home::[data-omd-capture=\"90\"], 237 x 40; group labels (AI 교육, AI 전환) at capture 89 read rgba(25,31,40,0.38), 14px / 400" }
   components_harvested: true
 ---
 
@@ -63,390 +292,379 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-Elice (엘리스) is Korea's "AI Full Stack" education company, and its design language splits cleanly across two surfaces that share one brand spine. The corporate site (`elice.io`) is calm, editorial, and almost monochrome: a pure white (`#ffffff`) canvas, deep navy-ink text (`#191f28`), and — distinctively — a near-black (`#212121`) as the *primary* call-to-action color rather than a saturated hue. The brand's signature violet (`#7353ea`) is held in reserve on the corporate site, surfacing instead inside the product, 엘카데미 (`academy.elice.io`), where it becomes the unmistakable primary-action color. This restraint is deliberate: the marketing surface reads as a confident, grown-up technology company, while the learning product reads as friendly and energetic.
+Elice (엘리스) is 엘리스그룹, a Korean company founded in 2015 that now calls itself an "AI 풀스택 기업" — an AI full-stack company. Its newsroom divides the business into two halves: AX (AI transformation), which covers industry AX solutions, the learning platform 엘리스LXP for training AI talent of every age and the Helpy series of AI agents; and AI Cloud, which covers the AI PMDC mobile modular data centre, the ECI cloud-infrastructure OS and 엘리스AI클라우드. On 2026-08-21 the same newsroom announced that the company had filed its securities registration for a KOSDAQ listing. The brand page explains the logo in two parts: text drawn in a programming font stands for Elice's technical skill and problem solving, and the irregular shape around it stands for possibilities and opportunities not yet defined — under the line "기회와 가능성을 만들어내는 기술". Elice also gives away three typefaces of its own, among them 엘리스 DX널리체, which is named for spreading the value of DX "널리" (widely).
 
-The typographic identity is carried by **Elice DX Neolli**, the company's proprietary display typeface, which sets every hero headline, section title, and statistic at 40px / weight 500 with a tight `-2.4%` tracking and a 48px line-height. Against it, **Pretendard Variable** does all the functional work — body copy at 16px / 1.5, navigation and button labels at 14px / weight 600. The pairing of a bespoke, slightly editorial display face over the de-facto Korean product font (Pretendard) is the core tension: branded where it speaks, neutral where it informs. On the product side body text drops to `#222222` and nav labels soften to weight 500.
-
-What distinguishes Elice from its peers is its near-total avoidance of elevation. Live inspection found `box-shadow: none` across the nav, hero, cards, and chips on both surfaces; separation is done entirely with flat tinted fills — a `rgba(102,113,126,0.04)` whisper-grey card on white, the product's `#f0f1f3` page surface — and thin `#e9ebf0` hairlines. Geometry is gently rounded and consistent: an 8px radius dominates buttons and inputs, 16px and 24px on cards, 4px on small chips, with the occasional 500px pill. Color energy is concentrated in a violet→blue→magenta accent set — violet `#7353ea`, deep indigo `#524fa1`, light violet `#7875c8`, royal blue `#2f5efb`, sky blue `#00a6ff`, and magenta `#b853ea` — used for gradients, illustration, and emphasis rather than chrome. Status colors round it out: a confident green (`#00ab53`) with its deep-green badge text (`#1b5e20`) on a mint tint (`#dfebe0`), and a coral-pink (`#fa466a`) for alerts. Secondary text steps down through `#343e4b` and `#66717e`.
+The captured pages of elice.io read as a quiet, near-monochrome frame. Body text is a blue-black `#191f28` on a white `#ffffff` page, and the header actions are drawn in near-black `#212121`: a filled 무료로 시작하기, an outlined 도입문의 and text menu buttons, all 40px tall with an 8px radius. In the hero the same pair turns inverse — a white `#ffffff` action with a `#191f28` label and a white-bordered outline. Headings are set in Elice DX Neolli at weight 500 with −2.4% tracking. Violet `#7353ea` enters on the Elice Cloud pricing page, where it marks the selected product tab and the 가격 문의 links, and it is one of four product icon colours next to blue `#2f5efb`, magenta `#b853ea` and sky `#03a9f4`. Surfaces are flat: cards take a 1px `#e9ebf0` border and a 24px radius, and the only shadow on the captured pages sits under the selected option of the pricing page's GPU, NPU and CPU switch.
 
 **Key Characteristics:**
-- Elice DX Neolli (proprietary display face) for every headline/stat at 40px / weight 500, tight `-2.4%` tracking
-- Pretendard Variable for body (16px / 1.5) and UI (14px / weight 600) — the Korean product-font workhorse
-- Two-surface color split: monochrome dark `#212121` CTA on corporate `elice.io`, brand violet `#7353ea` primary on product `academy.elice.io`
-- Deep navy-ink text (`#191f28`) instead of pure black on the corporate site; `#222222` on the product
-- Flat depth: `box-shadow: none` everywhere; separation via `rgba(102,113,126,0.04)` tints and `#e9ebf0` hairlines
-- Violet→blue→magenta accent family (`#7353ea`, `#524fa1`, `#7875c8`, `#2f5efb`, `#00a6ff`, `#b853ea`) for gradients and emphasis
-- Consistent rounding: 8px buttons/inputs, 16–24px cards, 4px chips, 500px pills
-- Status palette: green `#00ab53` / `#1b5e20` on `#dfebe0`, coral `#fa466a` for alerts
+- Near-black `#212121` fills the contained primary action (무료로 시작하기) on light backgrounds on every captured page
+- Violet `#7353ea` for the selected pricing tab and the 가격 문의 links, not for action fills
+- Elice DX Neolli headings at weight 500 (48px, 40px, 32px) with −2.4% tracking at 48px and 40px
+- Pretendard for body and interface text, weight 500 in the body
+- Radii of 8px (actions), 10px (large actions), 6px (small buttons and toggles), 4px (tags and menu items), 12px (icon tiles) and 24px (cards)
+- Four product icon colours: `#7353ea`, `#2f5efb`, `#b853ea`, `#03a9f4`
+- Flat surfaces separated by `#e9ebf0` borders; one soft shadow, on the selected toggle
+- A header pair — filled and outlined — that repeats on every captured page and inverts over the hero
 
 ## Primary tasks
 
-- Write and run real code in the browser without any local setup.
-- Browse courses, then open your enrolled classes and dashboard.
-- Roll out an AI-upskilling program across a company and follow progress.
-- Evaluate Elice Cloud for GPU-backed training workloads before committing.
+- Start with Elice for free (무료로 시작하기)
+- Ask Elice about adopting its products (도입문의)
+- Compare Elice AI Cloud plans by GPU, NPU or CPU
+- Ask for the price of a GPU plan (가격 문의)
+- Download Elice's logos and free typefaces from the brand page
 
 ## 2. Color Palette & Roles
 
-### Primary (Brand Violet)
-- **Elice Violet** (`#7353ea`): The brand's signature color and the primary-action color on the product surface (엘카데미 로그인 button, links, active-nav tint). On the corporate site it appears as a gradient/accent rather than chrome — the brand's identity hue.
-- **Deep Indigo** (`#524fa1`): The classic Elice deep-indigo brand mark; the dominant accent text color on the product surface. A grounded, trustworthy violet-navy.
-- **Light Violet** (`#7875c8`): A lighter violet used in illustration, decorative fills, and secondary emphasis.
+Every token below was read by the deterministic collector on 2026-09-30 from https://elice.io/ko and the Elice Cloud pricing page (https://elice.io/ko/cloud/pricing, which lands on /ko/cloud/pricing/ai-cloud).
 
-### Ink & Text
-- **Ink Navy** (`#191f28`): Corporate primary heading and body text — a deep blue-black, never pure black, for a warm premium read.
-- **Ink Strong** (`#212121`): The corporate primary-CTA background and nav text color — a near-black used as the marketing "action" color.
-- **Body Grey** (`#222222`): Product-surface (엘카데미) body text color.
-- **Slate** (`#343e4b`): Secondary heading and body color on the corporate site.
-- **Muted** (`#66717e`): Tertiary text, captions, and the base of the `rgba(102,113,126,0.04)` card tint.
+### Primary
+- **Action Black** (`#212121`): The fill of 무료로 시작하기 in the header of every captured page and of the large 무료로 시작하기 that closes the pricing page — five filled actions in the colour census, all this colour. It is also the text of the header menu buttons and of the outlined 도입문의. It is the primary because it is the colour the product renders in its primary action role. Violet `#7353ea` was considered and is the accent instead: on the captured pages it never fills an action; it colours the selected tab and the 가격 문의 links and fills one of the icon tiles. The home page's MUI button variables read `--variant-textColor: #7353ea` and `--variant-outlinedColor: #7353ea` (headless survey, 2026-09-30), which shows the theme keeps violet for text and outlined buttons, while every filled action on a light background uses the `colorSecondary` near-black; over the hero, the filled action is `colorPrimary` in white.
+- **On Primary** (`#ffffff`): Labels on the filled actions.
 
-### Accent (Gradient Family)
-- **Royal Blue** (`#2f5efb`): Gradient and emphasis accent.
-- **Sky Blue** (`#00a6ff`): Bright blue accent for illustration and highlights.
-- **Magenta** (`#b853ea`): The warm end of the violet→magenta gradient set.
+### Accent
+- **Elice Cloud Violet** (`#7353ea`): The label colour of the selected product tab (엘리스AI클라우드) on the pricing page, the 14 가격 문의 links in its pricing table, and the icon tile of one product.
+
+### Neutral & Surface
+- **Canvas** (`#ffffff`): Page background, cards, the inverse hero action and the selected toggle option.
+- **Hairline** (`#e9ebf0`): The 1px border of the outlined cards on home.
+
+### Text
+- **Ink** (`#191f28`): Body text, statistics, card copy, footer menu links and labels on white actions.
+- **Slate** (`#343e4b`): Section headings on home and the pricing page, and the unselected product tab.
+- **Muted** (`#66717e`): Card descriptions on home and the footer's business-registration line.
 
 ### Status
-- **Success Green** (`#00ab53`): Success state and positive status text on the product.
-- **Success Deep** (`#1b5e20`): Recruiting/hiring badge text color.
-- **Success Tint** (`#dfebe0`): Mint background for the recruiting/hiring badge.
-- **Coral** (`#fa466a`): Alert / error / attention accent on the product.
+- **Success Tint** (`#dfebe0`) with **Success Deep** (`#1b5e20`): The 모집 중 and 채용 중 tags in the footer menu.
 
-### Surface & Borders
-- **Pure White** (`#ffffff`): Page background, cards, and text on violet/dark.
-- **Surface Grey** (`#f0f1f3`): Product page background tint.
-- **Hairline** (`#e9ebf0`): Card borders, dividers, and soft-button fills — the primary separation device in the shadowless system.
+### Product icon tiles
+- `#7353ea`, **Tile Blue** (`#2f5efb`), **Tile Magenta** (`#b853ea`) and **Tile Sky** (`#03a9f4`) fill the square MuiAvatar tiles beside product names on home and in the footer menu. On home the sky tiles sit in the developer-infrastructure section and the violet, magenta and blue tiles in the education section.
+
+### Brand assets, not tokens
+- The brand page (https://elice.io/ko/resources/brand) lists **Elice Violet** as `HEX: #6700e6`, but its own RGB line reads R:130 G:0 B:230, which is `#8200e6`, and its CMYK line reads C:78 M:82 Y:0 K:0. Neither value renders on the captured pages, and both differ from the product's `#7353ea`, so Elice Violet is recorded here as a brand asset, with the page's internal mismatch noted, and is not a token.
+- The same page lists **Elice Black** (`#000000`) with reverse versions in white, and offers logo downloads for (주)엘리스그룹, 엘리스엔터프라이즈, 엘리스스쿨, 엘리스트랙 and 엘카데미. The logo artwork was not measured.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **Display**: `Elice DX Neolli` — the company's proprietary display typeface. Used for every hero headline, section title, and statistic at weight 500.
-- **Body / UI**: `Pretendard Variable` (with `Pretendard` fallback) — the document default for all body copy, navigation, and button labels.
+- **Live surface use**: `Elice DX Neolli` (28 observed uses: the pricing h2, every h3, the pricing h4 and the product labels beside the icon tiles), served from `cdn-front-door.elice.io/font/static/f/dxneolli/`; home loads its 300 and 500 weights and the pricing page its 500 weight. `Pretendard` carries all other text: the face is self-hosted as `PretendardVariable-s.p.77d5d991.woff2` under `elice.io/_next/static/media/` and registered under the family name `pretendard` (44 elements name that family directly). The body stack begins with "Pretendard Variable", which no loaded face carries; its next entry, "Pretendard", matches the loaded face, because CSS matches family names case-insensitively, so body and interface text render in Pretendard.
+- **Official distributed font assets**: the brand page distributes three Elice typefaces with web-font, OTF and TTF downloads and a licence PDF each (fetched 2026-09-30; the font.elice.io links redirect to cdn-front-door.elice.io).
+  - **엘리스 DX널리체**: Light, Regular and Bold. The PDF says (주)엘리스 owns the intellectual property and releases it under the SIL Open Font License.
+  - **엘리스 디지털 코딩체**: a fixed-width face tuned from 디지털 배움체 for programming, also SIL Open Font License, also owned by (주)엘리스.
+  - **엘리스 디지털 배움체**: a free title face. Its PDF says it follows the "Open Font License", © 2016–2021, and forbids selling the font files or redistributing modified versions.
+- **Declared only (no visible use)**: `Elice Digital Baeum` and `Elice Digital Coding`, declared from `cdn-front-door.elice.io`, and `gitlab_mono`, declared through next/font — 0 observed uses each.
+- **Unresolved**: the family name "Pretendard Variable", which 1,267 elements request first; no token is made from it. The language icon button computes Arial, a system face (one per captured page), and it is not a token.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Tracking | Notes |
-|------|------|------|--------|-------------|----------|-------|
-| Display / Hero | Elice DX Neolli | 40px (2.50rem) | 500 | 1.20 (48px) | -2.4% | Hero headlines, section titles, stats |
-| Body | Pretendard Variable | 16px (1.00rem) | 400 | 1.50 (24px) | normal | Standard reading text |
-| Nav / Button | Pretendard Variable | 14px (0.88rem) | 600 | 1.50 (21px) | normal | Top-nav items, button labels |
-| Nav (Product) | Pretendard | 14px (0.88rem) | 500 | 1.50 | normal | Product (엘카데미) nav items |
-| Badge | Pretendard | 11px (0.69rem) | 500 | normal | normal | Status pill labels |
+| Role | Font | Size | Weight | Line Height | Observed on |
+|------|------|------|--------|-------------|-------------|
+| Display | Elice DX Neolli | 48px | 500 | 57.6px (1.2), −2.4% | 엘리스클라우드 요금제 (pricing h2) |
+| Section | Elice DX Neolli | 40px | 500 | 48px (1.2), −2.4% | Statistics and section heads on home, plan heads on pricing |
+| Subsection | Elice DX Neolli | 32px | 500 | 39.68px (1.24), −1% | Storage 요금제 |
+| Product Label | Elice DX Neolli | 16px | 500 | 24px (1.5) | Product names beside the icon tiles |
+| Body | Pretendard | 16px | 500 | 24px (1.5) | Page body, card copy, footer menu links |
+| Button | Pretendard | 14px | 600 | 24px | Header and hero actions |
+| Button Large | Pretendard | 15px | 700 | 24px | Closing-band actions |
+| Button Small | Pretendard | 13px | 600 | 22px | 더 보기 |
+| Tab | Pretendard | 14px | 600 | 17.5px | Pricing product tabs |
+| Toggle | Pretendard | 13px | 700 selected, 500 unselected | 22.75px | GPU, NPU and CPU switch |
+| Link | Pretendard | 14px | 500 | 23.94px | 가격 문의 |
+| Menu Label | Pretendard | 14px | 400 | 19.6px | Footer menu group labels |
+| Badge | Pretendard | 11px | 500 (label 700) | 16.5px | 모집 중, 채용 중 |
 
 ### Principles
-- **Bespoke display, neutral body**: Elice DX Neolli carries brand voice in every headline; Pretendard Variable carries every paragraph and UI label. The display/body font split is the system's primary hierarchy signal.
-- **One display size, repeated**: The corporate site sets headlines, section heads, and statistics all at the same 40px / weight 500 — a flat, even typographic rhythm rather than a steep scale.
-- **Tight display tracking**: Headlines run at `-2.4%` letter-spacing; body and UI stay at normal tracking.
-- **Hangul-first body**: Pretendard at 16px / 1.5 is tuned for dense hangul legibility; UI labels sit at 14px.
+- **A bespoke display face over a neutral text face**: Elice DX Neolli sets headings and product names; Pretendard sets everything functional.
+- **Medium weights**: headings compute 500, body text 500, actions 600 (700 on the large closing actions).
+- **Tight display tracking**: −2.4% at 48px and 40px, −1% at 32px; body and interface text keep normal tracking.
 
 ## 4. Component Stylings
 
 ### Buttons
 
-**Corporate Primary CTA (Dark)**
+**Primary action (header)**
 - Background: `#212121`
 - Text: `#ffffff`
 - Radius: 8px
 - Padding: 8px 16px
 - Height: 40px
-- Font: 14px Pretendard weight 600
-- Use: Corporate primary CTA ("Try Free Trial", "Start with Elice")
+- Font: 14px / 600 / 24px Pretendard
+- States: rest on all three captured pages; no hover, pressed or focus frame was recorded for it, and no state value is declared
+- Use: 무료로 시작하기 at the right of the header on home and the pricing page, 120 × 40
 
-**Product Primary CTA (Violet)**
-- Background: `#7353ea`
-- Text: `#ffffff`
+**Primary action over the hero**
+- Background: `#ffffff`
+- Text: `#191f28`
 - Radius: 8px
 - Padding: 8px 16px
 - Height: 40px
-- Font: 14px Pretendard weight 600
-- Use: Product (엘카데미) primary action ("로그인" / sign-in)
+- Font: 14px / 600 / 24px Pretendard
+- States: rest; its hover and pressed frames were read mid-change and are not declared
+- Use: 무료로 시작하기 in the home hero
 
-**Outline (Secondary)**
+**Outlined action**
+- Background: transparent
 - Text: `#212121`
+- Border: 1px rgba(33,33,33,0.5)
 - Radius: 8px
 - Padding: 7px 15px
-- Border: 1px solid `rgba(33,33,33,0.5)`
-- Font: 14px Pretendard weight 600
-- Use: Secondary action ("Contact"); on dark sections the border switches to `#ffffff`
+- Height: 40px
+- Font: 14px / 600 / 24px Pretendard
+- States: rest; its hover and pressed frames were read mid-change and are not declared
+- Use: 도입문의 in the header, 80 × 40
 
-**Soft (Tertiary)**
-- Background: `#e9ebf0`
-- Text: `#222222`
+**Outlined action over the hero**
+- Background: transparent
+- Text: `#ffffff`
+- Border: 1px `#ffffff`
+- Radius: 8px
+- Padding: 7px 15px
+- Height: 40px
+- Use: 도입문의 beside the hero action
+
+**Menu button**
+- Background: transparent
+- Text: `#212121`
 - Radius: 8px
 - Padding: 8px 16px
 - Height: 40px
-- Font: 14px Pretendard weight 600
-- Use: Tertiary action ("회원가입" / sign-up)
+- Font: 14px / 600 / 24px Pretendard
+- States: rest; its hover and pressed frames were read at the start of the background change and are not declared
+- Use: 엘리스AX, 엘리스클라우드, 리소스, 블로그 and 로그인 in the header (로그인 was read, never followed), and 더 알아보기 on home
 
-### Inputs
+**Small text button**
+- Background: transparent
+- Text: `#212121`
+- Radius: 6px
+- Padding: 5px 12px
+- Height: 32px
+- Font: 13px / 600 / 22px Pretendard
+- Use: 더 보기 on the case-study cards, 79 × 32
 
-**Underline Field**
-- Text: `#191f28`
-- Border: 1px solid `#e9ebf0` (bottom underline)
-- Radius: 0px
-- Padding: 16px 12px
-- Font: 14px Pretendard
-- Height: 52px
-- Use: Auth fields on accounts.elice.io ("Email", "Password")
+**Large actions (closing bands)**
+- Filled: `#212121` background, `#ffffff` label, 10px radius, 11px 20px padding, 134 × 46, 15px / 700 / 24px Pretendard — 무료로 시작하기 closing the pricing page
+- Outlined: transparent, `#212121` label, 1px rgba(33,33,33,0.5) border, 10px radius, 10px 19px padding, 92 × 46 — 도입문의 beside it
+- On the home closing band, whose headings are white, the pair inverts: a `#ffffff` fill with a `#191f28` label, and a white border with a white label
+- States: rest only
 
-### Cards & Containers
+### Tabs & Toggles
 
-**Bordered Feature Card**
-- Background: `#ffffff`
-- Border: 1px solid `#e9ebf0`
-- Radius: 24px
-- Use: Feature/content card with hairline separation, no shadow
+**Product tabs (pricing page)**
+- Background: transparent
+- Text: `#343e4b`
+- Radius: 8px
+- Padding: 10px 8px
+- Height: 44px
+- Font: 14px / 600 / 17.5px Pretendard
+- Selected: text `#7353ea` (엘리스AI클라우드)
+- Use: 엘리스AI클라우드 and ECI under the page title
 
-**Tinted Card**
-- Background: `rgba(102,113,126,0.04)`
-- Radius: 16px
-- Padding: 32px
-- Use: Whisper-grey content card on white
+**GPU, NPU and CPU switch**
+- Option: transparent, text rgba(0,0,0,0.54), 13px / 500 / 22.75px Pretendard, 6px radius, 6px padding, 128 × 35
+- Selected: background `#ffffff`, text `#191f28`, weight 700, shadow `rgba(0, 0, 0, 0.04) 0px 4px 5px 0px, rgba(0, 0, 0, 0.04) 0px 4px 24px 0px`
+- Use: switches the pricing table between GPU, NPU and CPU plans
+
+### Links
+- 가격 문의 in each row of the pricing table: `#7353ea`, 14px / 500 / 23.94px Pretendard, underline on hover (MuiLink `underlineHover` class; the hover itself was not measured).
 
 ### Badges
 
-**Recruiting / Hiring Pill**
+**Status tag**
 - Background: `#dfebe0`
 - Text: `#1b5e20`
 - Radius: 4px
-- Font: 11px Pretendard weight 500
-- Use: Status pill ("Recruiting", "Hiring")
+- Height: 20px
+- Font: 11px / 500 / 16.5px Pretendard; the label span computes 11px / 700 with 0px 4px padding
+- Use: 모집 중 beside 교육 파트너 and 채용 중 beside 채용 in the footer menu
+
+### Cards & Containers
+
+**Outlined card**
+- Background: `#ffffff`
+- Text: `#191f28`
+- Border: 1px `#e9ebf0`
+- Radius: 24px
+- Padding: 32px in the content block
+- Use: 522 × 353 cards near the top of home; no shadow
+
+**Product icon tile**
+- Background: `#7353ea`, `#2f5efb`, `#b853ea` or `#03a9f4` by product, with a `#ffffff` icon
+- Radius: 12px at 32 × 32 on home; 6px at 24 × 24 in the footer menu
+- Use: beside product names such as 엘리스LXP, 엘리스테스트, 헬피챗 and 엘리스AI클라우드
 
 ### Navigation
-- Background: `#ffffff`
-- Text: `#212121`, 14px Pretendard weight 600 (corporate) / weight 500 (product)
-- Item radius: 8px (corporate) / 4px (product)
-- Padding: 8px 16px (corporate) / 8px 12px (product)
-- Active: violet tint `rgba(115,83,234,0.08)` with `#7353ea` label (product)
-- Use: Top horizontal nav ("Elice AX", "Elice Cloud", "Resources" / "탐색", "내 클래스", "대시보드")
+- Header: menu buttons at `#212121` and the 도입문의 / 무료로 시작하기 pair at the right, all 40px tall.
+- Footer menu: links in `#191f28`, 16px / 500 / 24px Pretendard, 4px radius, 8px 12px padding, 237 × 40, grouped under labels in rgba(25,31,40,0.38) at 14px / 400 (AI 교육, AI 전환).
 
 ---
 
-**Verified:** 2026-06-26 (omd:add-reference CREATE — Tier 1 live inspect, 3 surfaces)
-**Tier 1 sources:** https://elice.io/en, https://academy.elice.io, https://accounts.elice.io, https://github.com/elicer
-**Tier 2 sources:** getdesign.md/elice (SPA shell, no token data returned); styles.refero.design/?q=elice (search query echoed, no Elice style listed)
+**Verified:** 2026-09-30 (deterministic collector capture of https://elice.io/ko and the Elice Cloud pricing page, logged out, plus first-party brand, newsroom and font-licence sources)
+**Tier 1 sources:** https://elice.io/ko ; https://elice.io/ko/cloud/pricing/ai-cloud ; https://elice.io/ko/resources/brand ; https://elice.io/ko/resources/newsroom/elice-kosdaq-ipo-submission ; https://font.elice.io/static/downloads/EliceDXNeolli_License.pdf ; https://font.elice.io/static/downloads/EliceDigitalBaeum_License.pdf ; https://font.elice.io/static/downloads/EliceDigitalCoding_License.pdf
+**Tier 2 sources:** getdesign.md/elice (HTTP 200, 30,781 bytes; the name does not occur in the returned HTML) and styles.refero.design/?q=elice (HTTP 200, 47,383 bytes; the name occurs 4 times, as the page echoes the query), requested 2026-09-30; no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: 8px
-- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 48px
-- Notable: Cards carry a generous 32px internal padding; button padding is a compact 8px 16px
+- Actions: 8px vertical, 16px horizontal padding at 40px; 11px 20px at 46px
+- Card content: 32px padding
+- Footer menu items: 8px 12px
+- Logo strip: 32px between logos
 
 ### Grid & Container
-- Centered single-column hero anchored by the 40px Elice DX Neolli headline
-- Statistic rows ("13,000 +", "2,810,000 +") set in the same display face at 40px
-- Feature sections alternate white (`#ffffff`) and tinted (`rgba(102,113,126,0.04)`) bands; the product surface sits on `#f0f1f3`
-- Cards use 16px (tinted) and 24px (bordered) radii to group related content
+- A 40px header with menu buttons on the left and the 도입문의 / 무료로 시작하기 pair on the right, on every captured page.
+- Home runs from the hero into a logo strip, statistics (13,000 +, 2,810,000명 +), outlined cards, product sections with icon tiles, case-study cards, a press section (언론 속의 엘리스), a security section and a closing band with the inverse action pair.
+- The pricing page stacks a 48px title, the product tabs, 40px plan headings, the GPU, NPU and CPU switch and pricing tables, then a closing band with the filled and outlined large actions.
 
 ### Whitespace Philosophy
-- **Breathing room over density**: generous vertical rhythm between sections; the corporate site is airy and editorial.
-- **Flat segmentation**: sections separate by background tint and `#e9ebf0` hairlines, never by shadow.
-- **Even rhythm**: the single repeated 40px display size and consistent 8px button radius create a calm, predictable cadence.
+- **Frame, not decoration**: the chrome stays near-monochrome so headings and product sections lead.
+- **Repeated pair**: the filled and outlined actions return at the top and bottom of every captured page.
 
 ### Border Radius Scale
-- Small (4px): chips, small status pills, product nav items
-- Medium (8px): buttons, corporate nav items, inputs (product) — the workhorse
-- Large (16px): tinted cards
-- XL (24px): bordered feature cards
-- Pill (500px): occasional full-round elements
+- 4px: status tags, footer menu items
+- 6px: small text buttons, switch options, footer icon tiles
+- 8px: header and hero actions, product tabs
+- 10px: large closing actions
+- 12px: icon tiles on home
+- 24px: outlined cards
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, inline text, most surfaces |
-| Tint (Level 1) | `rgba(102,113,126,0.04)` / `#f0f1f3` fill | Card/section separation without elevation |
-| Hairline (Level 2) | `1px solid #e9ebf0` border | Bordered feature cards, dividers |
+| Flat | No shadow | Page, actions, tabs, cards, tiles |
+| Outline | 1px `#e9ebf0` | Outlined cards |
+| Soft lift | `rgba(0, 0, 0, 0.04) 0px 4px 5px 0px, rgba(0, 0, 0, 0.04) 0px 4px 24px 0px` | Selected option of the GPU, NPU and CPU switch |
 
-**Shadow Philosophy**: Elice is a shadowless system. Live inspection found `box-shadow: none` across the nav, hero, cards, and chips on both `elice.io` and `academy.elice.io`. Depth and grouping are communicated entirely through flat tinted fills (`rgba(102,113,126,0.04)`, the `#f0f1f3` product surface) and thin `#e9ebf0` hairlines. This keeps the education UI feeling clean, modern, and fast. When emphasis is needed the system reaches for color — brand violet `#7353ea` or the gradient accent family — never elevation.
+**Shadow Philosophy**: Elice's captured pages are flat. Cards, actions and tabs compute `box-shadow: none`; cards separate with a `#e9ebf0` border. The one measured shadow lifts the selected option of the pricing switch.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Use Elice DX Neolli for every headline, section title, and statistic at 40px / weight 500
-- Use Pretendard Variable for body (16px / 1.5) and UI labels (14px / weight 600)
-- Reserve dark `#212121` for the corporate primary CTA and brand violet `#7353ea` for the product primary action
-- Use deep navy-ink (`#191f28`) for corporate text, `#222222` for product body — never pure black
-- Separate sections with flat tints (`rgba(102,113,126,0.04)`, `#f0f1f3`) and `#e9ebf0` hairlines, not shadows
-- Keep an 8px radius on buttons and corporate nav; 16–24px on cards; 4px on chips
-- Hold the violet→blue→magenta accent family (`#7353ea`, `#2f5efb`, `#00a6ff`, `#b853ea`) for gradients and emphasis
-- Use the green `#00ab53` / `#1b5e20` on `#dfebe0` status palette for positive/recruiting states
+- Fill primary actions with `#212121` and white labels; pair them with a 1px rgba(33,33,33,0.5) outlined action
+- Invert the pair over dark or photographic areas: a `#ffffff` fill with a `#191f28` label and a white outline
+- Use violet `#7353ea` for the selected tab and for inline links
+- Set headings in Elice DX Neolli at weight 500 with −2.4% tracking; set text in Pretendard
+- Keep cards flat with a 1px `#e9ebf0` border and a 24px radius
+- Use the four product icon colours only for product tiles
 
 ### Don't
-- Use drop shadows for elevation — Elice is a flat, shadow-free system
-- Spread brand violet `#7353ea` across the corporate marketing chrome — it stays an accent there
-- Use pure black (`#000000`) for body text — use `#191f28` or `#222222`
-- Set headlines in a heavy weight — display is a calm weight 500, not bold
-- Use Pretendard for big headlines — Elice DX Neolli owns display
-- Mix in unrelated accent hues — stay within the violet→blue→magenta family
-- Use positive letter-spacing on display — headlines track tight at `-2.4%`
-- Stack many radii on one surface — 8px is the default workhorse
+- Don't fill actions with violet; no captured action uses it
+- Don't substitute the brand page's `#6700e6` or `#8200e6` for the product's `#7353ea`
+- Don't add drop shadows to cards or actions; the one shadow belongs to the selected switch option
+- Don't set headings in bold weights; they compute 500
+- Don't render another face and present it as Elice DX Neolli or Pretendard
+- Don't invent hover colours; none were measured as settled
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column, hero headline compresses, stat rows stack |
-| Tablet | 640-1024px | Moderate padding, 2-up feature cards |
-| Desktop | 1024-1440px | Full layout, centered hero, multi-column feature bands |
+Only the 1440 × 900 desktop viewport was captured. No breakpoint was measured.
 
 ### Touch Targets
-- Buttons at 40px height with 8px 16px padding — comfortably tappable
-- Nav items at 40px height within the header
-- Auth inputs at 52px height for an easy tap target
+- Header and hero actions: 40px tall
+- Large closing actions: 46px
+- Product tabs: 44px
+- Switch options: 35px
+- Footer menu items: 40px
 
 ### Collapsing Strategy
-- Hero: 40px Elice DX Neolli headline scales down on mobile, weight 500 maintained
-- Feature bands: multi-column → stacked single column
-- Tinted/white alternating sections maintain full-width treatment
-- Stat rows: horizontal row → stacked
+- Not measured at other widths.
 
 ### Image Behavior
-- Illustrations and product screenshots carry no shadow at any size, consistent with the flat system
-- Cards maintain their 16px / 24px radii across breakpoints
+- Product icon tiles keep their square shape at 32px and 24px; no image treatment was measured beyond that.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Corporate CTA: Ink Strong (`#212121`)
-- Product CTA / brand: Elice Violet (`#7353ea`)
-- Deep brand accent: Deep Indigo (`#524fa1`)
-- Background: Pure White (`#ffffff`), Product surface (`#f0f1f3`)
-- Corporate text: Ink Navy (`#191f28`); Product text: Body Grey (`#222222`)
-- Secondary text: Slate (`#343e4b`), Muted (`#66717e`)
-- Hairline: `#e9ebf0`
-- Success: `#00ab53` / `#1b5e20` on `#dfebe0`; Alert: Coral (`#fa466a`)
-- Gradient accents: `#2f5efb`, `#00a6ff`, `#b853ea`, `#7875c8`
+- Primary action: `#212121` with `#ffffff` labels
+- Text: `#191f28`; headings and unselected tabs `#343e4b`; descriptions `#66717e`
+- Page and cards: `#ffffff`; card border `#e9ebf0`
+- Selected tab and links: `#7353ea`
+- Product tiles: `#7353ea`, `#2f5efb`, `#b853ea`, `#03a9f4`
+- Status tag: `#1b5e20` on `#dfebe0`
 
 ### Example Component Prompts
-- "Create a hero on white. Headline in Elice DX Neolli at 40px weight 500, line-height 48px, letter-spacing -2.4%, color #191f28. Two CTAs: dark #212121 bg with white text, 8px radius, 8px 16px padding ('Try Free Trial'); and an outline button (transparent, 1px solid rgba(33,33,33,0.5), #212121 text, 8px radius)."
-- "Design a feature card: white #ffffff background, 1px solid #e9ebf0 border, 24px radius, no shadow, 32px padding. Title in Elice DX Neolli 40px weight 500 #191f28; body 16px Pretendard #343e4b."
-- "Build a product (엘카데미) nav: white header, 14px Pretendard weight 500 items, #212121 text, 4px radius items; active item uses rgba(115,83,234,0.08) tint with #7353ea label. Violet #7353ea primary '로그인' button, white text, 8px radius."
-- "Create a recruiting badge: #dfebe0 background, #1b5e20 text, 4px radius, 11px Pretendard weight 500."
+- "Create an Elice header pair: an outlined 도입문의 (transparent, 1px rgba(33,33,33,0.5) border, `#212121` label) and a filled 무료로 시작하기 (`#212121` background, `#ffffff` label), both 14px Pretendard weight 600, 8px radius, 40px tall, no shadow."
+- "Build product tabs: 14px / 600 Pretendard, `#343e4b` unselected, `#7353ea` selected, 8px radius, 10px 8px padding, 44px tall."
+- "Make a three-option switch: options 128 × 35 with a 6px radius; unselected transparent with rgba(0,0,0,0.54) text at weight 500; selected `#ffffff` with `#191f28` text at weight 700 and a soft two-layer shadow."
+- "Design an outlined card: `#ffffff`, 1px `#e9ebf0` border, 24px radius, 32px padding, a 40px Elice DX Neolli heading at weight 500 with −2.4% tracking in `#343e4b`."
 
 ### Iteration Guide
-1. Elice DX Neolli for every headline/stat (40px / 500); Pretendard for everything else
-2. Dark `#212121` is the corporate action color; violet `#7353ea` is the product action color
-3. No shadows — separate with `rgba(102,113,126,0.04)` tints, `#f0f1f3` surface, and `#e9ebf0` hairlines
-4. 8px radius is the workhorse; 16–24px on cards; 4px on chips
-5. Text is `#191f28` (corporate) / `#222222` (product), never pure black
-6. Tight `-2.4%` tracking on display, normal on body
-7. Keep saturated color in the violet→blue→magenta accent family
+1. Near-black `#212121` for actions; violet `#7353ea` for selection and links
+2. Elice DX Neolli 500 for headings, Pretendard for text
+3. 8px actions, 24px cards, 4px tags
+4. Flat surfaces; one soft shadow on the selected switch option
+5. Invert the action pair on dark bands
 
 ---
 
 ## 10. Voice & Tone
 
-Elice's voice is **confident, capability-forward, and plainly technical** — a company that positions itself as "AI Full Stack" and speaks about learning, building, and operating AI as one continuous capability rather than a slogan. The corporate headline "Learn, build, and execute — AI happens at Elice" sets the register: declarative, builder-oriented, and grounded in real numbers ("13,000 +", "2,810,000 +"). On the product (엘카데미) the tone warms up and becomes practical and student-facing: "오늘 배워서 내일 바로 적용하는 실습중심 AI 교육" ("hands-on AI education you learn today and apply tomorrow").
+Elice speaks in short, declarative Korean that names what the product does — learning, building and running AI — and backs it with numbers.
 
 | Context | Tone |
 |---|---|
-| Corporate hero | Declarative, capability-framed. "Learn, build, and execute." Confident, not hype. |
-| Statistics | Concrete and unembellished. "13,000 +", "2,810,000 +". Numbers as proof. |
-| Section heads | Outcome-oriented. "AI-powered, reliable education operation", "Stable AI development and operation infrastructure". |
-| Product (엘카데미) | Practical, encouraging, student-facing. "오늘 배워서 내일 바로 적용하는 실습중심 AI 교육". |
-| CTAs | Direct, low-pressure. "Try Free Trial", "Contact", "로그인", "회원가입". |
+| Positioning | Plain and total. "엘리스 \| AI 풀스택 기업". |
+| Headlines | Verb chains. "배우고, 만들고, 실행까지 한번에". |
+| Audience heads | Who it is for, then what it gives. "교육자를 위한 AI 기반의 안정적인 교육 운영", "개발자를 위한 안정적인 AI 개발·운영 인프라". |
+| Proof | Bare numbers. "13,000 +", "2,810,000명 +". |
+| Actions | Direct and low-pressure. "무료로 시작하기", "도입문의", "더 알아보기", "가격 문의". |
 
-**Voice samples (verbatim from live surfaces):**
-- "Learn, build, and execute — AI happens at Elice" — corporate hero headline. *(verified live 2026-06-26)*
-- "AI-powered, reliable education operation" — section heading. *(verified live 2026-06-26)*
-- "엘카데미 | 오늘 배워서 내일 바로 적용하는 실습중심 AI 교육" — product page title. *(verified live 2026-06-26)*
+**Voice samples (verbatim, opened 2026-09-30):**
+- "배우고, 만들고, 실행까지 한번에" — elice.io/ko section heading.
+- "AI로 미래를 바꾸는 당신의 여정, 엘리스클라우드가 함께 합니다." — closing heading of the pricing page.
+- "기회와 가능성을 만들어내는 기술" — brand page.
+- "고성능 AI 클라우드부터 산업별 AX 솔루션까지 아우르는 '풀스택 AI 파트너'" — CEO 김재원, quoted in the newsroom item of 2026-08-21.
 
-**Forbidden register**: vague AI hype without proof, fear-based upsell, exclamation-heavy marketing, undefined jargon left unexplained.
+**Forbidden register**: AI hype without numbers, fear-based urgency, stacked exclamation marks.
 
 ## 11. Brand Narrative
 
-Elice (엘리스), operated by **엘리스그룹 (Elice Group)**, was founded in **2015** as a spin-off rooted in KAIST, with a mission to make practical, hands-on software and AI education scalable. The name and the original product center on a cloud-based, browser-run coding/AI learning environment — learners write and execute real code without local setup, and instructors operate classes at scale. Over time the company expanded from coding education into a broader "AI Full Stack" positioning that spans learning (엘카데미 / Elcademy LXP), enterprise upskilling (Elice AX), and the GPU/cloud infrastructure that runs it (Elice Cloud).
+엘리스그룹 was founded in 2015. Its newsroom item of 2026-08-21, "엘리스그룹, 증권신고서 제출… 코스닥 상장 본격화", describes it as an AI full-stack company that supplies AI infrastructure, cloud and industry AX solutions on the strength of AI cloud technology it developed itself. The two business areas are AX — industry AX solutions, 엘리스LXP as a platform for training AI talent of every age, and the Helpy series of AI agents and enterprise AX solutions — and AI Cloud — the AI PMDC mobile modular data centre, the ECI cloud-infrastructure OS and 엘리스AI클라우드. The filing opened the offering process for a KOSDAQ listing, and the company says it will use the proceeds for AI infrastructure and cloud technology and for growth through its US, Singapore and Japan subsidiaries.
 
-The product's founding premise — visible in its design — is that AI capability is a continuum: you **learn**, you **build**, and you **execute/operate**, all on one platform. The corporate homepage states this literally ("Learn, build, and execute — AI happens at Elice") and backs it with operational claims around reliable education operation and stable AI infrastructure, plus a security posture aimed at domestic enterprise and public-sector customers.
+The brand page states the identity plainly. The logo's lettering is drawn in a programming font to signify technical skill and problem solving; the irregular shape that wraps it signifies possibilities and opportunities not yet defined. The line beneath is "기회와 가능성을 만들어내는 기술" — technology that creates opportunity and possibility. The page lists Elice Violet and Elice Black as the brand colours and publishes logos for the group and for 엘리스엔터프라이즈, 엘리스스쿨, 엘리스트랙 and 엘카데미.
 
-What Elice refuses, visible in its design: the heavy, decorated chrome of legacy e-learning (no shadow-stacked cards, no clip-art gradients as UI) and undefined AI hype. What it embraces: a calm monochrome corporate surface anchored by a proprietary display typeface (Elice DX Neolli), a flat shadowless system separated by tints and hairlines, a disciplined violet→blue→magenta accent family, and a warmer, more energetic violet-led product surface where the brand color finally takes the lead.
+Type is part of the brand's public offer. 엘리스 디지털 배움체 is given away "모두에게 손쉽고 효율적인 학습을 위해" — for easy, efficient learning for everyone; 엘리스 디지털 코딩체 adapts it to fixed width for code; and 엘리스 DX널리체, the face that sets elice.io's headings, is named for spreading the value of digital transformation widely. On the captured pages that identity reads as a near-monochrome frame, the bespoke DX Neolli headings, and violet held for selection and links.
 
 ## 12. Principles
 
-1. **One continuum: learn, build, execute.** Elice frames education, building, and operation as a single capability. *UI implication:* keep navigation and surfaces consistent across learning, product, and infrastructure so the journey reads as one platform.
-2. **Proof over hype.** The brand leads with concrete numbers and operational claims, not adjectives. *UI implication:* surface real statistics in the display face; avoid decorative superlatives.
-3. **Calm corporate, energetic product.** *UI implication:* hold brand violet `#7353ea` as an accent on the marketing site and let it lead as the primary action inside the product.
-4. **Flat and fast.** Modern shadowless clarity over decorative depth. *UI implication:* separate with `rgba(102,113,126,0.04)` tints and `#e9ebf0` hairlines; never reach for drop shadows.
-5. **Bespoke where it speaks, neutral where it informs.** *UI implication:* Elice DX Neolli for headlines and stats; Pretendard for everything functional.
+1. **Learn, build, run in one place.** "배우고, 만들고, 실행까지 한번에" is the home headline. *UI implication:* keep one header, one action pair and one type system across education and cloud pages.
+2. **Technology that creates opportunity.** The brand line. *UI implication:* precise, technical detail (a programming-font logo, exact pricing tables) framed in open space. (An editorial reading of the brand page.)
+3. **Monochrome action, violet selection.** *UI implication:* fill actions with `#212121`; keep `#7353ea` for the selected tab and links. (An editorial reading of the captured pages.)
+4. **Share the type.** Elice distributes its typefaces free. *UI implication:* the display face that carries the brand is the one it gives away.
+5. **Flat and outlined.** *UI implication:* separate with `#e9ebf0` borders, not shadows.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable Elice user segments (students upskilling in AI/coding, enterprise L&D buyers, public-sector training operators, developers using the cloud), not individual people.*
+*Personas below are fictional archetypes informed by the audiences named on the captured pages (educators and developers) and in the newsroom (public, finance and defence customers), not individual people.*
 
-**김도윤, 26, 서울.** A non-CS graduate reskilling into AI development through 엘카데미. Values that he can write and run real code in the browser without setup, and that lessons are "learn today, apply tomorrow." Chose Elice because the hands-on, practical framing felt more credible than lecture-only platforms.
+**정하윤, 41, 대전.** A training lead at a public institution. Opens 도입문의 after reading "교육자를 위한 AI 기반의 안정적인 교육 운영" and checks the security section before recommending 엘리스LXP.
 
-**이서연, 38, 판교.** An L&D manager at a mid-size enterprise rolling out an AI-upskilling program for 300 employees. Cares about reliable operation at scale, progress dashboards, and a security posture acceptable to her compliance team. Trusts the calm, proof-forward corporate tone over hype-driven vendors.
+**오세진, 29, 판교.** An ML engineer at a start-up. Switches the pricing table between GPU and NPU on the 엘리스AI클라우드 tab and sends a 가격 문의 for the plan that fits.
 
-**박준호, 31, 대전.** A platform engineer evaluating Elice Cloud for GPU-backed training workloads. Reads the infrastructure claims literally and expects stability; appreciates that the brand treats learning, building, and operating as one stack rather than separate products.
+**한도현, 35, 서울.** A designer who downloaded 엘리스 DX널리체 from the brand page and uses it under its SIL Open Font License in presentations.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed on the captured pages; nothing else is specified here.
+
+| State | Observation |
 |---|---|
-| **Empty (no courses / no results)** | White canvas. Single Ink (`#191f28` / `#222222`) line explaining there's nothing yet, with one violet `#7353ea` CTA to explore. No illustration clutter. |
-| **Empty (dashboard, no activity)** | Muted (`#66717e`) single line plus a path to start a course. Honest, calm. |
-| **Loading (course list fetch)** | Skeleton cards on `rgba(102,113,126,0.04)` tint at final dimensions, 16px radius. Flat pulse — no shadow shimmer, consistent with the shadowless system. |
-| **Loading (code/AI run)** | Inline progress within the run panel; previous output stays visible until the new result arrives. |
-| **Error (run/network failed)** | Inline message in coral (`#fa466a`) tone with a plain-language explanation and a retry. Never a bare "오류가 발생했습니다". |
-| **Error (form validation)** | Field-level message below the underline input; describes what's valid, not just "필수". |
-| **Success (submission / enrollment)** | Brief confirmation in the green (`#00ab53`) status tone; next-step detail linked immediately below. No celebratory emoji. |
-| **Skeleton** | `rgba(102,113,126,0.04)` blocks at final dimensions, 16px radius, flat pulse. |
-| **Disabled** | Muted (`#66717e`) text on a reduced-opacity surface; violet actions fade rather than turn grey to preserve brand read. |
+| **Selected (product tabs)** | The selected tab's label turns from `#343e4b` to `#7353ea`. |
+| **Selected (switch)** | The selected option fills `#ffffff` with `#191f28` text at weight 700 and the soft two-layer shadow; the others are transparent with rgba(0,0,0,0.54) text at weight 500. |
+| **Inverse over the hero** | The action pair turns white: `#ffffff` fill with a `#191f28` label, and a white outline. |
+
+The collector's hover and pressed frames for the header, hero and closing actions were read while the background was still changing, so no hover or pressed value is declared. The pricing tabs' hover and pressed frames are recorded in the verification notes but not declared, because their settling was not confirmed. Focus treatments were not measured. Error, empty, loading and success states were not captured and are not described.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 120ms | Hover, button press, focus |
-| `motion-standard` | 200ms | Card/section reveal, dropdown, tab switch |
-| `motion-slow` | 320ms | Page-level transitions, hero reveal |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — cards, sheets, menus |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions |
-
-**Motion rules**: Motion is functional and quiet — consistent with the flat, fast aesthetic. Buttons respond to press with a subtle opacity/scale shift; content fades in from below at `motion-standard / ease-enter`. No bounce or spring — an education-and-infrastructure product signals steadiness, not playfulness. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant; the product remains fully functional.
+The collector reads computed style, not animation, so no duration or easing is measured. The hover frames it recorded for the header buttons caught the background partway through a change, which shows the actions animate their states without timing them. The logo strip near the top of home is built as a LogoLoop component, whose name indicates a looping strip; its timing was not measured. Treat motion as unspecified rather than borrowing values, and honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-26) via playwright getComputedStyle:
-- https://elice.io/en (corporate homepage) — body Pretendard Variable rgb(25,31,40) #191f28 16px/24px;
-  hero/section/stat H3 in "Elice DX Neolli" 40px / weight 500 / line-height 48px / letter-spacing -2.4%;
-  primary CTA "Try Free Trial" bg rgb(33,33,33) #212121 / white / radius 8px / 8px 16px / 14px 600 / 40px;
-  outline "Contact" border 1px solid rgba(33,33,33,0.5); feature card white + 1px #e9ebf0 + 24px radius;
-  tinted card rgba(102,113,126,0.04) 16px radius 32px padding; recruiting badge bg rgb(223,235,224) #dfebe0
-  text rgb(27,94,32) #1b5e20 4px/11px; box-shadow none across surfaces.
-- https://academy.elice.io (엘카데미 LXP) — body Pretendard rgb(34,34,34) #222222 on rgb(240,241,243) #f0f1f3;
-  primary "로그인" bg rgb(115,83,234) #7353ea / white / 8px radius / 40px; soft "회원가입" bg rgb(233,235,240)
-  #e9ebf0 / #222222; active nav "탐색" bg rgba(115,83,234,0.08) 4px radius; link rgb(115,83,234) #7353ea;
-  deep-indigo text rgb(82,79,161) #524fa1 (dominant accent); success rgb(0,171,83) #00ab53; coral rgb(250,70,106)
-  #fa466a; light violet rgb(120,117,200) #7875c8.
-- https://accounts.elice.io — underline auth inputs Email/Password, color rgb(25,31,40) #191f28, padding 16px 12px,
-  14px, height 52px.
-- https://github.com/elicer — official GitHub org (brand-owned), avatar fetched 1558B.
-
-Voice samples (§10) are verbatim from the live surfaces (corporate hero, section heading, product page title).
-
-Brand narrative (§11): Elice / 엘리스그룹 (Elice Group), founded ~2015 with KAIST roots; AI Full Stack positioning
-spanning 엘카데미 (LXP), Elice AX (enterprise), and Elice Cloud (GPU/cloud infrastructure). These are widely
-documented public facts and claims observed on the live corporate site ("AI Full Stack Company" page title,
-"Learn, build, and execute" hero); specific founding details beyond the site are general public knowledge, not
-directly quoted from a verified Elice statement in this turn.
-
-Personas (§13) are fictional archetypes informed by publicly observable Elice user segments. Names are
-illustrative; they do not refer to real people.
-
-Interpretive claims (e.g., "one continuum: learn, build, execute", "calm corporate / energetic product as a
-two-surface color split") are editorial readings connecting Elice's observed design to its positioning, not
-directly sourced Elice statements.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/elice.json (capturedAt 2026-09-30T07:52:30.952Z), deterministic collector, 1440x900, logged out: https://elice.io/ko (the frontmatter homepage https://elice.io lands there) and https://elice.io/ko/cloud/pricing (lands on /ko/cloud/pricing/ai-cloud; the bundle records it twice, as surface-2 and surface-3, and claims cite surface-2). The route /ko/ax/lxp was excluded because it hangs the collector; academy.elice.io was not captured.
+- Labels (무료로 시작하기, 도입문의, 엘리스AI클라우드, GPU, 가격 문의, 모집 중) and the MUI button variables come from a headless survey of the same two pages on 2026-09-30 (ko-KR, 1440x1000), matched to captures by class, size and position.
+- §1, §2 brand assets, §3, §10, §11: https://elice.io/ko/resources/brand, https://elice.io/ko/resources/newsroom/elice-kosdaq-ipo-submission (datePublished 2026-08-21) and the three licence PDFs, opened 2026-09-30. These supply narrative and licence facts, never a token.
+- Personas are fictional archetypes. Interpretive readings are marked editorial.
 -->

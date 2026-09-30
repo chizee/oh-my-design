@@ -7,8 +7,8 @@
       "dir": "artifacts/reference-evidence",
       "why": "140개 verified 레퍼런스의 캡쳐 근거. 만료 대응 R트랙 55건의 유일한 입력.",
       "critical": true,
-      "fileCount": 194,
-      "bytes": 163562634,
+      "fileCount": 205,
+      "bytes": 175311102,
       "files": {
         "104.json": {
           "sha256": "006a9edc3a9ee4c87f1189cc315b1b22c0ab769c4a014b50d435a04670c715ae",
@@ -21,6 +21,10 @@
         "29cm.json": {
           "sha256": "086facd01163aaf917dffa0e9705c97da7be14a066c9bd14e6bec64e322563e8",
           "bytes": 1957718
+        },
+        "3o3.json": {
+          "sha256": "cbfc8dc74c888a1c8eba89e482bc9f5f7397f6010862c9d90cdc9c9e79f392dc",
+          "bytes": 427589
         },
         "ably.json": {
           "sha256": "752a569bafa0a5d5e7cd95d7e07b2819ca63ac455ba4aa1cf5e5d926d5d5e797",
@@ -158,6 +162,10 @@
           "sha256": "f529f45672e087db6738780dcfb8885d8b2d600b959ff5a26f578f778149b9a8",
           "bytes": 1085803
         },
+        "elice.json": {
+          "sha256": "d50e352112fe4819d78da75ae8de2ccf847f9a6b6d2b9963466b2a225c20f657",
+          "bytes": 1838599
+        },
         "eslite.json": {
           "sha256": "87a8b015738e11c1802bfcef9556a18b7601fc5d8e1d12a535a71252447809b2",
           "bytes": 1185543
@@ -181,6 +189,10 @@
         "figma.json": {
           "sha256": "1a6591c5776e2de96d5cd017ac4bb27906afa3797f7ab5098e5b89dfa121ec36",
           "bytes": 1925753
+        },
+        "finda.json": {
+          "sha256": "8a60e2784029703277a3a10f0dc4950086b1537eaabcaed9bd9d1149e739c5b8",
+          "bytes": 510373
         },
         "fixture-report.json": {
           "sha256": "07e5d6334c797ef31e557b8cf3f665f1a564c3a8bf2238c69dd0a2d6c5858311",
@@ -226,6 +238,10 @@
           "sha256": "ba6841f77b8e05abbcc0a9a7ff10ba54e52871e6e74bed0d46d659247adad0e6",
           "bytes": 947036
         },
+        "heydealer.json": {
+          "sha256": "f5fcf3e979239e074080b6f11eacb2045a0874faa5015d5ab37971da2c53e52a",
+          "bytes": 956391
+        },
         "hwahae.json": {
           "sha256": "5c62b180e0f87ee6aa2d2e5de160c47ec647926abfdb719c4587149521901195",
           "bytes": 471781
@@ -245,6 +261,10 @@
         "ibm.json": {
           "sha256": "3656f60693e72120aa8800faa8bc6ec0c0760c27ac5b2856de6886560fcf61d4",
           "bytes": 711230
+        },
+        "iicombined.json": {
+          "sha256": "1efb48e4e22b4c1481b562569916a4d732e095ec628da65aae83f85e84aedc95",
+          "bytes": 1409686
         },
         "imweb.json": {
           "sha256": "7ecb4d96491740b13c31c062fa3a2e484ee73a4c310192fe20ad4e446884f035",
@@ -358,6 +378,10 @@
           "sha256": "b0af270398e6740ba472d888d10f396c93490d7cccc3c82408798a76a2d48a85",
           "bytes": 2223318
         },
+        "liner.json": {
+          "sha256": "d4f3b7f71cc37491e3305b7aa0eda50eb51d62b58ab48ca9f4f65290e843f8d0",
+          "bytes": 1007713
+        },
         "lotteon.json": {
           "sha256": "a7f89b6cdc907ec37b224fff68bc9b994329af85d831583503519cd472c41962",
           "bytes": 887330
@@ -421,6 +445,10 @@
         "mongodb.json": {
           "sha256": "1d1aad44fd0c792b32d31d54231010e001842b2cfbdfdbee36f8f1ec128cfb7a",
           "bytes": 555779
+        },
+        "moreh.json": {
+          "sha256": "9c8349c6ddd2c4b047c82de6c2f211823e3ba60efc3157761e265cb8d4a950b9",
+          "bytes": 425753
         },
         "mozilla.json": {
           "sha256": "a84a4c6792af0cb0fac08f50d92e21d54010cb11b9124a94baf9def522064a19",
@@ -501,6 +529,10 @@
         "patternfly.json": {
           "sha256": "9f0a7c50a81022e1f1928d9b3a604ebf0833b511c361da9dbb0e3a19f0996d84",
           "bytes": 499627
+        },
+        "payhere.json": {
+          "sha256": "27ec3fa1df69b865647f0a33586bc6b30153223f5faac0e9d9f0eb0012a7f19c",
+          "bytes": 1292065
         },
         "pega.json": {
           "sha256": "c3d85b21c3e93b5900876ad59669d898f3d97845157e29588a7a9b9b811d41a7",
@@ -646,6 +678,10 @@
           "sha256": "eb93b6e4fbf3872d7de24e130679fce4fcbc1a311d72ef4c82cc34414f3d01e4",
           "bytes": 727371
         },
+        "teamblind.json": {
+          "sha256": "78a952aada5e29470131a24711f692d75f65800b970a929945d9974ec9b212ef",
+          "bytes": 1374877
+        },
         "teamlab.json": {
           "sha256": "23602b8a06150417f20e9e1cdf1328d974d972465d3bebc3c2bd03bd8fbb760f",
           "bytes": 921481
@@ -742,6 +778,10 @@
           "sha256": "bb4c9fbfc22bb3cd4e7b41bb42071543fb9c4770ccb6f001ff69e3f20643e32e",
           "bytes": 673263
         },
+        "weverse.json": {
+          "sha256": "61f4b7e3e3c0b186402feabf022dc4d138dd8f798e54af7c7b1b719295af02c5",
+          "bytes": 1572487
+        },
         "wise.json": {
           "sha256": "5c095ccf511252377980d7aea59b205a4eec7c9958244d170de1216f5753b479",
           "bytes": 1869002
@@ -781,6 +821,10 @@
         "zendesk.json": {
           "sha256": "a80a464dcb003f2631a5bb265d3355342a00080bd382ecddaa32b1caed6a7a97",
           "bytes": 962454
+        },
+        "zepeto.json": {
+          "sha256": "0a814b23d6af16e09b1a7d54a8bd16aae1689d26df086bc185efe17e3be3f458",
+          "bytes": 932935
         },
         "zigzag.json": {
           "sha256": "d97ce774e240b9bb6dca3431711a89f780c65d826c34d263a6e9525c8ad6b7b3",

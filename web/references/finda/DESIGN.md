@@ -1,6 +1,7 @@
 ---
 id: finda
 name: Finda
+display_name_kr: 핀다
 country: KR
 category: fintech
 homepage: "https://finda.co.kr"
@@ -8,50 +9,298 @@ primary_color: "#4e2eed"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=finda.co.kr&sz=128"
-verified: "2026-06-09"
+verified: "2026-09-30"
 added: "2026-06-09"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: marketing, url: "https://finda.co.kr/", inspected: "2026-09-30" }
+    - { id: surface-2, kind: corporate, url: "https://finda.co.kr/about-us", inspected: "2026-09-30" }
+    - { id: surface-3, kind: corporate, url: "https://finda.co.kr/culture", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://finda.co.kr/", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://finda.co.kr/about-us", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://finda.co.kr/culture", captured: "2026-09-30" }
+    - { id: finda-probe-about, kind: product-surface, url: "https://finda.co.kr/about-us", captured: "2026-09-30" }
+    - { id: finda-probe-culture, kind: product-surface, url: "https://finda.co.kr/culture", captured: "2026-09-30" }
+    - { id: finda-probe-home, kind: product-surface, url: "https://finda.co.kr/", captured: "2026-09-30" }
+    - { id: finda-post, kind: official-doc, url: "https://www.post.finda.co.kr/", captured: "2026-09-30" }
+    - { id: suit-license, kind: license, url: "https://raw.githubusercontent.com/sun-typeface/SUIT/main/LICENSE", captured: "2026-09-30" }
+    - { id: pretendard-license, kind: license, url: "https://raw.githubusercontent.com/orioncactus/pretendard/main/LICENSE", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &cta { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-09-30" }
+    "tokens.colors.on-primary": *cta
+    "tokens.colors.accent": &recruit { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"5\"]", captured: "2026-09-30" }
+    "tokens.colors.accent-hover": &recruitstate { surface_id: surface-2, source_id: finda-probe-about, method: live-state-probe, selector: "button 채용공고 확인하기 (1180 x 54): hover and pressed bg rgb(93, 76, 242) -> rgb(113, 100, 248); focus (Tab #6) no change", captured: "2026-09-30" }
+    "tokens.colors.ink": &body { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.colors.ink-pure": &hero { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h1", captured: "2026-09-30" }
+    "tokens.colors.charcoal": &chip { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-09-30" }
+    "tokens.colors.body": &lead { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.slate": &nav { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.muted": &biz { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"26\"]", captured: "2026-09-30" }
+    "tokens.colors.muted-alt": &h3muted { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h3", captured: "2026-09-30" }
+    "tokens.colors.white": &close { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"32\"]", captured: "2026-09-30" }
+    "tokens.colors.surface": &taboff { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-09-30" }
+    "tokens.colors.hairline": *biz
+    "tokens.typography.family.display": *hero
+    "tokens.typography.family.body": *body
+    "tokens.typography.display-hero.size": *hero
+    "tokens.typography.display-hero.weight": *hero
+    "tokens.typography.display-hero.lineHeight": *hero
+    "tokens.typography.display-hero.tracking": *hero
+    "tokens.typography.display-hero.use": *hero
+    "tokens.typography.display-culture.size": &cultureh1 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h1", captured: "2026-09-30" }
+    "tokens.typography.display-culture.weight": *cultureh1
+    "tokens.typography.display-culture.lineHeight": *cultureh1
+    "tokens.typography.display-culture.tracking": *cultureh1
+    "tokens.typography.display-culture.use": *cultureh1
+    "tokens.typography.section-lg.size": &h2lg { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h2", captured: "2026-09-30" }
+    "tokens.typography.section-lg.weight": *h2lg
+    "tokens.typography.section-lg.lineHeight": *h2lg
+    "tokens.typography.section-lg.tracking": *h2lg
+    "tokens.typography.section-lg.use": *h2lg
+    "tokens.typography.section.size": &h2 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h2", captured: "2026-09-30" }
+    "tokens.typography.section.weight": *h2
+    "tokens.typography.section.lineHeight": *h2
+    "tokens.typography.section.tracking": *h2
+    "tokens.typography.section.use": *h2
+    "tokens.typography.subsection.size": &h3 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h3", captured: "2026-09-30" }
+    "tokens.typography.subsection.weight": *h3
+    "tokens.typography.subsection.lineHeight": *h3
+    "tokens.typography.subsection.tracking": *h3
+    "tokens.typography.subsection.use": *h3
+    "tokens.typography.card-title.size": &cultureh3 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h3", captured: "2026-09-30" }
+    "tokens.typography.card-title.weight": *cultureh3
+    "tokens.typography.card-title.lineHeight": *cultureh3
+    "tokens.typography.card-title.tracking": *cultureh3
+    "tokens.typography.card-title.use": *cultureh3
+    "tokens.typography.lead.size": *lead
+    "tokens.typography.lead.weight": *lead
+    "tokens.typography.lead.lineHeight": *lead
+    "tokens.typography.lead.tracking": *lead
+    "tokens.typography.lead.use": *lead
+    "tokens.typography.company-title.size": &abouth1 { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h1", captured: "2026-09-30" }
+    "tokens.typography.company-title.weight": *abouth1
+    "tokens.typography.company-title.lineHeight": *abouth1
+    "tokens.typography.company-title.tracking": *abouth1
+    "tokens.typography.company-title.use": *abouth1
+    "tokens.typography.button-lg.size": *recruit
+    "tokens.typography.button-lg.weight": *recruit
+    "tokens.typography.button-lg.lineHeight": *recruit
+    "tokens.typography.button-lg.tracking": *recruit
+    "tokens.typography.button-lg.use": *recruit
+    "tokens.typography.nav.size": *nav
+    "tokens.typography.nav.weight": *nav
+    "tokens.typography.nav.lineHeight": *nav
+    "tokens.typography.nav.use": *nav
+    "tokens.typography.tab.size": *taboff
+    "tokens.typography.tab.weight": *taboff
+    "tokens.typography.tab.lineHeight": *taboff
+    "tokens.typography.tab.use": *taboff
+    "tokens.typography.body.size": &review { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.typography.body.weight": *review
+    "tokens.typography.body.lineHeight": *review
+    "tokens.typography.body.tracking": *review
+    "tokens.typography.body.use": *review
+    "tokens.typography.button-sm.size": *cta
+    "tokens.typography.button-sm.weight": *cta
+    "tokens.typography.button-sm.lineHeight": *cta
+    "tokens.typography.button-sm.use": *cta
+    "tokens.typography.caption.size": &footcap { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.typography.caption.weight": *footcap
+    "tokens.typography.caption.lineHeight": *footcap
+    "tokens.typography.caption.use": *footcap
+    "tokens.typography.fine.size": &fine { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.typography.fine.weight": *fine
+    "tokens.typography.fine.lineHeight": *fine
+    "tokens.typography.fine.use": *fine
+    "tokens.spacing.chip-x": *chip
+    "tokens.spacing.tab-y": *taboff
+    "tokens.spacing.tab-x": *taboff
+    "tokens.spacing.card-y": &vcard { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::article", captured: "2026-09-30" }
+    "tokens.spacing.card-x": *vcard
+    "tokens.rounded.tag": *biz
+    "tokens.rounded.card": *vcard
+    "tokens.rounded.tile": &tile { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::article", captured: "2026-09-30" }
+    "tokens.rounded.tab": *taboff
+    "tokens.rounded.link": &join { surface_id: surface-3, source_id: finda-probe-culture, method: live-state-probe, selector: "a 핀다 크루 합류하기 (186.7 x 54): rest bg rgb(255, 255, 255), fg rgb(21, 22, 27), radius 52px, padding 14px 30px, 17px/800; hover and pressed opacity 1 -> 0.9; focus (Tab #18) outline none -> rgb(0, 95, 204) auto 1px", captured: "2026-09-30" }
+    "tokens.rounded.chip": *chip
+    "tokens.rounded.cta": *cta
+    "tokens.rounded.pill": *recruit
+    "tokens.components.header-download-button.type": *cta
+    "tokens.components.header-download-button.bg": *cta
+    "tokens.components.header-download-button.fg": *cta
+    "tokens.components.header-download-button.radius": *cta
+    "tokens.components.header-download-button.height": *cta
+    "tokens.components.header-download-button.font": *cta
+    "tokens.components.header-download-button.states": &ctastate { surface_id: surface-2, source_id: finda-probe-about, method: live-state-probe, selector: "button 앱 다운받기 (105 x 33, rest bg rgb(78, 46, 237), fg rgb(255, 255, 255)): hover, pressed and focus (Tab #2) no change across self and 3 ancestor levels; transition all 0s", captured: "2026-09-30" }
+    "tokens.components.header-download-button.use": *cta
+    "tokens.components.pill-cta.type": *recruit
+    "tokens.components.pill-cta.bg": *recruit
+    "tokens.components.pill-cta.fg": *recruit
+    "tokens.components.pill-cta.radius": *recruit
+    "tokens.components.pill-cta.padding": *recruit
+    "tokens.components.pill-cta.height": *recruit
+    "tokens.components.pill-cta.font": *recruit
+    "tokens.components.pill-cta.hover": *recruitstate
+    "tokens.components.pill-cta.pressed": *recruitstate
+    "tokens.components.pill-cta.states": *recruitstate
+    "tokens.components.pill-cta.use": *recruit
+    "tokens.components.dialog-outline-button.type": *close
+    "tokens.components.dialog-outline-button.bg": *close
+    "tokens.components.dialog-outline-button.fg": *close
+    "tokens.components.dialog-outline-button.border": *close
+    "tokens.components.dialog-outline-button.radius": *close
+    "tokens.components.dialog-outline-button.padding": *close
+    "tokens.components.dialog-outline-button.height": *close
+    "tokens.components.dialog-outline-button.font": *close
+    "tokens.components.dialog-outline-button.hover": &closestate { surface_id: home, source_id: finda-probe-home, method: live-state-probe, selector: "button 닫기 in the home notice dialog (120 x 54): hover and pressed bg rgb(255, 255, 255) -> rgb(240, 238, 255); focus (Tab #33) no change", captured: "2026-09-30" }
+    "tokens.components.dialog-outline-button.pressed": *closestate
+    "tokens.components.dialog-outline-button.states": *closestate
+    "tokens.components.dialog-outline-button.use": *close
+    "tokens.components.calculator-chip.type": *chip
+    "tokens.components.calculator-chip.bg": *chip
+    "tokens.components.calculator-chip.radius": *chip
+    "tokens.components.calculator-chip.padding": *chip
+    "tokens.components.calculator-chip.height": *chip
+    "tokens.components.calculator-chip.states": *chip
+    "tokens.components.calculator-chip.use": *chip
+    "tokens.components.more-chip.type": &more { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-09-30" }
+    "tokens.components.more-chip.bg": *more
+    "tokens.components.more-chip.radius": *more
+    "tokens.components.more-chip.padding": *more
+    "tokens.components.more-chip.height": *more
+    "tokens.components.more-chip.states": *more
+    "tokens.components.more-chip.use": *more
+    "tokens.components.culture-filter-tab.type": *taboff
+    "tokens.components.culture-filter-tab.bg": *taboff
+    "tokens.components.culture-filter-tab.fg": *taboff
+    "tokens.components.culture-filter-tab.radius": *taboff
+    "tokens.components.culture-filter-tab.padding": *taboff
+    "tokens.components.culture-filter-tab.height": *taboff
+    "tokens.components.culture-filter-tab.font": *taboff
+    "tokens.components.culture-filter-tab.selected": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.components.culture-filter-tab.hover": &tabstate { surface_id: surface-3, source_id: finda-probe-culture, method: live-state-probe, selector: "button 스페셜 보상 (120.4 x 51): hover and pressed bg rgb(246, 246, 249) -> rgb(224, 227, 235); focus (Tab #10) no change; selected 최고의 환경 no change on hover, pressed or focus (Tab #9)", captured: "2026-09-30" }
+    "tokens.components.culture-filter-tab.pressed": *tabstate
+    "tokens.components.culture-filter-tab.states": *tabstate
+    "tokens.components.culture-filter-tab.use": *taboff
+    "tokens.components.nav-item.type": *nav
+    "tokens.components.nav-item.fg": *nav
+    "tokens.components.nav-item.height": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::li", captured: "2026-09-30" }
+    "tokens.components.nav-item.font": *nav
+    "tokens.components.nav-item.selected": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::p", captured: "2026-09-30" }
+    "tokens.components.nav-item.states": *nav
+    "tokens.components.nav-item.use": *nav
+    "tokens.components.biz-info-button.type": *biz
+    "tokens.components.biz-info-button.bg": *biz
+    "tokens.components.biz-info-button.fg": *biz
+    "tokens.components.biz-info-button.border": *biz
+    "tokens.components.biz-info-button.radius": *biz
+    "tokens.components.biz-info-button.padding": *biz
+    "tokens.components.biz-info-button.height": *biz
+    "tokens.components.biz-info-button.font": *biz
+    "tokens.components.biz-info-button.states": { surface_id: surface-2, source_id: finda-probe-about, method: live-state-probe, selector: "button 사업자정보확인 > (101.1 x 22): hover, pressed and focus (Tab #27) no change across self, 1 descendant and 3 ancestor levels", captured: "2026-09-30" }
+    "tokens.components.biz-info-button.use": *biz
+    "tokens.components.join-link.type": *join
+    "tokens.components.join-link.bg": *join
+    "tokens.components.join-link.fg": *join
+    "tokens.components.join-link.radius": *join
+    "tokens.components.join-link.padding": *join
+    "tokens.components.join-link.height": *join
+    "tokens.components.join-link.font": *join
+    "tokens.components.join-link.hover": *join
+    "tokens.components.join-link.pressed": *join
+    "tokens.components.join-link.states": *join
+    "tokens.components.join-link.use": *join
+    "tokens.components.card-carousel-arrow.type": &arrow { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"8\"]", captured: "2026-09-30" }
+    "tokens.components.card-carousel-arrow.bg": *arrow
+    "tokens.components.card-carousel-arrow.radius": *arrow
+    "tokens.components.card-carousel-arrow.size": *arrow
+    "tokens.components.card-carousel-arrow.disabled": { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-09-30" }
+    "tokens.components.card-carousel-arrow.states": *arrow
+    "tokens.components.card-carousel-arrow.use": *arrow
+    "tokens.components.tile-arrow.type": &tilearrow { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"2\"]", captured: "2026-09-30" }
+    "tokens.components.tile-arrow.bg": *tilearrow
+    "tokens.components.tile-arrow.radius": *tilearrow
+    "tokens.components.tile-arrow.size": *tilearrow
+    "tokens.components.tile-arrow.states": *tilearrow
+    "tokens.components.tile-arrow.use": *tilearrow
+    "tokens.components.value-card.type": *vcard
+    "tokens.components.value-card.bg": *vcard
+    "tokens.components.value-card.radius": *vcard
+    "tokens.components.value-card.padding": *vcard
+    "tokens.components.value-card.size": *vcard
+    "tokens.components.value-card.use": *vcard
+    "tokens.components.benefit-card.type": &bcard { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::article", captured: "2026-09-30" }
+    "tokens.components.benefit-card.bg": *bcard
+    "tokens.components.benefit-card.radius": *bcard
+    "tokens.components.benefit-card.padding": *bcard
+    "tokens.components.benefit-card.size": *bcard
+    "tokens.components.benefit-card.use": *bcard
+    "tokens.components.culture-tile.type": *tile
+    "tokens.components.culture-tile.radius": *tile
+    "tokens.components.culture-tile.size": *tile
+    "tokens.components.culture-tile.use": *tile
+    "tokens.components.notice-dialog.type": &dialog { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.components.notice-dialog.bg": *dialog
+    "tokens.components.notice-dialog.size": *dialog
+    "tokens.components.notice-dialog.use": *dialog
 tokens:
-  source: live-extract
-  extracted: "2026-06-09"
-  note: "primary = live app-download CTA violet (#4e2eed); secondary brand violet (#5d4cf2) appears on tinted surfaces. Headings near-black navy (#010a26); dark pill chips bg (#15161b)."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
     primary: "#4e2eed"
-    primary-alt: "#5d4cf2"
+    on-primary: "#ffffff"
+    accent: "#5d4cf2"
+    accent-hover: "#7164f8"
     ink: "#010a26"
     ink-pure: "#000000"
-    dark-chip: "#15161b"
-    body: "#3a415a"
+    charcoal: "#15161b"
+    body: "#444857"
+    slate: "#3a415a"
     muted: "#65798e"
     muted-alt: "#737a94"
-    faint: "#a9b0c9"
-    canvas: "#ffffff"
-    surface: "#f5f6fa"
-    surface-alt: "#f6f6f6"
-    hairline: "#dedede"
-    on-primary: "#ffffff"
+    white: "#ffffff"
+    surface: "#f6f6f9"
+    hairline: "#e9e9e9"
   typography:
     family: { display: "SUIT", body: "Pretendard" }
-    display-hero: { size: 64, weight: 800, lineHeight: 1.31, tracking: -0.96, use: "Hero headline, SUIT ExtraBold" }
-    section:      { size: 34, weight: 800, lineHeight: 1.41, tracking: -0.51, use: "Section titles, SUIT ExtraBold" }
-    subsection:   { size: 28, weight: 800, lineHeight: 1.43, tracking: -0.42, use: "Card / feature heads, SUIT" }
-    body:         { size: 14, weight: 400, lineHeight: 1.50, use: "Standard reading text, Pretendard" }
-    nav:          { size: 14, weight: 400, lineHeight: 1.50, use: "Nav links, SUIT" }
-    button:       { size: 14, weight: 400, lineHeight: 1.50, use: "Dark pill chip label, SUIT" }
-    button-sm:    { size: 12, weight: 400, lineHeight: 1.50, use: "App-download CTA label, SUIT" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 20, xl: 29, xxl: 48, section: 64 }
-  rounded: { sm: 8, md: 16, lg: 60, full: 9999 }
-  shadow:
-    none: "none"
+    display-hero: { size: 50, weight: 800, lineHeight: 1.32, tracking: -0.75, use: "Home hero headline (금융 선택의 기준을 바꾸다), SUIT, 66px line, in #000000" }
+    display-culture: { size: 52, weight: 800, lineHeight: 1.4, tracking: -0.78, use: "Culture page headline (누구도 가지 않은 금융 혁신의 길을 만듭니다), SUIT, 73px line, in #15161b" }
+    section-lg: { size: 46, weight: 800, lineHeight: 1.3, tracking: -0.69, use: "Large section headings on home and culture, SUIT, 60px line" }
+    section: { size: 34, weight: 800, lineHeight: 1.41, tracking: -0.51, use: "Home section heading (대출 비교부터 신청까지), SUIT, 48px line" }
+    subsection: { size: 28, weight: 800, lineHeight: 1.43, tracking: -0.42, use: "Feature headings on home (악성 앱 차단, 신용관리) and culture, SUIT, 40px line" }
+    card-title: { size: 24, weight: 800, lineHeight: 1.42, tracking: -0.47, use: "Work-principle tile headings on the culture page, SUIT, 34px line, -0.4656px tracking" }
+    lead: { size: 25, weight: 600, lineHeight: 1.4, tracking: -0.49, use: "Home hero subline, SUIT, 35px line, -0.485px tracking, in #444857" }
+    company-title: { size: 28, weight: 600, lineHeight: 1.35, tracking: -0.14, use: "Section headings on /about-us (핀다 연혁, 핀다 프로덕트, 핀다 언론보도), Pretendard, 37.8px line" }
+    button-lg: { size: 17, weight: 600, lineHeight: 1.35, tracking: -0.17, use: "Large pill action labels (채용공고 확인하기, 더 이상 보지 않기, 닫기), Pretendard, 22.95px line" }
+    nav: { size: 15, weight: 400, lineHeight: 1.56, use: "Header navigation labels, SUIT on home and culture, Pretendard on /about-us, 23.4px line" }
+    tab: { size: 14, weight: 700, lineHeight: 1.64, use: "Benefit filter tabs on the culture page, SUIT, 23px line" }
+    body: { size: 16, weight: 400, lineHeight: 1.75, tracking: -0.16, use: "Review text on home, SUIT, 28px line, in #444857" }
+    button-sm: { size: 12, weight: 400, lineHeight: 1.5, use: "Header 앱 다운받기 label, SUIT (Pretendard on /about-us), 18px line" }
+    caption: { size: 13, weight: 400, lineHeight: 1.65, use: "Footer company disclosure, SUIT, 21.45px line, in #65798e" }
+    fine: { size: 11, weight: 400, lineHeight: 1.56, use: "Footer legal notes, SUIT, 17.16px line, in #65798e" }
+  spacing: { chip-x: 29, tab-y: 14, tab-x: 28, card-y: 40, card-x: 32 }
+  rounded: { tag: 2, card: 6, tile: 10, tab: 43, link: 52, chip: 60, cta: 100, pill: 9999 }
   components:
-    button-primary: { type: button, bg: "#4e2eed", fg: "#ffffff", radius: "100px", font: "12px / 400 SUIT", use: "App-download CTA in header, full pill" }
-    button-dark-chip: { type: button, bg: "#15161b", fg: "#010a26", radius: "60px", padding: "14px 29px", font: "14px / 400 SUIT", use: "Calculator/tool entry chips on hero" }
-    button-more: { type: button, bg: "#15161b", fg: "#010a26", radius: "60px", padding: "0px 20px", font: "14px / 400 SUIT", use: "More-link pill chip" }
-    nav-link: { type: tab, fg: "#010a26", font: "14px / 400 SUIT", use: "Top nav item", active: "violet #4e2eed text on active" }
-    card-surface: { type: card, bg: "#f5f6fa", fg: "#010a26", radius: "16px", use: "Tinted content card on grey surface" }
-    card-canvas: { type: card, bg: "#ffffff", fg: "#010a26", radius: "16px", use: "White feature card, 1px #dedede hairline" }
-    badge-violet: { type: badge, bg: "#5d4cf2", fg: "#ffffff", radius: "9999px", font: "12px / 400 SUIT", use: "Highlight pill / emphasis tag" }
-    footer-link: { type: listItem, fg: "#010a26", font: "14px / 400 SUIT", use: "Footer navigation link" }
+    header-download-button: { type: button, bg: "#4e2eed", fg: "#ffffff", radius: "100px", height: "33px", font: "12px / 400 / 18px SUIT (Pretendard on /about-us)", states: "probe on /about-us and home: hover, pressed and focus (Tab #2) show no change across the button and three ancestor levels, and it computes transition all 0s", use: "앱 다운받기 in the fixed header of all three pages at home::[data-omd-capture=\"1\"], a fixed 105 x 33 pill" }
+    pill-cta: { type: button, bg: "#5d4cf2", fg: "#ffffff", radius: "9999px", padding: "4px 0px", height: "54px", font: "17px / 600 / 22.95px Pretendard, letter-spacing -0.17px", hover: "bg #7164f8", pressed: "bg #7164f8", states: "hover and pressed settle on #7164f8 (transition all 0s; bundle frames and the probe agree); focus (Tab #6) shows no change", use: "Large violet pill: 채용공고 확인하기 on /about-us at surface-2::[data-omd-capture=\"5\"] (1180 x 54) and 더 이상 보지 않기 in the home notice dialog (365 x 54)" }
+    dialog-outline-button: { type: button, bg: "#ffffff", fg: "#5d4cf2", border: "1px solid #5d4cf2", radius: "9999px", padding: "4px 12px", height: "54px", font: "17px / 600 / 22.95px Pretendard, letter-spacing -0.17px", hover: "bg #f0eeff", pressed: "bg #f0eeff", states: "hover and pressed settle on #f0eeff (transition all 0s); focus (Tab #33) shows no change", use: "닫기 beside 더 이상 보지 않기 in the home notice dialog at home::[data-omd-capture=\"32\"], 120 x 54" }
+    calculator-chip: { type: button, bg: "#15161b", radius: "60px", padding: "14.48px 29px", height: "48px", states: "rest on six captured chips (home captures 2-7); the probe could not locate them on two loads while the home notice dialog was open, so no hover, pressed or focus value is declared", use: "Calculator shortcuts under 모든 계산을 쉽고 빠르게 on home (대출이자, 연봉 실수령, 전월세 비교, DSR, 내 집 대출한도, 연말정산), 153 x 48; the label sits in a child element the collector did not record, so no label colour or font is declared" }
+    more-chip: { type: button, bg: "#15161b", radius: "60px", padding: "0px 20px", height: "48px", states: "rest on two captured instances; no state frame", use: "더 보러가기 under the review and story sections on home at home::[data-omd-capture=\"8\"], 153 x 48" }
+    culture-filter-tab: { type: tab, bg: "#f6f6f9", fg: "#15161b", radius: "43px", padding: "14px 28px", height: "51px", font: "14px / 700 / 23px SUIT", selected: "bg #15161b, fg #ffffff", hover: "bg #e0e3eb", pressed: "bg #e0e3eb", states: "unselected tabs settle on #e0e3eb on hover and pressed after a 0.15s colour transition; the selected tab shows no change; focus (Tabs #9 and #10) shows no change on either", use: "Benefit filter tabs on the culture page (최고의 환경, 스페셜 보상, 성장 지원, 재충전, 생활 속 지원) at surface-3::[data-omd-capture=\"10\"]; recruiting page" }
+    nav-item: { type: tab, fg: "#3a415a", height: "56px", font: "15px / 400 / 23.4px SUIT", selected: "fg #5d4cf2 on the current section's item (핀다 on home and /about-us, 채용 on /culture)", states: "selected variant read from rest values on three pages; no pointer frame", use: "Header navigation items (핀다, 서비스, 문의, 핀다포스트, 채용) in 165 x 56 list cells" }
+    biz-info-button: { type: button, bg: "#ffffff", fg: "#65798e", border: "1px solid #e9e9e9", radius: "2px", padding: "2px 8px", height: "22px", font: "12px / 400 / 16px Pretendard", states: "probe on /about-us: hover, pressed and focus (Tab #27) show no change", use: "사업자정보확인 > disclosure toggle in the footer at surface-2::[data-omd-capture=\"26\"], 101 x 22" }
+    join-link: { type: button, bg: "#ffffff", fg: "#15161b", radius: "52px", padding: "14px 30px", height: "54px", font: "17px / 800 SUIT", hover: "opacity 0.9", pressed: "opacity 0.9", states: "hover and pressed settle at opacity 0.9 after a 0.15s opacity transition; focus (Tab #18) draws only the browser's default ring, so no brand focus style is declared", use: "핀다 크루 합류하기 over the closing image of the culture page, 186.7 x 54, linking to the recruiting site; recruiting page, read by the fixed probe" }
+    card-carousel-arrow: { type: button, bg: "transparent", radius: "9999px", size: "40px x 40px", disabled: "capture 7 is disabled at rest and computes the same values as the enabled capture 8", states: "rest and disabled only; no pointer frame", use: "Previous and next arrows of the benefit card carousel on the culture page at surface-3::[data-omd-capture=\"8\"]; recruiting page" }
+    tile-arrow: { type: button, bg: "rgba(255, 255, 255, 0.2)", radius: "9999px", size: "40px x 40px", states: "rest on five captured instances; no state frame", use: "Round translucent arrows on the work-principle tiles of the culture page at surface-3::[data-omd-capture=\"2\"]; recruiting page" }
+    value-card: { type: card, bg: "#f6f6f9", radius: "6px", padding: "40px 32px", size: "285px x 340px", use: "Grey benefit cards under the culture filter tabs (21 instances); recruiting page" }
+    benefit-card: { type: card, bg: "#f6f6f9", radius: "10px", padding: "40px 18px", size: "256px x 400px", use: "Grey cards in the culture page carousel (10 instances); recruiting page" }
+    culture-tile: { type: card, radius: "10px", size: "590px x 590px", use: "Square work-principle tiles on the culture page, each on its own illustration fill; the fills are artwork, not tokens; recruiting page" }
+    notice-dialog: { type: dialog, bg: "rgba(0, 0, 0, 0.4) (backdrop)", size: "1440px x 900px (fixed, full viewport)", use: "Notice dialog open over home at capture, with 더 이상 보지 않기 and 닫기 at its foot" }
   components_harvested: true
 ---
 
@@ -59,21 +308,17 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-Finda (핀다) is Korea's design-forward loan-comparison fintech, and its homepage reads like a calm, editorial financial product rather than a hard-sell lending site. The canvas is pure white (`#ffffff`) layered with a soft cool-grey surface (`#f5f6fa`) that segments content into airy, breathable zones. Text sits in a deep near-black navy (`#010a26`) — never pure black for body — which gives the page a premium, trustworthy weight without harshness. The single saturated brand accent is a confident electric violet (`#4e2eed`), reserved almost exclusively for the app-download call-to-action, so the eye is trained to treat that one color as "the action."
+Finda (핀다) is a Korean loan-comparison company. Its own timeline starts with the founding of (주)핀다 in September 2015 and the launch of 핀다 웹, a financial-product information portal, in July 2016. After selection for the loan-brokerage regulatory sandbox in May 2019, the 핀다 앱 loan-comparison platform followed in July 2019, and a MyData licence in January 2021. Finda states its purpose as correcting the information asymmetry of financial markets so that individuals can manage money easily, and the home page frames the product as 1-minute loan comparison "부터 신청까지" (through to application) across what it calls the most lenders in Korea. From there the product has kept widening: credit-loan switching in 2023, an interest-refund PLCC called 핀다카드 in April 2025, and in June 2025 an AI loan-prediction service that needs no limit inquiry. The footer states its registration as a loan broker (대부중개업 등록번호 2025-서울강남-0103호).
 
-The typographic personality is unmistakably Korean-premium: headlines run in **SUIT ExtraBold (weight 800)** at large sizes — 64px on the hero with tight `-0.96px` tracking — projecting a bold, declarative confidence ("금융 선택의 기준을 바꾸다" / "We change the standard of financial choice"). Body and UI text drop to **Pretendard** at a quiet 14px / weight 400, the de-facto Korean product font, optimized for dense hangul legibility. This split — heavy display SUIT over light functional Pretendard — is the core tension of the system: bold where it persuades, calm where it informs.
-
-What distinguishes Finda from its fintech peers is its restraint with depth. There are essentially no drop shadows; separation comes from flat tinted surfaces (`#f5f6fa`) and thin `#dedede` hairlines rather than elevation. Interactive chrome leans hard into the pill: dark near-black chips (`#15161b`) at 60px radius for calculator/tool entries, and the violet CTA at a full 100px radius. The result is a flat, modern, mobile-first aesthetic that feels engineered and consumer-friendly at once — financial tooling that doesn't look intimidating.
+On finda.co.kr the brand speaks in two registers. Home and the culture page set declarative Korean headlines in SUIT ExtraBold (weight 800) with tight negative tracking — 50px on the home hero, 52px on the culture hero — over white, with body copy in a soft grey-violet `#444857`. The company page (/about-us) is set entirely in Pretendard at weight 600. Action colour is violet, split into two tones. `#4e2eed` fills the 앱 다운받기 pill in the fixed header of every page. A lighter `#5d4cf2` fills the large 54px pill actions, outlines their secondary partner and colours the current section in the navigation. Tool shortcuts on home are charcoal `#15161b` pills with 60px radius. Grey `#f6f6f9` cards and tabs carry the culture page. Every captured element is flat: none of the 420 records carries a box-shadow.
 
 **Key Characteristics:**
-- SUIT ExtraBold (weight 800) for all display headlines — bold, declarative Korean-premium voice
-- Pretendard weight 400 at 14px for body/UI — quiet, dense, hangul-optimized
-- Single saturated violet (`#4e2eed`) reserved for the primary app-download CTA
-- Near-black navy (`#010a26`) for text instead of pure black — warm, trustworthy
-- Flat depth: no shadows; tinted `#f5f6fa` surfaces + `#dedede` hairlines do the separating
-- Pill-everything geometry — 60px chips, 100px CTA, full-round badges
-- Negative letter-spacing on headlines (-0.96px at 64px, -0.51px at 34px)
-- Cool-grey neutral ladder (`#3a415a` → `#65798e` → `#a9b0c9`) for text hierarchy
+- Two violets with separate jobs: `#4e2eed` for the persistent header download action, `#5d4cf2` for large pill actions, outlines and the selected navigation item (hover `#7164f8`)
+- SUIT ExtraBold 800 headlines with negative tracking (-0.75px at 50px, -0.69px at 46px, -0.51px at 34px); Pretendard for the document default and the whole company page
+- Charcoal `#15161b` 60px-radius shortcut pills on home and a charcoal selected tab on the culture page
+- Text in navy-black `#010a26`, charcoal `#15161b`, `#444857` for reading copy and `#65798e` in the footer; hero and feature headings on home in pure `#000000`
+- Pills everywhere an action lives: 100px, 9999px, 60px, 52px and 43px radii; cards at 6px and 10px; a 2px footer tag
+- No shadows on any captured element; separation comes from `#f6f6f9` fills and one `#e9e9e9` hairline
 
 ## Primary tasks
 
@@ -85,337 +330,379 @@ What distinguishes Finda from its fintech peers is its restraint with depth. The
 
 ## 2. Color Palette & Roles
 
+Every token below was read on 2026-09-30 from finda.co.kr, /about-us and /culture by the deterministic collector, and hover values by the fixed keyboard probe. The tokens describe Finda's public website; the Finda app was not captured and none of its values is claimed.
+
 ### Primary
-- **Finda Violet** (`#4e2eed`): Primary brand color and CTA background. The saturated electric violet on the app-download button — the system's single "action" color.
-- **Violet Alt** (`#5d4cf2`): Secondary brand violet for tinted highlights, badges, and emphasis surfaces. A slightly lighter, softer companion to the primary.
-- **Ink Navy** (`#010a26`): Primary text and heading color. A very dark blue-black that carries warmth and financial-grade trust — used instead of pure black.
+- **Finda Violet** (`#4e2eed`): The fill of 앱 다운받기, the one action present in the fixed header of all three captured pages (a 105 × 33 pill with `#ffffff` text; captures `home`, `surface-2` and `surface-3` #1). It is the primary because it is the product's persistent primary action: downloading the app is what the website asks every visitor to do, on every page, in this colour. The probe found no hover, pressed or focus change on it.
+- **On Primary** (`#ffffff`): Labels on both violets and on the charcoal selected tab.
+
+### Accent
+- **Action Violet** (`#5d4cf2`): The fill of the large 54px pill actions — 채용공고 확인하기 on /about-us and 더 이상 보지 않기 in the home notice dialog — the 1px outline and label of their partner 닫기, and the label of the current section in the header navigation (핀다 on home and /about-us, 채용 on /culture). Unselected navigation labels are `#3a415a`.
+- **Action Violet Hover** (`#7164f8`): Hover and pressed fill of the `#5d4cf2` pills, settled (the pills compute `transition: all 0s`). The outlined 닫기 settles on a pale `#f0eeff` fill instead.
 
 ### Neutral & Surface
-- **Pure White** (`#ffffff`): Page background, white card surfaces, text on violet/dark.
-- **Surface Grey** (`#f5f6fa`): Cool-grey tinted surface for content cards and segmented sections.
-- **Surface Alt** (`#f6f6f6`): A warmer secondary grey surface for alternating blocks.
-- **Hairline** (`#dedede`): Thin borders, dividers, and card outlines — the primary separation device given the shadow-free system.
-- **Dark Chip** (`#15161b`): Near-black background for the dark calculator/tool pill chips on the hero.
-- **Pure Black** (`#000000`): Occasional maximum-contrast heading text (e.g. hero H1, feature H3).
+- **White** (`#ffffff`): Fills of 닫기, the footer disclosure toggle, 핀다 크루 합류하기 and one culture tile. The body element computes a transparent background, so the page white is the browser canvas.
+- **Surface** (`#f6f6f9`): Culture page cards and unselected benefit tabs; unselected tabs darken to `#e0e3eb` on hover.
+- **Hairline** (`#e9e9e9`): The 1px border of the footer disclosure toggle, the only border observed outside the violet outline.
+- **Charcoal** (`#15161b`): Shortcut pills on home, the selected culture tab, and headings on the culture page and parts of home.
 
-### Text Hierarchy
-- **Ink Navy** (`#010a26`): Primary text, headings, nav, strong labels.
-- **Body Slate** (`#3a415a`): Secondary body copy and descriptions.
-- **Muted Slate** (`#65798e`): Tertiary text, captions, metadata.
-- **Muted Alt** (`#737a94`): Alternate muted slate for fine print.
-- **Faint Blue-Grey** (`#a9b0c9`): Disabled text, placeholder, lowest-emphasis labels.
+### Text
+- **Ink** (`#010a26`): The document default text colour and the footer headline.
+- **Pure Black** (`#000000`): The home hero headline and several home section and feature headings.
+- **Body** (`#444857`): Reading copy on home and the culture page — the hero subline, section descriptions, review text.
+- **Slate** (`#3a415a`): Unselected header navigation labels and product headings on /about-us.
+- **Muted** (`#65798e`): Footer disclosure and legal notes, and the footer toggle label.
+- **Muted Alt** (`#737a94`): The large grey lead-in heading of the home history section and review dates.
+
+### Brand assets, not tokens
+- The culture page's square work-principle tiles sit on illustration fills (`#35afff`, `#061729`, `#2551e0`, `#7ee8ff`, as well as `#f6f6f9` and `#ffffff`). They are artwork and are not colour tokens.
+- The Finda logo was not measured; no logo colour is claimed.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **Display**: `SUIT` (with `SUIT Fallback`) — used for all headlines, nav, and button labels. ExtraBold (800) at display sizes.
-- **Body**: `Pretendard` (with `Pretendard Fallback`) — the document default, used for body copy and dense UI text at weight 400.
+- **Live surface use**: `suit` (320 observed uses) and `pretendard` (100), both `loaded / high`, self-hosted by Finda as WOFF2 files from `static.finda.co.kr/common-web/4.038.6/_next/static/media/`. The body element computes `pretendard, "pretendard Fallback"` on all three pages. Home and the culture page set their headings, navigation and most copy in `suit`; /about-us renders everything in `pretendard`. A same-day headless read found SUIT weights 300–800 and Pretendard 400 and 600 loaded on home, and Pretendard 400–700 on /about-us.
+- **Official distributed font assets**: the family names match two open-source Korean typefaces. SUIT is by SUNN (sun.fo/suit), and its LICENSE states the SIL Open Font License 1.1. Pretendard is by Kil Hyung-jin (orioncactus), and its LICENSE also states the SIL Open Font License 1.1. Both licence files were opened on 2026-09-30. The identification rests on the declared family names; the name tables of Finda's served files were not inspected.
+- **Official product use**: no Finda page opened this session names its typefaces, so no statement of official product use is made.
+- **Declared only (no visible use)**: `suit Fallback` and `pretendard Fallback`, the metric-matched fallbacks declared alongside the self-hosted faces, with 0 observed uses.
+- **Unresolved**: none of the observed families is unidentified.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Hero | SUIT | 64px (4.00rem) | 800 | 1.31 (84px) | -0.96px | Hero headline, ExtraBold |
-| Section Heading | SUIT | 34px (2.13rem) | 800 | 1.41 (48px) | -0.51px | Section titles |
-| Sub-section | SUIT | 28px (1.75rem) | 800 | 1.43 (40px) | -0.42px | Card / feature heads |
-| Nav Link | SUIT | 14px (0.88rem) | 400 | 1.50 (21px) | normal | Top navigation items |
-| Button | SUIT | 14px (0.88rem) | 400 | 1.50 (21px) | normal | Dark pill chip labels |
-| Button Small | SUIT | 12px (0.75rem) | 400 | 1.50 (18px) | normal | App-download CTA label |
-| Body | Pretendard | 14px (0.88rem) | 400 | 1.50 (21px) | normal | Standard reading text |
+| Role | Font | Size | Weight | Line Height | Tracking | Observed on |
+|------|------|------|--------|-------------|----------|-------------|
+| Culture Hero | SUIT | 52px | 800 | 73px (1.4) | -0.78px | Culture page headline, `#15161b` |
+| Display Hero | SUIT | 50px | 800 | 66px (1.32) | -0.75px | Home hero headline, `#000000` |
+| Section Large | SUIT | 46px | 800 | 60px (1.3) | -0.69px | Section headings on home and culture |
+| Section | SUIT | 34px | 800 | 48px (1.41) | -0.51px | 대출 비교부터 신청까지 on home |
+| Subsection | SUIT | 28px | 800 | 40px (1.43) | -0.42px | Feature headings on home and culture |
+| Company Title | Pretendard | 28px | 600 | 37.8px (1.35) | -0.14px | Section headings on /about-us |
+| Lead | SUIT | 25px | 600 | 35px (1.4) | -0.485px | Home hero subline, `#444857` |
+| Card Title | SUIT | 24px | 800 | 34px (1.42) | -0.4656px | Work-principle tiles on culture |
+| Button Large | Pretendard | 17px | 600 | 22.95px (1.35) | -0.17px | Large pill action labels |
+| Body | SUIT | 16px | 400 | 28px (1.75) | -0.16px | Review text on home |
+| Nav | SUIT | 15px | 400 | 23.4px (1.56) | normal | Header navigation labels |
+| Tab | SUIT | 14px | 700 | 23px (1.64) | normal | Culture benefit tabs |
+| Caption | SUIT | 13px | 400 | 21.45px (1.65) | normal | Footer company disclosure |
+| Button Small | SUIT | 12px | 400 | 18px (1.5) | normal | Header 앱 다운받기 |
+| Fine | SUIT | 11px | 400 | 17.16px (1.56) | normal | Footer legal notes |
 
 ### Principles
-- **Bold display, light body**: SUIT ExtraBold (800) carries every headline; Pretendard 400 carries every paragraph. The weight contrast is the system's primary hierarchy signal.
-- **Tight tracking scales with size**: -0.96px at 64px, -0.51px at 34px, -0.42px at 28px. Headlines compress; body text stays at normal tracking.
-- **Hangul-first sizing**: Body sits at a deliberate 14px — generous for hangul legibility, dense enough for information-rich financial layouts.
-- **Two fonts, two jobs**: SUIT is the persuasive/branding voice; Pretendard is the functional/reading voice. They never swap roles.
+- **ExtraBold headlines, tracked tight**: every SUIT heading from 24px to 52px is weight 800, and tracking tightens with size in proportion (about -1.5% of the size).
+- **Two templates, two faces**: home and culture are SUIT-first; the company page is Pretendard-only at weight 600 for headings. Pretendard also carries the large pill action labels and the document default.
+- **Grey-violet reading copy**: descriptions sit in `#444857` rather than the navy-black ink.
 
 ## 4. Component Stylings
 
 ### Buttons
 
-**App-Download CTA (Primary)**
+**Header download action (primary)**
 - Background: `#4e2eed`
 - Text: `#ffffff`
 - Radius: 100px
-- Font: 12px SUIT weight 400
-- Height: 33px
-- Use: Header app-download call-to-action — the system's single primary action
+- Height: 33px (fixed 105px wide)
+- Font: 12px / 400 / 18px SUIT (Pretendard on /about-us)
+- States: the probe found no hover, pressed or focus change; it computes `transition: all 0s`
+- Use: 앱 다운받기 in the fixed header of all three pages
 
-**Dark Tool Chip**
-- Background: `#15161b`
-- Text: `#010a26`
-- Radius: 60px
-- Padding: 14px 29px
-- Font: 14px SUIT weight 400
-- Height: 48px
-- Use: Calculator/tool entry chips on hero ("대출이자", "연봉 실수령", "DSR")
-
-**More Link Pill**
-- Background: `#15161b`
-- Text: `#010a26`
-- Radius: 60px
-- Padding: 0px 20px
-- Font: 14px SUIT weight 400
-- Height: 48px
-- Use: "더 보러가기" more-link pill chips
-
-### Cards & Containers
-
-**Tinted Surface Card**
-- Background: `#f5f6fa`
-- Text: `#010a26`
-- Radius: 16px
-- Use: Content card sitting on the cool-grey surface
-
-**White Feature Card**
-- Background: `#ffffff`
-- Text: `#010a26`
-- Border: 1px solid `#dedede`
-- Radius: 16px
-- Use: White feature card with hairline outline (no shadow)
-
-### Badges
-
-**Violet Highlight Pill**
+**Large pill action**
 - Background: `#5d4cf2`
 - Text: `#ffffff`
-- Radius: 9999px (full)
-- Font: 12px SUIT weight 400
-- Use: Emphasis tag / highlight pill
+- Radius: 9999px
+- Padding: 4px 0px
+- Height: 54px
+- Font: 17px / 600 / 22.95px Pretendard, letter-spacing -0.17px
+- Hover: background `#7164f8`
+- Pressed: background `#7164f8`
+- States: focus shows no change
+- Use: 채용공고 확인하기 on /about-us (1180 × 54); 더 이상 보지 않기 in the home notice dialog (365 × 54)
 
-### Navigation
+**Outlined pill action**
 - Background: `#ffffff`
-- Text: `#010a26`
-- Font: 14px SUIT weight 400
-- Height: 56px header
-- Active: violet `#4e2eed` text on active item
-- Use: Top horizontal nav ("핀다소개", "회사소개", "언론보도", "서비스")
+- Text: `#5d4cf2`
+- Border: 1px solid `#5d4cf2`
+- Radius: 9999px
+- Padding: 4px 12px
+- Height: 54px
+- Font: 17px / 600 / 22.95px Pretendard, letter-spacing -0.17px
+- Hover: background `#f0eeff`
+- Pressed: background `#f0eeff`
+- States: focus shows no change
+- Use: 닫기 in the home notice dialog, 120 × 54
 
-### Footer
-- Links: `#010a26`, 14px SUIT weight 400
-- Use: Footer navigation ("이용약관", "개인정보처리방침", "제휴 금융기관")
+**Calculator shortcut pill**
+- Background: `#15161b`
+- Radius: 60px
+- Padding: 14.48px 29px
+- Height: 48px
+- States: rest only; the probe could not reach these pills while the notice dialog was open
+- Use: 대출이자, 연봉 실수령, 전월세 비교, DSR, 내 집 대출한도 and 연말정산 under 모든 계산을 쉽고 빠르게 on home, 153 × 48. The visible label sits in a child element that neither the collector nor the probe recorded; a same-day headless read showed white 15px / 600 SUIT labels, which is kept out of the tokens.
+
+**More pill**
+- Background: `#15161b`
+- Radius: 60px
+- Padding: 0px 20px
+- Height: 48px
+- States: rest only
+- Use: 더 보러가기 on home, 153 × 48
+
+**Recruiting link**
+- Background: `#ffffff`
+- Text: `#15161b`
+- Radius: 52px
+- Padding: 14px 30px
+- Height: 54px
+- Font: 17px / 800 SUIT
+- Hover: opacity 0.9
+- Pressed: opacity 0.9
+- States: focus draws only the browser's default ring; no brand focus style
+- Use: 핀다 크루 합류하기 on the culture page (recruiting page)
+
+**Footer disclosure toggle**
+- Background: `#ffffff`
+- Text: `#65798e`
+- Border: 1px solid `#e9e9e9`
+- Radius: 2px
+- Padding: 2px 8px
+- Height: 22px
+- Font: 12px / 400 / 16px Pretendard
+- States: the probe found no hover, pressed or focus change
+- Use: 사업자정보확인 > in the footer of every page
+
+**Carousel arrows**
+- The benefit carousel on the culture page uses transparent 40 × 40 round arrows; the first is `disabled` at capture with the same computed values as its enabled partner. The work-principle tiles carry 40 × 40 round arrows filled `rgba(255, 255, 255, 0.2)`.
+
+### Tabs & Navigation
+
+**Culture benefit tab**
+- Background: `#f6f6f9`
+- Text: `#15161b`
+- Radius: 43px
+- Padding: 14px 28px
+- Height: 51px
+- Font: 14px / 700 / 23px SUIT
+- Selected: background `#15161b`, text `#ffffff`
+- Hover: background `#e0e3eb` (unselected tabs)
+- Pressed: background `#e0e3eb` (unselected tabs)
+- States: the selected tab does not change on hover or pressed; focus shows no change
+- Use: 최고의 환경, 스페셜 보상, 성장 지원, 재충전 and 생활 속 지원 on the culture page (recruiting page)
+
+**Header navigation**
+- Text: `#3a415a`
+- Selected: `#5d4cf2` on the current section's item
+- Height: 56px cells
+- Font: 15px / 400 / 23.4px SUIT
+- Use: 핀다, 서비스, 문의, 핀다포스트 and 채용 in the fixed header
+
+### Cards
+
+**Benefit card**
+- Background: `#f6f6f9`
+- Radius: 6px
+- Padding: 40px 32px
+- Use: 285 × 340 cards under the culture tabs (recruiting page)
+
+**Carousel card**
+- Background: `#f6f6f9`
+- Radius: 10px
+- Padding: 40px 18px
+- Use: 256 × 400 cards in the culture carousel (recruiting page)
+
+**Work-principle tile**
+- Radius: 10px
+- Use: 590 × 590 square tiles, each on its own illustration fill
+
+### Dialog
+
+**Notice dialog**
+- Background: `rgba(0, 0, 0, 0.4)` backdrop over the full viewport
+- Use: open over home at capture; its foot pairs 더 이상 보지 않기 with 닫기
 
 ---
 
-**Verified:** 2026-06-09 (omd:add-reference CREATE — Tier 1 live inspect)
-**Tier 1 sources:** https://finda.co.kr, https://blog.finda.co.kr
+**Verified:** 2026-09-30 (deterministic collector capture of three public, logged-out pages of finda.co.kr plus fixed keyboard-probe state reads and first-party context)
+**Tier 1 sources:** https://finda.co.kr/ ; https://finda.co.kr/about-us ; https://finda.co.kr/culture ; https://www.post.finda.co.kr/
+**Tier 2 sources:** getdesign.md/finda (HTTP 200, the name does not appear in the response) and styles.refero.design/?q=finda (HTTP 200, the name appears only as the echoed query), requested 2026-09-30; no Tier 2 value used
+**Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: ~4px
-- Scale: 4px, 8px, 12px, 16px, 20px, 29px, 48px, 64px
-- Notable: Chip horizontal padding lands at 29px (measured), giving the dark tool pills a generous, tappable hit area
+- Shortcut pills: 14.48px vertical, 29px horizontal padding at 48px height, with a 7.24px gap before the icon
+- Culture tabs: 14px vertical, 28px horizontal padding at 51px height
+- Culture cards: 40px 32px padding (benefit cards) and 40px 18px (carousel cards)
+- Recruiting link: 14px 30px padding at 54px height
+- Frequent spacing values in the capture: 40, 32, 12, 24 and 18px
 
 ### Grid & Container
-- Centered single-column hero with the 64px SUIT headline as the anchor
-- Tool/calculator chips arranged in a horizontal scrolling/wrapping pill row beneath the hero
-- Feature sections alternate between white (`#ffffff`) and tinted grey (`#f5f6fa`) full-width bands
-- Cards use 16px radius and group related calculators/services
+- Home centres a SUIT headline over a hero film, then alternates left- and right-aligned feature sections, a calculator section with six shortcut pills in two columns, a statistics band and a review row.
+- /about-us runs a full-width violet recruiting action (1180 × 54) inside its 1180px content column.
+- The culture page stacks 590 × 590 principle tiles in pairs, a filtered grid of 285 × 340 cards and a card carousel.
 
 ### Whitespace Philosophy
-- **Breathing room over density**: despite being a data-heavy financial product, the marketing surface is airy — generous vertical rhythm between sections.
-- **Flat segmentation**: sections separate by background tint (`#f5f6fa` vs `#ffffff`) and hairlines, not by shadow or border weight.
-- **Pill rhythm**: the repeated 60px-radius chip creates a consistent horizontal cadence across tool entry points.
+- **Airy marketing, dense footer**: sections are separated by large headings and open space; the footer compresses legal copy into 11px and 13px lines.
+- **Flat segmentation**: grey `#f6f6f9` fills group content on the culture page; no shadow is used.
 
 ### Border Radius Scale
-- Small (8px): inner elements, small containers
-- Medium (16px): cards, content containers — the workhorse
-- Large (60px): pill chips, tool buttons
-- Full (100px / 9999px): primary CTA, badges
+- 0px: the default (347 of the recorded radii)
+- 2px: footer disclosure toggle
+- 6px: culture benefit cards
+- 10px: carousel cards and principle tiles
+- 43px: culture tabs
+- 52px: recruiting link
+- 60px: shortcut and more pills
+- 100px: header download action
+- 9999px: large pill actions and carousel arrows
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, inline text, most surfaces |
-| Tint (Level 1) | `#f5f6fa` background shift | Card/section separation without elevation |
-| Hairline (Level 2) | `1px solid #dedede` border | White card outlines, dividers |
+| Flat | No shadow | Every captured element |
+| Surface | `#f6f6f9` fill | Culture cards and unselected tabs |
+| Hairline | 1px solid `#e9e9e9` | Footer disclosure toggle |
+| Dark | `#15161b` fill | Shortcut pills and the selected tab |
+| Overlay | `rgba(0, 0, 0, 0.4)` backdrop | Notice dialog on home |
 
-**Shadow Philosophy**: Finda is a near-shadowless system. Live inspection found `box-shadow: none` across the hero, nav, headings, and tool chips. Depth and grouping are communicated entirely through flat tinted surfaces (`#f5f6fa`) and thin `#dedede` hairlines. This is a deliberate modern-flat choice — it keeps the financial UI feeling clean, fast, and mobile-native, avoiding the heavy "card stack" look of legacy banking apps. When emphasis is needed, the system reaches for color (violet `#4e2eed`) or the dark chip (`#15161b`), never elevation.
+**Shadow Philosophy**: all 420 elements the collector recorded compute `box-shadow: none`. Emphasis comes from colour — the two violets and charcoal — and from pill shapes, not from elevation.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Use SUIT ExtraBold (weight 800) for all display headlines — it's the brand's voice
-- Use Pretendard weight 400 at 14px for body and dense UI text
-- Reserve violet (`#4e2eed`) for the primary app-download CTA — keep it the single "action" color
-- Use near-black navy (`#010a26`) for text instead of pure black
-- Separate sections with flat tinted surfaces (`#f5f6fa`) and `#dedede` hairlines, not shadows
-- Use pill geometry — 60px chips, 100px CTA, full-round badges
-- Apply tight negative tracking on headlines (-0.96px at 64px)
-- Use the dark chip (`#15161b`) for secondary tool/calculator entry buttons
+- Use `#4e2eed` for the one persistent primary action and `#5d4cf2` for large pill actions, their outlines and the selected navigation item
+- Hover `#5d4cf2` pills to `#7164f8`; give outlined violet pills a `#f0eeff` hover fill
+- Set headlines in SUIT weight 800 with tracking near -1.5% of the size
+- Use charcoal `#15161b` pills with 60px radius for tool shortcuts
+- Keep reading copy in `#444857` and legal copy in `#65798e`
+- Keep every surface flat; group with `#f6f6f9` fills
 
 ### Don't
-- Use drop shadows for elevation — Finda is a flat, shadow-free system
-- Spread violet across many elements — it dilutes the single-action signal
-- Use pure black (`#000000`) for body text — reserve near-black navy `#010a26`
-- Use sharp/square corners on interactive elements — everything is a pill
-- Mix in a second accent color — violet is the only saturated hue
-- Set headlines in a light weight — display is always ExtraBold (800)
-- Use Pretendard for big headlines — SUIT owns display
-- Use positive letter-spacing at display sizes — Finda tracks tight
+- Don't add drop shadows; none of the 420 captured elements has one
+- Don't use the culture page's illustration fills as interface colours
+- Don't render SUIT or Pretendard with another face in their place
+- Don't invent focus styles; the captured controls show none of their own (one link shows the browser default ring)
+- Don't set headlines in light weights; every captured SUIT heading is 800 (700 for the grey lead-in and the footer headline)
+- Don't use square corners on actions; every captured action is a pill
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column, hero headline compresses, chips wrap/scroll |
-| Tablet | 640-1024px | Moderate padding, 2-up feature cards |
-| Desktop | 1024-1366px | Full layout, centered hero, multi-column feature bands |
+Only the 1440 × 900 desktop viewport was captured. Class names such as `md:max-w-[150px]`, `lg:text-28-bold` and `lg:h-[340px]` show that the pages restyle at md and lg breakpoints; no breakpoint value was measured.
 
 ### Touch Targets
-- Dark tool chips at 48px height with 29px horizontal padding — comfortably tappable
-- App-download CTA at 33px height, full pill for an unmistakable target
-- Nav links spaced for touch within the 56px header
+- Large pill actions: 54px tall
+- Recruiting link: 54px
+- Culture tabs: 51px
+- Shortcut and more pills: 48px
+- Carousel arrows: 40 × 40
+- Header download action: 33px
+- Footer disclosure toggle: 22px
 
 ### Collapsing Strategy
-- Hero: 64px SUIT headline scales down on mobile, weight 800 maintained
-- Tool chip row: horizontal wrap/scroll on narrow viewports
-- Feature bands: multi-column → stacked single column
-- Tinted/white alternating sections maintain full-width treatment
+- The culture page carries two sizes of each principle-tile heading (28px and 24px), a sign of a layout switch; how the pages collapse was not captured.
 
 ### Image Behavior
-- App screenshots and illustrations carry no shadow at any size, consistent with the flat system
-- Cards maintain 16px radius across breakpoints
+- Hero film and app screenshots sit flat, without borders or shadows.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary CTA: Finda Violet (`#4e2eed`)
-- Secondary violet / badge: Violet Alt (`#5d4cf2`)
-- Background: Pure White (`#ffffff`)
-- Tinted surface: Surface Grey (`#f5f6fa`)
-- Heading / body text: Ink Navy (`#010a26`)
-- Secondary text: Body Slate (`#3a415a`)
-- Muted text: Muted Slate (`#65798e`)
-- Faint / disabled: Faint Blue-Grey (`#a9b0c9`)
-- Dark chip: `#15161b`
-- Hairline: `#dedede`
+- Persistent primary action: `#4e2eed` with `#ffffff` text
+- Large pill actions, outlines, selected nav: `#5d4cf2`; hover `#7164f8`; outlined hover `#f0eeff`
+- Charcoal pills and selected tab: `#15161b`
+- Grey surface: `#f6f6f9`; tab hover `#e0e3eb`; hairline `#e9e9e9`
+- Text: `#010a26` default, `#000000` home headlines, `#444857` reading copy, `#3a415a` nav, `#65798e` footer, `#737a94` grey lead-ins
 
 ### Example Component Prompts
-- "Create a hero on white background. Headline at 64px SUIT weight 800, line-height 1.31, letter-spacing -0.96px, color #010a26. Below it a row of dark pill chips: #15161b background, #010a26 text, 60px radius, 14px 29px padding, 14px SUIT. One violet CTA: #4e2eed background, white text, 100px radius, 12px SUIT — 'app download'."
-- "Design a feature card: white background, 1px solid #dedede border, 16px radius, no shadow. Title 28px SUIT weight 800, letter-spacing -0.42px, #010a26. Body 14px Pretendard weight 400, #3a415a."
-- "Build a tinted section: #f5f6fa background, full-width. Section title 34px SUIT weight 800, letter-spacing -0.51px, #010a26. Cards inside use white #ffffff with #dedede hairline and 16px radius."
-- "Create top nav: white 56px header. SUIT 14px weight 400 links, #010a26 text, violet #4e2eed on active. Violet app-download CTA right-aligned, 100px pill."
+- "Create a header download pill: `#4e2eed` background, `#ffffff` 12px SUIT label (weight 400, line height 18px), 100px radius, 105 × 33, no hover change, no shadow."
+- "Create a large pill action: `#5d4cf2` background, `#ffffff` 17px Pretendard label at weight 600 with -0.17px tracking, 9999px radius, 54px tall; hover and pressed `#7164f8`. Pair it with an outlined version: white background, 1px solid `#5d4cf2`, `#5d4cf2` label, hover `#f0eeff`."
+- "Build calculator shortcut pills: `#15161b` background, 60px radius, 14.48px 29px padding, 48px tall, arranged in two columns."
+- "Build filter tabs: `#f6f6f9` background, `#15161b` 14px SUIT label at weight 700, 43px radius, 14px 28px padding, 51px tall; selected `#15161b` with white text; unselected hover `#e0e3eb`."
 
 ### Iteration Guide
-1. SUIT ExtraBold (800) for every headline; Pretendard 400 for every paragraph
-2. Violet (`#4e2eed`) is the single action color — don't spread it
-3. No shadows — separate with `#f5f6fa` tint and `#dedede` hairlines
-4. Pill geometry throughout — 60px chips, 100px CTA, 16px cards
-5. Text color is `#010a26` navy, never pure black for body
-6. Negative tracking on headlines, normal on body
-7. Dark chip `#15161b` for secondary tool buttons
+1. One violet for the persistent download action (`#4e2eed`), one for everything else violet (`#5d4cf2`)
+2. SUIT 800 headlines, tracked tight; Pretendard for the company page and pill labels
+3. Pills for every action; 6px and 10px for cards
+4. `#444857` for reading copy, never pure black for paragraphs
+5. Flat surfaces, grey `#f6f6f9` grouping
+6. Charcoal `#15161b` for tools and selection on grey
 
 ---
 
 ## 10. Voice & Tone
 
-Finda's voice is **clear, reassuring, and empowering** — a financial guide that simplifies a stressful, jargon-heavy domain (loans, interest rates, credit) into confident plain Korean. The hero line "금융 선택의 기준을 바꾸다" ("We change the standard of financial choice") sets the register: declarative, mission-framed, never gimmicky. Copy treats the user as a smart person who deserves comparison and transparency, not a target to be upsold.
+Finda's voice is **declarative and reassuring**: short mission lines, plain calculator names and concrete numbers. Headlines promise a change in how people choose financial products; body copy explains with figures.
 
 | Context | Tone |
 |---|---|
-| Hero headlines | Declarative, mission-framed. "금융 선택의 기준을 바꾸다." Confident, not hype. |
-| Tool/calculator labels | Plain and functional. "대출이자", "연봉 실수령", "DSR", "전월세 비교". |
-| CTAs | Direct, low-pressure. "앱 다운받기", "더 보러가기". |
-| Feature descriptions | Benefit-first, jargon decoded. Explains the financial term in user language. |
-| Trust / security copy | Calm, concrete. "악성 앱 차단" — states the protection plainly. |
+| Hero headlines | Declarative, mission-framed. "금융 선택의 기준을 바꾸다." |
+| Product promise | Concrete and quantified. "1분만에 대출 비교부터 신청까지." |
+| Tool labels | Plain nouns. "대출이자", "연봉 실수령", "DSR", "전월세 비교". |
+| Actions | Direct, low-pressure. "앱 다운받기", "더 보러가기", "채용공고 확인하기". |
+| Company and culture pages | First-person plural, purposeful. "누구도 가지 않은 금융 혁신의 길을 만듭니다." |
 
-**Voice samples (verbatim from live homepage):**
-- "금융 선택의 기준을 바꾸다" — hero headline (mission-framed). *(verified live 2026-06-09)*
-- "대출 비교부터 신청까지" — section heading (end-to-end promise). *(verified live 2026-06-09)*
-- "1분만에 국내 최다 금융사 대출 비교" — page title meta (speed + scope claim). *(verified live 2026-06-09)*
+**Voice samples (verbatim, opened 2026-09-30):**
+- "대출비교플랫폼, 핀다 | 1분만에 국내 최다 금융사 대출 비교" — finda.co.kr page title.
+- "금융 선택의 기준을 바꾸다" — home hero headline.
+- "대출 비교부터 신청까지" — home section heading.
+- "핀다로 선택이 쉬워진 사람들의 이야기" — home review section heading.
+- "우리가 꿈꾸는 금융이 핀다" — /about-us headline.
+- "누구도 가지 않은 금융 혁신의 길을 만듭니다" — /culture headline.
 
-**Forbidden register**: aggressive sales urgency, fear-based lending pitches, undefined financial jargon left unexplained, exclamation-heavy hype.
+**Forbidden register**: fear-based lending pitches, urgency timers, unexplained jargon, stacked exclamation marks.
 
 ## 11. Brand Narrative
 
-Finda (핀다) was founded in **2015** by **이혜민 (Lee Hye-min, CEO)** and co-founders as a loan-comparison platform addressing a uniquely Korean pain point: borrowers had no transparent way to compare loan products across dozens of banks, savings banks, and capital companies, and were often steered toward whatever a single institution offered. Finda's founding premise — to "change the standard of financial choice" — reframed lending from an opaque, single-vendor process into a transparent comparison marketplace.
+Finda's company page opens with a statement of purpose: to correct the information asymmetry that makes financial markets inefficient, and to let individuals manage their finances easily through fintech and big data — "이것이 핀다가 걸어온 길이자 앞으로 나아갈 방향입니다."
 
-The product matured into Korea's leading 대출 비교 (loan-comparison) platform, letting users compare offers from the country's largest set of financial institutions in about a minute and apply directly in-app — the "비교부터 신청까지" (from comparison to application) end-to-end promise stated on the homepage. The brand positions itself as the user's advocate inside a system historically tilted toward lenders.
+Its timeline tells the rest. (주)핀다 was founded in September 2015 and launched 핀다 웹, a financial-product information portal, in July 2016. In May 2019 it was selected for the regulatory sandbox for loan brokerage, and in July 2019 it launched the 핀다 앱 as a comparison-loan brokerage platform, followed by the loan management service 나의 대출관리 that December. A MyData licence came in January 2021 and registration as a financial-product sales agent and broker in September 2021. In 2022 Finda acquired the commercial-district analytics start-up OpenUp (오픈업) outright and introduced what it calls the industry's first malicious-app blocking against phishing. In 2023 it launched credit-loan switching on national infrastructure, raised a 47 billion won Series C from JB Financial Group and 500 Global, and built 핀다GPT on Microsoft's Azure OpenAI service. Since then: the 핀다 오토 (차즘) spin-off (2024), card comparison and the interest-refund PLCC 핀다카드 (2025), an AI loan-prediction service that needs no limit inquiry (2025), and AI tools for franchise commercial analysis and start-up banking. Today the company page lists three products: the 핀다 앱 (confirmed-terms comparison loans), 핀다 웹 and the financial media outlet 핀다포스트. On home it quotes 347만+ cumulative members and 400+ loan products and calls itself the first in Korea and the one with the most lenders.
 
-What Finda refuses, visible in its design: the heavy, intimidating chrome of legacy banking (no shadow-stacked cards, no institutional navy-and-gold), and the dark-pattern urgency of predatory lending marketing. What it embraces: a flat, fast, mobile-native interface; a single trustworthy violet; bold SUIT headlines that speak plainly; and copy that decodes financial jargon rather than hiding behind it.
+The culture page states how the crew works — Focus (목표를 명확히 이해하고 문제를 정의합니다), Impact Ownership (역할을 넘어 오너십을 발휘해 목표를 달성합니다), Never Give up (집요하게 방법을 찾아 문제를 해결합니다), 퀄리티는 절대 타협하지 않습니다 and 실행하고 배우며 계속 성장합니다. The website's design reads the same way: confident headlines, one download action repeated on every page, and quiet grey structure around it.
 
 ## 12. Principles
 
-1. **Transparency over steering.** Finda exists to compare, not to push one product. *UI implication:* present options side-by-side with clear terms; never visually privilege one lender without disclosure.
-2. **Decode, don't intimidate.** Financial jargon (DSR, 연봉 실수령) is surfaced as friendly tools, not gatekeeping. *UI implication:* every financial term gets a plain-language tool or label; the dark tool chips make calculators feel approachable.
-3. **One action, one color.** Violet (`#4e2eed`) means "do this." *UI implication:* reserve the saturated violet exclusively for the primary CTA so the next step is never ambiguous.
-4. **Flat and fast.** Mobile-native clarity beats decorative depth. *UI implication:* no shadows; separate with tint and hairlines; keep the page light and quick to scan.
-5. **Bold where it persuades, calm where it informs.** *UI implication:* SUIT ExtraBold for headlines that motivate; Pretendard 400 for content that explains.
+1. **Correct the asymmetry.** Finda's stated purpose is to fix information asymmetry. *UI implication:* show figures plainly (lenders, products, members) and let the comparison speak.
+2. **One persistent action.** *UI implication:* the header download pill in `#4e2eed` appears on every page and never changes; secondary pages add one large `#5d4cf2` pill, not several competing actions.
+3. **Tools as friendly objects.** *UI implication:* financial calculators appear as charcoal pills with plain names rather than as forms.
+4. **Quality without compromise.** "퀄리티는 절대 타협하지 않습니다" is one of the crew's stated principles. *UI implication:* consistent pill geometry, exact tracking, no decorative depth.
+5. **Flat and legible.** *UI implication:* no shadows; group with grey fills; reading copy in `#444857`. (An editorial reading of the captured pages, not a Finda statement.)
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable Finda user segments (Korean borrowers comparing loans, young professionals managing credit), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable Finda user segments (Korean borrowers comparing loans, people managing existing loans), not individual people.*
 
-**김지원, 29, 서울.** A first-time borrower comparing personal-loan offers before a deposit move. Distrusts going bank-by-bank; values seeing the country's lenders in one minute. Chose Finda because the comparison felt neutral, not like a sales funnel.
+**김지원, 29, 서울.** A first-time borrower comparing personal-loan offers before moving house. Distrusts going bank by bank; wants to see many lenders' offers in one place and apply from the same app.
 
-**박서준, 35, 경기.** A freelancer who uses the 연봉 실수령 and DSR calculators to understand his borrowing capacity before applying. Appreciates that the financial jargon is turned into simple tools he can tap without feeling judged.
+**박서준, 35, 경기.** A freelancer who checks the 연봉 실수령 and DSR calculators before applying, to understand how much he can borrow.
 
-**이수진, 42, 부산.** A homeowner exploring 대출 갈아타기 (loan switching) to lower her rate. Wants transparency on terms and a calm interface that doesn't pressure her. Trusts the brand's plain, non-hype tone.
+**이수진, 42, 부산.** A homeowner looking into switching an existing loan to a lower rate. Wants clear terms and a calm interface that does not push her.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed on the three captured pages; nothing else is specified here.
+
+| State | Observation |
 |---|---|
-| **Empty (no comparison results)** | White canvas. Single Ink Navy (`#010a26`) line at body size explaining no matching products, with one violet CTA to adjust criteria. No illustration clutter. |
-| **Empty (saved list, none yet)** | Muted Slate (`#65798e`) single line: nothing saved yet, plus a path back to comparison. Honest, calm. |
-| **Loading (results fetch)** | Skeleton rows on `#f5f6fa` tinted surface at final card dimensions, 16px radius. No shadow shimmer — flat pulse consistent with the shadowless system. |
-| **Loading (calculator compute)** | Inline progress within the tool chip; previous values stay visible. |
-| **Error (comparison failed)** | Inline message in Ink Navy with a plain-language explanation and a retry. No generic "오류가 발생했습니다" alone — states what to do next. |
-| **Error (form validation)** | Field-level message below the input in a warm error tone; describes what's valid, not just "필수". |
-| **Success (application submitted)** | Brief inline confirmation in calm tone; next-step detail linked immediately below. No celebratory emoji. |
-| **Skeleton** | `#f5f6fa` blocks at final dimensions, 16px radius, flat pulse. |
-| **Disabled** | Faint Blue-Grey (`#a9b0c9`) text on reduced-opacity surface; violet actions fade rather than turn grey to preserve brand read. |
+| **Hover / pressed (large pill)** | `#5d4cf2` → `#7164f8`, settled (probe and bundle frames agree). |
+| **Hover / pressed (outlined pill)** | `#ffffff` → `#f0eeff`. |
+| **Hover / pressed (culture tab)** | Unselected `#f6f6f9` → `#e0e3eb`; the selected `#15161b` tab does not change. |
+| **Hover / pressed (recruiting link)** | Opacity 1 → 0.9. |
+| **No change** | The header download pill and the footer disclosure toggle show no hover, pressed or focus change within the probe's compared scope. |
+| **Selected** | Header navigation turns the current section `#5d4cf2`; the culture tab fills `#15161b` with white text. |
+| **Disabled** | The first culture carousel arrow is `disabled` at capture, with the same computed values as its enabled partner. |
+| **Focus** | No captured control draws an authored focus style; 핀다 크루 합류하기 shows only the browser's default ring. |
+| **Dialog open** | A notice dialog with a `rgba(0, 0, 0, 0.4)` backdrop covered home at capture. |
+
+Error, empty, loading and success states were not captured and are not described. The calculator pills were not reachable by the probe, so their states are unmeasured, not absent.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 120ms | Hover, chip press, focus |
-| `motion-standard` | 200ms | Card/section reveal, sheet, dropdown |
-| `motion-slow` | 320ms | Page-level transitions, hero reveal |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — sheets, cards, chips |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions |
-
-**Motion rules**: Motion is functional and quiet — consistent with the flat, fast aesthetic. Pill chips respond to press with a subtle scale/opacity shift; comparison results fade-in from below at `motion-standard / ease-enter`. No bounce or spring — a loan-comparison product signals steadiness, not playfulness. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant; the product remains fully functional.
+The probe read the transitions the controls compute. The culture tabs transition colour, background, border, text-decoration colour, fill and stroke over 0.15s with `cubic-bezier(0.4, 0, 0.2, 1)`; the recruiting link transitions opacity over 0.15s with the same curve. The header download pill, the large and outlined pills and the footer toggle compute `transition: all 0s`, so their colour changes are instant. The calculator pills carry a `transition-colors` class, but no computed value was read for them. Nothing else about motion (carousels, hero film, counters) was measured; treat it as unspecified and honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-09) via playwright getComputedStyle on https://finda.co.kr:
-- Hero H1 "금융 선택의 기준을 바꾸다" — SUIT 64px / weight 800 / -0.96px / color rgb(1,10,38)
-- Section H2 "대출 비교부터 신청까지" — SUIT 34px / 800 / -0.51px
-- App-download CTA — bg rgb(78,46,237) #4e2eed / radius 100px / SUIT 12px / white text
-- Dark tool chips ("대출이자","연봉 실수령","DSR") — bg rgb(21,22,27) #15161b / radius 60px / 14px 29px padding
-- Nav header — bg #ffffff / 56px / SUIT 14px / text rgb(1,10,38)
-- box-shadow: none across hero/nav/headings/chips (shadowless system)
-- Page title meta: "대출비교플랫폼, 핀다 | 1분만에 국내 최다 금융사 대출 비교"
-
-Token-level claims (§1-9) are sourced from this live inspection.
-
-Voice samples (§10) are verbatim from the live homepage (hero H1, section H2, page title meta).
-
-Brand narrative (§11): Finda (핀다) founded 2015 as a Korean loan-comparison platform;
-CEO 이혜민 (Lee Hye-min). These are widely documented public facts about the company;
-specific founding details beyond the homepage are general public knowledge, not directly
-quoted from a verified Finda statement in this turn.
-
-Personas (§13) are fictional archetypes informed by publicly observable Finda user
-segments (Korean borrowers comparing loans). Names are illustrative; they do not refer
-to real people.
-
-Interpretive claims (e.g., "one action, one color", "flat and fast as a rejection of
-legacy banking chrome") are editorial readings connecting Finda's observed design to its
-positioning, not directly sourced Finda statements.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/finda.json (capturedAt 2026-09-30T07:53:29Z), deterministic collector, 1440x900, logged out: finda.co.kr, /about-us, /culture. States and the recruiting link: fixed keyboard probe raws docs/research/2026-09-29-growth/raw/finda-states-{about,culture,home,home-chips}.json.
+- §1, §10, §11 context: finda.co.kr/about-us (vision, 핀다 연혁, 핀다 프로덕트), /culture (work principles), the home page copy and footer, and www.post.finda.co.kr, opened 2026-09-30.
+- §3 licences: the SUIT and Pretendard LICENSE files on GitHub, opened 2026-09-30.
+- Personas are fictional archetypes. Interpretive readings are editorial.
 -->

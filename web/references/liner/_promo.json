@@ -5,14 +5,13 @@
   "highlight": {
     "type": "palette",
     "tokens": {
-      "primary": "#197b2e",
-      "heading": "#14371b",
+      "primary": "#2c783c",
+      "brand-line": "#349749",
       "tint": "#edf3ed",
-      "canvas": "#ffffff",
-      "surface": "#f9f9fa",
+      "surface": "#ffffff",
       "ink": "#1e1e1f",
-      "muted": "#6d6d70"
+      "muted": "#818184"
     },
-    "label": "Liner Green — single-action highlighter-origin brand color"
+    "label": "Liner action green — one green fills every primary action"
   }
 }

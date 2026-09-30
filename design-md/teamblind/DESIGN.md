@@ -2,68 +2,282 @@
 id: teamblind
 name: Blind
 display_name_kr: 블라인드
-country: KR
+country: US
 category: consumer-tech
 homepage: "https://www.teamblind.com/kr"
-primary_color: "#da3238"
+primary_color: "#fb5957"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=teamblind.com&sz=128"
-verified: "2026-06-10"
+verified: "2026-09-30"
 added: "2026-06-10"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: product, url: "https://www.teamblind.com/kr/", inspected: "2026-09-30" }
+    - { id: surface-2, kind: product, url: "https://www.teamblind.com/kr/topics/%ED%86%A0%ED%94%BD-%EB%B2%A0%EC%8A%A4%ED%8A%B8", inspected: "2026-09-30" }
+    - { id: surface-3, kind: product, url: "https://www.teamblind.com/kr/company", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://www.teamblind.com/kr/", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://www.teamblind.com/kr/topics/%ED%86%A0%ED%94%BD-%EB%B2%A0%EC%8A%A4%ED%8A%B8", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://www.teamblind.com/kr/company", captured: "2026-09-30" }
+    - { id: service-intro, kind: official-doc, url: "https://www.teamblind.com/kr/introduce", captured: "2026-09-30" }
+    - { id: recruit, kind: official-doc, url: "https://recruit.teamblind.com/", captured: "2026-09-30" }
+    - { id: why-blind, kind: official-doc, url: "https://www.teamblind.com/why-blind", captured: "2026-09-30" }
+    - { id: pretendard-license, kind: license, url: "https://unpkg.com/pretendard@1.3.9/package.json", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &tlogin { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-09-30" }
+    "tokens.colors.on-primary": *tlogin
+    "tokens.colors.accent": &tgo { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.colors.accent-tint": &tcatsel { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"17\"]", captured: "2026-09-30" }
+    "tokens.colors.ink": &tbody { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.colors.ink-strong": &tgnbon { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"2\"]", captured: "2026-09-30" }
+    "tokens.colors.nav": &tgnb { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]", captured: "2026-09-30" }
+    "tokens.colors.nav-hover": &tgnbhov { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]::state-hover", captured: "2026-09-30" }
+    "tokens.colors.meta": &tmeta { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"25\"]", captured: "2026-09-30" }
+    "tokens.colors.footer-ink": &tfoot { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"57\"]", captured: "2026-09-30" }
+    "tokens.colors.canvas": &tsrch { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-09-30" }
+    "tokens.colors.input-border": *tsrch
+    "tokens.colors.card-border": &tcat { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"12\"]", captured: "2026-09-30" }
+    "tokens.colors.chip-surface": &tapp { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"55\"]", captured: "2026-09-30" }
+    "tokens.typography.family.sans": *tbody
+    "tokens.typography.company-hero.size": &th1 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h1", captured: "2026-09-30" }
+    "tokens.typography.company-hero.weight": *th1
+    "tokens.typography.company-hero.lineHeight": *th1
+    "tokens.typography.company-hero.use": *th1
+    "tokens.typography.company-section.size": &th3 { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h3", captured: "2026-09-30" }
+    "tokens.typography.company-section.weight": *th3
+    "tokens.typography.company-section.lineHeight": *th3
+    "tokens.typography.company-section.use": *th3
+    "tokens.typography.section.size": &th2 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h2", captured: "2026-09-30" }
+    "tokens.typography.section.weight": *th2
+    "tokens.typography.section.lineHeight": *th2
+    "tokens.typography.section.use": *th2
+    "tokens.typography.topic-title.size": &ttopic { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h2", captured: "2026-09-30" }
+    "tokens.typography.topic-title.weight": *ttopic
+    "tokens.typography.topic-title.lineHeight": *ttopic
+    "tokens.typography.topic-title.use": *ttopic
+    "tokens.typography.post-title-lg.size": &tpostlg { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"42\"]", captured: "2026-09-30" }
+    "tokens.typography.post-title-lg.weight": *tpostlg
+    "tokens.typography.post-title-lg.lineHeight": *tpostlg
+    "tokens.typography.post-title-lg.use": *tpostlg
+    "tokens.typography.company-name.size": &tcname { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"18\"]", captured: "2026-09-30" }
+    "tokens.typography.company-name.weight": *tcname
+    "tokens.typography.company-name.lineHeight": *tcname
+    "tokens.typography.company-name.use": *tcname
+    "tokens.typography.hero-input.size": &thero { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.typography.hero-input.weight": *thero
+    "tokens.typography.hero-input.lineHeight": *thero
+    "tokens.typography.hero-input.use": *thero
+    "tokens.typography.nav.size": *tgnb
+    "tokens.typography.nav.weight": *tgnb
+    "tokens.typography.nav.lineHeight": *tgnb
+    "tokens.typography.nav.use": *tgnb
+    "tokens.typography.post-title.size": &tpost { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"12\"]", captured: "2026-09-30" }
+    "tokens.typography.post-title.weight": *tpost
+    "tokens.typography.post-title.lineHeight": *tpost
+    "tokens.typography.post-title.use": *tpost
+    "tokens.typography.preview.size": &tprev { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"43\"]", captured: "2026-09-30" }
+    "tokens.typography.preview.weight": *tprev
+    "tokens.typography.preview.lineHeight": *tprev
+    "tokens.typography.preview.use": *tprev
+    "tokens.typography.body.size": &tdesc { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::p", captured: "2026-09-30" }
+    "tokens.typography.body.weight": *tdesc
+    "tokens.typography.body.lineHeight": *tdesc
+    "tokens.typography.body.use": *tdesc
+    "tokens.typography.button.size": *tlogin
+    "tokens.typography.button.weight": *tlogin
+    "tokens.typography.button.lineHeight": *tlogin
+    "tokens.typography.button.use": *tlogin
+    "tokens.typography.chip.size": &tchip { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"10\"]", captured: "2026-09-30" }
+    "tokens.typography.chip.weight": *tchip
+    "tokens.typography.chip.lineHeight": *tchip
+    "tokens.typography.chip.use": *tchip
+    "tokens.typography.meta.size": *tmeta
+    "tokens.typography.meta.weight": *tmeta
+    "tokens.typography.meta.lineHeight": *tmeta
+    "tokens.typography.meta.use": *tmeta
+    "tokens.typography.footer.size": *tfoot
+    "tokens.typography.footer.weight": *tfoot
+    "tokens.typography.footer.lineHeight": *tfoot
+    "tokens.typography.footer.use": *tfoot
+    "tokens.spacing.post-row-y": *tpost
+    "tokens.spacing.nav-pad": *tgnb
+    "tokens.spacing.card-pad": *tcat
+    "tokens.spacing.action-y": &tblue { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"19\"]", captured: "2026-09-30" }
+    "tokens.spacing.action-x": *tblue
+    "tokens.spacing.badge-x": &tbadge { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::div", captured: "2026-09-30" }
+    "tokens.rounded.none": *tpost
+    "tokens.rounded.button": *tlogin
+    "tokens.rounded.card": *tcat
+    "tokens.rounded.search": *tsrch
+    "tokens.rounded.hero-search": *thero
+    "tokens.components.login-button.type": *tlogin
+    "tokens.components.login-button.bg": *tlogin
+    "tokens.components.login-button.fg": *tlogin
+    "tokens.components.login-button.border": *tlogin
+    "tokens.components.login-button.radius": *tlogin
+    "tokens.components.login-button.padding": *tlogin
+    "tokens.components.login-button.height": *tlogin
+    "tokens.components.login-button.font": *tlogin
+    "tokens.components.login-button.hover": &tloginhov { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]::state-hover", captured: "2026-09-30" }
+    "tokens.components.login-button.pressed": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]::state-pressed", captured: "2026-09-30" }
+    "tokens.components.login-button.states": *tloginhov
+    "tokens.components.login-button.use": *tlogin
+    "tokens.components.header-search.type": *tsrch
+    "tokens.components.header-search.bg": *tsrch
+    "tokens.components.header-search.fg": *tsrch
+    "tokens.components.header-search.border": *tsrch
+    "tokens.components.header-search.radius": *tsrch
+    "tokens.components.header-search.padding": *tsrch
+    "tokens.components.header-search.height": *tsrch
+    "tokens.components.header-search.font": *tsrch
+    "tokens.components.header-search.states": *tsrch
+    "tokens.components.header-search.use": *tsrch
+    "tokens.components.hero-search.type": *thero
+    "tokens.components.hero-search.bg": *thero
+    "tokens.components.hero-search.fg": *thero
+    "tokens.components.hero-search.border": *thero
+    "tokens.components.hero-search.radius": *thero
+    "tokens.components.hero-search.padding": *thero
+    "tokens.components.hero-search.height": *thero
+    "tokens.components.hero-search.font": *thero
+    "tokens.components.hero-search.states": *thero
+    "tokens.components.hero-search.use": *thero
+    "tokens.components.gnb-tab.type": *tgnb
+    "tokens.components.gnb-tab.bg": *tgnb
+    "tokens.components.gnb-tab.fg": *tgnb
+    "tokens.components.gnb-tab.padding": *tgnb
+    "tokens.components.gnb-tab.height": *tgnb
+    "tokens.components.gnb-tab.font": *tgnb
+    "tokens.components.gnb-tab.selected": *tgnbon
+    "tokens.components.gnb-tab.hover": *tgnbhov
+    "tokens.components.gnb-tab.pressed": { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"3\"]::state-pressed", captured: "2026-09-30" }
+    "tokens.components.gnb-tab.states": *tgnbhov
+    "tokens.components.gnb-tab.use": *tgnb
+    "tokens.components.more-link.type": &tmore { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"41\"]", captured: "2026-09-30" }
+    "tokens.components.more-link.bg": *tmore
+    "tokens.components.more-link.fg": *tmore
+    "tokens.components.more-link.padding": *tmore
+    "tokens.components.more-link.height": *tmore
+    "tokens.components.more-link.font": *tmore
+    "tokens.components.more-link.states": *tmore
+    "tokens.components.more-link.use": *tmore
+    "tokens.components.post-row.type": *tpost
+    "tokens.components.post-row.fg": *tpost
+    "tokens.components.post-row.padding": *tpost
+    "tokens.components.post-row.height": *tpost
+    "tokens.components.post-row.font": *tpost
+    "tokens.components.post-row.use": *tpost
+    "tokens.components.topic-post.type": *tpostlg
+    "tokens.components.topic-post.fg": *tpostlg
+    "tokens.components.topic-post.font": *tpostlg
+    "tokens.components.topic-post.use": *tpostlg
+    "tokens.components.channel-link.type": *tgo
+    "tokens.components.channel-link.bg": *tgo
+    "tokens.components.channel-link.fg": *tgo
+    "tokens.components.channel-link.padding": *tgo
+    "tokens.components.channel-link.height": *tgo
+    "tokens.components.channel-link.font": *tgo
+    "tokens.components.channel-link.states": *tgo
+    "tokens.components.channel-link.use": *tgo
+    "tokens.components.review-button.type": &trv { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-09-30" }
+    "tokens.components.review-button.bg": *trv
+    "tokens.components.review-button.fg": *trv
+    "tokens.components.review-button.border": *trv
+    "tokens.components.review-button.radius": *trv
+    "tokens.components.review-button.padding": *trv
+    "tokens.components.review-button.height": *trv
+    "tokens.components.review-button.font": *trv
+    "tokens.components.review-button.states": *trv
+    "tokens.components.review-button.use": *trv
+    "tokens.components.category-card.type": *tcat
+    "tokens.components.category-card.bg": *tcat
+    "tokens.components.category-card.fg": *tcat
+    "tokens.components.category-card.border": *tcat
+    "tokens.components.category-card.radius": *tcat
+    "tokens.components.category-card.padding": *tcat
+    "tokens.components.category-card.size": *tcat
+    "tokens.components.category-card.font": *tcat
+    "tokens.components.category-card.selected": *tcatsel
+    "tokens.components.category-card.use": *tcat
+    "tokens.components.company-action.type": *tblue
+    "tokens.components.company-action.bg": *tblue
+    "tokens.components.company-action.fg": *tblue
+    "tokens.components.company-action.radius": *tblue
+    "tokens.components.company-action.padding": *tblue
+    "tokens.components.company-action.height": *tblue
+    "tokens.components.company-action.font": *tblue
+    "tokens.components.company-action.states": *tblue
+    "tokens.components.company-action.use": *tblue
+    "tokens.components.company-badge.type": *tbadge
+    "tokens.components.company-badge.bg": *tbadge
+    "tokens.components.company-badge.fg": *tbadge
+    "tokens.components.company-badge.radius": *tbadge
+    "tokens.components.company-badge.padding": *tbadge
+    "tokens.components.company-badge.height": *tbadge
+    "tokens.components.company-badge.font": *tbadge
+    "tokens.components.company-badge.use": *tbadge
+    "tokens.components.app-download-button.type": *tapp
+    "tokens.components.app-download-button.bg": *tapp
+    "tokens.components.app-download-button.radius": *tapp
+    "tokens.components.app-download-button.size": *tapp
+    "tokens.components.app-download-button.states": *tapp
+    "tokens.components.app-download-button.use": *tapp
 tokens:
-  source: live-extract
-  extracted: "2026-06-10"
-  note: "Two live reds across surfaces: EN sign-up CTA #da3238 (canonical brand red) vs KR login CTA #fb5957 (lighter coral). KR surface is white-canvas list UI; EN surface is a #f9f9fb-canvas card feed. Both run Pretendard."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
-    primary: "#da3238"
-    primary-coral: "#fb5957"
-    accent-up: "#ff4848"
-    ink: "#222222"
-    ink-deep: "#18202a"
-    body-en: "#42424b"
-    muted-nav: "#5f6b7c"
-    muted-meta: "#94969b"
-    muted-en: "#989a9e"
-    secondary-en: "#65696c"
-    rank-bg: "#e6e8ef"
-    rank-fg: "#939dac"
-    canvas: "#ffffff"
-    canvas-en: "#f9f9fb"
-    surface: "#eff0f4"
-    surface-soft: "#f6f7fa"
-    surface-chip: "#f2f2f3"
-    hairline: "#d7d7d7"
-    hairline-en: "#e9ebee"
-    hairline-input: "#d4d4d4"
+    primary: "#fb5957"
     on-primary: "#ffffff"
+    accent: "#007aff"
+    accent-tint: "#f2faff"
+    ink: "#222222"
+    ink-strong: "#18202a"
+    nav: "#5f6b7c"
+    nav-hover: "#939dac"
+    meta: "#94969b"
+    footer-ink: "#42424b"
+    canvas: "#ffffff"
+    input-border: "#d4d4d4"
+    card-border: "#e6e8ef"
+    chip-surface: "#f2f2f3"
   typography:
     family: { sans: "Pretendard" }
-    nav-kr:     { size: 16, weight: 600, use: "KR global nav (홈/채널/기업 리뷰)" }
-    section:    { size: 18, weight: 600, lineHeight: 2.39, use: "KR section headings (토픽 베스트)" }
-    hero-input: { size: 18, weight: 400, use: "KR hero search input text" }
-    body:       { size: 14, weight: 400, lineHeight: 1.5, use: "Standard UI text, both surfaces" }
-    post-title: { size: 14, weight: 600, use: "Feed post titles" }
-    body-en:    { size: 16, weight: 400, lineHeight: 1.5, use: "EN base body text" }
-    meta:       { size: 12, weight: 400, use: "Category labels, timestamps" }
-    label-en:   { size: 12, weight: 600, use: "EN sidebar group labels (Location, Industry)" }
-    badge:      { size: 10, weight: 600, use: "Numeric rank chips" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 24, xl: 32, section: 48 }
-  rounded: { sm: 4, md: 8, lg: 12, pill: 20, hero: 30, full: 9999 }
-  shadow:
-    none: "none"
+    company-hero: { size: 36, weight: 600, lineHeight: 1.25, use: "Hero heading of the company-review hub (h1.tit), white over the hero, Pretendard" }
+    company-section: { size: 24, weight: 600, lineHeight: 1.25, use: "Section headings on the company-review hub (h3.ltit), Pretendard" }
+    section: { size: 18, weight: 600, lineHeight: 2.39, use: "Topic board headings on home (h2.topic, 43px line box, letter-spacing -0.5px), Pretendard" }
+    topic-title: { size: 18, weight: 700, lineHeight: 1.35, use: "Channel title on a topic page (h2.topic_is, letter-spacing -0.5px), Pretendard" }
+    post-title-lg: { size: 18, weight: 700, lineHeight: 1.4, use: "Post titles in the topic-page feed, Pretendard" }
+    company-name: { size: 18, weight: 600, lineHeight: 1.4, use: "Company names on featured company cards, Pretendard" }
+    hero-input: { size: 18, weight: 400, lineHeight: 1.25, use: "Text in the home hero search field, Pretendard" }
+    nav: { size: 16, weight: 600, lineHeight: 1.5, use: "Global navigation (홈, 채널, 기업 리뷰; letter-spacing -0.5px), Pretendard" }
+    post-title: { size: 14, weight: 600, lineHeight: 1.5, use: "Post titles in the home topic boards (a.tit, letter-spacing -0.5px), Pretendard" }
+    preview: { size: 14, weight: 400, lineHeight: 1.5, use: "Post preview text in the topic-page feed, Pretendard" }
+    body: { size: 14, weight: 400, lineHeight: 1.5, use: "Descriptive copy on the company-review hub (p.desc), Pretendard" }
+    button: { size: 14, weight: 600, lineHeight: 2.71, use: "로그인 label (38px line box inside the 40px button, letter-spacing -0.5px), Pretendard" }
+    chip: { size: 12, weight: 700, lineHeight: 1.35, use: "Channel chips across the top of a topic page (letter-spacing -0.1px), Pretendard" }
+    meta: { size: 12, weight: 400, lineHeight: 1.25, use: "View, comment and like counts and category labels, Pretendard" }
+    footer: { size: 14, weight: 400, lineHeight: 1.14, use: "Footer links (letter-spacing -0.2px), Pretendard" }
+  spacing: { post-row-y: 8, nav-pad: 4, card-pad: 20, action-y: 12, action-x: 16, badge-x: 12 }
+  rounded: { none: 0, button: 4, card: 8, search: 20, hero-search: 30 }
   components:
-    button-signup: { type: button, bg: "#da3238", fg: "#ffffff", radius: "8px", padding: "0 16px", height: "40px", font: "14px / 600", use: "EN 'Sign up' — the canonical brand-red CTA" }
-    button-login-kr: { type: button, bg: "#fb5957", fg: "#ffffff", radius: "4px", height: "40px", border: "1px solid #fb5957", font: "14px / 600", use: "KR '로그인' CTA — lighter coral red on the KR surface" }
-    button-signin-ghost: { type: button, fg: "#222222", radius: "8px", padding: "0 16px", height: "40px", border: "1px solid #e9ebee", font: "14px / 600", use: "EN 'Sign in' secondary ghost button" }
-    input-search-en: { type: input, bg: "#eff0f4", fg: "#222222", radius: "8px", font: "14px / 400", use: "EN header search — borderless grey field" }
-    input-hero-kr: { type: input, bg: "#ffffff", fg: "#222222", radius: "30px", height: "60px", border: "2px solid #222222", font: "18px / 400", use: "KR hero search — bold ink-outlined pill" }
-    card-feed: { type: card, bg: "#ffffff", border: "1px solid #e9ebee", radius: "12px", padding: "16px", use: "EN feed/content card on the #f9f9fb canvas" }
-    badge-rank: { type: badge, bg: "#e6e8ef", fg: "#939dac", radius: "4px", padding: "3px", font: "10px / 600", use: "KR '토픽 베스트' numeric rank chip (1–10)" }
-    tab-gnb-kr: { type: tab, active: "text #18202a", fg: "#5f6b7c", font: "16px / 600", use: "KR global nav — 홈 active vs 채널/기업 리뷰 inactive" }
-    pill-side-nav: { type: tab, bg: "#f6f7fa", fg: "#222222", radius: "8px", padding: "8px 12px", font: "14px / 600", use: "EN sidebar selected item; inactive items #65696c on transparent" }
-    list-post: { type: listItem, fg: "#222222", font: "14px / 600", use: "Post-row title; 12px #94969b category label above" }
+    login-button: { type: button, bg: "#fb5957", fg: "#ffffff", border: "1px solid #fb5957", radius: "4px", padding: "0px", height: "40px", font: "14px / 600 / 38px Pretendard, letter-spacing -0.5px", hover: "bg #ff928b, border #ff928b", pressed: "bg #ff928b, border #ff928b", states: "hover and pressed frames read #ff928b on all three pages (sibling agreement), the value the page stylesheet authors for .btn_signin:hover and :active, so the frames are the settled end state; focus not measured", use: "로그인 at the right of the global header on every captured page, 82 x 40 (read, never followed)" }
+    header-search: { type: input, bg: "#ffffff", fg: "#222222", border: "1px solid #d4d4d4", radius: "20px", padding: "2px 12px 0px 36px", height: "40px", font: "14px / 400 / 17.5px Pretendard", states: "rest only; the pressed frame moved focus into the field, so its #222222 border is a focus reading and no state is declared", use: "Pill search field in the global header, 248 x 40" }
+    hero-search: { type: input, bg: "#ffffff", fg: "#222222", border: "2px solid #222222", radius: "30px", padding: "0px 10px 0px 62px", height: "60px", font: "18px / 400 / 22.5px Pretendard", states: "rest only; no pointer or focus frame was recorded for it", use: "Home hero search, 736 x 60, placeholder 관심있는 내용을 검색해보세요!" }
+    gnb-tab: { type: tab, bg: "transparent", fg: "#5f6b7c", padding: "4px", height: "32px", font: "16px / 600 / 24px Pretendard, letter-spacing -0.5px", selected: "fg #18202a on the current section (홈 on home, 기업 리뷰 on the company hub)", hover: "fg #939dac", pressed: "fg #939dac", states: "hover and pressed frames read #939dac on every inactive item on all three pages, matching the stylesheet's #gnb .swiper-slide a:hover rule", use: "Global navigation 홈, 채널, 기업 리뷰; the fourth slot is an advertising link and is excluded" }
+    more-link: { type: button, bg: "transparent", fg: "#5f6b7c", padding: "0px 20px 0px 8px", height: "48px", font: "12px / 600 / 48px Pretendard, letter-spacing -0.5px", states: "rest on 37 instances; no pointer frame", use: "더보기 at the right of each home topic board heading, 58 x 48" }
+    post-row: { type: listItem, fg: "#222222", padding: "8px 0px", height: "37px", font: "14px / 600 / 21px Pretendard, letter-spacing -0.5px", use: "Post title row in the home topic boards; counts beside it in #94969b 12px / 400" }
+    topic-post: { type: listItem, fg: "#222222", font: "18px / 700 / 25.2px Pretendard", use: "Topic-page feed item: 18px bold title, 14px / 400 / 21px preview and 12px #94969b counts, all #222222 except the counts" }
+    channel-link: { type: button, bg: "transparent", fg: "#007aff", padding: "0px 16px 0px 0px", height: "46px", font: "14px / 600 / 17.99px Pretendard, letter-spacing -0.1px", states: "rest only; no pointer frame", use: "채널 탐색 link beside the topic title on a topic page" }
+    review-button: { type: button, bg: "#ffffff", fg: "#222222", border: "1px solid #e6e8ef", radius: "8px", padding: "0px 16px", height: "40px", font: "14px / 600 / 17.5px Pretendard", states: "rest only; no pointer frame", use: "내 회사 리뷰하기 on the company-review hub, 149 x 40" }
+    category-card: { type: card, bg: "#ffffff", fg: "#222222", border: "1px solid #e6e8ef", radius: "8px", padding: "20px 20px 58px", size: "173px x 128px", font: "14px / 400 / normal Pretendard", selected: "bg #f2faff, border 1px solid #007aff", use: "Selectable cards in the company-review hub (five at rest, one selected); labels not captured" }
+    company-action: { type: button, bg: "#007aff", fg: "#ffffff", radius: "8px", padding: "12px 16px", height: "42px", font: "14px / 400 / 17.5px Pretendard", states: "rest on three instances; no pointer frame", use: "Filled blue action at the foot of each of the three featured company cards, 313 x 42; label not captured" }
+    company-badge: { type: badge, bg: "#f2faff", fg: "#222222", radius: "4px", padding: "8px 12px", height: "31px", font: "12px / 600 / 15px Pretendard", use: "Tinted line on the featured company cards, 313 x 31; label not captured" }
+    app-download-button: { type: button, bg: "#f2f2f3", radius: "20px", size: "40px x 40px", states: "rest only; no pointer frame", use: "Round App Store and Google Play buttons in the footer" }
   components_harvested: true
 ---
 
@@ -71,436 +285,393 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-Blind (블라인드) is the anonymous workplace community where over twelve million verified professionals talk about salary, career moves, and company life — and its design reads exactly like what it is: a high-velocity text forum wearing the lightest possible chrome. The Korean surface (`teamblind.com/kr`) is a dense, white-canvas (`#ffffff`) list UI in the lineage of Korean portal communities: near-black ink text (`#222222`), thin `#d7d7d7` hairline dividers between post rows, tiny grey metadata, and almost no decoration. Nothing competes with the posts themselves, because the posts — raw, unfiltered, anonymous — are the product.
+Blind (블라인드) is the anonymous workplace community run by Teamblind Inc. Its own service page describes it as a company-verified, anonymous community for working people, launched in 2013, and says plainly that it is "100% 익명": Blind keeps no member information in the service, under a security philosophy it states as "잃어버리면 안 되는 것은 가지고 있지 않는다" — don't hold what must never be lost. Teamblind's careers site frames the mission as "구성원 목소리로 만드는 건강한 조직 문화", a healthy organisational culture built from employees' voices, and says Blind now serves more than 13 million professionals at 450,000 companies worldwide from a headquarters in Silicon Valley. Its first stated value is Honesty & Transparency — "표현은 솔직하게, 공유는 투명하게". On the Korean web the product has grown from topic boards into a company-review hub ("15만 개의 기업 중 숨겨진 진짜 나만의 1위 기업"), while company, industry and group channels stay inside the app and logged-out visitors can only read.
 
-The single point of heat in this deliberately cool system is red. Blind's brand red appears in two live variants: the deeper `#da3238` on the global English surface's "Sign up" button, and a lighter coral `#fb5957` on the Korean 로그인 button. Red carries an unusually heavy semantic load for a community product — it is simultaneously the brand mark, the only CTA color, and an echo of the "blind item" tabloid red that suits a platform built on anonymous disclosure. Everything else stays in a long grey ladder (`#5f6b7c` nav, `#94969b` metadata, `#939dac` rank chips), so the one red element on any screen is unambiguous.
+The captured Korean pages read as a dense, text-first forum on white. Post titles run in `#222222` at 14px / 600 with tight 8px row padding, counts sit in `#94969b` at 12px, and the global navigation uses a steel-grey `#5f6b7c` that turns `#18202a` on the current section. Colour appears in only two places. A coral `#fb5957` fills the 로그인 button in the header of every page, and the page stylesheet names it `--tb-red-red1000`. A blue `#007aff` (`--tb-blue-blue1000`) marks the company-review hub and topic pages: the 채널 탐색 link, a selected company card on a `#f2faff` tint, and filled actions on featured company cards. The home hero is a single 60px search pill outlined in 2px `#222222`. Nothing casts a shadow.
 
-Typographically the system is pure Pretendard at functional sizes — 16px/600 for the Korean global nav, 14px/600 for post titles, 12px for metadata — with no display typography at all on the community surfaces. The most expressive single element on the Korean homepage is the hero search field: a 60px-tall pill with a blunt 2px solid `#222222` outline and 30px radius, an ink-drawn loud-speaker of an input that says "ask anything." The newer English surface shifts the same DNA into a contemporary card feed: an off-white `#f9f9fb` canvas, white cards with 1px `#e9ebee` borders and 12px radius, 8px-radius controls, and a completely flat, shadow-free elevation model on both surfaces. Blind is what a trusted rumor mill looks like when it grows up: plain, fast, text-first, and punctuated by exactly one red button.
+Every captured element is set in Pretendard, loaded from unpkg as `pretendard@1.3.9`, an open-licence family (OFL-1.1) that Blind uses and does not own.
 
 **Key Characteristics:**
-- Text-first density — post titles at 14px/600 ink (`#222222`) with hairline (`#d7d7d7`) row dividers, no card chrome on the KR list
-- One red, one job — `#da3238` / `#fb5957` reserved for the primary auth CTA; nothing else on screen is red
-- Pretendard everywhere, at UI sizes only — no display typography on community surfaces
-- Flat, shadow-free elevation on both KR and EN surfaces; separation by hairline and canvas tint
-- Two-generation surface split: KR legacy white list UI vs EN `#f9f9fb` card feed with 12px-radius cards
-- The ink-outlined hero search pill (2px `#222222`, radius 30px, 60px tall) as the KR signature element
-- Long grey ladder for hierarchy: `#18202a` → `#5f6b7c` → `#94969b` → `#939dac`
-- Anonymity cues in the UI: posts attributed to scrambled handles and "비공개" rather than names or faces
+- Text-first density: 14px / 600 `#222222` post titles, 8px row padding, 12px `#94969b` counts
+- One coral action, `#fb5957`, on the header 로그인 on every page; hover and pressed go lighter to `#ff928b`
+- A contextual blue, `#007aff`, for the company-review hub and channel links, with a `#f2faff` tint for selection
+- A grey navigation scale: `#5f6b7c` at rest, `#939dac` on hover, `#18202a` when current
+- The home hero is one search pill: 60px tall, 2px `#222222` outline, 30px radius
+- Radii of 4px (buttons, badges), 8px (cards and company actions), 20px (header search) and 30px (hero search)
+- Flat: every captured element computes `box-shadow: none`
+- Pretendard for everything, at weights 400, 600 and 700
 
 ## Primary tasks
 
 - Search the community for a topic you care about
-- Verify your work email to post without being identified
-- Ask a career question anonymously and get blunt answers
-- Check your own company's channel over lunch
-- Compare salary threads and reviews before negotiating a raise
-- Read what employees actually think without posting yourself
+- Read the day's best posts in 토픽 베스트 without signing in
+- Browse company reviews before a job move
+- Review your own company (내 회사 리뷰하기)
+- Explore topic channels from 채널 탐색
 
 ## 2. Color Palette & Roles
 
+Every token below was read by the deterministic collector on 2026-09-30 from www.teamblind.com/kr, the 토픽 베스트 topic page and the company-review hub.
+
 ### Primary
-- **Blind Red** (`#da3238`): The canonical brand red — EN "Sign up" CTA background, and the contact-link red on Blind's own fallback pages. The single action color of the system.
-- **Coral Red** (`#fb5957`): The KR surface's 로그인 button red — a lighter, warmer variant of the brand red used as the Korean primary CTA.
-- **Upvote Red** (`#ff4848`): Accent red for like/upvote counts and live signals on the EN feed.
+- **Blind Coral** (`#fb5957`): The fill and 1px border of the 로그인 button, the one filled action in the global header, on all three captured pages. It is the primary because it is the only saturated action fill that appears on every captured surface, and the page stylesheet declares it as `--tb-red-red1000`, the base of Blind's red scale. Hover and pressed frames read `#ff928b` (`--tb-red-red700`) on all three pages.
+- **On Primary** (`#ffffff`): The 로그인 label.
 
-### Ink & Text
-- **Ink** (`#222222`): Primary text everywhere — post titles, headings, nav, body on the KR surface.
-- **Ink Deep** (`#18202a`): Active state of the KR global nav (홈) — a barely-darker blue-black that reads as "selected" against `#5f6b7c`.
-- **Body EN** (`#42424b`): The EN surface's default body/copy grey-ink.
-- **Nav Muted** (`#5f6b7c`): Inactive KR global-nav items (채널, 기업 리뷰) — a desaturated steel blue.
-- **Meta Grey** (`#94969b`): KR post metadata — category labels, counts, timestamps.
-- **Muted EN** (`#989a9e`): EN inactive top-nav items and sidebar group labels.
-- **Secondary EN** (`#65696c`): EN sidebar links and secondary actions.
-- **Rank Grey** (`#939dac`): Text inside the numeric rank chips.
+### Accent
+- **Blind Blue** (`#007aff`): The 채널 탐색 link on the topic page, the 1px border of the selected company card, and the fill of the three filled actions on featured company cards. It is contextual: it appears only on the topic page and the company-review hub, which is why it is the accent and not the primary. The stylesheet names it `--tb-blue-blue1000`.
+- **Blue Tint** (`#f2faff`): The fill of the selected company card and of the tinted line on featured company cards (`--tb-blue-blue200`).
 
-### Canvas & Surface
-- **White** (`#ffffff`): The KR page canvas, cards, and input fields; text on red.
-- **Canvas EN** (`#f9f9fb`): The EN feed's off-white page background that makes white cards legible without shadows.
-- **Search Surface** (`#eff0f4`): EN borderless search-field fill.
-- **Surface Soft** (`#f6f7fa`): EN sidebar selected-item pill background.
-- **Chip Surface** (`#f2f2f3`): KR app-download circular button fill.
-- **Rank Chip** (`#e6e8ef`): Background of the 토픽 베스트 numeric rank chips.
+### Text
+- **Ink** (`#222222`): Body text, post titles, section headings and input text on every page.
+- **Ink Strong** (`#18202a`): The current section in the global navigation (`--tb-gray-gray1000`).
+- **Nav Grey** (`#5f6b7c`): Inactive navigation items, 더보기 links and descriptive copy on the company hub (`--tb-gray-gray700`).
+- **Nav Hover** (`#939dac`): Navigation items under hover and press (`--tb-gray-gray600`).
+- **Meta Grey** (`#94969b`): View, comment and like counts and category labels.
+- **Footer Ink** (`#42424b`): Footer links on the company hub.
 
-### Hairlines & Borders
-- **Hairline** (`#d7d7d7`): The KR list-row divider — the system's primary separation device.
-- **Hairline EN** (`#e9ebee`): EN card and ghost-button border.
-- **Input Border** (`#d4d4d4`): KR header search-pill border.
-- **On Primary** (`#ffffff`): Text/icon color on red CTAs.
+### Surface & Borders
+- **Canvas** (`#ffffff`): Pages set no body fill and render on the browser's white; white is set explicitly on the search fields, the company cards and the 내 회사 리뷰하기 button.
+- **Input Border** (`#d4d4d4`): The 1px border of the header search pill.
+- **Card Border** (`#e6e8ef`): The 1px border of company cards and the 내 회사 리뷰하기 button (`--tb-gray-gray300`).
+- **Chip Surface** (`#f2f2f3`): The round App Store and Google Play buttons in the footer.
+
+### Brand assets, not tokens
+- The stylesheet also declares a legacy red, `--tb-legacy-red-da`, and full red, blue, gray, purple, success and warning scales. Only the values listed above were rendered on the captured pages; the rest stay out of the tokens.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **Primary**: `Pretendard` — on KR with the legacy stack `AppleSDGothicNeo-Regular, "Malgun Gothic", dotum`; on EN as `pretendard, ui-sans-serif, system-ui`. One family carries both surfaces.
+- **Live surface use**: `Pretendard` — 1,176 observed uses across body, headings, navigation, buttons, inputs, chips and badges on all three pages, `loaded / high`, served from `unpkg.com/pretendard@1.3.9/dist/web/static/` (woff2 and woff, Black through Thin). The declared stack is `Pretendard, AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif`.
+- **Official distributed font asset**: Pretendard is an open-source family; its package manifest (`pretendard@1.3.9/package.json`) gives the licence as OFL-1.1 and the author as Kil Hyung-jin. It is a family Blind uses, not a Blind-owned typeface.
+- **Excluded (third-party embeds)**: `Google Sans Text` (fonts.gstatic.com), `Nanum Gothic` (static.criteo.net), `notokr` (img.mobon.net) and `Roboto` are declared by advertising embeds, with 0 observed uses. They are not Blind faces.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Notes |
-|------|------|------|--------|-------------|-------|
-| KR Global Nav | Pretendard | 16px | 600 | 2.0 (32px box) | 홈 / 채널 / 기업 리뷰 |
-| Section Heading | Pretendard | 18px | 600 | 43px box | 토픽 베스트, channel names |
-| Hero Search Input | Pretendard | 18px | 400 | — | Inside the 60px ink-outlined pill |
-| EN Body | Pretendard | 16px | 400 | 24px | EN base text |
-| Post Title | Pretendard | 14px | 600 | 37px row | The workhorse — feed post titles |
-| UI / Buttons | Pretendard | 14px | 600 | — | CTAs, nav links, sidebar items |
-| Body / Footer | Pretendard | 14px | 400 | 1.5 | Footer links, descriptions |
-| Meta | Pretendard | 12px | 400 | — | Category labels, timestamps |
-| EN Group Label | Pretendard | 12px | 600 | — | "Location", "Industry", "Job Function" |
-| Rank Badge | Pretendard | 10px | 600 | — | Numeric chips 1–10 |
+| Role | Font | Size | Weight | Line Height | Observed on |
+|------|------|------|--------|-------------|-------------|
+| Company Hero | Pretendard | 36px | 600 | 45px (1.25) | Company-review hub hero |
+| Company Section | Pretendard | 24px | 600 | 30px (1.25) | Company hub section headings |
+| Section | Pretendard | 18px | 600 | 43px box | Home topic board headings (-0.5px) |
+| Topic Title | Pretendard | 18px | 700 | 24.3px (1.35) | Topic page title (-0.5px) |
+| Post Title Large | Pretendard | 18px | 700 | 25.2px (1.4) | Topic-page feed titles |
+| Company Name | Pretendard | 18px | 600 | 25.2px (1.4) | Featured company cards |
+| Hero Input | Pretendard | 18px | 400 | 22.5px (1.25) | Home hero search |
+| Nav | Pretendard | 16px | 600 | 24px (1.5) | Global navigation (-0.5px) |
+| Post Title | Pretendard | 14px | 600 | 21px (1.5) | Home topic boards (-0.5px) |
+| Preview | Pretendard | 14px | 400 | 21px (1.5) | Topic-page post previews |
+| Body | Pretendard | 14px | 400 | 21px (1.5) | Company hub descriptions |
+| Button | Pretendard | 14px | 600 | 38px box | 로그인 (-0.5px) |
+| Footer | Pretendard | 14px | 400 | 16px (1.14) | Footer links (-0.2px) |
+| Chip | Pretendard | 12px | 700 | 16.2px (1.35) | Topic-page channel chips (-0.1px) |
+| Meta | Pretendard | 12px | 400 | 15px (1.25) | Counts and category labels |
 
 ### Principles
-- **UI sizes only**: the community surfaces have no display typography — the largest live text is an 18px section heading. Scale is expressed through weight (600 vs 400) and greys, not size jumps.
-- **600 is the emphasis weight**: post titles, nav, buttons, and section heads all sit at semibold; regular 400 carries metadata and body. Bold (700) is nearly absent.
-- **Density over air**: 14px titles in 37px rows, 12px metadata — the KR feed is tuned to show many posts per viewport, like a stock ticker for workplace talk.
-- **One family, two generations**: identical Pretendard on the legacy KR markup and the modern EN Tailwind feed keeps the brand coherent across the split.
+- **UI sizes, not display sizes**: the largest text on the community pages is 18px; only the company hub's hero reaches 36px.
+- **600 is the working emphasis**: navigation, post titles, section headings and the login label sit at 600; the topic page's titles and chips step up to 700.
+- **Slightly tight tracking on UI text**: navigation, post titles, section headings and the login label use `-0.5px`; chips `-0.1px`; footer links `-0.2px`; body and meta text stay at normal.
 
 ## 4. Component Stylings
 
 ### Buttons
 
-**Sign Up (EN Primary)**
-- Background: `#da3238`
-- Text: `#ffffff`
-- Radius: 8px
-- Padding: 0px 16px
-- Height: 40px
-- Font: 14px / 600 / Pretendard
-- Use: EN header primary CTA — the one red element on the page
-
-**로그인 (KR Primary)**
+**로그인 (primary)**
 - Background: `#fb5957`
 - Text: `#ffffff`
 - Border: 1px solid `#fb5957`
 - Radius: 4px
-- Height: 40px
-- Font: 14px / 600 / Pretendard
-- Use: KR header login CTA — coral variant of the brand red
+- Height: 40px (82 × 40)
+- Font: 14px / 600 / 38px Pretendard, letter-spacing -0.5px
+- Hover: background and border `#ff928b`
+- Pressed: background and border `#ff928b`
+- Use: the one filled action in the global header on every captured page (read, never followed)
 
-**Sign In (EN Ghost)**
-- Background: transparent
+**Company action (blue)**
+- Background: `#007aff`
+- Text: `#ffffff`
+- Radius: 8px
+- Padding: 12px 16px
+- Height: 42px (313 × 42)
+- Font: 14px / 400 / 17.5px Pretendard
+- States: rest only
+- Use: at the foot of each of three featured company cards on the company-review hub; the label was not captured
+
+**내 회사 리뷰하기**
+- Background: `#ffffff`
 - Text: `#222222`
-- Border: 1px solid `#e9ebee`
+- Border: 1px solid `#e6e8ef`
 - Radius: 8px
 - Padding: 0px 16px
-- Height: 40px
-- Font: 14px / 600 / Pretendard
-- Use: EN secondary auth action next to Sign up
+- Height: 40px (149 × 40)
+- Font: 14px / 600 / 17.5px Pretendard
+- States: rest only
+- Use: review prompt on the company-review hub
 
-**App Download Circle (KR)**
+**더보기**
+- Background: transparent
+- Text: `#5f6b7c`
+- Padding: 0px 20px 0px 8px
+- Height: 48px
+- Font: 12px / 600 / 48px Pretendard, letter-spacing -0.5px
+- Use: at the right of each home topic board heading
+
+**채널 탐색 link**
+- Background: transparent
+- Text: `#007aff`
+- Padding: 0px 16px 0px 0px
+- Height: 46px
+- Font: 14px / 600 / 17.99px Pretendard, letter-spacing -0.1px
+- Use: beside the topic title on a topic page
+
+**App download buttons**
 - Background: `#f2f2f3`
-- Text: `#222222`
-- Radius: 50%
-- Height: 40px
-- Use: Circular App Store / Google Play buttons in the KR header
+- Radius: 20px
+- Size: 40 × 40
+- Use: App Store and Google Play in the footer
 
-### Inputs & Forms
+### Inputs
 
-**Hero Search (KR)**
+**Hero search**
 - Background: `#ffffff`
 - Text: `#222222`
 - Border: 2px solid `#222222`
 - Radius: 30px
-- Height: 60px
 - Padding: 0px 10px 0px 62px
-- Font: 18px / 400 / Pretendard
-- Use: KR homepage hero search — placeholder "관심있는 내용을 검색해보세요!"
+- Height: 60px (736 wide)
+- Font: 18px / 400 / 22.5px Pretendard
+- Use: home hero, placeholder "관심있는 내용을 검색해보세요!"
 
-**Header Search (KR)**
+**Header search**
 - Background: `#ffffff`
 - Text: `#222222`
 - Border: 1px solid `#d4d4d4`
 - Radius: 20px
-- Height: 40px
 - Padding: 2px 12px 0px 36px
-- Font: 14px / 400 / Pretendard
-- Use: Compact pill search in the KR global header
+- Height: 40px (248 wide)
+- Font: 14px / 400 / 17.5px Pretendard
+- States: rest only; no focus treatment is declared
 
-**Header Search (EN)**
-- Background: `#eff0f4`
-- Text: `#222222`
-- Radius: 8px
-- Font: 14px / 400 / Pretendard
-- Use: EN borderless grey search field (radius on the wrapping container)
+### Navigation
 
-### Cards & Containers
-
-**Feed Card (EN)**
-- Background: `#ffffff`
-- Border: 1px solid `#e9ebee`
-- Radius: 12px
-- Padding: 16px
-- Use: Content/feed card sitting on the `#f9f9fb` canvas — no shadow
-
-**List Section (KR)**
-- Background: `#ffffff`
-- Border: 1px solid `#d7d7d7` row dividers
-- Use: KR post lists separate rows by hairline only; no card chrome
-
-### Badges
-
-**Rank Chip**
-- Background: `#e6e8ef`
-- Text: `#939dac`
-- Radius: 4px
-- Padding: 3px
-- Font: 10px / 600 / Pretendard
-- Use: Numeric 1–10 chips in 토픽 베스트 rankings
-
-### Tabs & Navigation
-
-**KR Global Nav**
+**Global navigation**
+- Background: transparent
 - Text: `#5f6b7c`
-- Active: `#18202a` text
-- Font: 16px / 600 / Pretendard
-- Use: 홈 / 채널 / 기업 리뷰 top navigation
+- Padding: 4px
+- Height: 32px
+- Font: 16px / 600 / 24px Pretendard, letter-spacing -0.5px
+- Selected: text `#18202a`
+- Hover: text `#939dac`
+- Pressed: text `#939dac`
+- Use: 홈, 채널, 기업 리뷰. The fourth navigation slot is an advertising link and is not described.
 
-**EN Top Nav**
-- Text: `#989a9e`
-- Active: `#222222` text
-- Font: 14px / 600 / Pretendard
-- Use: Community / Salaries / Reviews / Layoffs / Jobs
+**Topic-page channel chips**
+- Text: `#222222`, 12px / 700 / 16.2px Pretendard, letter-spacing -0.1px, 28px tall
+- The current chip (토픽 베스트) shows `#ffffff` text; its fill sits on an ancestor the collector did not record, so no chip fill is specified.
 
-**EN Sidebar Pill**
-- Background: `#f6f7fa`
+### Cards & Lists
+
+**Company card (selectable)**
+- Background: `#ffffff`
 - Text: `#222222`
+- Border: 1px solid `#e6e8ef`
 - Radius: 8px
-- Padding: 8px 12px
-- Font: 14px / 600 / Pretendard
-- Use: Selected sidebar item (Feed); inactive items `#65696c` on transparent
+- Padding: 20px 20px 58px
+- Size: 173 × 128
+- Font: 14px / 400 / normal Pretendard
+- Selected: background `#f2faff`, border 1px solid `#007aff`
+- Use: the row of selectable cards on the company-review hub; labels were not captured
 
-### List Items
-
-**Post Row**
+**Company badge**
+- Background: `#f2faff`
 - Text: `#222222`
-- Font: 14px / 600 / Pretendard
+- Radius: 4px
+- Padding: 8px 12px
+- Height: 31px
+- Font: 12px / 600 / 15px Pretendard
+- Use: tinted line on featured company cards; the label was not captured
+
+**Home post row**
+- Text: `#222222`
 - Padding: 8px 0px
-- Use: Feed post title; 12px `#94969b` category label above; like/comment counts in meta grey
+- Height: 37px
+- Font: 14px / 600 / 21px Pretendard, letter-spacing -0.5px
+- Use: post titles in the home topic boards, with counts in `#94969b` at 12px / 400 / 15px
+
+**Topic-page post**
+- Text: `#222222`
+- Font: 18px / 700 / 25.2px Pretendard title, 14px / 400 / 21px preview
+- Use: the 토픽 베스트 feed, with counts in `#94969b`
 
 ---
-**Verified:** 2026-06-10
-**Tier 1 sources:** https://www.teamblind.com/kr, https://www.teamblind.com, https://recruit.teamblind.com
-**Tier 2 sources:** none available (getdesign.md/teamblind and getdesign.md/blind both 404; styles.refero.design ?q=blind returns no Blind entry)
+
+**Verified:** 2026-09-30 (deterministic collector capture of three public, logged-out pages of www.teamblind.com/kr, plus first-party context)
+**Tier 1 sources:** https://www.teamblind.com/kr/ ; https://www.teamblind.com/kr/topics/%ED%86%A0%ED%94%BD-%EB%B2%A0%EC%8A%A4%ED%8A%B8 ; https://www.teamblind.com/kr/company ; https://www.teamblind.com/kr/introduce ; https://recruit.teamblind.com/ ; https://www.teamblind.com/why-blind
+**Tier 2 sources:** getdesign.md/teamblind (HTTP 200, "teamblind — 0 DESIGN.md files") and styles.refero.design/?q=blind (HTTP 200, no Blind style entry), requested 2026-09-30; no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: 4px
-- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 48px
-- Notable: row padding on post lists is a tight 8px vertical — density is a feature
+- Post rows: 8px vertical padding
+- Navigation items: 4px padding
+- Company cards: 20px padding with 58px at the foot
+- Company actions: 12px vertical, 16px horizontal
+- Badges: 8px vertical, 12px horizontal
 
 ### Grid & Container
-- KR homepage: centered content column with a multi-column "topic board" grid of post lists, each section headed by an 18px/600 title
-- EN feed: classic three-zone community layout — left sidebar (filters/channels as 8px-radius pills), center feed of 12px-radius cards, right rail
-- Header is a persistent white bar: logo left, search center/right, single red CTA at the far right on both surfaces
+- A white global header carries the logo, 홈 / 채널 / 기업 리뷰, a 248px search pill and the coral 로그인 button.
+- Home stacks a 736px hero search over two-column topic boards, each headed by an 18px / 600 heading with a 더보기 link.
+- The topic page runs a row of 28px channel chips over a single-column feed of 18px titles and previews.
+- The company-review hub opens on a hero with a 36px white heading, then a row of 173 × 128 selectable cards, featured company cards with blue actions, and review excerpts.
 
 ### Whitespace Philosophy
-- **Density first**: Blind optimizes posts-per-viewport. Whitespace exists to keep rows scannable, never to dramatize.
-- **Hairline segmentation**: `#d7d7d7` (KR) and `#e9ebee` (EN) lines do the structural work that other systems give to shadows and cards.
-- **Tinted canvas on EN**: the `#f9f9fb` page color lets borderless white cards read as surfaces without any elevation.
+- **Density first**: 14px titles in 37px rows put many posts in a viewport.
+- **Grey carries hierarchy**: ink, nav grey and meta grey do the work that size and colour do elsewhere.
 
 ### Border Radius Scale
-- Small (4px): KR buttons, rank chips
-- Medium (8px): EN buttons, search fields, sidebar pills
-- Large (12px): EN feed cards
-- Pill (20px): KR header search
-- Hero (30px): KR hero search pill
-- Full (50% / 9999px): avatars, circular app buttons
+- 0px: post rows, links and most containers
+- 4px: 로그인 and badges
+- 8px: company cards, 내 회사 리뷰하기, blue company actions
+- 20px: header search and round app buttons
+- 30px: hero search
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (Level 0) | No shadow | Everything — both surfaces are shadow-free |
-| Tint (Level 1) | `#f9f9fb` canvas vs `#ffffff` card | EN card separation |
-| Hairline (Level 2) | 1px `#d7d7d7` / `#e9ebee` | Row dividers, card borders |
-| Scrim | `rgba(0,0,0,0.8)` overlay | Modal/photo viewer backdrop |
+| Flat | No shadow | Every captured element |
+| Border | 1px `#d4d4d4` / `#e6e8ef` | Header search, company cards |
+| Outline | 2px `#222222` | Hero search |
+| Tint | `#f2faff` fill | Selected company card, company badge |
 
-**Shadow Philosophy**: Live inspection found no box-shadows in use on either the KR homepage or the EN feed. Blind's elevation model is entirely flat: tinted canvas, white surfaces, and hairlines. For a platform whose content is emotionally loud — salary reveals, layoff rumors, anonymous grievances — the chrome stays visually silent. Depth would imply editorial curation; flatness implies the feed is just the feed.
+**Shadow Philosophy**: every captured element computes `box-shadow: none`. Separation comes from 1px borders, the 2px hero outline and the blue tint.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Reserve red (`#da3238` EN / `#fb5957` KR) for exactly one CTA per screen
-- Set post titles at 14px Pretendard weight 600 in ink `#222222`
-- Separate list rows with 1px `#d7d7d7` hairlines instead of cards on dense KR-style lists
-- Use the `#f9f9fb` canvas + white card + 1px `#e9ebee` border pattern for EN-style feeds
-- Keep the system shadow-free — tint and hairline carry all depth
-- Use the grey ladder (`#18202a` active → `#5f6b7c` nav → `#94969b` meta) for hierarchy
-- Make search prominent — up to a 60px pill with a 2px `#222222` outline on the home surface
-- Express anonymity in the UI: scrambled handles, "비공개" attribution, no profile photos
+- Keep `#fb5957` for the one primary action in the header, with `#ff928b` on hover and press
+- Use `#007aff` for channel links and company-review actions, and `#f2faff` with a `#007aff` border for selection
+- Set post titles at 14px / 600 in `#222222` with 8px row padding
+- Use the grey navigation scale: `#5f6b7c` at rest, `#939dac` on hover, `#18202a` when current
+- Make search prominent: a 60px pill with a 2px `#222222` outline on home
+- Set everything in Pretendard
 
 ### Don't
-- Use red for anything other than the primary action — no red headings, links, or decorations
-- Add drop shadows or elevated card stacks — the system is flat
-- Use display-size typography on community surfaces — 18px is the ceiling
-- Replace hairline-separated lists with heavy card chrome on the KR surface
-- Show real names, faces, or employer-identifying avatars in feed patterns
-- Introduce a second accent color — greys plus one red is the whole palette
-- Use weight 700 for emphasis — 600 is the system's strong weight
-- Let metadata compete with titles — counts and categories stay at 12px grey `#94969b`
+- Don't spread coral across headings, links or decoration; it appears on one action
+- Don't add drop shadows; nothing captured has one
+- Don't use display sizes on the community pages; 18px is the ceiling there
+- Don't invent focus rings or chip fills; neither was measured
+- Don't treat the stylesheet's other declared scales as rendered colours
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single-column feed; app-download banner prominent; search collapses to icon |
-| Tablet | 640–1024px | Two-column topic boards on KR; EN sidebar collapses |
-| Desktop | 1024px+ | Full three-zone EN layout; multi-column KR topic grid |
+Only the 1440-pixel desktop viewport was captured; no breakpoint was measured.
 
 ### Touch Targets
-- All header controls sit at 40px height (buttons, search pills, app circles)
-- KR hero search at 60px is an oversized, unmissable target
-- Post rows at ~37px with 8px vertical padding remain tappable despite density
+- 로그인 and header search: 40px tall
+- Hero search: 60px tall
+- Navigation items: 32px; 더보기: 48px; 채널 탐색: 46px
+- Company actions: 42px; app buttons: 40 × 40
 
 ### Collapsing Strategy
-- KR topic-board columns stack into a single scrolling feed on mobile
-- EN left sidebar (Location/Industry/Job Function filters) folds behind "Show More" and off-canvas patterns
-- The single red CTA stays in the header at every breakpoint
-- Blind is mobile-app-first: web surfaces consistently promote App Store / Google Play installs
+- Not measured.
 
 ### Image Behavior
-- Post thumbnails are small and right-aligned; text always dominates the row
-- Avatars are fully round (9999px) and anonymized — no real faces
-- No hero imagery on community surfaces; the search pill is the hero
+- Company logos sit in 100 × 100 tiles with an 8px radius on the company-review hub.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary CTA: Blind Red (`#da3238`); KR variant Coral (`#fb5957`)
-- Canvas: White (`#ffffff`) on KR; Off-white (`#f9f9fb`) on EN
-- Primary text: Ink (`#222222`); EN body (`#42424b`)
-- Nav active: Ink Deep (`#18202a`); nav muted (`#5f6b7c`)
-- Metadata: Meta Grey (`#94969b`)
-- Card border: `#e9ebee`; list hairline: `#d7d7d7`
-- Search fill: `#eff0f4`; selected pill: `#f6f7fa`
-- Rank chip: `#e6e8ef` bg / `#939dac` text
-- Upvote accent: `#ff4848`
+- Primary action: `#fb5957` with `#ffffff` text; hover and press `#ff928b`
+- Accent: `#007aff`; selection tint `#f2faff`
+- Text: `#222222`; current nav `#18202a`; nav `#5f6b7c`; nav hover `#939dac`; counts `#94969b`; footer `#42424b`
+- Borders: `#d4d4d4` (search), `#e6e8ef` (cards); app buttons `#f2f2f3`
 
 ### Example Component Prompts
-- "Create a community header: white bar, logo left, pill search input (1px solid #d4d4d4, radius 20px, 40px tall, 14px Pretendard), and one red login button (#fb5957 background, white text, radius 4px, 40px tall, 14px weight 600)."
-- "Design a dense post list: each row 8px vertical padding, title 14px Pretendard weight 600 #222222, category label 12px #94969b above, like/comment counts 12px #94969b right, rows separated by 1px solid #d7d7d7. No cards, no shadows."
-- "Build an EN-style feed card: #ffffff background, 1px solid #e9ebee border, radius 12px, padding 16px, on a #f9f9fb page canvas. Body text 16px Pretendard #42424b. No shadow."
-- "Create a hero search: 60px-tall pill input, white background, 2px solid #222222 border, radius 30px, 18px Pretendard text, placeholder '관심있는 내용을 검색해보세요!'."
-- "Design a ranking widget '토픽 베스트': heading 18px Pretendard 600 #222222; rows numbered with 20px chips (#e6e8ef background, #939dac text, radius 4px, 10px weight 600) followed by 14px weight-600 titles."
+- "Create a Blind header: white bar, 16px / 600 Pretendard navigation in `#5f6b7c` with the current item `#18202a` and hover `#939dac`, a 248 × 40 search pill (white, 1px solid `#d4d4d4`, 20px radius), and a 로그인 button: `#fb5957` fill and border, `#ffffff` 14px / 600 label, 4px radius, 40px tall, hover `#ff928b`."
+- "Build a home topic board: 18px / 600 `#222222` heading with a 12px / 600 `#5f6b7c` 더보기 link, then post rows of 14px / 600 `#222222` titles with 8px vertical padding and 12px `#94969b` counts. No cards, no shadows."
+- "Make a hero search: 60px-tall pill, white, 2px solid `#222222`, 30px radius, 18px Pretendard, placeholder '관심있는 내용을 검색해보세요!'."
+- "Make a company card row: 173 × 128 white cards with 1px solid `#e6e8ef` borders and 8px radius; the selected card `#f2faff` with a 1px solid `#007aff` border."
 
 ### Iteration Guide
-1. One red per screen — `#da3238` (or `#fb5957` on KR surfaces) on the primary action only
-2. Pretendard at UI sizes; 600 for emphasis, 400 for everything else; 18px is the largest community text
-3. Flat always: tinted canvas + hairlines, never shadows
-4. KR mode = white canvas + `#d7d7d7` hairline lists; EN mode = `#f9f9fb` canvas + bordered 12px cards
-5. Hierarchy through the grey ladder, not through size
-6. Search is the hero element; auth is the only red element
-7. Anonymize everything: scrambled handles, round generic avatars, "비공개"
+1. One coral action per screen, in the header
+2. Blue only for channel links, company actions and selection
+3. Pretendard at UI sizes; 600 for emphasis
+4. Grey scale for navigation state
+5. Flat: borders and tint, never shadows
 
 ---
 
 ## 10. Voice & Tone
 
-Blind's voice is **direct, peer-level, and unvarnished** — the platform talks like a trusted colleague, not like HR. Korean copy is functional and unceremonious ("관심있는 내용을 검색해보세요!", "기업 리뷰", "토픽 베스트"); English copy is blunt about the core promise: anonymity and honest conversation ("Stay Anonymous", "Level up your career in real-time"). The corporate voice, visible on the careers surface, frames bluntness as a value: "표현은 솔직하게, 공유는 투명하게" — honesty is the product and the register.
+Blind's voice is direct and peer-level. Korean UI labels are plain and functional ("홈", "채널", "기업 리뷰", "더보기", "내 회사 리뷰하기"), the one exclamation is the search prompt, and the corporate voice makes honesty a value: "표현은 솔직하게, 공유는 투명하게".
 
 | Context | Tone |
 |---|---|
-| Service UI labels | Plain, functional Korean. "홈", "채널", "기업 리뷰", "더보기" — zero marketing inflection. |
-| Search prompts | Friendly imperative. "관심있는 내용을 검색해보세요!" — the one exclamation the system allows. |
-| EN marketing | Benefit-direct, anonymity-forward. "Level up your career in real-time." "Stay Anonymous." |
-| Careers / corporate | Mission-framed, declarative. "블라인드, 모든 변화의 시작." |
-| Trust & safety copy | Sober and procedural — 신고가이드, 개인정보 처리방침 surfaced plainly in the footer. |
+| Service UI labels | Plain, functional Korean: "홈", "채널", "기업 리뷰", "더보기". |
+| Search prompt | Friendly imperative: "관심있는 내용을 검색해보세요!" |
+| Company-review hub | Confident, data-backed: "1,300만 명의 커리어 데이터로 증명된 진짜 좋은 회사". |
+| Service and careers pages | Declarative: "블라인드, 모든 변화의 시작". |
+| Trust and safety | Sober: 신고가이드, 개인정보 처리방침 and 이용약관 sit plainly in the footer. |
 
-**Voice samples (verbatim from live surfaces):**
-- "블라인드 | 직장인 기업 연봉 & 이직 커리어" — KR page title (the value proposition as a flat list). *(verified live 2026-06-10)*
-- "관심있는 내용을 검색해보세요!" — KR hero search placeholder. *(verified live 2026-06-10)*
-- "블라인드, 모든 변화의 시작" — recruit.teamblind.com hero heading. *(verified live 2026-06-10)*
-- "Blind - Anonymous and Professional Community" — EN page title. *(verified live 2026-06-10)*
+**Voice samples (verbatim, opened 2026-09-30):**
+- "블라인드 | 직장인 기업 연봉 & 이직 커리어" — www.teamblind.com/kr page title.
+- "관심있는 내용을 검색해보세요!" — home hero search placeholder.
+- "15만 개의 기업 중 숨겨진 진짜 나만의 1위 기업" — company-review hub hero.
+- "블라인드, 모든 변화의 시작" — service introduction and careers pages.
+- "Level up your career in real-time" — the global site's Why Blind page.
 
-**Forbidden register**: corporate euphemism, HR-speak, hedged "we value your feedback" tones, hype superlatives, and anything that implies the company curates or sanitizes what members say.
+**Forbidden register**: HR euphemism, hype superlatives, and anything that suggests the platform curates or sanitises what members say.
 
 ## 11. Brand Narrative
 
-Blind was launched in **2013** by Teamblind Inc., founded in Korea by former Naver employees — a team that had watched an internal anonymous board get shut down and concluded that employees having an honest channel was worth building a company around. The premise was contrarian: workplace conversation is most valuable precisely when it is *not* attributable. Blind verifies that you are a real employee of a real company (work-email verification, with patented anonymity protection between the verification and the identity), then deletes the link between who you are and what you say.
+Blind's service introduction page dates the product to 2013 and defines it as a company-verified anonymous community for working people. The same page answers the question every visitor asks — is it really anonymous? — with "네. 100% 익명입니다.", explains that Blind stores no member information in the service, and states the security philosophy "잃어버리면 안 되는 것은 가지고 있지 않는다." It cites 8 in 10 employees of large Korean companies as users. Teamblind's careers site gives a larger picture: a headquarters in Silicon Valley, more than 13 million professionals at 450,000 companies, over 80% of employees at Meta and Uber in the US, and 9 in 10 employees of large Korean companies. The global Why Blind page adds that Blind holds patents for its authentication, encryption and sign-up process.
 
-The model travelled. After dominating Korean tech and conglomerate workplaces, Blind expanded to the US in 2015 and became the de-facto town square for Silicon Valley compensation talk, layoff rumors, and company reviews. The careers page states the scale plainly: over 12 million verified professionals across hundreds of thousands of companies, more than 90% sign-up rates among Korea's 10 largest conglomerate groups, and a spot on TIME's 100 Most Influential Companies. The corporate vision — "구성원 목소리로 만드는 건강한 조직 문화" (healthy organizational culture built from members' voices) — reframes the rumor mill as infrastructure: companies get better when employees can say true things safely.
+The careers site lists five values: Honesty & Transparency (표현은 솔직하게, 공유는 투명하게), Supportive Community, Pioneering ("세상에 없던 플랫폼"), Depth of Understanding, and Global Impact. Its press list includes a launch in India, 12 million users with over 90% sign-up in Korea's ten largest groups, selection among TIME's most influential companies, and Great Place To Work certification.
 
-The design follows the ethics. What Blind refuses: editorial gloss, influencer mechanics, real-name social graphs, and any visual hierarchy that would imply the platform endorses one post over another. What it embraces: text-first density, a single red CTA, flat chrome, scrambled handles, and an interface that disappears behind the conversation. The product's restraint is a trust signal — a platform holding this much sensitive speech cannot afford to look like it is performing.
+On the Korean web today, Blind has two faces: topic boards and a company-review hub that promises "1,300만 명의 커리어 데이터로 증명된 진짜 좋은 회사". Company, industry and group channels remain app-only, and the web offers some topic channels to logged-out readers. The interface stays out of the way: white pages, grey navigation, one coral action and a blue that appears where the product points to companies and channels.
 
 ## 12. Principles
 
-1. **Anonymity is the architecture.** The product's entire value rests on the wall between identity and speech. *UI implication:* no real names, no face avatars, "비공개" attribution, scrambled handles — anonymity cues are rendered, not just promised.
-2. **The feed is not edited.** Blind displays what members say without visual endorsement. *UI implication:* uniform post rows, identical typography for every post, ranking only by transparent counts (likes, comments, numeric rank chips).
-3. **One red, one action.** Red is too loaded to spend on decoration. *UI implication:* `#da3238`/`#fb5957` appears once per screen, always on the primary action; everything else is ink and grey.
-4. **Density equals respect.** Professionals come for information; making them scroll through air wastes their lunch break. *UI implication:* 14px titles, 8px row padding, hairline separation, many posts per viewport.
-5. **Honest by default, even about itself.** The corporate value "표현은 솔직하게, 공유는 투명하게" applies to the interface. *UI implication:* plain labels, visible report/policy links, no euphemism in empty or error states.
+1. **Anonymity is the architecture.** Blind says it keeps no member information. *UI implication:* nothing on the page identifies a person; posts carry counts, not faces.
+2. **Honesty by default.** "표현은 솔직하게, 공유는 투명하게" is the first stated value. *UI implication:* plain labels and visible policy links, no euphemism.
+3. **One action in colour.** *UI implication:* the header's coral 로그인 is the only coral on the page; blue is reserved for company and channel paths.
+4. **Density serves readers.** *UI implication:* 14px titles, 8px row padding and grey counts put many posts in view. (An editorial reading of the captured pages, not a Teamblind statement.)
+5. **Search first.** *UI implication:* the home hero is a single 60px search pill.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable Blind user segments (verified employees discussing salary, career moves, and company culture), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable Blind user segments (verified employees discussing pay, careers and company life), not individual people.*
 
-**박지훈, 32, 판교.** A backend engineer at a major Korean tech company. Opens Blind at lunch to check his company channel and the 주식·투자 board. Posted his offer-comparison question anonymously last year and got blunt, useful answers within an hour — the kind no one would give him face-to-face. Trusts the platform because his handle is scrambled and his employer can't see who he is.
+**박지훈, 32, 판교.** A backend engineer who opens Blind at lunch to skim 토픽 베스트 and the 주식·투자 board, and asks career questions in the app where his company channel lives.
 
-**Sarah Lin, 29, Seattle.** A product manager at a big-tech firm negotiating a promotion. Uses Blind's salary threads and company reviews to calibrate her ask. Values that comp numbers come from verified employees, not recruiters. The flat, dense feed lets her scan fifty data points in five minutes.
+**이서연, 29, 서울.** A marketer weighing a move. Reads company reviews on the web hub, compares featured companies, and then leaves her own review with 내 회사 리뷰하기.
 
-**김민정, 38, 서울.** An HR-adjacent team lead who reads Blind to understand what employees actually think — the unfiltered counterpart to the company's engagement surveys. Doesn't post; lurks. Appreciates that the interface never sensationalizes: a post about layoffs looks typographically identical to a post about lunch menus.
+**김민정, 38, 서울.** A team lead who reads Blind to hear what employees really think. She never posts, and appreciates that every post looks the same on the page.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed on the three captured pages; nothing else is specified here.
+
+| State | Observation |
 |---|---|
-| **Empty (no posts in channel)** | White canvas, single ink (`#222222`) line at 14px stating the channel has no posts yet, with a plain prompt to write the first one. No illustration. |
-| **Empty (search, no results)** | Meta-grey (`#94969b`) line under the search pill: no results for the query, suggest different keywords. Search field stays focused. |
-| **Loading (feed)** | Flat skeleton rows at final row height — grey bars on white, hairlines kept visible. No shimmer theatrics, consistent with the shadow-free system. |
-| **Loading (more posts)** | Inline spinner under the last row; existing rows never shift. |
-| **Error (network)** | Plain inline message in ink with a retry action; no mascot, no apology theater. |
-| **Error (verification failed)** | Field-level message stating exactly what failed in work-email verification and what to do next — precision matters most at the trust boundary. |
-| **Success (post published)** | The post simply appears in the feed under the user's scrambled handle — presence in the list is the confirmation. Minor toast only if navigation occurred. |
-| **Skeleton** | `#eff0f4`-tone blocks at final dimensions; titles as one 14px-height bar, meta as a shorter 12px bar. |
-| **Disabled** | Controls drop to the faint grey range (`#939dac` text); the red CTA never renders in a half-red disabled state — it disappears or greys out fully. |
+| **Hover / pressed (로그인)** | Background and border go from `#fb5957` to `#ff928b` on all three pages. |
+| **Hover / pressed (navigation)** | Inactive items go from `#5f6b7c` to `#939dac` on all three pages. |
+| **Selected (navigation)** | The current section reads `#18202a`. |
+| **Selected (company card)** | `#f2faff` fill with a 1px solid `#007aff` border. |
+| **Current chip (topic page)** | `#ffffff` text; the fill was not recorded. |
+
+The header search's pressed frame moved focus into the field, and focus is not declared from collector frames, so no input state is given. Error, empty, loading and success states were not captured and are not described.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-instant` | 0ms | Tab switches, vote count updates |
-| `motion-fast` | 120ms | Hover/press feedback, pill highlights |
-| `motion-standard` | 200ms | Dropdowns, sheet/modal entry, feed item insert |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Default two-way transitions |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals, overlay close |
-
-**Motion rules**: Blind's surfaces are functionally static — the live pages animate almost nothing, and that is the brand. New feed content appears in place without slide or bounce; the modal scrim (`rgba(0,0,0,0.8)`) fades at `motion-standard`. No spring, no overshoot, no celebratory motion: a platform carrying anonymous workplace speech signals stability and discretion, not delight. Under `prefers-reduced-motion: reduce`, the few transitions collapse to instant with no loss of function.
+The collector reads computed style, not animation, so no duration or easing is measured. Treat motion as unspecified rather than borrowing values, and honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-10) via playwright getComputedStyle:
-- https://www.teamblind.com/kr — KR homepage (login CTA #fb5957, nav, hero search pill, post rows, rank chips, hairlines)
-- https://www.teamblind.com — EN logged-out feed (Sign up CTA #da3238, #f9f9fb canvas, 12px cards, sidebar pills)
-- https://recruit.teamblind.com — official careers page ("블라인드, 모든 변화의 시작", "블라인드의 핵심 가치")
-
-Corporate values quoted from recruit.teamblind.com (fetched 2026-06-10):
-- vision "구성원 목소리로 만드는 건강한 조직 문화"
-- value "표현은 솔직하게, 공유는 투명하게"
-- value "세상에 없던 플랫폼을 만들고 있습니다"
-- stats: 12M+ users, 450,000+ companies, launched 2013; press items on the page:
-  "블라인드, 가입자 1200만 돌파…10대 그룹 가입률 90% 넘어",
-  "블라인드, 美 타임지 '세계에서 가장 영향력 있는 100대 기업' 선정"
-
-EN taglines "Stay Anonymous" / "Level up your career in real-time" and "12M professionals"
-from https://www.teamblind.com/about (fetched 2026-06-10).
-
-Not independently verified this turn — widely documented public facts used:
-- Teamblind Inc. founded in Korea (2013) by former Naver employees; US launch 2015;
-  work-email verification with patented anonymity protection.
-
-Personas (§13) are fictional archetypes informed by publicly observable Blind user
-segments. Names are illustrative; they do not refer to real people.
-
-Interpretive claims (e.g., "flat chrome as a trust signal", "one red, one action",
-"density equals respect") are editorial readings connecting Blind's observed design
-to its stated values, not direct Teamblind statements.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/teamblind.json (capturedAt 2026-09-30T07:52:34Z), deterministic collector, 1440 wide, logged out: www.teamblind.com/kr/, the 토픽 베스트 topic page and www.teamblind.com/kr/company.
+- Stylesheet names (--tb-red-red1000, --tb-red-red700, --tb-blue-blue1000, --tb-blue-blue200, --tb-gray-*) and the :hover / :active rules were read from the same pages' server HTML (plain HTTP, 2026-09-30); they corroborate captured values and supply none of their own.
+- §1, §10, §11: www.teamblind.com/kr/introduce, recruit.teamblind.com and www.teamblind.com/why-blind, opened 2026-09-30. The June body's claims about the founders' previous employer and the 2015 US launch were not on any page opened and were removed.
+- Pretendard licence: unpkg.com/pretendard@1.3.9/package.json (license OFL-1.1).
+- Personas are fictional archetypes. Interpretive readings are editorial.
 -->

@@ -5,54 +5,285 @@ display_name_kr: 라이너
 country: KR
 category: ai
 homepage: "https://liner.com"
-primary_color: "#197b2e"
+primary_color: "#2c783c"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=liner.com&sz=128"
-verified: "2026-06-22"
+verified: "2026-09-30"
 added: "2026-06-22"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: marketing, url: "https://liner.com/ko", inspected: "2026-09-30" }
+    - { id: surface-2, kind: marketing, url: "https://liner.com/ko/pricing", inspected: "2026-09-30" }
+    - { id: surface-3, kind: marketing, url: "https://liner.com/ko/about", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://liner.com/ko", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://liner.com/ko/pricing", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://liner.com/ko/about", captured: "2026-09-30" }
+    - { id: liner-blog, kind: official-doc, url: "https://liner.com/ko/blog", captured: "2026-09-30" }
+    - { id: design-system-post, kind: official-doc, url: "https://liner.com/ko/blog/liner-design-system-fronted-1", captured: "2026-09-30" }
+    - { id: pretendard-license, kind: license, url: "https://raw.githubusercontent.com/orioncactus/pretendard/main/LICENSE", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &lcta { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"6\"]", captured: "2026-09-30" }
+    "tokens.colors.primary-hover": *lcta
+    "tokens.colors.on-primary": *lcta
+    "tokens.colors.brand-line": &lobrand { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"12\"]", captured: "2026-09-30" }
+    "tokens.colors.tab-selected": &ltabon { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-09-30" }
+    "tokens.colors.scholar": &lsch { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"18\"]", captured: "2026-09-30" }
+    "tokens.colors.write": &lwri { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"20\"]", captured: "2026-09-30" }
+    "tokens.colors.ink": &lh2 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h2", captured: "2026-09-30" }
+    "tokens.colors.muted": &lh1 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h1", captured: "2026-09-30" }
+    "tokens.colors.surface": &lmenu { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-0\"]", captured: "2026-09-30" }
+    "tokens.colors.outline": *lmenu
+    "tokens.colors.discount": &ldisc { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::p", captured: "2026-09-30" }
+    "tokens.typography.family.body": *lh2
+    "tokens.typography.family.ui": &lbody { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.typography.display-hero.size": &labout { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::p", captured: "2026-09-30" }
+    "tokens.typography.display-hero.weight": *labout
+    "tokens.typography.display-hero.lineHeight": *labout
+    "tokens.typography.display-hero.tracking": *labout
+    "tokens.typography.display-hero.use": *labout
+    "tokens.typography.display.size": *lh2
+    "tokens.typography.display.weight": *lh2
+    "tokens.typography.display.lineHeight": *lh2
+    "tokens.typography.display.tracking": *lh2
+    "tokens.typography.display.use": *lh2
+    "tokens.typography.section.size": *lh2
+    "tokens.typography.section.weight": *lh2
+    "tokens.typography.section.lineHeight": *lh2
+    "tokens.typography.section.use": *lh2
+    "tokens.typography.page-title.size": &lpt { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::#pricing-plan", captured: "2026-09-30" }
+    "tokens.typography.page-title.weight": *lpt
+    "tokens.typography.page-title.lineHeight": *lpt
+    "tokens.typography.page-title.use": *lpt
+    "tokens.typography.title.size": &lh3 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h3", captured: "2026-09-30" }
+    "tokens.typography.title.weight": *lh3
+    "tokens.typography.title.lineHeight": *lh3
+    "tokens.typography.title.use": *lh3
+    "tokens.typography.card-title.size": &lh3p { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::h3", captured: "2026-09-30" }
+    "tokens.typography.card-title.weight": *lh3p
+    "tokens.typography.card-title.lineHeight": *lh3p
+    "tokens.typography.card-title.use": *lh3p
+    "tokens.typography.subtitle.size": *lh1
+    "tokens.typography.subtitle.weight": *lh1
+    "tokens.typography.subtitle.lineHeight": *lh1
+    "tokens.typography.subtitle.use": *lh1
+    "tokens.typography.tab-label.size": &ltabp { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.typography.tab-label.weight": *ltabp
+    "tokens.typography.tab-label.lineHeight": *ltabp
+    "tokens.typography.tab-label.use": *ltabp
+    "tokens.typography.feature-title.size": &lh4 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h4", captured: "2026-09-30" }
+    "tokens.typography.feature-title.weight": *lh4
+    "tokens.typography.feature-title.lineHeight": *lh4
+    "tokens.typography.feature-title.use": *lh4
+    "tokens.typography.lead.size": *lh3
+    "tokens.typography.lead.weight": *lh3
+    "tokens.typography.lead.lineHeight": *lh3
+    "tokens.typography.lead.use": *lh3
+    "tokens.typography.body.size": *labout
+    "tokens.typography.body.weight": *labout
+    "tokens.typography.body.lineHeight": *labout
+    "tokens.typography.body.use": *labout
+    "tokens.typography.button.size": *lcta
+    "tokens.typography.button.weight": *lcta
+    "tokens.typography.button.lineHeight": *lcta
+    "tokens.typography.button.use": *lcta
+    "tokens.typography.button-xl.size": &lxl { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"7\"]", captured: "2026-09-30" }
+    "tokens.typography.button-xl.weight": *lxl
+    "tokens.typography.button-xl.lineHeight": *lxl
+    "tokens.typography.button-xl.use": *lxl
+    "tokens.typography.nav.size": *ltabp
+    "tokens.typography.nav.weight": *ltabp
+    "tokens.typography.nav.lineHeight": *ltabp
+    "tokens.typography.nav.use": *ltabp
+    "tokens.typography.caption.size": *ldisc
+    "tokens.typography.caption.weight": *ldisc
+    "tokens.typography.caption.lineHeight": *ldisc
+    "tokens.typography.caption.use": *ldisc
+    "tokens.typography.fine.size": *ldisc
+    "tokens.typography.fine.weight": *ldisc
+    "tokens.typography.fine.lineHeight": *ldisc
+    "tokens.typography.fine.use": *ldisc
+    "tokens.spacing.tab-x": *ltabon
+    "tokens.spacing.card-y": &lcard { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.spacing.card-x": *lcard
+    "tokens.spacing.card-gap": *lcard
+    "tokens.spacing.menu": *lmenu
+    "tokens.rounded.nav": &lnav { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-09-30" }
+    "tokens.rounded.button": *lcta
+    "tokens.rounded.button-xl": *lxl
+    "tokens.rounded.menu-item": &lmitem { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-interaction-capture=\"menu-0-3\"]", captured: "2026-09-30" }
+    "tokens.rounded.pill": &lpill { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"17\"]", captured: "2026-09-30" }
+    "tokens.rounded.tab": *ltabon
+    "tokens.shadow.menu": *lmenu
+    "tokens.components.primary-button.type": *lcta
+    "tokens.components.primary-button.bg": *lcta
+    "tokens.components.primary-button.fg": *lcta
+    "tokens.components.primary-button.radius": *lcta
+    "tokens.components.primary-button.height": *lcta
+    "tokens.components.primary-button.font": *lcta
+    "tokens.components.primary-button.hover": *lcta
+    "tokens.components.primary-button.states": *lcta
+    "tokens.components.primary-button.use": *lcta
+    "tokens.components.primary-button-xl.type": *lxl
+    "tokens.components.primary-button-xl.bg": *lxl
+    "tokens.components.primary-button-xl.fg": *lxl
+    "tokens.components.primary-button-xl.radius": *lxl
+    "tokens.components.primary-button-xl.height": *lxl
+    "tokens.components.primary-button-xl.font": *lxl
+    "tokens.components.primary-button-xl.hover": *lxl
+    "tokens.components.primary-button-xl.use": *lxl
+    "tokens.components.outline-brand-button.type": *lobrand
+    "tokens.components.outline-brand-button.bg": *lobrand
+    "tokens.components.outline-brand-button.fg": *lobrand
+    "tokens.components.outline-brand-button.border": *lobrand
+    "tokens.components.outline-brand-button.radius": *lobrand
+    "tokens.components.outline-brand-button.height": *lobrand
+    "tokens.components.outline-brand-button.font": *lobrand
+    "tokens.components.outline-brand-button.hover": *lobrand
+    "tokens.components.outline-brand-button.use": *lobrand
+    "tokens.components.outline-neutral-button.type": &loneut { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.components.outline-neutral-button.bg": *loneut
+    "tokens.components.outline-neutral-button.fg": *loneut
+    "tokens.components.outline-neutral-button.border": *loneut
+    "tokens.components.outline-neutral-button.radius": *loneut
+    "tokens.components.outline-neutral-button.height": *loneut
+    "tokens.components.outline-neutral-button.font": *loneut
+    "tokens.components.outline-neutral-button.hover": *loneut
+    "tokens.components.outline-neutral-button.use": *loneut
+    "tokens.components.product-cta-pill.type": &lpcta { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"16\"]", captured: "2026-09-30" }
+    "tokens.components.product-cta-pill.bg": *lpcta
+    "tokens.components.product-cta-pill.fg": *lpcta
+    "tokens.components.product-cta-pill.radius": *lpcta
+    "tokens.components.product-cta-pill.height": *lpcta
+    "tokens.components.product-cta-pill.font": *lpcta
+    "tokens.components.product-cta-pill.hover": *lpcta
+    "tokens.components.product-cta-pill.use": *lpcta
+    "tokens.components.product-outline-pill.type": *lpill
+    "tokens.components.product-outline-pill.bg": *lpill
+    "tokens.components.product-outline-pill.fg": *lpill
+    "tokens.components.product-outline-pill.border": *lpill
+    "tokens.components.product-outline-pill.radius": *lpill
+    "tokens.components.product-outline-pill.height": *lpill
+    "tokens.components.product-outline-pill.font": *lpill
+    "tokens.components.product-outline-pill.hover": *lpill
+    "tokens.components.product-outline-pill.use": *lpill
+    "tokens.components.product-tab.type": &ltaboff { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"11\"]", captured: "2026-09-30" }
+    "tokens.components.product-tab.bg": *ltaboff
+    "tokens.components.product-tab.fg": *ltabp
+    "tokens.components.product-tab.radius": *ltaboff
+    "tokens.components.product-tab.padding": *ltaboff
+    "tokens.components.product-tab.height": *ltaboff
+    "tokens.components.product-tab.font": *ltabp
+    "tokens.components.product-tab.selected": *ltabon
+    "tokens.components.product-tab.states": *ltaboff
+    "tokens.components.product-tab.use": *ltaboff
+    "tokens.components.billing-toggle.type": &lbill { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"7\"]", captured: "2026-09-30" }
+    "tokens.components.billing-toggle.bg": *lbill
+    "tokens.components.billing-toggle.fg": *lbill
+    "tokens.components.billing-toggle.radius": *lbill
+    "tokens.components.billing-toggle.height": *lbill
+    "tokens.components.billing-toggle.font": *lbill
+    "tokens.components.billing-toggle.selected": { surface_id: surface-2, source_id: surface-surface-2, method: computed-style, selector: "surface-2::[data-omd-capture=\"8\"]", captured: "2026-09-30" }
+    "tokens.components.billing-toggle.states": *lbill
+    "tokens.components.billing-toggle.use": *lbill
+    "tokens.components.header-nav-item.type": *lnav
+    "tokens.components.header-nav-item.bg": *lnav
+    "tokens.components.header-nav-item.fg": *ltabp
+    "tokens.components.header-nav-item.radius": *lnav
+    "tokens.components.header-nav-item.padding": *lnav
+    "tokens.components.header-nav-item.height": *lnav
+    "tokens.components.header-nav-item.font": *ltabp
+    "tokens.components.header-nav-item.hover": *lnav
+    "tokens.components.header-nav-item.use": *lnav
+    "tokens.components.language-select.type": &lsel { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"75\"]", captured: "2026-09-30" }
+    "tokens.components.language-select.bg": *lsel
+    "tokens.components.language-select.fg": *lsel
+    "tokens.components.language-select.border": *lsel
+    "tokens.components.language-select.radius": *lsel
+    "tokens.components.language-select.height": *lsel
+    "tokens.components.language-select.font": *lsel
+    "tokens.components.language-select.states": *lsel
+    "tokens.components.language-select.use": *lsel
+    "tokens.components.select-menu.type": *lmenu
+    "tokens.components.select-menu.bg": *lmenu
+    "tokens.components.select-menu.border": *lmenu
+    "tokens.components.select-menu.radius": *lmenu
+    "tokens.components.select-menu.padding": *lmenu
+    "tokens.components.select-menu.shadow": *lmenu
+    "tokens.components.select-menu.selected": *lmitem
+    "tokens.components.select-menu.use": *lmenu
+    "tokens.components.faq-accordion.type": &lfaq { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"28\"]", captured: "2026-09-30" }
+    "tokens.components.faq-accordion.bg": *lfaq
+    "tokens.components.faq-accordion.fg": *lfaq
+    "tokens.components.faq-accordion.radius": *lfaq
+    "tokens.components.faq-accordion.padding": *lfaq
+    "tokens.components.faq-accordion.height": *lfaq
+    "tokens.components.faq-accordion.font": *lfaq
+    "tokens.components.faq-accordion.states": *lfaq
+    "tokens.components.faq-accordion.use": *lfaq
+    "tokens.components.hero-card.type": *lcard
+    "tokens.components.hero-card.bg": *lcard
+    "tokens.components.hero-card.border": *lcard
+    "tokens.components.hero-card.padding": *lcard
+    "tokens.components.hero-card.size": *lcard
+    "tokens.components.hero-card.use": *lcard
 tokens:
-  source: live-extract
-  extracted: "2026-06-22"
-  note: "primary = Liner Green CTA (#197b2e); dark forest heading (#14371b); near-black body (#1e1e1f); muted grey (#6d6d70 at 80% opacity); active-tab mint tint (#edf3ed). Display font = Flare (custom serif). UI font = Pretendard Variable / Pretendard JP Variable."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
-    primary: "#197b2e"
-    primary-dark: "#14371b"
-    primary-tint: "#edf3ed"
-    ink: "#1e1e1f"
-    muted: "#6d6d70"
-    canvas: "#ffffff"
-    surface: "#f9f9fa"
-    surface-alt: "#f6f6f7"
+    primary: "#2c783c"
+    primary-hover: "#256a33"
     on-primary: "#ffffff"
-    warning: "#fe8f16"
+    brand-line: "#349749"
+    tab-selected: "#edf3ed"
+    scholar: "#747a4d"
+    write: "#536c7a"
+    ink: "#1e1e1f"
+    muted: "#818184"
+    surface: "#ffffff"
+    outline: "#e8e8e9"
+    discount: "#f58800"
   typography:
-    family: { display: "Flare", body: "Pretendard Variable", ui: "Pretendard JP Variable" }
-    hero-display: { size: 54, weight: 400, lineHeight: 1.1, use: "Hero display headline — Flare serif" }
-    section:      { size: 42, weight: 400, lineHeight: 1.19, use: "Section heading — Flare serif" }
-    page-title:   { size: 34, weight: 400, lineHeight: 1.21, use: "Page title (pricing H1) — Flare serif" }
-    h3:           { size: 17, weight: 400, lineHeight: 1.35, use: "Feature card heading — Pretendard JP Variable" }
-    nav:          { size: 16, weight: 400, lineHeight: 1.25, use: "Nav links — Pretendard JP Variable" }
-    body:         { size: 16, weight: 400, lineHeight: 1.5, use: "Body copy — Pretendard JP Variable" }
-    button:       { size: 15, weight: 500, lineHeight: 1.33, use: "Button labels — Pretendard Variable" }
-    caption:      { size: 14, weight: 400, lineHeight: 1.29, use: "Caption and dropdown text — Pretendard Variable" }
-  spacing: { xs: 4, sm: 8, md: 12, base: 16, lg: 20, xl: 24, xxl: 40 }
-  rounded: { sm: 8, md: 12, lg: 200, full: 9999 }
+    family: { body: "Pretendard Variable", ui: "Pretendard JP Variable" }
+    display-hero: { size: 72, weight: 500, lineHeight: 1.1, tracking: -2.16, use: "About-page hero line (Explore without doubt), Pretendard Variable" }
+    display: { size: 52, weight: 700, lineHeight: 1.3, tracking: -1.04, use: "Home hero heading (필요할 때 믿고 쓰는 정확한 AI), Pretendard Variable" }
+    section: { size: 42, weight: 600, lineHeight: 1.3, use: "Home section heading (어떤 일을 끝내고 싶으세요?) and the about-page statements, Pretendard Variable" }
+    page-title: { size: 32, weight: 500, lineHeight: 1.3, use: "Pricing page title (라이너 플랜) and its section headings, Pretendard Variable" }
+    title: { size: 28, weight: 600, lineHeight: 1.3, use: "Feature block headings on home (출처가 분명한 답변을 쉽게 이해해 보세요), Pretendard Variable" }
+    card-title: { size: 24, weight: 600, lineHeight: 1.3, use: "Benefit headings on pricing and value headings on the about page, Pretendard Variable" }
+    subtitle: { size: 24, weight: 400, lineHeight: 1.3, use: "Home hero subtitle (the h1, 목적에 맞는 AI로 결과의 완성도를 높이세요), Pretendard JP Variable" }
+    tab-label: { size: 20, weight: 500, lineHeight: 1.3, use: "Labels of the 검색 / 연구 / 글쓰기 selector, Pretendard Variable" }
+    feature-title: { size: 18, weight: 600, lineHeight: 1.3, use: "Feature and testimonial headings on home, Pretendard Variable" }
+    lead: { size: 17, weight: 400, lineHeight: 1.3, use: "Product-section lead lines on home (넘쳐나는 정보와 불확실한 답변에 지치셨나요?), Pretendard Variable" }
+    body: { size: 16, weight: 400, lineHeight: 1.5, use: "Long paragraphs on the about page and the hero card labels, Pretendard Variable" }
+    button: { size: 15, weight: 500, lineHeight: 1.3, use: "Labels of the 40px buttons, Pretendard Variable" }
+    button-xl: { size: 16, weight: 500, lineHeight: 1.3, use: "Labels of the 48px about-page buttons, Pretendard Variable" }
+    nav: { size: 14, weight: 400, lineHeight: 1.3, use: "Header menu labels (제품, API/MCP, 요금제, 더 알아보기, 회사 소개), Pretendard Variable" }
+    caption: { size: 13, weight: 400, lineHeight: 1.3, use: "Price captions and the small plan-table buttons on pricing, Pretendard Variable" }
+    fine: { size: 12, weight: 500, lineHeight: 1.3, use: "The 20% 할인 note on the annual billing option, Pretendard Variable" }
+  spacing: { tab-x: 20, card-y: 40, card-x: 24, card-gap: 48, menu: 8 }
+  rounded: { nav: 8, button: 10, button-xl: 12, menu-item: 6, pill: 200, tab: 9999 }
   shadow:
-    none: "none"
-    subtle: "0 1px 4px rgba(0,0,0,0.08)"
+    menu: "rgba(0, 0, 0, 0.05) 0px 4px 12px 0px"
   components:
-    button-primary: { type: button, bg: "#197b2e", fg: "#ffffff", radius: "8px", height: "40px", font: "15px / 500 Pretendard Variable", use: "Primary CTA — Get started / Get Pro / Get Max" }
-    button-outline: { type: button, bg: "#ffffff", fg: "#1e1e1f", border: "1px solid rgba(109,109,112,0.24)", radius: "8px", height: "40px", font: "15px / 500 Pretendard Variable", use: "Secondary free-tier CTA — Start for free" }
-    button-ghost-green: { type: button, bg: "transparent", fg: "#197b2e", border: "1px solid #197b2e", radius: "8px", height: "40px", font: "15px / 500 Pretendard Variable", use: "Enterprise / contact CTA — Contact us" }
-    button-get-started-pill: { type: button, bg: "transparent", fg: "#000000", border: "1px solid #197b2e", radius: "200px", height: "48px", font: "16px / 400 Pretendard JP Variable", use: "Hero section expanded get-started pill" }
-    tab-product-active: { type: tab, bg: "#edf3ed", fg: "#000000", radius: "9999px", padding: "0px 20px", active: "text #000000 bg #edf3ed", use: "Product selector tab — active state (Search / Research / Write)" }
-    tab-product-inactive: { type: tab, bg: "transparent", fg: "#000000", radius: "9999px", padding: "0px 20px", use: "Product selector tab — inactive" }
-    toggle-billing: { type: toggle, bg: "#ffffff", fg: "#1e1e1f", radius: "200px", height: "44px", use: "Billing toggle (Monthly / Annual)" }
-    card-pricing: { type: card, bg: "#ffffff", fg: "#1e1e1f", radius: "12px", use: "Pricing plan card with shadow" }
-    card-surface: { type: card, bg: "#f9f9fa", fg: "#1e1e1f", radius: "12px", use: "Feature card on light surface" }
-    badge-warning: { type: badge, bg: "#fe8f16", fg: "#ffffff", radius: "9999px", font: "12px / 500", use: "Save % promo badge on Annual tab" }
+    primary-button: { type: button, bg: "#2c783c", fg: "#ffffff", radius: "10px", height: "40px", font: "15px / 500 / 19.5px Pretendard Variable", hover: "bg #256a33 — the same settled value on all nine captured instances of this green fill across home, pricing and about; the pressed frame reads the same #256a33, so no separate pressed treatment is declared", states: "rest and hover; focus was not measured", use: "시작하기 in the header on home and pricing (84 x 40), Pro 선택하기 and Max 선택하기 on the plan cards (260 x 40) and 팀 플랜 시작하기 (156 x 40) at home::[data-omd-capture=\"6\"]; the label sits on a 0px-padded button" }
+    primary-button-xl: { type: button, bg: "#2c783c", fg: "#ffffff", radius: "12px", height: "48px", font: "16px / 500 / 20.8px Pretendard Variable", hover: "bg #256a33", use: "Start Your Search on the about page (240 x 48) at surface-3::[data-omd-capture=\"7\"]; Try for free beside it is the white variant (#ffffff, text #1e1e1f, hover #fafafb)" }
+    outline-brand-button: { type: button, bg: "transparent", fg: "#349749", border: "1px solid #349749", radius: "10px", height: "40px", font: "15px / 500 / 19.5px Pretendard Variable", hover: "bg rgba(44, 120, 60, 0.12) on both captured instances", use: "문의하기 on the contact plan card (260 x 40) and 영업팀 문의하기 (128 x 40) on pricing at surface-2::[data-omd-capture=\"12\"]" }
+    outline-neutral-button: { type: button, bg: "#ffffff", fg: "#1e1e1f", border: "1px solid rgba(148, 148, 151, 0.24)", radius: "10px", height: "40px", font: "15px / 500 / 19.5px Pretendard Variable", hover: "bg #fafafb on all three captured instances", use: "바로 사용하기 on the Free plan card (260 x 40) and 자세히 보기 beside 팀 플랜 시작하기 at surface-2::[data-omd-capture=\"9\"]" }
+    product-cta-pill: { type: button, bg: "#2c783c", fg: "#ffffff", radius: "200px", height: "48px", font: "16px / 400 / 20.8px Pretendard Variable (label)", hover: "bg #256a33; the Scholar pill #747a4d turns #686e45 and the Write pill #536c7a turns #4b616e", use: "바로 검색하기 in the 검색 section of home (141 x 48); the 연구 section repeats it in #747a4d (바로 시작하기) and the 글쓰기 section in #536c7a (바로 써보기) at home::[data-omd-capture=\"16\"]; the white label sits on a child p" }
+    product-outline-pill: { type: button, bg: "transparent", fg: "#349749", border: "1px solid #349749", radius: "200px", height: "48px", font: "16px / 400 / 20.8px Pretendard Variable (label)", hover: "bg rgba(148, 148, 151, 0.08), the same on the green, Scholar and Write siblings", use: "자세히 보기 beside each product CTA (107 x 48) at home::[data-omd-capture=\"17\"]; the Scholar and Write siblings take #747a4d and #536c7a borders and labels, and the three hero cards carry the same green-outlined 시작하기 pill (111 x 48)" }
+    product-tab: { type: tab, bg: "transparent", fg: "#1e1e1f", radius: "9999px", padding: "0px 20px", height: "48px", font: "20px / 500 / 26px Pretendard Variable (label)", selected: "bg #edf3ed on the selected option (capture 10 against 11 and 12)", states: "selected read from rest values; no pointer frame", use: "검색 / 연구 / 글쓰기 selector on home at home::[data-omd-capture=\"11\"]; captures 13-15 repeat the same selector" }
+    billing-toggle: { type: tab, bg: "transparent", fg: "#1e1e1f", radius: "200px", height: "44px", font: "15px / 500 / 19.5px Pretendard Variable", selected: "bg #ffffff with shadow rgba(0, 0, 0, 0.05) 0px 4px 12px 0px (capture 8, 연간 20% 할인)", states: "selected read from rest values; the unselected option has one pointer frame, so no hover is declared", use: "월간 / 연간 20% 할인 switch on pricing at surface-2::[data-omd-capture=\"7\"]" }
+    header-nav-item: { type: button, bg: "transparent", fg: "#1e1e1f", radius: "8px", padding: "0px 4px", height: "36px", font: "14px / 400 / 18.2px Pretendard Variable (label)", hover: "bg rgba(12, 137, 59, 0.08), the same on all five items on each of the three pages", use: "제품, API/MCP, 요금제, 더 알아보기 and 회사 소개 in the header at home::[data-omd-capture=\"1\"]; over the dark about-page hero the labels turn #ffffff and 시작하기 becomes a white button" }
+    language-select: { type: button, bg: "#ffffff", fg: "#1e1e1f", border: "1px solid rgba(148, 148, 151, 0.24)", radius: "8px", height: "32px", font: "13px / 400 / 16.9px Pretendard Variable", states: "expanded: the collector opened it and read the menu below", use: "Select language, KO in the footer at home::[data-omd-capture=\"75\"], 86 x 32" }
+    select-menu: { type: card, bg: "#ffffff", border: "1px solid #e8e8e9", radius: "10px", padding: "8px", shadow: "rgba(0, 0, 0, 0.05) 0px 4px 12px 0px", selected: "item bg rgba(148, 148, 151, 0.08), radius 6px (menu-0-3)", use: "Language menu opened from the footer select, 320 x 150, at home::[data-omd-interaction-capture=\"menu-0-0\"]; the same menu opens on all three pages" }
+    faq-accordion: { type: button, bg: "transparent", fg: "#1e1e1f", radius: "10px", padding: "0px 8px 0px 4px", height: "56px", font: "16px / 500 / 20.8px Pretendard Variable", states: "rest only; no row was opened and no pointer frame was recorded", use: "Questions under 자주 묻는 질문 on home and pricing (944 x 56) at home::[data-omd-capture=\"28\"]" }
+    hero-card: { type: card, bg: "transparent", border: "1px solid rgba(20, 55, 27, 0.3) on the right edge only", padding: "40px 24px", size: "389px x 244px", use: "The three hero cards on home (정확한 정보를 찾을 때, 학술 연구를 준비할 때, 논리적인 글이 필요할 때) at home::div, 48px between label and pill; labels 16px uppercase in #818184" }
   components_harvested: true
 ---
 
@@ -60,414 +291,400 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-Liner (라이너) is a Korean AI startup that began as a web highlighter and has evolved into an AI-powered search and research copilot serving 11M+ professionals. Its homepage embodies a quiet authority: a near-white canvas (`#ffffff`) punctuated by a signature Liner Green (`#197b2e`) that appears almost exclusively on CTAs, reserving the single brand color for decisive action. Headings speak in **Flare** — a custom humanist serif with elegant weight contrast — in a deep forest green (`#14371b`) rather than black, anchoring the page in an organic, nature-informed palette rooted in Liner's highlighting origin.
+Liner (라이너) is the AI search and research service of 주식회사 라이너, a Seoul company whose site footer lists 김진우 as chief executive. According to a 2024 interview in 이코노미조선, 김진우 and 우찬민 founded it in 2015 while studying computer science at Yonsei University. Its first product, 웹 하이라이트, let people highlight text on web pages and PDFs and leave notes on it; the company set up a US entity in February 2017 and built users in 150 countries. The highlights it collected became the idea behind the current product: the interview describes using that data to rank what people consider important. Today the about page calls Liner "the most accurate AI research agent", used by over 10 million academics and professionals, and states the team's aim as "zero hallucinations as the gold standard of credibility". The Korean home sells three agents — Liner for search, Liner Scholar for research and Liner Write for writing — under the line "필요할 때 믿고 쓰는 정확한 AI".
 
-The typographic system splits into two clear registers: editorial display in Flare for emotional impact, and functional UI in **Pretendard Variable / Pretendard JP Variable** for menus, body, and labels. This duality — editorial serif for "what Liner is," humanist sans for "how to use it" — gives the product a professional, research-grade credibility without feeling cold. Hero text arrives at 54px / weight 400 in Flare, section titles at 42px, and pricing page H1 at 34px, all in the dark forest `#14371b`. Body and UI text sits in near-black `#1e1e1f` at 16px, with muted copy in a grey-80 (`#6d6d70` at opacity 0.8).
+The captured Korean pages (liner.com/ko, its pricing page and its about page) read as a calm white product site. One green, `#2c783c`, fills every primary action, and turns `#256a33` on hover. A second, brighter green, `#349749`, draws the outlined buttons, the green labels and the hero-card pills. Selection is a soft mint, `#edf3ed`, behind the chosen product tab. Each agent has its own colour in its home-page section: green for search, olive `#747a4d` for Scholar and slate `#536c7a` for Write. Text is near-black `#1e1e1f` with muted grey `#818184`, and a single orange, `#f58800`, marks the annual saving on pricing.
 
-Interactive geometry is restrained: standard buttons at 8px radius for nav and pricing CTAs; hero pill buttons at a generous 200px for the product-feature "Get started" moments; and a full-pill selector for product tabs. The system avoids shadows almost entirely — depth appears through surface tints (`#f9f9fa`, `#f6f6f7`) and 1px borders rather than elevation. The result reads as an AI product that respects your cognitive space: focused, calm, and oriented toward professionals who have no patience for noise.
+Everything on these pages is set in Pretendard: Pretendard Variable for headings, paragraphs and button labels, Pretendard JP Variable as the page default and on the 24px hero subtitle. Headings get their weight from 500–700 and tight tracking at display sizes (`-1.04px` at 52px, `-2.16px` at 72px). Liner's engineering blog describes building a design system with a dedicated TF, and the live pages carry its type-scale class names (`lp-sys-typo-display2` to `caption2`).
 
 **Key Characteristics:**
-- Flare serif (custom) for all display headlines — elegant and research-grade
-- Pretendard Variable / Pretendard JP Variable for all UI and body — global-ready, KR-native
-- Single brand green (`#197b2e`) reserved for primary CTAs — one-action-one-color discipline
-- Deep forest green (`#14371b`) for headings — organic, nature-referenced
-- Near-black `#1e1e1f` for body — warm and legible, not harsh pure-black
-- Flat depth: shadow-free on most surfaces; tinted `#f9f9fa` and hairlines for separation
-- Geometric mix: 8px radius for buttons, 200px for pills, 9999px for tab selectors
-- Light neutral palette (`#f9f9fa`, `#f6f6f7`) with deliberate forest-green accents
+- One action green, `#2c783c`, on every primary button and product CTA; hover `#256a33`
+- A brighter line green, `#349749`, for outlined buttons, green labels and pill borders
+- Mint `#edf3ed` for the selected product tab; olive `#747a4d` and slate `#536c7a` for the Scholar and Write sections
+- Pretendard Variable and Pretendard JP Variable throughout; no display serif renders on these pages
+- Radii by size: 8px header items and small buttons, 10px standard buttons, 12px large buttons, 200px pills, 9999px tabs
+- Flat surfaces; the only shadow is a soft `rgba(0, 0, 0, 0.05) 0px 4px 12px 0px` under menus and the selected billing option
+- Near-black `#1e1e1f` text with `#818184` for subtitles and captions
 
 ## Primary tasks
 
 - Search the web and get an answer with its sources cited
-- Run a deep literature review before writing a paper
-- Draft a piece of writing from your own research highlights
-- Compare the Free, Pro, Max, and Enterprise plans
-- Broaden a search that came back with nothing
+- Run a literature review with Liner Scholar before writing a paper
+- Draft a piece of writing with Liner Write
+- Compare the Free, Pro and Max plans and the team plan
+- Contact sales about a team or enterprise plan
 
 ## 2. Color Palette & Roles
 
-### Primary Brand
+Every token below was read by the deterministic collector on 2026-09-30 from liner.com/ko, liner.com/ko/pricing and liner.com/ko/about (liner.com redirects to /ko for a Korean browser).
 
-- **Liner Green** (`#197b2e`): The single saturated action color. Appears on nav "Get started" CTA, "Get Pro" and "Get Max" plan buttons. Its 80% derivation (`rgb(25,123,46)`) covers link text and ghost button borders. Comes from Liner's highlighter-green origin — the color you reach for to mark what matters.
-- **Forest Dark** (`#14371b`): Heading and display color for H1–H3. A deep, near-black forest green that gives editorial weight to Flare serif headlines without reaching for neutral black.
-- **Primary Tint** (`#edf3ed`): Active state background for product-selector tabs. A very soft mint that signals selection without visual aggression.
+### Primary
+- **Action Green** (`#2c783c`): The fill of every primary action — 시작하기 in the header, Pro 선택하기 and Max 선택하기 on the plan cards and in the comparison table, 팀 플랜 시작하기, Start Your Search on the about page and the 바로 검색하기 pill on home. It is the primary because the captured pages render it in that role: nine captured buttons compute `backgroundColor: rgb(44, 120, 60)`, across all three pages. It is the only colour that fills a primary action; the olive and slate pills below belong to the Scholar and Write sections.
+- **Action Green Hover** (`#256a33`): The same nine buttons read `rgb(37, 106, 51)` in their hover frames.
+- **On Primary** (`#ffffff`): Labels on the green buttons and pills.
+- **Line Green** (`#349749`): Border and label of the outlined 문의하기 buttons, border of the hero-card and 자세히 보기 pills, and green text such as the hero-card 시작하기 labels.
+
+### Product accents
+- **Selected Tab** (`#edf3ed`): Background of the selected option in the 검색 / 연구 / 글쓰기 selector.
+- **Scholar Olive** (`#747a4d`): The 연구 (Liner Scholar) section's CTA pill and its outline sibling; hover `#686e45`.
+- **Write Slate** (`#536c7a`): The 글쓰기 (Liner Write) section's CTA pill and its outline sibling; hover `#4b616e`.
 
 ### Neutral & Surface
+- **Surface** (`#ffffff`): Menu panels, the footer language select, the selected billing option and the outlined neutral buttons.
+- **Outline** (`#e8e8e9`): The 1px border of the language menu.
+- **Hover fill** (`#fafafb`): The hover fill of the outlined neutral and white buttons.
+- Translucent values stay in component fields: the neutral button border `rgba(148, 148, 151, 0.24)`, the header-item hover `rgba(12, 137, 59, 0.08)`, the outline-button hover `rgba(44, 120, 60, 0.12)`, and the 30% forest-green divider `rgba(20, 55, 27, 0.3)` on the hero cards.
 
-- **White Canvas** (`#ffffff`): Page background, pricing cards, feature cards.
-- **Surface Light** (`#f9f9fa`): Alternate card and section background — barely-there tint.
-- **Surface Alt** (`#f6f6f7`): Secondary tinted block surfaces.
-- **Near-Black Ink** (`#1e1e1f`): Primary body text, plan names, specs. Warm near-black, not pure black.
-- **Muted Grey** (`#6d6d70`): Muted text at 80% opacity for subtitles, toggle labels, secondary copy. Rendered as `rgba(109, 109, 112, 0.8)` in live DOM.
-- **Pure Black** (`#000000`): Highest-contrast element labels and select heading contexts.
+### Text
+- **Ink** (`#1e1e1f`): Headings, paragraphs, plan names and button labels on white.
+- **Muted** (`#818184`): The hero subtitle, hero-card labels, price captions and FAQ answers.
+- **Discount** (`#f58800`): The "20% 할인" note on the annual billing option.
 
-### Semantic
-
-- **Warning Orange** (`#fe8f16`): "Save 20%" promo badge on Annual billing toggle. Only semantic color on the pricing surface.
-- **On-Primary White** (`#ffffff`): Text on all green backgrounds.
+### Brand assets, not tokens
+- The Liner logo and favicon were not measured, and no logo colour is a token here.
 
 ## 3. Typography Rules
 
 ### Font Family
-
-- **Display**: `Flare` — a custom humanist serif used exclusively for H1, H2, H3 at headline sizes. Weight 400 across all display sizes (the letterforms carry authority via shape, not weight).
-- **UI/Body**: `Pretendard Variable` — the Korean-standard humanist sans, weight 400 for body / 500 for buttons. Loaded as `"Pretendard Variable"` for button/body contexts.
-- **Multilingual UI**: `"Pretendard JP Variable", "Pretendard JP", "Pretendard Variable"` — extended version for nav items and interactive controls supporting CJK glyph coverage.
+- **Live surface use**: `Pretendard Variable` (524 observed uses) and `Pretendard JP Variable` (301), both loaded from jsDelivr (`cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/.../woff2-dynamic-subset/`). The body stack is `"Pretendard JP Variable", "Pretendard JP", "Pretendard Variable", sans-serif`; headings, paragraphs and button labels set `Pretendard Variable`.
+- **Official product use**: no Liner-owned typeface renders on these pages; the product text is set in the public Pretendard distribution.
+- **Licence**: Pretendard is published by its author under the SIL Open Font License, Version 1.1 (the project's LICENSE file, opened 2026-09-30).
+- **Declared only (no visible use)**: a face named `flare`, declared from `assets.liner.com/fonts/arizona-flare/` (files named `ABCArizonaFlare-*.woff2`), and `Inter` from `liner.com/_next/static/media/`. Neither renders any text on the three captured pages, so neither is a token and no specimen is shown. No licence page for either was opened.
+- **Unresolved**: none.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Notes |
-|------|------|------|--------|-------|
-| Hero Display | Flare | 54px | 400 | Homepage main H2 — color `#14371b` |
-| Section Heading | Flare | 42px | 400 | Product-feature H2 |
-| Page Title | Flare | 34px | 400 | Pricing page H1 |
-| Feature H3 | Pretendard JP Variable | 17px | 400 | Feature card heading |
-| Nav Link | Pretendard JP Variable | 16px | 400 | Top nav items, height 36px |
-| Body | Pretendard JP Variable | 16px | 400 | Body copy |
-| Button Label | Pretendard Variable | 15px | 500 | All CTA buttons |
-| Caption | Pretendard Variable | 14px | 400 | Dropdown items, footnotes |
+| Role | Font | Size | Weight | Line Height | Tracking | Observed on |
+|------|------|------|--------|-------------|----------|-------------|
+| Display Hero | Pretendard Variable | 72px | 500 | 79.2px (1.1) | -2.16px | "Explore without doubt", about page |
+| Display | Pretendard Variable | 52px | 700 | 67.6px (1.3) | -1.04px | Home hero heading |
+| Section | Pretendard Variable | 42px | 600 | 54.6px (1.3) | normal | Home section heading, about statements |
+| Plan Price | Pretendard JP Variable | 36px | 500 | normal | normal | Plan prices on pricing |
+| Page Title | Pretendard Variable | 32px | 500 | 41.6px (1.3) | normal | 라이너 플랜 and pricing section headings |
+| Title | Pretendard Variable | 28px | 600 | 36.4px (1.3) | normal | Feature block headings on home |
+| Card Title | Pretendard Variable | 24px | 600 | 31.2px (1.3) | normal | Pricing benefits, about-page values |
+| Subtitle | Pretendard JP Variable | 24px | 400 | 31.2px (1.3) | normal | Home hero subtitle (h1) in `#818184` |
+| Plan Name | Pretendard JP Variable | 22px | 500 | 33px (1.5) | normal | Free, Pro, Max |
+| Tab Label | Pretendard Variable | 20px | 500 | 26px (1.3) | normal | 검색 / 연구 / 글쓰기 |
+| Feature Title | Pretendard Variable | 18px | 600 | 23.4px (1.3) | normal | Feature and testimonial headings |
+| Lead | Pretendard Variable | 17px | 400 | 22.1px (1.3) | normal | Product-section lead lines |
+| Body | Pretendard Variable | 16px | 400 | 24px (1.5) | normal | About-page paragraphs |
+| Button | Pretendard Variable | 15px | 500 | 19.5px (1.3) | normal | 40px buttons |
+| Nav | Pretendard Variable | 14px | 400 | 18.2px (1.3) | normal | Header menu |
+| Caption | Pretendard Variable | 13px | 400 | 16.9px (1.3) | normal | Price captions, table buttons |
+| Fine | Pretendard Variable | 12px | 500 | 15.6px (1.3) | normal | "20% 할인" |
 
 ### Principles
-
-- **Serif for persuasion, sans for function**: Flare carries all aspirational communication; Pretendard handles all operational UI. They never swap roles.
-- **Weight-light at display**: Flare displays at weight 400 — authority through letterform, not boldness.
-- **CJK readiness built in**: Pretendard JP Variable covers Korean, Japanese, and Latin seamlessly — essential for a product with large Korean and Japanese user bases.
-- **Consistent 15px/500 buttons**: All button labels (primary, outline, ghost, toggle) share the same 15px Pretendard Variable 500 spec for visual cohesion across pricing tier differences.
+- **One family, two builds**: Pretendard Variable carries the reading and action text; Pretendard JP Variable is the page default and the hero subtitle.
+- **Tight only at display sizes**: `-1.04px` at 52px and `-2.16px` at 72px; everything from 42px down keeps normal tracking.
+- **A 1.3 line-height rhythm**: almost every styled size computes a 1.3 line height; long paragraphs open to 1.5.
+- **Named scale**: the live classes follow Liner's design-system scale — `display2`/`display3`, `title1`–`title5`, `paragraph1`–`paragraph4`, `caption1`/`caption2`.
 
 ## 4. Component Stylings
 
 ### Buttons
 
-**Primary (Get started / Get Pro / Get Max)**
-- Background: `#197b2e`
+**Primary button**
+- Background: `#2c783c`
 - Text: `#ffffff`
-- Radius: 8px
+- Radius: 10px
 - Height: 40px
-- Font: 15px / 500 / Pretendard Variable
-- Use: Primary upgrade CTAs in nav and pricing cards
+- Font: 15px / 500 / 19.5px Pretendard Variable
+- Hover: background `#256a33`
+- Use: 시작하기 in the header, Pro 선택하기 and Max 선택하기 on the plan cards, 팀 플랜 시작하기
 
-**Outline (Start for free)**
+**Large primary button**
+- Background: `#2c783c`
+- Text: `#ffffff`
+- Radius: 12px
+- Height: 48px
+- Font: 16px / 500 / 20.8px Pretendard Variable
+- Hover: background `#256a33`
+- Use: Start Your Search on the about page; its white partner, Try for free, is `#ffffff` with `#1e1e1f` text and a `#fafafb` hover
+
+**Outlined brand button**
+- Background: transparent
+- Text: `#349749`
+- Border: 1px solid `#349749`
+- Radius: 10px
+- Height: 40px
+- Font: 15px / 500 / 19.5px Pretendard Variable
+- Hover: background `rgba(44, 120, 60, 0.12)`
+- Use: 문의하기 and 영업팀 문의하기 on pricing
+
+**Outlined neutral button**
 - Background: `#ffffff`
 - Text: `#1e1e1f`
-- Border: 1px solid rgba(109, 109, 112, 0.24)
-- Radius: 8px
+- Border: 1px solid `rgba(148, 148, 151, 0.24)`
+- Radius: 10px
 - Height: 40px
-- Font: 15px / 500 / Pretendard Variable
-- Use: Free-tier CTA on pricing page — low-emphasis alternative
+- Font: 15px / 500 / 19.5px Pretendard Variable
+- Hover: background `#fafafb`
+- Use: 바로 사용하기 on the Free plan, 자세히 보기 beside the team plan
 
-**Ghost Green (Contact us / Contact Liner)**
-- Background: transparent
-- Text: `#197b2e`
-- Border: 1px solid `#197b2e`
-- Radius: 8px
-- Height: 40px
-- Font: 15px / 500 / Pretendard Variable
-- Use: Enterprise inquiry CTA — same green family, lower visual weight
+**Plan-table buttons**
+- The comparison table repeats the three buttons at 32px tall with an 8px radius and 13px / 400 / 16.9px labels (168 × 32): green `#2c783c` for Pro and Max, outlined `#349749` for 문의하기, outlined neutral for 바로 사용하기, with the same hovers.
 
-**Hero Get-Started Pill**
-- Background: transparent
-- Text: `#000000`
-- Border: 1px solid `#197b2e`
+**Product CTA pill**
+- Background: `#2c783c`
+- Text: `#ffffff`
 - Radius: 200px
 - Height: 48px
-- Font: 16px / 400 / Pretendard JP Variable
-- Use: Hero section product-feature "Get started" — larger pill form for product emphasis
+- Font: 16px / 400 / 20.8px Pretendard Variable
+- Hover: background `#256a33`
+- Use: 바로 검색하기 in the 검색 section of home; the 연구 section uses `#747a4d` (hover `#686e45`) and the 글쓰기 section `#536c7a` (hover `#4b616e`)
 
-### Inputs
+**Product outline pill**
+- Background: transparent
+- Text: `#349749`
+- Border: 1px solid `#349749`
+- Radius: 200px
+- Height: 48px
+- Font: 16px / 400 / 20.8px Pretendard Variable
+- Hover: background `rgba(148, 148, 151, 0.08)`
+- Use: 자세히 보기 beside each product CTA, in each section's colour; the three hero cards carry the same green-outlined 시작하기 pill at 111 × 48
 
-**Default Search / Form**
-- Background: `#f9f9fa`
-- Border: 1px solid rgba(109, 109, 112, 0.12)
-- Radius: 8px
+### Navigation & Tabs
+
+**Header menu item**
+- Background: transparent
 - Text: `#1e1e1f`
-- Placeholder: `#6d6d70` at 80% opacity
-- Font: 16px / 400 / Pretendard JP Variable
-- Use: Search and form inputs on live product surface
+- Radius: 8px
+- Padding: 0px 4px
+- Height: 36px
+- Font: 14px / 400 / 18.2px Pretendard Variable
+- Hover: background `rgba(12, 137, 59, 0.08)`
+- Use: 제품, API/MCP, 요금제, 더 알아보기, 회사 소개; over the dark about-page hero the labels turn `#ffffff` and 시작하기 becomes a white button with a `#fafafb` hover
+
+**Product selector tab**
+- Background: transparent
+- Text: `#1e1e1f`
+- Radius: 9999px
+- Padding: 0px 20px
+- Height: 48px
+- Font: 20px / 500 / 26px Pretendard Variable
+- Selected: background `#edf3ed`
+- Use: 검색 / 연구 / 글쓰기 on home
+
+**Billing toggle**
+- Background: transparent
+- Text: `#1e1e1f`
+- Radius: 200px
+- Height: 44px
+- Font: 15px / 500 / 19.5px Pretendard Variable
+- Selected: background `#ffffff` with `rgba(0, 0, 0, 0.05) 0px 4px 12px 0px`
+- Use: 월간 / 연간 20% 할인 on pricing; the annual option carries the orange `#f58800` "20% 할인" note
+
+### Inputs & Menus
+
+**Language select**
+- Background: `#ffffff`
+- Text: `#1e1e1f`
+- Border: 1px solid `rgba(148, 148, 151, 0.24)`
+- Radius: 8px
+- Height: 32px
+- Font: 13px / 400 / 16.9px Pretendard Variable
+- Use: Select language, KO in the footer of every page
+
+**Select menu**
+- Background: `#ffffff`
+- Border: 1px solid `#e8e8e9`
+- Radius: 10px
+- Padding: 8px
+- Shadow: `rgba(0, 0, 0, 0.05) 0px 4px 12px 0px`
+- Selected: item background `rgba(148, 148, 151, 0.08)`, radius 6px
+- Use: the language menu, 320 × 150
 
 ### Cards & Containers
 
-**Pricing Plan Card**
-- Background: `#ffffff`
-- Text: `#1e1e1f`
-- Radius: 12px
-- Shadow: 0 1px 4px rgba(0,0,0,0.08)
-- Use: Plan tier cards (Free / Pro / Max / Enterprise) on pricing page
-
-**Feature Card (Surface)**
-- Background: `#f9f9fa`
-- Text: `#1e1e1f`
-- Radius: 12px
-- Use: Feature highlight cards on light tinted sections
-
-### Badges
-
-**Promo Badge (Save %)**
-- Background: `#fe8f16`
-- Text: `#ffffff`
-- Radius: 9999px
-- Font: 12px / 500 / Pretendard Variable
-- Use: "Save 20%" badge on Annual billing selector
-
-### Tabs
-
-**Product Selector (Active)**
-- Background: `#edf3ed`
-- Text: `#000000`
-- Radius: 9999px
-- Padding: 0px 20px
-- Height: 48px
-- Font: 16px / 400 / Pretendard JP Variable
-- Use: Active state of Search / Research / Write product tabs
-
-**Product Selector (Inactive)**
+**Hero card**
 - Background: transparent
-- Text: `#000000`
-- Radius: 9999px
-- Padding: 0px 20px
-- Height: 48px
-- Use: Inactive product tab states
+- Border: 1px `rgba(20, 55, 27, 0.3)` on the right edge only
+- Padding: 40px 24px
+- Size: 389 × 244
+- Use: 정확한 정보를 찾을 때, 학술 연구를 준비할 때, 논리적인 글이 필요할 때 — a 16px uppercase `#818184` label above a green-outlined 시작하기 pill, 48px apart
 
-### Toggles
-
-**Billing Toggle (Monthly / Annual)**
-- Background: `#ffffff`
-- Text active: `#1e1e1f`
-- Text inactive: rgba(109, 109, 112, 0.8)
-- Radius: 200px
-- Height: 44px
-- Use: Monthly / Annual billing period selector on pricing page
+**FAQ row**
+- Background: transparent
+- Text: `#1e1e1f`
+- Radius: 10px
+- Padding: 0px 8px 0px 4px
+- Height: 56px
+- Font: 16px / 500 / 20.8px Pretendard Variable
+- Use: questions under 자주 묻는 질문 on home and pricing; answers are 15px `#818184`
 
 ---
 
-**Verified:** 2026-06-22 (omd:add-reference CREATE — Tier 1 live inspect)
-**Tier 1 sources:** https://liner.com, https://liner.com/pricing, https://liner.com/blog
-**Tier 2 sources:** getdesign.md/liner — 404 (not listed); styles.refero.design/?q=liner — no Liner entry found after full search
+**Verified:** 2026-09-30 (deterministic collector capture of three public pages of liner.com/ko, logged out, plus first-party company pages and one Korean press interview)
+**Tier 1 sources:** https://liner.com/ko ; https://liner.com/ko/pricing ; https://liner.com/ko/about ; https://liner.com/ko/blog ; https://liner.com/ko/blog/liner-design-system-fronted-1
+**Tier 2 sources:** getdesign.md/liner (HTTP 200, the name does not appear on the page) and styles.refero.design/?q=liner (HTTP 200, the name appears only as the echoed query), requested 2026-09-30; no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-
-- Base unit: 4px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 40px
-- Nav height: 36px interactive elements in a floating nav bar
-- Button height: 40px (standard), 48px (hero pill)
-- Section padding: generous whitespace between content bands — minimalist information hierarchy
+- Product tabs: 20px horizontal padding at 48px height
+- Hero cards: 40px 24px padding, 48px between the label and the pill
+- Menus: 8px padding; items `8px 6px 8px 8px`
+- Header items: 36px tall with 4px horizontal padding around the label
 
 ### Grid & Container
-
-- Centered single-column hero with 54px Flare headline as the anchor
-- Product tab selector sits beneath the hero, full-pill row of three options
-- Pricing page uses a 4-column card layout (Free / Pro / Max / Enterprise) at desktop
-- Feature sections in alternating white/light-surface bands following a top-to-bottom scroll narrative
+- Home: a centred hero (52px heading, 24px subtitle), three hero cards side by side, then one section per agent — lead line, CTA pill pair, feature headings — followed by testimonials and the FAQ.
+- Pricing: a centred 32px title, the monthly/annual toggle, plan cards with 260px-wide buttons, a team-plan band, the comparison table and the FAQ.
+- About: a dark full-bleed hero with a 72px line, then 42px statements beside long 16px paragraphs and three value columns.
 
 ### Whitespace Philosophy
-
-- **Breathe first, fill second**: Generous vertical spacing between all sections — AI product that respects professional attention.
-- **Flat separation**: White vs `#f9f9fa` alternating backgrounds replace shadow stacks.
-- **Green as punctuation**: `#197b2e` appears only on action nodes; the rest of the page is intentionally monochromatic.
+- **Colour marks the agent**: each product section is keyed by its own pill colour instead of by background changes.
+- **Actions in pairs**: a filled pill beside an outlined 자세히 보기 pill, a green plan button beside an outlined one.
 
 ### Border Radius Scale
-
-- 8px: Standard buttons, inputs, nav dropdown items
-- 12px: Content cards, pricing plan cards
-- 200px: Hero pill CTA, billing toggle container
-- 9999px: Product selector pills, promo badges
+- 6px: menu items
+- 8px: header items, the language select, table buttons
+- 10px: standard buttons, menus, FAQ rows
+- 12px: large about-page buttons
+- 200px: product pills and the billing toggle
+- 9999px: product selector tabs
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (0) | No shadow | Nav, hero, most content sections |
-| Surface (1) | `#f9f9fa` background shift | Feature card groups, alternate page sections |
-| Card (2) | `0 1px 4px rgba(0,0,0,0.08)` | Pricing plan cards |
+| Flat | No shadow | Page, buttons, tabs, cards |
+| Divider | 1px `rgba(20, 55, 27, 0.3)` | Right edge of the hero cards |
+| Raised | `rgba(0, 0, 0, 0.05) 0px 4px 12px 0px` | Menus, the selected billing option |
 
-**Shadow Philosophy**: Liner is near-shadowless. Live inspection confirmed `box-shadow: none` across nav, hero, product tabs, and most cards. Only pricing plan cards carry a light 1px-blur shadow. Depth is achieved through background tint shifts (`#f9f9fa`, `#f6f6f7`) and thin rgba-borders. The system signals "AI research tool" through clarity and restraint — visual noise is treated as a barrier to focus.
+**Shadow Philosophy**: Liner's pages are flat. Buttons, tabs and cards compute `box-shadow: none`; depth comes from colour — green fills, a mint selected tab, a white option on the billing toggle. The one soft shadow belongs to things that sit above the page: the language menu and the chosen billing option.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Use Flare serif for all display headlines at weight 400 — let letterform do the work
-- Use Pretendard Variable for all button labels and captions at 15px/500
-- Reserve Liner Green (`#197b2e`) exclusively for primary action buttons
-- Use Forest Dark (`#14371b`) for heading text — not pure black
-- Apply 200px radius for hero pills and billing toggles; 8px for action buttons
-- Separate page sections with `#f9f9fa` tint shifts and rgba borders — no shadow
-- Use muted grey at 80% opacity for secondary and placeholder text
-- Write button labels in sentence case at 15px/500 Pretendard
+- Fill primary actions with `#2c783c` and use the measured `#256a33` for their hover
+- Use `#349749` for outlined buttons, green labels and pill borders
+- Mark the selected product tab with `#edf3ed`
+- Key product sections to their colours: green for search, `#747a4d` for Scholar, `#536c7a` for Write
+- Set text in Pretendard Variable (Pretendard JP Variable for the page default), 15px / 500 on buttons
+- Pick the radius by size: 10px at 40px, 12px at 48px, 8px at 32px, 200px for pills
 
 ### Don't
-- Apply Flare to body copy or small UI text — it belongs exclusively to headlines
-- Spread green (`#197b2e`) to decorative elements — it signals "action" only
-- Use pure black (`#000000`) for heading text — the brand palette uses Forest Dark `#14371b`
-- Stack heavy shadows or gradient overlays — Liner is a flat, clean AI system
-- Use weight 700+ on display text — Flare at 400 is canonical; boldness is a design mistake here
-- Mix border radius scales arbitrarily — 8px for buttons, 12px for cards, 200px for pills
-- Create new saturated accent colors — the palette is intentionally near-monochromatic with single green
+- Don't render a serif display face; the declared `flare` face renders nothing on these pages
+- Don't put the primary green on decoration; it marks actions
+- Don't add shadows to cards or buttons; only menus and the selected toggle option carry one
+- Don't fill the Scholar or Write CTAs with the search green
+- Don't invent focus rings or pressed colours; none were measured
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Nav collapses, hero headline font-size reduces, product tabs scroll horizontally |
-| Tablet | 640-1024px | 2-column pricing card grid, moderate padding |
-| Desktop | 1024px+ | Full 4-column pricing, centered hero, multi-column feature rows |
+Only the 1440 × 900 desktop viewport was captured. The product tabs carry a `max-s:h-[40px]` class and the hero cards a `@max-[763px]:gap-[24px]` class, signs that both tighten on small screens; no breakpoint was measured.
 
 ### Touch Targets
-
-- Standard buttons: 40px height — appropriate for professional keyboard-and-mouse desktop users
-- Hero pill CTA: 48px height — generously tappable on tablet
-- Product tabs: 48px height, full-pill — large touch target for mobile product switching
-- Nav items: 36px — standard desktop nav hit area
+- Primary and outlined buttons: 40px (48px on the about page)
+- Product pills and tabs: 48px
+- Billing toggle: 44px
+- Header items: 36px
+- FAQ rows: 56px
 
 ### Collapsing Strategy
+- Not measured.
 
-- Hero 54px Flare headline scales down proportionally on mobile
-- Product selector tabs compress to horizontal scroll row
-- Pricing cards stack to single column below tablet
-- Billing toggle remains full-width pill on all breakpoints
+### Image Behavior
+- Not measured.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-
-- Primary action: Liner Green (`#197b2e`)
-- Display headings: Forest Dark (`#14371b`)
-- Active tab / tint: Primary Tint (`#edf3ed`)
-- Background: White Canvas (`#ffffff`)
-- Light surface: Surface Light (`#f9f9fa`)
-- Body text: Near-Black Ink (`#1e1e1f`)
-- Muted / placeholder: Muted Grey (`#6d6d70` at 80% opacity)
-- Promo accent: Warning Orange (`#fe8f16`)
+- Primary action: `#2c783c`, hover `#256a33`, labels `#ffffff`
+- Line green (outlines, green text): `#349749`
+- Selected tab: `#edf3ed`
+- Scholar `#747a4d` (hover `#686e45`); Write `#536c7a` (hover `#4b616e`)
+- Text `#1e1e1f`; muted `#818184`; discount `#f58800`
+- White surfaces `#ffffff`; menu border `#e8e8e9`; neutral hover `#fafafb`
 
 ### Example Component Prompts
-
-- "Create a hero section on white background. Display headline at 54px Flare weight 400, color `#14371b`. Subtitle at 24px Pretendard JP Variable weight 400, color rgba(109,109,112,0.8). Green pill CTA: transparent background, 1px solid `#197b2e` border, 200px radius, 48px height, 16px Pretendard JP Variable, color `#000000`."
-- "Design a pricing card: white background `#ffffff`, 12px radius, 0 1px 4px rgba(0,0,0,0.08) shadow. Plan name 17px Pretendard JP Variable 400 `#1e1e1f`. Primary CTA: `#197b2e` bg, white text, 8px radius, 40px height, 15px Pretendard Variable 500."
-- "Build a product tab selector: full-pill container. Active tab: `#edf3ed` bg, `#000000` text, 9999px radius, 0px 20px padding, 48px height, 16px Pretendard JP Variable. Inactive: transparent, same dimensions."
-- "Create nav: white background, 36px item height. 16px Pretendard JP Variable weight 400 `#000000` nav links. Right-aligned primary CTA: `#197b2e` bg, white text, 8px radius, 40px height, 15px Pretendard Variable 500."
+- "Create a Liner primary button: `#2c783c` background, `#ffffff` 15px Pretendard Variable label at weight 500, 40px tall, 10px radius, no shadow; hover `#256a33`."
+- "Pair it with an outlined contact button: transparent background, 1px solid `#349749` border, `#349749` label, same geometry; hover fill `rgba(44, 120, 60, 0.12)`."
+- "Build the product selector: three 48px pills with 9999px radius and 20px horizontal padding, 20px / 500 `#1e1e1f` labels; the selected one fills `#edf3ed`."
+- "Make a product CTA pair: a 48px, 200px-radius `#2c783c` pill with a white 16px label, beside a transparent pill with a 1px `#349749` border and a `#349749` label."
 
 ### Iteration Guide
-
-1. Flare at weight 400 for every headline; Pretendard Variable 400/500 for every UI element
-2. Liner Green (`#197b2e`) is the single action color — guard it fiercely
-3. No shadows except the lightest card shadow on pricing tiers
-4. Forest Dark `#14371b` for all display text — not black
-5. Radius is context-specific: 8px buttons, 12px cards, 200px pills
-6. Muted text = `rgba(109, 109, 112, 0.8)` — never a flat opaque grey
-7. Background separation = `#f9f9fa` tint, not depth/shadow
+1. `#2c783c` fills actions; `#349749` draws outlines
+2. Each agent keeps its colour: green, olive `#747a4d`, slate `#536c7a`
+3. Pretendard everywhere; tight tracking only at 52px and above
+4. Radius follows height: 8 / 10 / 12, pills 200, tabs 9999
+5. Flat, with one soft shadow for menus
 
 ---
 
 ## 10. Voice & Tone
 
-Liner's voice is **precise, professional, and quietly confident** — an AI research partner that speaks to knowledge workers, academics, and professionals who demand accuracy over hype. The homepage opener "Meet AI agents purpose-built for professionals to search smarter, research deeper, and write better" is declarative and benefit-led without exclamation or urgency. Liner's copy style strips away AI buzzwords and grounds every claim in a user outcome.
+Liner speaks plainly about accuracy and getting work done. Korean pages address the reader politely and directly, lead with the outcome, and keep actions short.
 
 | Context | Tone |
 |---|---|
-| Hero headline | Confident, outcome-led. "Accurate AI agents built for smarter work." No exclamation, no jargon. |
-| Feature descriptions | Benefit-first, precise. "Get accurate answers. Skip forward to relevant results." |
-| Pricing CTAs | Direct, low-pressure. "Start for free." "Get Pro." "Contact us." Sentence case. |
-| Blog engineering | Honest and technical. Shares startup constraints openly ("제한된 리소스로 디자인 시스템 개발하기"). |
-| Product tab labels | Single-word clarity. "Search." "Research." "Write." |
+| Page title | Audience-first. "라이너 \| 일 잘하는 사람들의 AI". |
+| Hero | A promise of reliability. "필요할 때 믿고 쓰는 정확한 AI". |
+| Section prompts | A question to the reader. "어떤 일을 끝내고 싶으세요?" |
+| Actions | Short and concrete: "시작하기", "바로 검색하기", "바로 써보기", "자세히 보기", "Pro 선택하기", "문의하기". |
+| About page (English) | Mission language. "Explore without doubt", "Line-by-line accuracy", "Safety, by default", "Mission First". |
 
-**Voice samples (verbatim from live surface):**
-- "Accurate AI agents built for smarter work" — homepage H2 (mission-framed, Flare serif). *(verified live 2026-06-22)*
-- "Meet AI agents purpose-built for professionals to search smarter, research deeper, and write better" — homepage H1 subtitle. *(verified live 2026-06-22)*
-- "Why pro is built for serious research" — pricing page H2 (audience-respecting, no hype). *(verified live 2026-06-22)*
+**Voice samples (verbatim, opened 2026-09-30):**
+- "필요할 때 믿고 쓰는 정확한 AI" — liner.com/ko hero heading.
+- "목적에 맞는 AI로 결과의 완성도를 높이세요" — liner.com/ko hero subtitle.
+- "출처가 분명한 답변을 쉽게 이해해 보세요" — search section heading on home.
+- "리서치할 때 Pro를 사용해야 하는 이유" — pricing page heading.
+- "Meet Liner, the most accurate AI research agent" — liner.com/ko/about.
 
-**Forbidden register**: AI superlatives without grounding, urgency patterns ("Act now!"), casualness that undermines the professional research context, undefined technical jargon.
+**Forbidden register**: unverifiable superlatives about AI, urgency tactics, casual slang that undercuts the research context, claims without sources.
 
 ## 11. Brand Narrative
 
-Liner began around **2016** as a web-highlighting extension — a digital analog to drawing a yellow line on a physical page. The brand name itself comes from "liner" as in highlighter, and the signature green palette echoes that origin: the color you reach for when something matters. As the highlighting use case deepened, Liner evolved from passive curation (saving highlighted text) into active cognition assistance — surfacing what you saved, connecting research threads, and ultimately generating answers grounded in real sources.
+Liner started as a highlighter for the web. 이코노미조선's 2024 interview with co-founder 김진우 describes the first product, 웹 하이라이트, as a way to mark text on web pages and PDFs and keep notes, released without marketing and downloaded by 500 people on its first day. The founders — 김진우 and 우찬민, then computer-science students at Yonsei — had started the company in 2015, set up a US entity in February 2017 and spent four years refining the highlighter for users in 150 countries. The highlights became a database of what people found important, and that idea turned Liner toward search.
 
-By **2026**, Liner positions itself as "AI agents for professionals" with over **11 million users**, having made the transition from productivity extension to research copilot. The product now encompasses Search (AI-powered web search with cited answers), Research (deep-dive academic and multi-source reports), and Write (grounded writing with reference integration). The tagline "Inside the AI Search Engine 11M+ People Trust" signals the pivot from tool to trusted collaborator. The blog post "스타트업에서 제한된 리소스로 디자인 시스템 개발하기" (Building a design system with limited startup resources) reveals an engineering team that builds thoughtfully under constraint — a philosophy visible in the product itself: no unnecessary visual weight, no wasted motion.
+The current Liner is an AI research agent. Its about page puts accuracy first: the team aims for "zero hallucinations", cites sources for every sentence ("Line-by-line accuracy"), and names safety and "Mission First" as the other two values. The product is now three agents — Liner, Liner Scholar and Liner Write — with an API and MCP servers for developers. On the engineering blog the company writes about its data platform for 13 million users, its own rankers and embedding models, and building a design system with limited resources.
 
-Liner's positioning is squarely anti-hallucination: the word "accurate" appears in both the homepage headline and the brand's core product promise. For a Korean AI startup competing globally against entrenched players, "accuracy" is the chosen moat — not features, not UX bells, but epistemic trustworthiness.
+The captured pages carry that story in their colours: a green for search and action, a mint for selection, and a separate colour for each agent.
 
 ## 12. Principles
 
-1. **Accuracy before impression.** Liner's core promise is truthful, cited AI output. *UI implication:* source attribution is a first-class UI citizen; never hide provenance of AI-generated content.
-2. **Professional context, not consumer entertainment.** Liner serves researchers, academics, and knowledge workers. *UI implication:* dense information layouts are acceptable; playful micro-interactions are not the register.
-3. **One color, one action.** Liner Green (`#197b2e`) is the single call-to-action color. *UI implication:* every green element should be actionable; decorative green is a design error.
-4. **Serif for aspiration, sans for function.** Flare carries the brand promise; Pretendard carries the work. *UI implication:* never render operational UI in Flare; never render the brand headline in Pretendard.
-5. **Restraint as credibility.** A tool trusted with professional research earns that trust through visual discipline. *UI implication:* remove shadows, reduce palette, add whitespace before adding decoration.
+1. **Accuracy first.** The about page sets zero hallucinations as the aim. *UI implication:* show sources beside answers and keep the interface quiet around them.
+2. **Line by line.** Liner cites a source for every sentence. *UI implication:* design for citation density — clear links, readable 15–16px text.
+3. **One green for action.** *UI implication:* `#2c783c` means "do this"; outlines use `#349749`.
+4. **Each agent has its colour.** *UI implication:* keep search green, Scholar olive and Write slate apart. (An editorial reading of the home page, not a Liner statement.)
+5. **Safety by default.** *UI implication:* no dark patterns in plan choice; the free plan sits first with its own action.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable Liner user segments (professionals, academics, knowledge workers), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable Liner user segments (students, researchers, knowledge workers), not individual people.*
 
-**박지민, 27, 서울.** Graduate student using Liner's Research agent for literature reviews before writing papers. Values cited sources over generated summaries. Relies on the deep-research report feature because it feels more like a research assistant than a chatbot.
+**박지민, 27, 서울.** A graduate student who runs literature reviews in Liner Scholar before writing a paper, and checks every cited source.
 
-**Sarah K., 34, San Francisco.** Product strategist who uses Liner's Search to cut through content farms for industry signals. Appreciates that Liner doesn't hallucinate citations. Uses the Write feature to draft market analysis from her research highlights.
+**최서연, 34, 성남.** A product manager who uses Liner search for fact-checks and moved to the Pro plan for more agent credits.
 
-**田中 健, 41, Tokyo.** Senior analyst at a consulting firm who switched from manual search workflows to Liner after a colleague recommended it. Finds the Pretendard JP Variable rendering of Japanese text surprisingly clean. Uses it daily for competitive intelligence.
-
-**이준호, 38, 판교.** Engineering lead at a Korean startup who read Liner's design-system blog post. Curious about the product for internal research tasks. Represents Liner's KR base where the brand began.
+**이준호, 38, 서울.** An engineering lead who read Liner's design-system blog post and is evaluating the Liner API for internal research tools.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed on the three captured pages; nothing else is specified here.
+
+| State | Observation |
 |---|---|
-| **Empty (no search results)** | White canvas. Near-black `#1e1e1f` single-line message. One green CTA to refine query. No decorative illustration. |
-| **Empty (no saved highlights)** | Muted grey `rgba(109,109,112,0.8)` copy explaining the state, with a green link to start searching. |
-| **Loading (search in progress)** | Skeleton rows on `#f9f9fa` tinted surface at expected result heights, 8px radius. Flat shimmer — no heavy animation. |
-| **Loading (research generation)** | Step-by-step progress indicator with source count updating; maintains context visible. |
-| **Error (network / API failure)** | Inline message in near-black `#1e1e1f` with plain-language explanation; green retry CTA. |
-| **Error (content not found)** | "No results" state with suggestion to broaden search terms; calm, non-accusatory tone. |
-| **Success (research complete)** | Research report renders inline with source citations. No celebratory animation — the content is the reward. |
-| **Skeleton** | `#f9f9fa` blocks at final content dimensions, 8px radius, flat opacity pulse. |
-| **Disabled** | Muted grey `rgba(109,109,112,0.8)` label; green buttons fade to reduced opacity, not grey — preserves brand read. |
-| **Focus** | 2px `#197b2e` outline on interactive elements — green focus ring consistent with the action color. |
+| **Hover (primary)** | Every green button and the search pill turn from `#2c783c` to `#256a33`; the pressed frame reads the same value. |
+| **Hover (outlined)** | Outlined brand buttons fill `rgba(44, 120, 60, 0.12)`; outlined neutral and white buttons fill `#fafafb`; outline pills fill `rgba(148, 148, 151, 0.08)`. |
+| **Hover (product pills)** | Scholar `#747a4d` → `#686e45`; Write `#536c7a` → `#4b616e`. |
+| **Hover (header)** | Header items fill `rgba(12, 137, 59, 0.08)`. |
+| **Selected** | The product tab fills `#edf3ed`; the chosen billing option turns white with a soft shadow; the chosen language menu item fills `rgba(148, 148, 151, 0.08)`. |
+| **Expanded** | The footer language select opens a white menu with a `#e8e8e9` border. |
+
+The hero-card 시작하기 pills show no computed change in their hover frames. Focus was not measured, and error, empty, loading and success states were not captured, so none is described.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 100ms | Hover state transitions, tab indicator movement |
-| `motion-standard` | 200ms | Card reveals, dropdown open/close, billing toggle |
-| `motion-slow` | 300ms | Page section entrance, research result streaming onset |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving elements — cards, dropdowns, research reports |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Toggles, tab switches, two-way transitions |
-
-**Motion rules**: Motion is minimal and purposeful — this is a professional research tool, not an entertainment experience. Product tabs switch at `motion-fast / ease-standard`; research results stream into view at `motion-slow / ease-enter` to signal that valuable content is arriving. No bounce, no spring, no celebration animations. Under `prefers-reduced-motion: reduce`, all transitions are instant. The product remains fully functional without animation — motion is an enhancement, not a dependency.
+The collector reads computed style, not animation, so no duration or easing is measured. Class names on the tabs and hero cards mention transitions, which shows motion exists without timing it. Treat motion as unspecified rather than borrowing values, and honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-22) via playwright getComputedStyle on https://liner.com and https://liner.com/pricing:
-- H2 "Accurate AI agents built for smarter work": Flare / 54px / weight 400 / color rgb(20,55,27) = #14371b
-- H1 subtitle "Meet AI agents purpose-built for professionals": 24px / Pretendard JP Variable / color rgba(109,109,112,0.8)
-- Nav "Get started" CTA: bg rgb(25,123,46) = #197b2e / white text / radius 8px / 40px height / 15px Pretendard Variable 500
-- Hero "Get started" pill: transparent / border 1px solid rgb(25,123,46) / radius 200px / 48px height / 16px Pretendard JP Variable
-- Product tab "Search" active: bg rgb(237,243,237) = #edf3ed / radius 3.35544e+07px (full pill) / 0px 20px padding / 48px height
-- Pricing "Get Pro" / "Get Max": bg rgb(25,123,46) = #197b2e / white / 8px radius / 40px height / 15px 500
-- Pricing "Start for free": bg rgb(255,255,255) / color rgb(30,30,31) = #1e1e1f / border 1px solid rgba(109,109,112,0.24) / 8px radius / 40px
-- "Contact us" ghost: transparent / color rgb(25,123,46) / border 1px solid rgb(25,123,46) / 8px radius / 40px
-- Pricing H1 "Liner pricing plan": Flare / 34px / weight 400 / color rgb(20,55,27)
-- Pricing H2 "Why pro is built for serious research": Flare / 34px / weight 400 / color rgb(20,55,27)
-- Body font-family: "Pretendard JP Variable", "Pretendard JP", "Pretendard Variable", sans-serif
-- Body color: rgb(0,0,0); size 16px / weight 400
-- Near-black body text on pricing: rgb(30,30,31) = #1e1e1f
-- bgFreq (pricing page): #ffffff ×11, #f9f9fa ×7, #197b2e ×6
-- fgFreq (pricing page): rgb(0,0,0) ×719, rgb(30,30,31) ×334, rgba(109,109,112,0.8) ×31, #ffffff ×18, #197b2e ×13, #14371b ×4, #fe8f16 ×1
-- document.title: "AI agents for professionals | Search, academic research, write with Liner"
-- Liner blog at liner.com/blog confirmed brand-owned; article "스타트업에서 제한된 리소스로 디자인 시스템 개발하기" found
-
-Brand narrative (§11): Liner Inc. — Korean AI startup founded ~2016 as a web highlighter, evolved into AI research copilot. 11M+ users per homepage header. These facts are from the live homepage.
-
-Personas (§13) are fictional archetypes. Names do not refer to real people.
-
-Interpretive claims are editorial readings connecting observed design choices to Liner's brand positioning.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/liner.json (capturedAt 2026-09-30T07:52:02Z), deterministic collector, 1440x900, logged out: liner.com/ko (the frontmatter homepage liner.com redirects there for a Korean browser), liner.com/ko/pricing (liner.com/pricing redirects there), liner.com/ko/about. Labels were matched to captures with a headless read-only survey of the same pages.
+- §1 and §11 company facts: liner.com/ko/about (values, "over 10 million"), the liner.com/ko footer (주식회사 라이너, 대표 김진우), liner.com/ko/blog (post titles, including the 13 million users data-platform post), liner.com/ko/blog/liner-design-system-fronted-1 (design-system TF), and 이코노미조선, "[Interview] 글로벌 생성 AI 4위 라이너 김진우 공동 대표 …" (2024-06-03): 2015 founding by 김진우·우찬민, 웹 하이라이트, US entity February 2017, 150 countries.
+- §3 licence: github.com/orioncactus/pretendard LICENSE (SIL Open Font License, Version 1.1).
+- Personas are fictional archetypes. Interpretive readings are editorial.
 -->

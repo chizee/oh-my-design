@@ -282,6 +282,92 @@
         "https://www.scatterlab.co.kr/ko/ethos",
         "https://blog.scatterlab.co.kr/"
       ]
+    },
+    "3o3": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.3o3.co.kr/",
+        "https://blog.3o3.co.kr/"
+      ]
+    },
+    "elice": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://elice.io/ko",
+        "https://elice.io/ko/cloud/pricing/ai-cloud"
+      ]
+    },
+    "finda": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://finda.co.kr/",
+        "https://finda.co.kr/about-us",
+        "https://finda.co.kr/culture"
+      ]
+    },
+    "heydealer": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.heydealer.com/",
+        "https://www.heydealer.com/market/cars",
+        "https://www.heydealer.com/sell"
+      ]
+    },
+    "iicombined": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.gentlemonster.com/kr/ko",
+        "https://www.gentlemonster.com/kr/ko/category/sunglasses/view-all",
+        "https://www.gentlemonster.com/kr/ko/item/0PEEZ0A8AASR8/velom01"
+      ]
+    },
+    "liner": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://liner.com/ko",
+        "https://liner.com/ko/pricing",
+        "https://liner.com/ko/about"
+      ]
+    },
+    "moreh": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://moreh.io/",
+        "https://moreh.io/ko/",
+        "https://moreh.io/inference-framework/"
+      ]
+    },
+    "payhere": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://payhere.in/",
+        "https://payhere.in/table-order/",
+        "https://payhere.in/hardware/terminal/"
+      ]
+    },
+    "teamblind": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://www.teamblind.com/kr/",
+        "https://www.teamblind.com/kr/topics/%ED%86%A0%ED%94%BD-%EB%B2%A0%EC%8A%A4%ED%8A%B8",
+        "https://www.teamblind.com/kr/company"
+      ]
+    },
+    "weverse": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://weverse.io/",
+        "https://shop.weverse.io/ko/home",
+        "https://shop.weverse.io/ko/shop/KRW/artists/2"
+      ]
+    },
+    "zepeto": {
+      "maxRoutes": 3,
+      "routes": [
+        "https://web.zepeto.me/ko",
+        "https://studio.zepeto.me/ko",
+        "https://studio.zepeto.me/ko/products/world"
+      ]
     }
   }
 }

@@ -9,50 +9,249 @@ primary_color: "#ff5700"
 logo:
   type: favicon
   slug: "https://www.google.com/s2/favicons?domain=moreh.io&sz=128"
-verified: "2026-06-26"
+verified: "2026-09-30"
 added: "2026-06-26"
 omd: "0.1"
+verification_v2:
+  schema: 2
+  checked: "2026-09-30"
+  surfaces:
+    - { id: home, kind: marketing, url: "https://moreh.io/", inspected: "2026-09-30" }
+    - { id: surface-2, kind: marketing, url: "https://moreh.io/ko/", inspected: "2026-09-30" }
+    - { id: surface-3, kind: marketing-product, url: "https://moreh.io/inference-framework/", inspected: "2026-09-30" }
+  sources:
+    - { id: surface-home, kind: product-surface, url: "https://moreh.io/", captured: "2026-09-30" }
+    - { id: surface-surface-2, kind: product-surface, url: "https://moreh.io/ko/", captured: "2026-09-30" }
+    - { id: surface-surface-3, kind: product-surface, url: "https://moreh.io/inference-framework/", captured: "2026-09-30" }
+    - { id: moreh-probe-home, kind: product-surface, url: "https://moreh.io/", captured: "2026-09-30" }
+    - { id: about, kind: official-doc, url: "https://moreh.io/about/", captured: "2026-09-30" }
+    - { id: about-ko, kind: official-doc, url: "https://moreh.io/ko/about/", captured: "2026-09-30" }
+    - { id: newsroom-ko, kind: official-doc, url: "https://moreh.io/ko/news/", captured: "2026-09-30" }
+  conflicts: []
+  claims:
+    "tokens.colors.primary": &mprim { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"8\"]", captured: "2026-09-30" }
+    "tokens.colors.on-primary": *mprim
+    "tokens.colors.primary-hover": &mhover { surface_id: home, source_id: moreh-probe-home, method: live-state-probe, selector: "a.btn.btn-primary Request Demo (158.6 x 40): hover and pressed bg oklch(0.64 0.22 38) after the 120ms transition; span.arrow translateX 2px", captured: "2026-09-30" }
+    "tokens.colors.ink": &mbody { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::body", captured: "2026-09-30" }
+    "tokens.colors.canvas": *mbody
+    "tokens.colors.inverse": &mhero { surface_id: home, source_id: moreh-probe-home, method: live-state-probe, selector: "a.btn.btn-primary Request Demo -> ancestor level 4 section.hero-dark, bg oklch(0.11 0.005 85)", captured: "2026-09-30" }
+    "tokens.colors.footer": &mfoot { surface_id: home, source_id: moreh-probe-home, method: live-state-probe, selector: "a.mono Privacy Policy (136.9 x 30.5) -> ancestor level 6 footer.bg-n-800, bg oklch(0.2 0.005 85)", captured: "2026-09-30" }
+    "tokens.colors.on-inverse": &mh1 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h1", captured: "2026-09-30" }
+    "tokens.colors.on-inverse-muted": &mheroP { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.muted": &mdesc { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.subtle": &msubtle { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.colors.link": &mlink { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"10\"]", captured: "2026-09-30" }
+    "tokens.colors.link-on-dark": &mlinkdark { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"10\"]", captured: "2026-09-30" }
+    "tokens.colors.hairline": &mcard { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::div", captured: "2026-09-30" }
+    "tokens.colors.outline": &mghost { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.colors.inverse-border": &mpill { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"22\"]", captured: "2026-09-30" }
+    "tokens.typography.family.sans": *mbody
+    "tokens.typography.family.mono": *mpill
+    "tokens.typography.display-hero.size": *mh1
+    "tokens.typography.display-hero.weight": *mh1
+    "tokens.typography.display-hero.lineHeight": *mh1
+    "tokens.typography.display-hero.tracking": *mh1
+    "tokens.typography.display-hero.use": *mh1
+    "tokens.typography.display.size": &mh1b { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::h1", captured: "2026-09-30" }
+    "tokens.typography.display.weight": *mh1b
+    "tokens.typography.display.lineHeight": *mh1b
+    "tokens.typography.display.tracking": *mh1b
+    "tokens.typography.display.use": *mh1b
+    "tokens.typography.section.size": &mh2 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h2", captured: "2026-09-30" }
+    "tokens.typography.section.weight": *mh2
+    "tokens.typography.section.lineHeight": *mh2
+    "tokens.typography.section.tracking": *mh2
+    "tokens.typography.section.use": *mh2
+    "tokens.typography.lead.size": &mlead { surface_id: surface-3, source_id: surface-surface-3, method: computed-style, selector: "surface-3::p", captured: "2026-09-30" }
+    "tokens.typography.lead.weight": *mlead
+    "tokens.typography.lead.lineHeight": *mlead
+    "tokens.typography.lead.use": *mlead
+    "tokens.typography.card-title.size": &mh3 { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::h3", captured: "2026-09-30" }
+    "tokens.typography.card-title.weight": *mh3
+    "tokens.typography.card-title.lineHeight": *mh3
+    "tokens.typography.card-title.tracking": *mh3
+    "tokens.typography.card-title.use": *mh3
+    "tokens.typography.body-lg.size": *mheroP
+    "tokens.typography.body-lg.weight": *mheroP
+    "tokens.typography.body-lg.lineHeight": *mheroP
+    "tokens.typography.body-lg.use": *mheroP
+    "tokens.typography.body.size": *mbody
+    "tokens.typography.body.weight": *mbody
+    "tokens.typography.body.lineHeight": *mbody
+    "tokens.typography.body.use": *mbody
+    "tokens.typography.section-desc.size": *mdesc
+    "tokens.typography.section-desc.weight": *mdesc
+    "tokens.typography.section-desc.lineHeight": *mdesc
+    "tokens.typography.section-desc.use": *mdesc
+    "tokens.typography.card-desc.size": &mfcdesc { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.typography.card-desc.weight": *mfcdesc
+    "tokens.typography.card-desc.lineHeight": *mfcdesc
+    "tokens.typography.card-desc.use": *mfcdesc
+    "tokens.typography.nav.size": &mnav { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"1\"]", captured: "2026-09-30" }
+    "tokens.typography.nav.weight": *mnav
+    "tokens.typography.nav.lineHeight": *mnav
+    "tokens.typography.nav.use": *mnav
+    "tokens.typography.button.size": *mprim
+    "tokens.typography.button.weight": *mprim
+    "tokens.typography.button.lineHeight": *mprim
+    "tokens.typography.button.use": *mprim
+    "tokens.typography.small.size": &msmall { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.typography.small.weight": *msmall
+    "tokens.typography.small.lineHeight": *msmall
+    "tokens.typography.small.use": *msmall
+    "tokens.typography.caption.size": &mcap { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.typography.caption.weight": *mcap
+    "tokens.typography.caption.lineHeight": *mcap
+    "tokens.typography.caption.use": *mcap
+    "tokens.typography.eyebrow.size": &meyebrow { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::p", captured: "2026-09-30" }
+    "tokens.typography.eyebrow.weight": *meyebrow
+    "tokens.typography.eyebrow.lineHeight": *meyebrow
+    "tokens.typography.eyebrow.tracking": *meyebrow
+    "tokens.typography.eyebrow.use": *meyebrow
+    "tokens.typography.mono-label.size": *mpill
+    "tokens.typography.mono-label.weight": *mpill
+    "tokens.typography.mono-label.lineHeight": *mpill
+    "tokens.typography.mono-label.tracking": *mpill
+    "tokens.typography.mono-label.use": *mpill
+    "tokens.spacing.button-x": *mprim
+    "tokens.spacing.card": *mcard
+    "tokens.spacing.row-y": &mrow { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"15\"]", captured: "2026-09-30" }
+    "tokens.spacing.nav-y": *mnav
+    "tokens.spacing.pill-y": *mpill
+    "tokens.spacing.pill-x": *mpill
+    "tokens.rounded.none": *mnav
+    "tokens.rounded.sm": *mprim
+    "tokens.components.primary-button.type": *mprim
+    "tokens.components.primary-button.bg": *mprim
+    "tokens.components.primary-button.fg": *mprim
+    "tokens.components.primary-button.border": *mprim
+    "tokens.components.primary-button.radius": *mprim
+    "tokens.components.primary-button.padding": *mprim
+    "tokens.components.primary-button.height": *mprim
+    "tokens.components.primary-button.font": *mprim
+    "tokens.components.primary-button.hover": *mhover
+    "tokens.components.primary-button.pressed": *mhover
+    "tokens.components.primary-button.use": *mprim
+    "tokens.components.ghost-on-dark-button.type": &mghostdark { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"9\"]", captured: "2026-09-30" }
+    "tokens.components.ghost-on-dark-button.bg": *mghostdark
+    "tokens.components.ghost-on-dark-button.fg": *mghostdark
+    "tokens.components.ghost-on-dark-button.border": *mghostdark
+    "tokens.components.ghost-on-dark-button.radius": *mghostdark
+    "tokens.components.ghost-on-dark-button.padding": *mghostdark
+    "tokens.components.ghost-on-dark-button.height": *mghostdark
+    "tokens.components.ghost-on-dark-button.font": *mghostdark
+    "tokens.components.ghost-on-dark-button.hover": &mghostprobe { surface_id: home, source_id: moreh-probe-home, method: live-state-probe, selector: "a.btn.btn-ghost-on-dark View Benchmarks (158.5 x 40): hover and pressed bg rgba(255, 255, 255, 0.06), border 1px solid rgba(255, 255, 255, 0.4)", captured: "2026-09-30" }
+    "tokens.components.ghost-on-dark-button.pressed": *mghostprobe
+    "tokens.components.ghost-on-dark-button.use": *mghostdark
+    "tokens.components.ghost-button.type": *mghost
+    "tokens.components.ghost-button.bg": *mghost
+    "tokens.components.ghost-button.fg": *mghost
+    "tokens.components.ghost-button.border": *mghost
+    "tokens.components.ghost-button.radius": *mghost
+    "tokens.components.ghost-button.padding": *mghost
+    "tokens.components.ghost-button.height": *mghost
+    "tokens.components.ghost-button.font": *mghost
+    "tokens.components.ghost-button.states": *mghost
+    "tokens.components.ghost-button.use": *mghost
+    "tokens.components.text-link.type": *mlink
+    "tokens.components.text-link.fg": *mlink
+    "tokens.components.text-link.font": *mlink
+    "tokens.components.text-link.states": *mlink
+    "tokens.components.text-link.use": *mlink
+    "tokens.components.text-link-on-dark.type": *mlinkdark
+    "tokens.components.text-link-on-dark.fg": *mlinkdark
+    "tokens.components.text-link-on-dark.font": *mlinkdark
+    "tokens.components.text-link-on-dark.states": *mlinkdark
+    "tokens.components.text-link-on-dark.use": *mlinkdark
+    "tokens.components.nav-trigger.type": *mnav
+    "tokens.components.nav-trigger.bg": *mnav
+    "tokens.components.nav-trigger.fg": *mnav
+    "tokens.components.nav-trigger.padding": *mnav
+    "tokens.components.nav-trigger.height": *mnav
+    "tokens.components.nav-trigger.font": *mnav
+    "tokens.components.nav-trigger.states": *mnav
+    "tokens.components.nav-trigger.use": *mnav
+    "tokens.components.language-switcher.type": &mlang { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::[data-omd-capture=\"7\"]", captured: "2026-09-30" }
+    "tokens.components.language-switcher.bg": *mlang
+    "tokens.components.language-switcher.fg": *mlang
+    "tokens.components.language-switcher.padding": *mlang
+    "tokens.components.language-switcher.height": *mlang
+    "tokens.components.language-switcher.font": *mlang
+    "tokens.components.language-switcher.states": *mlang
+    "tokens.components.language-switcher.use": *mlang
+    "tokens.components.feature-card.type": *mcard
+    "tokens.components.feature-card.bg": *mcard
+    "tokens.components.feature-card.border": *mcard
+    "tokens.components.feature-card.radius": *mcard
+    "tokens.components.feature-card.padding": *mcard
+    "tokens.components.feature-card.width": *mcard
+    "tokens.components.feature-card.states": *mcard
+    "tokens.components.feature-card.use": *mcard
+    "tokens.components.news-row.type": &mli { surface_id: home, source_id: surface-home, method: computed-style, selector: "home::li", captured: "2026-09-30" }
+    "tokens.components.news-row.border": *mli
+    "tokens.components.news-row.padding": *mrow
+    "tokens.components.news-row.width": *mli
+    "tokens.components.news-row.use": *mli
+    "tokens.components.footer-pill.type": *mpill
+    "tokens.components.footer-pill.bg": *mpill
+    "tokens.components.footer-pill.fg": *mpill
+    "tokens.components.footer-pill.border": *mpill
+    "tokens.components.footer-pill.radius": *mpill
+    "tokens.components.footer-pill.padding": *mpill
+    "tokens.components.footer-pill.height": *mpill
+    "tokens.components.footer-pill.font": *mpill
+    "tokens.components.footer-pill.hover": &mpillprobe { surface_id: home, source_id: moreh-probe-home, method: live-state-probe, selector: "a.mono Privacy Policy: hover and pressed fg oklch(0.975 0.003 85) after the 150ms transition", captured: "2026-09-30" }
+    "tokens.components.footer-pill.use": *mpill
 tokens:
-  source: live-extract
-  extracted: "2026-06-26"
-  note: "primary = live Request-Demo CTA orange (#ff5700, Tailwind token bg-accent); lighter orange-400 (#ff793e) is the hover/secondary callout; darker burnt-orange (#dd4300) is the AA-safe inline link color on light. Ink is warm near-black (#050403); cream (#f8f7f4) is the sunken-section surface and the on-dark text. Footer is neutral-800 (#1c1a18)."
+  source: reconciled
+  extracted: "2026-09-30"
   colors:
     primary: "#ff5700"
-    primary-hover: "#ff793e"
-    link: "#dd4300"
+    on-primary: "#ffffff"
+    primary-hover: "#f34600"
     ink: "#050403"
-    cream: "#f8f7f4"
-    muted: "#65635f"
-    faint: "#a09e9a"
-    hairline: "#dfdeda"
-    hairline-dashed: "#d2d1cd"
-    dark: "#1c1a18"
-    dark-border: "#2a2926"
     canvas: "#ffffff"
+    inverse: "#050403"
+    footer: "#1c1a18"
+    on-inverse: "#f8f7f4"
+    on-inverse-muted: "#a09e9a"
+    muted: "#65635f"
+    subtle: "#888682"
+    link: "#dd4300"
+    link-on-dark: "#ff793e"
+    hairline: "#dfdeda"
+    outline: "#d2d1cd"
+    inverse-border: "#2a2926"
   typography:
-    family: { sans: "Inter" }
-    display-hero: { size: 94, weight: 600, lineHeight: 1.00, tracking: -3.74, use: "Hero headline, Inter SemiBold, fluid clamp" }
-    display:      { size: 72, weight: 600, lineHeight: 1.05, tracking: -2.52, use: "Page title (Blog), Inter SemiBold" }
-    section:      { size: 40, weight: 600, lineHeight: 1.12, tracking: -1.0, use: "Section titles (H2), Inter SemiBold" }
-    subsection:   { size: 18, weight: 600, lineHeight: 1.30, tracking: -0.18, use: "Card / feature heads (H3)" }
-    body:         { size: 16, weight: 400, lineHeight: 1.50, use: "Standard reading text, Inter" }
-    nav:          { size: 14, weight: 400, lineHeight: 1.50, use: "Top nav links" }
-    button:       { size: 14, weight: 500, lineHeight: 1.50, use: "CTA button label, Inter Medium" }
-    small:        { size: 13, weight: 500, lineHeight: 1.55, use: "Inline accent links, dropdown items" }
-    micro:        { size: 11, weight: 400, tracking: 1.32, use: "Footer legal pill, wide-tracked" }
-  spacing: { xs: 6, sm: 8, md: 12, base: 16, lg: 20, xl: 24, section: 96 }
-  rounded: { sm: 6, full: 9999 }
-  shadow:
-    none: "none"
+    family: { sans: "Inter", mono: "JetBrains Mono" }
+    display-hero: { size: 93.6, weight: 600, lineHeight: 1.0, tracking: -3.744, use: "Home hero headline (h1.text-display-lg), #f8f7f4 on the #050403 band, English and Korean editions" }
+    display: { size: 72, weight: 600, lineHeight: 1.04, tracking: -2.52, use: "Product hero title on the MoAI Inference Framework page (h1.hero-title)" }
+    section: { size: 40, weight: 600, lineHeight: 1.12, tracking: -1, use: "Section titles (h2.sh-title)" }
+    lead: { size: 24, weight: 500, lineHeight: 1.33, use: "Subtitle under the product hero (p.text-2xl)" }
+    card-title: { size: 18, weight: 600, lineHeight: 1.3, tracking: -0.18, use: "Feature-card headings (h3.fc-title); news-row titles use the same size on a 25.2px line" }
+    body-lg: { size: 17, weight: 400, lineHeight: 1.6, use: "Hero sub-copy (p.text-body-lg)" }
+    body: { size: 16, weight: 400, lineHeight: 1.5, use: "Page body" }
+    section-desc: { size: 16, weight: 400, lineHeight: 1.65, use: "Descriptions under section titles (p.sh-desc)" }
+    card-desc: { size: 14, weight: 400, lineHeight: 1.55, use: "Feature-card descriptions (p.fc-desc)" }
+    nav: { size: 14, weight: 400, lineHeight: 1.5, use: "Header menu" }
+    button: { size: 14, weight: 500, lineHeight: 1.5, use: "Primary and ghost action labels" }
+    small: { size: 13, weight: 400, lineHeight: 1.55, use: "News summaries and footer links (text-body-sm); inline links use 13px at 500" }
+    caption: { size: 12, weight: 400, lineHeight: 1.4, use: "Footer copyright line (text-caption)" }
+    eyebrow: { size: 11, weight: 500, lineHeight: 1.6, tracking: 1.32, use: "Uppercase JetBrains Mono eyebrows (p.mono-eyebrow)" }
+    mono-label: { size: 11, weight: 400, lineHeight: 1.5, tracking: 1.32, use: "Uppercase JetBrains Mono footer pills" }
+  spacing: { button-x: 18, card: 28, row-y: 24, nav-y: 8, pill-y: 6, pill-x: 12 }
+  rounded: { none: 0, sm: 6 }
   components:
-    button-primary: { type: button, bg: "#ff5700", fg: "#ffffff", radius: "6px", padding: "0px 18px", height: "40px", font: "14px / 500 Inter", states: "hover #ff793e", use: "Hero / nav primary CTA — Request Demo" }
-    button-ghost: { type: button, fg: "#f8f7f4", radius: "6px", padding: "0px 18px", height: "40px", border: "1px solid rgba(255,255,255,0.25)", font: "14px / 500 Inter", use: "Secondary CTA on the dark hero — View Benchmarks" }
-    text-link: { type: button, fg: "#dd4300", font: "13px / 500 Inter", use: "Inline accent link with arrow — Learn more, AMD GPU" }
-    nav-item: { type: tab, fg: "#050403", font: "14px / 400 Inter", active: "text #dd4300 + bg #f8f7f4", use: "Top-nav dropdown trigger / current item" }
-    callout-accent: { type: card, bg: "#ff5700", fg: "#ffffff", radius: "6px", padding: "20px 24px", use: "Orange highlight callout block in comparison rows" }
-    callout-inverse: { type: card, bg: "#050403", fg: "#f8f7f4", radius: "6px", padding: "20px 24px", use: "Dark inverse callout block" }
-    dropdown-menu: { type: dialog, bg: "#ffffff", radius: "6px", border: "1px solid #dfdeda", padding: "12px 0px", use: "Nav mega-dropdown panel (Products / Solutions)" }
-    footer-pill: { type: badge, fg: "#a09e9a", radius: "6px", border: "1px solid #2a2926", padding: "6px 12px", font: "11px / 400 Inter", use: "Legal pill on dark footer — Privacy Policy, Terms" }
+    primary-button: { type: "button", bg: "#ff5700", fg: "#ffffff", border: "1px solid transparent", radius: "6px", padding: "0px 18px", height: "40px", font: "14px / 500 / 21px Inter", hover: "bg #f34600; the arrow shifts 2px right (settled probe frame after a 120ms transition)", pressed: "bg #f34600, the same settled frame as hover (probe)", use: "Request Demo on moreh.io and the MoAI Inference Framework page, and the same action on moreh.io/ko/ (captures 8 on all three pages)" }
+    ghost-on-dark-button: { type: "button", bg: "transparent", fg: "#f8f7f4", border: "1px solid rgba(255, 255, 255, 0.25)", radius: "6px", padding: "0px 18px", height: "40px", font: "14px / 500 / 21px Inter", hover: "bg rgba(255, 255, 255, 0.06), border 1px solid rgba(255, 255, 255, 0.4) (settled probe frame)", pressed: "the same values as hover (probe)", use: "View Benchmarks beside the primary action on the home hero band" }
+    ghost-button: { type: "button", bg: "transparent", fg: "#050403", border: "1px solid #d2d1cd", radius: "6px", padding: "0px 18px", height: "40px", font: "14px / 500 / 21px Inter", states: "rest only; the bundle hover and pressed frames were mid-transition, so no state is declared", use: "Secondary action beside the primary on the MoAI Inference Framework hero" }
+    text-link: { type: "button", fg: "#dd4300", font: "13px / 500 / 20.15px Inter", states: "rest only; no settled state frame", use: "Inline arrow links on white (four on each home, plus a 14px / 500 variant)" }
+    text-link-on-dark: { type: "button", fg: "#ff793e", font: "14px / 500 / 21px Inter", states: "rest only", use: "Inline link in the dark section of the MoAI Inference Framework page" }
+    nav-trigger: { type: "button", bg: "transparent", fg: "#050403", padding: "8px 0px", height: "37px", font: "14px / 400 / 21px Inter", states: "rest only; bundle frames drift by one colour unit, which is not a design value", use: "Header menu: Products, Solutions, Performance, Resources, Careers, Company" }
+    language-switcher: { type: "button", bg: "transparent", fg: "#65635f", padding: "8px 0px", height: "36px", font: "13px / 400 / 19.5px Inter", states: "rest only", use: "Language switcher at the right of the header (EN on moreh.io, KO on moreh.io/ko/)" }
+    feature-card: { type: "card", bg: "#ffffff", border: "1px solid #dfdeda", radius: "6px", padding: "28px", width: "348px", states: "rest; the linked cards on the Inference Framework page start a border and shadow transition on hover, but no settled frame was captured, so the hover is unmeasured", use: "Feature cards, three to a row, on all three pages" }
+    news-row: { type: "card", border: "bottom 1px solid #dfdeda", padding: "24px 0px", width: "1076px", use: "Newsroom and blog rows on the home: 18px / 600 title, 13px #65635f summary" }
+    footer-pill: { type: "badge", bg: "transparent", fg: "#a09e9a", border: "1px solid #2a2926", radius: "6px", padding: "6px 12px", height: "31px", font: "11px / 400 / 16.5px JetBrains Mono, uppercase, letter-spacing 1.32px", hover: "fg #f8f7f4 (settled probe frame after a 150ms transition)", use: "Privacy Policy and Terms of Use on the #1c1a18 footer" }
   components_harvested: true
 ---
 
@@ -60,22 +259,20 @@ tokens:
 
 ## 1. Visual Theme & Atmosphere
 
-Moreh (모레) builds inference software that frees large language models from a single GPU vendor, and its homepage carries that same posture of disciplined, vendor-neutral engineering. The system is built on a warm near-black ink (`#050403`) rather than pure black, set on a pure-white canvas (`#ffffff`) and broken up by sunken cream bands (`#f8f7f4`). Against that quiet, almost editorial neutral field, a single saturated safety-orange (`#ff5700`) does all the persuading — it is the only chromatic color in the system, reserved for the primary "Request Demo" CTA and a handful of accent callouts. The effect is industrial and confident: this reads like infrastructure tooling that respects your attention, not a consumer app fighting for it.
+Moreh (모레) is an AI-infrastructure software company founded in September 2020. Its About page names the problem it works on: running AI at scale means solving parallelization, disaggregation, cluster scheduling and hardware optimization before a single token is generated, and most of the software that does this is locked to one GPU vendor. Moreh builds the layer that turns heterogeneous accelerators — AMD, NVIDIA and Tenstorrent — into unified, high-performance inference clusters, "so that any organization can run frontier models on the hardware they already have." Its own timeline traces how it got here: a public AI cloud on AMD GPUs with KT Cloud (2021), a $22M Series B from AMD, KT and others (2023), the MoMo-72B model at the top of Hugging Face's Open LLM Leaderboard (2024), a strategic partnership with Tenstorrent (2024), the model-and-cloud subsidiary Motif Technologies (2025), and selection as one of four consortia in the Korean government's sovereign AI foundation model project (2026). The site now leads with "Inference Software for Every Chip" and the MoAI line: MoAI Inference Framework, MoAI Performance Gateway, MoAI Fabric, and Moreh vLLM for AMD and for Tenstorrent.
 
-The typographic voice is **Inter throughout**, run at SemiBold (weight 600) for display and dropping to 400/500 for everything functional — there is no second typeface and no light weight anywhere. What makes the system feel premium is the scale and the tracking: the hero headline "Optimal LLM Inference on Every Accelerator" lands at roughly 94px with a dramatic `-3.74px` negative letter-spacing and a 1.0 line-height, compressing the words into a single dense, engineered block. The cream hero type (`#f8f7f4`) sits on a `hero-dark` band of warm near-black (`#050403`), so the page opens dark and serious before resolving into bright white documentation-style sections below. Section titles (H2) run at 40px / 600 with `-1px` tracking; feature heads (H3) at 18px / 600.
+The captured pages — moreh.io, its Korean edition moreh.io/ko/ and the MoAI Inference Framework page — read like an engineering document with one signal colour. Text is a warm near-black, `#050403`, on white `#ffffff`. The home opens on a `#050403` hero band with `#f8f7f4` type and closes on a charcoal `#1c1a18` footer. The only saturated fill on any page is a safety orange, `#ff5700`, on the primary action (Request Demo, or its Korean equivalent), and a burnt orange, `#dd4300`, carries the inline links on white. Every action, card and pill shares one 6px radius; cards are white with a `1px #dfdeda` hairline and no shadow.
 
-Depth is deliberately suppressed. Live inspection found `box-shadow: none` across the hero, nav, headings, and cards — separation is done entirely with flat surfaces and thin `1px` hairlines in `#dfdeda` (or a `#d2d1cd` dashed variant for placeholder blocks), plus the alternation of white, cream (`#f8f7f4`), and dark (`#1c1a18`) full-width bands. Geometry is uniformly restrained: a single `6px` corner radius (`rounded-sm`) on every button, card, dropdown, and pill — never a sharp square, never a full pill. The footer drops to a neutral-800 charcoal (`#1c1a18`) with faint `#a09e9a` links and hairline `#2a2926` borders. Secondary text steps down through a warm-grey ladder — `#65635f` for muted body, `#a09e9a` for the faintest labels — and inline links use a darker burnt-orange (`#dd4300`) so they stay AA-legible on light surfaces while the brighter `#ff5700` and its `#ff793e` hover stay on solid CTA chrome.
+Type is Inter, self-hosted through Next.js: weight 600 for headings, with tracking that tightens as the size grows (`-3.744px` at 93.6px, `-1px` at 40px), and 400 or 500 for reading and actions. A second family, JetBrains Mono, sets the small uppercase eyebrows, footer pills and diagram labels at 11px with a wide `1.32px` tracking — the one place where the pages speak in a terminal voice. The site is published in five languages (English, 한국어, 中文, 日本語 and Tiếng Việt) from one set of pages.
 
 **Key Characteristics:**
-- Single saturated safety-orange (`#ff5700`) reserved for the primary CTA — the system's only chromatic color
-- Warm near-black ink (`#050403`) instead of pure black; cream (`#f8f7f4`) sunken surfaces
-- Inter everywhere at weight 600 display / 400-500 functional — one typeface, no light weight
-- Dramatic negative tracking on display (`-3.74px` at 94px, `-1px` at 40px) compressing headlines into dense blocks
-- Dark-to-light cadence: a near-black `hero-dark` (`#050403`) band opening into bright white + cream sections
-- Flat, shadow-free depth — `1px #dfdeda` hairlines (and `#d2d1cd` dashed) do the separating
-- Uniform `6px` radius on every interactive surface — no sharp squares, no full pills
-- Two oranges by job: bright `#ff5700` / hover `#ff793e` on chrome, AA-safe `#dd4300` for inline links
-- Charcoal `#1c1a18` footer with faint `#a09e9a` text and `#2a2926` hairline borders
+- One signal colour: `#ff5700` fills the primary action on all three pages; the settled hover deepens it to `#f34600`
+- Warm neutrals instead of pure black and cool grey: ink `#050403`, muted `#65635f`, subtle `#888682`, hairline `#dfdeda`
+- Dark bands at both ends of the home: a `#050403` hero with a `#f8f7f4` headline, a `#1c1a18` footer with `#a09e9a` links
+- Inter 600 display with negative tracking; Inter 400 and 500 for body and actions
+- JetBrains Mono at 11px, uppercase, `1.32px` tracking for eyebrows, footer pills and labels
+- One 6px radius on actions, cards and pills; flat surfaces with no rest shadows
+- Burnt orange `#dd4300` for inline links on white, a lighter `#ff793e` on dark
 
 ## Primary tasks
 
@@ -86,359 +283,336 @@ Depth is deliberately suppressed. Live inspection found `box-shadow: none` acros
 
 ## 2. Color Palette & Roles
 
+Every token below was read by the deterministic collector on 2026-09-30 from moreh.io, moreh.io/ko/ and moreh.io/inference-framework/. The two band fills and the hover value come from the keyboard-state probe of the same day (`docs/research/2026-09-29-growth/raw/moreh-states-home.json`). The site authors its colours in `oklch()`; the hex values are the computed colours converted to sRGB.
+
 ### Primary
-- **Moreh Orange** (`#ff5700`): The primary brand color and CTA background (Tailwind token `bg-accent`). A saturated safety-orange — the single "action" color across the whole system, used on the "Request Demo" button and accent callout blocks.
-- **Orange Hover** (`#ff793e`): The lighter orange-400 (`bg-o-400`) used for hover states and softer accent callout rows.
-- **Burnt-Orange Link** (`#dd4300`): The darker, AA-safe orange used for inline text links with arrows ("Learn more →", "AMD GPU →") and active nav items on light surfaces.
+- **Moreh Orange** (`#ff5700`): The fill of the primary action — Request Demo on moreh.io and on the MoAI Inference Framework page, and the same action on moreh.io/ko/. It is the primary because it is the only saturated fill the three pages render and it sits on the one action each page asks for. Labels on it are white (`#ffffff`).
+- **Orange Hover** (`#f34600`): The settled hover and pressed fill of the same action, read by the probe after its 120ms transition; the arrow in the label also moves 2px to the right.
 
 ### Ink & Surface
-- **Ink** (`#050403`): Primary text and heading color, and the `hero-dark` / inverse-callout background. A warm near-black — never pure black for body copy.
-- **Cream** (`#f8f7f4`): The sunken-section surface (`section-sunken`) and the on-dark text color in the hero. A warm off-white that softens the alternating bands.
-- **Pure White** (`#ffffff`): The default page canvas, white cards, and the dropdown-menu surface.
+- **Ink** (`#050403`): Body text, headings and the header menu; the same colour fills the home hero band (`section.hero-dark`, probe ancestor level 4).
+- **Canvas** (`#ffffff`): Page background and card fill.
+- **Footer Charcoal** (`#1c1a18`): The footer (`footer.bg-n-800`, probe ancestor level 6).
+- **On Inverse** (`#f8f7f4`): The hero headline and the ghost action's label on dark; also the footer link colour on hover.
 
-### Text Hierarchy
-- **Ink** (`#050403`): Headings, nav, strong body text.
-- **Muted Warm-Grey** (`#65635f`): Secondary body copy, descriptions, the language switcher label.
-- **Faint Warm-Grey** (`#a09e9a`): Tertiary text, footer links, lowest-emphasis labels.
+### Text
+- **Muted** (`#65635f`): Section descriptions, card descriptions, news summaries, the language switcher and the mono eyebrows on white.
+- **Subtle** (`#888682`): A short label in the home's dark feature panel (`text-subtle`).
+- **On Inverse Muted** (`#a09e9a`): Hero sub-copy, descriptions on dark, footer links and footer pills.
 
-### Lines & Dark Surfaces
-- **Hairline** (`#dfdeda`): The primary `1px` border for cards, dropdowns, and section dividers — the main separation device in a shadow-free system.
-- **Dashed Hairline** (`#d2d1cd`): A `1px` dashed border for placeholder / drop-zone style blocks.
-- **Footer Charcoal** (`#1c1a18`): The neutral-800 (`bg-n-800`) dark footer background.
-- **Dark Border** (`#2a2926`): The hairline border on dark surfaces (footer legal pills).
+### Links
+- **Link** (`#dd4300`): Inline arrow links on white.
+- **Link on Dark** (`#ff793e`): The inline link in the Inference Framework page's dark section (`text-accent-on-dark`).
+
+### Lines
+- **Hairline** (`#dfdeda`): The 1px border of feature cards and the bottom rule of news rows.
+- **Outline** (`#d2d1cd`): The 1px border of the ghost action on white.
+- **Inverse Border** (`#2a2926`): The 1px border of the footer pills.
+
+### Rendered, but not tokens
+- The ghost action on dark draws a translucent white border, `rgba(255, 255, 255, 0.25)`; on hover it becomes `rgba(255, 255, 255, 0.4)` over a `rgba(255, 255, 255, 0.06)` fill (probe).
+- Text in the home's dark feature panel uses translucent white, `rgba(255, 255, 255, 0.8)` and `rgba(255, 255, 255, 0.85)`.
+- The architecture diagram on the Inference Framework page labels three layers in 11px JetBrains Mono: `#6ee7b7`, `#fda4af` and `#c4b5fd`. They colour a diagram, not an interface role.
+
+### Brand assets, not tokens
+- The logo (`/assets/moreh-logo.svg`) and favicon were not measured, and no logo colour is a token here.
 
 ## 3. Typography Rules
 
 ### Font Family
-- **All text**: `Inter` (with the system sans fallback stack). There is one typeface — Inter carries display, body, nav, and UI. No serif, no monospace display, no second family.
-- **Weights in use**: 600 (SemiBold) for all display/headings, 500 (Medium) for buttons and inline links, 400 (Regular) for body and nav. No light (300) and no heavy (700+) weights appear.
+- **Live surface use**: `Inter`, served by Next.js as the self-hosted face `__Inter_f367f3` (seven woff2 files under `moreh.io/_next/static/media/`), 314 observed uses across body, headings, actions, cards and lists. `JetBrains Mono`, served the same way as `__JetBrains_Mono_3c557b` (six woff2 files), 32 observed uses on eyebrows, footer pills and diagram labels.
+- **Official distributed font assets**: both families are open-source typefaces whose own repositories carry the SIL Open Font License 1.1 (Inter by Rasmus Andersson; JetBrains Mono by JetBrains). Moreh serves its own copies; it does not use a font CDN.
+- **Declared only (no visible use)**: `__Inter_Fallback_f367f3` and `__JetBrains_Mono_Fallback_3c557b`, the metric-matched fallbacks Next.js generates, with 0 observed uses. The declared stack continues `Inter, Arial, Helvetica, sans-serif`.
+- **Unresolved**: Hangul. The Korean edition uses the same stack, and no Korean face is declared or loaded, so Korean text is drawn by the viewer's system font. The collector reads family names, not glyphs, so the face that draws it was not measured, and no Korean family is a token.
 
 ### Hierarchy
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Hero | Inter | 94px (fluid) | 600 | 1.00 | -3.74px | Hero headline, cream on dark |
-| Display | Inter | 72px | 600 | 1.05 | -2.52px | Page title (Blog) |
-| Section Heading | Inter | 40px | 600 | 1.12 | -1px | Section titles (H2) |
-| Sub-section | Inter | 18px | 600 | 1.30 | -0.18px | Card / feature heads (H3) |
-| Body | Inter | 16px | 400 | 1.50 | normal | Standard reading text |
-| Nav Link | Inter | 14px | 400 | 1.50 | normal | Top nav items |
-| Button | Inter | 14px | 500 | 1.50 | normal | CTA button labels |
-| Small / Link | Inter | 13px | 500 | 1.55 | normal | Inline accent links, dropdown items |
-| Micro | Inter | 11px | 400 | 1.50 | 1.32px | Footer legal pill, wide-tracked |
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Observed on |
+|------|------|------|--------|-------------|----------------|-------------|
+| Display Hero | Inter | 93.6px | 600 | 93.6px (1.0) | -3.744px | Home hero, English and Korean |
+| Display | Inter | 72px | 600 | 74.88px (1.04) | -2.52px | MoAI Inference Framework hero |
+| Section | Inter | 40px | 600 | 44.8px (1.12) | -1px | Section titles |
+| Lead | Inter | 24px | 500 | 32px (1.33) | normal | Subtitle under the product hero |
+| Card Title | Inter | 18px | 600 | 23.4px (1.3) | -0.18px | Feature cards; 25.2px line on news rows |
+| Body Large | Inter | 17px | 400 | 27.2px (1.6) | normal | Hero sub-copy |
+| Body | Inter | 16px | 400 | 24px (1.5) | normal | Page body |
+| Section Description | Inter | 16px | 400 | 26.4px (1.65) | normal | Under section titles |
+| Card Description | Inter | 14px | 400 | 21.7px (1.55) | normal | Feature cards |
+| Nav | Inter | 14px | 400 | 21px (1.5) | normal | Header menu |
+| Button | Inter | 14px | 500 | 21px (1.5) | normal | Primary and ghost actions |
+| Small | Inter | 13px | 400 | 20.15px (1.55) | normal | News summaries, footer links; weight 500 on inline links |
+| Caption | Inter | 12px | 400 | 16.8px (1.4) | normal | Footer copyright |
+| Eyebrow | JetBrains Mono | 11px | 500 | 17.6px (1.6) | 1.32px | Uppercase eyebrows |
+| Mono Label | JetBrains Mono | 11px | 400 | 16.5px (1.5) | 1.32px | Footer pills |
 
 ### Principles
-- **One typeface, weight does the work**: Inter at 600 for everything that headlines, 400/500 for everything that informs. Hierarchy comes from size and weight, never from a font swap.
-- **Tracking tightens with size**: display compresses hard (`-3.74px` at 94px, `-2.52px` at 72px, `-1px` at 40px); body stays at normal tracking. The only positive tracking is the wide-set `1.32px` on the tiny footer legal pills.
-- **No light weight**: unlike the whisper-weight headline trend, Moreh keeps display at a solid SemiBold 600 — engineered and legible, not ethereal.
-- **Dense, technical body**: body sits at 16px / 1.5 in warm ink for long-form technical reading (the blog is research-report dense).
+- **Weight marks the role**: 600 for every heading, 500 for actions and inline links, 400 for reading.
+- **Tracking tightens with size**: `-3.744px` at 93.6px, `-2.52px` at 72px, `-1px` at 40px, `-0.18px` at 18px; body text stays at normal tracking.
+- **The mono voice is small and wide**: JetBrains Mono appears only at 11px, uppercase, with `1.32px` tracking (0.55px and 0.275px on the diagram labels).
 
 ## 4. Component Stylings
 
 ### Buttons
 
-**Request Demo (Primary)**
+**Primary action**
 - Background: `#ff5700`
 - Text: `#ffffff`
+- Border: 1px solid transparent
 - Radius: 6px
 - Padding: 0px 18px
 - Height: 40px
-- Font: 14px / 500 Inter
-- Hover: `#ff793e` background
-- Use: The single primary CTA — hero and nav "Request Demo"
+- Font: 14px / 500 / 21px Inter
+- Hover: background `#f34600`, arrow shifts 2px right (settled probe frame after a 120ms transition)
+- Pressed: background `#f34600` (probe)
+- Use: Request Demo on moreh.io and the MoAI Inference Framework page, and the same action on moreh.io/ko/
 
-**View Benchmarks (Ghost on Dark)**
+**Ghost action on dark**
 - Background: transparent
 - Text: `#f8f7f4`
+- Border: 1px solid rgba(255, 255, 255, 0.25)
 - Radius: 6px
 - Padding: 0px 18px
 - Height: 40px
-- Border: 1px solid rgba(255,255,255,0.25)
-- Font: 14px / 500 Inter
-- Use: Secondary CTA on the dark hero band
+- Font: 14px / 500 / 21px Inter
+- Hover: fill rgba(255, 255, 255, 0.06), border rgba(255, 255, 255, 0.4) (probe)
+- Pressed: the same values as hover (probe)
+- Use: View Benchmarks beside the primary action on the home hero band
 
-**Inline Accent Link**
-- Text: `#dd4300`
-- Font: 13px / 500 Inter
-- Use: Arrow text links ("Learn more →", "AMD GPU →", "View all →")
-
-### Inputs & Forms
-
-**Search / Text Field**
-- Background: `#ffffff`
-- Border: 1px solid `#dfdeda`
-- Radius: 6px
+**Ghost action on white**
+- Background: transparent
 - Text: `#050403`
-- Placeholder: `#a09e9a`
-- Use: Docs/blog search and contact fields (hairline outline, no shadow)
+- Border: 1px solid `#d2d1cd`
+- Radius: 6px
+- Padding: 0px 18px
+- Height: 40px
+- Font: 14px / 500 / 21px Inter
+- States: rest only; the bundle's hover and pressed frames were mid-transition, so no state is declared
+- Use: the secondary action beside the primary on the MoAI Inference Framework hero
+
+**Inline link**
+- Text: `#dd4300`
+- Font: 13px / 500 / 20.15px Inter (a 14px / 500 variant also appears)
+- States: rest only
+- Use: arrow links on white, four on each home
+
+**Inline link on dark**
+- Text: `#ff793e`
+- Font: 14px / 500 / 21px Inter
+- Use: the inline link in the dark section of the Inference Framework page
+
+### Navigation
+
+**Header menu**
+- Background: transparent
+- Text: `#050403`
+- Padding: 8px 0px
+- Height: 37px
+- Font: 14px / 400 / 21px Inter
+- States: rest only; the bundle frames drift by one colour unit, which is not a design value
+- Use: Products, Solutions, Performance, Resources, Careers, Company
+
+**Language switcher**
+- Text: `#65635f`
+- Height: 36px
+- Font: 13px / 400 / 19.5px Inter
+- Use: EN on moreh.io, KO on moreh.io/ko/
 
 ### Cards & Containers
 
-**Accent Callout**
-- Background: `#ff5700`
-- Text: `#ffffff`
-- Radius: 6px
-- Padding: 20px 24px
-- Use: Orange highlight callout block in comparison/benchmark rows
-
-**Inverse Callout**
-- Background: `#050403`
-- Text: `#f8f7f4`
-- Radius: 6px
-- Padding: 20px 24px
-- Use: Dark inverse callout block
-
-**Dashed Placeholder Card**
+**Feature card**
 - Background: `#ffffff`
-- Border: 1px dashed `#d2d1cd`
+- Border: 1px solid `#dfdeda`
 - Radius: 6px
-- Padding: 20px 16px
-- Use: Placeholder / empty comparison cell
+- Padding: 28px
+- Width: 348px
+- States: rest; linked cards on the Inference Framework page start a border and shadow transition on hover, but no settled frame was captured, so the hover is unmeasured
+- Use: feature cards, three to a row, on all three pages; 18px / 600 heading in `#050403`, 14px description in `#65635f`
+
+**News row**
+- Border: bottom 1px solid `#dfdeda`
+- Padding: 24px 0px
+- Width: 1076px
+- Use: newsroom and blog rows on the home, with an 18px / 600 title and a 13px summary in `#65635f`
 
 ### Badges
 
-**Footer Legal Pill**
+**Footer pill**
 - Background: transparent
 - Text: `#a09e9a`
 - Border: 1px solid `#2a2926`
 - Radius: 6px
 - Padding: 6px 12px
-- Font: 11px / 400 Inter
-- Use: Legal links on the dark footer ("Privacy Policy", "Terms of Use"), wide 1.32px tracking
-
-### Dropdown / Overlay
-
-**Nav Mega-Dropdown**
-- Background: `#ffffff`
-- Border: 1px solid `#dfdeda`
-- Radius: 6px
-- Padding: 12px 0px
-- Use: Products / Solutions / Resources / Company nav panels (near-flat, faint shadow only)
-
-### Navigation
-- Background: `#ffffff`
-- Text: `#050403`
-- Font: 14px / 400 Inter
-- Active: burnt-orange `#dd4300` text on a `#f8f7f4` tinted item
-- Use: Top horizontal nav (Products, Solutions, Performance, Resources, Careers, Company)
+- Height: 31px
+- Font: 11px / 400 / 16.5px JetBrains Mono, uppercase, letter-spacing 1.32px
+- Hover: text `#f8f7f4` (settled probe frame after a 150ms transition)
+- Use: Privacy Policy and Terms of Use on the `#1c1a18` footer
 
 ---
 
-**Verified:** 2026-06-26 (omd:add-reference CREATE — Tier 1 live inspect)
-**Tier 1 sources:** https://moreh.io, https://moreh.io/blog, https://github.com/moreh-dev
-**Tier 2 sources:** getdesign.md/moreh — not listed (404 "No designs found"); styles.refero.design — no Moreh-specific entry
+**Verified:** 2026-09-30 (deterministic collector capture of three public pages of moreh.io, logged out, plus a keyboard-state probe of the home and first-party company pages)
+**Tier 1 sources:** https://moreh.io/ ; https://moreh.io/ko/ ; https://moreh.io/inference-framework/ ; https://moreh.io/about/ ; https://moreh.io/ko/about/ ; https://moreh.io/ko/news/
+**Tier 2 sources:** getdesign.md/moreh (HTTP 200, "moreh — 0 DESIGN.md files") and styles.refero.design/?q=moreh (HTTP 200, the name appears only as the echoed query), requested 2026-09-30; no Tier 2 value used
 **Conflicts unresolved:** none
 
 ## 5. Layout Principles
 
 ### Spacing System
-- Base unit: ~4px (6/8/12/16/20/24 ladder)
-- Scale: 6px, 8px, 12px, 16px, 18px, 20px, 24px, 96px
-- Notable: section vertical rhythm is generous (`96px` top/bottom padding on sunken bands); button horizontal padding is a tight `18px` for a compact, dense CTA
+- Actions: 0px 18px padding at 40px height
+- Feature cards: 28px padding
+- News rows: 24px vertical padding
+- Header menu: 8px vertical padding
+- Footer pills: 6px 12px
+- The most frequent spacing values in the capture are 8, 6, 12, 28, 18, 4, 32 and 24px
 
 ### Grid & Container
-- Centered max-width content column with a dark `hero-dark` band (`#050403`) anchoring the top
-- Feature grids: 2-3 column cards under "From Kernels to Clusters" and "Why Moreh"
-- Full-width band alternation: dark hero → white → cream (`#f8f7f4`) sunken sections → charcoal footer
-- Blog/news lists are single-column, hairline-divided rows (research-report density)
+- At the 1440px viewport the news list and footer span 1076px; feature cards are 348px wide, three to a row.
+- The home runs: a `#050403` hero band with a 93.6px headline and two actions; white sections, each a 40px title over a 16px description; a panel set in white and `#f8f7f4` type (its fill was not captured); feature cards; a list of news rows; the `#1c1a18` footer.
+- The MoAI Inference Framework page opens on white with a 72px title, a 24px lead and a primary plus ghost action, then a dark section (its fill was not captured) with the architecture diagram, then grids of feature cards.
 
 ### Whitespace Philosophy
-- **Editorial calm over density**: despite being deeply technical, the marketing surface breathes — generous 96px section rhythm.
-- **Band cadence**: meaning is signaled by background band (dark / white / cream) rather than by boxes and shadows.
-- **Hairline economy**: a single `1px #dfdeda` line replaces what other systems do with elevation.
+- **Document calm**: one title, one description and one grid per section; the pages read top to bottom like a technical brief.
+- **Bands for weight**: the dark hero and footer frame white content, so emphasis comes from placement rather than from boxes.
 
 ### Border Radius Scale
-- Small (6px): every button, card, dropdown, pill — the single workhorse radius (`rounded-sm`)
-- Full (9999px): reserved only for circular avatars/dots, never for buttons
+- 6px: actions, cards and footer pills (82 of 346 radius readings)
+- 0px: everything else
 
 ## 6. Depth & Elevation
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, inline text, most cards |
-| Band (Level 1) | Background shift — white ↔ cream `#f8f7f4` ↔ dark `#050403`/`#1c1a18` | Section separation without elevation |
-| Hairline (Level 2) | `1px solid #dfdeda` (or `#d2d1cd` dashed) border | Card outlines, dropdown edges, dividers |
-| Overlay (Level 3) | White dropdown with `1px #dfdeda` + a very faint shadow | Nav mega-dropdown panels only |
+| Flat | No shadow | Every captured element at rest |
+| Hairline | 1px solid `#dfdeda` | Feature cards, news rows |
+| Band | `#050403` hero, `#1c1a18` footer | Opening and closing bands of the home |
 
-**Shadow Philosophy**: Moreh is a near-shadowless system. Live inspection found `box-shadow: none` across the hero, nav, section headings, and feature cards; the only elevation is a barely-there shadow on the nav dropdown. Depth is communicated through flat band contrast (dark `#050403` / white / cream `#f8f7f4` / charcoal `#1c1a18`) and thin `#dfdeda` hairlines. This is a deliberate engineering-grade flatness — it keeps an infrastructure product feeling precise and fast rather than decorative. When emphasis is needed, the system reaches for the orange (`#ff5700`) or an inverse dark block, never a drop shadow.
+**Shadow Philosophy**: Moreh's pages are flat. Every captured element computes `box-shadow: none` at rest; the linked feature cards on the Inference Framework page begin a shadow transition on hover, but no settled value was recorded, so no shadow is specified. Separation comes from hairlines and from the dark bands.
 
 ## 7. Do's and Don'ts
 
 ### Do
-- Reserve orange (`#ff5700`) for the single primary CTA — keep it the only chromatic color
-- Use warm near-black ink (`#050403`) for text and dark bands instead of pure black
-- Set all display in Inter SemiBold (600) with tight negative tracking (`-3.74px` at hero)
-- Separate sections with flat band contrast (white / cream `#f8f7f4` / dark) and `#dfdeda` hairlines, not shadows
-- Keep a uniform `6px` radius on every button, card, dropdown, and pill
-- Use the AA-safe burnt-orange (`#dd4300`) for inline text links on light surfaces
-- Open the page on the dark `hero-dark` (`#050403`) band with cream (`#f8f7f4`) headline type
-- Step secondary text down the warm-grey ladder (`#65635f` → `#a09e9a`)
+- Keep `#ff5700` for the one primary action in a view, deepening to `#f34600` on hover
+- Use warm ink `#050403` for text and the hero band, and `#1c1a18` for the footer
+- Set headings in Inter 600 with negative tracking (`-1px` at 40px)
+- Give every action, card and pill the same 6px radius
+- Separate content with `1px #dfdeda` hairlines on white cards
+- Use JetBrains Mono at 11px, uppercase, `1.32px` tracking for eyebrows and small labels
+- Use `#dd4300` for inline links on white and `#ff793e` on dark
 
 ### Don't
-- Don't spread orange across many elements — it dilutes the single-action signal
-- Don't use drop shadows for elevation — Moreh is a flat, hairline-separated system
-- Don't use pure black (`#000000`) for body text — reserve warm ink `#050403`
-- Don't use sharp squares or full pills on interactive elements — everything is `6px`
-- Don't introduce a second typeface or a light weight — Inter 600/500/400 only
-- Don't put the bright `#ff5700` on small inline links — use `#dd4300` for legibility
-- Don't use positive letter-spacing on display — Moreh tracks tight (positive tracking only on the tiny footer pills)
-- Don't add a second accent hue — orange is the only saturated color
+- Don't spread the orange to cards, backgrounds or icons
+- Don't add rest shadows to cards or actions
+- Don't swap the warm neutrals for pure black or cool greys
+- Don't mix corner radii; 6px is the only rounding
+- Don't set body copy in the mono family
+- Don't present Inter as the Korean face; no Korean face is loaded
 
 ## 8. Responsive Behavior
 
 ### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column, hero headline compresses sharply, nav collapses to a menu |
-| Tablet | 640-1024px | 2-up feature cards, moderate padding |
-| Desktop | 1024-1440px | Full layout, centered content, 3-column feature grids |
+Only the 1440px desktop viewport was captured. The news-row link carries `md:grid-cols-[120px_1fr_auto]`, a sign of a medium breakpoint, but no breakpoint was measured.
 
 ### Touch Targets
-- Primary CTA at 40px height with 18px horizontal padding — compact but tappable
-- Nav items at 36-37px with comfortable hit areas; dropdown rows at 75px
-- Footer legal pills at ~31px height with 12px padding
+- Actions: 40px tall
+- Header menu: 37px; language switcher: 36px
+- Footer pills: 31px
 
 ### Collapsing Strategy
-- Hero: the ~94px fluid headline scales down on mobile, weight 600 maintained
-- Feature grids: 3-column → 2-column → stacked single column
-- Band alternation (dark / white / cream) maintained full-width across breakpoints
-- Nav mega-dropdowns collapse into an accordion menu
+- Not measured.
 
 ### Image Behavior
-- Benchmark charts and diagrams sit on cream (`#f8f7f4`) or white cards with hairline borders, no shadow at any size
-- Cards maintain the `6px` radius across breakpoints
+- Not measured.
 
 ## 9. Agent Prompt Guide
 
 ### Quick Color Reference
-- Primary CTA: Moreh Orange (`#ff5700`)
-- CTA hover / soft accent: Orange Hover (`#ff793e`)
-- Inline link: Burnt-Orange (`#dd4300`)
-- Ink / heading text: Warm Near-Black (`#050403`)
-- On-dark text / cream surface: Cream (`#f8f7f4`)
-- Canvas: Pure White (`#ffffff`)
-- Muted text: Warm-Grey (`#65635f`)
-- Faint / footer text: Faint Warm-Grey (`#a09e9a`)
-- Hairline: `#dfdeda` (dashed `#d2d1cd`)
-- Dark footer: `#1c1a18` (border `#2a2926`)
+- Primary action: `#ff5700` with `#ffffff` label; hover `#f34600`
+- Text and hero band: `#050403`; footer `#1c1a18`
+- On dark: `#f8f7f4` headings, `#a09e9a` secondary text
+- Muted text `#65635f`; subtle `#888682`
+- Links: `#dd4300` on white, `#ff793e` on dark
+- Hairline `#dfdeda`; ghost border `#d2d1cd`; footer pill border `#2a2926`
 
 ### Example Component Prompts
-- "Create a dark hero on `#050403` background. Headline at ~94px Inter weight 600, line-height 1.0, letter-spacing -3.74px, color `#f8f7f4`. Two CTAs: a solid orange button (`#ff5700` bg, white text, 6px radius, 0px 18px padding, 40px height, 14px/500) and a ghost button (transparent, 1px solid rgba(255,255,255,0.25), `#f8f7f4` text, 6px radius)."
-- "Design a feature card: white `#ffffff` background, 1px solid `#dfdeda` border, 6px radius, no shadow. Title 18px Inter weight 600, letter-spacing -0.18px, `#050403`. Body 16px weight 400, `#65635f`. Inline link in `#dd4300`, 13px/500, with a → arrow."
-- "Build a sunken section: `#f8f7f4` background, 96px vertical padding, 1px top border `#dfdeda`. Section title 40px Inter weight 600, letter-spacing -1px, `#050403`."
-- "Create a dark footer: `#1c1a18` background, faint `#a09e9a` links, legal pills with 1px solid `#2a2926` border, 6px radius, 6px 12px padding, 11px Inter with 1.32px tracking."
+- "Create a dark hero: `#050403` background, 93.6px Inter 600 headline with `-3.744px` tracking and a 1.0 line height in `#f8f7f4`, 17px `#a09e9a` sub-copy, then a `#ff5700` action (white 14px / 500 label, 6px radius, 0px 18px padding, 40px tall) beside a transparent action with a 1px rgba(255, 255, 255, 0.25) border and `#f8f7f4` label."
+- "Build a feature card: `#ffffff` fill, 1px solid `#dfdeda` border, 6px radius, 28px padding, no shadow; 18px Inter 600 title in `#050403` with `-0.18px` tracking; 14px description in `#65635f`; a 13px / 500 `#dd4300` arrow link."
+- "Make a footer: `#1c1a18` background, 13px `#a09e9a` links, and uppercase JetBrains Mono 11px pills with a 1px `#2a2926` border, 6px radius, 6px 12px padding and `1.32px` tracking."
 
 ### Iteration Guide
-1. Inter at weight 600 for every headline; 400/500 for everything else — one typeface only
-2. Orange (`#ff5700`) is the single action color — don't spread it; `#dd4300` for inline links
-3. No shadows — separate with band contrast and `#dfdeda` hairlines
-4. Uniform `6px` radius everywhere; full-round only for avatars
-5. Text is warm ink `#050403`, never pure black for body
-6. Tight negative tracking on display, normal on body
-7. Open dark (`#050403`), resolve into white + cream (`#f8f7f4`) sections, close on charcoal (`#1c1a18`)
+1. One orange, `#ff5700`, for the primary action only
+2. Warm neutrals: `#050403`, `#65635f`, `#888682`, `#dfdeda`
+3. Inter 600 headings with negative tracking; 400 and 500 below
+4. One 6px radius; no rest shadows
+5. JetBrains Mono only for small uppercase labels
+6. Dark bands open and close the page
 
 ---
 
 ## 10. Voice & Tone
 
-Moreh's voice is **precise, technical, and quietly ambitious** — the register of systems engineers who would rather show a benchmark than make a claim. The hero line "Optimal LLM Inference on Every Accelerator" sets the tone: a concrete capability promise, no hype, no exclamation. Copy assumes a sophisticated reader (ML infra engineers, platform leads) and speaks peer-to-peer — section titles like "From Kernels to Clusters" telegraph the full stack in five words, and the blog is dense, citation-style "Technical Report" writing, not marketing fluff.
+Moreh's voice is precise, technical and quietly ambitious — the register of systems engineers who would rather show a benchmark than make a claim. The hero line states a capability in plain terms, and the copy assumes a reader who runs infrastructure.
 
 | Context | Tone |
 |---|---|
-| Hero headlines | Declarative capability statements. "Optimal LLM Inference on Every Accelerator." No superlatives. |
-| Section titles | Compressed, technical. "From Kernels to Clusters", "Why Moreh", "Ecosystem & Open Source". |
-| CTAs | Direct, low-pressure imperatives. "Request Demo", "View Benchmarks", "Learn more". |
-| Product names | Systematic, prefixed. "MoAI Inference Framework", "MoAI Performance Gateway", "MoAI Fabric". |
-| Blog / technical reports | Dense, evidence-first, engineer-to-engineer. Performance numbers precede prose. |
+| Hero headlines | Declarative capability statements. "Optimal LLM Inference on Every Accelerator." |
+| Section titles | Compressed and technical. "From Kernels to Clusters." |
+| Actions | Direct, low-pressure imperatives. "Request Demo", "View Benchmarks", "Learn more". |
+| Product names | Systematic and prefixed. "MoAI Inference Framework", "MoAI Performance Gateway", "MoAI Fabric". |
+| Company pages | Problem first, then the answer. "Founded in 2020, Moreh builds the software that removes these barriers." |
 
-**Voice samples (verbatim from live surfaces):**
-- "Optimal LLM Inference on Every Accelerator" — hero headline. *(verified live 2026-06-26)*
-- "Inference Software for Every Chip" — page title meta. *(verified live 2026-06-26)*
-- "From Kernels to Clusters" — section heading. *(verified live 2026-06-26)*
-- "Request Demo" / "View Benchmarks" — hero CTA labels. *(verified live 2026-06-26)*
+**Voice samples (verbatim, opened 2026-09-30):**
+- "Optimal LLM Inference on Every Accelerator" — moreh.io hero.
+- "Moreh — Inference Software for Every Chip" — moreh.io page title; "모든 칩을 위한 추론 소프트웨어" on moreh.io/ko/.
+- "Infrastructure software for hyperscale AI" — About; "초대규모 AI를 위한 인프라 소프트웨어" on the Korean About page.
+- "From Kernels to Clusters" — home section title.
 
-**Forbidden register**: hype superlatives ("revolutionary", "game-changing"), exclamation-heavy marketing, vague AI buzzwords without a concrete mechanism, claims unbacked by a benchmark.
+**Forbidden register**: hype superlatives ("revolutionary", "game-changing"), exclamation-heavy marketing, vague AI buzzwords without a mechanism, and claims no benchmark backs.
 
 ## 11. Brand Narrative
 
-Moreh (모레) is a Korean AI-infrastructure software company founded in **September 2020** by **Gangwon Jo (조강원, CEO)** and **Jaejin Lee (이재진)** — a lineage rooted in Seoul National University's high-performance and parallel-computing research. The founding premise is a direct response to a structural problem in the AI industry: training and inference are effectively locked to a single GPU vendor's software stack (CUDA), which concentrates cost and supply risk. Moreh's answer is a software layer — branded **MoAI** — that turns *heterogeneous* accelerators (AMD Instinct GPUs, Tenstorrent, and more) into unified, high-performance clusters, so an organization can "run frontier models on the hardware they already have."
+Moreh's About page frames the company around one barrier: the software needed to run AI at scale exists at only a handful of companies, and most of it is tied to a single GPU vendor. Moreh, founded in September 2020, sets out to remove that barrier by making heterogeneous accelerators behave as one cluster. Its timeline shows the thesis being tested in public — a public AI cloud on AMD GPUs with KT Cloud in December 2021; large-scale GPU infrastructure for LLM research delivered to KT Cloud in January 2023; a $22M Series B from AMD, KT and others in August 2023; a Vietnam entity in November 2023; MoMo-72B ranked first on Hugging Face's Open LLM Leaderboard in January 2024; a strategic partnership with Tenstorrent in November 2024; the subsidiary Motif Technologies for model development and cloud service in February 2025; and selection as one of four consortia in the Korean government's sovereign AI foundation model project in February 2026. The same timeline records that Moreh raised its Series A and incorporated a US headquarters entity in February 2021.
 
-That thesis is visible across the product line: the **MoAI Inference Framework** (end-to-end inference), **MoAI Performance Gateway** (intelligent workload routing), **MoAI Fabric** (software-defined, cross-vendor interconnect), and drop-in **Moreh vLLM** replacements for AMD and Tenstorrent. The company's positioning — "Infrastructure software for hyperscale AI" / "Optimal LLM Inference on Every Accelerator" — frames Moreh as the vendor-neutral layer beneath the model, solving the hard, unglamorous problems: parallelization, disaggregation, cluster scheduling, and hardware-level optimization.
+The product line carries the thesis: the MoAI Inference Framework (an end-to-end inference stack for heterogeneous accelerators), the MoAI Performance Gateway (workload distribution across them), MoAI Fabric (a software-defined, cross-vendor GPU memory fabric for KV-cache transfer) and drop-in Moreh vLLM builds for AMD and Tenstorrent. The newsroom collects the coverage, from the Korea Economic Daily's report on the leaderboard result to the AMD- and KT-backed Series B.
 
-What Moreh refuses, visible in its design: the loud, gradient-heavy aesthetic of consumer AI marketing, and the institutional blandness of legacy enterprise infra. What it embraces: a flat, engineering-grade interface; a single confident orange used sparingly as a signal; dark-to-light editorial bands; and benchmark-first, evidence-led communication. The restraint is the message — this is a company that would rather be trusted by infrastructure engineers than admired by a broad audience.
+The design stays out of the way of that argument. A warm, nearly black and white palette, one orange for the next step, flat cards and a mono voice for labels make the site read like documentation rather than a campaign — an editorial reading of the captured pages, not a Moreh statement.
 
 ## 12. Principles
 
-1. **Vendor neutrality is the product.** Moreh exists to break single-vendor lock-in. *UI implication:* never visually privilege one hardware vendor; present AMD, Tenstorrent, and others as peers on equal cards.
-2. **Evidence over claims.** The product is sold on benchmarks, not adjectives. *UI implication:* lead with numbers and charts; the "View Benchmarks" CTA sits beside "Request Demo".
-3. **One signal color.** Orange (`#ff5700`) means "act." *UI implication:* reserve the saturated orange for the primary CTA so the next step is never ambiguous; everything else stays neutral.
-4. **Flat and engineered.** Precision beats decoration. *UI implication:* no shadows; separate with band contrast and hairlines; one `6px` radius everywhere.
-5. **Density where it informs, calm where it persuades.** *UI implication:* research-dense blog rows and benchmark tables; airy, 96px-spaced marketing sections with one headline and one action.
+1. **Vendor neutrality is the product.** *UI implication:* present AMD, NVIDIA and Tenstorrent as peers; never visually privilege one vendor.
+2. **Evidence over claims.** *UI implication:* lead with numbers; the benchmark action sits beside the demo request.
+3. **One signal colour.** *UI implication:* `#ff5700` marks the next step and nothing else.
+4. **Flat and engineered.** *UI implication:* hairlines and bands instead of shadows; one 6px radius.
+5. **Density where it informs.** *UI implication:* dense news rows and technical reports; one title and one grid per marketing section.
 
 ## 13. Personas
 
-*Personas below are fictional archetypes informed by publicly observable Moreh user segments (ML-infrastructure engineers, platform leads at GPU-cost-sensitive orgs, sovereign-AI / non-NVIDIA adopters), not individual people.*
+*Personas below are fictional archetypes informed by publicly observable Moreh user segments (ML-infrastructure engineers, platform leads at GPU-cost-sensitive organisations, non-NVIDIA adopters), not individual people.*
 
-**정현우, 34, 서울.** A platform engineer at a Korean cloud provider standing up an AMD Instinct cluster. Distrusts marketing decks; reads the "Technical Report" blog posts line by line and re-runs the published benchmarks before trusting a number. Chose Moreh because it let him serve vLLM workloads on non-NVIDIA hardware without rewriting the stack.
+**정현우, 34, 서울.** A platform engineer at a Korean cloud provider standing up an AMD Instinct cluster. Distrusts marketing decks; reads the technical reports line by line and re-runs published benchmarks before trusting a number.
 
-**Aarti Desai, 29, Bangalore.** An MLOps lead at a startup squeezed by GPU supply and cost. Cares about tokens-per-dollar more than peak FLOPs. Uses the "Inference Cost Optimization" path; appreciates that Moreh frames the win in concrete economic terms rather than abstract "acceleration."
+**Aarti Desai, 29, Bangalore.** An MLOps lead at a startup squeezed by GPU supply and cost. Cares about tokens per dollar more than peak FLOPs, and starts from the Inference Cost Optimization page.
 
-**Daniel Kim, 41, Santa Clara.** An infra architect at an enterprise evaluating a multi-vendor accelerator strategy to de-risk supply. Values the heterogeneous-cluster story and the software-defined fabric. Trusts the brand's restraint — the absence of hype reads, to him, as engineering seriousness.
+**Daniel Kim, 41, Santa Clara.** An infrastructure architect evaluating a multi-vendor accelerator strategy to de-risk supply. Values the heterogeneous-cluster story and reads the site's restraint as engineering seriousness.
 
 ## 14. States
 
-| State | Treatment |
+Only these states were observed; nothing else is specified here.
+
+| State | Observation |
 |---|---|
-| **Empty (no benchmark results)** | White canvas. Single Ink (`#050403`) line explaining no results yet, with one orange (`#ff5700`) CTA to run/request a benchmark. Dashed `#d2d1cd` placeholder card, no clutter. |
-| **Empty (blog filter, none)** | Muted Warm-Grey (`#65635f`) single line: nothing matches this filter, with a path back. Calm and honest. |
-| **Loading (results fetch)** | Skeleton rows on `#f8f7f4` cream surface at final dimensions, 6px radius. Flat pulse — no shadow shimmer, consistent with the shadowless system. |
-| **Loading (in-place table refresh)** | Subtle orange (`#ff5700`) progress affordance; previous values stay visible. |
-| **Error (request failed)** | Inline message in Ink (`#050403`) with a plain explanation and a retry. No generic "Something went wrong" alone — states the next step. |
-| **Error (form validation)** | Field-level message below the input; describes what is valid, not just "Required". |
-| **Success (demo requested)** | Brief inline confirmation in a calm tone; next-step detail linked immediately below. No celebratory emoji. |
-| **Skeleton** | `#f8f7f4` blocks at final dimensions, 6px radius, flat pulse. |
-| **Disabled** | Faint Warm-Grey (`#a09e9a`) text on reduced-opacity surface; orange actions fade rather than turn grey to preserve the brand read. |
+| **Hover / pressed (primary action)** | Fill `#ff5700` becomes `#f34600` and the arrow moves 2px right (probe, settled after 120ms). |
+| **Hover / pressed (ghost on dark)** | A rgba(255, 255, 255, 0.06) fill appears and the border rises from 0.25 to 0.4 alpha (probe). |
+| **Hover (footer pill)** | Text `#a09e9a` becomes `#f8f7f4` (probe, settled after 150ms). |
+
+Focus was not measured: the probe ran with focus skipped, and the collector's focus frames are not used. The collector's expansion pass recorded no interaction events, so other hover and pressed treatments are unmeasured rather than absent. Error, empty, loading, success and disabled states were not captured and are not described.
 
 ## 15. Motion & Easing
 
-**Durations**:
-
-| Token | Value | Use |
-|---|---|---|
-| `motion-fast` | 120ms | Hover, button press, focus, nav-dropdown reveal |
-| `motion-standard` | 200ms | Card / section reveal, dropdown panel, sheet |
-| `motion-slow` | 320ms | Page-level transitions, hero reveal |
-
-**Easings**:
-
-| Token | Curve | Use |
-|---|---|---|
-| `ease-enter` | `cubic-bezier(0.2, 0.6, 0.25, 1)` | Arriving — dropdowns, cards, sections |
-| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |
-| `ease-standard` | `cubic-bezier(0.25, 0.1, 0.25, 1)` | Two-way transitions |
-
-**Motion rules**: Motion is functional and quiet — consistent with the flat, engineered aesthetic. Nav mega-dropdowns fade/translate in at `motion-fast / ease-enter`; section content fades up from below at `motion-standard`. There is no bounce or spring — an infrastructure product signals steadiness, not playfulness. Under `prefers-reduced-motion: reduce`, all transitions collapse to instant; the product remains fully functional.
+Motion is measured only where the probe read it. The primary and ghost actions transition background, colour, border colour and transform over 120ms with `cubic-bezier(0.2, 0, 0, 1)`; the footer links and pills transition colour over 150ms with `cubic-bezier(0.4, 0, 0.2, 1)`. Page-level motion — scroll reveals, the diagram, carousels — was not measured and is not specified. Honour `prefers-reduced-motion` in any build.
 
 <!--
-OmD v0.1 Sources — Philosophy Layer (sections 10–15)
-
-Tier 1 live inspect (2026-06-26) via playwright getComputedStyle on https://moreh.io and https://moreh.io/blog:
-- Hero H1 "Optimal LLM Inference on Every Accelerator" — Inter 93.6px / weight 600 / -3.744px / line-height 93.6px / color #f8f7f4 on hero-dark #050403
-- Primary CTA "Request Demo" — bg #ff5700 / white text / 6px radius / 0px 18px padding / 40px height / 14px/500
-- Ghost CTA "View Benchmarks" — transparent / #f8f7f4 text / 6px radius / 1px rgba(255,255,255,0.25) border
-- Section H2 "From Kernels to Clusters" / "Why Moreh" — Inter 40px / 600 / -1px / #050403
-- Inline links "Learn more →" / "AMD GPU →" — #dd4300 / 13px / 500
-- Footer (bg-n-800) #1c1a18 with #a09e9a links and #2a2926 hairline pill borders
-- box-shadow: none across hero/nav/headings/cards (shadowless system confirmed)
-- Page title meta: "Moreh — Inference Software for Every Chip"
-
-Token-level claims (§1-9) are sourced from this live inspection (semantic Tailwind classes observed: bg-accent #ff5700, bg-o-400 #ff793e, bg-inverse/text-on-inverse #050403, bg-n-800 #1c1a18, section-sunken #f8f7f4, rounded-sm 6px).
-
-Voice samples (§10) are verbatim from live surfaces (hero H1, page title meta, section H2, CTA labels).
-
-Brand narrative (§11): Moreh (모레) founded September 2020; CEO Gangwon Jo (조강원), co-founder Jaejin Lee (이재진); MoAI product line and vendor-neutral / non-NVIDIA inference positioning are confirmed from moreh.io and moreh.io/about (WebFetch 2026-06-26). Specific founding/biographical details beyond the site are widely documented public knowledge, not directly quoted from a verified Moreh statement in this turn.
-
-Personas (§13) are fictional archetypes informed by publicly observable Moreh user segments (ML-infrastructure engineers, GPU-cost-sensitive platform teams, non-NVIDIA adopters). Names are illustrative; they do not refer to real people.
-
-Interpretive claims (e.g., "vendor neutrality is the product", "the restraint is the message") are editorial readings connecting Moreh's observed design to its positioning, not directly sourced Moreh statements.
+Sources — 2026-09-30 promotion to Verified v2
+- Tokens and §4: artifacts/reference-evidence/moreh.json (capturedAt 2026-09-30T07:52:29Z), deterministic collector, logged out: moreh.io, moreh.io/ko/, moreh.io/inference-framework/.
+- Band fills, hover and pressed values and transitions: docs/research/2026-09-29-growth/raw/moreh-states-home.json (keyboard-state probe of moreh.io, 2026-09-30T07:56Z, focus skipped).
+- §1, §10, §11: moreh.io/about/, moreh.io/ko/about/ and moreh.io/ko/news/, opened 2026-09-30; narrative context only, no token.
+- Personas are fictional archetypes. Interpretive readings are editorial.
 -->

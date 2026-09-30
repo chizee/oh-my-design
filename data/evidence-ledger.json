@@ -2,13 +2,13 @@
   "schema_version": 1,
   "purpose": "Freeze what each reference claims to have observed, and when, so that relabelling a source kind, deleting an expired source, or rewriting a capture date appears as a reviewable diff.",
   "generator": "web/scripts/build-evidence-ledger.mjs",
-  "references_with_verification_v2": 244,
-  "sources": 1412,
+  "references_with_verification_v2": 255,
+  "sources": 1487,
   "sources_by_kind": {
     "brand-asset": 78,
-    "license": 83,
-    "official-doc": 584,
-    "product-surface": 667
+    "license": 89,
+    "official-doc": 616,
+    "product-surface": 704
   },
   "references": {
     "104": {
@@ -152,6 +152,48 @@
           "kind": "product-surface",
           "captured": "2026-07-11",
           "host": "www.29cm.co.kr"
+        }
+      ]
+    },
+    "3o3": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "app-entry",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "app.3o3.co.kr"
+        },
+        {
+          "id": "brand-color-typeface",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "brand.3o3.co.kr"
+        },
+        {
+          "id": "brand-logo",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "brand.3o3.co.kr"
+        },
+        {
+          "id": "corporate-home",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "jobisnvillains.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.3o3.co.kr"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "blog.3o3.co.kr"
         }
       ]
     },
@@ -2237,6 +2279,54 @@
         }
       ]
     },
+    "elice": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "brand-page",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "elice.io"
+        },
+        {
+          "id": "license-digital-baeum",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "font.elice.io"
+        },
+        {
+          "id": "license-digital-coding",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "font.elice.io"
+        },
+        {
+          "id": "license-dx-neolli",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "font.elice.io"
+        },
+        {
+          "id": "newsroom-ipo",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "elice.io"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "elice.io"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "elice.io"
+        }
+      ]
+    },
     "epidemicsound": {
       "checked": "2026-09-26",
       "claims": 0,
@@ -2582,6 +2672,66 @@
           "kind": "product-surface",
           "captured": "2026-05-15",
           "host": "www.figma.com"
+        }
+      ]
+    },
+    "finda": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "finda-post",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.post.finda.co.kr"
+        },
+        {
+          "id": "finda-probe-about",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "finda.co.kr"
+        },
+        {
+          "id": "finda-probe-culture",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "finda.co.kr"
+        },
+        {
+          "id": "finda-probe-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "finda.co.kr"
+        },
+        {
+          "id": "pretendard-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "raw.githubusercontent.com"
+        },
+        {
+          "id": "suit-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "raw.githubusercontent.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "finda.co.kr"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "finda.co.kr"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "finda.co.kr"
         }
       ]
     },
@@ -3179,6 +3329,54 @@
         }
       ]
     },
+    "heydealer": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "heydealer-blog",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.heydealer.com"
+        },
+        {
+          "id": "prnd-careers",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.prnd.co.kr"
+        },
+        {
+          "id": "prnd-life",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.prnd.co.kr"
+        },
+        {
+          "id": "spoqa-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "raw.githubusercontent.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.heydealer.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.heydealer.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.heydealer.com"
+        }
+      ]
+    },
     "hm": {
       "checked": "2026-09-26",
       "claims": 0,
@@ -3458,6 +3656,54 @@
           "kind": "license",
           "captured": "2026-07-13",
           "host": "www.ibm.com"
+        }
+      ]
+    },
+    "iicombined": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "iicombined-about",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.iicombined.com"
+        },
+        {
+          "id": "iicombined-probe-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.gentlemonster.com"
+        },
+        {
+          "id": "nudake-legal-footer",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.nudake.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.gentlemonster.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.gentlemonster.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.gentlemonster.com"
+        },
+        {
+          "id": "tamburins-legal-footer",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.tamburins.com"
         }
       ]
     },
@@ -4805,6 +5051,48 @@
         }
       ]
     },
+    "liner": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "design-system-post",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "liner.com"
+        },
+        {
+          "id": "liner-blog",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "liner.com"
+        },
+        {
+          "id": "pretendard-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "raw.githubusercontent.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "liner.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "liner.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "liner.com"
+        }
+      ]
+    },
     "loglass": {
       "checked": "2026-09-23",
       "claims": 0,
@@ -5528,6 +5816,54 @@
           "kind": "official-doc",
           "captured": "2026-07-13",
           "host": "www.mongodb.design"
+        }
+      ]
+    },
+    "moreh": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "about",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "moreh.io"
+        },
+        {
+          "id": "about-ko",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "moreh.io"
+        },
+        {
+          "id": "moreh-probe-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "moreh.io"
+        },
+        {
+          "id": "newsroom-ko",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "moreh.io"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "moreh.io"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "moreh.io"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "moreh.io"
         }
       ]
     },
@@ -6608,6 +6944,54 @@
           "kind": "official-doc",
           "captured": "2026-09-26",
           "host": "payfit.com"
+        }
+      ]
+    },
+    "payhere": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "careers",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "careers.payhere.in"
+        },
+        {
+          "id": "company-info",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "payhere.in"
+        },
+        {
+          "id": "payhere-probe-terminal",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "payhere.in"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "payhere.in"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "payhere.in"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "payhere.in"
+        },
+        {
+          "id": "welcome-kit",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "tech.payhere.in"
         }
       ]
     },
@@ -8261,6 +8645,54 @@
         }
       ]
     },
+    "teamblind": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "pretendard-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "unpkg.com"
+        },
+        {
+          "id": "recruit",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "recruit.teamblind.com"
+        },
+        {
+          "id": "service-intro",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.teamblind.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.teamblind.com"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.teamblind.com"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "www.teamblind.com"
+        },
+        {
+          "id": "why-blind",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.teamblind.com"
+        }
+      ]
+    },
     "teamlab": {
       "checked": "2026-07-13",
       "claims": 0,
@@ -9353,6 +9785,48 @@
         }
       ]
     },
+    "weverse": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "hybe-business",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "hybecorp.com"
+        },
+        {
+          "id": "hybe-company",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "hybecorp.com"
+        },
+        {
+          "id": "pretendard-license",
+          "kind": "license",
+          "captured": "2026-09-30",
+          "host": "github.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "weverse.io"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "shop.weverse.io"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "shop.weverse.io"
+        }
+      ]
+    },
     "wise": {
       "checked": "2026-09-19",
       "claims": 0,
@@ -9884,6 +10358,48 @@
           "kind": "product-surface",
           "captured": "2026-09-22",
           "host": "zenn.dev"
+        }
+      ]
+    },
+    "zepeto": {
+      "checked": "2026-09-30",
+      "claims": 0,
+      "sources": [
+        {
+          "id": "about",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "web.zepeto.me"
+        },
+        {
+          "id": "blog",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "blog.zepeto.me"
+        },
+        {
+          "id": "naverz",
+          "kind": "official-doc",
+          "captured": "2026-09-30",
+          "host": "www.naverz-corp.com"
+        },
+        {
+          "id": "surface-home",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "web.zepeto.me"
+        },
+        {
+          "id": "surface-surface-2",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "studio.zepeto.me"
+        },
+        {
+          "id": "surface-surface-3",
+          "kind": "product-surface",
+          "captured": "2026-09-30",
+          "host": "studio.zepeto.me"
         }
       ]
     },
