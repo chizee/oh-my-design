@@ -385,6 +385,10 @@
   - CSS 한 줄로 전 플랫폼 해소된다. `v2-cover-android.png`(실기기 아님 표기)를 만들었고 임시 브랜치는 삭제했다.
   - 새 발견: HG-1 After(Pretendard)를 360px로 보면 "+"가 혼자 줄바꿈된다 → 스킬 후속.
 - **결정 (16:00, 오너):** primary_color는 제품 화면 실측으로 정하고, 흰·검 카드는 UI에서 보완한다(GROWTH_DECISIONS).
+- **완료 — primary_color 규칙 적용 (16:30).**
+  - 카드 UI(`05f6b2af`, `card-fill.ts` + 테스트): 흰 primary는 라이트에서, 검정 primary는 다크에서 레퍼런스 캔버스로 보이고, 배지에 primary 스와치를 단다. 라이트·다크 스크린샷으로 확인했다. 레몬베이스는 #111111 타일 + 흰 스와치이고 토스뱅크는 변화가 없다.
+  - **hwahae primary `#00d5ce`→`#3d3d3d`** (홈 전폭 다크 버튼, capture 108). 민트는 §2에 로고 자산으로 둔다. 27/27 통과. **작업 트리에 있고, P2 파이프라인과 함께 커밋한다.** P2가 레퍼런스를 고치는 동안에는 전역 파이프라인을 금지한다.
+- **진행 중 — KR partial 웨이브 P2 (16:05~, 워크플로 에이전트 6개):** kia·wrtn / furiosaai·imweb / tmap·stayfolio / kakaopage·elice / hyperconnect·ncsoft / modusign·scatterlab.
 - **다음.**
   1. ~~저작 E1~~ (완료).
   2. 오너 GO 대기: 사이트 반영(웨이브 5 + 19곳 + 라이브 정정 4곳 + E2 3곳, 이어서 E1 3곳), /hangul 공개 판단(v2 뒤).
