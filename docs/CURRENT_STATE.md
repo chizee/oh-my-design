@@ -389,6 +389,20 @@
   - 카드 UI(`05f6b2af`, `card-fill.ts` + 테스트): 흰 primary는 라이트에서, 검정 primary는 다크에서 레퍼런스 캔버스로 보이고, 배지에 primary 스와치를 단다. 라이트·다크 스크린샷으로 확인했다. 레몬베이스는 #111111 타일 + 흰 스와치이고 토스뱅크는 변화가 없다.
   - **hwahae primary `#00d5ce`→`#3d3d3d`** (홈 전폭 다크 버튼, capture 108). 민트는 §2에 로고 자산으로 둔다. 27/27 통과. **작업 트리에 있고, P2 파이프라인과 함께 커밋한다.** P2가 레퍼런스를 고치는 동안에는 전역 파이프라인을 금지한다.
 - **진행 중 — KR partial 웨이브 P2 (16:05~, 워크플로 에이전트 6개):** kia·wrtn / furiosaai·imweb / tmap·stayfolio / kakaopage·elice / hyperconnect·ncsoft / modusign·scatterlab.
+- **완료 — KR partial 웨이브 P2 (16:50, `988e86a0`).**
+  - 11곳 → Verified v2: kia·wrtn·furiosaai·imweb·tmap·stayfolio·kakaopage·hyperconnect·ncsoft·modusign·scatterlab. 합계 233→244.
+  - primary 조정(오너 규칙 적용):
+    - imweb `#00b9ff`→`#15181e`(잉크가 모든 주 액션을 채움)
+    - ncsoft→`#ffffff`, stayfolio→`#000000`(모노톤)
+    - hwahae→`#3d3d3d`
+    - kakaopage: 노랑 `#ffd618` 복원. CTA 조부모 div가 칠하는데 수집기는 이를 기록하지 못한다. 고친 프로브의 3단계 조상 비교로 입증했다(`raw/kakaopage-states-content.json`).
+    - wrtn `#f54211` 유지: 제품의 유일한 채도 액션이고, 브랜드 에이전시가 부르는 "Inspire Red"와 같다.
+  - hyperconnect의 알파 색 토큰 2개는 산문으로 옮겼다(레지스트리 빌드가 6자리 hex만 받는다).
+  - 모션 고정값 255→245. 경로·매니페스트·iCloud 백업 완료. 대표색 11개가 번들에 있음을 대조했다(kakaopage만 프로브 근거).
+  - **elice 보류 원인:** `/ko/ax/lxp` 경로가 수집기를 멈춘다. 홈 + `/ko/cloud/pricing`은 12초에 끝났다(coverage 97) → 단독 에이전트로 재시도 중.
+- **실수 — 16:52 P3를 띄우며 스크립트를 고치기 전 P2 스크립트를 재실행.** 즉시 중지했다. 작업 트리 변경 0, 번들 SHA 검증 OK로 피해 없음. 이후 새 스크립트로 P3를 띄웠다.
+- **진행 중 — 웨이브 P3 (16:58~, 에이전트 6개):** iicombined·weverse / teamblind·zepeto / 3o3·greeting / liner·heydealer / moreh·payhere / ssg·finda. 그리고 elice 단독.
+- **후속(도구):** 수집기에 경로별 타임아웃과 래퍼 채움 기록 추가. P3가 수집기를 쓰는 동안에는 수정하지 않는다.
 - **다음.**
   1. ~~저작 E1~~ (완료).
   2. 오너 GO 대기: 사이트 반영(웨이브 5 + 19곳 + 라이브 정정 4곳 + E2 3곳, 이어서 E1 3곳), /hangul 공개 판단(v2 뒤).
