@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { trackReferenceSelect, trackSearch, trackCategoryFilter, trackCountryFilter, trackColorFilter, trackHotFilter, trackSortChange } from "@/lib/builder/analytics";
 import { sortRefs, SORT_MODES, resolveVisitorCountry, hasMeasuredStates, type SortMode } from "@/lib/builder/sort-refs";
 import { buildColorConceptGroups, colorFamilyForHex, type ColorFilter } from "@/lib/builder/color-family";
+import { cardHeaderFills } from "@/lib/builder/card-fill";
 import { Loader2, ChevronDown, Download } from "lucide-react";
 import { REFERENCE_COUNT } from "@/lib/catalog-count";
 
@@ -737,6 +738,7 @@ export function ReferenceSelector({
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         <AnimatePresence mode="popLayout">
           {visibleRefs.map((ref, i) => {
+            const fills = cardHeaderFills(ref.primaryColor, ref.background);
             return (
               <motion.button
                 key={ref.id}
@@ -751,10 +753,11 @@ export function ReferenceSelector({
                 disabled={loading}
                 className="group relative flex flex-col overflow-hidden rounded-xl border border-border/40 bg-card/30 text-left backdrop-blur transition-all hover:bg-card/80 hover:shadow-lg hover:shadow-black/5 hover:-translate-y-1 dark:border-white/10 dark:bg-card/50 dark:hover:border-white/20 dark:hover:shadow-white/5 disabled:opacity-50"
               >
-                {/* Color area with logo */}
+                {/* Color area with logo. A near-white or near-black primary shows the
+                    reference's canvas in the theme where it would vanish (card-fill.ts). */}
                 <div
-                  className="relative flex h-24 items-center justify-center border-b border-transparent dark:border-white/10"
-                  style={{ background: ref.primaryColor }}
+                  className="relative flex h-24 items-center justify-center border-b border-transparent bg-[var(--tile-light)] dark:border-white/10 dark:bg-[var(--tile-dark)]"
+                  style={{ "--tile-light": fills.light, "--tile-dark": fills.dark } as React.CSSProperties}
                 >
                   {/* Neutral nameplate (shared with the directory cards) so the
                       logo stays legible even when it matches ref.primaryColor —
@@ -775,7 +778,10 @@ export function ReferenceSelector({
                     </span>
                   </div>
                   {/* Hex badge */}
-                  <span className="absolute bottom-2 left-2 rounded bg-black/20 px-1.5 py-0.5 font-mono text-[9px] text-white/80 backdrop-blur-sm">
+                  <span className={`absolute bottom-2 left-2 inline-flex items-center gap-1 rounded px-1.5 py-0.5 font-mono text-[9px] text-white/80 backdrop-blur-sm ${fills.substituted ? "bg-black/40" : "bg-black/20"}`}>
+                    {fills.substituted && (
+                      <span aria-hidden className="h-2 w-2 rounded-[2px] ring-1 ring-white/60" style={{ background: ref.primaryColor }} />
+                    )}
                     {ref.primaryColor}
                   </span>
                   {/* NEW (7-day window) + HOT (top-5 by select) — glass badges,
