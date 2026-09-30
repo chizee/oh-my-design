@@ -408,6 +408,22 @@
   - primary `#7353ea`→`#212121`로 판단했다: 모든 페이지의 채움 주 액션이다. 보라는 제품 아이콘 타일 4색 중 하나이자 엘리스클라우드 요금 페이지의 선택 탭·링크일 뿐이라, 브랜드 전체 크롬이 아니다. tmap·hyperconnect처럼 모든 페이지의 nav 선택 상태에 쓰인 유채색과 구분된다.
   - 브랜드 페이지의 Elice Violet은 HEX `#6700e6`인데 RGB 줄은 `#8200e6`이다. 둘이 불일치해서 §2 브랜드 자산으로만 둔다.
   - P3 파이프라인 때 함께 커밋한다.
+- **완료 — KR partial 웨이브 P3 + elice (17:30, `6ab81ac0`).**
+  - 11곳 → Verified v2: 3o3·elice·finda·heydealer·iicombined·liner·moreh·payhere·teamblind·weverse·zepeto. 합계 244→255.
+  - 보류 2곳: ssg(403 봇 차단 — 차단 페이지 번들은 증거 저장소에서 스크래치로 옮김), greeting(Framer 사이트에서 수집기가 두 번 멈춤).
+  - 대표색 11개 모두 번들에서 확인했다. 교체한 것:
+    - 3o3 `#0c64e6`→`#fbbd41`(홈 CTA 3/5, CSS 일치)
+    - teamblind→`#fb5957`(로그인 채움, `--tb-red-red1000`)
+    - liner→`#2c783c`
+    - payhere→`#0077fe`
+    - elice→`#212121`
+    - iicombined→`#111111`
+    - weverse `#00cbd5`는 로그인 테두리 하나뿐인 가장 얇은 판단이다.
+  - **teamblind 국가 KR→US**: 채용 페이지 "미국 실리콘밸리에 본사를 둔 블라인드"(sendbird 선례). **moreh는 오너 확인 대기**: 2021 "미국 본사 법인 설립"이지만 운영은 서울일 수 있어 규칙상 모호하다.
+  - 모션 고정값 245→234. 경로·매니페스트·iCloud 완료.
+- **오늘 KR partial 누계: 28곳 승격(227→255), 보류 2곳(ssg·greeting).** 남은 KR partial 약 72곳.
+- **사이트 반영 대기(브랜치):** 파일럿 6 + P2 11 + P3·elice 11 = 28곳, 흰·검 카드 UI(`05f6b2af`), 수집기 동의 거부(`4e5edf62`). 오너 GO가 필요하다.
+- **후속(도구):** 수집기 경로별 타임아웃(elice·greeting 멈춤), 래퍼 채움 기록(kakaopage), 봇 차단 사이트(ssg·gentlemonster 403) 정책.
 - **다음.**
   1. ~~저작 E1~~ (완료).
   2. 오너 GO 대기: 사이트 반영(웨이브 5 + 19곳 + 라이브 정정 4곳 + E2 3곳, 이어서 E1 3곳), /hangul 공개 판단(v2 뒤).
